@@ -1,0 +1,42 @@
+---
+subtitle: "GEO Submission data preparation"
+# date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+output: 
+  bookdown::pdf_book:
+    base_format: rticles::springer_article
+    pandoc_args:
+      - '../common.yaml'
+      #- --listings
+    includes: 
+      in_header: '../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+
+\newpage
+
+# Description
+```{r}
+"../GitHub/Lung_IM_differentiation/preamble.tex"
+```
+
+
+# Session information 
+
+R sesssion: 
+
+```{r}
+sessionInfo()
+```
+
+# References
+
