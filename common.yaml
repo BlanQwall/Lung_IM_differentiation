@@ -29,9 +29,9 @@ keywords:
 abstract: |
   Lung interstitium macrophages (IMs) are non-alveolar resident tissue macrophages which contribute to the lung homeostasis. These cells were reported to be heterogeneous by our group and other teams, which contains two main distinct subpopulations: CD206+ IMs and CD206- IMs. However, the exact origin of IMs and the transcriptional programs that control IM differentiation remains unclear. In recent report, we analyzed the refilled IMs in the course of time after induced IM depletion with single-cell RNA sequencing (10X Genomics Chromium) and bulk RNA sequencing.  
 
-# bibliography: bib.bib
+bibliography: bib.bib
 
-# csl: nature-reviews-immunology.csl
-# link-citations: yes
+csl: nature-reviews-immunology.csl
+link-citations: yes
 
 ---

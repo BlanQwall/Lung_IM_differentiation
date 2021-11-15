@@ -1,5 +1,5 @@
 ---
-subtitle: "GEO Submission data preparation"
+subtitle: "0-Microarray data analysis"
 # date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
 output: 
   bookdown::pdf_book:
@@ -25,8 +25,13 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 \newpage
 
 # Description
+
+
+# Load data
+
 ```{r}
-"../GitHub/Lung_IM_differentiation/preamble.tex"
+dir.files <- "./"
+file.list <- basename("../0-Microarrays/downloaded_data/")
 ```
 
 
