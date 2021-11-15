@@ -1,0 +1,374 @@
+---
+subtitle: "0-Microarray data analysis"
+date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+output: 
+  #bookdown::pdf_book:
+  pdf_document:
+    # base_format: rticles::springer_article
+    pandoc_args:
+      - '../common.yaml'
+      - --listings
+    includes: 
+      in_header: '../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+
+```{r include=FALSE}
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80),
+               tidy=TRUE,
+               message = FALSE, 
+               warning = FALSE)
+
+```
+
+\newpage
+
+# Description
+
+
+# Load packages and data
+
+```{r}
+# packages
+library(ComplexHeatmap)
+library(RColorBrewer)
+library(circlize)
+
+# data
+dir.files <- "./downloaded_data"
+files.list <- list.files(dir.files, pattern = "Gene_Expression_Activity.csv", full.names = T)
+names.list <- sub(basename(files.list), pattern = "_in_Gene_Expression_Activity.csv", replacement = "")
+```
+
+read csv files and bind tables to one: 
+
+```{r}
+expr.table <- data.frame(read.csv(files.list[1]), row.names = 1)
+expr.table <- expr.table[, -2]
+n.rep <- length(2:ncol(expr.table))
+  
+names.rep <- paste(rep(names.list[1]), 1:n.rep , sep = "_")
+colnames(expr.table)[2:ncol(expr.table)] <- names.rep
+
+for (i in 2:length(files.list)) {
+  tb <- read.csv(files.list[i])
+  tb <- tb[, 4:ncol(tb)]
+  n <- ncol(tb)
+  repname <- paste(rep(names.list[i]), 1:n, sep = "_")
+  colnames(tb) <- repname
+  
+  expr.table <- cbind(expr.table, tb)
+  n.rep <- append(n.rep, n)
+  names.rep <- append(names.rep, repname)
+  }
+meta.sample <- data.frame(sampleName=names.list, 
+                          n.rep=n.rep)
+head(expr.table)
+```
+
+
+# Data preparration
+
+## Make a list with genes to show in heatmap
+
+>The gene list IMvs(AM&DC).csv is calculated in ImmGen Datasets. We compared IM microarray data to both MA and DC and get the DE genes. 
+
+```{r}
+probset.DE <- read.csv("./IMvs(AM&DC).csv")
+probset.toShow <- unique(as.character(probset.DE$ProbeSet_ID))
+
+# the table is ordered by ratio, so take the top 100: 
+probset.toShow <- probset.toShow[1:100]
+```
+
+>Then base on the intensity in IM, we choose the only top 50 probsets. 
+
+Take the to 50 probsets with highest intensity:
+
+```{r}
+probset.DE <- probset.DE[order(probset.DE$Mean_A, decreasing = TRUE), ]
+probset.top50 <- as.character(probset.DE[1:50, "ProbeSet_ID"])
+```
+
+```{r}
+probset.toShow <- intersect(probset.top50, probset.toShow)
+```
+
+
+subset expr.table
+
+```{r}
+expr.table.toShow <- expr.table[ probset.toShow, ]
+genes.toShow <- unique(expr.table.toShow$Gene.Symbol)
+length(genes.toShow)
+```
+*As genes are unique to each probset, we can use gene symbols as rownames. *
+
+```{r}
+rownames(expr.table.toShow) <- expr.table.toShow$Gene.Symbol
+```
+
+## Make metadata table
+
+```{r}
+data.frame(meta.sample$sampleName, order=1:nrow(meta.sample))
+```
+
+```{r}
+meta.sample$cellType3 <- c("Mac Alv Lu", #1
+                           "DC CD103+ Lu", #2
+                           "DC CD24+ Lu", #3
+                           "DC CD103+ LuLN", #4
+                           "DC CD11b+ LuLN", #5
+                           "Mo Ly6C+ Lu", #6
+                           "Mac Int Lu", #7
+                           "Mac BM", #8
+                           "Mac CNS", #9
+                           "Mac Int Lu", #10
+                           "Mac F4/80hi PC", #11
+                           "Mac F4/80lo PC", #12
+                           "Mac SI", #13
+                           "Mac SLN", #14
+                           "Mac SP", #15
+                           "Mo Ly6C- MHCII- BL", #16
+                           "Mo Ly6C- MHCII+ BL", #17
+                           "Mo Ly6C- MHCIIint BL", #18
+                           "Mo Ly6C+ MHCII- BL", #19
+                           "Mo Ly6C+ MHCII+ BL", #20
+                           "Mo Ly6C- MHCII- BM", #21
+                           "Mo Ly6C+ MHCII- BM" #22
+              )
+
+meta.sample$cellType <- c("aMac", #1
+              rep("DC", 4),  # 2-5
+              "Mo", # 6
+              "iMac", #7
+              rep("Mac", 2), # 8-9 
+              "iMac", #10
+              rep("Mac", 5), # 11-15 
+              rep("Mo", 7) # 16-22
+              )
+meta.sample$organ <- c(rep("Lu", 3), #1-3
+           rep("LuLN", 2), #4-5
+           rep("Lu", 2), #6-7
+           "BM", #8
+           "CNS", #9
+           "Lu", #10
+           rep("PC",2), #11-12
+           "SI", #13
+           "SLN", #14
+           "SP", #15
+           rep("BL",5 ), 
+           rep("BM", 2)
+           
+           )
+meta.sample$cellType2 <- c(
+              "Mac", #1
+              rep("DC", 4),  # 2-5
+              "Mo", # 6
+              "Mac", #7
+              rep("Mac", 2), # 8-9 
+              "Mac", #10
+              rep("Mac", 5), # 11-15 
+              rep("Mo", 7) # 16-22
+              )
+meta.sample$organ2 <- c(
+            "Lu-Alv", #1
+            rep("Lu", 2), #2-3
+           rep("LuLN", 2), #4-5
+           "Lu", #6
+           "Lu-Int", #7
+           "BM", #8
+           "CNS", #9
+           "Lu-Int", #10
+           rep("PC",2), #11-12
+           "SI", #13
+           "SLN", #14
+           "SP", #15
+           rep("BL",5 ), 
+           rep("BM", 2)
+           
+           )
+```
+
+```{r}
+meta.table <- data.frame(CellType=rep(meta.sample$cellType, meta.sample$n.rep), 
+                         OrganType=rep(meta.sample$organ, meta.sample$n.rep), 
+                         CellType2=rep(meta.sample$cellType2, meta.sample$n.rep), 
+                         OrganType2=rep(meta.sample$organ2, meta.sample$n.rep), 
+                         cellType3=rep(meta.sample$cellType3, meta.sample$n.rep), 
+                         row.names = names.rep)
+```
+
+
+```{r}
+HeatmapAnnotation(Cell_type=meta.table$CellType, 
+                  Organ_type=meta.table$OrganType)
+```
+
+# Make heatmaps
+
+Use Heatmap: 
+
+```{r fig.width=9, fig.height=7}
+Heatmap(
+  as.matrix(expr.table.toShow[2:ncol(expr.table.toShow)]),
+  # use_raster = FALSE, # use FALSE to export to vector image. 
+  name                         = "z-score",
+  # col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
+  # show_row_names               = TRUE,
+  # show_column_names            = FALSE,
+  row_names_gp                 = gpar(fontsize = 7), 
+  
+  # row_title_rot                = 0,
+  # cluster_rows                 = TRUE,
+  # cluster_row_slices           = FALSE,
+  #cluster_columns              = FALSE 
+)
+```
+
+Using pheatmap. 
+
+```{r fig.width=9, fig.height=7}
+pheatmap(
+  as.matrix(expr.table.toShow[2:ncol(expr.table.toShow)]), annotation_col = meta.table
+  # use_raster = FALSE, # use FALSE to export to vector image. 
+  #name                         = "z-score",
+  # col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
+  # show_row_names               = TRUE,
+  # show_column_names            = FALSE,
+  #row_names_gp                 = gpar(fontsize = 7), 
+  
+  # row_title_rot                = 0,
+  # cluster_rows                 = TRUE,
+  # cluster_row_slices           = FALSE,
+  #cluster_columns              = FALSE 
+)
+```
+
+Using Heatmap with annotations. 
+```{r fig.width=9, fig.height=7}
+hp <- Heatmap(
+  as.matrix(expr.table.toShow[2:ncol(expr.table.toShow)]),
+  # use_raster = FALSE, # use FALSE to export to vector image. 
+  name                         = "z-score",
+  # col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
+  # show_row_names               = TRUE,
+  # show_column_names            = FALSE,
+  row_names_gp                 = gpar(fontsize = 7), 
+  column_names_gp              = gpar(fontsize = 7), 
+
+  #column_split = meta.table$CellType2, 
+  column_split = factor(meta.table$CellType2, levels = c("Mac", "Mo", "DC")),
+  top_annotation = HeatmapAnnotation(Organtype=meta.table$OrganType2, 
+                                     col = list(Organtype = c(`Lu-Alv`="#32a852", 
+                                             `Lu-Int`="#87c22f", 
+                                             Lu="#205c30", 
+                                             LuLN="#265d69", 
+                                             BM="#82622f", 
+                                             CNS="#4674e8", 
+                                             PC="#a14bab", 
+                                             SI="#dbed4e", 
+                                             SLN="#ffa6f9", 
+                                             SP="#2000f2", 
+                                             BL="#f20000")) )
+  
+)
+
+p <- draw(hp)
+```
+
+Change colors and annotations
+
+```{r fig.width=9, fig.height=7}
+
+col.cellType3 <- read.csv("../0-Microarrays/colors_celltype3.csv", sep = "\t", header = FALSE, row.names = 1)
+colors.cellType3 <- as.character(col.cellType3$V2)
+names(colors.cellType3) <- rownames(col.cellType3)
+genes.toSplit <- rownames(expr.table.toShow)
+genes.toSplit <- genes.toSplit %in% c("Tmem119", "Cx3cr1")
+
+# the one with row split: 
+hp2 <- Heatmap(
+  as.matrix(expr.table.toShow[2:ncol(expr.table.toShow)]),
+  # use_raster = FALSE, # use FALSE to export to vector image. 
+  name                         = "Gene activity",
+  row_names_gp                 = gpar(fontsize = 7), 
+  column_names_gp              = gpar(fontsize = 7), 
+  column_split = factor(meta.table$CellType2, levels = c("Mac", "Mo", "DC")),
+  row_split = 2, 
+  top_annotation = HeatmapAnnotation(Cell_type=meta.table$cellType3,
+                    col = list(
+                                Cell_type = colors.cellType3 ), 
+                    annotation_legend_param = list(
+                                Cell_type = list(title = "Cell type", 
+                                                 at = names(colors.cellType3), 
+                                                 labels = names(colors.cellType3))) )
+  
+)
+
+p2 <- draw(hp2)
+```
+
+```{r fig.width=9, fig.height=7}
+# the one WITHOUT row split: 
+hp3 <- Heatmap(
+  as.matrix(expr.table.toShow[2:ncol(expr.table.toShow)]),
+  # use_raster = FALSE, # use FALSE to export to vector image. 
+  name                         = "Gene activity",
+  row_names_gp                 = gpar(fontsize = 7), 
+  column_names_gp              = gpar(fontsize = 7), 
+  column_split = factor(meta.table$CellType2, levels = c("Mac", "Mo", "DC")),
+  #row_split = 2, 
+  top_annotation = HeatmapAnnotation(Cell_type=meta.table$cellType3,
+                    col = list(
+                                Cell_type = colors.cellType3 ), 
+                    annotation_legend_param = list(
+                                Cell_type = list(title = "Cell type", 
+                                                 at = names(colors.cellType3), 
+                                                 labels = names(colors.cellType3))) )
+  
+)
+
+p3 <- draw(hp3)
+```
+
+
+```{r include=FALSE}
+# export data
+
+pdf(file = "./plots/heatMap_top50_probsets.pdf", width = 9, height = 7)
+print(p)
+dev.off()
+
+write.csv(expr.table.toShow, file = "./top50_exprTable.csv")
+
+# export data
+
+pdf(file = "./plots/heatMap_top50_probsets_with_21celltypes_with_rowSplit.pdf", width = 9, height = 7)
+print(p2)
+dev.off()
+
+# export data
+
+pdf(file = "./plots/heatMap_top50_probsets_with_21celltypes_without_rowSplit.pdf", width = 9, height = 7)
+print(p3)
+dev.off()
+```
+
+# Session information 
+
+R sesssion: 
+
+```{r}
+sessionInfo()
+```
+
+# References
+
