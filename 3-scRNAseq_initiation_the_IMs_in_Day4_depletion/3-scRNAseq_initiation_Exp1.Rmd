@@ -1,0 +1,87 @@
+---
+title: "3-scRNAseq initiation for Exp1: IMs in Day 4 post-depletion"
+# bibliography: bib.bib
+link-citations: yes
+date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+output: 
+  pdf_document:
+    pandoc_args: 
+      - '../../common.yaml'
+      - --listings
+    includes: 
+      in_header: '../../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+\newpage
+
+# Description
+
+Lung interstitium macrophages (IMs) are non-alveolar resident tissue macrophages which contribute to the lung homeostasis. These cells were reported to be heterogeneous by our group and other teams, which contains two main distinct subpopulations: CD206+ IMs and CD206- IMs. However, the exact origin of IMs and the transcriptional programs that regulate IM differentiation remains unclear. In recent report, we analyzed the refilled IMs in the course of time after induced IM depletion with single-cell RNA sequencing (10X Genomics Chromium) and bulk RNA sequencing. 
+
+The IMs in Day 4 post-depletion were compared to the those without depletion. Results showed that refilled IMs had a lower ratio of CD206+ IM vs CD206- subpopulation comparing to IMs without depletion, but they shared high similarity to each other, indicating that the de novo IM population had been established before Day 4 post-depletion. 
+
+
+# Load packages and data
+```{r}
+# load package and data
+library(Seurat)
+library(ggpubr)
+source("~/Desktop/velocyto/Script/seurat.setup.R")
+mt.percentage <- 10
+dimensionality <- 1:20
+human_sample <- FALSE
+```
+
+# QC
+## Sample: CPlus_NGS20_Q147
+```{r message=FALSE, warning=FALSE}
+
+CPlus_NGS20_Q147 <- seurat.setup(path.10x = "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR_exp1/counts/scRNAseq/CPlus_NGS20_Q147/outs/filtered_feature_bc_matrix/", project = "IM-DTR", dimensionality = dimensionality, mt.percentage = mt.percentage, human = FALSE)
+```
+
+```{r fig.width=12, fig.height=10}
+ggarrange(CPlus_NGS20_Q147$plots$feature_vln, CPlus_NGS20_Q147$plots$RNA_mt.pct_scatter, CPlus_NGS20_Q147$plots$JackStrawPlot, CPlus_NGS20_Q147$plots$ElbowPlot, ncol = 2, nrow = 2)
+```
+
+## Sample: CPlus_NGS20_Q147
+```{r fig.width=12, fig.height=10}
+ggarrange(CPlus_NGS20_Q147$plots$variable_features, CPlus_NGS20_Q147$plots$PCA_plot, CPlus_NGS20_Q147$plots$UMAP_plot, CPlus_NGS20_Q147$plots$TSNE_plot, ncol = 2, nrow = 2)
+```
+## Sample: Plusplus_NGS20_Q148
+```{r message=FALSE, warning=FALSE}
+
+Plusplus_NGS20_Q148 <- seurat.setup(path.10x = "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR_exp1/counts/scRNAseq/Plusplus_NGS20_Q148/outs/filtered_feature_bc_matrix/", project = "IM-DTR", dimensionality = dimensionality, mt.percentage = mt.percentage, human = FALSE)
+```
+
+```{r fig.width=12, fig.height=10}
+ggarrange(Plusplus_NGS20_Q148$plots$feature_vln, Plusplus_NGS20_Q148$plots$RNA_mt.pct_scatter, Plusplus_NGS20_Q148$plots$JackStrawPlot, Plusplus_NGS20_Q148$plots$ElbowPlot, ncol = 2, nrow = 2)
+```
+
+## Sample: Plusplus_NGS20_Q148
+```{r fig.width=12, fig.height=10}
+ggarrange(Plusplus_NGS20_Q148$plots$variable_features, Plusplus_NGS20_Q148$plots$PCA_plot, Plusplus_NGS20_Q148$plots$UMAP_plot, Plusplus_NGS20_Q148$plots$TSNE_plot, ncol = 2, nrow = 2)
+```
+
+```{r include=FALSE}
+# save data for next use: 
+saveRDS(CPlus_NGS20_Q147$seuratObject, file = "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR_exp1/analyses/20210112_scRNAseq_initiation/CPlus_NGS20_Q147.seuratObject.rds")
+saveRDS(Plusplus_NGS20_Q148$seuratObject, file = "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR_exp1/analyses/20210112_scRNAseq_initiation/Plusplus_NGS20_Q148.seuratObject.rds")
+```
+
+# Session information
+
+```{r}
+sessionInfo()
+```
+
+# References

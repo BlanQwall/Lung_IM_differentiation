@@ -1,0 +1,386 @@
+---
+subtitle: "1-bulkRNAseq: refilled lung IMs"
+date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+bibliography: bib.bib
+output: 
+  #bookdown::pdf_book:
+  pdf_document:
+    # base_format: rticles::springer_article
+    pandoc_args:
+      - '../common.yaml'
+      - --listings
+    includes: 
+      in_header: '../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+
+```{r include=FALSE}
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80),
+               tidy=TRUE,
+               message = FALSE, 
+               warning = FALSE)
+
+```
+
+\newpage
+
+
+# Description
+
+Lung interstitium macrophages (IMs) are non-alveolar resident tissue macrophages which contribute to the lung homeostasis. These cells were reported to be heterogeneous by our group and other teams, which contains two main distinct subpopulations: CD206+ IMs and CD206- IMs. However, the exact origin of IMs and the transcriptional programs that regulate IM differentiation remains unclear. In recent report, we analyzed the refilled IMs in the course of time after induced IM depletion with single-cell RNA sequencing (10X Genomics Chromium) and bulk RNA sequencing. 
+
+In this study, the de novo refilled CD206+ and CD206- IMs on Day 14 post-depletion were compared to those without depletion. Alvelar macrophages (AMs) samples were also included in this analysis and served as a reference. Results showed high similarity between de novo refilled and original IMs for both CD206+ and CD206- subsets. Only genes related to cell cycling were found upregulated in de novo refilled IMs. 
+
+Total RNA was extracted and concentrated from the different samples with the RNA Clean & Concentrator 5 (Zymo Research). Possible DNA contaminant were removed with DNAse I. RNA quality and quantity were evaluated using a 2100 bioanalyzer (Agilent) and the Quant-iT™ RiboGreen™ RNA Assay Kit (ThermoFisher). The RNA Integrity Number (RIN) was greater than 7 for all samples. In order to generate the libraries using the Truseq stranded mRNA kit (Illumina), 100 ng of RNA was used. These libraries were sequenced on an Illumina Novaseq sequencer on a SP flow cell in single read 100 bp. Sequence alignment with the human genome (version GRCh37), sequence counting and quality control were performed using the nf-core/rnaseq pipeline [@nf-core]. RNA-seq data were analyzed using R Bioconductor (3.12) and DESeq2 package (version 1.26.0)[@DESeq2]. 
+
+
+# Counting from fastq data using nf-core/rnaseq pipeline
+
+The following codes were used to do the mapping and counting. 
+```{bash eval=FALSE}
+nextflow run nf-core/rnaseq --input sample_list.csv --fasta GRCm38/fasta/genome.fa --gtf GRCm38/genes/genes.gtf --outdir counts/bulkRNAseq/ -profile docker
+```
+
+`sample_list.csv` is text file with 5 columns: group, replicate, fastq_1, fastq_2 and strandedness. Prepared following to the software's instructions. 
+
+
+# Counts data processing
+
+
+
+```{r}
+library(DESeq2)
+library(ggplot2)
+library(pheatmap)
+library(RColorBrewer)
+library(EnhancedVolcano)
+library(forcats)
+
+COUNTS <- read.table("./salmon.merged.gene_counts.csv",sep="\t", header=T, row.names = NULL)
+
+dim(COUNTS)
+```
+
+Make gene names as rownames: 
+```{r}
+Genes <- COUNTS$gene_id
+rownames(COUNTS) = make.names(Genes, unique=TRUE)
+
+COUNTS <- COUNTS[,-1]
+COUNTS <- round(COUNTS, digits = 0)
+head(COUNTS, 3)
+
+```
+
+```{r}
+library(org.Mm.eg.db)
+symbols <- mapIds(org.Mm.eg.db, keys = rownames(COUNTS), keytype = "ENSEMBL", column="SYMBOL")
+symbols.uniq <- na.omit(unique(symbols))
+
+# remove adundant ensembl ids: 
+COUNTS <- COUNTS[match(symbols.uniq, symbols), ]
+
+# use symbols as rownames: 
+rownames(COUNTS) <- symbols.uniq
+
+head(COUNTS)
+```
+
+
+# Make metadata for bulkRNAseq samples 
+
+```{r}
+SampleSheet <- data.frame(
+  `groupName` = rep(c("AM","CD206- refilled IM", "CD206- control IM", "CD206+ refilled IM", "CD206+ control IM", "Ly6C+ Mo"),each=3),
+  `cellType1` = c(rep("Mac", 15), rep("Mo", 3)), 
+  `cellType2` = c(rep("AM", 3), rep("IM", 12), rep("Mo", 3)), 
+  `cellType3` = rep(c("AM","CD206neg IM", "CD206neg IM", "CD206pos IM", "CD206pos IM", "Ly6Cpos Mo"),each=3), 
+  `treatment` = c(rep(rep(c("control", "refilled"), each = 3), 2), rep("control", 6))
+)
+rownames(SampleSheet) <- colnames(COUNTS)
+
+SampleSheet
+```
+
+```{r}
+write.csv(SampleSheet, file = "./SampleSheet_metadata.csv")
+```
+
+
+# DESeq2 analysis
+
+```{r}
+dds <- DESeqDataSetFromMatrix(
+  countData= COUNTS,
+  colData= SampleSheet,
+  design= ~ cellType3 + treatment 
+)
+
+dds
+```
+
+## Perform rlog transformation for distances and PCA
+
+```{r}
+# keep only genes with more than a single read
+dds <- dds[ rowSums(counts(dds)) > 1,]
+
+# perform rlog transformation for distances (for clustering) and PCA
+rld<-rlog(dds)
+```
+
+```{r}
+dds <- dds[ rowSums(counts(dds)) > 1,]
+nrow(dds)
+```
+
+
+Calculate sample-to-sammple distances
+
+```{r}
+sampleDists <- dist( t( assay(rld) ) )
+sampleDistMatrix <- as.matrix( sampleDists ) 
+```
+
+## Heatmap
+
+```{r fig.width=8, fig.height=8}
+colors <- colorRampPalette( rev(brewer.pal(ncol(COUNTS), "Blues")) )(255) 
+heatmap <- pheatmap(sampleDistMatrix,
+                    clustering_distance_rows=sampleDists,
+                    clustering_distance_cols=sampleDists,
+                    col=colors
+)
+```
+
+## PCA analysis
+
+```{r}
+plotPCA <- plotPCA(rld, intgroup = c("cellType3", "treatment"))
+plotPCA
+```
+*AM, IM and monocytes are grouped together. The refilled/control IMs are highly similar.*
+
+Redo PCA with only IMs: 
+
+```{r}
+rld.im <- rld[, SampleSheet$cellType2 == "IM"]
+sampleDists.im <- dist( t( assay(rld.im) ) )
+sampleDistMatrix.im <- as.matrix( sampleDists.im ) 
+```
+
+Heatmap
+
+```{r fig.width=8, fig.height=8}
+heatmap <- pheatmap(sampleDistMatrix.im,
+                    clustering_distance_rows=sampleDists.im,
+                    clustering_distance_cols=sampleDists.im,
+                    col=colors
+)
+```
+```{r}
+plotPCA(rld.im, intgroup = c("cellType3", "treatment"))
+```
+*Nearly no difference could be found between refilled and control IM in any subset. *
+
+## Differentially expressed (DE) genes in comparing refilled vs control IMs
+
+```{r}
+# redo with only IM samples: 
+dds.im <- DESeqDataSetFromMatrix(
+  countData= COUNTS[,SampleSheet$cellType2=="IM"],
+  colData= SampleSheet[SampleSheet$cellType2=="IM", ],
+  design= ~ cellType3 + treatment 
+)
+dds.im <- dds.im[ rowSums(counts(dds.im)) > 1,]
+
+dds.im <- DESeq(dds.im)
+resultsNames(dds.im)
+```
+
+
+```{r}
+res_refilled_vs_control<- results(dds.im, contrast = c("treatment", "refilled", "control"))
+summary(res_refilled_vs_control) 
+```
+```{r}
+res_refilled_vs_control_Shrunk <- lfcShrink(dds.im, contrast=c("treatment", "refilled", "control"), res=res_refilled_vs_control, type = "normal")
+
+refilled_vs_control <- merge(x=as.data.frame(res_refilled_vs_control), y=as.data.frame(res_refilled_vs_control_Shrunk), by=c(0,1))
+
+head(refilled_vs_control)
+```
+
+
+
+# Export DE genes for other analyses
+
+```{r}
+Genes2 <- refilled_vs_control$Row.names
+rownames(refilled_vs_control) = make.names(Genes2, unique=TRUE)
+refilled_vs_control<- refilled_vs_control[,-1]
+```
+
+
+Filter
+```{r}
+refilled_vs_control <- refilled_vs_control[!is.na(refilled_vs_control$padj.y),]
+refilled_vs_control_1 <- subset(refilled_vs_control, padj.y < 0.05)
+dim(refilled_vs_control_1)
+```
+
+```{r}
+refilled_vs_control_ordered <- refilled_vs_control_1[order(-refilled_vs_control_1$log2FoldChange.y) , ]
+refilled_vs_control_ordered
+```
+
+Save data for other analyses
+
+```{r eval=FALSE}
+write.table(as.data.frame(refilled_vs_control_ordered), "./Results_refilled_vs_control_in_IMs.txt", sep="\t", row.names=T,col.names=T)
+
+```
+
+# Volcano plots
+
+```{r}
+keyvals <- rep("black", nrow(refilled_vs_control))
+names(keyvals) <- rep("non-signif", nrow(refilled_vs_control))
+
+keyvals[which(refilled_vs_control$log2FoldChange.y > 1 )] <- "red"
+names(keyvals)[which(refilled_vs_control$log2FoldChange.y > 1)] <- "Refilled"
+
+keyvals[which(refilled_vs_control$log2FoldChange.y < -1)] <- "blue"
+names(keyvals)[which(refilled_vs_control$log2FoldChange.y < -1)] <- "Control"
+
+```
+
+```{r fig.width=6, fig.height=5}
+EnhancedVolcano(refilled_vs_control,
+                lab = rownames(refilled_vs_control),
+                x = 'log2FoldChange.y',
+                y = 'padj.y',
+                xlim = c(-3, 3),
+                ylim=c(0, -log10(10e-75)),
+                labSize = 0,
+                pCutoff = 0.05,
+                FCcutoff = 1,
+                colAlpha = 1,
+                colCustom = keyvals,
+                legendLabSize = 8,
+                legendIconSize = 2.0,
+                border = "full",
+                legendPosition = "right",
+                axisLabSize = 20)
+```
+
+What are these genes? 
+
+```{r}
+# the Refilled-related genes: 
+rownames(refilled_vs_control)[names(keyvals) == "Refilled"]
+```
+
+```{r}
+# the Refilled-related genes: 
+rownames(refilled_vs_control)[names(keyvals) == "Control"]
+```
+
+## Plot the top DE genes 
+
+```{r fig.width=5, fig.height=5}
+#plotCount Cspg4
+data <- plotCounts(dds.im, gene="Cspg4", intgroup=c("cellType3","treatment"), returnData=TRUE)
+
+ggplot(data, aes(x=cellType3, y=count, color=cellType3, shape = treatment)) +
+  scale_y_log10() + 
+  geom_point(position=position_jitter(width=.1,height=0), size =3) +
+  ggtitle("Cspg4") +
+  theme(plot.title = element_text(hjust = 0.5, size = 20)) +
+  #scale_color_manual(values = c("#371dad","#ff8e03","#74c72a"))+
+  ylab ("Normalized Count")+
+  theme_linedraw()+
+  theme_light()
+
+```
+
+```{r fig.width=5, fig.height=5}
+#plotCount Cd109
+data <- plotCounts(dds.im, gene="Cd109", intgroup=c("cellType3","treatment"), returnData=TRUE)
+
+ggplot(data, aes(x=cellType3, y=count, color=cellType3, shape = treatment)) +
+  scale_y_log10() + 
+  geom_point(position=position_jitter(width=.1,height=0), size =3) +
+  ggtitle("Cd109") +
+  theme(plot.title = element_text(hjust = 0.5, size = 20)) +
+  #scale_color_manual(values = c("#371dad","#ff8e03","#74c72a"))+
+  ylab ("Normalized Count")+
+  theme_linedraw()+
+  theme_light()
+
+```
+
+```{r fig.width=5, fig.height=5}
+#plotCount Tmem119
+data <- plotCounts(dds.im, gene="Tmem119", intgroup=c("cellType3","treatment"), returnData=TRUE)
+
+ggplot(data, aes(x=cellType3, y=count, color=cellType3, shape = treatment)) +
+  scale_y_log10() + 
+  geom_point(position=position_jitter(width=.1,height=0), size =3) +
+  ggtitle("Tmem119") +
+  theme(plot.title = element_text(hjust = 0.5, size = 20)) +
+  ylab ("Normalized Count")+
+  theme_linedraw()+
+  theme_light()
+
+```
+
+
+# Session information
+
+Nextflow: 
+
+```
+Nextflow version: version 21.03.0.edge, build 5518 (05-03-2021 10:52 UTC)
+Workflow profile: docker
+Workflow repository: https://github.com/nf-core/rnaseq, revision master (commit hash 3643a94411b65f42bce5357c5015603099556ad9)
+```
+
+Software version used by Workflow: 
+
+```
+bedtools	2.29.2
+bioconductor-summarizedexperiment	1.20.0
+bioconductor-tximeta	1.8.0
+deseq2	1.28.0
+dupradar	1.18.0
+fastqc	0.11.9
+nextflow	21.03.0.edge
+nf-core/rnaseq	3.0
+picard	2.23.9
+preseq	2.0.3
+qualimap	2.2.2-dev
+rseqc	3.0.1
+salmon	1.4.0
+samtools	1.10
+star	2.6.1d
+stringtie	2.1.4
+subread	2.0.1
+trimgalore	0.6.6
+ucsc	377
+```
+
+R sesssion: 
+
+```{r}
+sessionInfo()
+```
+
+# References
+
