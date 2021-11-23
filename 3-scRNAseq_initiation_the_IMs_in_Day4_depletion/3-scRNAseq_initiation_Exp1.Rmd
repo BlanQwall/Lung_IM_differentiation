@@ -1,15 +1,15 @@
 ---
-title: "3-scRNAseq initiation for Exp1: IMs in Day 4 post-depletion"
+subtitle: "3-scRNAseq initiation for Exp1: IMs in Day 4 post-depletion"
 # bibliography: bib.bib
 link-citations: yes
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
 output: 
   pdf_document:
     pandoc_args: 
-      - '../../common.yaml'
+      - '../common.yaml'
       - --listings
     includes: 
-      in_header: '../../preamble.tex'
+      in_header: '../preamble.tex'
     toc: true
     number_sections: true
     fig_width: 7
@@ -32,50 +32,59 @@ The IMs in Day 4 post-depletion were compared to the those without depletion. Re
 
 
 # Load packages and data
-```{r}
-# load package and data
+
+```{r eval=FALSE}
 library(Seurat)
 library(ggpubr)
-source("~/Desktop/velocyto/Script/seurat.setup.R")
-mt.percentage <- 10
-dimensionality <- 1:20
-human_sample <- FALSE
+source("../R/seurat.setup.R")
+dir.10x <- "Counts/scRNAseq" # 10X output directory
+```
+
+
+```{r remove after render, message=FALSE, warning=FALSE, include=FALSE}
+library(Seurat)
+library(ggpubr)
+source("../R/seurat.setup.R")
+dir.10x <- "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR/IM_DTR_exp1/counts/scRNAseq" # 10X output directory
 ```
 
 # QC
+
 ## Sample: CPlus_NGS20_Q147
+
 ```{r message=FALSE, warning=FALSE}
 
-CPlus_NGS20_Q147 <- seurat.setup(path.10x = "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR_exp1/counts/scRNAseq/CPlus_NGS20_Q147/outs/filtered_feature_bc_matrix/", project = "IM-DTR", dimensionality = dimensionality, mt.percentage = mt.percentage, human = FALSE)
+CPlus_NGS20_Q147 <- seurat.setup(path.10x = file.path(dir.10x, "CPlus_NGS20_Q147/outs/filtered_feature_bc_matrix/"), project = "IM-DTR", dimensionality = 1:20, mt.percentage = 10, human = FALSE)
 ```
 
 ```{r fig.width=12, fig.height=10}
 ggarrange(CPlus_NGS20_Q147$plots$feature_vln, CPlus_NGS20_Q147$plots$RNA_mt.pct_scatter, CPlus_NGS20_Q147$plots$JackStrawPlot, CPlus_NGS20_Q147$plots$ElbowPlot, ncol = 2, nrow = 2)
 ```
 
-## Sample: CPlus_NGS20_Q147
 ```{r fig.width=12, fig.height=10}
 ggarrange(CPlus_NGS20_Q147$plots$variable_features, CPlus_NGS20_Q147$plots$PCA_plot, CPlus_NGS20_Q147$plots$UMAP_plot, CPlus_NGS20_Q147$plots$TSNE_plot, ncol = 2, nrow = 2)
 ```
+
 ## Sample: Plusplus_NGS20_Q148
+
 ```{r message=FALSE, warning=FALSE}
 
-Plusplus_NGS20_Q148 <- seurat.setup(path.10x = "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR_exp1/counts/scRNAseq/Plusplus_NGS20_Q148/outs/filtered_feature_bc_matrix/", project = "IM-DTR", dimensionality = dimensionality, mt.percentage = mt.percentage, human = FALSE)
+Plusplus_NGS20_Q148 <- seurat.setup(file.path(dir.10x, "Plusplus_NGS20_Q148/outs/filtered_feature_bc_matrix/"), project = "IM-DTR", dimensionality = 1:20, mt.percentage = 10, human = FALSE)
 ```
 
 ```{r fig.width=12, fig.height=10}
 ggarrange(Plusplus_NGS20_Q148$plots$feature_vln, Plusplus_NGS20_Q148$plots$RNA_mt.pct_scatter, Plusplus_NGS20_Q148$plots$JackStrawPlot, Plusplus_NGS20_Q148$plots$ElbowPlot, ncol = 2, nrow = 2)
 ```
 
-## Sample: Plusplus_NGS20_Q148
 ```{r fig.width=12, fig.height=10}
 ggarrange(Plusplus_NGS20_Q148$plots$variable_features, Plusplus_NGS20_Q148$plots$PCA_plot, Plusplus_NGS20_Q148$plots$UMAP_plot, Plusplus_NGS20_Q148$plots$TSNE_plot, ncol = 2, nrow = 2)
 ```
 
-```{r include=FALSE}
+# Save Seurat objects for further analyses
+```{r eval=FALSE}
 # save data for next use: 
-saveRDS(CPlus_NGS20_Q147$seuratObject, file = "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR_exp1/analyses/20210112_scRNAseq_initiation/CPlus_NGS20_Q147.seuratObject.rds")
-saveRDS(Plusplus_NGS20_Q148$seuratObject, file = "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR_exp1/analyses/20210112_scRNAseq_initiation/Plusplus_NGS20_Q148.seuratObject.rds")
+saveRDS(CPlus_NGS20_Q147$seuratObject, file = "./CPlus_NGS20_Q147.seuratObject.rds")
+saveRDS(Plusplus_NGS20_Q148$seuratObject, file = "./Plusplus_NGS20_Q148.seuratObject.rds")
 ```
 
 # Session information

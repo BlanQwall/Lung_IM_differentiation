@@ -1,0 +1,347 @@
+---
+subtitle: "4-Compare Refilled IMs in Day4 depletion to control"
+# bibliography: bib.bib
+link-citations: yes
+date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+output: 
+  pdf_document:
+    pandoc_args: 
+      - '../common.yaml'
+      - --listings
+    includes: 
+      in_header: '../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+\newpage
+
+# Description
+
+
+
+# Load data and packages 
+
+```{r eval=FALSE}
+library(Seurat)
+source("../R/seurat.make.integrated.R")
+
+initiation.analysis.folder <- "../3-scRNAseq_initiation_the_IMs_in_Day4_depletion/"
+file.names <- list.files(initiation.analysis.folder, pattern = "*.rds")
+sample.names <- sub(".rds", "", file.names)
+
+table.samples <- data.frame(sample.names, file.names)
+
+i <- sapply(table.samples, is.factor)
+table.samples[i] <- lapply(table.samples[i], as.character) # this is for convert the factor to character. 
+
+rm("file.names", "sample.names") # remove individual vector to avoid confusion.  
+
+for (i in 1:length(table.samples$sample.names)) {
+  assign(table.samples$sample.names[i], readRDS(file = file.path(initiation.analysis.folder, table.samples$file.names[i])))
+}
+
+```
+
+```{r include=FALSE}
+library(Seurat)
+source("../R/seurat.make.integrated.R")
+
+initiation.analysis.folder <- "../../../IM_DTR_exp1/analyses/20210112_scRNAseq_initiation/"
+file.names <- list.files(initiation.analysis.folder, pattern = "*.rds")
+sample.names <- sub(".rds", "", file.names)
+
+table.samples <- data.frame(sample.names, file.names)
+
+i <- sapply(table.samples, is.factor)
+table.samples[i] <- lapply(table.samples[i], as.character) # this is for convert the factor to character. 
+
+rm("file.names", "sample.names") # remove individual vector to avoid confusion.  
+
+for (i in 1:length(table.samples$sample.names)) {
+  assign(table.samples$sample.names[i], readRDS(file = file.path(initiation.analysis.folder, table.samples$file.names[i])))
+}
+
+```    
+
+    
+    
+# Build up sample metadata
+ 
+Here's sample order: 
+
+```{r}
+table.samples$sample.names
+```
+
+Make metadata table
+```{r}
+# sample.names
+sample.metadata <- data.frame(
+                              group = c("Cre+", "++"), 
+                              cell.type = rep("lung IM niche (including CD11c)", length(table.samples$sample.names)), 
+                              origin = rep("lung", length(table.samples$sample.names)), 
+                              sample_prefix = gsub("_NGS[a-zA-Z0-9_.-]*", "", table.samples$sample.names))
+rownames(sample.metadata) <- table.samples$sample.names
+sample.metadata
+```
+
+```{r}
+# add sample information: 
+
+for (i in table.samples$sample.names) {
+  obj <- get(i)
+  obj$treatment <- sample.metadata[i, ]$group
+  assign(i, obj)
+}
+
+for (i in table.samples$sample.names) {
+  obj <- get(i)
+  obj$therapy <- sample.metadata[i, ]$cell.type
+  assign(i, obj)
+}
+
+for (i in table.samples$sample.names) {
+  obj <- get(i)
+  obj$therapy <- sample.metadata[i, ]$origin
+  assign(i, obj)
+}
+
+
+# add pre-fix to cellnames: 
+
+for (i in table.samples$sample.names) {
+  obj <- get(i)
+  obj <- RenameCells(obj, add.cell.id = sample.metadata[i, ]$sample_prefix)
+  assign(i, obj)
+}
+
+```
+
+
+Integrate: 
+```{r}
+results.dim30 <- seurat.make.integrated(seuratObjects = sapply(table.samples$sample.names, get), 
+                                                       prefix = table.samples$sample.names, dimensionality = 1:30, 
+                                                       SCTransf = FALSE)
+```
+
+```{r fig.height=4, fig.width=5}
+results.dim30$plots$plot.umap + ggtitle("dim = 1:30")
+```
+
+```{r fig.height=4, fig.width=5}
+results.dim30$plots$plot.tsne + ggtitle("dim = 1:30")
+```
+
+```{r}
+results <- results.dim30$integrated.seuratObject
+```
+
+# Clustering cells
+
+```{r message=FALSE, warning=FALSE}
+results <- FindClusters(results, resolution = 0.5)
+DimPlot(results)
+```
+
+
+```{r eval=FALSE}
+# save data
+saveRDS(results, file = "./results.integrated.Rds")
+```
+
+# Identify cells with SingleR 
+```{r message=FALSE, warning=FALSE}
+source("~/Desktop/velocyto/Script/seurat2singleR.R")
+Idents(results) <- "integrated_snn_res.0.5"
+results.singleR <- seurat2singleR(results, ref = "ImmGenData")
+```
+
+
+```{r eval=FALSE}
+saveRDS(results.singleR, file = "./results.ImmGenData.singleR.Rds")
+```
+
+# Identify cells with marker expression  
+
+```{r fig.width=10, fig.height=10}
+DefaultAssay(results) <- "RNA"
+FeaturePlot(results, features = c("Fcgr1", "H2-Eb1", "Cd74", "Mrc1", "Folr2", "Cd163", "Ace", "Fcgr4"), reduction = "tsne") 
+```
+
+# Combine SingleR and marker expression results
+
+```{r fig.width=10, fig.height=8}
+results$singleR.celltype <- results.singleR$labels
+DimPlot(results, group.by = "singleR.celltype", reduction = "tsne", label = T) + ggtitle("ImmGenData - SingleR identity")
+```
+
+
+```{r}
+DimPlot(results, reduction = "tsne") + ggtitle("results - Clusters")
+```
+
+```{r}
+DimPlot(results, reduction = "umap") + ggtitle("results - Clusters")
+```
+
+```{r fig.height=6, fig.width=8}
+DimPlot(results, group.by = "singleR.celltype", reduction = "umap", label = T) + ggtitle("results - SingleR identity")
+```
+
+```{r fig.height=8, fig.width=16}
+DimPlot(results, group.by = "singleR.celltype", reduction = "umap", label = T, split.by = "object_before_integrated", ncol = 2) + ggtitle("results - SingleR identity (split by sample)")
+```
+
+# Remove other cell types than monocytes/macrophages
+
+Cell numbers per cell type: 
+
+```{r}
+table(results$singleR.celltype)
+```
+
+Keep only "Monocytes", "Macrophages" and "Microglia". As microglia are highly similar to lung IMs and we can exclude the possibility of contamination of brain cells in this experiement, we should keep them for the following analysis. 
+
+```{r}
+results <- results[, WhichCells(results, expression = singleR.celltype %in% c("Monocytes", "Macrophages", "Microglia"))]
+```
+
+
+# Phenotyping of lung monocytes/IMs
+
+## Clean data after filtering
+
+Remove old snn: 
+
+```{r}
+results$RNA_snn_res.0.5 <- NULL
+results$integrated_snn_res.0.5 <- NULL
+```
+
+Save data
+```{r eval=FALSE}
+saveRDS(results, file = "./results.cellType_filtered.seuratObject.Rds")
+```
+
+## Data re-processing 
+
+```{r message=FALSE, warning=FALSE}
+DefaultAssay(results) <- "RNA"
+results <- NormalizeData(results)
+results <- FindVariableFeatures(results, selection.method = "vst", nfeatures = 2000)
+results <- ScaleData(results, features = rownames(results))
+results <- RunPCA(results, features = VariableFeatures(results))
+results <- RunTSNE(results, dims = 1:20)
+results <- RunUMAP(results, dims = 1:20)
+```
+
+```{r}
+DimPlot(results, reduction = "tsne", split.by = "treatment")
+```
+
+```{r}
+DimPlot(results, reduction = "umap", split.by = "treatment")
+```
+## Clustering of cells
+
+```{r message=FALSE, warning=FALSE}
+  results <- FindNeighbors(results, dims = 1:20)
+  results <- FindClusters(results, resolution = 0.3) 
+```
+
+```{r fig.width=6, fig.height=5}
+Idents(results) <- "RNA_snn_res.0.3"
+DimPlot(results, group.by = "RNA_snn_res.0.3", label = TRUE)
+```
+
+```{r fig.width=12, fig.height=5}
+DimPlot(results, split.by = "treatment", group.by = "RNA_snn_res.0.3", label = TRUE)
+```
+
+```{r fig.width=6, fig.height=5}
+DimPlot(results, group.by = "RNA_snn_res.0.3", reduction = "tsne", label = TRUE)
+```
+
+```{r fig.width=12, fig.height=5}
+DimPlot(results, split.by = "treatment", group.by = "RNA_snn_res.0.3", reduction = "tsne", label = TRUE)
+```
+Distribution of each cluster across the samples
+
+```{r fig.width=3, fig.height=4}
+source("../R/SeuratFreqTable.R")
+freq.celltype.list <- list(
+  `Cre+` = Seurat2CellFreqTable(subset(results, subset = treatment == "Cre+"), slotName = "RNA_snn_res.0.3"),  
+  `++` = Seurat2CellFreqTable(subset(results, subset = treatment == "++"), slotName = "RNA_snn_res.0.3") 
+)
+
+source("~/Desktop/velocyto/Script/barChart.R")
+barChart(freq.celltype.list) + labs(fill = "Cluster")
+```
+
+## Population characterization
+
+```{r fig.width=8, fig.height=15, message=FALSE}
+library(dplyr)
+all_cluster.markers <- FindAllMarkers(results)
+top20 <- all_cluster.markers %>% group_by(cluster) %>% top_n(n = 20, wt = avg_log2FC)
+DoHeatmap(results, features = top20$gene) + NoLegend()
+```
+
+Expression of markers: 
+
+```{r fig.height=16, fig.width=16}
+VlnPlot(results, features = c("Ccr2", "Plac8" ,"Ccr2", "Spn", 
+                              "Fcgr4", "Ace", "Cxcr4", 
+                              "Mrc1", "Cd63", "Apoe", 
+                              "H2-DMb2", "H2-Eb1", "Cd74", "Cd209a", 
+                              "Ccnd1","Mki67", "Top2a", "Ccl2", 
+                              "Irf7", "Cxcl10", "Ifit1", "Ifit2", "Ifi47", "Itgax") , 
+        split.by = "object_before_integrated", ncol = 4)
+```
+
+## Cell-cycle analysis
+
+```{r}
+library(cowplot)
+data("geneinfo_human", package = "nichenetr")
+s.genes <- nichenetr::convert_human_to_mouse_symbols(cc.genes.updated.2019$s.genes)
+g2m.genes <- nichenetr::convert_human_to_mouse_symbols(cc.genes.updated.2019$g2m.genes)
+results <- CellCycleScoring(results, s.features = s.genes, g2m.features = g2m.genes, set.ident = FALSE)
+DimPlot(results, group.by = "Phase")
+```
+```{r}
+DimPlot(results, group.by = "Phase", reduction = "tsne")
+```
+
+Distribution of cell phases
+
+```{r}
+freq.celltype.list <- list(
+  Cluster0 = Seurat2CellFreqTable(subset(results, ident = 0), slotName = "Phase"), 
+  Cluster1 = Seurat2CellFreqTable(subset(results, ident = 1), slotName = "Phase"), 
+  Cluster2 = Seurat2CellFreqTable(subset(results, ident = 2), slotName = "Phase"), 
+  Cluster3 = Seurat2CellFreqTable(subset(results, ident = 3), slotName = "Phase"), 
+  Cluster4 = Seurat2CellFreqTable(subset(results, ident = 4), slotName = "Phase"), 
+  Cluster5 = Seurat2CellFreqTable(subset(results, ident = 5), slotName = "Phase")
+)
+barChart(freq.celltype.list) + labs(fill = "Cell-cycle phase")
+```
+
+
+# Session information
+
+```{r}
+sessionInfo()
+```
+
+# References

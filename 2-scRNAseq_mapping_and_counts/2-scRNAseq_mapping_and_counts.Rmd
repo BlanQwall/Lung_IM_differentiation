@@ -1,0 +1,52 @@
+---
+subtitle: "2-scRNAseq mapping and counts"
+# bibliography: bib.bib
+link-citations: yes
+date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+output: 
+  pdf_document:
+    pandoc_args: 
+      - '../common.yaml'
+      - --listings
+    includes: 
+      in_header: '../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+\newpage
+
+# Description
+
+The Cell Ranger (v3.0.2) application (10x Genomics) was then used to demultiplex the BCL files into FASTQ files (cellranger mkfastq), to perform alignment (to Cell Ranger mouse genome references GRCm38/Ensembl97), barcode filtering, UMI counting and to produce gene—barcode matrices (cellranger count).
+
+# CellRanger count from fastq
+
+The script below was used to do the mapping and counting with Cellranger. 
+
+```{bash eval=FALSE}
+#!/usr/bin/env bash
+
+	cellranger count	--id=${id} \
+				--fastqs="${FastqDir}/${id}" \
+				--transcriptome=$REF
+
+```
+
+Here, `$id`, `$FastqDir` and `$REF` are the sample ID, the directory containing fastq files and transcriptome reference directory (mouse genome references GRCm38/Ensembl97). 
+
+# Session information
+
+```{r}
+sessionInfo()
+```
+
+# References
