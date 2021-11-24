@@ -1,0 +1,263 @@
+---
+subtitle: "6-Merge two experiment"
+# bibliography: bib.bib
+link-citations: yes
+date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+output: 
+  pdf_document:
+    pandoc_args: 
+      - '../common.yaml'
+      - --listings
+    includes: 
+      in_header: '../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+\newpage
+
+# Description
+
+
+
+# Load data 
+
+```{r message=FALSE, warning=FALSE}
+library(Seurat)
+library(ggplot2)
+
+imdtr1 <- readRDS("../../../IM_DTR_exp1/analyses/20210114_cell_id/results.withSingleR.Rds")
+imdtr2 <- readRDS("../../../IM_DTR_exp2/analyses/20210409_immune_cell_id/immune.cellType_filtered.withSingleR.seuratObject.Rds")
+```
+
+# Merge Exp1 and Exp2
+
+Prepare metadata: 
+```{r}
+imdtr1$orig.ident <- "IM-DTR1"
+imdtr2$orig.ident <- "IM-DTR2"
+
+imdtr1$cell.type0 <- "CD45+"
+
+imdtr1$cell.type2 <- imdtr1$RNA_snn_res.0.3
+
+imdtr1$treatment <- ifelse(imdtr1$treatment=="Cre+", "96hDT", no = "noTreatment")
+imdtr2$treatment <- sub(imdtr2$treatment, pattern = "HT[0-9]-", replacement = "")
+```
+
+Now merge: 
+```{r}
+imdtr3 <- merge(imdtr1, imdtr2, project = "IM-DTR")
+```
+
+Normalize and process: 
+```{r message=FALSE, warning=FALSE}
+imdtr3 <- NormalizeData(imdtr3)
+imdtr3 <- FindVariableFeatures(imdtr3, selection.method = "vst", nfeatures = 2000)
+imdtr3 <- ScaleData(imdtr3, features = rownames(imdtr3))
+```
+
+```{r message=FALSE, warning=FALSE}
+imdtr3 <- RunPCA(imdtr3, features = VariableFeatures(imdtr3))
+```
+
+```{r message=FALSE, warning=FALSE}
+imdtr3 <- JackStraw(imdtr3, num.replicate = 100)
+imdtr3 <- ScoreJackStraw(imdtr3, dims = 1:20)
+JackStrawPlot(imdtr3, dims = 1:20)
+```
+*Samples from Exp1 and Exp2 are so similar. * 
+
+Remove old calculated neighbor (snn): 
+```{r}
+meta.names <- names(imdtr3@meta.data)
+old.snn <- meta.names[startsWith(meta.names, "RNA_snn") | startsWith(meta.names, "res") | startsWith(meta.names, "Clusternames") | startsWith(meta.names, "ClusterNames")]
+for (i in old.snn) { 
+  imdtr3[[i]] <- NULL
+}
+```
+
+```{r message=FALSE, warning=FALSE}
+imdtr3 <- RunPCA(imdtr3, features = VariableFeatures(imdtr3))
+```
+
+```{r}
+PCAPlot(imdtr3, group.by = "treatment")
+```
+
+```{r}
+PCAPlot(imdtr3, group.by = "orig.ident")
+```
+*Samples from Exp1 and Exp2 are so similar. * 
+
+Non-linear reduction:
+
+```{r}
+results <- RunTSNE(imdtr3, dims = 1:6)
+```
+
+Calculate UMAP in 3D:
+
+```{r}
+imdtr3.for3d <- RunUMAP(imdtr3, dims = 1:6, n.components = 3L)
+```
+
+## Presentation in 3D
+
+```{r}
+library(rgl)
+library(RColorBrewer)
+
+umap_1 <- imdtr3.for3d@reductions$umap@cell.embeddings[,1]
+umap_2 <- imdtr3.for3d@reductions$umap@cell.embeddings[,2]
+umap_3 <- imdtr3.for3d@reductions$umap@cell.embeddings[,3]
+
+plot3d(x = umap_1, y = umap_2, z = umap_3, col = factor(imdtr3.for3d$cell.type2, labels = brewer.pal(length(unique(imdtr3.for3d$cell.type2)), name = "Paired")), size = 3)
+rglwidget()
+```
+*3d plot shows only one bridge exists. *
+
+## Cluster cells
+
+```{r message=FALSE, warning=FALSE}
+imdtr3.for3d <- FindNeighbors(imdtr3.for3d, dims = 1:10)
+imdtr3.for3d <- FindClusters(imdtr3.for3d, resolution = 0.23) 
+```
+
+```{r fig.height=4, fig.width=12}
+Idents(imdtr3.for3d) <- "RNA_snn_res.0.23"
+pal <- brewer.pal(length(levels(imdtr3.for3d)), name = "Paired")
+DimPlot(imdtr3.for3d, label = TRUE, split.by = "treatment", cols = pal, reduction = "umap")
+```
+*The cluster 6 could be DCs*
+
+```{r fig.width=5, fig.height=4}
+source("../R/SeuratFreqTable.R")
+freq.celltype.list <- list(
+  `12hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "12hDT"), slotName = "RNA_snn_res.0.23"),  
+  `24hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "24hDT"), slotName = "RNA_snn_res.0.23"),
+  `48hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "48hDT"), slotName = "RNA_snn_res.0.23"),
+  `96hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "96hDT"), slotName = "RNA_snn_res.0.23"),
+  `noTreatment` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "noTreatment"), slotName = "RNA_snn_res.0.23")   
+)
+
+source("../R/barChart.R")
+barChart(freq.celltype.list) + labs(fill = "Cluster") + scale_fill_manual(values = pal)
+```
+
+# Population characterization
+
+```{r fig.width=8, fig.height=15}
+library(dplyr)
+all_cluster.markers <- FindAllMarkers(imdtr3.for3d, verbose = FALSE)
+top20 <- all_cluster.markers %>% group_by(cluster) %>% top_n(n = 20, wt = avg_log2FC)
+DoHeatmap(imdtr3.for3d, features = top20$gene, group.colors = pal) + NoLegend()
+```
+Cluster 0: ClaMo
+Cluster 1: PatMo
+Cluster 2: MHCII_IM
+Cluster 3: CD206_IM
+Cluster 4: Chemoattractant
+Cluster 5: Transit
+Cluster 6: ? 
+
+## Identify the Cluster 6
+
+GO for cluster 6:
+```{r}
+library(topGO)
+library(org.Mm.eg.db)
+allSymbols <- unique(select(org.Mm.eg.db, keys(org.Mm.eg.db),columns = "SYMBOL")$SYMBOL)
+extended_signatures_cluster6 <- filter(all_cluster.markers, avg_log2FC > 0.5 & -log10(p_val) > 2 & cluster == "6")
+myInterestingGenes <- 
+  as.character(extended_signatures_cluster6$gene)
+
+geneList <- factor(as.integer(allSymbols %in% myInterestingGenes))
+names(geneList) <- allSymbols
+
+
+sampleGOdata <- new("topGOdata", 
+                    description = "Simple session", ontology = "BP",
+                    allGenes = geneList, 
+                    annot = annFUN.org, mapping = "org.Mm.eg.db", ID = "SYMBOL")
+resultFisher <- runTest(sampleGOdata, algorithm = "classic", statistic = "fisher")
+GenTable(sampleGOdata, classicFisher = resultFisher, topNodes = 20)
+```
+
+
+```{r}
+FeaturePlot(imdtr3, features = "Ccr7")
+```
+
+Cluster 0: ClaMo
+Cluster 1: PatMo
+Cluster 2: MHCII_IM
+Cluster 3: CD206_IM
+Cluster 4: Dying_IM
+Cluster 5: Transit
+Cluster 6: DC
+
+change the idents
+```{r}
+levels(imdtr3)
+```
+
+```{r fig.width=16, fig.height=5}
+imdtr3.for3d$cell.type2 <- factor(Idents(imdtr3.for3d), labels = c("Classical_Mono", "Patrolling_Mono", "MHCII_IM", "CD206_IM", "Dying_IM", "Transit", "DC"))
+Idents(imdtr3.for3d) <- "cell.type2"
+DimPlot(imdtr3.for3d, label = TRUE, split.by = "treatment", cols = pal)
+```
+
+```{r fig.width=5, fig.height=4}
+freq.celltype.list <- list(
+  `12hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "12hDT"), slotName = "cell.type2"),  
+  `24hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "24hDT"), slotName = "cell.type2"),
+  `48hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "48hDT"), slotName = "cell.type2"),
+  `96hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "96hDT"), slotName = "cell.type2"),
+  `noTreatment` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "noTreatment"), slotName = "cell.type2")   
+)
+
+barChart(freq.celltype.list) + labs(fill = "Cluster") + scale_fill_manual(values = pal)
+```
+
+# Cell-cycle analysis
+
+```{r}
+library(cowplot)
+data("geneinfo_human", package = "nichenetr")
+s.genes <- nichenetr::convert_human_to_mouse_symbols(cc.genes.updated.2019$s.genes)
+g2m.genes <- nichenetr::convert_human_to_mouse_symbols(cc.genes.updated.2019$g2m.genes)
+imdtr3.for3d <- CellCycleScoring(imdtr3.for3d, s.features = s.genes, g2m.features = g2m.genes, set.ident = FALSE)
+DimPlot(imdtr3.for3d, group.by = "Phase")
+```
+
+```{r fig.height=5, fig.width=16}
+DimPlot(imdtr3.for3d, group.by = "Phase", reduction = "umap", split.by = "treatment")
+
+```
+
+2d plot: 
+```{r fig.height=6, fig.width=7}
+DimPlot(imdtr3.for3d, cols = pal)
+```
+
+
+```{r}
+saveRDS(imdtr3.for3d, file = "./immune_imdtr3.seuratObject.Rds")
+```
+
+# Session information
+
+```{r}
+sessionInfo()
+```
+
+# References

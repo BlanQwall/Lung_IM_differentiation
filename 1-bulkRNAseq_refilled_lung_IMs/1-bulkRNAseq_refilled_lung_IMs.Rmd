@@ -161,10 +161,59 @@ heatmap <- pheatmap(sampleDistMatrix,
 
 ## PCA analysis
 
+Calculate PCs: 
 ```{r}
-plotPCA <- plotPCA(rld, intgroup = c("cellType3", "treatment"))
-plotPCA
+PlotData <- plotPCA(rld, intgroup = c("cellType3", "treatment"), returnData=TRUE)
 ```
+
+Construct plot: 
+
+```{r fig.height=3, fig.width=4}
+percentVar<-round(100 * attr(PlotData, "percentVar"))
+
+ggplot(PlotData,aes(PC1,PC2)) + 
+	geom_point(size=3, aes(color = cellType3, shape = treatment)) +
+	xlab(paste0("PC1: ", percentVar[1],"% variance")) +
+	ylab(paste0("PC2: ", percentVar[2],"% variance")) + 
+  scale_color_manual(
+    breaks = c( "CD206neg IM", 
+                "CD206pos IM", 
+                "AM", 
+                "Ly6Cpos Mo"), 
+    values = c(
+                       "#B2DF8A", # CD206- 
+                       "#33A02C", # CD206+ 
+                       "#FF7F00", # AM
+                       "#A6CEE3" # Cla mo
+                     )) + 
+  scale_shape_manual(
+    breaks = c(
+      "control", 
+      "refilled"
+    ),
+    values=c(
+      16, #"CD206neg IM:control",
+      1 #"CD206neg IM:refilled",
+    ))+
+  theme(
+    aspect.ratio=1, 
+    panel.background = element_rect(fill = "white", colour = "grey50"), 
+    axis.text=element_text(size=7),
+        axis.title=element_text(size=7,face="bold"), 
+    legend.key = element_blank(), 
+    legend.text = element_text(size=7), 
+    legend.title = element_text(size = 7), 
+  )
+  
+```
+```{r include=FALSE}
+ggsave(filename = "PCA_bulkRNAseq.pdf",
+       path = "../Figures", 
+       height = 3, width = 4, 
+       device = "pdf")
+```
+
+
 *AM, IM and monocytes are grouped together. The refilled/control IMs are highly similar.*
 
 Redo PCA with only IMs: 
@@ -213,62 +262,128 @@ summary(res_refilled_vs_control)
 res_refilled_vs_control_Shrunk <- lfcShrink(dds.im, contrast=c("treatment", "refilled", "control"), res=res_refilled_vs_control, type = "normal")
 
 refilled_vs_control <- merge(x=as.data.frame(res_refilled_vs_control), y=as.data.frame(res_refilled_vs_control_Shrunk), by=c(0,1))
+```
 
-head(refilled_vs_control)
+## Differentially expressed (DE) genes in comparing refilled vs control CD206+ IMs
+
+```{r}
+# redo with only CD206+ samples: 
+dds.cd206pos.im <- DESeqDataSetFromMatrix(
+  countData= COUNTS[,SampleSheet$cellType3=="CD206pos IM"],
+  colData= SampleSheet[SampleSheet$cellType3=="CD206pos IM", ],
+  design= ~ treatment 
+)
+dds.cd206pos.im <- dds.cd206pos.im[ rowSums(counts(dds.cd206pos.im)) > 1,]
+
+dds.cd206pos.im <- DESeq(dds.cd206pos.im)
+resultsNames(dds.cd206pos.im)
 ```
 
 
+```{r}
+res_refilled_vs_control_CD206pos<- results(dds.cd206pos.im, contrast = c("treatment", "refilled", "control"))
+summary(res_refilled_vs_control_CD206pos) 
+```
+```{r}
+res_refilled_vs_control_CD206pos_Shrunk <- lfcShrink(dds.cd206pos.im, contrast=c("treatment", "refilled", "control"), res=res_refilled_vs_control_CD206pos, type = "normal")
+
+refilled_vs_control_CD206pos <- merge(x=as.data.frame(res_refilled_vs_control_CD206pos), y=as.data.frame(res_refilled_vs_control_CD206pos_Shrunk), by=c(0,1))
+```
+
+## Differentially expressed (DE) genes in comparing refilled vs control CD206- IMs
+
+```{r}
+# redo with only CD206- samples: 
+dds.CD206neg.im <- DESeqDataSetFromMatrix(
+  countData= COUNTS[,SampleSheet$cellType3=="CD206neg IM"],
+  colData= SampleSheet[SampleSheet$cellType3=="CD206neg IM", ],
+  design= ~ treatment 
+)
+dds.CD206neg.im <- dds.CD206neg.im[ rowSums(counts(dds.CD206neg.im)) > 1,]
+
+dds.CD206neg.im <- DESeq(dds.CD206neg.im)
+resultsNames(dds.CD206neg.im)
+```
+
+
+```{r}
+res_refilled_vs_control_CD206neg<- results(dds.CD206neg.im, contrast = c("treatment", "refilled", "control"))
+summary(res_refilled_vs_control_CD206neg) 
+```
+```{r}
+res_refilled_vs_control_CD206neg_Shrunk <- lfcShrink(dds.CD206neg.im, contrast=c("treatment", "refilled", "control"), res=res_refilled_vs_control_CD206neg, type = "normal")
+
+refilled_vs_control_CD206neg <- merge(x=as.data.frame(res_refilled_vs_control_CD206neg), y=as.data.frame(res_refilled_vs_control_CD206neg_Shrunk), by=c(0,1))
+```
 
 # Export DE genes for other analyses
 
 ```{r}
 Genes2 <- refilled_vs_control$Row.names
+Genes2.CD206pos <- refilled_vs_control_CD206pos$Row.names
+Genes2.CD206neg <- refilled_vs_control_CD206neg$Row.names
+
 rownames(refilled_vs_control) = make.names(Genes2, unique=TRUE)
+rownames(refilled_vs_control_CD206pos) = make.names(Genes2.CD206pos, unique=TRUE)
+rownames(refilled_vs_control_CD206neg) = make.names(Genes2.CD206neg, unique=TRUE)
+
+
 refilled_vs_control<- refilled_vs_control[,-1]
+refilled_vs_control_CD206pos<- refilled_vs_control_CD206pos[,-1]
+refilled_vs_control_CD206neg<- refilled_vs_control_CD206neg[,-1]
 ```
 
 
 Filter
 ```{r}
 refilled_vs_control <- refilled_vs_control[!is.na(refilled_vs_control$padj.y),]
+refilled_vs_control_CD206pos <- refilled_vs_control_CD206pos[!is.na(refilled_vs_control_CD206pos$padj.y),]
+refilled_vs_control_CD206neg <- refilled_vs_control_CD206neg[!is.na(refilled_vs_control_CD206neg$padj.y),]
+
 refilled_vs_control_1 <- subset(refilled_vs_control, padj.y < 0.05)
-dim(refilled_vs_control_1)
+refilled_vs_control_1_CD206pos <- subset(refilled_vs_control_CD206pos, padj.y < 0.05)
+refilled_vs_control_1_CD206neg <- subset(refilled_vs_control_CD206neg, padj.y < 0.05)
 ```
 
 ```{r}
 refilled_vs_control_ordered <- refilled_vs_control_1[order(-refilled_vs_control_1$log2FoldChange.y) , ]
-refilled_vs_control_ordered
+refilled_vs_control_ordered_CD206pos <- refilled_vs_control_1_CD206pos[order(-refilled_vs_control_1_CD206pos$log2FoldChange.y) , ]
+refilled_vs_control_ordered_CD206neg <- refilled_vs_control_1_CD206neg[order(-refilled_vs_control_1_CD206neg$log2FoldChange.y) , ]
 ```
 
 Save data for other analyses
 
-```{r eval=FALSE}
-write.table(as.data.frame(refilled_vs_control_ordered), "./Results_refilled_vs_control_in_IMs.txt", sep="\t", row.names=T,col.names=T)
-
-```
-
-# Volcano plots
-
 ```{r}
-keyvals <- rep("black", nrow(refilled_vs_control))
-names(keyvals) <- rep("non-signif", nrow(refilled_vs_control))
-
-keyvals[which(refilled_vs_control$log2FoldChange.y > 1 )] <- "red"
-names(keyvals)[which(refilled_vs_control$log2FoldChange.y > 1)] <- "Refilled"
-
-keyvals[which(refilled_vs_control$log2FoldChange.y < -1)] <- "blue"
-names(keyvals)[which(refilled_vs_control$log2FoldChange.y < -1)] <- "Control"
+write.table(as.data.frame(refilled_vs_control_ordered), "./Results_refilled_vs_control_in_IMs.txt", sep="\t", row.names=T,col.names=T)
+write.table(as.data.frame(refilled_vs_control_ordered_CD206pos), "./Results_refilled_vs_control_in_CD206pos_IMs.txt", sep="\t", row.names=T,col.names=T)
+write.table(as.data.frame(refilled_vs_control_ordered_CD206neg), "./Results_refilled_vs_control_in_CD206neg_IMs.txt", sep="\t", row.names=T,col.names=T)
 
 ```
+
+# Presentation of DE genes in volcano plots
+
+## Refilled vs control IMs
 
 ```{r fig.width=6, fig.height=5}
-EnhancedVolcano(refilled_vs_control,
-                lab = rownames(refilled_vs_control),
+de.res <- refilled_vs_control
+
+de.res$Gene <- rownames(de.res)
+keyvals <- rep("black", nrow(de.res))
+names(keyvals) <- rep("non-signif", nrow(de.res))
+
+keyvals[which(de.res$log2FoldChange.y > 1 )] <- "red"
+names(keyvals)[which(de.res$log2FoldChange.y > 1)] <- "Refilled"
+
+keyvals[which(de.res$log2FoldChange.y < -1)] <- "blue"
+names(keyvals)[which(de.res$log2FoldChange.y < -1)] <- "Control"
+
+plot.vol <- EnhancedVolcano(de.res, subtitle = "", 
+                lab = rownames(de.res),
                 x = 'log2FoldChange.y',
                 y = 'padj.y',
                 xlim = c(-3, 3),
                 ylim=c(0, -log10(10e-75)),
-                labSize = 0,
+                labSize = 3,
                 pCutoff = 0.05,
                 FCcutoff = 1,
                 colAlpha = 1,
@@ -277,19 +392,138 @@ EnhancedVolcano(refilled_vs_control,
                 legendIconSize = 2.0,
                 border = "full",
                 legendPosition = "right",
-                axisLabSize = 20)
+                axisLabSize = 20, 
+                title = "Refilled vs control IMs")
+
+plot.vol
+```
+
+```{r include=FALSE}
+ggsave(filename = "VolcanoPlot_Refilled_vs_control_in_total_IMs.pdf",
+       path = "../Figures", 
+       height = 5, width = 6, 
+       device = "pdf")
 ```
 
 What are these genes? 
 
 ```{r}
-# the Refilled-related genes: 
-rownames(refilled_vs_control)[names(keyvals) == "Refilled"]
+# the Refilled-related genes total IMs: 
+rownames(de.res)[names(keyvals) == "Refilled"]
 ```
 
 ```{r}
-# the Refilled-related genes: 
-rownames(refilled_vs_control)[names(keyvals) == "Control"]
+# the Refilled-related genes total IMs: 
+rownames(de.res)[names(keyvals) == "Control"]
+```
+
+## Refilled vs control CD206+ IMs
+
+```{r fig.width=6, fig.height=5}
+de.res <- refilled_vs_control_CD206pos
+
+de.res$Gene <- rownames(de.res)
+keyvals <- rep("black", nrow(de.res))
+names(keyvals) <- rep("non-signif", nrow(de.res))
+
+keyvals[which(de.res$log2FoldChange.y > 1 )] <- "red"
+names(keyvals)[which(de.res$log2FoldChange.y > 1)] <- "Refilled"
+
+keyvals[which(de.res$log2FoldChange.y < -1)] <- "blue"
+names(keyvals)[which(de.res$log2FoldChange.y < -1)] <- "Control"
+
+plot.vol <- EnhancedVolcano(de.res, subtitle = "", 
+                lab = rownames(de.res),
+                x = 'log2FoldChange.y',
+                y = 'padj.y',
+                xlim = c(-3, 3),
+                ylim=c(0, -log10(10e-75)),
+                labSize = 3,
+                pCutoff = 0.05,
+                FCcutoff = 1,
+                colAlpha = 1,
+                colCustom = keyvals,
+                legendLabSize = 8,
+                legendIconSize = 2.0,
+                border = "full",
+                legendPosition = "right",
+                axisLabSize = 20, 
+                title = "Refilled vs control CD206+ IMs")
+
+plot.vol
+```
+
+```{r include=FALSE}
+ggsave(filename = "VolcanoPlot_Refilled_vs_control_in_CD206pos_IMs.pdf",
+       path = "../Figures", 
+       height = 5, width = 6, 
+       device = "pdf")
+```
+
+What are these genes? 
+
+```{r}
+# the Refilled-related genes CD206+ IMs: 
+rownames(de.res)[names(keyvals) == "Refilled"]
+```
+
+```{r}
+# the Refilled-related genes CD206+ IMs: 
+rownames(de.res)[names(keyvals) == "Control"]
+```
+
+
+## Refilled vs control CD206- IMs
+
+```{r fig.width=6, fig.height=5}
+de.res <- refilled_vs_control_CD206neg
+
+de.res$Gene <- rownames(de.res)
+keyvals <- rep("black", nrow(de.res))
+names(keyvals) <- rep("non-signif", nrow(de.res))
+
+keyvals[which(de.res$log2FoldChange.y > 1 )] <- "red"
+names(keyvals)[which(de.res$log2FoldChange.y > 1)] <- "Refilled"
+
+keyvals[which(de.res$log2FoldChange.y < -1)] <- "blue"
+names(keyvals)[which(de.res$log2FoldChange.y < -1)] <- "Control"
+
+plot.vol <- EnhancedVolcano(de.res, subtitle = "", 
+                lab = rownames(de.res),
+                x = 'log2FoldChange.y',
+                y = 'padj.y',
+                xlim = c(-3, 3),
+                ylim=c(0, -log10(10e-75)),
+                labSize = 3,
+                pCutoff = 0.05,
+                FCcutoff = 1,
+                colAlpha = 1,
+                colCustom = keyvals,
+                legendLabSize = 8,
+                legendIconSize = 2.0,
+                border = "full",
+                legendPosition = "right",
+                axisLabSize = 20, 
+                title = "Refilled vs control CD206- IMs")
+
+plot.vol
+```
+
+```{r include=FALSE}
+ggsave(filename = "VolcanoPlot_Refilled_vs_control_in_CD206neg_IMs.pdf",
+       path = "../Figures", 
+       height = 5, width = 6, 
+       device = "pdf")
+```
+
+```{r}
+# the Refilled-related genes CD206- IMs: 
+rownames(de.res)[names(keyvals) == "Refilled"]
+```
+
+```{r}
+# the Refilled-related genes CD206- IMs: 
+rownames(de.res)[names(keyvals) == "Control"]
 ```
 
 ## Plot the top DE genes 
