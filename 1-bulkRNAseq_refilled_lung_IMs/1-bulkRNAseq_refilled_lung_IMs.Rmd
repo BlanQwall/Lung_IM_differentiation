@@ -409,12 +409,12 @@ What are these genes?
 
 ```{r}
 # the Refilled-related genes total IMs: 
-rownames(de.res)[names(keyvals) == "Refilled"]
+tibble(rownames(de.res)[names(keyvals) == "Refilled"])
 ```
 
 ```{r}
 # the Refilled-related genes total IMs: 
-rownames(de.res)[names(keyvals) == "Control"]
+tibble(rownames(de.res)[names(keyvals) == "Control"])
 ```
 
 ## Refilled vs control CD206+ IMs
@@ -464,12 +464,12 @@ What are these genes?
 
 ```{r}
 # the Refilled-related genes CD206+ IMs: 
-rownames(de.res)[names(keyvals) == "Refilled"]
+tibble(rownames(de.res)[names(keyvals) == "Refilled"])
 ```
 
 ```{r}
 # the Refilled-related genes CD206+ IMs: 
-rownames(de.res)[names(keyvals) == "Control"]
+tibble(rownames(de.res)[names(keyvals) == "Control"])
 ```
 
 
@@ -518,12 +518,12 @@ ggsave(filename = "VolcanoPlot_Refilled_vs_control_in_CD206neg_IMs.pdf",
 
 ```{r}
 # the Refilled-related genes CD206- IMs: 
-rownames(de.res)[names(keyvals) == "Refilled"]
+tibble(rownames(de.res)[names(keyvals) == "Refilled"])
 ```
 
 ```{r}
 # the Refilled-related genes CD206- IMs: 
-rownames(de.res)[names(keyvals) == "Control"]
+tibble(rownames(de.res)[names(keyvals) == "Control"])
 ```
 
 ## Plot the top DE genes 
