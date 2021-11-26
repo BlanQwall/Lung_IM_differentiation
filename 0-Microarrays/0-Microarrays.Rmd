@@ -112,7 +112,15 @@ length(genes.toShow)
 
 ```{r}
 rownames(expr.table.toShow) <- expr.table.toShow$Gene.Symbol
+rownames(expr.table.toShow)
 ```
+
+Remove the row without annotation:
+
+```{r}
+expr.table.toShow <- expr.table.toShow[expr.table.toShow$Gene.Symbol != "---", ]
+```
+
 
 ## Make metadata table
 
