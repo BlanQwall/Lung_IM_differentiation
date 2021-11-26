@@ -1,5 +1,5 @@
 ---
-subtitle: "6-Merge two experiment"
+subtitle: "6-Merge two experiments and plot presentation"
 # bibliography: bib.bib
 link-citations: yes
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
@@ -212,20 +212,29 @@ levels(imdtr3)
 
 ```{r fig.width=16, fig.height=5}
 imdtr3.for3d$cell.type2 <- factor(Idents(imdtr3.for3d), labels = c("Classical_Mono", "Patrolling_Mono", "MHCII_IM", "CD206_IM", "Dying_IM", "Transit", "DC"))
+
+
 Idents(imdtr3.for3d) <- "cell.type2"
 DimPlot(imdtr3.for3d, label = TRUE, split.by = "treatment", cols = pal)
 ```
 
 ```{r fig.width=5, fig.height=4}
 freq.celltype.list <- list(
+  `noTreatment` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "noTreatment"), slotName = "cell.type2"),   
   `12hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "12hDT"), slotName = "cell.type2"),  
   `24hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "24hDT"), slotName = "cell.type2"),
   `48hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "48hDT"), slotName = "cell.type2"),
-  `96hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "96hDT"), slotName = "cell.type2"),
-  `noTreatment` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "noTreatment"), slotName = "cell.type2")   
+  `96hDT` = Seurat2CellFreqTable(subset(imdtr3.for3d, subset = treatment == "96hDT"), slotName = "cell.type2")
 )
 
 barChart(freq.celltype.list) + labs(fill = "Cluster") + scale_fill_manual(values = pal)
+```
+
+```{r include=FALSE}
+ggsave(filename = "BarPlot_distribution_celltypes_in_samples.pdf",
+       path = "../Figures", 
+       height = 4, width = 5, 
+       device = "pdf")
 ```
 
 # Cell-cycle analysis
@@ -363,14 +372,100 @@ if (savePNG) {
 
 ```{r fig.height=5, fig.width=5}
 treat.list <- c("12hDT","24hDT","48hDT","96hDT","noTreatment")
-for (treat in treat.list) {
-  plot3d.byGroup(imdtr3.for3d, treat)
-                 }
+# savePNG doesn't work. 
+# everytime, save PNG manually with width = 700, height = 630. 
+  plot3d.byGroup(imdtr3.for3d, treat.list[1])
+```
+
+Heatmap: 
+```{r fig.width=5, fig.height=6, warning=FALSE, message=FALSE}
+DoHeatmap(imdtr3.for3d, features = top20$gene, group.colors = pal, size = 0) + scale_fill_gradientn(colors = c("dark blue", "black", "red")) +
+   theme(axis.text.y = element_text(size = 4))
+```
+
+```{r include=FALSE}
+ggsave(filename = "HeatMap_top20_in_cell_types.pdf",
+       path = "../Figures", 
+       height = 6, width = 5, 
+       device = "pdf")
+```
+
+Dot plot show cell type markers: 
+
+```{r fig.width=9, fig.height=4}
+DotPlot(imdtr3.for3d, features = c("Ccr2", "Irf7", "Ly6c2",
+                                   "Ace", "Nr4a1", "Fcgr4", 
+                                   "H2-Ab1", "H2-Eb1", "Cd74", 
+                                   "Lyve1", "Mrc1", "C1qa", 
+                                   "Tnf", "Bax", "Trp53", 
+                                   "Mki67", "Top2a", "Cdk1", 
+                                   "Zbtb46", "Ccr7", "Id2"
+                                   )) + 
+   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r include=FALSE}
+ggsave(filename = "DotPlot_Markers_in_cell_types.pdf",
+       path = "../Figures", 
+       height = 4, width = 9, 
+       device = "pdf")
+```
+
+Cell-cycle score: 
+```{r}
+# color gradient
+col_gradient <- colorRampPalette(c("dark blue", "red"))(256)
+
+# assign color in scaled cell-cycle score
+val <- imdtr3.for3d$G2M.Score
+col_ix <- round((val - min(val))/(max(val)-min(val)) * 255, digits = 0)
+col_pal <- col_gradient[col_ix + 1 ] # because range will be 0:255
+names(col_pal) <- names(col_ix)
 ```
 
 
 ```{r}
-close3d()
+open3d()
+points3d(x = umap_1, y = umap_2, z = umap_3, 
+       col = col_pal, 
+       size = 3)
+#decorate3d(  box = FALSE,axes = FALSE, xlab = NULL, ylab = NULL, zlab = NULL)
+axes3d(edges = c("x--", "y--", "z--"), alpha = 0.5) 
+# bbox3d(box=TRUE) 
+title3d(xlab = 'UMAP1', ylab = 'UMAP2', zlab = 'UMAP3', alpha = 0.7)
+rgl.bringtotop()
+rgl.viewpoint(30, -20, zoom = 0.6)
+# rgl.postscript( filename = "../Docs/Figures/test.eps", fmt = "eps", drawText = TRUE )
+rglwidget()
+#close3d()
+```
+
+```{r}
+open3d()
+points3d(x = umap_1, y = umap_2, z = umap_3, 
+       col = factor(Idents(imdtr3.for3d), labels = brewer.pal(length(unique(imdtr3.for3d$cell.type2)), name = "Paired")), 
+       size = 3)
+#decorate3d(  box = FALSE,axes = FALSE, xlab = NULL, ylab = NULL, zlab = NULL)
+axes3d(edges = c("x--", "y--", "z--"), alpha = 0.5) 
+# bbox3d(box=TRUE) 
+title3d(xlab = 'UMAP1', ylab = 'UMAP2', zlab = 'UMAP3', alpha = 0.7)
+rgl.bringtotop()
+rgl.viewpoint(30, -20, zoom = 0.6)
+# rgl.postscript( filename = "../Docs/Figures/test.eps", fmt = "eps", drawText = TRUE )
+rglwidget()
+#close3d()
+```
+
+Score: 
+
+```{r fig.width=6, fig.height=4}
+VlnPlot(imdtr3.for3d, features = "G2M.Score", cols = pal, pt.size = 0)
+```
+```{r include=FALSE}
+ggsave(filename = "VlnPlot_G2MScore_in_all_samples.pdf",
+       path = "../Figures", 
+       height = 4, width = 6, 
+       device = "pdf")
 ```
 
 
