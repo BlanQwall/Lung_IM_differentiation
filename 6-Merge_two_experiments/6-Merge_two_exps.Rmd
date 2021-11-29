@@ -551,6 +551,30 @@ ggsave(filename = "VlnPlot_G2MScore_in_all_samples.pdf",
        device = "pdf")
 ```
 
+Csf1 expression: 
+
+```{r fig.width=6, fig.height=4}
+VlnPlot(imdtr3.for3d, features = "Csf1", cols = pal, pt.size = 0)
+```
+
+```{r include=FALSE}
+ggsave(filename = "VlnPlot_Csf1_in_all_samples.pdf",
+       path = "../Figures", 
+       height = 4, width = 6, 
+       device = "pdf")
+```
+
+Csf1r
+```{r fig.width=6, fig.height=4}
+VlnPlot(imdtr3.for3d, features = "Csf1r", cols = pal, pt.size = 0)
+```
+
+```{r include=FALSE}
+ggsave(filename = "VlnPlot_Csf1r_in_all_samples.pdf",
+       path = "../Figures", 
+       height = 4, width = 6, 
+       device = "pdf")
+```
 
 # Session information
 
