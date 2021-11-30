@@ -1,0 +1,393 @@
+---
+subtitle: "8-SCENIC analysis"
+# bibliography: bib.bib
+link-citations: yes
+date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+output: 
+  pdf_document:
+    pandoc_args: 
+      - '../common.yaml'
+      - --listings
+    includes: 
+      in_header: '../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+\newpage
+
+# Description
+
+
+# Prepare data
+
+## Load Seurat objects
+
+The 3D file store 3D embedding for UMAP and TSNE. 
+
+```{r}
+suppressMessages({
+  library(Seurat)
+  library(SCENIC)
+  library(AUCell)
+  library(RcisTarget)
+  library(SCopeLoomR)})
+
+obj <- readRDS("../6-Merge_two_experiments/immune_imdtr3.seuratObject.Rds") 
+```
+
+## Filter only the cells in classic monocytes, patrolling monocytes and interstitial macrophages
+
+```{r}
+obj <- subset(obj, subset = cell.type2 %in% c("Classical_Mono", 
+                                              "MHCII_IM", 
+                                              "CD206_IM", 
+                                              "Transit"))
+obj$cell.type2 <- as.character(obj$cell.type2)
+```
+
+
+## Prepare input data for SCENIC. 
+
+```{r eval=FALSE}
+obj.sce <- as.SingleCellExperiment(obj) # we indeed don't need this. 
+dir.create("data")
+saveRDS(obj.sce, file="data/IM-DTR3_3D.sce.Rds")
+```
+
+### Matrix construction: 
+
+```{r eval=FALSE}
+exprMat <- as.matrix(obj@assays$RNA@data)
+exprMat[1:3,1:3]
+```
+
+```{r eval=FALSE}
+dir.create("int")
+saveRDS(exprMat, file="int/exprMat.Rds")
+```
+
+
+## Cell info/phenodata
+
+Cell information: 
+
+```{r eval=FALSE}
+cellInfo <- data.frame(CellType = obj@meta.data$cell.type2, nFeature_RNA = obj@meta.data$nFeature_RNA, nCount_RNA = obj@meta.data$nCount_RNA)
+rownames(cellInfo) <- colnames(obj)
+head(cellInfo)
+```
+
+Save data for later: 
+
+```{r eval=FALSE}
+saveRDS(cellInfo, file="int/cellInfo.Rds")
+```
+
+Color to assign to the variables:
+
+```{r eval=FALSE}
+colVars <- list(CellType=c("Classical_Mono"="#A6CEE3", 
+                           "Patrolling_Mono"="#1F78B4", 
+                           "MHCII_IM"="#B2DF8A", 
+                           "CD206_IM"="#7E893D", 
+                           "chemoattractant"="#FB9A99", 
+                           "Transit"="#E31A1C", 
+                           "CCR7_IM"="#FDBF6F"))
+colVars$CellType <- colVars$CellType[intersect(names(colVars$CellType), cellInfo$CellType)]
+plot.new(); legend(0,1, fill=colVars$CellType, legend=names(colVars$CellType))
+```
+
+
+# Initialize settings
+
+```{r eval=FALSE}
+scenicOptions <- initializeScenic(org="mgi",
+                                  dbDir="./Data/Scenic_database/cisTarget_databases/",  # this should be prepared before, see SCENIC package instructions
+                                  nCores=22 # use appropriate core number
+                                  ) 
+  # NOTE: nCores is the number of cores used for calculating. For GENIE3 analysis is time-consuming and calculation-consuming, make this nCores maximum. 
+```
+
+
+```{r eval=FALSE}
+scenicOptions@inputDatasetInfo$cellInfo <- "int/cellInfo.Rds"
+scenicOptions@inputDatasetInfo$colVars <- "int/colVars.Rds"
+# update scenicOptions object. 
+saveRDS(scenicOptions, file="int/scenicOptions.Rds") 
+```
+
+# Co-expression network
+
+## Gene filter/selection
+
+1. Filter by the total number of reads per gene. 
+    minCountsPerGene: By default it keeps only the genes with at least 6 UMI counts across all samples (e.g. the total number the gene would have, if it was expressed with a value of 3 in 1% of the cells). ***NOTE: here we use value of 3 in 0.5% cells as our data is bigger (avoid removing too many useful genes)***
+2. Filter by the number of cells in which the gene is detected** (e.g. >0 UMI, or >1 log2(TPM)).
+    minSamples: detected in at least 1% of the cells
+
+```{r eval=FALSE}
+genesKept <- geneFiltering(exprMat, scenicOptions=scenicOptions,
+                           minCountsPerGene=3*.005*ncol(exprMat),
+                           minSamples=ncol(exprMat)*.01)
+exprMat_filtered <- exprMat[genesKept, ]
+dim(exprMat_filtered)
+
+```
+
+```{r eval=FALSE}
+saveRDS(exprMat_filtered, file = "int/exprMat_filtered.Rds")
+saveRDS(genesKept, file = "int/geneKept.Rds")
+```
+
+
+## Correlation
+```{r eval=FALSE}
+source("/home/qiang/Desktop/velocyto/Script/runCorrelation.R") # package does not contain this function. 
+runCorrelation(exprMat_filtered, scenicOptions)
+```
+
+## GENIE3
+***This step is time consuming.***
+
+Run GENIE3: 
+```{r eval=FALSE}
+# here you should run the following codes: 
+runGenie3(exprMat_filtered, scenicOptions)
+```
+
+# Build and score the GRN
+
+- Build the gene regulatory network: 
+    1. Get co-expression modules 
+    2. Get regulons (with RcisTarget): TF motif analysis)
+- Identify cell states: 
+    3. Score GRN (regulons) in the cells (with AUCell) 
+    4. Cluster cells according to the GRN activity
+
+
+Prepare setting: 
+
+```{r eval=FALSE}
+scenicOptions@settings$verbose <- TRUE
+scenicOptions@settings$seed <- 123 # this is important to have a reproducible result, because the algothritm is built on Ramdom Forest model. 
+scenicOptions@settings$nCores <- 10 # when run with 22 core, runSCENIC_2_createRegulons will overflow memory. 
+```
+
+Run the remaining steps using the wrapper functions:
+```{r eval=FALSE}
+runSCENIC_1_coexNetwork2modules(scenicOptions)
+runSCENIC_2_createRegulons(scenicOptions) 
+runSCENIC_3_scoreCells(scenicOptions, exprMat_filtered_log)
+```
+
+# Demonstration of SCENIC results with Seurat
+
+```{r eval=FALSE}
+regulonAUC <- readRDS("int/3.4_regulonAUC.Rds")
+```
+
+Load regulon AUC score: 
+
+```{r}
+regulonAUC <- readRDS("../../../IM_DTR_exp2/analyses/20210505_SCENIC_only_IM_DIfferentiation/int/3.4_regulonAUC.Rds")
+```
+
+Extract the useful information: 
+```{r}
+regulonAUC.mat <- regulonAUC@assays@data@listData$AUC
+dim(regulonAUC.mat)
+```
+
+Now take the top 50 most variable Regulons: 
+
+```{r}
+suppressMessages(library(genefilter))
+rv <- rowVars(regulonAUC.mat)
+idx <- order(-rv)[1:50]
+```
+
+```{r include=FALSE}
+sce <- readRDS("../../../IM_DTR_exp2/analyses/20210505_SCENIC_only_IM_DIfferentiation/data/IM-DTR3_3D.sce.Rds")
+```
+
+```{r eval=FALSE}
+sce <- readRDS("./data/IM-DTR3_3D.sce.Rds")
+```
+
+
+```{r echo=TRUE, fig.width=8, fig.height=10}
+suppressMessages({
+  library(pheatmap)
+  library(RColorBrewer)
+  library(SingleCellExperiment)
+})
+
+pal <- brewer.pal(length(levels(sce@colData$ident)), name = "Paired")
+
+cellInfo.cellType <- data.frame(cellType = sce@colData$ident)
+rownames(cellInfo.cellType) <- colnames(sce)
+  annotationColors <- list(cellType = c(`Classical_Mono`="#A6CEE3", 
+                                      `MHCII_IM`="#B2DF8A",
+                                      `CD206_IM`="#33A02C", 
+                                      `Transit` = "#E31A1C")) 
+pheatmap(regulonAUC.mat[idx,], show_colnames = FALSE, annotation_col = cellInfo.cellType, annotation_colors = annotationColors)
+
+```
+
+```{r}
+suppressMessages(library(ComplexHeatmap))
+```
+
+Randomly select 1500 cells in monocytes and IMs: 
+
+```{r}
+set.seed(41)
+cellnames.15k <- unlist(sapply(unique(sce$cell.type2), function(x) {
+  cellnames <- colnames(sce)[sce$cell.type2== x ]
+  if (length(cellnames)>1500) {
+    cellnames <- cellnames[sample(1:length(cellnames), 1500)]
+  }
+  return(cellnames)
+} ))
+```
+
+
+```{r}
+top50.15k.mat <- regulonAUC.mat[idx,cellnames.15k]
+sce.15k <- sce[, cellnames.15k]
+```
+
+
+```{r fig.width=8, fig.height=6, message=FALSE}
+hp <- Heatmap(top50.15k.mat, name = "Top 50 variant TFs", 
+        show_row_names=TRUE, show_column_names = FALSE, 
+        row_names_gp = gpar ( fontsize = 7), 
+        column_split = factor(sce.15k$cell.type2), 
+        top_annotation = HeatmapAnnotation(Celltype=sce.15k$cell.type2, 
+                                           col = list(Celltype =
+                                    c(`Classical_Mono`="#A6CEE3", 
+                                      `MHCII_IM`="#B2DF8A",
+                                      `CD206_IM`="#33A02C", 
+                                      `Transit` = "#E31A1C")))
+        )
+hp <- draw(hp)
+hp
+```
+
+```{r}
+pdf(file = "../Figures/HeatMap_top50_TF_SCENIC_in_15kcells.pdf", 
+    width = 8, height = 6)
+hp
+dev.off()
+```
+
+
+
+
+# Make plots
+
+Let's show the expression and activity of each TF in the pop: 
+
+
+## Show TF activity
+
+```{r fig.height=6, fig.width=12}
+obj[["scenic"]] <- CreateAssayObject(counts = regulonAUC.mat) 
+DefaultAssay(obj) <- "scenic"
+```
+
+```{r fig.height=5, fig.width=6}
+  FeaturePlot(obj, features = "Maf (142g)", dims = c(1,3))
+```
+
+```{r fig.height=5, fig.width=6}
+  FeaturePlot(obj, features = "Maf-extended (208g)", dims = c(1,3))
+```
+
+```{r fig.height=5, fig.width=6}
+  FeaturePlot(obj, features = "Mafb (15g)", dims = c(1,3))
+```
+
+```{r fig.height=5, fig.width=6}
+  FeaturePlot(obj, features = "Mafb-extended (168g)", dims = c(1,3))
+```
+
+
+```{r fig.height=5, fig.width=6}
+  FeaturePlot(obj, features = "Maff-extended (180g)", dims = c(1,3))
+```
+
+
+```{r fig.height=5, fig.width=6}
+  FeaturePlot(obj, features = "Mafg (18g)", dims = c(1,3))
+```
+
+```{r fig.height=5, fig.width=6}
+  FeaturePlot(obj, features = "Mafg-extended (334g)", dims = c(1,3))
+```
+
+```{r fig.height=5, fig.width=6}
+  FeaturePlot(obj, features = "Mafk-extended (795g)", dims = c(1,3))
+```
+```{r}
+pal2 <- c(`Classical_Mono`="#A6CEE3", 
+                                      `MHCII_IM`="#B2DF8A",
+                                      `CD206_IM`="#33A02C", 
+                                      `Transit` = "#E31A1C")
+```
+
+
+```{r fig.height=5, fig.width=6}
+  VlnPlot(obj, features = "Maf (142g)", group.by  = "cell.type2", pt.size = 0, cols = pal2)
+```
+
+```{r fig.height=5, fig.width=6}
+  VlnPlot(obj, features = "Mafb (15g)", group.by  = "cell.type2", pt.size = 0, cols = pal2)
+```
+
+```{r fig.height=5, fig.width=6}
+  VlnPlot(obj, features = "Mafb-extended (168g)", group.by  = "cell.type2", pt.size = 0, cols = pal2)
+```
+
+## Show TF expression
+```{r}
+DefaultAssay(obj) <- "RNA"
+```
+
+```{r fig.height=5, fig.width=6}
+  VlnPlot(obj, features = "Maf", group.by  = "cell.type2", pt.size = 0, cols = pal2)
+```
+
+```{r fig.height=5, fig.width=6}
+  VlnPlot(obj, features = "Mafb", group.by  = "cell.type2", pt.size = 0, cols = pal2)
+```
+
+Save data
+```{r}
+saveRDS(obj, file = "./only_IM_differentiation.with_SCENIC.seuratObject.Rd")
+```
+
+
+
+# Session information 
+
+R sesssion: 
+
+```{r}
+sessionInfo()
+```
+
+
+# References
+
+
+
