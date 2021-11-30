@@ -448,7 +448,7 @@ scv.pl.velocity_embedding_stream(ldata_basal,
     components='1,2' 
                                 )
 ```
-![scVelo results for merged sample](./scvelo_scVelo_comp1_2_modified_linewith3.svg)
+![scVelo results for merged sample](./scvelo_scVelo_comp1_2_modified_linewith3.png)
 
 
 ```{python eval=FALSE}
@@ -461,7 +461,7 @@ scv.pl.velocity_embedding_stream(ldata_basal,
     components='1,3' 
                                 )
 ```
-![scVelo results for merged sample](./scvelo_scVelo_comp1_3_modified_linewith3.svg)
+![scVelo results for merged sample](./scvelo_scVelo_comp1_3_modified_linewith3.png)
 
 
 
