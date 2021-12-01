@@ -9,7 +9,8 @@
 .Ruserdata
 *.seuratObject.Rds
 *loom_surat.Rds
-#only_IM_differentiation.with_SCENIC.seuratObject.Rd
+*.Rds
+*.cds
 
 # Example code in package build process
 *-Ex.R
