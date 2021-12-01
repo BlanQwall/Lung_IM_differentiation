@@ -36,13 +36,13 @@ suppressMessages(library(monocle3))
 ```
 
 Load data
-```{r eval=FALSE}
-IM_DTR3 <- readRDS(file = "../8-SCENIC_analysis/only_IM_differentiation.with_SCENIC.seuratObject.Rd")
+```{r}
+IM_DTR3 <- readRDS(file = "../8-SCENIC_analysis/only_IM_differentiation.with_SCENIC.seuratObject.Rds")
 ```
 
 Re-calculate UMAP
 
-```{r eval=FALSE}
+```{r}
 IM_DTR3 <- RunUMAP(IM_DTR3, dims = 1:8, n.components = 3L)
 DimPlot(IM_DTR3, group.by = "cell.type2")
 ```
@@ -53,7 +53,7 @@ DimPlot(IM_DTR3, group.by = "cell.type2")
 IM_DTR3.cds <- readRDS("./only_IM_differentiation.with_Pseudotime.cds.Rds")
 ```
 
-```{r eval=FALSE}
+```{r}
 DefaultAssay(IM_DTR3) <- "RNA"
 ```
 
@@ -65,6 +65,7 @@ IM_DTR3.cds <- estimate_size_factors(IM_DTR3.cds)
 IM_DTR3.cds@rowRanges@elementMetadata@listData[["gene_short_name"]] <- rownames(IM_DTR3[["RNA"]])
 ```
 
+## Clusterting, pseudotime estimation and trajectory analysis
 
 > Since cluster_cells uses randam seed, the results could be slightly different. To recapitulate the exact results showed in report, please download the cds object: `only_IM_differentiation.with_Pseudotime.cds`
 
@@ -87,157 +88,99 @@ root <- setdiff(all_cells, not_mono$cells)
 IM_DTR3.cds <- order_cells(IM_DTR3.cds, reduction_method = "UMAP", root_cells = root)
 ```
 
+## Plot pseudotime across subsets 
+
+Plot with relaculated UMAP and cell types:
+
 ```{r message=FALSE}
 library(ggplot2)
 plot_cells(
   cds = IM_DTR3.cds,
-  color_cells_by = "pseudotime",
+  color_cells_by = "cell.type2",
   show_trajectory_graph = FALSE
 )
 ```
+Pseudotime and 
 
-```{r}
-library(plotly)
-p1 <- plot_cells_3d(IM_DTR3.cds, color_cells_by="pseudotime", show_trajectory_graph = FALSE)
-p1
+```{r message=FALSE}
+plot_cells(
+  cds = IM_DTR3.cds,
+  color_cells_by = "pseudotime",
+  show_trajectory_graph = FALSE
+)& scale_color_viridis_c()
 ```
 
-<!-- Plot cell populations as 3D graph -->
-<!-- ```{r} -->
-<!-- p2 <- plot_cells_3d(IM_DTR3.cds, color_cells_by="cell.type2", show_trajectory_graph = FALSE) -->
-<!-- p2 -->
-<!-- htmlwidgets::saveWidget(as_widget(p2), "3d_plot_celltype2.html") -->
-<!-- ``` -->
+To visualize in 3D plot: 
 
-<!-- ```{r} -->
-<!-- saveRDS(IM_DTR3.cds, file = "C:/Users/domie/Documents/PhD_Domien_Vanneste_ULiege/PhD-ULiege/Bioinformatics/SingleCell/IM_DTR3_differentiation/only_IM_differentiation.with_Pseudotime.cds.Rds") -->
-<!-- ``` -->
+```{r eval=FALSE}
+library(plotly)
+p1 <- plot_cells_3d(IM_DTR3.cds, color_cells_by="pseudotime", show_trajectory_graph = TRUE)
 
-<!-- Add pseodotime to seurat object -->
-<!-- ```{r} -->
-<!-- IM_DTR3 <- AddMetaData(object = IM_DTR3, metadata = IM_DTR3.cds@principal_graph_aux@listData$UMAP$pseudotime, col.name = "pseudotime") -->
-<!-- ``` -->
+# p1
+# plot will not show in rendered PDF. 
+```
 
-<!-- ```{r} -->
-<!-- FeaturePlot(IM_DTR3, "pseudotime")& scale_color_viridis_c() -->
-<!-- ``` -->
-<!-- Save seurat object -->
-<!-- ```{r} -->
-<!-- saveRDS(IM_DTR3, file = "C:/Users/domie/Documents/PhD_Domien_Vanneste_ULiege/PhD-ULiege/Bioinformatics/SingleCell/IM_DTR3_differentiation/only_IM_differentiation.with_SCENIC.with_Pseudotime.seuratObject.Rds") -->
-<!-- ``` -->
+## 3D Plots with trajectories across cell types
 
-<!-- Susbsetting differentiating cells -->
-<!-- ```{r} -->
-<!-- Mono_to_IM <- choose_graph_segments(IM_DTR3.cds, return_list = TRUE) -->
-<!-- Mono_to_IM.cds <- IM_DTR3.cds[,IM_DTR3.cds@colData@rownames %in% Mono_to_IM$cells] -->
-<!-- ``` -->
+```{r eval=FALSE}
+pal2 <- c(`Classical_Mono`="#A6CEE3", 
+          `MHCII_IM`="#B2DF8A",
+          `CD206_IM`="#33A02C", 
+          `Transit` = "#E31A1C")
 
-<!-- ```{r} -->
-<!-- plot_cells( -->
-<!--   cds = Mono_to_IM.cds, -->
-<!--   color_cells_by = "pseudotime", -->
-<!--   show_trajectory_graph = FALSE -->
-<!-- )& scale_color_viridis_c() -->
-<!-- ``` -->
+p2 <- plot_cells_3d(IM_DTR3.cds, color_cells_by="cell.type2", show_trajectory_graph = TRUE, color_palette = pal2, alpha = 0.6)
 
-<!-- ```{r} -->
-<!-- library(tradeSeq) -->
-<!-- library(magrittr) -->
-<!-- # Get the closest vertice for every cell -->
-<!-- y_to_cells <-  IM_DTR3.cds@principal_graph_aux$UMAP$pr_graph_cell_proj_closest_vertex %>% -->
-<!--   as.data.frame() -->
-<!-- y_to_cells$cells <- rownames(y_to_cells) -->
-<!-- y_to_cells$Y <- y_to_cells$V1 -->
+# p2
+# plot will not show in rendered PDF. 
+```
 
 
-<!-- # Get the root vertices -->
-<!-- # It is the same node as above -->
-<!-- root <- IM_DTR3.cds@principal_graph_aux$UMAP$root_pr_nodes -->
 
-<!-- principalgraph <- IM_DTR3.cds@principal_graph$UMAP -->
+```{r eval=FALSE}
+saveRDS(IM_DTR3.cds, file = "./only_IM_differentiation.with_Pseudotime.cds.Rds")
+```
 
-<!-- # Get the other endpoints -->
-<!-- endpoints <- names(which(igraph::degree(principalgraph ) == 1)) -->
-<!-- endpoints <- endpoints[!endpoints %in% root] -->
+Add pseodotime to seurat object
+```{r}
+IM_DTR3 <- AddMetaData(object = IM_DTR3, metadata = IM_DTR3.cds@principal_graph_aux@listData$UMAP$pseudotime, col.name = "pseudotime")
+```
 
-<!-- # For each endpoint -->
-<!-- cellWeights <- lapply(endpoints, function(endpoint) { -->
-<!--   # We find the path between the endpoint and the root -->
-<!--   path <- igraph::shortest_paths(principalgraph, root, endpoint)$vpath[[1]] -->
-<!--   path <- as.character(path) -->
-<!--   # We find the cells that map along that path -->
-<!--   df <- y_to_cells[y_to_cells$Y %in% path, ] -->
-<!--   df <- data.frame(weights = as.numeric(colnames(IM_DTR3.cds) %in% df$cells)) -->
-<!--   colnames(df) <- endpoint -->
-<!--   return(df) -->
-<!--   }) %>% do.call(what = 'cbind', args = .) %>% -->
-<!--     as.matrix() -->
-<!-- rownames(cellWeights) <- colnames(IM_DTR3.cds) -->
-<!-- pseudotime <- matrix(IM_DTR3.cds@principal_graph_aux$UMAP$pseudotime, ncol = ncol(cellWeights), -->
-<!--                      nrow = ncol(IM_DTR3.cds), byrow = FALSE) -->
-<!-- rownames(pseudotime) <- colnames(IM_DTR3.cds) -->
-<!-- ``` -->
+Save seurat object
+```{r eval=FALSE}
+saveRDS(IM_DTR3, file = "./only_IM_differentiation.with_SCENIC.with_Pseudotime.seuratObject.Rds")
+```
 
 
-<!-- ```{r} -->
-<!-- counts <- IM_DTR3.cds@assays@data$counts -->
-<!-- ``` -->
+In the next step, we will only analysis the IM differentiation. 
+Susbsetting differentiating cells
 
-<!-- ```{r} -->
-<!-- cellWeights_sub <- cellWeights[colnames(Mono_to_IM.cds),] -->
-<!-- pseudotime_sub <- pseudotime[colnames(Mono_to_IM.cds),] -->
-<!-- counts_sub <- Mono_to_IM.cds@assays@data$counts -->
+```{r eval=FALSE}
+# Choose the nodes from beginning of Transit cells to both CD206+ and CD206- IMs. 
+
+Mono_to_IM <- choose_graph_segments(IM_DTR3.cds, return_list = TRUE)
+Mono_to_IM.cds <- IM_DTR3.cds[,IM_DTR3.cds@colData@rownames %in% Mono_to_IM$cells]
+```
+
+```{r eval=FALSE}
+saveRDS(Mono_to_IM.cds, file = "Mono_to_IM.cds")
+```
+
+
+# Session information 
+
+R sesssion: 
+
+```{r}
+sessionInfo()
+```
+
+
+# References
 
 
 
 
-<!-- sce <- fitGAM(counts = counts_sub, pseudotime = pseudotime_sub, cellWeights = cellWeights_sub, genes = VariableFeatures(IM_DTR3)) -->
-
-<!-- ``` -->
 
 
-<!-- ```{r} -->
-<!-- sce <- readRDS(file = "C:/Users/domie/Documents/PhD_Domien_Vanneste_ULiege/PhD-ULiege/Bioinformatics/SingleCell/IM_DTR3_differentiation/sce_filteredCells_filteredGenes.after_fitGAM.sce.Rds") -->
-<!-- ``` -->
 
-<!-- ```{r} -->
-<!-- endRes <- diffEndTest(sce) -->
-<!-- ``` -->
-
-<!-- ```{r} -->
-<!-- scenic <- IM_DTR3@assays$scenic@data -->
-<!-- scenic_sub <- scenic[,colnames(Mono_to_IM.cds)] -->
-<!-- ``` -->
-
-
-<!-- ```{r} -->
-<!-- plotSmoothers(sce, scenic_sub, "Maf") -->
-<!-- ``` -->
-
-<!-- ```{r} -->
-<!-- sce <- readRDS(file = "C:/Users/domie/Documents/PhD_Domien_Vanneste_ULiege/PhD-ULiege/Bioinformatics/SingleCell/IM_DTR3_differentiation/sce.after_fitGAM.sce") -->
-<!-- ``` -->
-
-<!-- ```{r} -->
-<!-- counts <- IM_DTR3.cds@assays@data$counts -->
-<!-- counts_sub <- counts[,colnames(sce)] -->
-<!-- ``` -->
-
-<!-- ```{r} -->
-<!-- plotSmoothers(sce, counts_sub, "Mafb") -->
-<!-- ``` -->
-
-<!-- ```{r} -->
-<!-- sub <- IM_DTR3.cds[,colnames(sce)] -->
-<!-- ``` -->
-
-
-<!-- ```{r} -->
-<!-- library(ggplot2) -->
-<!-- plot_cells( -->
-<!--   cds = sub, -->
-<!--   color_cells_by = "pseudotime", -->
-<!--   show_trajectory_graph = FALSE -->
-<!-- )& scale_color_viridis_c() -->
-<!-- ``` -->
 
