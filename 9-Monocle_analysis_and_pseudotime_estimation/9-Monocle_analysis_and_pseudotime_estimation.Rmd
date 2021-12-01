@@ -17,33 +17,46 @@ output:
     fig_caption: true
     df_print: tibble
 ---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+\newpage
+
+# Description
+
+
+# Load packages and data
+
 ```{r}
-library(Seurat)
-library(SeuratWrappers)
-library(monocle3)
+suppressMessages(library(Seurat))
+#library(SeuratWrappers)
+suppressMessages(library(monocle3))
 ```
 
 Load data
 ```{r}
-IM_DTR3 <- readRDS(file = "C:/Users/domie/Documents/PhD_Domien_Vanneste_ULiege/PhD-ULiege/Bioinformatics/SingleCell/IM_DTR3_differentiation/only_IM_differentiation.with_SCENIC.seuratObject.Rds")
+IM_DTR3 <- readRDS(file = "../8-SCENIC_analysis/only_IM_differentiation.with_SCENIC.seuratObject.Rd")
 ```
 
-visualize data
+Visualize data
 ```{r}
 DimPlot(IM_DTR3, group.by = "cell.type2")
 ```
 
-Rerun graph clustering
+Re-calculate UMAP
+
 ```{r}
 IM_DTR3 <- RunUMAP(IM_DTR3, dims = 1:8, n.components = 3L)
 DimPlot(IM_DTR3, group.by = "cell.type2")
 ```
 
+# Create monocle object 
 ```{r}
 DefaultAssay(IM_DTR3) <- "RNA"
 ```
 
-Create monocle 
 ```{r}
 IM_DTR3.cds <- as.cell_data_set(IM_DTR3)
 
