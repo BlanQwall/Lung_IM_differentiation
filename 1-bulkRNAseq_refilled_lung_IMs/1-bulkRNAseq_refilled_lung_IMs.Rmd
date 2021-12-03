@@ -37,7 +37,7 @@ Lung interstitium macrophages (IMs) are non-alveolar resident tissue macrophages
 
 In this study, the de novo refilled CD206+ and CD206- IMs on Day 14 post-depletion were compared to those without depletion. Alvelar macrophages (AMs) samples were also included in this analysis and served as a reference. Results showed high similarity between de novo refilled and original IMs for both CD206+ and CD206- subsets. Only genes related to cell cycling were found upregulated in de novo refilled IMs. 
 
-Total RNA was extracted and concentrated from the different samples with the RNA Clean & Concentrator 5 (Zymo Research). Possible DNA contaminant were removed with DNAse I. RNA quality and quantity were evaluated using a 2100 bioanalyzer (Agilent) and the Quant-iT™ RiboGreen™ RNA Assay Kit (ThermoFisher). The RNA Integrity Number (RIN) was greater than 7 for all samples. In order to generate the libraries using the Truseq stranded mRNA kit (Illumina), 100 ng of RNA was used. These libraries were sequenced on an Illumina Novaseq sequencer on a SP flow cell in single read 100 bp. Sequence alignment with the human genome (version GRCh37), sequence counting and quality control were performed using the nf-core/rnaseq pipeline [@nf-core]. RNA-seq data were analyzed using R Bioconductor (3.12) and DESeq2 package (version 1.26.0)[@DESeq2]. 
+Total RNA was extracted and concentrated from the different samples with the RNA Clean & Concentrator 5 (Zymo Research). Possible DNA contaminant were removed with DNAse I. RNA quality and quantity were evaluated using a 2100 bioanalyzer (Agilent) and the Quant-iT™ RiboGreen™ RNA Assay Kit (ThermoFisher). The RNA Integrity Number (RIN) was greater than 7 for all samples. In order to generate the libraries using the Truseq stranded mRNA kit (Illumina), 100 ng of RNA was used. These libraries were sequenced on an Illumina Novaseq sequencer on a SP flow cell. Sequence alignment with the mouse genome (version GRCm38), sequence counting and quality control were performed using the nf-core/rnaseq pipeline [@nf-core]. RNA-seq data were analyzed using R Bioconductor (3.12) and DESeq2 package (version 1.26.0)[@DESeq2]. 
 
 
 # Counting from fastq data using nf-core/rnaseq pipeline
@@ -409,12 +409,12 @@ What are these genes?
 
 ```{r}
 # the Refilled-related genes total IMs: 
-tibble(rownames(de.res)[names(keyvals) == "Refilled"])
+rownames(de.res)[names(keyvals) == "Refilled"]
 ```
 
 ```{r}
 # the Refilled-related genes total IMs: 
-tibble(rownames(de.res)[names(keyvals) == "Control"])
+rownames(de.res)[names(keyvals) == "Control"]
 ```
 
 ## Refilled vs control CD206+ IMs
@@ -464,12 +464,12 @@ What are these genes?
 
 ```{r}
 # the Refilled-related genes CD206+ IMs: 
-tibble(rownames(de.res)[names(keyvals) == "Refilled"])
+rownames(de.res)[names(keyvals) == "Refilled"]
 ```
 
 ```{r}
 # the Refilled-related genes CD206+ IMs: 
-tibble(rownames(de.res)[names(keyvals) == "Control"])
+rownames(de.res)[names(keyvals) == "Control"]
 ```
 
 
@@ -518,12 +518,12 @@ ggsave(filename = "VolcanoPlot_Refilled_vs_control_in_CD206neg_IMs.pdf",
 
 ```{r}
 # the Refilled-related genes CD206- IMs: 
-tibble(rownames(de.res)[names(keyvals) == "Refilled"])
+rownames(de.res)[names(keyvals) == "Refilled"]
 ```
 
 ```{r}
 # the Refilled-related genes CD206- IMs: 
-tibble(rownames(de.res)[names(keyvals) == "Control"])
+rownames(de.res)[names(keyvals) == "Control"]
 ```
 
 ## Plot the top DE genes 

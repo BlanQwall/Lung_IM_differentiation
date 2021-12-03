@@ -5,3 +5,5 @@ R object containing Seurat object where only Ly6C+ cMo, Transit, CD206+ IMs and 
 
 *only_IM_differentiation.with_Pseudotime.cds.Rds*
 R object containing CDS object where only Ly6C+ cMo, Transit, CD206+ IMs and CD206- IMs. Trajectories were calculated with Monocle3 as described in the codes and included in this CDS object. 
+
+*Mono_to_IM.cds*

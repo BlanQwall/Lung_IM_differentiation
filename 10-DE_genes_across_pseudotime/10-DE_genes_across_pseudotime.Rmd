@@ -29,6 +29,668 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 
 
+
+# Prepare data
+
+```{r}
+suppressMessages(
+{
+library(Seurat)
+library(ComplexHeatmap)
+library(ggplot2)
+library(dplyr)
+library(RColorBrewer)
+library(circlize)
+library(monocle3)
+})
+
+mo <- readRDS(file = "../9-Monocle_analysis_and_pseudotime_estimation/Mono_to_IM.cds")
+
+#so <- readRDS("../20210505_SCENIC_only_IM_DIfferentiation/only_IM_differentiation.with_SCENIC.seuratObject.Rds")
+# metadata.diffpop <- as.data.frame(readRDS("../../data/from_domien/Pseudotime_for_heatmap"))
+```
+
+
+# DE gene expression across IM-differentiation
+
+## Across pseudotime of IM differentiation
+
+```{r}
+modulated_genes <- graph_test(mo, neighbor_graph = "principal_graph", cores = 4)
+genes <- row.names(subset(modulated_genes, q_value == 0 & morans_I > 0.25))
+length(genes)
+```
+
+Give another gene set with lower threshold: 
+```{r}
+genes.2 <- row.names(subset(modulated_genes, q_value < 0.02 & morans_I > 0.2))
+length(genes.2)
+```
+*Probably not do this because the median of morans_I is alread 0.025, very low.*
+
+
+
+```{r}
+pt.matrix <- exprs(mo)[match(genes,rownames(rowData(mo))),order(pseudotime(mo))]
+cellnames <- colnames(pt.matrix)
+#Can also use "normalized_counts" instead of "exprs" to use various normalization methods, for example:
+#normalized_counts(cds, norm_method = "log")
+
+pt.matrix <- t(apply(pt.matrix,1,function(x){smooth.spline(x,df=3)$y}))
+pt.matrix <- t(apply(pt.matrix,1,function(x){(x-mean(x))/sd(x)}))
+rownames(pt.matrix) <- genes
+colnames(pt.matrix) <- cellnames
+```
+
+
+```{r fig.width=8, fig.height=10}
+#K means with 6 groups
+htkm <- Heatmap(
+  pt.matrix,
+  # use_raster = FALSE, # use FALSE to export to vector image. 
+  name                         = "z-score",
+  col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
+  show_row_names               = TRUE,
+  show_column_names            = FALSE,
+  row_names_gp                 = gpar(fontsize = 3),
+  row_km = 6, 
+  row_km_repeats = 31, 
+  row_dend_reorder = TRUE, 
+  row_title_rot                = 0,
+  cluster_rows                 = TRUE,
+  cluster_row_slices           = FALSE,
+  cluster_columns              = FALSE, 
+)
+
+htkm <- draw(htkm)
+```
+
+```{r fig.width=8, fig.height=6}
+#Ward.D2 Hierarchical Clustering
+# library(seriation)
+#o1 <- seriate(dist(pt.matrix), method = "GW")
+# o2 <- order(modulated_genes[rownames(pt.matrix), "morans_test_statistic"])
+hthc <- Heatmap(
+  pt.matrix,
+  name                         = "z-score",
+  col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
+  show_row_names               = TRUE,
+  show_column_names            = FALSE,
+  row_names_gp                 = gpar(fontsize = 3),
+  clustering_method_rows = "ward.D2",
+  clustering_method_columns = "ward.D2",
+  row_title_rot                = 0,
+  # row_order = get_order(o1),
+  # row_order = o2, 
+  cluster_rows                 = TRUE,
+  cluster_row_slices           = FALSE,
+  cluster_columns              = FALSE)
+
+hthc <- draw(hthc)
+```
+
+## Annotate the cells associated to either differentiation of CD206+ IMs or CD206- IMs
+
+```{r}
+library(magrittr)
+# Get the closest vertice for every cell
+y_to_cells <-  mo@principal_graph_aux$UMAP$pr_graph_cell_proj_closest_vertex%>%as.data.frame()
+
+y_to_cells$cells <- rownames(y_to_cells)
+y_to_cells$Y <- y_to_cells$V1
+
+
+# Get the root vertices
+# It is the same node as above
+root <- mo@principal_graph_aux$UMAP$root_pr_nodes
+
+principalgraph <- mo@principal_graph$UMAP
+
+# Get the other endpoints
+endpoints <- names(which(igraph::degree(principalgraph ) == 1))
+endpoints <- endpoints[!endpoints %in% root]
+
+# For each endpoint
+cellWeights <- lapply(endpoints, function(endpoint) {
+  # We find the path between the endpoint and the root
+  path <- igraph::shortest_paths(principalgraph, root, endpoint)$vpath[[1]]
+  path <- as.character(path)
+  # We find the cells that map along that path
+  df <- y_to_cells[y_to_cells$Y %in% path, ]
+  df <- data.frame(weights = as.numeric(colnames(mo) %in% df$cells))
+  colnames(df) <- endpoint
+  return(df)
+  }) %>% do.call(what = 'cbind', args = .) %>%
+    as.matrix()
+rownames(cellWeights) <- colnames(mo)
+colnames(cellWeights) <- c("CD206_IM branch", "MHCII_IM branch")
+pseudotime <- matrix(mo@principal_graph_aux$UMAP$pseudotime, ncol = ncol(cellWeights),
+                     nrow = ncol(mo), byrow = FALSE)
+rownames(pseudotime) <- colnames(mo)
+```
+
+
+```{r}
+counts <- IM_DTR3.cds@assays@data$counts
+```
+
+
+```{r}
+cellWeights_sub <- cellWeights[colnames(Mono_to_IM.cds),]
+pseudotime_sub <- pseudotime[colnames(Mono_to_IM.cds),]
+counts_sub <- Mono_to_IM.cds@assays@data$counts
+
+
+
+
+sce <- fitGAM(counts = counts_sub, pseudotime = pseudotime_sub, cellWeights = cellWeights_sub, parallel=TRUE, BPPARAM = BPPARAM, verbose = TRUE)
+
+```
+
+```{r}
+saveRDS(sce, file = "/home/uliege/Documents/BioInformatics/sce")
+```
+
+
+```{r}
+# so <- so[, rownames(metadata.diffpop)]
+# so$CD206_IM_Branch <- metadata.diffpop[, "CD206_IM branch"]
+# so$MHCII_IM_Branch <- metadata.diffpop[, "MHCII_IM branch"]
+# so$pseudotime <- metadata.diffpop[,"Pseudotime"]
+
+mo <- mo[ ,rownames(metadata.diffpop)]
+pData(mo)$Pseudotime <- metadata.diffpop$Pseudotime
+pData(mo)$CD206_IM_Branch <- metadata.diffpop$`CD206_IM branch`
+pData(mo)$MHCII_IM_Branch <- metadata.diffpop$`MHCII_IM branch`
+```
+
+
+### Identify the DE genes in either CD206+ or MHCII+ IM differentiation. 
+
+```{r}
+# Give category group to each cell for the differentiation
+metadata.diffpop$branch <- rep("NA", nrow(metadata.diffpop))
+metadata.diffpop$branch[metadata.diffpop$`CD206_IM branch`==1 ] <- "CD206_IM_diff"
+metadata.diffpop$branch[metadata.diffpop$`MHCII_IM branch`==1 ] <- "MHCII_IM_diff"
+metadata.diffpop$branch[metadata.diffpop$`MHCII_IM branch` & metadata.diffpop$`CD206_IM branch`] <- "Common"
+
+# check if all the "branch" filled
+any(metadata.diffpop == "NA")
+```
+
+cluster and redo heatmap with branch in column: 
+```{r fig.width=8, fig.height=10}
+# column category using branch
+group_branch <- metadata.diffpop[colnames(pt.matrix), "branch"]
+
+# reverse the CD206 IM order
+
+
+#K means with 6 groups
+htkm_branch <- Heatmap(
+  pt.matrix,
+  # use_raster = FALSE, # use FALSE to export to vector image. 
+  name                         = "z-score",
+  col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
+  show_row_names               = TRUE,
+  show_column_names            = FALSE,
+  row_names_gp                 = gpar(fontsize = 3),
+  row_km = 12, 
+  row_km_repeats = 31, 
+  row_dend_reorder = TRUE, 
+  row_title_rot                = 0,
+  cluster_rows                 = TRUE,
+  cluster_row_slices           = FALSE,
+  cluster_columns              = FALSE, 
+  show_column_dend = TRUE,
+  column_split = group_branch
+)
+
+htkm_branch <- draw(htkm_branch)
+```
+
+
+## Across pseudotime of CD206+ IM differentiation
+
+```{r}
+# subset: 
+cds.cd206 <- mo[, mo@colData$CD206_IM_Branch == "1"]
+
+modulated_genes.cd206 <- graph_test(cds.cd206, neighbor_graph = "principal_graph", cores = 4)
+genes.cd206 <- row.names(subset(modulated_genes.cd206, q_value == 0 & morans_I > 0.28))
+
+
+length(genes.cd206)
+```
+
+```{r}
+pt.matrix.cd206 <- exprs(cds.cd206)[match(genes.cd206,rownames(rowData(cds.cd206))),order(pseudotime(cds.cd206))]
+#Can also use "normalized_counts" instead of "exprs" to use various normalization methods, for example:
+#normalized_counts(cds, norm_method = "log")
+
+pt.matrix.cd206 <- t(apply(pt.matrix.cd206,1,function(x){smooth.spline(x,df=3)$y}))
+pt.matrix.cd206 <- t(apply(pt.matrix.cd206,1,function(x){(x-mean(x))/sd(x)}))
+rownames(pt.matrix.cd206) <- genes.cd206
+```
+
+
+> As we remove the unchanged genes, the potential DE gene patterns along pseudotime (a generic pattern) could be only following: 
+
+>1. Down -> up
+2. Up -> down
+3. Down -> up -> down
+4. Up -> Down -> Up
+
+> Let's say k-mean shoud be set to 4
+
+```{r fig.width=8, fig.height=12}
+#K means with 4 groups
+htkm.cd206 <- Heatmap(
+  pt.matrix.cd206,
+  name                         = "z-score",
+  col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
+  show_row_names               = TRUE,
+  show_column_names            = FALSE,
+  row_names_gp                 = gpar(fontsize = 6),
+  row_km = 6,
+  row_km_repeats = 43, 
+  row_title_rot                = 0,
+  cluster_rows                 = TRUE,
+  cluster_row_slices           = FALSE,
+  cluster_columns              = FALSE)
+
+
+htkm.cd206 <- draw(htkm.cd206)
+```
+
+```{r fig.width=8, fig.height=10}
+#Ward.D2 Hierarchical Clustering
+hthc.cd206 <- Heatmap(
+  pt.matrix.cd206,
+  name                         = "z-score",
+  col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
+  show_row_names               = TRUE,
+  show_column_names            = FALSE,
+  row_names_gp                 = gpar(fontsize = 6),
+  clustering_method_rows = "ward.D2",
+  clustering_method_columns = "ward.D2",
+  row_title_rot                = 0,
+  cluster_rows                 = TRUE,
+  cluster_row_slices           = FALSE,
+  cluster_columns              = FALSE)
+
+hthc.cd206 <- draw(hthc.cd206)
+```
+
+
+## Across pseudotime of MHCII+ IM differentiation
+
+```{r}
+# subset: 
+cds.mhcii <- mo[, mo@colData$MHCII_IM_Branch == "1"]
+
+modulated_genes.mhcii <- graph_test(cds.mhcii, neighbor_graph = "principal_graph", cores = 4)
+genes.mhcii <- row.names(subset(modulated_genes.mhcii, q_value == 0 & morans_I > 0.28))
+length(genes.mhcii)
+```
+
+```{r}
+pt.matrix.mhcii <- exprs(cds.mhcii)[match(genes.mhcii,rownames(rowData(cds.mhcii))),order(pseudotime(cds.mhcii))]
+#Can also use "normalized_counts" instead of "exprs" to use various normalization methods, for example:
+#normalized_counts(cds, norm_method = "log")
+
+pt.matrix.mhcii <- t(apply(pt.matrix.mhcii,1,function(x){smooth.spline(x,df=3)$y}))
+pt.matrix.mhcii <- t(apply(pt.matrix.mhcii,1,function(x){(x-mean(x))/sd(x)}))
+rownames(pt.matrix.mhcii) <- genes.mhcii
+```
+
+
+```{r fig.width=8, fig.height=12}
+#K means with 4 groups
+htkm.mhcii <- Heatmap(
+  pt.matrix.mhcii,
+  name                         = "z-score",
+  col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
+  show_row_names               = TRUE,
+  show_column_names            = FALSE,
+  row_names_gp                 = gpar(fontsize = 6),
+  row_km = 6,
+  row_km_repeats = 43, 
+  row_title_rot                = 0,
+  cluster_rows                 = TRUE,
+  cluster_row_slices           = FALSE,
+  cluster_columns              = FALSE)
+
+htkm.mhcii <- draw(htkm.mhcii)
+```
+
+
+```{r fig.width=8, fig.height=10}
+#Ward.D2 Hierarchical Clustering
+hthc.mhcii <- Heatmap(
+  pt.matrix.mhcii,
+  name                         = "z-score",
+  col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
+  show_row_names               = TRUE,
+  show_column_names            = FALSE,
+  row_names_gp                 = gpar(fontsize = 6),
+  clustering_method_rows = "ward.D2",
+  clustering_method_columns = "ward.D2",
+  row_title_rot                = 0,
+  cluster_rows                 = TRUE,
+  cluster_row_slices           = FALSE,
+  cluster_columns              = FALSE)
+hthc.mhcii <- draw(hthc.mhcii)
+```
+
+# Compare the CD206+ and MHCII+ IM differentiation DE gene lists
+
+```{r}
+genelist.cd206 <- lapply(row_order(htkm.cd206), function(x) rownames(pt.matrix.cd206)[x] )
+genelist.mhcii <- lapply(row_order(htkm.mhcii), function(x) rownames(pt.matrix.cd206)[x] )
+```
+
+```{r}
+genelist.cd206
+```
+
+```{r}
+genelist.mhcii
+```
+
+# Classify genes using TradeSeq
+
+```{r}
+library(tradeSeq)
+```
+
+FitGam monocle cds to sce for use in TradSeq.
+Here we alread have all the information, do not need to calculate them. 
+
+```{r}
+cellWeights <- as.matrix(metadata.diffpop[, c("CD206_IM branch", "MHCII_IM branch")])
+rownames(cellWeights) <- colnames(mo)
+pseudotime <- matrix(pseudotime(mo), ncol = ncol(cellWeights),
+                     nrow = ncol(mo), byrow = FALSE)
+```
+
+
+```{r eval=FALSE}
+# this step is VERY time consuming
+sce <- fitGAM(counts = mo@assays@data$counts, 
+              pseudotime = pseudotime, 
+              cellWeights = cellWeights)
+
+saveRDS(sce, file = "./sce.4339cells.Rds")
+```
+
+```{r include=FALSE}
+sce <- readRDS(file = "./sce.4339cells.Rds")
+```
+
+## Between-lineage comparisons
+
+Association of gene expression with pseudotime (find sig changing genes along pseudotime)
+```{r}
+assoRes <- associationTest(sce)
+head(assoRes)
+```
+
+```{r}
+endRes <- diffEndTest(sce)
+```
+
+plot the most sig gene: 
+```{r}
+o <- order(endRes$waldStat, decreasing = TRUE)
+sigGene <- names(sce)[o[1]]
+plotSmoothers(sce, counts = counts(sce), sigGene) + ggtitle(sigGene)
+```
+
+What's the top genes? 
+```{r}
+names(sce)[o[1:20]]
+```
+
+## Clustering using RSEC, clusterExperiment
+
+> tradeSeq provides the functionality to cluster genes according to their expression pattern along the lineages with the clusterExpressionPatterns function. A number of equally spaced points for every lineage are selected to perform the clustering, and the number of points can be selected with the nPoints argument. (from Vignette tradeSeq)
+
+```{r}
+library(clusterExperiment)
+nPointsClus <- 20 # The number of points to use for clustering the expression patterns.. 
+clusPat <- clusterExpressionPatterns(sce, 
+                                     nPoints = nPointsClus,
+                                     genes = genes,
+                                     random.seed = 43, 
+                                     beta = 0.2
+                                     )
+```
+
+```{r}
+clusterLabels <- primaryCluster(clusPat$rsec)
+```
+
+
+```{r fig.width=12, fig.height=12}
+cUniq <- unique(clusterLabels) # 
+cUniq <- cUniq[!cUniq == -1] # remove unclustered genes 
+
+# cUniq <- cUniq[cUniq == -1]
+#Any samples not found as part of a homogenous set of clusters at that point will be classified as unclustered (given a value of -1)
+
+# beta: value between 0 and 1 to decide how stable clustership membership has to be before 'finding' and removing the cluster.
+for (xx in cUniq) {
+  cId <- which(clusterLabels == xx)
+  p <- ggplot(data = data.frame(x = 1:nPointsClus,
+                                y = rep(range(clusPat$yhatScaled[cId, ]),
+                                        nPointsClus / 2)),
+              aes(x = x, y = y)) +
+    geom_point(alpha = 0) +
+    labs(title = paste0("Cluster ", xx),  x = "Pseudotime", y = "Normalized expression") +
+    theme_classic() +
+    theme(plot.title = element_text(hjust = 0.5))
+  for (ii in 1:length(cId)) {
+    geneId <- rownames(clusPat$yhatScaled)[cId[ii]]
+    p <- p +
+      geom_line(data = data.frame(x = rep(1:nPointsClus, 2),
+                                  y = clusPat$yhatScaled[geneId, ],
+                                  lineage = rep(0:1, each = nPointsClus)),
+                aes(col = as.character(lineage), group = lineage), lwd = 1.5)
+  }
+  p <- p + guides(color = "none") +
+    scale_color_manual(values = c("orange", "darkseagreen3"),
+                       breaks = c("0", "1"))
+  if (exists("p.total")) { p.total <- p.total + p} else {p.total <- p}
+}
+  print(p.total)
+```
+
+Let's try with more genes with a merged set of genes.cd206 and genes.mhcii
+
+```{r}
+library(clusterExperiment)
+nPointsClus <- 100 # The number of points to use for clustering the expression patterns.. 
+clusPat <- clusterExpressionPatterns(sce, 
+                                     nPoints = nPointsClus,
+                                     genes = genes,
+                                     random.seed = 43, 
+                                     beta = 0.9
+                                     )
+```
+
+```{r}
+clusterLabels <- primaryCluster(clusPat$rsec)
+```
+
+
+```{r fig.width=12, fig.height=12}
+cUniq <- unique(clusterLabels) # 
+cUniq <- cUniq[!cUniq == -1] # remove unclustered genes 
+
+# cUniq <- cUniq[cUniq == -1]
+#Any samples not found as part of a homogenous set of clusters at that point will be classified as unclustered (given a value of -1)
+
+# beta: value between 0 and 1 to decide how stable clustership membership has to be before 'finding' and removing the cluster.
+if (exists("p.total")) { rm(p.total)} 
+for (xx in cUniq) {
+  cId <- which(clusterLabels == xx)
+  p <- ggplot(data = data.frame(x = 1:nPointsClus,
+                                y = rep(range(clusPat$yhatScaled[cId, ]),
+                                        nPointsClus / 2)),
+              aes(x = x, y = y)) +
+    geom_point(alpha = 0) +
+    labs(title = paste0("Cluster ", xx),  x = "Pseudotime", y = "Normalized expression") +
+    theme_classic() +
+    theme(plot.title = element_text(hjust = 0.5))
+  for (ii in 1:length(cId)) {
+    geneId <- rownames(clusPat$yhatScaled)[cId[ii]]
+    p <- p +
+      geom_line(data = data.frame(x = rep(1:nPointsClus, 2),
+                                  y = clusPat$yhatScaled[geneId, ],
+                                  lineage = rep(0:1, each = nPointsClus)),
+                aes(col = as.character(lineage), group = lineage), lwd = 1.5)
+  }
+  p <- p + guides(color = "none") +
+    scale_color_manual(values = c("orange", "darkseagreen3"),
+                       breaks = c("0", "1"))
+  if (exists("p.total")) { p.total <- p.total + p} else {p.total <- p}
+}
+  print(p.total)
+```
+
+# use tradseq to show heatmap
+
+```{r}
+yhatSmooth <- predictSmooth(sce, gene = genes, nPoints = 100, tidy = FALSE)
+yhatSmoothScaled <- t(scale(t(yhatSmooth)))
+```
+
+```{r}
+pheatmap(yhatSmoothScaled,
+         cluster_cols = FALSE,
+         show_rownames = FALSE, show_colnames = FALSE, main = "Both branches", legend = FALSE,
+         border_color = NA
+)
+```
+```{r}
+heatSmooth <- Heatmap(yhatSmoothScaled, cluster_columns = FALSE, show_row_names = FALSE, show_column_names = FALSE, row_km = 4)
+heatSmooth <- draw(heatSmooth)
+```
+make with 2 separate heatmap: 
+
+```{r}
+heatSmooth_cd206 <- Heatmap(yhatSmoothScaled[, 100:1], cluster_columns = FALSE,  show_row_names = FALSE, show_column_names = FALSE, column_title = "CD206+ IM")
+
+heatSmooth_mhcii <- Heatmap(yhatSmoothScaled[, 101:200], cluster_columns = FALSE,  show_row_names = FALSE, show_column_names = FALSE, column_title = "MHCII+ IM")
+
+heatSmooth_combined <- draw ( heatSmooth_cd206 + heatSmooth_mhcii, k = 4)
+heatSmooth_combined
+```
+
+Try seriation
+```{r}
+library(seriation)
+o = seriate(max(yhatSmoothScaled) - yhatSmoothScaled, method = "BEA_TSP")
+draw ( heatSmooth_cd206 + heatSmooth_mhcii, k = 4, row_order = get_order(o, 1))
+
+```
+
+```{r}
+o = seriate(dist(yhatSmoothScaled), method = "TSP")
+draw ( heatSmooth_cd206 + heatSmooth_mhcii, k = 4, row_order = get_order(o))
+```
+
+```{r}
+o = seriate(dist(yhatSmoothScaled), method = "GW")
+draw ( heatSmooth_cd206 + heatSmooth_mhcii, k = 4, row_order = get_order(o))
+```
+```{r}
+# annotation for gene marking: 
+genes.toShow <- c("Maf", "Mafb", "Zeb2", "Fcgr1")
+ha = rowAnnotation(foo = anno_mark(at = which(rownames(yhatSmooth) %in% genes.toShow), labels = genes.toShow))
+```
+
+```{r}
+heatSmooth_mhcii.withLabels <- Heatmap(yhatSmoothScaled[, 101:200], cluster_columns = FALSE,  show_row_names = FALSE, show_column_names = FALSE, column_title = "MHCII+ IM", right_annotation = ha)
+
+heatSmooth_combined_withLabels <- draw ( heatSmooth_cd206 + heatSmooth_mhcii.withLabels, k = 6)
+
+```
+
+```{r}
+draw(heatSmooth_cd206 + heatSmooth_mhcii, cluster_columns = FALSE, cluster_rows = hclust(dist(clusPat$rsec@clusterMatrix)), split = 4)
+```
+```{r}
+draw(heatSmooth_cd206 + heatSmooth_mhcii, cluster_columns = FALSE, cluster_rows = hclust(dist(clusPat$yhatScaled)), split = 6)
+```
+```{r}
+draw(heatSmooth_cd206 + heatSmooth_mhcii, cluster_columns = FALSE, cluster_rows = hclust(dist(endRes[rownames(yhatSmooth), ])))
+```
+
+try make different heatmaps: top with no different genes, bottom with high sig genes
+
+let's suppose half of genes remain unchanged. 
+
+```{r}
+endRes.DE <- endRes[rownames(yhatSmooth), ]
+summary(endRes.DE$waldStat)
+```
+take median 40 as the cut threshold. 
+
+```{r}
+genes.changed <- rownames(filter(endRes.DE, waldStat > 70 & (logFC1_2 > 2 | logFC1_2 < -2) ))
+genes.noChange <- setdiff(rownames(endRes.DE) , genes.changed)
+```
+
+make heatmap with unchanged genes. 
+
+```{r}
+heatSmooth_cd206.unchanged <- Heatmap(yhatSmoothScaled[genes.noChange, 100:1], cluster_columns = FALSE,  show_row_names = FALSE, show_column_names = FALSE, column_title = "CD206+ IM")
+
+heatSmooth_mhcii.unchanged <- Heatmap(yhatSmoothScaled[genes.noChange, 101:200], cluster_columns = FALSE,  show_row_names = FALSE, show_column_names = FALSE, column_title = "MHCII+ IM")
+
+heatSmooth_combined.unchanged <- draw ( heatSmooth_cd206.unchanged + heatSmooth_mhcii.unchanged, row_title = "unchanged genes", auto_adjust = FALSE)
+```
+```{r}
+heatSmooth_cd206.changed <- Heatmap(yhatSmoothScaled[genes.changed, 100:1], cluster_columns = FALSE,  show_row_names = FALSE, cluster_rows = hclust(dist(yhatSmoothScaled[genes.changed, ])), show_column_names = FALSE, column_title = "CD206+ IM")
+
+heatSmooth_mhcii.changed <- Heatmap(yhatSmoothScaled[genes.changed, 101:200], cluster_columns = FALSE,  show_row_names = TRUE,row_names_gp = gpar(fontsize = 8), show_column_names = FALSE, column_title = "MHCII+ IM")
+
+heatSmooth_combined.changed <- draw ( heatSmooth_cd206.changed + heatSmooth_mhcii.changed, column_title = "Changed genes", split = 2)
+```
+let's find the expression peak of each gene: 
+```{r}
+orderbyExpressionPeak <- function(x, # matrix
+                                  decreasing = FALSE, 
+                                  output.position = FALSE # if true, give relative position 0 - 1, or output order. 
+                                  ) {
+  indx.peak <- apply(x, 1 , which.max)
+  
+  if(output.position) {
+    po <- indx.peak/nrow(x)
+    if (! length(rownames(x)) == 0) {names(po) <- rownames(x)}
+    return(po)
+  } else {
+    o <- order(indx.peak) 
+    if (! length(rownames(x)) == 0) {names(o) <- rownames(x)[o]}
+    return (o)}
+}
+```
+
+```{r}
+po.cd206 <- orderbyExpressionPeak(yhatSmoothScaled[genes.noChange, 1:100], output.position = TRUE)
+po.mhcii <- orderbyExpressionPeak(yhatSmoothScaled[genes.noChange, 101:200], output.position = TRUE)
+order.mean <- order ( ( po.cd206 + po.mhcii ) /2)
+
+heatSmooth_cd206.unchanged.ordered <- Heatmap(yhatSmoothScaled[genes.noChange, 100:1], cluster_columns = FALSE,  show_row_names = FALSE, show_column_names = FALSE, row_order = order.mean,  column_title = "CD206+ IM")
+
+heatSmooth_combined.unchanged.ordered <- draw ( heatSmooth_cd206.unchanged.ordered + heatSmooth_mhcii.unchanged, column_title = "unchanged genes", auto_adjust = FALSE)
+```
+
+
+
+
 # Session information 
 
 R sesssion: 
