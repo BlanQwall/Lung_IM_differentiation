@@ -60,15 +60,7 @@ modulated_genes <- graph_test(mo, neighbor_graph = "principal_graph", cores = 4)
 genes <- row.names(subset(modulated_genes, q_value == 0 & morans_I > 0.25))
 length(genes)
 ```
-
-Give another gene set with lower threshold: 
-```{r}
-genes.2 <- row.names(subset(modulated_genes, q_value < 0.02 & morans_I > 0.2))
-length(genes.2)
-```
-*Probably not do this because the median of morans_I is alread 0.025, very low.*
-
-
+Prepare matrix with z-scores, smoothened and scaled data across pseudotime for heatmap. 
 
 ```{r}
 pt.matrix <- exprs(mo)[match(genes,rownames(rowData(mo))),order(pseudotime(mo))]
@@ -82,6 +74,7 @@ rownames(pt.matrix) <- genes
 colnames(pt.matrix) <- cellnames
 ```
 
+Show DE genes in unsupervised heatmap. 
 
 ```{r fig.width=8, fig.height=10}
 #K means with 6 groups
@@ -103,30 +96,6 @@ htkm <- Heatmap(
 )
 
 htkm <- draw(htkm)
-```
-
-```{r fig.width=8, fig.height=6}
-#Ward.D2 Hierarchical Clustering
-# library(seriation)
-#o1 <- seriate(dist(pt.matrix), method = "GW")
-# o2 <- order(modulated_genes[rownames(pt.matrix), "morans_test_statistic"])
-hthc <- Heatmap(
-  pt.matrix,
-  name                         = "z-score",
-  col                          = colorRamp2(seq(from=-2,to=2,length=11),rev(brewer.pal(11, "Spectral"))),
-  show_row_names               = TRUE,
-  show_column_names            = FALSE,
-  row_names_gp                 = gpar(fontsize = 3),
-  clustering_method_rows = "ward.D2",
-  clustering_method_columns = "ward.D2",
-  row_title_rot                = 0,
-  # row_order = get_order(o1),
-  # row_order = o2, 
-  cluster_rows                 = TRUE,
-  cluster_row_slices           = FALSE,
-  cluster_columns              = FALSE)
-
-hthc <- draw(hthc)
 ```
 
 ## Annotate the cells associated to either differentiation of CD206+ IMs or CD206- IMs
