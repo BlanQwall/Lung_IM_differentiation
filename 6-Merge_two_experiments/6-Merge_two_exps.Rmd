@@ -450,12 +450,12 @@ plot3d.byGroup(imdtr3.for3d, treat.list[5])
 
 Heatmap: 
 ```{r fig.width=5, fig.height=6, warning=FALSE, message=FALSE}
-DoHeatmap(imdtr3.for3d, features = top20$gene, group.colors = pal, size = 0) + scale_fill_gradientn(colors = c("lightgrey", "red")) +
+DoHeatmap(imdtr3.for3d, features = top20$gene, group.colors = pal, size = 0) + scale_fill_gradientn(colors = c("dark blue", "white", "red")) +
    theme(axis.text.y = element_text(size = 4))
 ```
 
 ```{r include=FALSE}
-ggsave(filename = "HeatMap_top20_in_cell_types.pdf",
+ggsave(filename = "HeatMap_top20_in_cell_types_blue_red.pdf",
        path = "../Figures", 
        height = 6, width = 5, 
        device = "pdf")
@@ -465,7 +465,7 @@ Dot plot show cell type markers:
 
 ```{r fig.width=9, fig.height=4}
 DotPlot(imdtr3.for3d, 
-        cols = c("lightgrey", "red"),
+        cols = c("light grey", "red"),
         features = c("Ccr2", "Irf7", "Ly6c2",
                      "Ace", "Nr4a1", "Fcgr4", 
                      "H2-Ab1", "H2-Eb1", "Cd74", 
