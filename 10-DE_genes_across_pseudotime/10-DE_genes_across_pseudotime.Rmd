@@ -181,9 +181,6 @@ sigGene <- names(sce)[o[1]]
 plotSmoothers(sce, counts = counts(sce), gene = sigGene
               #, curvesCol = c("#33A02C", "#B2DF8A")
               ) + ggtitle(sigGene) 
-#+ scale_color_manual(
-#   name = "Lineage",                                                                    labels = c("CD206_IM branch", "MHCII_IM branch"), 
-#   values = c("#33A02C", "#B2DF8A"))
 ```
 
 What's the top genes? 
@@ -352,9 +349,179 @@ heatSmooth_combined.changed <- draw ( heatSmooth_cd206.changed + heatSmooth_mhci
 common.genes <- heatSmooth_cd206.unchanged.ordered@row_names_param$labels[heatSmooth_cd206.unchanged.ordered@row_order]
 ```
 
+## Manually classify genes by expression timing peak
+
+Class-1 genes are the genes expressed in monocytes but turned off in the very early phase: 
+
+```{r}
+genes.class1 <- common.genes[1:which(common.genes == "Gm21188")]
+length(genes.class1)
+```
 
 
+Class-2 genes are the genes up-regulated in early phase of differentiation and turned off during transit phase. 
 
+```{r}
+genes.class2 <- common.genes[(which(common.genes == "Gm21188")+1) : which(common.genes == "Diaph3")]
+length(genes.class2)
+```
+
+Class-3 genes are the late upregulated genes during IM differentiation. 
+
+```{r}
+genes.class3 <- common.genes[(which(common.genes == "Diaph3")+1) : length(common.genes)]
+length(genes.class3)
+```
+
+Save gene lists: 
+
+```{r}
+write.csv(genes.class1, file = "./common_genes_class1.csv", quote = FALSE)
+write.csv(genes.class2, file = "./common_genes_class2.csv", quote = FALSE)
+write.csv(genes.class3, file = "./common_genes_class3.csv", quote = FALSE)
+```
+
+
+## GO/KEGG enrichment analysis with 3 classes of common genes
+
+```{r}
+suppressMessages(library(clusterProfiler))
+source("../R/entrez2symbol.R")
+source("../R/replaceEntrezID.R")
+```
+
+
+### KEGG enrichment for common genes class 1
+
+```{r message=FALSE}
+symb <- genes.class1
+de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
+result.enrichKEGG <- enrichKEGG(de_entrez, organism = "mmu", keyType = "ncbi-geneid")
+result.enrichKEGG <- replaceEntrezID(result.enrichKEGG, organism = "mmu")
+write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_common_genes_class1.csv")
+result.enrichKEGG@result
+```
+
+### GO enrichment for common genes class 1 
+
+```{r message=FALSE}
+result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
+result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
+write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class1.csv")
+result.enrichGO@result
+```
+
+### KEGG enrichment for common genes class 2
+
+```{r message=FALSE}
+symb <- genes.class2
+de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
+result.enrichKEGG <- enrichKEGG(de_entrez, organism = "mmu", keyType = "ncbi-geneid")
+result.enrichKEGG <- replaceEntrezID(result.enrichKEGG, organism = "mmu")
+write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_common_genes_class2.csv")
+result.enrichKEGG@result
+```
+
+### GO enrichment for common genes class 2 
+
+```{r message=FALSE}
+result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
+result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
+write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class2.csv")
+result.enrichGO@result
+```
+
+
+### KEGG enrichment for common genes class 3
+
+```{r message=FALSE}
+symb <- genes.class3
+de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
+result.enrichKEGG <- enrichKEGG(de_entrez, organism = "mmu", keyType = "ncbi-geneid")
+result.enrichKEGG <- replaceEntrezID(result.enrichKEGG, organism = "mmu")
+write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_common_genes_class3.csv")
+result.enrichKEGG@result
+```
+
+### GO enrichment for common genes class 3 
+
+```{r message=FALSE}
+result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
+result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
+write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class3.csv")
+result.enrichGO@result
+```
+
+# Show gene expression pattern with TradeSeq results
+
+## Class 1 common genes
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+require(ggplot2)
+sigGene <- "Ly6c2"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Sell"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+```
+
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Plac8"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
+## Class 2 common genes
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Top2a"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Ccnb2"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Mki67"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
+## Class 3 common genes
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Tgfbr1"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Cd163"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Creb5"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
 
 # Session information 
 
