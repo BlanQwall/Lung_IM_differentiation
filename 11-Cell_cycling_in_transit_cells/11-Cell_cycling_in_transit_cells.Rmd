@@ -39,7 +39,8 @@ suppressMessages(
     library(Seurat)
     library(dplyr)
     library(RColorBrewer)
-
+    library(clusterProfiler)
+    library(ggplot2)
     }
 )
 
@@ -55,6 +56,44 @@ all_cluster.markers <- FindAllMarkers(so, verbose = FALSE)
 top20 <- all_cluster.markers %>% group_by(cluster) %>% top_n(n = 20, wt = avg_log2FC)
 DoHeatmap(so, features = top20$gene, group.colors = pal) + NoLegend()
 ```
+# GO analysis of DE genes of transit cells
+
+```{r}
+source("../R/entrez2symbol.R")
+source("../R/replaceEntrezID.R")
+
+de.transit <- all_cluster.markers[which(all_cluster.markers$cluster=="Transit" &
+                                          all_cluster.markers$p_val_adj < 0.01), ]
+write.csv(de.transit, file = "./DE-Genes_in_Transit_cells.csv", quote = FALSE)
+```
+
+```{r}
+suppressMessages({
+  de_entrez <- bitr( geneID = de.transit$gene, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
+})
+
+```
+
+```{r}
+suppressMessages({
+result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
+result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
+})
+write.csv(result.enrichGO@result, file = "./enrichGO_DE_genes_transit_cells.csv")
+result.enrichGO@result
+```
+
+# Cell-cycle score in IM differentiation
+
+```{r fig.height=4, fig.width=5}
+VlnPlot(so, features = "G2M.Score", cols = pal, pt.size = 0) + ggtitle("")
+```
+
+```{r}
+ggsave(filename = "../Figures/VlnPlot_G2MScore_in_IM_differentiation.pdf", 
+       width = 5, height = 4)
+```
+
 
 
 # Session information 
