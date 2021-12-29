@@ -1,0 +1,72 @@
+---
+subtitle: "11-Cell cycling in transit cells"
+# bibliography: bib.bib
+link-citations: yes
+date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+output: 
+  #html_document
+  pdf_document:
+    pandoc_args:
+      - '../common.yaml'
+      - --listings
+    includes:
+      in_header: '../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+\newpage
+
+# Description
+
+
+
+
+
+# Prepare data
+
+```{r}
+suppressMessages(
+  {
+    library(Seurat)
+    library(dplyr)
+    library(RColorBrewer)
+
+    }
+)
+
+so <- readRDS("../8-SCENIC_analysis/only_IM_differentiation.with_SCENIC.seuratObject.Rds")
+```
+
+
+# DE genes in transit cells
+
+```{r fig.height=8, fig.width=6}
+pal <- c("#A6CEE3", "#B2DF8A", "#33A02C", "#E31A1C")
+all_cluster.markers <- FindAllMarkers(so, verbose = FALSE)
+top20 <- all_cluster.markers %>% group_by(cluster) %>% top_n(n = 20, wt = avg_log2FC)
+DoHeatmap(so, features = top20$gene, group.colors = pal) + NoLegend()
+```
+
+
+# Session information 
+
+R sesssion: 
+
+```{r}
+sessionInfo()
+```
+
+
+# References
+
+
+
