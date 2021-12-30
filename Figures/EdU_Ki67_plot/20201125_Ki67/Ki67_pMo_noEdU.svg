@@ -1,0 +1,628 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg 
+     version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     x="0px"
+     y="0px"
+     width="189px"
+     height="181px"
+     viewBox="0 0 189 181"
+     >
+<title></title>
+<desc>Creator: FreeHEP Graphics2D Driver Producer: org.freehep.graphicsio.svg.SVGGraphics2D Revision: 12753  Source:  Date: Wednesday, December 29, 2021 9:20:07 PM CET</desc>
+<g stroke-linejoin="miter" stroke-dashoffset="0" stroke-dasharray="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="square">
+<g transform="matrix(1, 0, 0, 1, 80, 31)">
+<g fill-opacity="1" fill-rule="nonzero" stroke="none" fill="#ffffff">
+  <path d="M 0 0 L 89 0 L 89 89 L 0 89 L 0 0 z"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(0.34765625, 0, 0, 0.34765625, 80, 31)">
+<clipPath id="clip1">
+  <path d="M 0 -0.00000000000001421085 L 0 257 L 257 257 L 257 -0.00000000000001421085 z"/>
+</clipPath>
+<g clip-path="url(#clip1)">
+<g fill-opacity="0.4000000059604645" fill-rule="nonzero" stroke="none" fill="#ff3333">
+  <path d="M 0 256 L 0 256 L 0 256 L 1 256 L 2 256 L 3 256 L 4 256 L 5 256 L 6 256 L 7 256 L 8 256 L 9 256 L 10 256 L 11 256 L 12 256 L 13 256 L 14 256 L 15 256 L 16 256 L 17 256 L 18 256 L 19 256 L 20 256 L 21 256 L 22 256 L 23 256 L 24 256 L 25 256 L 26 256 L 27 256 L 28 256 L 29 256 L 30 256 L 31 256 L 32 256 L 33 256 L 34 256 L 35 256 L 36 256 L 37 256 L 38 255 L 39 255 L 40 254 L 41 254 L 42 253 L 43 252 L 44 250 L 45 248 L 46 244 L 47 239 L 48 231 L 49 221 L 50 209 L 51 195 L 52 179 L 53 162 L 54 141 L 55 117 L 56 90 L 57 66 L 58 48 L 59 35 L 60 27 L 61 24 L 62 30 L 63 46 L 64 67 L 65 91 L 66 117 L 67 139 L 68 156 L 69 173 L 70 190 L 71 205 L 72 217 L 73 226 L 74 231 L 75 236 L 76 239 L 77 242 L 78 244 L 79 246 L 80 247 L 81 249 L 82 250 L 83 251 L 84 252 L 85 252 L 86 253 L 87 254 L 88 254 L 89 255 L 90 255 L 91 255 L 92 256 L 93 256 L 94 256 L 95 256 L 96 256 L 97 256 L 98 256 L 99 256 L 100 256 L 101 256 L 102 256 L 103 256 L 104 256 L 105 256 L 106 256 L 107 256 L 108 256 L 109 256 L 110 256 L 111 256 L 112 256 L 113 256 L 114 256 L 115 256 L 116 256 L 117 256 L 118 256 L 119 256 L 120 256 L 121 256 L 122 256 L 123 256 L 124 256 L 125 256 L 126 256 L 127 256 L 128 256 L 129 256 L 130 256 L 131 256 L 132 256 L 133 256 L 134 256 L 135 256 L 136 256 L 137 256 L 138 256 L 139 256 L 140 256 L 141 256 L 142 256 L 143 256 L 144 256 L 145 256 L 146 256 L 147 256 L 148 256 L 149 256 L 150 256 L 151 256 L 152 256 L 153 256 L 154 256 L 155 256 L 156 256 L 157 256 L 158 256 L 159 256 L 160 256 L 161 256 L 162 256 L 163 256 L 164 256 L 165 256 L 166 256 L 167 256 L 168 256 L 169 256 L 170 256 L 171 256 L 172 256 L 173 256 L 174 256 L 175 256 L 176 256 L 177 256 L 178 256 L 179 256 L 180 256 L 181 256 L 182 256 L 183 256 L 184 256 L 185 256 L 186 256 L 187 256 L 188 256 L 189 256 L 190 256 L 191 256 L 192 256 L 193 256 L 194 256 L 195 256 L 196 256 L 197 256 L 198 256 L 199 256 L 200 256 L 201 256 L 202 256 L 203 256 L 204 256 L 205 256 L 206 256 L 207 256 L 208 256 L 209 256 L 210 256 L 211 256 L 212 256 L 213 256 L 214 256 L 215 256 L 216 256 L 217 256 L 218 256 L 219 256 L 220 256 L 221 256 L 222 256 L 223 256 L 224 256 L 225 256 L 226 256 L 227 256 L 228 256 L 229 256 L 230 256 L 231 256 L 232 256 L 233 256 L 234 256 L 235 256 L 236 256 L 237 256 L 238 256 L 239 256 L 240 256 L 241 256 L 242 256 L 243 256 L 244 256 L 245 256 L 246 256 L 247 256 L 248 256 L 249 256 L 250 256 L 251 256 L 252 256 L 253 256 L 254 256 L 255 256 L 256 256 L 256 256"/>
+</g> <!-- drawing style -->
+</g> <!-- clip1 -->
+</g> <!-- transform -->
+<g transform="matrix(0.34765625, 0, 0, 0.34765625, 80, 31)">
+<clipPath id="clip2">
+  <path d="M 0 -0.00000000000001421085 L 0 257 L 257 257 L 257 -0.00000000000001421085 z"/>
+</clipPath>
+<g clip-path="url(#clip2)">
+<g stroke-width="1.5" stroke-linecap="round" fill="none" stroke-opacity="1" stroke="#ff3333">
+  <path d="M 0 256 L 0 256 L 0 256 L 1 256 L 2 256 L 3 256 L 4 256 L 5 256 L 6 256 L 7 256 L 8 256 L 9 256 L 10 256 L 11 256 L 12 256 L 13 256 L 14 256 L 15 256 L 16 256 L 17 256 L 18 256 L 19 256 L 20 256 L 21 256 L 22 256 L 23 256 L 24 256 L 25 256 L 26 256 L 27 256 L 28 256 L 29 256 L 30 256 L 31 256 L 32 256 L 33 256 L 34 256 L 35 256 L 36 256 L 37 256 L 38 255 L 39 255 L 40 254 L 41 254 L 42 253 L 43 252 L 44 250 L 45 248 L 46 244 L 47 239 L 48 231 L 49 221 L 50 209 L 51 195 L 52 179 L 53 162 L 54 141 L 55 117 L 56 90 L 57 66 L 58 48 L 59 35 L 60 27 L 61 24 L 62 30 L 63 46 L 64 67 L 65 91 L 66 117 L 67 139 L 68 156 L 69 173 L 70 190 L 71 205 L 72 217 L 73 226 L 74 231 L 75 236 L 76 239 L 77 242 L 78 244 L 79 246 L 80 247 L 81 249 L 82 250 L 83 251 L 84 252 L 85 252 L 86 253 L 87 254 L 88 254 L 89 255 L 90 255 L 91 255 L 92 256 L 93 256 L 94 256 L 95 256 L 96 256 L 97 256 L 98 256 L 99 256 L 100 256 L 101 256 L 102 256 L 103 256 L 104 256 L 105 256 L 106 256 L 107 256 L 108 256 L 109 256 L 110 256 L 111 256 L 112 256 L 113 256 L 114 256 L 115 256 L 116 256 L 117 256 L 118 256 L 119 256 L 120 256 L 121 256 L 122 256 L 123 256 L 124 256 L 125 256 L 126 256 L 127 256 L 128 256 L 129 256 L 130 256 L 131 256 L 132 256 L 133 256 L 134 256 L 135 256 L 136 256 L 137 256 L 138 256 L 139 256 L 140 256 L 141 256 L 142 256 L 143 256 L 144 256 L 145 256 L 146 256 L 147 256 L 148 256 L 149 256 L 150 256 L 151 256 L 152 256 L 153 256 L 154 256 L 155 256 L 156 256 L 157 256 L 158 256 L 159 256 L 160 256 L 161 256 L 162 256 L 163 256 L 164 256 L 165 256 L 166 256 L 167 256 L 168 256 L 169 256 L 170 256 L 171 256 L 172 256 L 173 256 L 174 256 L 175 256 L 176 256 L 177 256 L 178 256 L 179 256 L 180 256 L 181 256 L 182 256 L 183 256 L 184 256 L 185 256 L 186 256 L 187 256 L 188 256 L 189 256 L 190 256 L 191 256 L 192 256 L 193 256 L 194 256 L 195 256 L 196 256 L 197 256 L 198 256 L 199 256 L 200 256 L 201 256 L 202 256 L 203 256 L 204 256 L 205 256 L 206 256 L 207 256 L 208 256 L 209 256 L 210 256 L 211 256 L 212 256 L 213 256 L 214 256 L 215 256 L 216 256 L 217 256 L 218 256 L 219 256 L 220 256 L 221 256 L 222 256 L 223 256 L 224 256 L 225 256 L 226 256 L 227 256 L 228 256 L 229 256 L 230 256 L 231 256 L 232 256 L 233 256 L 234 256 L 235 256 L 236 256 L 237 256 L 238 256 L 239 256 L 240 256 L 241 256 L 242 256 L 243 256 L 244 256 L 245 256 L 246 256 L 247 256 L 248 256 L 249 256 L 250 256 L 251 256 L 252 256 L 253 256 L 254 256 L 255 256 L 256 256 L 256 256"/>
+</g> <!-- drawing style -->
+</g> <!-- clip2 -->
+</g> <!-- transform -->
+<g transform="matrix(0.34765625, 0, 0, 0.34765625, 80, 31)">
+<clipPath id="clip3">
+  <path d="M 0 -0.00000000000001421085 L 0 257 L 257 257 L 257 -0.00000000000001421085 z"/>
+</clipPath>
+<g clip-path="url(#clip3)">
+<g fill-opacity="0.4000000059604645" fill-rule="nonzero" stroke="none" fill="#00ccff">
+  <path d="M 0 256 L 0 256 L 0 256 L 1 256 L 2 256 L 3 256 L 4 256 L 5 256 L 6 256 L 7 256 L 8 256 L 9 256 L 10 256 L 11 256 L 12 256 L 13 256 L 14 256 L 15 256 L 16 256 L 17 256 L 18 256 L 19 256 L 20 256 L 21 256 L 22 256 L 23 256 L 24 256 L 25 256 L 26 256 L 27 256 L 28 256 L 29 256 L 30 256 L 31 256 L 32 256 L 33 256 L 34 256 L 35 256 L 36 256 L 37 256 L 38 256 L 39 256 L 40 256 L 41 256 L 42 255 L 43 255 L 44 254 L 45 253 L 46 252 L 47 250 L 48 247 L 49 243 L 50 238 L 51 232 L 52 223 L 53 212 L 54 199 L 55 182 L 56 161 L 57 138 L 58 117 L 59 101 L 60 85 L 61 68 L 62 52 L 63 35 L 64 24 L 65 29 L 66 45 L 67 59 L 68 72 L 69 94 L 70 119 L 71 142 L 72 162 L 73 180 L 74 196 L 75 208 L 76 218 L 77 226 L 78 233 L 79 237 L 80 241 L 81 243 L 82 245 L 83 247 L 84 248 L 85 250 L 86 251 L 87 253 L 88 254 L 89 254 L 90 255 L 91 255 L 92 256 L 93 256 L 94 256 L 95 256 L 96 256 L 97 256 L 98 256 L 99 256 L 100 256 L 101 256 L 102 256 L 103 256 L 104 256 L 105 256 L 106 256 L 107 256 L 108 256 L 109 256 L 110 256 L 111 256 L 112 256 L 113 256 L 114 256 L 115 256 L 116 256 L 117 256 L 118 256 L 119 256 L 120 256 L 121 256 L 122 256 L 123 256 L 124 256 L 125 256 L 126 256 L 127 256 L 128 256 L 129 256 L 130 256 L 131 256 L 132 256 L 133 256 L 134 256 L 135 256 L 136 256 L 137 256 L 138 256 L 139 256 L 140 256 L 141 256 L 142 256 L 143 256 L 144 256 L 145 256 L 146 256 L 147 256 L 148 256 L 149 256 L 150 256 L 151 256 L 152 256 L 153 256 L 154 256 L 155 256 L 156 256 L 157 256 L 158 256 L 159 256 L 160 256 L 161 256 L 162 256 L 163 256 L 164 256 L 165 256 L 166 256 L 167 256 L 168 256 L 169 256 L 170 256 L 171 256 L 172 256 L 173 256 L 174 256 L 175 256 L 176 256 L 177 256 L 178 256 L 179 256 L 180 256 L 181 256 L 182 256 L 183 256 L 184 256 L 185 256 L 186 256 L 187 256 L 188 256 L 189 256 L 190 256 L 191 256 L 192 256 L 193 256 L 194 256 L 195 256 L 196 256 L 197 256 L 198 256 L 199 256 L 200 256 L 201 256 L 202 256 L 203 256 L 204 256 L 205 256 L 206 256 L 207 256 L 208 256 L 209 256 L 210 256 L 211 256 L 212 256 L 213 256 L 214 256 L 215 256 L 216 256 L 217 256 L 218 256 L 219 256 L 220 256 L 221 256 L 222 256 L 223 256 L 224 256 L 225 256 L 226 256 L 227 256 L 228 256 L 229 256 L 230 256 L 231 256 L 232 256 L 233 256 L 234 256 L 235 256 L 236 256 L 237 256 L 238 256 L 239 256 L 240 256 L 241 256 L 242 256 L 243 256 L 244 256 L 245 256 L 246 256 L 247 256 L 248 256 L 249 256 L 250 256 L 251 256 L 252 256 L 253 256 L 254 256 L 255 256 L 256 256 L 256 256"/>
+</g> <!-- drawing style -->
+</g> <!-- clip3 -->
+</g> <!-- transform -->
+<g transform="matrix(0.34765625, 0, 0, 0.34765625, 80, 31)">
+<clipPath id="clip4">
+  <path d="M 0 -0.00000000000001421085 L 0 257 L 257 257 L 257 -0.00000000000001421085 z"/>
+</clipPath>
+<g clip-path="url(#clip4)">
+<g stroke-width="1.5" stroke-linecap="round" fill="none" stroke-opacity="1" stroke="#00ccff">
+  <path d="M 0 256 L 0 256 L 0 256 L 1 256 L 2 256 L 3 256 L 4 256 L 5 256 L 6 256 L 7 256 L 8 256 L 9 256 L 10 256 L 11 256 L 12 256 L 13 256 L 14 256 L 15 256 L 16 256 L 17 256 L 18 256 L 19 256 L 20 256 L 21 256 L 22 256 L 23 256 L 24 256 L 25 256 L 26 256 L 27 256 L 28 256 L 29 256 L 30 256 L 31 256 L 32 256 L 33 256 L 34 256 L 35 256 L 36 256 L 37 256 L 38 256 L 39 256 L 40 256 L 41 256 L 42 255 L 43 255 L 44 254 L 45 253 L 46 252 L 47 250 L 48 247 L 49 243 L 50 238 L 51 232 L 52 223 L 53 212 L 54 199 L 55 182 L 56 161 L 57 138 L 58 117 L 59 101 L 60 85 L 61 68 L 62 52 L 63 35 L 64 24 L 65 29 L 66 45 L 67 59 L 68 72 L 69 94 L 70 119 L 71 142 L 72 162 L 73 180 L 74 196 L 75 208 L 76 218 L 77 226 L 78 233 L 79 237 L 80 241 L 81 243 L 82 245 L 83 247 L 84 248 L 85 250 L 86 251 L 87 253 L 88 254 L 89 254 L 90 255 L 91 255 L 92 256 L 93 256 L 94 256 L 95 256 L 96 256 L 97 256 L 98 256 L 99 256 L 100 256 L 101 256 L 102 256 L 103 256 L 104 256 L 105 256 L 106 256 L 107 256 L 108 256 L 109 256 L 110 256 L 111 256 L 112 256 L 113 256 L 114 256 L 115 256 L 116 256 L 117 256 L 118 256 L 119 256 L 120 256 L 121 256 L 122 256 L 123 256 L 124 256 L 125 256 L 126 256 L 127 256 L 128 256 L 129 256 L 130 256 L 131 256 L 132 256 L 133 256 L 134 256 L 135 256 L 136 256 L 137 256 L 138 256 L 139 256 L 140 256 L 141 256 L 142 256 L 143 256 L 144 256 L 145 256 L 146 256 L 147 256 L 148 256 L 149 256 L 150 256 L 151 256 L 152 256 L 153 256 L 154 256 L 155 256 L 156 256 L 157 256 L 158 256 L 159 256 L 160 256 L 161 256 L 162 256 L 163 256 L 164 256 L 165 256 L 166 256 L 167 256 L 168 256 L 169 256 L 170 256 L 171 256 L 172 256 L 173 256 L 174 256 L 175 256 L 176 256 L 177 256 L 178 256 L 179 256 L 180 256 L 181 256 L 182 256 L 183 256 L 184 256 L 185 256 L 186 256 L 187 256 L 188 256 L 189 256 L 190 256 L 191 256 L 192 256 L 193 256 L 194 256 L 195 256 L 196 256 L 197 256 L 198 256 L 199 256 L 200 256 L 201 256 L 202 256 L 203 256 L 204 256 L 205 256 L 206 256 L 207 256 L 208 256 L 209 256 L 210 256 L 211 256 L 212 256 L 213 256 L 214 256 L 215 256 L 216 256 L 217 256 L 218 256 L 219 256 L 220 256 L 221 256 L 222 256 L 223 256 L 224 256 L 225 256 L 226 256 L 227 256 L 228 256 L 229 256 L 230 256 L 231 256 L 232 256 L 233 256 L 234 256 L 235 256 L 236 256 L 237 256 L 238 256 L 239 256 L 240 256 L 241 256 L 242 256 L 243 256 L 244 256 L 245 256 L 246 256 L 247 256 L 248 256 L 249 256 L 250 256 L 251 256 L 252 256 L 253 256 L 254 256 L 255 256 L 256 256 L 256 256"/>
+</g> <!-- drawing style -->
+</g> <!-- clip4 -->
+</g> <!-- transform -->
+<g transform="matrix(0.34765625, 0, 0, 0.34765625, 80, 31)">
+<g stroke-width="0.5" stroke-linecap="round" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 0.5 0.5 L 256.5 0.5 L 256.5 256.5 L 0.5 256.5 L 0.5 0.5 z"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 6.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<clipPath id="clip5">
+  <path d="M -80 -121 L -80 60 L 109 60 L 109 -121 z"/>
+</clipPath>
+<g clip-path="url(#clip5)">
+<g transform="matrix(1, 0, 0, 1, 14, 21)">
+<text fill-opacity="1" font-style="normal" font-family="Arial" font-weight="normal" stroke="none" fill="#000000" font-size="8" x="0" y="0">0</text>
+</g> <!-- transform -->
+</g> <!-- clip5 -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="1.5" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 4.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 9.5 -0.5 L 9.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 9.5 -0.5 L 9.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 9.5 -0.5 L 9.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 9.5 -0.5 L 9.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 9.5 -0.5 L 9.5 6.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 8.5 -0.5 L 8.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 7.5 -0.5 L 7.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 7.5 -0.5 L 7.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="1.5" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 6.5 -0.5 L 6.5 4.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 5.5 -0.5 L 5.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 4.5 -0.5 L 4.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 4.5 -0.5 L 4.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 3.5 -0.5 L 3.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 2.5 -0.5 L 2.5 6.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="1.5" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 4.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 10.5 -0.5 L 10.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 11.5 -0.5 L 11.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 11.5 -0.5 L 11.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 11.5 -0.5 L 11.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 11.5 -0.5 L 11.5 6.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 12.5 -0.5 L 12.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 12.5 -0.5 L 12.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 13.5 -0.5 L 13.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="1.5" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 14.5 -0.5 L 14.5 4.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 15.5 -0.5 L 15.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 16.5 -0.5 L 16.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 16.5 -0.5 L 16.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 17.5 -0.5 L 17.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 18.5 -0.5 L 18.5 6.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 23.5 -0.5 L 23.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 27.5 -0.5 L 27.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 30.5 -0.5 L 30.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="1.5" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 32.5 -0.5 L 32.5 4.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 34.5 -0.5 L 34.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 36.5 -0.5 L 36.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 37.5 -0.5 L 37.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 38.5 -0.5 L 38.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 39.5 -0.5 L 39.5 6.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 45.5 -0.5 L 45.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 -0.5 L 49.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 52.5 -0.5 L 52.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="1.5" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 54.5 -0.5 L 54.5 4.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 55.5 -0.5 L 55.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 57.5 -0.5 L 57.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 58.5 -0.5 L 58.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 59.5 -0.5 L 59.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 60.5 -0.5 L 60.5 6.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<clipPath id="clip6">
+  <path d="M -80 -121 L -80 60 L 109 60 L 109 -121 z"/>
+</clipPath>
+<g clip-path="url(#clip6)">
+<g transform="matrix(1, 0, 0, 1, 61, 21)">
+<text fill-opacity="1" font-style="normal" font-family="Arial" font-weight="normal" stroke="none" fill="#000000" font-size="8" x="0" y="0">10</text>
+</g> <!-- transform -->
+</g> <!-- clip6 -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<clipPath id="clip7">
+  <path d="M -80 -121 L -80 60 L 109 60 L 109 -121 z"/>
+</clipPath>
+<g clip-path="url(#clip7)">
+<g transform="matrix(1, 0, 0, 1, 69, 15)">
+<text fill-opacity="1" font-style="normal" font-family="Arial" font-weight="normal" stroke="none" fill="#000000" font-size="8" x="0" y="0">4</text>
+</g> <!-- transform -->
+</g> <!-- clip7 -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 66.5 -0.5 L 66.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 69.5 -0.5 L 69.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 72.5 -0.5 L 72.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="1.5" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 74.5 -0.5 L 74.5 4.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 75.5 -0.5 L 75.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 77.5 -0.5 L 77.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 78.5 -0.5 L 78.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 79.5 -0.5 L 79.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 80.5 -0.5 L 80.5 6.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 86.5 -0.5 L 86.5 2.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 80, 121)">
+<clipPath id="clip8">
+  <path d="M -80 -121 L -80 60 L 109 60 L 109 -121 z"/>
+</clipPath>
+<g clip-path="url(#clip8)">
+<g transform="matrix(1, 0, 0, 1, 6, 41)">
+<text fill-opacity="1" font-style="normal" font-family="Arial" font-weight="normal" stroke="none" fill="#000000" font-size="8" x="0" y="0">Comp-FITC-A :: Ki67</text>
+</g> <!-- transform -->
+</g> <!-- clip8 -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 88.5 L 42.5 88.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<clipPath id="clip9">
+  <path d="M -31 -31 L -31 150 L 158 150 L 158 -31 z"/>
+</clipPath>
+<g clip-path="url(#clip9)">
+<g transform="matrix(1, 0, 0, 1, 34, 88)">
+<text fill-opacity="1" font-style="normal" font-family="Arial" font-weight="normal" stroke="none" fill="#000000" font-size="8" x="0" y="0">0</text>
+</g> <!-- transform -->
+</g> <!-- clip9 -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 84.5 L 46.5 84.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 80.5 L 46.5 80.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 75.5 L 46.5 75.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 71.5 L 42.5 71.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 67.5 L 46.5 67.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 63.5 L 46.5 63.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 59.5 L 46.5 59.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 54.5 L 42.5 54.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<clipPath id="clip10">
+  <path d="M -31 -31 L -31 150 L 158 150 L 158 -31 z"/>
+</clipPath>
+<g clip-path="url(#clip10)">
+<g transform="matrix(1, 0, 0, 1, 30, 58)">
+<text fill-opacity="1" font-style="normal" font-family="Arial" font-weight="normal" stroke="none" fill="#000000" font-size="8" x="0" y="0">40</text>
+</g> <!-- transform -->
+</g> <!-- clip10 -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 50.5 L 46.5 50.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 46.5 L 46.5 46.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 42.5 L 46.5 42.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 38.5 L 42.5 38.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 34.5 L 46.5 34.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 29.5 L 46.5 29.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 25.5 L 46.5 25.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 21.5 L 42.5 21.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<clipPath id="clip11">
+  <path d="M -31 -31 L -31 150 L 158 150 L 158 -31 z"/>
+</clipPath>
+<g clip-path="url(#clip11)">
+<g transform="matrix(1, 0, 0, 1, 30, 25)">
+<text fill-opacity="1" font-style="normal" font-family="Arial" font-weight="normal" stroke="none" fill="#000000" font-size="8" x="0" y="0">80</text>
+</g> <!-- transform -->
+</g> <!-- clip11 -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 17.5 L 46.5 17.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 13.5 L 46.5 13.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 8.5 L 46.5 8.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-width="2" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 4.5 L 42.5 4.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(1, 0, 0, 1, 31, 31)">
+<g stroke-linejoin="bevel" stroke-linecap="butt" fill="none" stroke-opacity="1" stroke="#000000">
+  <path d="M 49.5 0.5 L 46.5 0.5"/>
+</g> <!-- drawing style -->
+</g> <!-- transform -->
+<g transform="matrix(-0, -1, 1, 0, 31, 31)">
+<clipPath id="clip12">
+  <path d="M -150 -31 L -150 158 L 31 158 L 31 -31 z"/>
+</clipPath>
+<g clip-path="url(#clip12)">
+<g transform="matrix(1, 0, 0, 1, -80, 0)">
+<text fill-opacity="1" font-style="normal" font-family="Arial" font-weight="normal" stroke="none" fill="#000000" font-size="8" x="0" y="0">Normalized To Mode</text>
+</g> <!-- transform -->
+</g> <!-- clip12 -->
+</g> <!-- transform -->
+<defs>
+<font id="Arial">
+<font-face font-family="Arial" font-weight="normal" font-style="normal" font-size="100" units-per-em="100" ascent="90.52734" desscent="21.191406" />
+<missing-glyph horiz-adv-x="75"  d="M 12.5 -0 L 12.5 62.5 L 62.5 62.5 L 62.5 -0 z M 14.0625 1.5625 L 60.9375 1.5625 L 60.9375 60.9375 L 14.0625 60.9375 z"/>
+<glyph unicode="&#x007a;" horiz-adv-x="50" d="M 1.953125 -0 L 1.953125 7.12890625 L 34.9609375 45.01953125 Q 29.345703125 44.7265625 25.048828125 44.7265625 L 3.90625 44.7265625 L 3.90625 51.85546875 L 46.2890625 51.85546875 L 46.2890625 46.044921875 L 18.212890625 13.134765625 L 12.79296875 7.12890625 Q 18.701171875 7.568359375 23.876953125 7.568359375 L 47.8515625 7.568359375 L 47.8515625 -0 z"/>
+<glyph unicode="&#x0043;" horiz-adv-x="72.216796875" d="M 58.7890625 25.09765625 L 68.26171875 22.705078125 Q 65.283203125 11.03515625 57.5439453125 4.9072265625 Q 49.8046875 -1.220703125 38.623046875 -1.220703125 Q 27.05078125 -1.220703125 19.7998046875 3.4912109375 Q 12.548828125 8.203125 8.7646484375 17.138671875 Q 4.98046875 26.07421875 4.98046875 36.328125 Q 4.98046875 47.509765625 9.2529296875 55.8349609375 Q 13.525390625 64.16015625 21.4111328125 68.4814453125 Q 29.296875 72.802734375 38.76953125 72.802734375 Q 49.51171875 72.802734375 56.8359375 67.333984375 Q 64.16015625 61.865234375 67.041015625 51.953125 L 57.71484375 49.755859375 Q 55.224609375 57.568359375 50.48828125 61.1328125 Q 45.751953125 64.697265625 38.57421875 64.697265625 Q 30.322265625 64.697265625 24.7802734375 60.7421875 Q 19.23828125 56.787109375 16.9921875 50.1220703125 Q 14.74609375 43.45703125 14.74609375 36.376953125 Q 14.74609375 27.24609375 17.4072265625 20.4345703125 Q 20.068359375 13.623046875 25.68359375 10.25390625 Q 31.298828125 6.884765625 37.841796875 6.884765625 Q 45.80078125 6.884765625 51.318359375 11.474609375 Q 56.8359375 16.064453125 58.7890625 25.09765625 z"/>
+<glyph unicode="&#x0061;" horiz-adv-x="55.615234375" d="M 40.4296875 6.396484375 Q 35.546875 2.24609375 31.0302734375 0.537109375 Q 26.513671875 -1.171875 21.337890625 -1.171875 Q 12.79296875 -1.171875 8.203125 3.0029296875 Q 3.61328125 7.177734375 3.61328125 13.671875 Q 3.61328125 17.48046875 5.3466796875 20.6298828125 Q 7.080078125 23.779296875 9.8876953125 25.68359375 Q 12.6953125 27.587890625 16.2109375 28.564453125 Q 18.798828125 29.248046875 24.0234375 29.8828125 Q 34.66796875 31.15234375 39.697265625 32.91015625 Q 39.74609375 34.716796875 39.74609375 35.205078125 Q 39.74609375 40.576171875 37.255859375 42.7734375 Q 33.88671875 45.751953125 27.24609375 45.751953125 Q 21.044921875 45.751953125 18.0908203125 43.5791015625 Q 15.13671875 41.40625 13.720703125 35.888671875 L 5.126953125 37.060546875 Q 6.298828125 42.578125 8.984375 45.9716796875 Q 11.669921875 49.365234375 16.748046875 51.1962890625 Q 21.826171875 53.02734375 28.515625 53.02734375 Q 35.15625 53.02734375 39.306640625 51.46484375 Q 43.45703125 49.90234375 45.41015625 47.5341796875 Q 47.36328125 45.166015625 48.14453125 41.552734375 Q 48.583984375 39.306640625 48.583984375 33.447265625 L 48.583984375 21.728515625 Q 48.583984375 9.47265625 49.1455078125 6.2255859375 Q 49.70703125 2.978515625 51.3671875 -0 L 42.1875 -0 Q 40.8203125 2.734375 40.4296875 6.396484375 z M 39.697265625 26.025390625 Q 34.912109375 24.072265625 25.341796875 22.705078125 Q 19.921875 21.923828125 17.67578125 20.947265625 Q 15.4296875 19.970703125 14.208984375 18.0908203125 Q 12.98828125 16.2109375 12.98828125 13.916015625 Q 12.98828125 10.400390625 15.6494140625 8.056640625 Q 18.310546875 5.712890625 23.4375 5.712890625 Q 28.515625 5.712890625 32.470703125 7.9345703125 Q 36.42578125 10.15625 38.28125 14.013671875 Q 39.697265625 16.9921875 39.697265625 22.802734375 z"/>
+<glyph unicode="&#x006d;" horiz-adv-x="83.30078125" d="M 6.591796875 -0 L 6.591796875 51.85546875 L 14.453125 51.85546875 L 14.453125 44.580078125 Q 16.89453125 48.388671875 20.947265625 50.7080078125 Q 25 53.02734375 30.17578125 53.02734375 Q 35.9375 53.02734375 39.6240234375 50.634765625 Q 43.310546875 48.2421875 44.82421875 43.9453125 Q 50.9765625 53.02734375 60.83984375 53.02734375 Q 68.5546875 53.02734375 72.705078125 48.7548828125 Q 76.85546875 44.482421875 76.85546875 35.595703125 L 76.85546875 -0 L 68.115234375 -0 L 68.115234375 32.666015625 Q 68.115234375 37.939453125 67.2607421875 40.2587890625 Q 66.40625 42.578125 64.16015625 43.994140625 Q 61.9140625 45.41015625 58.88671875 45.41015625 Q 53.41796875 45.41015625 49.8046875 41.7724609375 Q 46.19140625 38.134765625 46.19140625 30.126953125 L 46.19140625 -0 L 37.40234375 -0 L 37.40234375 33.69140625 Q 37.40234375 39.55078125 35.25390625 42.48046875 Q 33.10546875 45.41015625 28.22265625 45.41015625 Q 24.51171875 45.41015625 21.3623046875 43.45703125 Q 18.212890625 41.50390625 16.796875 37.744140625 Q 15.380859375 33.984375 15.380859375 26.904296875 L 15.380859375 -0 z"/>
+<glyph unicode="&#x006c;" horiz-adv-x="22.216796875" d="M 6.396484375 -0 L 6.396484375 71.58203125 L 15.185546875 71.58203125 L 15.185546875 -0 z"/>
+<glyph unicode="&#x0041;" horiz-adv-x="66.69921875" d="M -0.146484375 -0 L 27.34375 71.58203125 L 37.548828125 71.58203125 L 66.845703125 -0 L 56.0546875 -0 L 47.705078125 21.6796875 L 17.7734375 21.6796875 L 9.912109375 -0 z M 20.5078125 29.39453125 L 44.775390625 29.39453125 L 37.3046875 49.21875 Q 33.88671875 58.251953125 32.2265625 64.0625 Q 30.859375 57.177734375 28.369140625 50.390625 z"/>
+<glyph unicode="&#x0020;" horiz-adv-x="27.783203125" d=""/>
+<glyph unicode="&#x0069;" horiz-adv-x="22.216796875" d="M 6.640625 61.474609375 L 6.640625 71.58203125 L 15.4296875 71.58203125 L 15.4296875 61.474609375 z M 6.640625 -0 L 6.640625 51.85546875 L 15.4296875 51.85546875 L 15.4296875 -0 z"/>
+<glyph unicode="&#x0065;" horiz-adv-x="55.615234375" d="M 42.08984375 16.69921875 L 51.171875 15.576171875 Q 49.0234375 7.6171875 43.212890625 3.22265625 Q 37.40234375 -1.171875 28.369140625 -1.171875 Q 16.9921875 -1.171875 10.3271484375 5.8349609375 Q 3.662109375 12.841796875 3.662109375 25.48828125 Q 3.662109375 38.57421875 10.400390625 45.80078125 Q 17.138671875 53.02734375 27.880859375 53.02734375 Q 38.28125 53.02734375 44.873046875 45.947265625 Q 51.46484375 38.8671875 51.46484375 26.025390625 Q 51.46484375 25.244140625 51.416015625 23.681640625 L 12.744140625 23.681640625 Q 13.232421875 15.13671875 17.578125 10.595703125 Q 21.923828125 6.0546875 28.41796875 6.0546875 Q 33.251953125 6.0546875 36.669921875 8.59375 Q 40.087890625 11.1328125 42.08984375 16.69921875 z M 13.232421875 30.908203125 L 42.1875 30.908203125 Q 41.6015625 37.451171875 38.8671875 40.72265625 Q 34.66796875 45.80078125 27.978515625 45.80078125 Q 21.923828125 45.80078125 17.7978515625 41.748046875 Q 13.671875 37.6953125 13.232421875 30.908203125 z"/>
+<glyph unicode="&#x0064;" horiz-adv-x="55.615234375" d="M 40.234375 -0 L 40.234375 6.54296875 Q 35.302734375 -1.171875 25.732421875 -1.171875 Q 19.53125 -1.171875 14.3310546875 2.24609375 Q 9.130859375 5.6640625 6.2744140625 11.7919921875 Q 3.41796875 17.919921875 3.41796875 25.87890625 Q 3.41796875 33.642578125 6.005859375 39.9658203125 Q 8.59375 46.2890625 13.76953125 49.658203125 Q 18.9453125 53.02734375 25.341796875 53.02734375 Q 30.029296875 53.02734375 33.69140625 51.0498046875 Q 37.353515625 49.072265625 39.6484375 45.8984375 L 39.6484375 71.58203125 L 48.388671875 71.58203125 L 48.388671875 -0 z M 12.451171875 25.87890625 Q 12.451171875 15.91796875 16.650390625 10.986328125 Q 20.849609375 6.0546875 26.5625 6.0546875 Q 32.32421875 6.0546875 36.3525390625 10.7666015625 Q 40.380859375 15.478515625 40.380859375 25.146484375 Q 40.380859375 35.791015625 36.279296875 40.771484375 Q 32.177734375 45.751953125 26.171875 45.751953125 Q 20.3125 45.751953125 16.3818359375 40.966796875 Q 12.451171875 36.181640625 12.451171875 25.87890625 z"/>
+<glyph unicode="&#x0031;" horiz-adv-x="55.615234375" d="M 37.255859375 -0 L 28.466796875 -0 L 28.466796875 56.005859375 Q 25.29296875 52.978515625 20.1416015625 49.951171875 Q 14.990234375 46.923828125 10.888671875 45.41015625 L 10.888671875 53.90625 Q 18.26171875 57.373046875 23.779296875 62.3046875 Q 29.296875 67.236328125 31.591796875 71.875 L 37.255859375 71.875 z"/>
+<glyph unicode="&#x0030;" horiz-adv-x="55.615234375" d="M 4.150390625 35.302734375 Q 4.150390625 47.998046875 6.7626953125 55.7373046875 Q 9.375 63.4765625 14.5263671875 67.67578125 Q 19.677734375 71.875 27.490234375 71.875 Q 33.251953125 71.875 37.59765625 69.5556640625 Q 41.943359375 67.236328125 44.775390625 62.8662109375 Q 47.607421875 58.49609375 49.21875 52.2216796875 Q 50.830078125 45.947265625 50.830078125 35.302734375 Q 50.830078125 22.705078125 48.2421875 14.9658203125 Q 45.654296875 7.2265625 40.5029296875 3.0029296875 Q 35.3515625 -1.220703125 27.490234375 -1.220703125 Q 17.138671875 -1.220703125 11.23046875 6.201171875 Q 4.150390625 15.13671875 4.150390625 35.302734375 z M 13.18359375 35.302734375 Q 13.18359375 17.67578125 17.3095703125 11.8408203125 Q 21.435546875 6.005859375 27.490234375 6.005859375 Q 33.544921875 6.005859375 37.6708984375 11.865234375 Q 41.796875 17.724609375 41.796875 35.302734375 Q 41.796875 52.978515625 37.6708984375 58.7890625 Q 33.544921875 64.599609375 27.392578125 64.599609375 Q 21.337890625 64.599609375 17.724609375 59.47265625 Q 13.18359375 52.9296875 13.18359375 35.302734375 z"/>
+<glyph unicode="&#x004e;" horiz-adv-x="72.216796875" d="M 7.6171875 -0 L 7.6171875 71.58203125 L 17.333984375 71.58203125 L 54.931640625 15.380859375 L 54.931640625 71.58203125 L 64.013671875 71.58203125 L 64.013671875 -0 L 54.296875 -0 L 16.69921875 56.25 L 16.69921875 -0 z"/>
+<glyph unicode="&#x004d;" horiz-adv-x="83.30078125" d="M 7.421875 -0 L 7.421875 71.58203125 L 21.6796875 71.58203125 L 38.623046875 20.8984375 Q 40.966796875 13.818359375 42.041015625 10.302734375 Q 43.26171875 14.208984375 45.849609375 21.77734375 L 62.98828125 71.58203125 L 75.732421875 71.58203125 L 75.732421875 -0 L 66.6015625 -0 L 66.6015625 59.912109375 L 45.80078125 -0 L 37.255859375 -0 L 16.552734375 60.9375 L 16.552734375 -0 z"/>
+<glyph unicode="&#x002d;" horiz-adv-x="33.30078125" d="M 3.173828125 21.484375 L 3.173828125 30.322265625 L 30.17578125 30.322265625 L 30.17578125 21.484375 z"/>
+<glyph unicode="&#x004b;" horiz-adv-x="66.69921875" d="M 7.32421875 -0 L 7.32421875 71.58203125 L 16.796875 71.58203125 L 16.796875 36.083984375 L 52.34375 71.58203125 L 65.185546875 71.58203125 L 35.15625 42.578125 L 66.50390625 -0 L 54.00390625 -0 L 28.515625 36.23046875 L 16.796875 24.8046875 L 16.796875 -0 z"/>
+<glyph unicode="&#x0049;" horiz-adv-x="27.783203125" d="M 9.326171875 -0 L 9.326171875 71.58203125 L 18.798828125 71.58203125 L 18.798828125 -0 z"/>
+<glyph unicode="&#x0072;" horiz-adv-x="33.30078125" d="M 6.494140625 -0 L 6.494140625 51.85546875 L 14.404296875 51.85546875 L 14.404296875 43.994140625 Q 17.431640625 49.51171875 19.9951171875 51.26953125 Q 22.55859375 53.02734375 25.634765625 53.02734375 Q 30.078125 53.02734375 34.66796875 50.1953125 L 31.640625 42.041015625 Q 28.41796875 43.9453125 25.1953125 43.9453125 Q 22.314453125 43.9453125 20.01953125 42.2119140625 Q 17.724609375 40.478515625 16.748046875 37.40234375 Q 15.283203125 32.71484375 15.283203125 27.1484375 L 15.283203125 -0 z"/>
+<glyph unicode="&#x0046;" horiz-adv-x="61.083984375" d="M 8.203125 -0 L 8.203125 71.58203125 L 56.494140625 71.58203125 L 56.494140625 63.134765625 L 17.67578125 63.134765625 L 17.67578125 40.966796875 L 51.26953125 40.966796875 L 51.26953125 32.51953125 L 17.67578125 32.51953125 L 17.67578125 -0 z"/>
+<glyph unicode="&#x0070;" horiz-adv-x="55.615234375" d="M 6.591796875 -19.873046875 L 6.591796875 51.85546875 L 14.599609375 51.85546875 L 14.599609375 45.1171875 Q 17.431640625 49.072265625 20.99609375 51.0498046875 Q 24.560546875 53.02734375 29.638671875 53.02734375 Q 36.279296875 53.02734375 41.357421875 49.609375 Q 46.435546875 46.19140625 49.0234375 39.9658203125 Q 51.611328125 33.740234375 51.611328125 26.318359375 Q 51.611328125 18.359375 48.7548828125 11.9873046875 Q 45.8984375 5.615234375 40.4541015625 2.2216796875 Q 35.009765625 -1.171875 29.00390625 -1.171875 Q 24.609375 -1.171875 21.1181640625 0.68359375 Q 17.626953125 2.5390625 15.380859375 5.37109375 L 15.380859375 -19.873046875 z M 14.55078125 25.634765625 Q 14.55078125 15.625 18.603515625 10.83984375 Q 22.65625 6.0546875 28.41796875 6.0546875 Q 34.27734375 6.0546875 38.4521484375 11.0107421875 Q 42.626953125 15.966796875 42.626953125 26.3671875 Q 42.626953125 36.279296875 38.5498046875 41.2109375 Q 34.47265625 46.142578125 28.80859375 46.142578125 Q 23.193359375 46.142578125 18.8720703125 40.8935546875 Q 14.55078125 35.64453125 14.55078125 25.634765625 z"/>
+<glyph unicode="&#x006f;" horiz-adv-x="55.615234375" d="M 3.3203125 25.927734375 Q 3.3203125 40.33203125 11.328125 47.265625 Q 18.017578125 53.02734375 27.63671875 53.02734375 Q 38.330078125 53.02734375 45.1171875 46.0205078125 Q 51.904296875 39.013671875 51.904296875 26.66015625 Q 51.904296875 16.650390625 48.9013671875 10.9130859375 Q 45.8984375 5.17578125 40.1611328125 2.001953125 Q 34.423828125 -1.171875 27.63671875 -1.171875 Q 16.748046875 -1.171875 10.0341796875 5.810546875 Q 3.3203125 12.79296875 3.3203125 25.927734375 z M 12.353515625 25.927734375 Q 12.353515625 15.966796875 16.69921875 11.0107421875 Q 21.044921875 6.0546875 27.63671875 6.0546875 Q 34.1796875 6.0546875 38.525390625 11.03515625 Q 42.87109375 16.015625 42.87109375 26.220703125 Q 42.87109375 35.83984375 38.5009765625 40.7958984375 Q 34.130859375 45.751953125 27.63671875 45.751953125 Q 21.044921875 45.751953125 16.69921875 40.8203125 Q 12.353515625 35.888671875 12.353515625 25.927734375 z"/>
+<glyph unicode="&#x003a;" horiz-adv-x="27.783203125" d="M 9.033203125 41.845703125 L 9.033203125 51.85546875 L 19.04296875 51.85546875 L 19.04296875 41.845703125 z M 9.033203125 -0 L 9.033203125 10.009765625 L 19.04296875 10.009765625 L 19.04296875 -0 z"/>
+<glyph unicode="&#x0038;" horiz-adv-x="55.615234375" d="M 17.67578125 38.818359375 Q 12.20703125 40.8203125 9.5703125 44.53125 Q 6.93359375 48.2421875 6.93359375 53.41796875 Q 6.93359375 61.23046875 12.548828125 66.552734375 Q 18.1640625 71.875 27.490234375 71.875 Q 36.865234375 71.875 42.578125 66.4306640625 Q 48.291015625 60.986328125 48.291015625 53.173828125 Q 48.291015625 48.193359375 45.6787109375 44.5068359375 Q 43.06640625 40.8203125 37.744140625 38.818359375 Q 44.3359375 36.669921875 47.7783203125 31.884765625 Q 51.220703125 27.099609375 51.220703125 20.458984375 Q 51.220703125 11.279296875 44.7265625 5.029296875 Q 38.232421875 -1.220703125 27.63671875 -1.220703125 Q 17.041015625 -1.220703125 10.546875 5.0537109375 Q 4.052734375 11.328125 4.052734375 20.703125 Q 4.052734375 27.685546875 7.5927734375 32.3974609375 Q 11.1328125 37.109375 17.67578125 38.818359375 z M 15.91796875 53.7109375 Q 15.91796875 48.6328125 19.189453125 45.41015625 Q 22.4609375 42.1875 27.685546875 42.1875 Q 32.763671875 42.1875 36.0107421875 45.3857421875 Q 39.2578125 48.583984375 39.2578125 53.22265625 Q 39.2578125 58.056640625 35.9130859375 61.3525390625 Q 32.568359375 64.6484375 27.587890625 64.6484375 Q 22.55859375 64.6484375 19.23828125 61.42578125 Q 15.91796875 58.203125 15.91796875 53.7109375 z M 13.0859375 20.654296875 Q 13.0859375 16.89453125 14.8681640625 13.37890625 Q 16.650390625 9.86328125 20.166015625 7.9345703125 Q 23.681640625 6.005859375 27.734375 6.005859375 Q 34.033203125 6.005859375 38.134765625 10.05859375 Q 42.236328125 14.111328125 42.236328125 20.361328125 Q 42.236328125 26.708984375 38.0126953125 30.859375 Q 33.7890625 35.009765625 27.44140625 35.009765625 Q 21.240234375 35.009765625 17.1630859375 30.908203125 Q 13.0859375 26.806640625 13.0859375 20.654296875 z"/>
+<glyph unicode="&#x0037;" horiz-adv-x="55.615234375" d="M 4.736328125 62.20703125 L 4.736328125 70.654296875 L 51.07421875 70.654296875 L 51.07421875 63.818359375 Q 44.23828125 56.54296875 37.5244140625 44.482421875 Q 30.810546875 32.421875 27.1484375 19.677734375 Q 24.51171875 10.693359375 23.779296875 -0 L 14.74609375 -0 Q 14.892578125 8.447265625 18.06640625 20.41015625 Q 21.240234375 32.373046875 27.1728515625 43.4814453125 Q 33.10546875 54.58984375 39.794921875 62.20703125 z"/>
+<glyph unicode="&#x0036;" horiz-adv-x="55.615234375" d="M 49.755859375 54.052734375 L 41.015625 53.369140625 Q 39.84375 58.544921875 37.6953125 60.888671875 Q 34.130859375 64.6484375 28.90625 64.6484375 Q 24.70703125 64.6484375 21.533203125 62.3046875 Q 17.3828125 59.27734375 14.990234375 53.466796875 Q 12.59765625 47.65625 12.5 36.9140625 Q 15.673828125 41.748046875 20.263671875 44.091796875 Q 24.853515625 46.435546875 29.8828125 46.435546875 Q 38.671875 46.435546875 44.8486328125 39.9658203125 Q 51.025390625 33.49609375 51.025390625 23.2421875 Q 51.025390625 16.50390625 48.1201171875 10.7177734375 Q 45.21484375 4.931640625 40.13671875 1.85546875 Q 35.05859375 -1.220703125 28.61328125 -1.220703125 Q 17.626953125 -1.220703125 10.693359375 6.8603515625 Q 3.759765625 14.94140625 3.759765625 33.49609375 Q 3.759765625 54.248046875 11.42578125 63.671875 Q 18.115234375 71.875 29.443359375 71.875 Q 37.890625 71.875 43.2861328125 67.138671875 Q 48.681640625 62.40234375 49.755859375 54.052734375 z M 13.8671875 23.193359375 Q 13.8671875 18.65234375 15.7958984375 14.501953125 Q 17.724609375 10.3515625 21.19140625 8.1787109375 Q 24.658203125 6.005859375 28.466796875 6.005859375 Q 34.033203125 6.005859375 38.037109375 10.498046875 Q 42.041015625 14.990234375 42.041015625 22.705078125 Q 42.041015625 30.126953125 38.0859375 34.3994140625 Q 34.130859375 38.671875 28.125 38.671875 Q 22.16796875 38.671875 18.017578125 34.3994140625 Q 13.8671875 30.126953125 13.8671875 23.193359375 z"/>
+<glyph unicode="&#x0054;" horiz-adv-x="61.083984375" d="M 25.927734375 -0 L 25.927734375 63.134765625 L 2.34375 63.134765625 L 2.34375 71.58203125 L 59.08203125 71.58203125 L 59.08203125 63.134765625 L 35.400390625 63.134765625 L 35.400390625 -0 z"/>
+<glyph unicode="&#x0034;" horiz-adv-x="55.615234375" d="M 32.32421875 -0 L 32.32421875 17.138671875 L 1.26953125 17.138671875 L 1.26953125 25.1953125 L 33.935546875 71.58203125 L 41.11328125 71.58203125 L 41.11328125 25.1953125 L 50.78125 25.1953125 L 50.78125 17.138671875 L 41.11328125 17.138671875 L 41.11328125 -0 z M 32.32421875 25.1953125 L 32.32421875 57.470703125 L 9.912109375 25.1953125 z"/>
+</font>
+
+</defs> <!-- font definitions -->
+</g> <!-- default stroke -->
+</svg> <!-- bounding box -->
