@@ -94,6 +94,28 @@ ggsave(filename = "../Figures/VlnPlot_G2MScore_in_IM_differentiation.pdf",
        width = 5, height = 4)
 ```
 
+# Show cell-cycle score in UMAP plot precalculated in Monocle
+
+```{r fig.height=4, fig.width=6}
+so <- RunUMAP ( so, dims = 1:8 , 
+                n.components = 3L )
+DimPlot(so, cols = pal)
+```
+```{r}
+ggsave(filename = "../Figures/UMAPplot_IM_diff_PC1_2.pdf", 
+       width = 6, height = 4)
+```
+
+
+```{r fig.height=4, fig.width=5}
+FeaturePlot(so, features = "G2M.Score", 
+            cols = c("lightgrey", "red"), 
+            min.cutoff = 0.)
+```
+```{r}
+ggsave(filename = "../Figures/FeaturePlot_G2M_in_IM_diff_PC1_2.pdf", 
+       width = 5, height = 4)
+```
 
 
 # Session information 
