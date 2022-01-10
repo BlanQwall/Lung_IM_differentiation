@@ -50,6 +50,26 @@ mo <- readRDS(file = "../9-Monocle_analysis_and_pseudotime_estimation/Mono_to_IM
 ```
 
 
+Show trajectory in UMAP plot: 
+
+```{r fig.height=5, fig.width=6.5}
+pal2 <- c(`Classical_Mono`="#A6CEE3", 
+          `MHCII_IM`="#B2DF8A",
+          `CD206_IM`="#33A02C", 
+          `Transit` = "#E31A1C")
+
+plot_cells(cds = mo, color_cells_by = "cell.type2", 
+           cell_size = 1, label_cell_groups = FALSE, 
+           label_branch_points = TRUE, label_leaves = TRUE, 
+           label_roots = FALSE, alpha = 1) + 
+  scale_color_manual(values = pal2)
+```
+
+```{r eval=FALSE}
+ggsave(filename = "../Figures/UMAPplot_trajectory.pdf", width = 6.5, height = 5)
+```
+
+
 # DE gene expression across IM-differentiation
 
 [DE genes across pseudotime of IM differentiation](#de-genes)
