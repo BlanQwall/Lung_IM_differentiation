@@ -41,10 +41,24 @@ suppressMessages(
     library(RColorBrewer)
     library(clusterProfiler)
     library(ggplot2)
+    library(monocle3)
     }
 )
 
 so <- readRDS("../8-SCENIC_analysis/only_IM_differentiation.with_SCENIC.seuratObject.Rds")
+```
+
+## Subset the cMo population with only the differentiating cells
+
+```{r message=FALSE}
+# here's the cells that were used for monocyte-IM differentiation analysis: 
+cds <- readRDS("../9-Monocle_analysis_and_pseudotime_estimation/Mono_to_IM.cds")
+
+# subset with the cell names
+so <- subset(so, cells = colnames(cds))
+
+# check cell number
+ncol(so) == ncol(cds)
 ```
 
 
@@ -96,10 +110,16 @@ ggsave(filename = "../Figures/VlnPlot_G2MScore_in_IM_differentiation.pdf",
 
 # Show cell-cycle score in UMAP plot precalculated in Monocle
 
+UMAP coordination was calculated and stored in CDS object. 
+```{r}
+
+```
+
+
 ```{r fig.height=4, fig.width=6}
-so <- RunUMAP ( so, dims = 1:8 , 
-                n.components = 3L )
-DimPlot(so, cols = pal)
+so[["UMAP2"]] <- CreateDimReducObject(embeddings = cds@int_colData@listData$reducedDims$UMAP, 
+                                      key = "UMAP_", assay = DefaultAssay(so))
+DimPlot(so, cols = pal, reduction = "UMAP2")
 ```
 ```{r}
 ggsave(filename = "../Figures/UMAPplot_IM_diff_PC1_2.pdf", 
@@ -108,7 +128,7 @@ ggsave(filename = "../Figures/UMAPplot_IM_diff_PC1_2.pdf",
 
 
 ```{r fig.height=4, fig.width=5}
-FeaturePlot(so, features = "G2M.Score", 
+FeaturePlot(so, features = "G2M.Score", reduction = "UMAP2",
             cols = c("lightgrey", "red"), 
             min.cutoff = 0.)
 ```
