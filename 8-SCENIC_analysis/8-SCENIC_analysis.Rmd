@@ -39,7 +39,8 @@ suppressMessages({
   library(SCENIC)
   library(AUCell)
   library(RcisTarget)
-  library(SCopeLoomR)})
+  library(SCopeLoomR)
+  library(ggplot2)})
 
 obj <- readRDS("../6-Merge_two_experiments/immune_imdtr3.seuratObject.Rds") 
 ```
@@ -353,6 +354,12 @@ pal2 <- c(`Classical_Mono`="#A6CEE3",
 ```{r fig.height=5, fig.width=6}
   VlnPlot(obj, features = "Mafb (15g)", group.by  = "cell.type2", pt.size = 0, cols = pal2)
 ```
+```{r}
+ggsave(filename = "../Figures/VlnPlot_Mafb_TF_activity_in_IM_differentiation.pdf", 
+       height = 5, width = 6)
+```
+
+
 
 ```{r fig.height=5, fig.width=6}
   VlnPlot(obj, features = "Mafb-extended (168g)", group.by  = "cell.type2", pt.size = 0, cols = pal2)
@@ -369,6 +376,11 @@ DefaultAssay(obj) <- "RNA"
 
 ```{r fig.height=5, fig.width=6}
   VlnPlot(obj, features = "Mafb", group.by  = "cell.type2", pt.size = 0, cols = pal2)
+```
+
+```{r}
+ggsave(filename = "../Figures/VlnPlot_Mafb_expression_in_IM_differentiation.pdf", 
+       height = 5, width = 6)
 ```
 
 Save data

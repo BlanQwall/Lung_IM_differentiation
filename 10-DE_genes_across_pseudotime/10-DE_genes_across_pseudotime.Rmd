@@ -363,6 +363,12 @@ heatSmooth_mhcii.changed <- Heatmap(yhatSmoothScaled[genes.changed, 101:200], cl
 heatSmooth_combined.changed <- draw ( heatSmooth_cd206.changed + heatSmooth_mhcii.changed, column_title = "Specific genes", split = 2)
 ```
 
+```{r}
+heatSmooth_cd206 <- heatSmooth_cd206.unchanged.ordered %v% heatSmooth_cd206.changed
+heatSmooth_mhcii <- heatSmooth_mhcii.unchanged
+```
+
+
 # Functionality analysis of DE genes across pseudotime (common genes)
 
 ```{r}
@@ -542,6 +548,35 @@ plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + sc
 ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Ube2c"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Aurkb"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Racgap1"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
+```{r fig.width=4, fig.height=3, message=FALSE}
+sigGene <- "Ube2c"
+plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
+ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+       width = 4, height = 3)
+```
+
 
 # Session information 
 
