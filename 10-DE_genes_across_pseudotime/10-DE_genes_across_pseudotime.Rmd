@@ -342,7 +342,11 @@ po.mhcii <- orderbyExpressionPeak(yhatSmoothScaled[genes.noChange, 101:200], out
 order.mean <- order ( ( po.cd206 + po.mhcii ) /2)
 
 heatSmooth_cd206.unchanged.ordered <- Heatmap(yhatSmoothScaled[genes.noChange, 100:1], cluster_columns = FALSE,  show_row_names = FALSE, show_column_names = FALSE, row_order = order.mean,  column_title = "CD206+ IM")
+```
 
+
+
+```{r fig.height=10, fig.width=8}
 heatSmooth_combined.unchanged.ordered <- draw ( heatSmooth_cd206.unchanged.ordered + heatSmooth_mhcii.unchanged, column_title = "Common genes", auto_adjust = FALSE)
 ```
 
@@ -364,10 +368,68 @@ heatSmooth_combined.changed <- draw ( heatSmooth_cd206.changed + heatSmooth_mhci
 ```
 
 ```{r}
-heatSmooth_cd206 <- heatSmooth_cd206.unchanged.ordered %v% heatSmooth_cd206.changed
-heatSmooth_mhcii <- heatSmooth_mhcii.unchanged
+geneSymbol.changed <- heatSmooth_combined.changed@ht_list$matrix_7@row_names_param$labels
+
+geneSymbol.changed.mhcii <- geneSymbol.changed[heatSmooth_combined.changed@ht_list$matrix_7@row_order_list[[1]]]
+
+geneSymbol.changed.cd206 <- geneSymbol.changed[heatSmooth_combined.changed@ht_list$matrix_7@row_order_list[[2]]]
 ```
 
+MHCII IM high genes: 
+
+```{r}
+geneSymbol.changed.mhcii
+```
+
+```{r}
+geneSymbol.changed.cd206
+```
+
+```{r}
+write.csv(geneSymbol.changed.cd206, file = "./geneSymbol_changed_cd206_IM.csv", quote = FALSE, row.names = FALSE)
+write.csv(geneSymbol.changed.mhcii, file = "./geneSymbol_changed_mhcii_IM.csv", quote = FALSE, row.names = FALSE)
+
+```
+
+
+## GO enrichment on the changed/specific genes
+
+```{r}
+suppressMessages(library(clusterProfiler))
+source("../R/entrez2symbol.R")
+source("../R/replaceEntrezID.R")
+```
+
+### GO enrichment on MHCII IM
+
+```{r message=FALSE}
+symb <- geneSymbol.changed.mhcii
+de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
+result.enrichKEGG <- enrichKEGG(de_entrez, organism = "mmu", keyType = "ncbi-geneid")
+result.enrichKEGG <- replaceEntrezID(result.enrichKEGG, organism = "mmu")
+write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_MHCII_IM_specific_genes.csv")
+result.enrichKEGG@result
+```
+
+### GO enrichment on CD206+ IM
+
+```{r message=FALSE}
+symb <- geneSymbol.changed.cd206
+de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
+result.enrichKEGG <- enrichKEGG(de_entrez, organism = "mmu", keyType = "ncbi-geneid")
+result.enrichKEGG <- replaceEntrezID(result.enrichKEGG, organism = "mmu")
+write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_CD206_IM_specific_genes.csv")
+result.enrichKEGG@result
+```
+
+### GO enrichment for common genes class 1 
+
+```{r message=FALSE}
+result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
+result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
+write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class1.csv")
+result.enrichGO@result
+```
 
 # Functionality analysis of DE genes across pseudotime (common genes)
 
@@ -409,12 +471,6 @@ write.csv(genes.class3, file = "./common_genes_class3.csv", quote = FALSE)
 
 
 ## GO/KEGG enrichment analysis with 3 classes of common genes
-
-```{r}
-suppressMessages(library(clusterProfiler))
-source("../R/entrez2symbol.R")
-source("../R/replaceEntrezID.R")
-```
 
 
 ### KEGG enrichment for common genes class 1
