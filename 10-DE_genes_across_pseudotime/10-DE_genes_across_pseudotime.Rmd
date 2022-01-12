@@ -368,11 +368,8 @@ heatSmooth_combined.changed <- draw ( heatSmooth_cd206.changed + heatSmooth_mhci
 ```
 
 ```{r}
-geneSymbol.changed <- heatSmooth_combined.changed@ht_list$matrix_7@row_names_param$labels
-
-geneSymbol.changed.mhcii <- geneSymbol.changed[heatSmooth_combined.changed@ht_list$matrix_7@row_order_list[[1]]]
-
-geneSymbol.changed.cd206 <- geneSymbol.changed[heatSmooth_combined.changed@ht_list$matrix_7@row_order_list[[2]]]
+geneSymbol.changed.mhcii <- read.csv("./geneSymbol_changed_mhcii_IM.csv", col.names = FALSE)[[1]]
+geneSymbol.changed.cd206 <- read.csv("./geneSymbol_changed_cd206_IM.csv", col.names = FALSE)[[1]]
 ```
 
 MHCII IM high genes: 
