@@ -1,0 +1,612 @@
+---
+subtitle: "12 - cMAF- and Mafb-deficient IM"
+# bibliography: bib.bib
+link-citations: yes
+date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+output: 
+  #html_document
+  pdf_document:
+    pandoc_args:
+      - '../common.yaml'
+      - --listings
+    includes:
+      in_header: '../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+\newpage
+
+# Description
+
+We would like to know the functions of cMAF and MAFb transcription factors in IM differentiation or IM refilling in empty niche. We analyze the IM with cMAF-KO, MAFb-KO, cMAF/MAF-dKO and control phenotype using scRNAseq (10X Genomics). These mice are Ms4a3-Cre induced recombination KO mice, thus gene KO is dependent on the Ms4a3 expression. We know in 6-week old Ms4a3-dTomato mice, dTomato+ cells don’t present in all the whole IM population (~80%). 
+
+The solution is to use the BM chimera with BM of Ms4a3-cMAF, Ms4a3-MAFb, Ms4a3-cMAF/MAFb and littermate control transferred into CD45.1-IM-DTR mice after thorax-protection irradiation. The monocytes with Ms4a3-induced KO will take over the lung after the IM niche is emptied by DT treatment. After 1 week, the CD45.2+CD45.1- (originated from transferred BM) IM and monocytes should be IM and monocytes with right gene KO. 
+
+In this experiment, we have 4 groups of chimera mice (host = CD45.1-IM-DTR): 
+
+    1. Three chimera with littermate control BM (control group); 
+    2. Three chimera with Ms4a3-cMAF BM  (cMAF-KO group);
+    3. Three chimera with Ms4a3-MAFb BM  (MAFb-KO group);
+    4. Three chimera with Ms4a3-cMAF/MAFb BM  (cMAF/MAFb-dKO group). 
+
+Lung monocytes/macrophages will be sorted. For each sample, input 5K cells will be needed for scRNA-seq library construction to target recovered cell number of 3K cells. Sample from each time point should be stained with anti-MHCI-hashtag (Biolegend Hashtag) before pooled sequencing. 
+
+
+
+# Demultiplexing by hashtag sequences
+
+```{r}
+suppressMessages({
+  library(Seurat)
+  library(ggpubr)
+})
+```
+
+## Read data
+
+```{r include=FALSE}
+# Load in the UMI matrix (from CR)
+
+umis <- Read10X("../../../IM-DTR_MAF/counts/scRNAseq/Experiment-7-12-21-ScRNA_NGS21-U976/outs/filtered_feature_bc_matrix/")
+
+# For generating a hashtag count matrix from FASTQ files, please refer to https://github.com/Hoohm/CITE-seq-Count.
+# Load in the HTO count matrix
+htos <- Read10X("../../../IM-DTR_MAF/counts/HTO/read_count/", gene.column=1)
+```
+
+
+```{r read_Data, eval=FALSE}
+# Load in the UMI matrix (from CR)
+
+umis <- Read10X("../../../counts/scRNAseq/Experiment-7-12-21-ScRNA_NGS21-U976/outs/filtered_feature_bc_matrix/")
+
+# For generating a hashtag count matrix from FASTQ files, please refer to https://github.com/Hoohm/CITE-seq-Count.
+# Load in the HTO count matrix
+htos <- Read10X("../../../counts/HTO/read_count/", gene.column=1)
+```
+
+
+```{r}
+# change cell names to "-1" mode. 
+colnames(htos) <- paste0(colnames(htos), "-1")
+
+# remove the unmapped as it's not a barcode. It's the last row. 
+htos <- htos[-nrow(htos), ]
+
+# Select cell barcodes detected by both RNA and HTO
+# In the example datasets we have already filtered the cells for you, but perform this step for clarity.
+joint.bcs <- intersect(colnames(umis), colnames(htos))
+
+# Subset RNA and HTO counts by joint cell barcodes
+umis <- umis[, joint.bcs]
+htos <- as.matrix(htos[, joint.bcs])
+
+
+# Confirm that the HTO have the correct names
+rownames(htos)
+```
+
+Setup Seurat object and add in the HTO data
+
+```{r hashtag_setup}
+# Setup Seurat object
+hashtag <- CreateSeuratObject(counts = umis)
+
+# Normalize RNA data with log normalization
+hashtag <- NormalizeData(hashtag)
+# Find and scale variable features
+hashtag <- FindVariableFeatures(hashtag, selection.method = 'mean.var.plot')
+hashtag <- ScaleData(hashtag, features = VariableFeatures(hashtag))
+```
+
+## Adding HTO data as an independent assay
+
+You can read more about working with multi-modal data [here](multimodal_vignette.html)
+
+```{r hto_assay}
+# Add HTO data as a new assay independent from RNA
+hashtag[['HTO']] <- CreateAssayObject(counts = htos)
+# Normalize HTO data, here we use centered log-ratio (CLR) transformation
+hashtag <- NormalizeData(hashtag, assay = 'HTO', normalization.method = 'CLR')
+```
+
+## Demultiplex cells based on HTO enrichment
+
+Here we use the Seurat function `HTODemux()` to assign single cells back to their sample origins.
+
+```{r hashtag_demux}
+# If you have a very large dataset we suggest using k_function = "clara". This is a k-medoid clustering function for large applications
+# You can also play with additional parameters (see documentation for HTODemux()) to adjust the threshold for classification
+# Here we are using the default settings
+hashtag <- HTODemux(hashtag, assay = "HTO", positive.quantile = 0.94)
+```
+
+## Visualize demultiplexing results
+
+Output from running `HTODemux()` is saved in the object metadata. We can visualize how many cells are classified as singlets, doublets and negative/ambiguous cells.
+
+```{r demux_summary}
+# Global classification results
+table(hashtag$HTO_classification.global)
+```
+
+Visualize enrichment for selected HTOs with ridge plots
+
+```{r hashtag_ridge, fig.width=9, fig.height=10}
+# Group cells based on the max HTO signal
+Idents(hashtag) <- 'HTO_maxID'
+RidgePlot(hashtag, assay = 'HTO', features = rownames(hashtag[['HTO']]), ncol = 2)
+```
+
+Visualize pairs of HTO signals to confirm mutual exclusivity in singlets
+
+```{r hashtag_scatter1, fig.height=8, fig.width=9}
+FeatureScatter(hashtag, feature1 = 'HT7-MAFb-KO-GAGTCTGCCAGTATC', feature2 = 'HT8-dKO-TATAGAACGCCAGGC')
+```
+
+```{r hashtag_scatter2, fig.height=8, fig.width=9}
+FeatureScatter(hashtag, feature1 = 'HT5-Control-CTTTGTCTTTGTGAG', feature2 = 'HT6-cMAF-KO-TATGCTGCCACGGTA')
+```
+
+Compare number of UMIs for singlets, doublets and negative cells
+```{r hashtag_vln, fig.width=10}
+Idents(hashtag) <- 'HTO_classification.global'
+VlnPlot(hashtag, features = 'nCount_RNA', pt.size = 0.1, log = TRUE)
+```
+
+Generate a two dimensional tSNE embedding for HTOs.Here we are grouping cells by singlets and doublets for simplicity.
+
+```{r hashtag_sub_tsne, fig.width=9}
+#First, we will remove negative cells from the object
+hashtag.subset <- subset(hashtag, idents = 'Negative', invert = TRUE)
+
+# Calculate a tSNE embedding of the HTO data
+DefaultAssay(hashtag.subset) <- "HTO"
+hashtag.subset <- ScaleData(hashtag.subset, features = rownames(hashtag.subset), verbose = FALSE)
+hashtag.subset <- RunPCA(hashtag.subset, features = rownames(hashtag.subset), approx = FALSE)
+hashtag.subset <- RunTSNE(hashtag.subset, dims = 1:8, perplexity = 100, check_duplicates = FALSE)
+
+DimPlot(hashtag.subset)
+```
+
+Create an HTO heatmap, based on Figure 1C in the Cell Hashing paper. 
+
+```{r hashtag_heatmap, fig.width=12}
+#To increase the efficiency of plotting, you can subsample cells using the num.cells argument
+HTOHeatmap(hashtag, assay = 'HTO', ncells = 1000)
+```
+
+Cluster and visualize cells using the usual scRNA-seq workflow, and examine for the potential presence of batch effects.
+
+```{r hastag_cluster}
+# Extract the singlets
+singlet <- subset(hashtag, idents = 'Singlet')
+
+# Select the top 1000 most variable features
+singlet <- FindVariableFeatures(singlet, selection.method = 'mean.var.plot')
+
+# Scaling RNA data, we only scale the variable features here for efficiency
+singlet <- ScaleData(singlet, features = VariableFeatures(singlet))
+
+# Run PCA
+singlet <- RunPCA(singlet, features = VariableFeatures(singlet))
+```
+
+```{r hashtag_tsne, fig.width=9}
+# We select the top 10 PCs for clustering and tSNE based on PCElbowPlot
+singlet <- FindNeighbors(singlet, reduction = 'pca', dims = 1:10)
+singlet <- FindClusters(singlet, resolution = 0.6, verbose = FALSE)
+singlet <- RunTSNE(singlet, reduction = 'pca', dims = 1:10)
+singlet <- RunUMAP(singlet, reduction = 'pca', dims = 1:10)
+
+# Projecting singlet identities on TSNE visualization
+DimPlot(singlet, group.by = "HTO_classification")
+```
+
+save to seurat object: 
+```{r eval=FALSE}
+saveRDS(singlet, file = "./demultiplexed.seuratObject.rds")
+```
+
+# scRNAseq initiation - QC
+
+
+Given the low apoptotic rate in the sample, we consider cells with >10% mt genes as apoptotic cells and filter them out from the further analyses. 
+
+```{r}
+# load package and data
+library(Seurat)
+source("../R/seurat.setup.R")
+mt.percentage <- 10
+dimensionality <- 1:20
+```
+
+## QC
+```{r message=FALSE, warning=FALSE}
+IM_Maf <- seurat.setup(path.10x = "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR/IM-DTR_MAF/counts/scRNAseq/Experiment-7-12-21-ScRNA_NGS21-U976/outs/filtered_feature_bc_matrix/", project = "IM-DTR", dimensionality = dimensionality, mt.percentage = mt.percentage, human = FALSE)
+```
+
+```{r fig.width=12, fig.height=10}
+ggarrange(IM_Maf$plots$feature_vln, IM_Maf$plots$RNA_mt.pct_scatter, IM_Maf$plots$JackStrawPlot, IM_Maf$plots$ElbowPlot, ncol = 2, nrow = 2)
+```
+
+```{r fig.width=12, fig.height=10}
+ggarrange(IM_Maf$plots$variable_features, IM_Maf$plots$PCA_plot, IM_Maf$plots$UMAP_plot, IM_Maf$plots$TSNE_plot, ncol = 2, nrow = 2)
+```
+
+# Annotate cells by hashtags
+
+## Load Chromium/HTO data
+
+```{r}
+IM_Maf.seuratObject <- IM_Maf$seuratObject
+demultiplexed.seuratObject <- singlet
+```
+
+Assign HTO annotation to cells
+```{r}
+common <- intersect(colnames(IM_Maf.seuratObject), colnames(demultiplexed.seuratObject))
+
+IM_Maf.seuratObject <- subset(IM_Maf.seuratObject, cells = common)
+```
+
+
+```{r}
+# make intersect between hto and rna cells:
+hto <- demultiplexed.seuratObject@meta.data$HTO_classification
+names(hto) <- colnames(demultiplexed.seuratObject)
+
+# remove the sequence chars
+hto <- sub(hto, pattern = "-[C,T,G,A]{0,15}$", replacement = "")
+
+# assign to seurat object: 
+IM_Maf.seuratObject$group <- hto[colnames(IM_Maf.seuratObject)]
+```
+
+    
+## Make metadata for samples
+
+
+```{r}
+# cell type
+IM_Maf.seuratObject$cell.type0 <- "CD45+"
+```
+
+Save individual samples for other use
+
+```{r eval=FALSE}
+obj <- IM_Maf.seuratObject
+for (i in unique(obj$group)) {
+  obj.sub <- subset(obj, subset = group == i)
+  file.name <- paste("IM_mono", i, "seuratObject.rds", sep = ".")
+  saveRDS(object = obj.sub, file = file.path(".", file.name))
+}
+
+```
+
+## Data processing and cell clustering
+
+```{r}
+IM_Maf.seuratObject <- NormalizeData(IM_Maf.seuratObject)
+IM_Maf.seuratObject <- FindVariableFeatures(IM_Maf.seuratObject, selection.method = "vst", nfeatures = 2000)
+IM_Maf.seuratObject <- ScaleData(IM_Maf.seuratObject, features = rownames(IM_Maf.seuratObject))
+```
+
+Linear dimension reduction: 
+
+```{r}
+IM_Maf.seuratObject <- RunPCA(IM_Maf.seuratObject, 
+                                           features = VariableFeatures(object = IM_Maf.seuratObject))
+IM_Maf.seuratObject <- JackStraw(IM_Maf.seuratObject, num.replicate = 100)
+IM_Maf.seuratObject <- ScoreJackStraw(IM_Maf.seuratObject, dims = 1:20)
+JackStrawPlot(IM_Maf.seuratObject, dims = 1:20)
+```
+
+```{r}
+IM_Maf.seuratObject <- FindNeighbors(IM_Maf.seuratObject, dims = 1:30)
+IM_Maf.seuratObject <- FindClusters(IM_Maf.seuratObject, resolution = 0.5)
+```
+
+```{r}
+IM_Maf.seuratObject <- RunTSNE(IM_Maf.seuratObject, dims = 1:30)
+IM_Maf.seuratObject <- RunUMAP(IM_Maf.seuratObject, dims = 1:30)
+```
+
+```{r}
+DimPlot(IM_Maf.seuratObject)
+```
+
+## Celltyping
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+source("../R/seurat2singleR.R")
+
+results.singleR <- seurat2singleR(IM_Maf.seuratObject, ref = "ImmGenData")
+
+saveRDS(results.singleR, file = "./IM_Maf.ImmGenData.singleR.Rds")
+saveRDS(IM_Maf.seuratObject, file = "./IM_Maf.seuratObject.rds")
+```
+
+# Remove contaminated cell types
+
+## Plot with key markers
+
+```{r message=FALSE}
+library(ggplot2)
+library(dplyr)
+results <- IM_Maf.seuratObject
+DimPlot(results, reduction = "umap", label = TRUE)
+```
+
+
+```{r fig.width=10, fig.height=10}
+DefaultAssay(results) <- "RNA"
+FeaturePlot(results, features = c("Fcgr1", "H2-Eb1", "Cd74", "Mrc1", "Folr2", "Cd163", "Ace", "Fcgr4", "Ccr2"), reduction = "umap") 
+```
+
+
+## Use results of SingleR celltyping to annotate cells 
+
+
+```{r include=FALSE}
+results.singleR <- readRDS(file = "../../../IM-DTR_MAF/analysis/IM-DTR_MAF/20220112_annotatation_by_hashtag/IM_Maf.ImmGenData.singleR.Rds")
+```
+
+Check if SingleR results contain the same cells: 
+```{r}
+identical(colnames(results), rownames(results.singleR))
+```
+
+UMAP plot show cell types: 
+
+```{r fig.width=8, fig.height=7}
+results$singleR.celltype <- results.singleR$labels
+
+DimPlot(results, group.by = "singleR.celltype", reduction = "umap", label = T) + ggtitle("DatabaseImmuneCellExpressionData - SingleR identity")
+```
+
+TSNE plot show cell types: 
+
+```{r fig.width=8, fig.height=7}
+DimPlot(results, group.by = "singleR.celltype", reduction = "tsne", label = T) + ggtitle("DatabaseImmuneCellExpressionData - SingleR identity")
+```
+
+
+```{r fig.height=8, fig.width=16}
+DimPlot(results, group.by = "singleR.celltype", reduction = "umap", label = T, split.by = "group") + ggtitle("results - SingleR identity (split by treatment)")
+```
+
+## Remove contamination
+
+Here's all the cell types and number: 
+
+```{r}
+table(results$singleR.celltype)
+```
+
+Remove all the other cell types and keep only monocytes and macrophages. 
+
+```{r}
+results <- subset(results, subset = singleR.celltype %in% c("B cells", "Basophils", "Endothelial cells", "Stromal cells", "Neutrophils", "NK cells", "DC", "ILC", "T cells"), invert = TRUE) # DC removed!!!
+```
+
+```{r}
+table(results$group)
+```
+
+```{r}
+DimPlot(results, group.by = "singleR.celltype", reduction = "umap", label = T) + ggtitle("DatabaseImmuneCellExpressionData - SingleR identity")
+```
+
+
+## Reanalysis data after contamination removal
+
+Remove old snn: 
+```{r}
+meta.names <- names(results@meta.data)
+old.snn <- meta.names[startsWith(meta.names, "RNA_snn")]
+for (i in old.snn) { 
+  results[[i]] <- NULL
+}
+
+```
+
+
+```{r message=FALSE, warning=FALSE}
+# DefaultAssay(results) <- "RNA"
+results <- NormalizeData(results, verbose=FALSE)
+results <- FindVariableFeatures(results, selection.method = "vst", nfeatures = 2000, verbose=FALSE)
+results <- ScaleData(results, features = rownames(results), verbose=FALSE)
+results <- RunPCA(results, features = VariableFeatures(results), verbose=FALSE)
+results <- RunTSNE(results, dims = 1:10, verbose=FALSE)
+results <- RunUMAP(results, dims = 1:10, verbose=FALSE)
+```
+
+## Cell clustering
+
+```{r message=FALSE, warning=FALSE}
+results <- FindNeighbors(results, dims = 1:10, verbose = FALSE)
+results <- FindClusters(results, resolution = 0.12, verbose = FALSE) 
+```
+
+```{r}
+DimPlot(results, label = TRUE, cols = "Paired", reduction = "umap")
+```
+
+```{r fig.width=16, fig.height=5}
+DimPlot(results, label = TRUE, split.by = "group", cols = "Paired")
+```
+
+
+
+```{r fig.width=3, fig.height=4}
+source("../R/SeuratFreqTable.R")
+freq.celltype.list <- list(
+  `Control` = Seurat2CellFreqTable(subset(results, subset = group == "HT5-Control"), slotName = "RNA_snn_res.0.12"),  
+  `cMAF-KO` = Seurat2CellFreqTable(subset(results, subset = group == "HT6-cMAF-KO"), slotName = "RNA_snn_res.0.12"),
+  `MAFb-KO` = Seurat2CellFreqTable(subset(results, subset = group == "HT7-MAFb-KO"), slotName = "RNA_snn_res.0.12"), 
+  `dKO` = Seurat2CellFreqTable(subset(results, subset = group == "HT8-dKO"), slotName = "RNA_snn_res.0.12") 
+)
+
+source("../R/barChart.R")
+barChart(freq.celltype.list) + labs(fill = "Cluster") + scale_fill_manual(values = brewer.pal(6, "Paired")) + theme(axis.text.x = element_text(angle = 90))
+```
+
+
+## population characterization
+
+### Show expresssion of important monocyte markers 
+
+```{r fig.width=20, fig.height=20}
+FeaturePlot(results, features = c("Ccr2", "Plac8" ,"Ly6c2", "Spn", 
+                               "Fcgr4", "Ace", "Cxcr4", 
+                               "Fcgr1") , 
+         ncol = 3, reduction = "umap", cols = c("dark blue", "yellow", "red"))
+```
+
+### Show expresssion of important IM markers 
+
+```{r fig.width=20, fig.height=20}
+FeaturePlot(results, features = c(
+                               "Fcgr1", "Mafb" ,"Mrc1", "Lyve1", "Folr2", "Cd163", 
+                               "Cd72", "Cd74", "H2-Ab1") , 
+         ncol = 3, cols = c("dark blue", "yellow", "red"))
+```
+
+
+```{r fig.height=16, fig.width=16}
+VlnPlot(results, features = c("Ccr2", "Plac8" ,"Ly6c2", "Spn", 
+                              "Fcgr4", "Ace", "Cxcr4", 
+                              "Fcgr1", "Mrc1", "Cd63", "Apoe", 
+                              "H2-DMb2", "Cd74", "Cd209a", 
+                              "Ccnd1","Mki67", "Top2a", "Ccl2", 
+                              "Irf7", "Cxcl10", "Ifit1", "percent.mt", "Ifi47", "Itgax") , 
+        ncol = 4, cols = brewer.pal(6, "Paired"))
+```
+
+*All the IMs are in cluster 1 while cluster 0 only presents Mafb- cells. To confirm we try to identify the populations only in control sample.*
+
+### Show expresssion of important IM markers in Control sample 
+
+```{r fig.width=20, fig.height=20}
+FeaturePlot(
+    subset(results, subset = group == "HT5-Control"), 
+            features = c("Fcgr1", "Mafb" ,"Mrc1", "Lyve1", "Folr2", "Cd163", 
+                               "Cd72", "Cd74", "H2-Ab1") , 
+         ncol = 3, cols = c("dark blue", "yellow", "red"))
+```
+
+```{r fig.height=16, fig.width=16}
+VlnPlot(
+  subset(results, subset = group == "HT5-Control"), 
+  features = c("Ccr2", "Plac8" ,"Ly6c2", "Spn", 
+                              "Fcgr4", "Ace", "Cxcr4", 
+                              "Fcgr1", "Mrc1", "Cd63", "Apoe", 
+                              "H2-DMb2", "Cd74", "Cd209a", 
+                              "Ccnd1","Mki67", "Top2a", "Ccl2", 
+                              "Irf7", "Cxcl10", "Ifit1", "percent.mt", "Ifi47", "Itgax") , 
+        ncol = 4, cols = brewer.pal(6, "Paired"))
+```
+
+### Subset charaterization 
+
+cluster 0: Mafb- trapped
+cluster 1: All IMs (both CD206+ and CD206- IM)
+cluster 2: Intermediate
+cluster 3: Patrolling Mono
+cluster 4: Classical Mono
+cluster 5: unknown
+
+
+```{r}
+levels(results)
+```
+
+```{r fig.width=16, fig.height=5}
+results$cell.type2 <- factor(Idents(results), labels = c("MHCII IM", "CD206 IM", "Hi-Mt", "Patrolling Mono", "Classical Mono", "Unknown"))
+Idents(results) <- "cell.type2"
+DimPlot(results, label = TRUE, split.by = "group", dims = c(2,3))
+```
+
+
+## cell cycle analysis:
+```{r}
+library(cowplot)
+data("geneinfo_human", package = "nichenetr")
+s.genes <- nichenetr::convert_human_to_mouse_symbols(cc.genes.updated.2019$s.genes)
+g2m.genes <- nichenetr::convert_human_to_mouse_symbols(cc.genes.updated.2019$g2m.genes)
+results <- CellCycleScoring(results, s.features = s.genes, g2m.features = g2m.genes, set.ident = FALSE)
+DimPlot(results, group.by = "Phase")
+```
+```{r fig.height=5, fig.width=12}
+DimPlot(results, group.by = "Phase", reduction = "umap", split.by = "group")
+
+```
+
+
+
+# try to output the cell barcodes for BAM subset
+
+```{r eval=FALSE}
+subset_by <- "group"
+so <- results
+
+for (x in unique(so[[subset_by]][,1])) {
+  meta.data <- so[[]]
+  cellnames <- rownames(meta.data[meta.data[[subset_by]] == x, ])
+  write.table(cellnames, file = paste("./cellnames_" , x, "_by_", subset_by,".cellnameSubset.csv", sep = ""), row.names = FALSE, col.names = FALSE, quote = FALSE)
+}
+
+```
+
+Run the following bash file for BAM subset and index. 
+```{bash eval=FALSE}
+# for BAM subset
+bash 20220112_subset_BAM.sh | tee -a ../logs/20220112_subset_BAM
+# for index BAM
+bash 20220112_SAM_index.sh | tee -a ../logs/20220112_SAM_index
+```
+
+
+```{r}
+freq.celltype.list <- list(
+  `Control` = Seurat2CellFreqTable(subset(results, subset = group == "HT5-Control"), slotName = "Phase"), 
+  `cMAF-KO` = Seurat2CellFreqTable(subset(results, subset = group == "HT6-cMAF-KO"), slotName = "Phase"), 
+  `MAFb-KO` = Seurat2CellFreqTable(subset(results, subset = group == "HT7-MAFb-KO"), slotName = "Phase"), 
+  `dKO` = Seurat2CellFreqTable(subset(results, subset = group == "HT8-dKO"), slotName = "Phase") 
+)
+barChart(freq.celltype.list) + labs(fill = "Cell-cycle phase")
+```
+
+# apoptosis
+```{r fig.height=5, fig.width=12}
+FeaturePlot(results, features = "percent.mt", reduction = "umap", split.by = "group", dims = c(2,3))
+
+```
+
+```{r}
+saveRDS(results, file = "./cellType_filtered.withSingleR.seuratObject.Rds")
+
+
+# Session information 
+
+R sesssion: 
+
+```{r}
+sessionInfo()
+```
+
+
+# References
+
+
+

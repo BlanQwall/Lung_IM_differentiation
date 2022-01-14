@@ -402,29 +402,22 @@ source("../R/replaceEntrezID.R")
 ```{r message=FALSE}
 symb <- geneSymbol.changed.mhcii
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
-result.enrichKEGG <- enrichKEGG(de_entrez, organism = "mmu", keyType = "ncbi-geneid")
-result.enrichKEGG <- replaceEntrezID(result.enrichKEGG, organism = "mmu")
-write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_MHCII_IM_specific_genes.csv")
-result.enrichKEGG@result
+result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
+result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
+write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_MHCII_IM_specific_genes.csv")
+result.enrichGO@result
 ```
+
+
 
 ### GO enrichment on CD206+ IM
 
 ```{r message=FALSE}
 symb <- geneSymbol.changed.cd206
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
-result.enrichKEGG <- enrichKEGG(de_entrez, organism = "mmu", keyType = "ncbi-geneid")
-result.enrichKEGG <- replaceEntrezID(result.enrichKEGG, organism = "mmu")
-write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_CD206_IM_specific_genes.csv")
-result.enrichKEGG@result
-```
-
-### GO enrichment for common genes class 1 
-
-```{r message=FALSE}
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
-write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class1.csv")
+write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_CD206_IM_specific_genes.csv")
 result.enrichGO@result
 ```
 
@@ -528,6 +521,30 @@ result.enrichKEGG@result
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
 write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class3.csv")
+result.enrichGO@result
+```
+
+### GO enrichment for MHCII IM specific genes + common genes class 3 
+
+As the specific genes have limited number. We try add the class 3 genes, which are also terminated differentiation genes. But we have to pay attention that the class 3 gene number is huge compare to the specific genes, so enrichment results will be diluted. 
+
+```{r message=FALSE}
+symb <- c(geneSymbol.changed.mhcii, genes.class3)
+de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
+result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
+result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
+write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_MHCIISpecific_plus_Class3_common.csv")
+result.enrichGO@result
+```
+
+### GO enrichment for CD206 IM specific genes + common genes class 3 
+
+```{r message=FALSE}
+symb <- c(geneSymbol.changed.cd206, genes.class3)
+de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
+result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
+result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
+write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_CD206Specific_plus_Class3_common.csv")
 result.enrichGO@result
 ```
 
