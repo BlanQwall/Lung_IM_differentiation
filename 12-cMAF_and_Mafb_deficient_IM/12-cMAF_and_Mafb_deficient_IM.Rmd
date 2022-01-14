@@ -526,20 +526,117 @@ cluster 3: Patrolling Mono
 cluster 4: Classical Mono
 cluster 5: unknown
 
+## Clustering and Annotate CD206+ and CD206- IMs
+
+As Mafb-deficiency introduced a bigger variance which made CD206+/CD206- IMs unable to be clustered separately. We will isolate cluster 1 (contains all IMs) and redo cluster. 
 
 ```{r}
+ims <- subset(results, idents = "1")
+```
+
+Normalize and find variable genes 
+```{r message=FALSE, warning=FALSE}
+ims <- NormalizeData(ims, verbose=FALSE)
+ims <- FindVariableFeatures(ims, selection.method = "vst", nfeatures = 2000, verbose=FALSE)
+ims <- ScaleData(ims, features = rownames(ims), verbose=FALSE)
+ims <- RunPCA(ims, features = VariableFeatures(ims), verbose=FALSE)
+ims <- RunTSNE(ims, dims = 1:5, verbose=FALSE)
+ims <- RunUMAP(ims, dims = 1:5, verbose=FALSE)
+```
+
+Cell clustering within cluster 1
+
+```{r message=FALSE, warning=FALSE}
+ims <- FindNeighbors(ims, dims = 1:5, verbose = FALSE)
+ims <- FindClusters(ims, resolution = 0.2, verbose = FALSE) 
+```
+
+Show CD206+ and CD206- IMs: 
+
+Clusters: 
+```{r fig.height=4, fig.width=5}
+DimPlot(ims)
+```
+
+Show marker expression: 
+
+```{r fig.width=20, fig.height=18}
+FeaturePlot(ims,
+            features = c("Mrc1", "Lyve1", "Folr2", "Cd163", 
+                               "Cd72", "Cd74", "H2-Ab1") , 
+         ncol = 3, cols = c("dark blue", "yellow", "red"))
+```
+
+Within the cluster1: 
+subcluster 0: CD206+ IMs
+subcluster 1: CD206- (MHCII hi) IMs
+
+## Annotate with cell types
+
+```{r fig.width=16, fig.height=5}
+results$cell.type2 <- factor(Idents(results), labels = c("Mafb- neo", "IM", "Intermediate", "Patrolling Mono", "Classical Mono", "Unknown"))
+
+results$cell.type2 <- as.character(results$cell.type2)
+```
+
+Overide IM cluster with subcluster annotatinons in new cell.type3 annotation.
+
+```{r}
+results$cell.type3 <- results$cell.type2
+
+# overide
+results$cell.type3[colnames(ims)] <- as.character(factor(Idents(ims), labels = c("CD206+ IMs", "CD206- IMs")))
+
+# Now make annotation into proper factors: 
+results$cell.type2 <- as.factor(results$cell.type2)
+results$cell.type3 <- factor(results$cell.type3, levels = c("Classical Mono", 
+                                                            "Patrolling Mono", 
+                                                            "Intermediate", 
+                                                            "CD206- IMs", 
+                                                            "CD206+ IMs", 
+                                                            "Mafb- neo", 
+                                                            "Unknown"))
+
+Idents(results) <- "cell.type3"
 levels(results)
 ```
 
-```{r fig.width=16, fig.height=5}
-results$cell.type2 <- factor(Idents(results), labels = c("MHCII IM", "CD206 IM", "Hi-Mt", "Patrolling Mono", "Classical Mono", "Unknown"))
-Idents(results) <- "cell.type2"
-DimPlot(results, label = TRUE, split.by = "group", dims = c(2,3))
+## Make plots with annotated cells
+
+Make color palette for plot (3 new colors were Paired number 8 and 9 from RColorBrewer, and light grey for unknown population):
+
+```{r}
+pal3 <- c(
+  "#A6CEE3", # cMo
+  "#1F78B4", # pMo
+  "#FF7F00", # Intermediate
+  "#B2DF8A", # MHCII IM
+  "#33A02C", # CD206 IM
+  "#CAB2D6", # Mafb- neo
+  "#ededed"# Unknown
+)
 ```
 
 
-## cell cycle analysis:
+```{r fig.height=4, fig.width=6}
+DimPlot(results, label = TRUE, cols = pal3)
+```
+
 ```{r}
+ggsave(filename = "../Figures/UMAPplot_All_samplesMaf_label.pdf", width = 6, height = 4)
+```
+
+```{r fig.height=4, fig.width=16}
+DimPlot(results, cols = pal3, split.by = "group")
+```
+
+```{r}
+ggsave(filename = "../Figures/UMAPplot_all_separate_samplesMaf.pdf", width = 16, height = 4)
+```
+
+
+## Cell cycle analysis
+```{r fig.height=4, fig.width=5}
 library(cowplot)
 data("geneinfo_human", package = "nichenetr")
 s.genes <- nichenetr::convert_human_to_mouse_symbols(cc.genes.updated.2019$s.genes)
@@ -547,54 +644,20 @@ g2m.genes <- nichenetr::convert_human_to_mouse_symbols(cc.genes.updated.2019$g2m
 results <- CellCycleScoring(results, s.features = s.genes, g2m.features = g2m.genes, set.ident = FALSE)
 DimPlot(results, group.by = "Phase")
 ```
-```{r fig.height=5, fig.width=12}
+
+*We see a clear cycling core in Intermediate population. *
+
+```{r fig.height=4, fig.width=16}
 DimPlot(results, group.by = "Phase", reduction = "umap", split.by = "group")
-
 ```
-
-
-
-# try to output the cell barcodes for BAM subset
-
-```{r eval=FALSE}
-subset_by <- "group"
-so <- results
-
-for (x in unique(so[[subset_by]][,1])) {
-  meta.data <- so[[]]
-  cellnames <- rownames(meta.data[meta.data[[subset_by]] == x, ])
-  write.table(cellnames, file = paste("./cellnames_" , x, "_by_", subset_by,".cellnameSubset.csv", sep = ""), row.names = FALSE, col.names = FALSE, quote = FALSE)
-}
-
-```
-
-Run the following bash file for BAM subset and index. 
-```{bash eval=FALSE}
-# for BAM subset
-bash 20220112_subset_BAM.sh | tee -a ../logs/20220112_subset_BAM
-# for index BAM
-bash 20220112_SAM_index.sh | tee -a ../logs/20220112_SAM_index
-```
-
-
 ```{r}
-freq.celltype.list <- list(
-  `Control` = Seurat2CellFreqTable(subset(results, subset = group == "HT5-Control"), slotName = "Phase"), 
-  `cMAF-KO` = Seurat2CellFreqTable(subset(results, subset = group == "HT6-cMAF-KO"), slotName = "Phase"), 
-  `MAFb-KO` = Seurat2CellFreqTable(subset(results, subset = group == "HT7-MAFb-KO"), slotName = "Phase"), 
-  `dKO` = Seurat2CellFreqTable(subset(results, subset = group == "HT8-dKO"), slotName = "Phase") 
-)
-barChart(freq.celltype.list) + labs(fill = "Cell-cycle phase")
-```
-
-# apoptosis
-```{r fig.height=5, fig.width=12}
-FeaturePlot(results, features = "percent.mt", reduction = "umap", split.by = "group", dims = c(2,3))
-
+ggsave(filename = "../Figures/UMAPplot_all_separate_samplesMaf_Phase.pdf", width = 16, height = 4)
 ```
 
 ```{r}
-saveRDS(results, file = "./cellType_filtered.withSingleR.seuratObject.Rds")
+saveRDS(results, file = "./All_samples_Maf.seuratObject.Rds")
+```
+
 
 
 # Session information 
