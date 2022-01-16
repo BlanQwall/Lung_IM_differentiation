@@ -140,6 +140,7 @@ Neo_vs_IM <- FindMarkers(so,
 
 # keep only adj p value < 0.05 and logFC > 0.5 as significant markers. 
 Neo_vs_IM.markers <- Neo_vs_IM[Neo_vs_IM$p_val_adj < 0.05 & abs(Neo_vs_IM$avg_log2FC) > 0.5, ]
+Neo_vs_IM.markers <- Neo_vs_IM.markers[order(Neo_vs_IM.markers$avg_log2FC, decreasing = TRUE), ]
 nrow(Neo_vs_IM.markers)
 ```
 
@@ -158,13 +159,14 @@ Neo_vs_IM.markers.top20 <- Neo_vs_IM.markers[c(1:20, (nrow(Neo_vs_IM.markers)-19
 ```{r}
 library(ComplexHeatmap)
 mat <- GetAssayData(neo_IM)[rownames(Neo_vs_IM.markers.top20), ]
-mat.scale <- t(scale(t(mat)))
+mat.scale <- t(scale(t(as.matrix(mat))))
 ```
 
 ```{r}
-Heatmap(as.matrix(mat.scale), show_row_names = TRUE, show_column_names = FALSE, 
+Heatmap(mat.scale, show_row_names = TRUE, show_column_names = FALSE, 
         row_names_gp = gpar ( fontsize = 7), 
-        column_split = factor(neo_IM$cell.type2))
+        column_split = factor(neo_IM$cell.type2), 
+        km = 2)
 ```
 
 
@@ -174,8 +176,8 @@ ggsave(filename = "../Figures/Heatmap_IM_vs_Mafb-neo.pdf", height = 10, width = 
 
 Show in vlnplot
 
-```{r}
-VlnPlot(neo_IM, features = c("Mafb", ""), group.by = "cell.type2")
+```{r fig.height=8, fig.width=8}
+VlnPlot(neo_IM, features = c("Mafb", "Mrc1", "Mertk", "Cd38", "Adgre1", "C1qa", "Folr2", "Cd163"), group.by = "cell.type2", cols = c("#33A02C",  "#CAB2D6"))
 ```
 
 
