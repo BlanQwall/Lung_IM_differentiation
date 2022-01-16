@@ -574,7 +574,7 @@ subcluster 1: CD206- (MHCII hi) IMs
 ## Annotate with cell types
 
 ```{r fig.width=16, fig.height=5}
-results$cell.type2 <- factor(Idents(results), labels = c("Mafb- neo", "IM", "Intermediate", "Patrolling Mono", "Classical Mono", "Unknown"))
+results$cell.type2 <- factor(Idents(results), labels = c("Mafb-deficient", "IM", "Intermediate", "Patrolling Mono", "Classical Mono", "Unknown"))
 
 results$cell.type2 <- as.character(results$cell.type2)
 ```
@@ -594,7 +594,7 @@ results$cell.type3 <- factor(results$cell.type3, levels = c("Classical Mono",
                                                             "Intermediate", 
                                                             "CD206- IMs", 
                                                             "CD206+ IMs", 
-                                                            "Mafb- neo", 
+                                                            "Mafb-deficient", 
                                                             "Unknown"))
 
 Idents(results) <- "cell.type3"
