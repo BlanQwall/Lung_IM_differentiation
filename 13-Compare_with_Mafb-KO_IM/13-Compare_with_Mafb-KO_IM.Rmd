@@ -156,22 +156,25 @@ Neo_vs_IM.markers.top20 <- Neo_vs_IM.markers[c(1:20, (nrow(Neo_vs_IM.markers)-19
 ```
 
 
-```{r}
+```{r message=FALSE}
 library(ComplexHeatmap)
 mat <- GetAssayData(neo_IM)[rownames(Neo_vs_IM.markers.top20), ]
 mat.scale <- t(scale(t(as.matrix(mat))))
 ```
 
-```{r}
-Heatmap(mat.scale, show_row_names = TRUE, show_column_names = FALSE, 
+```{r fig.height=5, fig.width=6}
+hp <- Heatmap(mat.scale, show_row_names = TRUE, show_column_names = FALSE, 
         row_names_gp = gpar ( fontsize = 7), 
         column_split = factor(neo_IM$cell.type2), 
         km = 2)
+hp <- draw(hp)
 ```
 
 
 ```{r}
-ggsave(filename = "../Figures/Heatmap_IM_vs_Mafb-neo.pdf", height = 10, width = 8)
+pdf(file = "../Figures/Heatmap_IM_vs_Mafb-neo.pdf", width = 6, height = 5)
+hp
+dev.off()
 ```
 
 Show in vlnplot
