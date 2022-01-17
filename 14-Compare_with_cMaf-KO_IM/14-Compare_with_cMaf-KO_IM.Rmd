@@ -1,0 +1,307 @@
+---
+subtitle: "14 - Compare with cMaf-KO IM"
+# bibliography: bib.bib
+link-citations: yes
+date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+output: 
+  #html_document
+  pdf_document:
+    pandoc_args:
+      - '../common.yaml'
+      - --listings
+    includes:
+      in_header: '../preamble.tex'
+    toc: true
+    number_sections: true
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    df_print: tibble
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+\newpage
+
+# Description
+
+# Load packages and data
+
+```{r}
+suppressMessages({
+  library(Seurat)
+  library(ggplot2)
+})
+
+results <- readRDS(file = "../12-cMAF_and_Mafb_deficient_IM/All_samples_Maf.seuratObject.Rds")
+
+# we will work on control and Mafb-KO samples, so subset: 
+so <- subset(results, subset = group == c("HT5-Control", "HT6-cMAF-KO"))
+```
+
+# Compare populations
+
+```{r, fig.height=4, fig.width=6}
+pal3 <- c(
+  "#A6CEE3", # cMo
+  "#1F78B4", # pMo
+  "#FF7F00", # Intermediate
+  "#B2DF8A", # MHCII IM
+  "#33A02C", # CD206 IM
+  "#CAB2D6", # Mafb- neo
+  "#ededed"# Unknown
+)
+```
+
+As cMAF-KO has subtle difference from control, we re analyze expression data with only this two groups to focus on the difference. 
+
+## Re-process data
+
+```{r}
+so <- NormalizeData(so, verbose=FALSE)
+so <- FindVariableFeatures(so, selection.method = "vst", nfeatures = 1000, verbose=FALSE) # we focus less variable genes. 
+so <- ScaleData(so, features = rownames(so), verbose=FALSE)
+so <- RunPCA(so, features = VariableFeatures(so), verbose=FALSE)
+so <- RunTSNE(so, dims = 1:5, verbose=FALSE)
+so <- RunUMAP(so, dims = 1:5, verbose=FALSE)
+```
+
+
+
+
+
+
+```{r message=FALSE, warning=FALSE}
+so <- FindNeighbors(so, dims = 1:5, verbose = FALSE)
+so <- FindClusters(so, resolution = 0.2, verbose = FALSE) 
+```
+
+```{r fig.height=16, fig.width=16}
+VlnPlot(
+  so, 
+  features = c("Ccr2", "Plac8" ,"Ly6c2", "Spn", 
+                              "Fcgr4", "Ace", "Cxcr4", 
+                              "Fcgr1", "Mrc1", "Cd63", "Apoe", 
+                              "H2-DMb2", "Cd74", "Cd209a", 
+                              "Ccnd1","Mki67", "Top2a", "Ccl2", 
+                              "Irf7", "Cxcl10", "Ifit1", "percent.mt", "Ifi47", "Itgax") , 
+        ncol = 4, cols = brewer.pal(5, "Paired"))
+```
+
+cluster 0: Intermediate
+Cluster 1: CD206+ IM
+Cluster 2: CD206-/MHCII IM
+Cluster 3: Classical Monocytes
+Cluster 4: Patrolling Monocytes
+
+```{r}
+so$cell.type3 <- factor(Idents(so), labels = c("Intermediate", "CD206+ IMs", "CD206- IMs", "Classical Mono", "Patrolling Mono"))
+so$cell.type3 <- factor(so$cell.type3, levels = c("Classical Mono", "Patrolling Mono", "Intermediate", "CD206- IMs", "CD206+ IMs"))
+Idents(so) <- "cell.type3"
+DimPlot(so, cols = pal3[1:5])
+```
+
+
+```{r}
+ggsave(filename = "../Figures/UMAPplot_Ctl_cMafKO_with_legend.pdf", 
+       width = 6, height = 4)
+```
+
+
+```{r}
+DimPlot(so, cols = pal3[1:5], split.by = "group")
+```
+
+
+```{r include=FALSE, fig.height=4, fig.width=5}
+DimPlot(so, cols = pal3) + NoLegend()
+ggsave(filename = "../Figures/UMAPplot_Ctl_cMafKO_no_legend.pdf", 
+       width = 5, height = 4)
+
+DimPlot(subset(so, subset = group == "HT6-cMAF-KO"), 
+        cols = pal3) + NoLegend()
+ggsave(filename = "../Figures/UMAPplot_cMafKO_no_legend.pdf", 
+       width = 5, height = 4)
+
+DimPlot(so, group.by = "orig.ident",
+        cols = "#f5f5f5") + NoLegend()
+ggsave(filename = "../Figures/UMAPplot_Ctl_MafbKO_grey.pdf", 
+       width = 5, height = 4)
+```
+
+See population frequencies:
+
+```{r fig.width=3, fig.height=4}
+source("../R/SeuratFreqTable.R")
+freq.celltype.list <- list(
+  `Control` = Seurat2CellFreqTable(subset(so, subset = group == "HT5-Control"), slotName = "cell.type3"),  
+  `cMAF-KO` = Seurat2CellFreqTable(subset(so, subset = group == "HT6-cMAF-KO"), slotName = "cell.type3") 
+)
+
+source("../R/barChart.R")
+barChart(freq.celltype.list) + labs(fill = "Cluster") + scale_fill_manual(values = pal3) + theme(axis.text.x = element_text(angle = 90))
+```
+
+```{r}
+ggsave(filename = "../Figures/Barplot_Ctl_MafbKO_population_frequency.pdf", 
+       width = 3, height = 4)
+```
+
+# Proliferation comparison
+
+```{r fig.width=3, fig.height=4}
+freq.celltype.list <- list(
+  `Control` = Seurat2CellFreqTable(subset(so, subset = group == "HT5-Control"), slotName = "Phase"),  
+  `MAFb-KO` = Seurat2CellFreqTable(subset(so, subset = group == "HT6-cMAF-KO"), slotName = "Phase") 
+)
+
+barChart(freq.celltype.list) + labs(fill = "Cluster") +  theme(axis.text.x = element_text(angle = 90))
+```
+
+```{r fig.width=9, fig.height=4}
+DimPlot(so, group.by = "Phase", split.by = "group")
+```
+
+```{r}
+VlnPlot(so, features = "G2M.Score", split.by = "group", cols = pal3, split.plot = TRUE)
+```
+
+# Comparison between cMaf-KO and IMs
+
+Let's focus on the cMaf-deficient population in Mafb-deficient sample.
+
+```{r}
+IM <- subset(so, subset = cell.type3 %in% c("CD206- IMs", "CD206+ IMs"))
+```
+
+## DE genes between cMaf-KO and control IM population
+
+```{r fig.width=8, fig.height=10}
+library(dplyr)
+Idents(IM) <- "group"
+cMafKO_vs_Ctl <- FindMarkers(IM, 
+                          ident.1 = "HT6-cMAF-KO", 
+                          ident.2 = "HT5-Control", 
+                          logfc.threshold = 0,
+                          verbose = FALSE)
+
+
+# keep only adj p value < 0.05 and logFC > 0.5 as significant markers. 
+cMafKO_vs_Ctl.markers <- cMafKO_vs_Ctl[cMafKO_vs_Ctl$p_val_adj < 0.05 & abs(cMafKO_vs_Ctl$avg_log2FC) > 0.5, ]
+cMafKO_vs_Ctl.markers <- cMafKO_vs_Ctl.markers[order(cMafKO_vs_Ctl.markers$avg_log2FC, decreasing = TRUE), ]
+nrow(cMafKO_vs_Ctl.markers)
+```
+
+```{r}
+write.csv(cMafKO_vs_Ctl.markers ,file = "./Mafb-deficient_vs_IM.DEgenes.results.csv", quote = FALSE)
+```
+
+
+Let's show the top 20 of each side: 
+
+```{r}
+cMafKO_vs_Ctl.markers.top20 <- cMafKO_vs_Ctl.markers[c(1:20, (nrow(cMafKO_vs_Ctl.markers)-19):(nrow(cMafKO_vs_Ctl.markers))), ]
+```
+
+
+```{r message=FALSE}
+library(ComplexHeatmap)
+mat <- GetAssayData(neo_IM)[rownames(cMafKO_vs_Ctl.markers.top20), ]
+mat.scale <- t(scale(t(as.matrix(mat))))
+```
+
+```{r fig.height=5, fig.width=6}
+hp <- Heatmap(mat.scale, show_row_names = TRUE, show_column_names = FALSE, 
+        row_names_gp = gpar ( fontsize = 7), 
+        column_split = factor(neo_IM$cell.type2), 
+        km = 2)
+hp <- draw(hp)
+```
+
+
+```{r}
+pdf(file = "../Figures/Heatmap_IM_vs_Mafb-neo.pdf", width = 6, height = 5)
+hp
+dev.off()
+```
+
+Show in vlnplot
+
+```{r fig.height=8, fig.width=8}
+VlnPlot(neo_IM, features = c("Mafb", "Mrc1", "Mertk", "Cd38", "Adgre1", "C1qa", "Folr2", "Cd163"), group.by = "cell.type2", cols = c("#33A02C",  "#CAB2D6"))
+```
+
+
+## GO enrichment analysis with DE genes
+
+```{r}
+suppressMessages(library(clusterProfiler))
+source("../R/entrez2symbol.R")
+source("../R/replaceEntrezID.R")
+```
+
+### GO enrichment analysis of up-regulated DE genes in Mafb-deficient population
+
+```{r message=FALSE}
+DE.MafbKO <- cMafKO_vs_Ctl.markers[cMafKO_vs_Ctl.markers$avg_log2FC > 0, ]
+symb <- rownames(DE.MafbKO)
+de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
+result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
+result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
+write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_DE_Mafb_KO_vsIM.csv")
+result.enrichGO@result
+```
+
+### GO enrichment analysis of up-regulated DE genes in IMs
+
+```{r message=FALSE}
+DE.IM <- cMafKO_vs_Ctl.markers[cMafKO_vs_Ctl.markers$avg_log2FC < 0, ]
+symb <- rownames(DE.IM)
+de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
+result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
+result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
+write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_DE_IM_vsMafbKO.csv")
+result.enrichGO@result
+```
+
+### Volcano plot of DE genes
+
+```{r}
+suppressMessages({
+  library(dplyr)
+  library(ggrepel)
+  })
+
+cMafKO_vs_Ctl.volcano = mutate(cMafKO_vs_Ctl, 
+ Sig=ifelse((abs(cMafKO_vs_Ctl$avg_log2FC)>0.5)&(cMafKO_vs_Ctl$p_val_adj < 0.05), "Sig", "n.s."))
+# res2 = mutate(res2, 
+#              Sig=ifelse((abs(res2$avg_logFC)>1)&(res2$p_val_adj < 0.01), "Sig", "n.s."))
+
+
+cMafKO_vs_Ctl.volcano$Gene <- rownames(cMafKO_vs_Ctl.volcano)
+Gene.to.show.ValcanoPlot <- c("C1qa", "C1qb", "C1qc", "Maf", "Cd209", "Mafb")
+```
+
+
+```{r fig.height=5, fig.width=6}
+p <- ggplot(cMafKO_vs_Ctl.volcano, aes(avg_log2FC, -log10(p_val_adj))) + geom_point(aes(col=Sig)) + scale_color_manual(values=c( "gray", "red")) 
+
+p + geom_text_repel(data=filter(cMafKO_vs_Ctl.volcano, Gene %in% Gene.to.show.ValcanoPlot), aes(label=Gene), box.padding = 1) + xlim(c(-5, 5)) + theme_classic() + theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + geom_hline(yintercept = -log10(0.01), linetype='dashed', col = 'grey') + geom_vline(xintercept = c(-0.5, 0.5),  linetype='dashed', col = 'grey')
+
+```
+
+```{r}
+ggsave(filename = "../Figures/VolcanoPlot_Mafb-KO_vs_IM_DE_genes.pdf", height = 5, width = 6)
+```
+
+# Session information
+
+R sesssion:
+
+```{r}
+sessionInfo()
+```
+
+# References

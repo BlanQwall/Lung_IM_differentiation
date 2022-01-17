@@ -242,9 +242,53 @@ p + geom_text_repel(data=filter(Neo_vs_IM.volcano, Gene %in% Gene.to.show.Valcan
 
 ```
 
+
 ```{r}
 ggsave(filename = "../Figures/VolcanoPlot_Mafb-KO_vs_IM_DE_genes.pdf", height = 5, width = 6)
 ```
+
+Or let's set a threshold of log2FC and p_val_adj and plot them all: 
+
+```{r fig.height=5, fig.width=6}
+threshold.log2fc <- 2
+threshold.adjp <- 0.05
+Neo_vs_IM.volcano = mutate(Neo_vs_IM, 
+ Sig=ifelse((abs(Neo_vs_IM$avg_log2FC) > threshold.log2fc)&(Neo_vs_IM$p_val_adj < threshold.adjp), "Sig", "n.s."))
+Neo_vs_IM.volcano$Gene <- rownames(Neo_vs_IM.volcano)
+
+Gene.to.show.ValcanoPlot <- rownames(Neo_vs_IM.volcano[Neo_vs_IM.volcano$Sig == "Sig", ])
+
+p <- ggplot(Neo_vs_IM.volcano, aes(avg_log2FC, -log10(p_val_adj))) + geom_point(aes(col=Sig)) + scale_color_manual(values=c( "gray", "red")) 
+
+p + geom_text_repel(data=filter(Neo_vs_IM.volcano, Gene %in% Gene.to.show.ValcanoPlot), aes(label=Gene), box.padding = 1) + xlim(c(-5, 5)) + theme_classic() + theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + geom_hline(yintercept = -log10(threshold.adjp), linetype='dashed', col = 'grey') + geom_vline(xintercept = c(-threshold.log2fc, threshold.log2fc),  linetype='dashed', col = 'grey') + ggtitle(paste("Log2FC > ", threshold.log2fc, "; p_val_adj <", threshold.adjp))
+
+write.csv(Neo_vs_IM.volcano[Gene.to.show.ValcanoPlot, ] %>% arrange(., desc(avg_log2FC)) , 
+          file = paste("./Mafb-deficient_vs_IM.DEgenes.Log2FC", threshold.log2fc, ".adjPval", threshold.adjp, ".results.csv", sep = "") ) 
+
+```
+
+
+```{r fig.height=5, fig.width=6}
+threshold.log2fc <- 1
+threshold.adjp <- 0.05
+Neo_vs_IM.volcano = mutate(Neo_vs_IM, 
+ Sig=ifelse((abs(Neo_vs_IM$avg_log2FC) > threshold.log2fc)&(Neo_vs_IM$p_val_adj < threshold.adjp), "Sig", "n.s."))
+Neo_vs_IM.volcano$Gene <- rownames(Neo_vs_IM.volcano)
+
+Gene.to.show.ValcanoPlot <- rownames(Neo_vs_IM.volcano[Neo_vs_IM.volcano$Sig == "Sig", ])
+
+p <- ggplot(Neo_vs_IM.volcano, aes(avg_log2FC, -log10(p_val_adj))) + geom_point(aes(col=Sig)) + scale_color_manual(values=c( "gray", "red")) 
+
+p + geom_text_repel(data=filter(Neo_vs_IM.volcano, Gene %in% Gene.to.show.ValcanoPlot), aes(label=Gene), box.padding = 1) + xlim(c(-5, 5)) + theme_classic() + theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + geom_hline(yintercept = -log10(threshold.adjp), linetype='dashed', col = 'grey') + geom_vline(xintercept = c(-threshold.log2fc, threshold.log2fc),  linetype='dashed', col = 'grey') + ggtitle(paste("Log2FC > ", threshold.log2fc, "; p_val_adj <", threshold.adjp))
+
+write.csv(Neo_vs_IM.volcano[Gene.to.show.ValcanoPlot, ] %>% arrange(., desc(avg_log2FC)) , 
+          file = paste("./Mafb-deficient_vs_IM.DEgenes.Log2FC", threshold.log2fc, ".adjPval", threshold.adjp, ".results.csv", sep = "") ) 
+```
+
+
+
+
+
 
 # Session information
 
