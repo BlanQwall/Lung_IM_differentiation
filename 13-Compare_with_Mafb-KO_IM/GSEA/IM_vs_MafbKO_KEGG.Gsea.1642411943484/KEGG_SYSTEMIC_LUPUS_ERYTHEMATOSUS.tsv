@@ -1,0 +1,63 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.19842121	Yes	
+row_1	C1QA	complement C1q A chain [Source:HGNC Symbol;Acc:HGNC:1241]	1	2.0969398021698	0.37521	Yes	
+row_2	C1QB	complement C1q B chain [Source:HGNC Symbol;Acc:HGNC:1242]	2	1.8567914962768555	0.53175235	Yes	
+row_3	FCGR2A	Fc fragment of IgG receptor IIa [Source:HGNC Symbol;Acc:HGNC:3616]	97	0.25380194187164307	0.54588723	Yes	
+row_4	H3-3B	H3.3 histone B [Source:HGNC Symbol;Acc:HGNC:4765]	105	0.24464203417301178	0.5659717	Yes	
+row_5	FCGR3A	Fc fragment of IgG receptor IIIa [Source:HGNC Symbol;Acc:HGNC:3619]	108	0.24116823077201843	0.5861496	Yes	
+row_6	FCGR1A	Fc fragment of IgG receptor Ia [Source:HGNC Symbol;Acc:HGNC:3613]	128	0.21077312529087067	0.60245144	Yes	
+row_7	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	165	0.1757270097732544	0.6144852	Yes	
+row_8	C6	complement C6 [Source:HGNC Symbol;Acc:HGNC:1339]	334	0.12277914583683014	0.61185646	No	
+row_9	IL10	interleukin 10 [Source:HGNC Symbol;Acc:HGNC:5962]	748	0.07839366793632507	0.58655655	No	
+row_10	H2AZ2	H2A.Z variant histone 2 [Source:HGNC Symbol;Acc:HGNC:20664]	1305	0.05732983350753784	0.54843235	No	
+row_11	C2	complement C2 [Source:HGNC Symbol;Acc:HGNC:1248]	1341	0.05607956647872925	0.5504561	No	
+row_12	H2AW	H2A.W histone [Source:HGNC Symbol;Acc:HGNC:20507]	1676	0.04780587926506996	0.5286811	No	
+row_13	H3C13	H3 clustered histone 13 [Source:HGNC Symbol;Acc:HGNC:25311]	1935	0.04251500964164734	0.5123319	No	
+row_14	CD28	CD28 molecule [Source:HGNC Symbol;Acc:HGNC:1653]	2233	0.036737505346536636	0.4924824	No	
+row_15	RO60	"Ro60, Y RNA binding protein [Source:HGNC Symbol;Acc:HGNC:11313]"	2526	0.032060492783784866	0.4726249	No	
+row_16	HLA-DRB5	"major histocompatibility complex, class II, DR beta 5 [Source:HGNC Symbol;Acc:HGNC:4953]"	3359	0.02118586376309395	0.4101292	No	
+row_17	SSB	small RNA binding exonuclease protection factor La [Source:HGNC Symbol;Acc:HGNC:11316]	3450	0.01995236985385418	0.40485775	No	
+row_18	ACTN4	actinin alpha 4 [Source:HGNC Symbol;Acc:HGNC:166]	3618	0.018000947311520576	0.39347264	No	
+row_19	TRIM21	tripartite motif containing 21 [Source:HGNC Symbol;Acc:HGNC:11312]	3690	0.01722443662583828	0.38943923	No	
+row_20	SNRPB	small nuclear ribonucleoprotein polypeptides B and B1 [Source:HGNC Symbol;Acc:HGNC:11153]	4066	0.013259073719382286	0.3615839	No	
+row_21	H2BC18	H2B clustered histone 18 [Source:HGNC Symbol;Acc:HGNC:24700]	4582	0.00902773067355156	0.32255515	No	
+row_22	C9	complement C9 [Source:HGNC Symbol;Acc:HGNC:1358]	4600	0.008899486623704433	0.32199198	No	
+row_23	C1R	complement C1r [Source:HGNC Symbol;Acc:HGNC:1246]	4887	0.006749752908945084	0.30046415	No	
+row_24	H2AC4	H2A clustered histone 4 [Source:HGNC Symbol;Acc:HGNC:4734]	5172	0.0036095688119530678	0.27882612	No	
+row_25	CD86	CD86 molecule [Source:HGNC Symbol;Acc:HGNC:1705]	5193	0.003349440870806575	0.27756327	No	
+row_26	C1S	complement C1s [Source:HGNC Symbol;Acc:HGNC:1247]	5478	0.0	0.2556209	No	
+row_27	MACROH2A2	macroH2A.2 histone [Source:HGNC Symbol;Acc:HGNC:14453]	5613	0.0	0.24526781	No	
+row_28	CTSG	cathepsin G [Source:HGNC Symbol;Acc:HGNC:2532]	6096	0.0	0.20802762	No	
+row_29	H2BC9	H2B clustered histone 9 [Source:HGNC Symbol;Acc:HGNC:4755]	6346	0.0	0.18878941	No	
+row_30	H2BC3	H2B clustered histone 3 [Source:HGNC Symbol;Acc:HGNC:4751]	6347	0.0	0.18878941	No	
+row_31	ELANE	"elastase, neutrophil expressed [Source:HGNC Symbol;Acc:HGNC:3309]"	6449	0.0	0.18098597	No	
+row_32	H2AC18	H2A clustered histone 18 [Source:HGNC Symbol;Acc:HGNC:4736]	6579	0.0	0.1710192	No	
+row_33	H2BC13	H2B clustered histone 13 [Source:HGNC Symbol;Acc:HGNC:4748]	6736	0.0	0.15896635	No	
+row_34	H2AC21	H2A clustered histone 21 [Source:HGNC Symbol;Acc:HGNC:20508]	7264	-0.005623590666800737	0.11872347	No	
+row_35	H4C14	H4 clustered histone 14 [Source:HGNC Symbol;Acc:HGNC:4794]	7378	-0.006247777491807938	0.11051962	No	
+row_36	H2BC5	H2B clustered histone 5 [Source:HGNC Symbol;Acc:HGNC:4747]	7431	-0.006533145904541016	0.1070528	No	
+row_37	C4B	complement C4B (Chido blood group) [Source:HGNC Symbol;Acc:HGNC:1324]	7586	-0.00731950718909502	0.095771566	No	
+row_38	C5	complement C5 [Source:HGNC Symbol;Acc:HGNC:1331]	7804	-0.009119182825088501	0.07977457	No	
+row_39	C7	complement C7 [Source:HGNC Symbol;Acc:HGNC:1346]	7826	-0.009294732473790646	0.07893569	No	
+row_40	ACTN1	actinin alpha 1 [Source:HGNC Symbol;Acc:HGNC:163]	7838	-0.009394161403179169	0.078877814	No	
+row_41	C8G	complement C8 gamma chain [Source:HGNC Symbol;Acc:HGNC:1354]	8108	-0.011976873502135277	0.059104126	No	
+row_42	H4C12	H4 clustered histone 12 [Source:HGNC Symbol;Acc:HGNC:4784]	8826	-0.019423803314566612	0.005344972	No	
+row_43	H3-3A	H3.3 histone A [Source:HGNC Symbol;Acc:HGNC:4764]	9333	-0.02546638995409012	-0.0316025	No	
+row_44	H2AC20	H2A clustered histone 20 [Source:HGNC Symbol;Acc:HGNC:4738]	10902	-0.054528046399354935	-0.1481519	No	
+row_45	SNRPD1	small nuclear ribonucleoprotein D1 polypeptide [Source:HGNC Symbol;Acc:HGNC:11158]	10956	-0.056252144277095795	-0.14750428	No	
+row_46	TNF	tumor necrosis factor [Source:HGNC Symbol;Acc:HGNC:11892]	11021	-0.058159176260232925	-0.14754575	No	
+row_47	H3C7	H3 clustered histone 7 [Source:HGNC Symbol;Acc:HGNC:4773]	11099	-0.06019480898976326	-0.14842	No	
+row_48	H2AX	H2A.X variant histone [Source:HGNC Symbol;Acc:HGNC:4739]	11605	-0.07636581361293793	-0.180999	No	
+row_49	HLA-DQA1	"major histocompatibility complex, class II, DQ alpha 1 [Source:HGNC Symbol;Acc:HGNC:4942]"	12197	-0.11103520542383194	-0.21729958	No	
+row_50	SNRPD3	small nuclear ribonucleoprotein D3 polypeptide [Source:HGNC Symbol;Acc:HGNC:11160]	12278	-0.11726539582014084	-0.21359412	No	
+row_51	HLA-DRB1	"major histocompatibility complex, class II, DR beta 1 [Source:HGNC Symbol;Acc:HGNC:4948]"	12464	-0.13899697363376617	-0.21616901	No	
+row_52	CD40	CD40 molecule [Source:HGNC Symbol;Acc:HGNC:11919]	12558	-0.156380757689476	-0.21017021	No	
+row_53	H2AJ	H2A.J histone [Source:HGNC Symbol;Acc:HGNC:14456]	12643	-0.17644762992858887	-0.20178427	No	
+row_54	CD80	CD80 molecule [Source:HGNC Symbol;Acc:HGNC:1700]	12715	-0.1980533003807068	-0.19057238	No	
+row_55	FCGR2B	Fc fragment of IgG receptor IIb [Source:HGNC Symbol;Acc:HGNC:3618]	12873	-0.27246883511543274	-0.17973119	No	
+row_56	HLA-DMA	"major histocompatibility complex, class II, DM alpha [Source:HGNC Symbol;Acc:HGNC:4934]"	12880	-0.27736714482307434	-0.15681049	No	
+row_57	HLA-DMB	"major histocompatibility complex, class II, DM beta [Source:HGNC Symbol;Acc:HGNC:4935]"	12893	-0.2856333553791046	-0.13365646	No	
+row_58	HLA-DOB	"major histocompatibility complex, class II, DO beta [Source:HGNC Symbol;Acc:HGNC:4937]"	12922	-0.3196949064731598	-0.10886696	No	
+row_59	H2AZ1	H2A.Z variant histone 1 [Source:HGNC Symbol;Acc:HGNC:4741]	12954	-0.39554569125175476	-0.077914424	No	
+row_60	MACROH2A1	macroH2A.1 histone [Source:HGNC Symbol;Acc:HGNC:4740]	12966	-0.4407273530960083	-0.041607466	No	
+row_61	HLA-DOA	"major histocompatibility complex, class II, DO alpha [Source:HGNC Symbol;Acc:HGNC:4936]"	12981	-0.5274254679679871	0.0017770472	No	

@@ -1,0 +1,19 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FOS	"Fos proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:3796]"	38	0.4171111285686493	0.30928668	Yes	
+row_1	JUN	"Jun proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:6204]"	79	0.29534798860549927	0.5272782	Yes	
+row_2	DPM2	"dolichyl-phosphate mannosyltransferase subunit 2, regulatory [Source:HGNC Symbol;Acc:HGNC:3006]"	870	0.07250070571899414	0.5207158	Yes	
+row_3	PLCG1	phospholipase C gamma 1 [Source:HGNC Symbol;Acc:HGNC:9065]	926	0.07029503583908081	0.5690974	Yes	
+row_4	MAPK8	mitogen-activated protein kinase 8 [Source:HGNC Symbol;Acc:HGNC:6881]	2927	0.026505250483751297	0.43493676	No	
+row_5	HRAS	"HRas proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:5173]"	6794	-2.7504327590577304E-4	0.13746034	No	
+row_6	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	0.122892655	No	
+row_7	CSNK2A1	casein kinase 2 alpha 1 [Source:HGNC Symbol;Acc:HGNC:2457]	7886	-0.009840203449130058	0.0631141	No	
+row_8	RAF1	"Raf-1 proto-oncogene, serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:9829]"	8265	-0.013472210615873337	0.044092182	No	
+row_9	PIK3CG	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma [Source:HGNC Symbol;Acc:HGNC:8978]"	8401	-0.014708640053868294	0.044706766	No	
+row_10	SOS1	SOS Ras/Rac guanine nucleotide exchange factor 1 [Source:HGNC Symbol;Acc:HGNC:11187]	8729	-0.018386563286185265	0.033290304	No	
+row_11	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	10065	-0.03760147839784622	-0.04135964	No	
+row_12	ELK1	ETS transcription factor ELK1 [Source:HGNC Symbol;Acc:HGNC:3321]	10574	-0.046322569251060486	-0.045802683	No	
+row_13	GRB2	growth factor receptor bound protein 2 [Source:HGNC Symbol;Acc:HGNC:4566]	10774	-0.05123435705900192	-0.02277617	No	
+row_14	MAP2K1	mitogen-activated protein kinase kinase 1 [Source:HGNC Symbol;Acc:HGNC:6840]	10967	-0.05661008879542351	0.0048131444	No	
+row_15	NGFR	nerve growth factor receptor [Source:HGNC Symbol;Acc:HGNC:7809]	11018	-0.05807134509086609	0.044430237	No	
+row_16	SHC1	SHC adaptor protein 1 [Source:HGNC Symbol;Acc:HGNC:10840]	11431	-0.07007511705160141	0.06515827	No	
+row_17	PIK3CA	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:8975]"	11555	-0.07466260343790054	0.111573115	No	

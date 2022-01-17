@@ -1,0 +1,22 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BAD	BCL2 associated agonist of cell death [Source:HGNC Symbol;Acc:HGNC:936]	490	0.10064647346735	0.054666713	No	
+row_1	FOXO3	forkhead box O3 [Source:HGNC Symbol;Acc:HGNC:3821]	1335	0.05635998770594597	0.041408826	No	
+row_2	PDPK1	3-phosphoinositide dependent protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:8816]	5300	0.00196647341363132	-0.26208454	No	
+row_3	GHR	growth hormone receptor [Source:HGNC Symbol;Acc:HGNC:4263]	5669	0.0	-0.29042712	No	
+row_4	FASLG	Fas ligand [Source:HGNC Symbol;Acc:HGNC:11936]	6081	0.0	-0.32208145	No	
+row_5	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	-0.3910641	No	
+row_6	CASP9	caspase 9 [Source:HGNC Symbol;Acc:HGNC:1511]	7225	-0.005274298135191202	-0.40247244	No	
+row_7	FOXO4	forkhead box O4 [Source:HGNC Symbol;Acc:HGNC:7139]	7595	-0.007352379150688648	-0.42414168	No	
+row_8	IKBKG	inhibitor of nuclear factor kappa B kinase regulatory subunit gamma [Source:HGNC Symbol;Acc:HGNC:5961]	7684	-0.007907773368060589	-0.42365897	No	
+row_9	CHUK	component of inhibitor of nuclear factor kappa B kinase complex [Source:HGNC Symbol;Acc:HGNC:1974]	7754	-0.008568290621042252	-0.4211065	No	
+row_10	RELA	"RELA proto-oncogene, NF-kB subunit [Source:HGNC Symbol;Acc:HGNC:9955]"	8039	-0.011412028223276138	-0.43250194	No	
+row_11	PIK3CG	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma [Source:HGNC Symbol;Acc:HGNC:8978]"	8401	-0.014708640053868294	-0.44680113	No	
+row_12	PPP2CA	protein phosphatase 2 catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9299]	8593	-0.016856933012604713	-0.44603485	No	
+row_13	HSP90AA1	heat shock protein 90 alpha family class A member 1 [Source:HGNC Symbol;Acc:HGNC:5253]	9608	-0.029727747663855553	-0.49683735	No	
+row_14	FOXO1	forkhead box O1 [Source:HGNC Symbol;Acc:HGNC:3819]	10257	-0.04064624756574631	-0.50942683	No	
+row_15	PIK3CA	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:8975]"	11555	-0.07466260343790054	-0.5407698	Yes	
+row_16	NFKB1	nuclear factor kappa B subunit 1 [Source:HGNC Symbol;Acc:HGNC:7794]	11806	-0.08577122539281845	-0.48127607	Yes	
+row_17	AKT1	AKT serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:391]	12320	-0.12146204710006714	-0.40926957	Yes	
+row_18	IKBKB	inhibitor of nuclear factor kappa B kinase subunit beta [Source:HGNC Symbol;Acc:HGNC:5960]	12338	-0.12332244962453842	-0.29735416	Yes	
+row_19	NFKBIA	NFKB inhibitor alpha [Source:HGNC Symbol;Acc:HGNC:7797]	12350	-0.12428919225931168	-0.18408906	Yes	
+row_20	YWHAH	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein eta [Source:HGNC Symbol;Acc:HGNC:12853]	12852	-0.2552846670150757	0.011706771	Yes	

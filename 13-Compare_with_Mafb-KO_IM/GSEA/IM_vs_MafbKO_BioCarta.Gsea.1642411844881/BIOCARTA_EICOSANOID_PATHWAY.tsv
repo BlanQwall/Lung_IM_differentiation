@@ -1,0 +1,23 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ALOX5	arachidonate 5-lipoxygenase [Source:HGNC Symbol;Acc:HGNC:435]	1157	0.06191478297114372	-0.049790036	No	
+row_1	PTGS1	prostaglandin-endoperoxide synthase 1 [Source:HGNC Symbol;Acc:HGNC:9604]	1629	0.048858191817998886	-0.05503492	No	
+row_2	PLA2G4A	phospholipase A2 group IVA [Source:HGNC Symbol;Acc:HGNC:9035]	1677	0.04778328537940979	-0.02830446	No	
+row_3	CYP2J2	cytochrome P450 family 2 subfamily J member 2 [Source:HGNC Symbol;Acc:HGNC:2634]	1909	0.043036412447690964	-0.018761456	No	
+row_4	PTGER1	prostaglandin E receptor 1 [Source:HGNC Symbol;Acc:HGNC:9593]	4342	0.0106444600969553	-0.19932228	No	
+row_5	HPGDS	hematopoietic prostaglandin D synthase [Source:HGNC Symbol;Acc:HGNC:17890]	5119	0.004259632900357246	-0.25638717	No	
+row_6	TBXA2R	thromboxane A2 receptor [Source:HGNC Symbol;Acc:HGNC:11608]	5614	0.0	-0.29443693	No	
+row_7	PTGES	prostaglandin E synthase [Source:HGNC Symbol;Acc:HGNC:9599]	5784	0.0	-0.30745396	No	
+row_8	PTGFR	prostaglandin F receptor [Source:HGNC Symbol;Acc:HGNC:9600]	5785	0.0	-0.30745396	No	
+row_9	PTGIS	prostaglandin I2 synthase [Source:HGNC Symbol;Acc:HGNC:9603]	5806	0.0	-0.3089944	No	
+row_10	CYSLTR2	cysteinyl leukotriene receptor 2 [Source:HGNC Symbol;Acc:HGNC:18274]	6030	0.0	-0.32617074	No	
+row_11	EPHX2	epoxide hydrolase 2 [Source:HGNC Symbol;Acc:HGNC:3402]	6312	0.0	-0.3478144	No	
+row_12	PLCB1	phospholipase C beta 1 [Source:HGNC Symbol;Acc:HGNC:15917]	6581	0.0	-0.3684568	No	
+row_13	PTGER2	prostaglandin E receptor 2 [Source:HGNC Symbol;Acc:HGNC:9594]	9161	-0.02317131496965885	-0.5523834	No	
+row_14	EPHX1	epoxide hydrolase 1 [Source:HGNC Symbol;Acc:HGNC:3401]	10545	-0.04570004716515541	-0.62988	Yes	
+row_15	PTGIR	prostaglandin I2 receptor [Source:HGNC Symbol;Acc:HGNC:9602]	10603	-0.04701066389679909	-0.6044105	Yes	
+row_16	PTGER4	prostaglandin E receptor 4 [Source:HGNC Symbol;Acc:HGNC:9596]	11415	-0.06957560032606125	-0.62268436	Yes	
+row_17	TBXAS1	thromboxane A synthase 1 [Source:HGNC Symbol;Acc:HGNC:11609]	12243	-0.11452385783195496	-0.6136408	Yes	
+row_18	CYSLTR1	cysteinyl leukotriene receptor 1 [Source:HGNC Symbol;Acc:HGNC:17451]	12747	-0.20903094112873077	-0.51961327	Yes	
+row_19	PTGER3	prostaglandin E receptor 3 [Source:HGNC Symbol;Acc:HGNC:9595]	12798	-0.2249000072479248	-0.38061437	Yes	
+row_20	PTGS2	prostaglandin-endoperoxide synthase 2 [Source:HGNC Symbol;Acc:HGNC:9605]	12853	-0.2554838955402374	-0.22249757	Yes	
+row_21	ALOX5AP	arachidonate 5-lipoxygenase activating protein [Source:HGNC Symbol;Acc:HGNC:436]	12944	-0.36848482489585876	0.0046213414	Yes	

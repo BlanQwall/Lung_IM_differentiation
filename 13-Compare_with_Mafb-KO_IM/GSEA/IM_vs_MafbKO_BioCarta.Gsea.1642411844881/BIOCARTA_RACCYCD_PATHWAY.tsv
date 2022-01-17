@@ -1,0 +1,27 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CDK6	cyclin dependent kinase 6 [Source:HGNC Symbol;Acc:HGNC:1777]	418	0.10876916348934174	0.027503898	No	
+row_1	RB1	RB transcriptional corepressor 1 [Source:HGNC Symbol;Acc:HGNC:9884]	438	0.10639232397079468	0.08444498	No	
+row_2	E2F1	E2F transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:3113]	808	0.07524114847183228	0.09731871	No	
+row_3	CDK2	cyclin dependent kinase 2 [Source:HGNC Symbol;Acc:HGNC:1771]	2698	0.029754294082522392	-0.031890213	No	
+row_4	RHOA	ras homolog family member A [Source:HGNC Symbol;Acc:HGNC:667]	2732	0.029243595898151398	-0.018379258	No	
+row_5	HRAS	"HRas proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:5173]"	6794	-2.7504327590577304E-4	-0.33111832	No	
+row_6	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	-0.34628776	No	
+row_7	IKBKG	inhibitor of nuclear factor kappa B kinase regulatory subunit gamma [Source:HGNC Symbol;Acc:HGNC:5961]	7684	-0.007907773368060589	-0.39356858	No	
+row_8	MAPK1	mitogen-activated protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:6871]	7744	-0.008489864878356457	-0.39345378	No	
+row_9	CHUK	component of inhibitor of nuclear factor kappa B kinase complex [Source:HGNC Symbol;Acc:HGNC:1974]	7754	-0.008568290621042252	-0.38944358	No	
+row_10	RELA	"RELA proto-oncogene, NF-kB subunit [Source:HGNC Symbol;Acc:HGNC:9955]"	8039	-0.011412028223276138	-0.40506035	No	
+row_11	CDK4	cyclin dependent kinase 4 [Source:HGNC Symbol;Acc:HGNC:1773]	8086	-0.011840417049825191	-0.40210465	No	
+row_12	RAF1	"Raf-1 proto-oncogene, serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:9829]"	8265	-0.013472210615873337	-0.40842342	No	
+row_13	CCNE1	cyclin E1 [Source:HGNC Symbol;Acc:HGNC:1589]	8537	-0.01610361970961094	-0.4204631	No	
+row_14	CDKN1B	cyclin dependent kinase inhibitor 1B [Source:HGNC Symbol;Acc:HGNC:1785]	9718	-0.03145192191004753	-0.49411336	No	
+row_15	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	10065	-0.03760147839784622	-0.5001302	No	
+row_16	RAC1	Rac family small GTPase 1 [Source:HGNC Symbol;Acc:HGNC:9801]	10742	-0.05030246451497078	-0.5246003	No	
+row_17	PIK3CA	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:8975]"	11555	-0.07466260343790054	-0.54617625	Yes	
+row_18	TFDP1	transcription factor Dp-1 [Source:HGNC Symbol;Acc:HGNC:11749]	11615	-0.0766107514500618	-0.5086659	Yes	
+row_19	NFKB1	nuclear factor kappa B subunit 1 [Source:HGNC Symbol;Acc:HGNC:7794]	11806	-0.08577122539281845	-0.4762201	Yes	
+row_20	PAK1	p21 (RAC1) activated kinase 1 [Source:HGNC Symbol;Acc:HGNC:8590]	11974	-0.09592229127883911	-0.43642968	Yes	
+row_21	AKT1	AKT serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:391]	12320	-0.12146204710006714	-0.39633343	Yes	
+row_22	IKBKB	inhibitor of nuclear factor kappa B kinase subunit beta [Source:HGNC Symbol;Acc:HGNC:5960]	12338	-0.12332244962453842	-0.3299443	Yes	
+row_23	NFKBIA	NFKB inhibitor alpha [Source:HGNC Symbol;Acc:HGNC:7797]	12350	-0.12428919225931168	-0.26256222	Yes	
+row_24	CCND1	cyclin D1 [Source:HGNC Symbol;Acc:HGNC:1582]	12835	-0.24032123386859894	-0.1679268	Yes	
+row_25	CDKN1A	cyclin dependent kinase inhibitor 1A [Source:HGNC Symbol;Acc:HGNC:1784]	12930	-0.32947996258735657	0.005701583	Yes	

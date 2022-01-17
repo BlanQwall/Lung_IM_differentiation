@@ -1,0 +1,19 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CD28	CD28 molecule [Source:HGNC Symbol;Acc:HGNC:1653]	2233	0.036737505346536636	-0.12153356	No	
+row_1	HLA-DRB5	"major histocompatibility complex, class II, DR beta 5 [Source:HGNC Symbol;Acc:HGNC:4953]"	3359	0.02118586376309395	-0.17908947	No	
+row_2	ICOS	inducible T cell costimulator [Source:HGNC Symbol;Acc:HGNC:5351]	4184	0.011985787190496922	-0.2260918	No	
+row_3	CTLA4	cytotoxic T-lymphocyte associated protein 4 [Source:HGNC Symbol;Acc:HGNC:2505]	4689	0.008316698484122753	-0.25348848	No	
+row_4	CD86	CD86 molecule [Source:HGNC Symbol;Acc:HGNC:1705]	5193	0.003349440870806575	-0.28762376	No	
+row_5	IL2	interleukin 2 [Source:HGNC Symbol;Acc:HGNC:6001]	5342	0.0015103507321327925	-0.29694742	No	
+row_6	ITK	IL2 inducible T cell kinase [Source:HGNC Symbol;Acc:HGNC:6171]	5759	0.0	-0.32897943	No	
+row_7	CD3G	CD3g molecule [Source:HGNC Symbol;Acc:HGNC:1675]	6722	0.0	-0.40305352	No	
+row_8	CD3D	CD3d molecule [Source:HGNC Symbol;Acc:HGNC:1673]	6723	0.0	-0.40305352	No	
+row_9	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	-0.4212401	No	
+row_10	LCK	"LCK proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:6524]"	7794	-0.009030701592564583	-0.4689091	No	
+row_11	CD247	CD247 molecule [Source:HGNC Symbol;Acc:HGNC:1677]	7874	-0.009710585698485374	-0.4616682	No	
+row_12	GRB2	growth factor receptor bound protein 2 [Source:HGNC Symbol;Acc:HGNC:4566]	10774	-0.05123435705900192	-0.6145926	Yes	
+row_13	ICOSLG	inducible T cell costimulator ligand [Source:HGNC Symbol;Acc:HGNC:17087]	11442	-0.0704149529337883	-0.56933516	Yes	
+row_14	PIK3CA	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:8975]"	11555	-0.07466260343790054	-0.47551444	Yes	
+row_15	PTPN11	protein tyrosine phosphatase non-receptor type 11 [Source:HGNC Symbol;Acc:HGNC:9644]	11888	-0.0906558707356453	-0.37668934	Yes	
+row_16	HLA-DRB1	"major histocompatibility complex, class II, DR beta 1 [Source:HGNC Symbol;Acc:HGNC:4948]"	12464	-0.13899697363376617	-0.23024632	Yes	
+row_17	CD80	CD80 molecule [Source:HGNC Symbol;Acc:HGNC:1700]	12715	-0.1980533003807068	0.022253033	Yes	

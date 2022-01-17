@@ -1,0 +1,27 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.59922534	Yes	
+row_1	HBEGF	heparin binding EGF like growth factor [Source:HGNC Symbol;Acc:HGNC:3059]	228	0.14651067554950714	0.6398662	Yes	
+row_2	CXCL12	C-X-C motif chemokine ligand 12 [Source:HGNC Symbol;Acc:HGNC:10672]	391	0.11231471598148346	0.67177004	Yes	
+row_3	STMN1	stathmin 1 [Source:HGNC Symbol;Acc:HGNC:6510]	421	0.10851248353719711	0.7124187	Yes	
+row_4	MXD4	MAX dimerization protein 4 [Source:HGNC Symbol;Acc:HGNC:13906]	466	0.10299955308437347	0.7497329	Yes	
+row_5	SRC	"SRC proto-oncogene, non-receptor tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:11283]"	887	0.07195037603378296	0.74580693	No	
+row_6	TAB2	TGF-beta activated kinase 1 (MAP3K7) binding protein 2 [Source:HGNC Symbol;Acc:HGNC:17075]	2837	0.027902372181415558	0.60666806	No	
+row_7	NCSTN	nicastrin [Source:HGNC Symbol;Acc:HGNC:17091]	3381	0.020905068144202232	0.5730927	No	
+row_8	ADAM17	ADAM metallopeptidase domain 17 [Source:HGNC Symbol;Acc:HGNC:195]	3666	0.017497969791293144	0.5581262	No	
+row_9	NRG1	neuregulin 1 [Source:HGNC Symbol;Acc:HGNC:7997]	4653	0.008542408235371113	0.48553318	No	
+row_10	PSENEN	"presenilin enhancer, gamma-secretase subunit [Source:HGNC Symbol;Acc:HGNC:30100]"	5063	0.005029610358178616	0.45600837	No	
+row_11	APH1A	"aph-1 homolog A, gamma-secretase subunit [Source:HGNC Symbol;Acc:HGNC:29509]"	5413	5.439901724457741E-4	0.42933378	No	
+row_12	S100B	S100 calcium binding protein B [Source:HGNC Symbol;Acc:HGNC:10500]	5755	0.0	0.40306056	No	
+row_13	NRG4	neuregulin 4 [Source:HGNC Symbol;Acc:HGNC:29862]	5989	0.0	0.3851085	No	
+row_14	YAP1	Yes1 associated transcriptional regulator [Source:HGNC Symbol;Acc:HGNC:16262]	6648	0.0	0.3344112	No	
+row_15	WWOX	WW domain containing oxidoreductase [Source:HGNC Symbol;Acc:HGNC:12799]	7525	-0.007026726379990578	0.26969445	No	
+row_16	EREG	epiregulin [Source:HGNC Symbol;Acc:HGNC:3443]	7665	-0.007776376325637102	0.262058	No	
+row_17	NCOR1	nuclear receptor corepressor 1 [Source:HGNC Symbol;Acc:HGNC:7672]	8090	-0.011882802471518517	0.23408578	No	
+row_18	ADAP1	ArfGAP with dual PH domains 1 [Source:HGNC Symbol;Acc:HGNC:16486]	8659	-0.01761344075202942	0.19728343	No	
+row_19	PSEN2	presenilin 2 [Source:HGNC Symbol;Acc:HGNC:9509]	8739	-0.018447602167725563	0.19848697	No	
+row_20	ESR1	estrogen receptor 1 [Source:HGNC Symbol;Acc:HGNC:3467]	9506	-0.028084395453333855	0.15056722	No	
+row_21	PSEN1	presenilin 1 [Source:HGNC Symbol;Acc:HGNC:9508]	9691	-0.031070562079548836	0.14866923	No	
+row_22	SPARC	secreted protein acidic and cysteine rich [Source:HGNC Symbol;Acc:HGNC:11219]	9735	-0.0316920168697834	0.15788053	No	
+row_23	STAT5A	signal transducer and activator of transcription 5A [Source:HGNC Symbol;Acc:HGNC:11366]	10316	-0.04171755909919739	0.12967929	No	
+row_24	NRG2	neuregulin 2 [Source:HGNC Symbol;Acc:HGNC:7998]	10625	-0.04743492603302002	0.12469444	No	
+row_25	APH1B	"aph-1 homolog B, gamma-secretase subunit [Source:HGNC Symbol;Acc:HGNC:24080]"	12518	-0.14809253811836243	0.037445094	No	

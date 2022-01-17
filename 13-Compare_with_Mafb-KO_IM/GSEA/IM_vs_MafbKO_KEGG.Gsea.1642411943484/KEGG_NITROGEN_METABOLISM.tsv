@@ -1,0 +1,17 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GLUL	glutamate-ammonia ligase [Source:HGNC Symbol;Acc:HGNC:4341]	57	0.34769266843795776	0.33764428	Yes	
+row_1	HAL	histidine ammonia-lyase [Source:HGNC Symbol;Acc:HGNC:4806]	107	0.2412017583847046	0.57114714	Yes	
+row_2	AMT	aminomethyltransferase [Source:HGNC Symbol;Acc:HGNC:473]	4423	0.010067261755466461	0.24884634	No	
+row_3	CA8	carbonic anhydrase 8 [Source:HGNC Symbol;Acc:HGNC:1382]	4690	0.00831346120685339	0.23654559	No	
+row_4	CA13	carbonic anhydrase 13 [Source:HGNC Symbol;Acc:HGNC:14914]	4963	0.006166534032672644	0.22167096	No	
+row_5	CA2	carbonic anhydrase 2 [Source:HGNC Symbol;Acc:HGNC:1373]	5504	0.0	0.18009731	No	
+row_6	GLS2	glutaminase 2 [Source:HGNC Symbol;Acc:HGNC:29570]	6595	0.0	0.09618016	No	
+row_7	CA14	carbonic anhydrase 14 [Source:HGNC Symbol;Acc:HGNC:1372]	6608	0.0	0.0952563	No	
+row_8	CTH	cystathionine gamma-lyase [Source:HGNC Symbol;Acc:HGNC:2501]	6938	-0.0021580776665359735	0.072050124	No	
+row_9	CA7	carbonic anhydrase 7 [Source:HGNC Symbol;Acc:HGNC:1381]	8211	-0.012935351580381393	-0.013154109	No	
+row_10	CA4	carbonic anhydrase 4 [Source:HGNC Symbol;Acc:HGNC:1375]	8250	-0.01332289632409811	-0.0029736464	No	
+row_11	CA9	carbonic anhydrase 9 [Source:HGNC Symbol;Acc:HGNC:1383]	8443	-0.015126731246709824	-0.0028748992	No	
+row_12	CA5B	carbonic anhydrase 5B [Source:HGNC Symbol;Acc:HGNC:1378]	11351	-0.06759575754404068	-0.16018428	No	
+row_13	GLS	glutaminase [Source:HGNC Symbol;Acc:HGNC:4331]	11682	-0.07951031625270844	-0.10737441	No	
+row_14	ASNS	asparagine synthetase (glutamine-hydrolyzing) [Source:HGNC Symbol;Acc:HGNC:753]	11687	-0.07993482053279877	-0.02904879	No	
+row_15	GLUD1	glutamate dehydrogenase 1 [Source:HGNC Symbol;Acc:HGNC:4335]	12429	-0.13252262771129608	0.044268254	No	

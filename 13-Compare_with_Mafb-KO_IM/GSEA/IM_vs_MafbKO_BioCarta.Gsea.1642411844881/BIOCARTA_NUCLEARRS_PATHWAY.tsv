@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ABCA1	ATP binding cassette subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:29]	53	0.3633791506290436	0.31493637	Yes	
+row_1	ABCC3	ATP binding cassette subfamily C member 3 [Source:HGNC Symbol;Acc:HGNC:54]	87	0.2824684679508209	0.5603797	Yes	
+row_2	NR1H3	nuclear receptor subfamily 1 group H member 3 [Source:HGNC Symbol;Acc:HGNC:7966]	880	0.07222681492567062	0.5628095	Yes	
+row_3	ABCB4	ATP binding cassette subfamily B member 4 [Source:HGNC Symbol;Acc:HGNC:45]	1056	0.06562814116477966	0.60695165	Yes	
+row_4	ABCB1	ATP binding cassette subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:40]	2974	0.025763902813196182	0.48197246	No	
+row_5	ABCD3	ATP binding cassette subfamily D member 3 [Source:HGNC Symbol;Acc:HGNC:67]	4948	0.0062557305209338665	0.33555502	No	
+row_6	ABCD2	ATP binding cassette subfamily D member 2 [Source:HGNC Symbol;Acc:HGNC:66]	5007	0.0056816148571670055	0.33607736	No	
+row_7	CYP8B1	cytochrome P450 family 8 subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:2653]	6499	0.0	0.22127908	No	
+row_8	CYP4B1	cytochrome P450 family 4 subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:2644]	6640	0.0	0.21049991	No	
+row_9	ABCC2	ATP binding cassette subfamily C member 2 [Source:HGNC Symbol;Acc:HGNC:53]	6766	0.0	0.20087564	No	
+row_10	RARB	retinoic acid receptor beta [Source:HGNC Symbol;Acc:HGNC:9865]	7811	-0.009195183403789997	0.12856637	No	
+row_11	VDR	vitamin D receptor [Source:HGNC Symbol;Acc:HGNC:12679]	8341	-0.014081676490604877	0.100199014	No	
+row_12	PPARD	peroxisome proliferator activated receptor delta [Source:HGNC Symbol;Acc:HGNC:9235]	8754	-0.01860159821808338	0.084808104	No	
+row_13	PPARG	peroxisome proliferator activated receptor gamma [Source:HGNC Symbol;Acc:HGNC:9236]	9474	-0.02757387049496174	0.053656906	No	
+row_14	RARG	retinoic acid receptor gamma [Source:HGNC Symbol;Acc:HGNC:9866]	10270	-0.040841393172740936	0.028301949	No	
+row_15	ABCG1	ATP binding cassette subfamily G member 1 [Source:HGNC Symbol;Acc:HGNC:73]	11989	-0.09680236130952835	-0.01898947	No	
+row_16	RARA	retinoic acid receptor alpha [Source:HGNC Symbol;Acc:HGNC:9864]	12186	-0.11055871099233627	0.06298115	No	

@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CSF1R	colony stimulating factor 1 receptor [Source:HGNC Symbol;Acc:HGNC:2433]	21	0.5598552227020264	0.28270516	Yes	
+row_1	FOS	"Fos proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:3796]"	38	0.4171111285686493	0.4933028	Yes	
+row_2	JUN	"Jun proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:6204]"	79	0.29534798860549927	0.6402152	Yes	
+row_3	ETS1	"ETS proto-oncogene 1, transcription factor [Source:HGNC Symbol;Acc:HGNC:3488]"	693	0.0813789963722229	0.63434607	Yes	
+row_4	E2F1	E2F transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:3113]	808	0.07524114847183228	0.6637799	Yes	
+row_5	CSF1	colony stimulating factor 1 [Source:HGNC Symbol;Acc:HGNC:2432]	3016	0.0253103356808424	0.50670767	No	
+row_6	DDX20	DEAD-box helicase 20 [Source:HGNC Symbol;Acc:HGNC:2743]	4027	0.013643333688378334	0.43587232	No	
+row_7	HRAS	"HRas proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:5173]"	6794	-2.7504327590577304E-4	0.2230462	No	
+row_8	HDAC2	histone deacetylase 2 [Source:HGNC Symbol;Acc:HGNC:4853]	6830	-7.181523833423853E-4	0.22071612	No	
+row_9	NCOR2	nuclear receptor corepressor 2 [Source:HGNC Symbol;Acc:HGNC:7673]	6914	-0.0018557243747636676	0.21526803	No	
+row_10	SIN3A	SIN3 transcription regulator family member A [Source:HGNC Symbol;Acc:HGNC:19353]	7773	-0.008749767206609249	0.15365061	No	
+row_11	RBL1	RB transcriptional corepressor like 1 [Source:HGNC Symbol;Acc:HGNC:9893]	8005	-0.011091078631579876	0.14149757	No	
+row_12	SIN3B	SIN3 transcription regulator family member B [Source:HGNC Symbol;Acc:HGNC:19354]	8727	-0.018369920551776886	0.09531393	No	
+row_13	ETS2	"ETS proto-oncogene 2, transcription factor [Source:HGNC Symbol;Acc:HGNC:3489]"	8747	-0.018508566543459892	0.1032506	No	
+row_14	HDAC5	histone deacetylase 5 [Source:HGNC Symbol;Acc:HGNC:14068]	9966	-0.0356973335146904	0.02760059	No	
+row_15	E2F4	E2F transcription factor 4 [Source:HGNC Symbol;Acc:HGNC:3118]	10125	-0.038527436554431915	0.035001643	No	
+row_16	ETV3	ETS variant transcription factor 3 [Source:HGNC Symbol;Acc:HGNC:3492]	12943	-0.3674074709415436	0.004696716	No	

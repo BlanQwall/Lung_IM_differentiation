@@ -1,0 +1,34 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FOS	"Fos proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:3796]"	38	0.4171111285686493	0.1630808	Yes	
+row_1	CALM2	calmodulin 2 [Source:HGNC Symbol;Acc:HGNC:1445]	76	0.2996978759765625	0.27950823	Yes	
+row_2	JUN	"Jun proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:6204]"	79	0.29534798860549927	0.39690253	Yes	
+row_3	CD79B	CD79b molecule [Source:HGNC Symbol;Acc:HGNC:1699]	94	0.2580857276916504	0.49854136	Yes	
+row_4	PRKCB	protein kinase C beta [Source:HGNC Symbol;Acc:HGNC:9395]	309	0.1295367032289505	0.5335999	Yes	
+row_5	PPP3CB	protein phosphatase 3 catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9315]	924	0.07033193856477737	0.5142593	Yes	
+row_6	PLCG1	phospholipase C gamma 1 [Source:HGNC Symbol;Acc:HGNC:9065]	926	0.07029503583908081	0.5421596	Yes	
+row_7	MAP3K1	mitogen-activated protein kinase kinase kinase 1 [Source:HGNC Symbol;Acc:HGNC:6848]	1087	0.06452937424182892	0.555508	Yes	
+row_8	BTK	Bruton tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:1133]	2287	0.03576439991593361	0.47731242	No	
+row_9	MAPK8	mitogen-activated protein kinase 8 [Source:HGNC Symbol;Acc:HGNC:6881]	2927	0.026505250483751297	0.43860155	No	
+row_10	NFATC1	nuclear factor of activated T cells 1 [Source:HGNC Symbol;Acc:HGNC:7775]	3170	0.023294199258089066	0.42921707	No	
+row_11	MAPK14	mitogen-activated protein kinase 14 [Source:HGNC Symbol;Acc:HGNC:6876]	3333	0.021474266424775124	0.4252754	No	
+row_12	NFATC3	nuclear factor of activated T cells 3 [Source:HGNC Symbol;Acc:HGNC:7777]	3518	0.018987245857715607	0.41864792	No	
+row_13	VAV1	vav guanine nucleotide exchange factor 1 [Source:HGNC Symbol;Acc:HGNC:12657]	4450	0.00993435364216566	0.35083184	No	
+row_14	NFATC2	nuclear factor of activated T cells 2 [Source:HGNC Symbol;Acc:HGNC:7776]	4768	0.0077256085351109505	0.32946938	No	
+row_15	NFATC4	nuclear factor of activated T cells 4 [Source:HGNC Symbol;Acc:HGNC:7778]	6025	0.0	0.23264545	No	
+row_16	HRAS	"HRas proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:5173]"	6794	-2.7504327590577304E-4	0.17355047	No	
+row_17	LYN	"LYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:6735]"	7067	-0.0035260366275906563	0.1539856	No	
+row_18	RAF1	"Raf-1 proto-oncogene, serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:9829]"	8265	-0.013472210615873337	0.06707187	No	
+row_19	SOS1	SOS Ras/Rac guanine nucleotide exchange factor 1 [Source:HGNC Symbol;Acc:HGNC:11187]	8729	-0.018386563286185265	0.038697463	No	
+row_20	CD79A	CD79a molecule [Source:HGNC Symbol;Acc:HGNC:1698]	9052	-0.021951666101813316	0.022611529	No	
+row_21	PPP3CC	protein phosphatase 3 catalytic subunit gamma [Source:HGNC Symbol;Acc:HGNC:9316]	9226	-0.023975620046257973	0.018817406	No	
+row_22	PRKCA	protein kinase C alpha [Source:HGNC Symbol;Acc:HGNC:9393]	9872	-0.034052468836307526	-0.017352192	No	
+row_23	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	10065	-0.03760147839784622	-0.017187918	No	
+row_24	PPP3CA	protein phosphatase 3 catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9314]	10080	-0.0378614217042923	-0.0031983235	No	
+row_25	ELK1	ETS transcription factor ELK1 [Source:HGNC Symbol;Acc:HGNC:3321]	10574	-0.046322569251060486	-0.022766879	No	
+row_26	RAC1	Rac family small GTPase 1 [Source:HGNC Symbol;Acc:HGNC:9801]	10742	-0.05030246451497078	-0.015620385	No	
+row_27	GRB2	growth factor receptor bound protein 2 [Source:HGNC Symbol;Acc:HGNC:4566]	10774	-0.05123435705900192	0.002381121	No	
+row_28	MAP2K1	mitogen-activated protein kinase kinase 1 [Source:HGNC Symbol;Acc:HGNC:6840]	10967	-0.05661008879542351	0.010110821	No	
+row_29	SHC1	SHC adaptor protein 1 [Source:HGNC Symbol;Acc:HGNC:10840]	11431	-0.07007511705160141	0.00230845	No	
+row_30	SYK	spleen associated tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:11491]	11757	-0.08363115042448044	0.010539678	No	
+row_31	CALM1	calmodulin 1 [Source:HGNC Symbol;Acc:HGNC:1442]	11759	-0.08367890864610672	0.043766785	No	
+row_32	CALM3	calmodulin 3 [Source:HGNC Symbol;Acc:HGNC:1449]	12424	-0.1309850811958313	0.04471166	No	

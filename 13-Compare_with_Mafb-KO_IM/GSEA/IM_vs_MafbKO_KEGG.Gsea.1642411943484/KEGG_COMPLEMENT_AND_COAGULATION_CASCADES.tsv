@@ -1,0 +1,46 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.264294	Yes	
+row_1	C1QA	complement C1q A chain [Source:HGNC Symbol;Acc:HGNC:1241]	1	2.0969398021698	0.49977392	Yes	
+row_2	C1QB	complement C1q B chain [Source:HGNC Symbol;Acc:HGNC:1242]	2	1.8567914962768555	0.7082859	Yes	
+row_3	C3AR1	complement C3a receptor 1 [Source:HGNC Symbol;Acc:HGNC:1319]	31	0.44128063321113586	0.7556799	Yes	
+row_4	F13A1	coagulation factor XIII A chain [Source:HGNC Symbol;Acc:HGNC:3531]	100	0.24786990880966187	0.77826804	Yes	
+row_5	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	165	0.1757270097732544	0.7930634	Yes	
+row_6	SERPINE1	serpin family E member 1 [Source:HGNC Symbol;Acc:HGNC:8583]	233	0.14502990245819092	0.80418	Yes	
+row_7	THBD	thrombomodulin [Source:HGNC Symbol;Acc:HGNC:11784]	293	0.13349561393260956	0.8146187	Yes	
+row_8	C6	complement C6 [Source:HGNC Symbol;Acc:HGNC:1339]	334	0.12277914583683014	0.82532	Yes	
+row_9	CD55	CD55 molecule (Cromer blood group) [Source:HGNC Symbol;Acc:HGNC:2665]	620	0.08747071772813797	0.81315196	No	
+row_10	PLAU	"plasminogen activator, urokinase [Source:HGNC Symbol;Acc:HGNC:9052]"	969	0.06881622970104218	0.794028	No	
+row_11	C2	complement C2 [Source:HGNC Symbol;Acc:HGNC:1248]	1341	0.05607956647872925	0.771699	No	
+row_12	KLKB1	kallikrein B1 [Source:HGNC Symbol;Acc:HGNC:6371]	2492	0.032587144523859024	0.6866239	No	
+row_13	SERPINC1	serpin family C member 1 [Source:HGNC Symbol;Acc:HGNC:775]	3355	0.021256528794765472	0.6224986	No	
+row_14	CD46	CD46 molecule [Source:HGNC Symbol;Acc:HGNC:6953]	4000	0.014033026993274689	0.5743831	No	
+row_15	C9	complement C9 [Source:HGNC Symbol;Acc:HGNC:1358]	4600	0.008899486623704433	0.5291633	No	
+row_16	CFH	complement factor H [Source:HGNC Symbol;Acc:HGNC:4883]	4790	0.007603941950947046	0.5154339	No	
+row_17	C1R	complement C1r [Source:HGNC Symbol;Acc:HGNC:1246]	4887	0.006749752908945084	0.5087845	No	
+row_18	C1S	complement C1s [Source:HGNC Symbol;Acc:HGNC:1247]	5478	0.0	0.46325976	No	
+row_19	CFD	complement factor D [Source:HGNC Symbol;Acc:HGNC:2771]	5516	0.0	0.4604048	No	
+row_20	CR2	complement C3d receptor 2 [Source:HGNC Symbol;Acc:HGNC:2336]	5527	0.0	0.4596332	No	
+row_21	F5	coagulation factor V [Source:HGNC Symbol;Acc:HGNC:3542]	5561	0.0	0.45708692	No	
+row_22	F8	coagulation factor VIII [Source:HGNC Symbol;Acc:HGNC:3546]	5562	0.0	0.45708692	No	
+row_23	F2R	coagulation factor II thrombin receptor [Source:HGNC Symbol;Acc:HGNC:3537]	5611	0.0	0.4533832	No	
+row_24	SERPIND1	serpin family D member 1 [Source:HGNC Symbol;Acc:HGNC:4838]	5768	0.0	0.44134617	No	
+row_25	BDKRB1	bradykinin receptor B1 [Source:HGNC Symbol;Acc:HGNC:1029]	5805	0.0	0.4385684	No	
+row_26	MASP2	MBL associated serine protease 2 [Source:HGNC Symbol;Acc:HGNC:6902]	6428	0.0	0.39057457	No	
+row_27	SERPING1	serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228]	6821	-5.82645065151155E-4	0.36039308	No	
+row_28	TFPI	tissue factor pathway inhibitor [Source:HGNC Symbol;Acc:HGNC:11760]	7047	-0.003283914877101779	0.34340075	No	
+row_29	C4B	complement C4B (Chido blood group) [Source:HGNC Symbol;Acc:HGNC:1324]	7586	-0.00731950718909502	0.30271035	No	
+row_30	C5	complement C5 [Source:HGNC Symbol;Acc:HGNC:1331]	7804	-0.009119182825088501	0.28699058	No	
+row_31	C7	complement C7 [Source:HGNC Symbol;Acc:HGNC:1346]	7826	-0.009294732473790646	0.286414	No	
+row_32	F7	coagulation factor VII [Source:HGNC Symbol;Acc:HGNC:3544]	7855	-0.009547294117510319	0.28532562	No	
+row_33	MASP1	MBL associated serine protease 1 [Source:HGNC Symbol;Acc:HGNC:6901]	8042	-0.011426664888858795	0.27225694	No	
+row_34	C8G	complement C8 gamma chain [Source:HGNC Symbol;Acc:HGNC:1354]	8108	-0.011976873502135277	0.2685865	No	
+row_35	SERPINF2	serpin family F member 2 [Source:HGNC Symbol;Acc:HGNC:9075]	8215	-0.012965051457285881	0.2618634	No	
+row_36	CFB	complement factor B [Source:HGNC Symbol;Acc:HGNC:1037]	8467	-0.015354761853814125	0.24422042	No	
+row_37	F9	coagulation factor IX [Source:HGNC Symbol;Acc:HGNC:3551]	8490	-0.01557548064738512	0.24427196	No	
+row_38	CD59	CD59 molecule (CD59 blood group) [Source:HGNC Symbol;Acc:HGNC:1689]	8885	-0.020081916823983192	0.21612586	No	
+row_39	VWF	von Willebrand factor [Source:HGNC Symbol;Acc:HGNC:12726]	9851	-0.033604469150304794	0.14543967	No	
+row_40	PROS1	protein S [Source:HGNC Symbol;Acc:HGNC:9456]	10640	-0.047711096704006195	0.089995004	No	
+row_41	PLAT	"plasminogen activator, tissue type [Source:HGNC Symbol;Acc:HGNC:9051]"	11405	-0.06923049688339233	0.038818754	No	
+row_42	F3	"coagulation factor III, tissue factor [Source:HGNC Symbol;Acc:HGNC:3541]"	11899	-0.09145650267601013	0.011048917	No	
+row_43	F10	coagulation factor X [Source:HGNC Symbol;Acc:HGNC:3528]	12141	-0.1056831106543541	0.004321128	No	
+row_44	PLAUR	"plasminogen activator, urokinase receptor [Source:HGNC Symbol;Acc:HGNC:9053]"	12984	-0.5538095831871033	0.0015431142	No	

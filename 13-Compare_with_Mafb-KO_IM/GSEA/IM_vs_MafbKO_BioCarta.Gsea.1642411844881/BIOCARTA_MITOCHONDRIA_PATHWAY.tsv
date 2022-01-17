@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BIRC3	baculoviral IAP repeat containing 3 [Source:HGNC Symbol;Acc:HGNC:591]	2512	0.032235052436590195	-0.15944918	No	
+row_1	CASP8	caspase 8 [Source:HGNC Symbol;Acc:HGNC:1509]	3053	0.02490830048918724	-0.1747681	No	
+row_2	BID	BH3 interacting domain death agonist [Source:HGNC Symbol;Acc:HGNC:1050]	3487	0.01937750168144703	-0.1876793	No	
+row_3	CASP3	caspase 3 [Source:HGNC Symbol;Acc:HGNC:1504]	3701	0.017124753445386887	-0.18602456	No	
+row_4	DFFA	DNA fragmentation factor subunit alpha [Source:HGNC Symbol;Acc:HGNC:2772]	3798	0.016139496117830276	-0.176399	No	
+row_5	BIK	BCL2 interacting killer [Source:HGNC Symbol;Acc:HGNC:1051]	3985	0.014237502589821815	-0.17570955	No	
+row_6	CASP9	caspase 9 [Source:HGNC Symbol;Acc:HGNC:1511]	7225	-0.005274298135191202	-0.41957057	No	
+row_7	BCL2	BCL2 apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:990]	8099	-0.011922881938517094	-0.47422487	No	
+row_8	ENDOG	endonuclease G [Source:HGNC Symbol;Acc:HGNC:3346]	8915	-0.020404083654284477	-0.51546985	No	
+row_9	BIRC2	baculoviral IAP repeat containing 2 [Source:HGNC Symbol;Acc:HGNC:590]	9009	-0.02151806838810444	-0.49994192	No	
+row_10	APAF1	apoptotic peptidase activating factor 1 [Source:HGNC Symbol;Acc:HGNC:576]	10593	-0.04675249382853508	-0.57254475	Yes	
+row_11	DIABLO	diablo IAP-binding mitochondrial protein [Source:HGNC Symbol;Acc:HGNC:21528]	10888	-0.054094575345516205	-0.53814507	Yes	
+row_12	XIAP	X-linked inhibitor of apoptosis [Source:HGNC Symbol;Acc:HGNC:592]	10980	-0.05689317360520363	-0.48516217	Yes	
+row_13	CASP7	caspase 7 [Source:HGNC Symbol;Acc:HGNC:1508]	10986	-0.05707675963640213	-0.42536318	Yes	
+row_14	CASP6	caspase 6 [Source:HGNC Symbol;Acc:HGNC:1507]	11258	-0.0650419369339943	-0.377649	Yes	
+row_15	DFFB	DNA fragmentation factor subunit beta [Source:HGNC Symbol;Acc:HGNC:2773]	11628	-0.07711508870124817	-0.32475102	Yes	
+row_16	AIFM1	apoptosis inducing factor mitochondria associated 1 [Source:HGNC Symbol;Acc:HGNC:8768]	11948	-0.0947115570306778	-0.24944831	Yes	
+row_17	BAK1	BCL2 antagonist/killer 1 [Source:HGNC Symbol;Acc:HGNC:949]	12132	-0.10523074865341187	-0.15258092	Yes	
+row_18	BAX	"BCL2 associated X, apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:959]"	12743	-0.20831263065338135	0.020098528	Yes	

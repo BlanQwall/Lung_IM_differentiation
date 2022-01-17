@@ -1,0 +1,23 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HAL	histidine ammonia-lyase [Source:HGNC Symbol;Acc:HGNC:4806]	107	0.2412017583847046	0.2193457	Yes	
+row_1	MAOA	monoamine oxidase A [Source:HGNC Symbol;Acc:HGNC:6833]	297	0.13249213993549347	0.3298019	Yes	
+row_2	ALDH2	aldehyde dehydrogenase 2 family member [Source:HGNC Symbol;Acc:HGNC:404]	496	0.09953581541776657	0.40846875	Yes	
+row_3	LCMT1	leucine carboxyl methyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:17557]	504	0.09886950254440308	0.50121844	Yes	
+row_4	ALDH3B1	aldehyde dehydrogenase 3 family member B1 [Source:HGNC Symbol;Acc:HGNC:410]	826	0.07447783648967743	0.5467678	Yes	
+row_5	HNMT	histamine N-methyltransferase [Source:HGNC Symbol;Acc:HGNC:5028]	1125	0.06327397376298904	0.5835172	Yes	
+row_6	ALDH7A1	aldehyde dehydrogenase 7 family member A1 [Source:HGNC Symbol;Acc:HGNC:877]	1166	0.06164207309484482	0.638599	Yes	
+row_7	AMDHD1	amidohydrolase domain containing 1 [Source:HGNC Symbol;Acc:HGNC:28577]	2042	0.04085775092244148	0.6097547	No	
+row_8	HEMK1	HemK methyltransferase family member 1 [Source:HGNC Symbol;Acc:HGNC:24923]	4033	0.013586870394647121	0.4692973	No	
+row_9	HDC	histidine decarboxylase [Source:HGNC Symbol;Acc:HGNC:4855]	4888	0.0067289466969668865	0.40986812	No	
+row_10	TRMT11	tRNA methyltransferase 11 homolog [Source:HGNC Symbol;Acc:HGNC:21080]	5226	0.0030356175266206264	0.38677537	No	
+row_11	ACY3	aminoacylase 3 [Source:HGNC Symbol;Acc:HGNC:24104]	5660	0.0	0.35342404	No	
+row_12	ASPA	aspartoacylase [Source:HGNC Symbol;Acc:HGNC:756]	6299	0.0	0.30428287	No	
+row_13	ALDH1A3	aldehyde dehydrogenase 1 family member A3 [Source:HGNC Symbol;Acc:HGNC:409]	6543	0.0	0.2855661	No	
+row_14	MAOB	monoamine oxidase B [Source:HGNC Symbol;Acc:HGNC:6834]	6755	0.0	0.26931405	No	
+row_15	CNDP1	carnosine dipeptidase 1 [Source:HGNC Symbol;Acc:HGNC:20675]	7951	-0.010543938726186752	0.18721941	No	
+row_16	ALDH3A2	aldehyde dehydrogenase 3 family member A2 [Source:HGNC Symbol;Acc:HGNC:403]	8640	-0.017401570454239845	0.15064637	No	
+row_17	METTL6	"methyltransferase 6, methylcytidine [Source:HGNC Symbol;Acc:HGNC:28343]"	9621	-0.029935427010059357	0.10340878	No	
+row_18	ALDH1B1	aldehyde dehydrogenase 1 family member B1 [Source:HGNC Symbol;Acc:HGNC:407]	9636	-0.030088892206549644	0.130721	No	
+row_19	LCMT2	leucine carboxyl methyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:17558]	9786	-0.032456137239933014	0.14986862	No	
+row_20	ALDH9A1	aldehyde dehydrogenase 9 family member A1 [Source:HGNC Symbol;Acc:HGNC:412]	10389	-0.04295648634433746	0.14403212	No	
+row_21	BUD23	BUD23 rRNA methyltransferase and ribosome maturation factor [Source:HGNC Symbol;Acc:HGNC:16405]	11116	-0.06073635816574097	0.14542097	No	

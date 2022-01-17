@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.5842073	Yes	
+row_1	FTL	ferritin light chain [Source:HGNC Symbol;Acc:HGNC:3999]	36	0.4192432463169098	0.74327314	Yes	
+row_2	MSR1	macrophage scavenger receptor 1 [Source:HGNC Symbol;Acc:HGNC:7376]	91	0.2646862268447876	0.84109604	Yes	
+row_3	COLEC12	collectin subfamily member 12 [Source:HGNC Symbol;Acc:HGNC:16016]	647	0.08525615930557251	0.8312125	No	
+row_4	COL3A1	collagen type III alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2201]	3216	0.02281245030462742	0.64228094	No	
+row_5	SCGB3A2	secretoglobin family 3A member 2 [Source:HGNC Symbol;Acc:HGNC:18391]	3683	0.01729726791381836	0.61306614	No	
+row_6	FTH1	ferritin heavy chain 1 [Source:HGNC Symbol;Acc:HGNC:3976]	4937	0.006357927806675434	0.5190421	No	
+row_7	COL1A2	collagen type I alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2198]	6249	0.0	0.41810277	No	
+row_8	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.33388975	No	
+row_9	COLEC11	collectin subfamily member 11 [Source:HGNC Symbol;Acc:HGNC:17213]	7610	-0.007427619770169258	0.31873488	No	
+row_10	MASP1	MBL associated serine protease 1 [Source:HGNC Symbol;Acc:HGNC:6901]	8042	-0.011426664888858795	0.28995296	No	
+row_11	COL1A1	collagen type I alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2197]	8205	-0.012880451045930386	0.2824426	No	
+row_12	COL4A1	collagen type IV alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2202]	8555	-0.016323689371347427	0.261861	No	
+row_13	HSP90B1	heat shock protein 90 beta family member 1 [Source:HGNC Symbol;Acc:HGNC:12028]	9920	-0.034896377474069595	0.17028615	No	
+row_14	MARCO	macrophage receptor with collagenous structure [Source:HGNC Symbol;Acc:HGNC:6895]	9962	-0.03562454134225845	0.18085513	No	
+row_15	CALR	calreticulin [Source:HGNC Symbol;Acc:HGNC:1455]	10823	-0.05250383913516998	0.13486929	No	
+row_16	COL4A2	collagen type IV alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2203]	11799	-0.08559298515319824	0.092778005	No	

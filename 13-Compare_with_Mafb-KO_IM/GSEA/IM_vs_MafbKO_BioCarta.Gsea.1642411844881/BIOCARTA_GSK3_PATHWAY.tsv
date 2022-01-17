@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	AXIN1	axin 1 [Source:HGNC Symbol;Acc:HGNC:903]	2464	0.0330640971660614	-0.14731658	No	
+row_1	GSK3B	glycogen synthase kinase 3 beta [Source:HGNC Symbol;Acc:HGNC:4617]	3440	0.020104793831706047	-0.19659993	No	
+row_2	DVL1	dishevelled segment polarity protein 1 [Source:HGNC Symbol;Acc:HGNC:3084]	3465	0.019701240584254265	-0.1731684	No	
+row_3	FZD1	frizzled class receptor 1 [Source:HGNC Symbol;Acc:HGNC:4038]	3682	0.01730618067085743	-0.16759527	No	
+row_4	CTNNB1	catenin beta 1 [Source:HGNC Symbol;Acc:HGNC:2514]	4399	0.010186053812503815	-0.20966132	No	
+row_5	PDPK1	3-phosphoinositide dependent protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:8816]	5300	0.00196647341363132	-0.27644345	No	
+row_6	LEF1	lymphoid enhancer binding factor 1 [Source:HGNC Symbol;Acc:HGNC:6551]	5716	0.0	-0.30840093	No	
+row_7	LBP	lipopolysaccharide binding protein [Source:HGNC Symbol;Acc:HGNC:6517]	5856	0.0	-0.31910476	No	
+row_8	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	-0.4043209	No	
+row_9	GJA1	gap junction protein alpha 1 [Source:HGNC Symbol;Acc:HGNC:4274]	8026	-0.011353802867233753	-0.46768233	No	
+row_10	RELA	"RELA proto-oncogene, NF-kB subunit [Source:HGNC Symbol;Acc:HGNC:9955]"	8039	-0.011412028223276138	-0.45396304	No	
+row_11	APC	APC regulator of WNT signaling pathway [Source:HGNC Symbol;Acc:HGNC:583]	8060	-0.011627142317593098	-0.44058377	No	
+row_12	PPP2CA	protein phosphatase 2 catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9299]	8593	-0.016856933012604713	-0.45992097	No	
+row_13	MYD88	MYD88 innate immune signal transduction adaptor [Source:HGNC Symbol;Acc:HGNC:7562]	10662	-0.04834362864494324	-0.55713725	Yes	
+row_14	EIF2AK2	eukaryotic translation initiation factor 2 alpha kinase 2 [Source:HGNC Symbol;Acc:HGNC:9437]	10812	-0.05222833529114723	-0.50159425	Yes	
+row_15	PIK3CA	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:8975]"	11555	-0.07466260343790054	-0.46292934	Yes	
+row_16	NFKB1	nuclear factor kappa B subunit 1 [Source:HGNC Symbol;Acc:HGNC:7794]	11806	-0.08577122539281845	-0.3721234	Yes	
+row_17	AKT1	AKT serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:391]	12320	-0.12146204710006714	-0.2557733	Yes	
+row_18	CCND1	cyclin D1 [Source:HGNC Symbol;Acc:HGNC:1582]	12835	-0.24032123386859894	0.013014058	Yes	

@@ -1,0 +1,32 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.27446553	Yes	
+row_1	C1QA	complement C1q A chain [Source:HGNC Symbol;Acc:HGNC:1241]	1	2.0969398021698	0.51900804	Yes	
+row_2	C1QB	complement C1q B chain [Source:HGNC Symbol;Acc:HGNC:1242]	2	1.8567914962768555	0.7355448	Yes	
+row_3	EGR1	early growth response 1 [Source:HGNC Symbol;Acc:HGNC:3238]	129	0.21051642298698425	0.75038326	Yes	
+row_4	C6	complement C6 [Source:HGNC Symbol;Acc:HGNC:1339]	334	0.12277914583683014	0.74897784	No	
+row_5	PRNP	prion protein [Source:HGNC Symbol;Acc:HGNC:9449]	809	0.07523280382156372	0.7212168	No	
+row_6	PRKACA	protein kinase cAMP-activated catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9380]	1879	0.04361598938703537	0.64390767	No	
+row_7	HSPA1A	heat shock protein family A (Hsp70) member 1A [Source:HGNC Symbol;Acc:HGNC:5232]	2090	0.03991163522005081	0.6323759	No	
+row_8	LAMC1	laminin subunit gamma 1 [Source:HGNC Symbol;Acc:HGNC:6492]	3672	0.01740184985101223	0.5125462	No	
+row_9	C9	complement C9 [Source:HGNC Symbol;Acc:HGNC:1358]	4600	0.008899486623704433	0.44213343	No	
+row_10	NCAM1	neural cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:7656]	5807	0.0	0.34917828	No	
+row_11	MAPK1	mitogen-activated protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:6871]	7744	-0.008489864878356457	0.20094684	No	
+row_12	C5	complement C5 [Source:HGNC Symbol;Acc:HGNC:1331]	7804	-0.009119182825088501	0.19746275	No	
+row_13	C7	complement C7 [Source:HGNC Symbol;Acc:HGNC:1346]	7826	-0.009294732473790646	0.19692807	No	
+row_14	C8G	complement C8 gamma chain [Source:HGNC Symbol;Acc:HGNC:1354]	8108	-0.011976873502135277	0.1766661	No	
+row_15	PRKACB	protein kinase cAMP-activated catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9381]	8489	-0.015575317665934563	0.14919312	No	
+row_16	NOTCH1	notch receptor 1 [Source:HGNC Symbol;Acc:HGNC:7881]	9804	-0.032807908952236176	0.05173966	No	
+row_17	STIP1	stress induced phosphoprotein 1 [Source:HGNC Symbol;Acc:HGNC:11387]	9908	-0.03470347076654434	0.04784778	No	
+row_18	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	10065	-0.03760147839784622	0.04020877	No	
+row_19	ELK1	ETS transcription factor ELK1 [Source:HGNC Symbol;Acc:HGNC:3321]	10574	-0.046322569251060486	0.006455619	No	
+row_20	MAP2K1	mitogen-activated protein kinase kinase 1 [Source:HGNC Symbol;Acc:HGNC:6840]	10967	-0.05661008879542351	-0.017156858	No	
+row_21	HSPA5	heat shock protein family A (Hsp70) member 5 [Source:HGNC Symbol;Acc:HGNC:5238]	11000	-0.05750760808587074	-0.012916862	No	
+row_22	CCL5	C-C motif chemokine ligand 5 [Source:HGNC Symbol;Acc:HGNC:10632]	11071	-0.05923938751220703	-0.011403844	No	
+row_23	MAP2K2	mitogen-activated protein kinase kinase 2 [Source:HGNC Symbol;Acc:HGNC:6842]	11909	-0.09205619245767593	-0.06518201	No	
+row_24	PRKX	protein kinase X-linked [Source:HGNC Symbol;Acc:HGNC:9441]	12229	-0.113486647605896	-0.07653497	No	
+row_25	SOD1	superoxide dismutase 1 [Source:HGNC Symbol;Acc:HGNC:11179]	12391	-0.12822577357292175	-0.073990874	No	
+row_26	IL6	interleukin 6 [Source:HGNC Symbol;Acc:HGNC:6018]	12724	-0.20062781870365143	-0.07618354	No	
+row_27	FYN	"FYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:4037]"	12726	-0.20136046409606934	-0.052778214	No	
+row_28	BAX	"BCL2 associated X, apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:959]"	12743	-0.20831263065338135	-0.02971829	No	
+row_29	IL1A	interleukin 1 alpha [Source:HGNC Symbol;Acc:HGNC:5991]	12756	-0.2119717001914978	-0.0059233382	No	
+row_30	IL1B	interleukin 1 beta [Source:HGNC Symbol;Acc:HGNC:5992]	12764	-0.21404220163822174	0.018498458	No	

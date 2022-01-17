@@ -1,0 +1,115 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CD63	CD63 molecule [Source:HGNC Symbol;Acc:HGNC:1692]	8	0.8564110994338989	0.067106515	Yes	
+row_1	LGMN	legumain [Source:HGNC Symbol;Acc:HGNC:9472]	13	0.6632168889045715	0.11924505	Yes	
+row_2	SLC11A1	solute carrier family 11 member 1 [Source:HGNC Symbol;Acc:HGNC:10907]	17	0.5864536762237549	0.16539054	Yes	
+row_3	CTSB	cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527]	19	0.574101448059082	0.21071433	Yes	
+row_4	CTSV	cathepsin V [Source:HGNC Symbol;Acc:HGNC:2538]	45	0.39165806770324707	0.23974827	Yes	
+row_5	LAMP1	lysosomal associated membrane protein 1 [Source:HGNC Symbol;Acc:HGNC:6499]	46	0.3892342746257782	0.2705299	Yes	
+row_6	CLTC	clathrin heavy chain [Source:HGNC Symbol;Acc:HGNC:2092]	89	0.2674228250980377	0.28842026	Yes	
+row_7	ATP6V0C	ATPase H+ transporting V0 subunit c [Source:HGNC Symbol;Acc:HGNC:855]	90	0.2663623094558716	0.30948484	Yes	
+row_8	CTSC	cathepsin C [Source:HGNC Symbol;Acc:HGNC:2528]	92	0.2584887146949768	0.3298492	Yes	
+row_9	CTSD	cathepsin D [Source:HGNC Symbol;Acc:HGNC:2529]	135	0.20596210658550262	0.34287912	Yes	
+row_10	LAMP2	lysosomal associated membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:6501]	137	0.20456407964229584	0.35897896	Yes	
+row_11	ACP5	"acid phosphatase 5, tartrate resistant [Source:HGNC Symbol;Acc:HGNC:124]"	140	0.20022930204868317	0.37465844	Yes	
+row_12	TPP1	tripeptidyl peptidase 1 [Source:HGNC Symbol;Acc:HGNC:2073]	164	0.17606954276561737	0.38679826	Yes	
+row_13	ACP2	"acid phosphatase 2, lysosomal [Source:HGNC Symbol;Acc:HGNC:123]"	263	0.13901329040527344	0.3901896	Yes	
+row_14	CLTA	clathrin light chain A [Source:HGNC Symbol;Acc:HGNC:2090]	286	0.1345980316400528	0.3991273	Yes	
+row_15	CTSZ	cathepsin Z [Source:HGNC Symbol;Acc:HGNC:2547]	312	0.12801064550876617	0.40731138	Yes	
+row_16	GALC	galactosylceramidase [Source:HGNC Symbol;Acc:HGNC:4115]	316	0.12672515213489532	0.41710037	Yes	
+row_17	PLA2G15	phospholipase A2 group XV [Source:HGNC Symbol;Acc:HGNC:17163]	326	0.1242537647485733	0.42622852	Yes	
+row_18	CTSF	cathepsin F [Source:HGNC Symbol;Acc:HGNC:2531]	341	0.12157386541366577	0.43475685	Yes	
+row_19	PPT1	palmitoyl-protein thioesterase 1 [Source:HGNC Symbol;Acc:HGNC:9325]	420	0.10854479670524597	0.4372901	Yes	
+row_20	CTSA	cathepsin A [Source:HGNC Symbol;Acc:HGNC:9251]	463	0.10334977507591248	0.4422052	Yes	
+row_21	HGSNAT	heparan-alpha-glucosaminide N-acetyltransferase [Source:HGNC Symbol;Acc:HGNC:26527]	564	0.09310635924339294	0.4418109	Yes	
+row_22	DNASE2	"deoxyribonuclease 2, lysosomal [Source:HGNC Symbol;Acc:HGNC:2960]"	577	0.09185341745615005	0.44814402	Yes	
+row_23	LAPTM4A	lysosomal protein transmembrane 4 alpha [Source:HGNC Symbol;Acc:HGNC:6924]	593	0.09002453088760376	0.45409977	Yes	
+row_24	CLN3	"CLN3 lysosomal/endosomal transmembrane protein, battenin [Source:HGNC Symbol;Acc:HGNC:2074]"	674	0.0827769786119461	0.45444012	Yes	
+row_25	CD164	CD164 molecule [Source:HGNC Symbol;Acc:HGNC:1632]	682	0.08222853392362595	0.46039993	Yes	
+row_26	AP1B1	adaptor related protein complex 1 subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:554]	686	0.08195057511329651	0.46664807	Yes	
+row_27	ATP6V0B	ATPase H+ transporting V0 subunit b [Source:HGNC Symbol;Acc:HGNC:861]	689	0.08172006160020828	0.47295555	Yes	
+row_28	AP4E1	adaptor related protein complex 4 subunit epsilon 1 [Source:HGNC Symbol;Acc:HGNC:573]	1348	0.05583518370985985	0.42632776	No	
+row_29	LAPTM4B	lysosomal protein transmembrane 4 beta [Source:HGNC Symbol;Acc:HGNC:13646]	1367	0.05521750822663307	0.42929816	No	
+row_30	GGA1	"golgi associated, gamma adaptin ear containing, ARF binding protein 1 [Source:HGNC Symbol;Acc:HGNC:17842]"	1460	0.05283917486667633	0.42634007	No	
+row_31	SORT1	sortilin 1 [Source:HGNC Symbol;Acc:HGNC:11186]	1484	0.052157577127218246	0.42868063	No	
+row_32	AGA	aspartylglucosaminidase [Source:HGNC Symbol;Acc:HGNC:318]	1500	0.05172156170010567	0.43160728	No	
+row_33	HEXA	hexosaminidase subunit alpha [Source:HGNC Symbol;Acc:HGNC:4878]	1610	0.049193788319826126	0.42704216	No	
+row_34	GLB1	galactosidase beta 1 [Source:HGNC Symbol;Acc:HGNC:4298]	1675	0.04780713468790054	0.42585814	No	
+row_35	AP3M2	adaptor related protein complex 3 subunit mu 2 [Source:HGNC Symbol;Acc:HGNC:570]	1726	0.04674287140369415	0.42567602	No	
+row_36	GLA	galactosidase alpha [Source:HGNC Symbol;Acc:HGNC:4296]	1737	0.04642394557595253	0.4285716	No	
+row_37	ARSG	arylsulfatase G [Source:HGNC Symbol;Acc:HGNC:24102]	1788	0.04523704946041107	0.42827037	No	
+row_38	HYAL1	hyaluronidase 1 [Source:HGNC Symbol;Acc:HGNC:5320]	1884	0.04350711405277252	0.42434156	No	
+row_39	IDUA	alpha-L-iduronidase [Source:HGNC Symbol;Acc:HGNC:5391]	1888	0.04345879703760147	0.42754567	No	
+row_40	SGSH	N-sulfoglucosamine sulfohydrolase [Source:HGNC Symbol;Acc:HGNC:10818]	2096	0.03976767882704735	0.41463286	No	
+row_41	ASAH1	N-acylsphingosine amidohydrolase 1 [Source:HGNC Symbol;Acc:HGNC:735]	2107	0.039557937532663345	0.41698548	No	
+row_42	GGA2	"golgi associated, gamma adaptin ear containing, ARF binding protein 2 [Source:HGNC Symbol;Acc:HGNC:16064]"	2135	0.03892448917031288	0.41796923	No	
+row_43	CTNS	"cystinosin, lysosomal cystine transporter [Source:HGNC Symbol;Acc:HGNC:2518]"	2244	0.03647513687610626	0.41247582	No	
+row_44	SMPD1	sphingomyelin phosphodiesterase 1 [Source:HGNC Symbol;Acc:HGNC:11120]	2342	0.03485879302024841	0.40770793	No	
+row_45	MCOLN1	mucolipin TRP cation channel 1 [Source:HGNC Symbol;Acc:HGNC:13356]	2379	0.03429562225937843	0.40762746	No	
+row_46	GAA	alpha glucosidase [Source:HGNC Symbol;Acc:HGNC:4065]	2419	0.0336918905377388	0.40726653	No	
+row_47	SLC11A2	solute carrier family 11 member 2 [Source:HGNC Symbol;Acc:HGNC:10908]	2424	0.03367574140429497	0.4096194	No	
+row_48	ABCB9	ATP binding cassette subfamily B member 9 [Source:HGNC Symbol;Acc:HGNC:50]	2435	0.03355327621102333	0.41149715	No	
+row_49	SLC17A5	solute carrier family 17 member 5 [Source:HGNC Symbol;Acc:HGNC:10933]	2692	0.02984481118619442	0.39399853	No	
+row_50	CLN5	CLN5 intracellular trafficking protein [Source:HGNC Symbol;Acc:HGNC:2076]	3149	0.02346852794289589	0.36048096	No	
+row_51	AP3D1	adaptor related protein complex 3 subunit delta 1 [Source:HGNC Symbol;Acc:HGNC:568]	3150	0.023464463651180267	0.36233658	No	
+row_52	ATP6V1H	ATPase H+ transporting V1 subunit H [Source:HGNC Symbol;Acc:HGNC:18303]	3153	0.02343999221920967	0.36403513	No	
+row_53	AP4M1	adaptor related protein complex 4 subunit mu 1 [Source:HGNC Symbol;Acc:HGNC:574]	3177	0.023210763931274414	0.3640865	No	
+row_54	ARSA	arylsulfatase A [Source:HGNC Symbol;Acc:HGNC:713]	3274	0.022175967693328857	0.3583932	No	
+row_55	NAGLU	N-acetyl-alpha-glucosaminidase [Source:HGNC Symbol;Acc:HGNC:7632]	3383	0.02087646909058094	0.3516662	No	
+row_56	AP3S1	adaptor related protein complex 3 subunit sigma 1 [Source:HGNC Symbol;Acc:HGNC:2013]	3443	0.02000519260764122	0.34867144	No	
+row_57	GNS	glucosamine (N-acetyl)-6-sulfatase [Source:HGNC Symbol;Acc:HGNC:4422]	3841	0.015721043571829796	0.31911802	No	
+row_58	AP4B1	adaptor related protein complex 4 subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:572]	3859	0.015558898448944092	0.3190297	No	
+row_59	NPC2	NPC intracellular cholesterol transporter 2 [Source:HGNC Symbol;Acc:HGNC:14537]	3994	0.014105277135968208	0.30975032	No	
+row_60	AP3M1	adaptor related protein complex 3 subunit mu 1 [Source:HGNC Symbol;Acc:HGNC:569]	4056	0.013354736380279064	0.30607447	No	
+row_61	ATP6V0A1	ATPase H+ transporting V0 subunit a1 [Source:HGNC Symbol;Acc:HGNC:865]	4180	0.01204391848295927	0.29748538	No	
+row_62	AP3S2	adaptor related protein complex 3 subunit sigma 2 [Source:HGNC Symbol;Acc:HGNC:571]	4439	0.009990854188799858	0.27826154	No	
+row_63	AP3B1	adaptor related protein complex 3 subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:566]	4622	0.008762187324464321	0.26483607	No	
+row_64	PPT2	palmitoyl-protein thioesterase 2 [Source:HGNC Symbol;Acc:HGNC:9326]	4640	0.008620616979897022	0.26419908	No	
+row_65	NEU1	neuraminidase 1 [Source:HGNC Symbol;Acc:HGNC:7758]	5109	0.004377549979835749	0.22824086	No	
+row_66	TCIRG1	"T cell immune regulator 1, ATPase H+ transporting V0 subunit a3 [Source:HGNC Symbol;Acc:HGNC:11647]"	5349	0.0014120909618213773	0.20981246	No	
+row_67	GGA3	"golgi associated, gamma adaptin ear containing, ARF binding protein 3 [Source:HGNC Symbol;Acc:HGNC:17079]"	5415	5.148373893462121E-4	0.2048109	No	
+row_68	AP1M2	adaptor related protein complex 1 subunit mu 2 [Source:HGNC Symbol;Acc:HGNC:558]	5693	0.0	0.18332304	No	
+row_69	LAMP3	lysosomal associated membrane protein 3 [Source:HGNC Symbol;Acc:HGNC:14582]	6031	0.0	0.15718077	No	
+row_70	CTSW	cathepsin W [Source:HGNC Symbol;Acc:HGNC:2546]	6092	0.0	0.15252636	No	
+row_71	CTSG	cathepsin G [Source:HGNC Symbol;Acc:HGNC:2532]	6096	0.0	0.15229365	No	
+row_72	GNPTG	N-acetylglucosamine-1-phosphate transferase subunit gamma [Source:HGNC Symbol;Acc:HGNC:23026]	6955	-0.0023333008866757154	0.0859201	No	
+row_73	ABCA2	ATP binding cassette subfamily A member 2 [Source:HGNC Symbol;Acc:HGNC:32]	7220	-0.005234321113675833	0.06585464	No	
+row_74	GNPTAB	N-acetylglucosamine-1-phosphate transferase subunits alpha and beta [Source:HGNC Symbol;Acc:HGNC:29670]	7416	-0.006441459991037846	0.051237214	No	
+row_75	MFSD8	major facilitator superfamily domain containing 8 [Source:HGNC Symbol;Acc:HGNC:28486]	7565	-0.007212419528514147	0.04032671	No	
+row_76	MANBA	mannosidase beta [Source:HGNC Symbol;Acc:HGNC:6831]	7947	-0.010507619008421898	0.011602176	No	
+row_77	IGF2R	insulin like growth factor 2 receptor [Source:HGNC Symbol;Acc:HGNC:5467]	7968	-0.01069930475205183	0.010896834	No	
+row_78	ATP6V0D2	ATPase H+ transporting V0 subunit d2 [Source:HGNC Symbol;Acc:HGNC:18266]	8186	-0.012647606432437897	-0.004936412	No	
+row_79	ARSB	arylsulfatase B [Source:HGNC Symbol;Acc:HGNC:714]	8233	-0.01314277108758688	-0.0074654305	No	
+row_80	CTSO	cathepsin O [Source:HGNC Symbol;Acc:HGNC:2542]	8674	-0.01780487596988678	-0.040189717	No	
+row_81	M6PR	"mannose-6-phosphate receptor, cation dependent [Source:HGNC Symbol;Acc:HGNC:6752]"	8975	-0.021111365407705307	-0.06179223	No	
+row_82	NPC1	NPC intracellular cholesterol transporter 1 [Source:HGNC Symbol;Acc:HGNC:7897]	8985	-0.021265558898448944	-0.06080866	No	
+row_83	AP1G1	adaptor related protein complex 1 subunit gamma 1 [Source:HGNC Symbol;Acc:HGNC:555]	8993	-0.021323667839169502	-0.059665345	No	
+row_84	ATP6V0D1	ATPase H+ transporting V0 subunit d1 [Source:HGNC Symbol;Acc:HGNC:13724]	8997	-0.02140173316001892	-0.058205564	No	
+row_85	MAN2B1	mannosidase alpha class 2B member 1 [Source:HGNC Symbol;Acc:HGNC:6826]	9039	-0.021814577281475067	-0.059660926	No	
+row_86	GALNS	galactosamine (N-acetyl)-6-sulfatase [Source:HGNC Symbol;Acc:HGNC:4122]	9040	-0.02181939035654068	-0.057935394	No	
+row_87	CTSK	cathepsin K [Source:HGNC Symbol;Acc:HGNC:2536]	9083	-0.022260354831814766	-0.059433077	No	
+row_88	ATP6AP1	ATPase H+ transporting accessory protein 1 [Source:HGNC Symbol;Acc:HGNC:868]	9332	-0.025442933663725853	-0.07665922	No	
+row_89	GUSB	glucuronidase beta [Source:HGNC Symbol;Acc:HGNC:4696]	9348	-0.0256511140614748	-0.075794265	No	
+row_90	CD68	CD68 molecule [Source:HGNC Symbol;Acc:HGNC:1693]	9566	-0.029074152931571007	-0.09032846	No	
+row_91	AP4S1	adaptor related protein complex 4 subunit sigma 1 [Source:HGNC Symbol;Acc:HGNC:575]	10130	-0.03856591507792473	-0.13095245	No	
+row_92	NAGPA	N-acetylglucosamine-1-phosphodiester alpha-N-acetylglucosaminidase [Source:HGNC Symbol;Acc:HGNC:17378]	10246	-0.04050852358341217	-0.13666989	No	
+row_93	IDS	iduronate 2-sulfatase [Source:HGNC Symbol;Acc:HGNC:5389]	10382	-0.04289063811302185	-0.14375041	No	
+row_94	LIPA	"lipase A, lysosomal acid type [Source:HGNC Symbol;Acc:HGNC:6617]"	10453	-0.043907348066568375	-0.14570826	No	
+row_95	SCARB2	scavenger receptor class B member 2 [Source:HGNC Symbol;Acc:HGNC:1665]	10581	-0.046456437557935715	-0.15188621	No	
+row_96	AP1S1	adaptor related protein complex 1 subunit sigma 1 [Source:HGNC Symbol;Acc:HGNC:559]	10734	-0.0500536672770977	-0.159719	No	
+row_97	AP1M1	adaptor related protein complex 1 subunit mu 1 [Source:HGNC Symbol;Acc:HGNC:13667]	10872	-0.053681593388319016	-0.1661013	No	
+row_98	CTSS	cathepsin S [Source:HGNC Symbol;Acc:HGNC:2545]	11122	-0.06087407469749451	-0.18060304	No	
+row_99	GBA	glucosylceramidase beta [Source:HGNC Symbol;Acc:HGNC:4177]	11549	-0.07440371811389923	-0.20776533	No	
+row_100	SUMF1	sulfatase modifying factor 1 [Source:HGNC Symbol;Acc:HGNC:20376]	11769	-0.08417008817195892	-0.21809754	No	
+row_101	CLTB	clathrin light chain B [Source:HGNC Symbol;Acc:HGNC:2091]	11997	-0.09722195565700531	-0.22801816	No	
+row_102	FUCA1	alpha-L-fucosidase 1 [Source:HGNC Symbol;Acc:HGNC:4006]	12026	-0.09830696135759354	-0.22241586	No	
+row_103	AP1S2	adaptor related protein complex 1 subunit sigma 2 [Source:HGNC Symbol;Acc:HGNC:560]	12590	-0.16361697018146515	-0.25315052	No	
+row_104	NAGA	alpha-N-acetylgalactosaminidase [Source:HGNC Symbol;Acc:HGNC:7631]	12601	-0.16688376665115356	-0.24072868	No	
+row_105	ATP6V0A2	ATPase H+ transporting V0 subunit a2 [Source:HGNC Symbol;Acc:HGNC:18481]	12679	-0.18730391561985016	-0.23188938	No	
+row_106	LAPTM5	lysosomal protein transmembrane 5 [Source:HGNC Symbol;Acc:HGNC:29612]	12699	-0.19382213056087494	-0.21803534	No	
+row_107	CTSE	cathepsin E [Source:HGNC Symbol;Acc:HGNC:2530]	12769	-0.21461038291454315	-0.206416	No	
+row_108	CTSH	cathepsin H [Source:HGNC Symbol;Acc:HGNC:2535]	12809	-0.2276482731103897	-0.19143836	No	
+row_109	AP1S3	adaptor related protein complex 1 subunit sigma 3 [Source:HGNC Symbol;Acc:HGNC:18971]	12816	-0.232535257935524	-0.17351435	No	
+row_110	HEXB	hexosaminidase subunit beta [Source:HGNC Symbol;Acc:HGNC:4879]	12866	-0.26803937554359436	-0.15611823	No	
+row_111	PSAP	prosaposin [Source:HGNC Symbol;Acc:HGNC:9498]	12898	-0.2920154929161072	-0.13542971	No	
+row_112	GM2A	GM2 ganglioside activator [Source:HGNC Symbol;Acc:HGNC:4367]	12993	-0.6384070515632629	-0.092234805	No	
+row_113	NAPSA	napsin A aspartic peptidase [Source:HGNC Symbol;Acc:HGNC:13395]	13004	-1.1761188507080078	-1.5200203E-7	No	

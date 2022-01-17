@@ -1,0 +1,26 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BLVRB	biliverdin reductase B [Source:HGNC Symbol;Acc:HGNC:1063]	37	0.4189615845680237	0.26417762	Yes	
+row_1	CP	ceruloplasmin [Source:HGNC Symbol;Acc:HGNC:2295]	99	0.24942375719547272	0.4184501	Yes	
+row_2	HMOX2	heme oxygenase 2 [Source:HGNC Symbol;Acc:HGNC:5014]	254	0.14114463329315186	0.49654523	Yes	
+row_3	HMOX1	heme oxygenase 1 [Source:HGNC Symbol;Acc:HGNC:5013]	270	0.1366354078054428	0.5824751	Yes	
+row_4	BLVRA	biliverdin reductase A [Source:HGNC Symbol;Acc:HGNC:1062]	508	0.09828142076730728	0.6268567	Yes	
+row_5	ALAD	aminolevulinate dehydratase [Source:HGNC Symbol;Acc:HGNC:395]	1085	0.06458742916584015	0.62364596	Yes	
+row_6	ALAS1	5'-aminolevulinate synthase 1 [Source:HGNC Symbol;Acc:HGNC:396]	1358	0.05558527261018753	0.6381183	Yes	
+row_7	EARS2	"glutamyl-tRNA synthetase 2, mitochondrial [Source:HGNC Symbol;Acc:HGNC:29419]"	3575	0.018437320366501808	0.4791453	No	
+row_8	UGT1A6	UDP glucuronosyltransferase family 1 member A6 [Source:HGNC Symbol;Acc:HGNC:12538]	4633	0.008682584390044212	0.40324622	No	
+row_9	UROD	uroporphyrinogen decarboxylase [Source:HGNC Symbol;Acc:HGNC:12591]	4916	0.006530728191137314	0.38568288	No	
+row_10	FTH1	ferritin heavy chain 1 [Source:HGNC Symbol;Acc:HGNC:3976]	4937	0.006357927806675434	0.38819432	No	
+row_11	ALAS2	5'-aminolevulinate synthase 2 [Source:HGNC Symbol;Acc:HGNC:397]	5475	0.0	0.34682298	No	
+row_12	UGT1A4	UDP glucuronosyltransferase family 1 member A4 [Source:HGNC Symbol;Acc:HGNC:12536]	6672	0.0	0.25468123	No	
+row_13	FECH	ferrochelatase [Source:HGNC Symbol;Acc:HGNC:3647]	7105	-0.004030078649520874	0.22396787	No	
+row_14	COX10	cytochrome c oxidase assembly factor heme A:farnesyltransferase COX10 [Source:HGNC Symbol;Acc:HGNC:2260]	7712	-0.008122988976538181	0.1824579	No	
+row_15	PPOX	protoporphyrinogen oxidase [Source:HGNC Symbol;Acc:HGNC:9280]	7731	-0.008325493894517422	0.18637747	No	
+row_16	HMBS	hydroxymethylbilane synthase [Source:HGNC Symbol;Acc:HGNC:4982]	8076	-0.011757373809814453	0.1673688	No	
+row_17	UGT1A10	UDP glucuronosyltransferase family 1 member A10 [Source:HGNC Symbol;Acc:HGNC:12531]	9064	-0.02204941026866436	0.105382085	No	
+row_18	UROS	uroporphyrinogen III synthase [Source:HGNC Symbol;Acc:HGNC:12592]	9310	-0.025080684572458267	0.10249224	No	
+row_19	GUSB	glucuronidase beta [Source:HGNC Symbol;Acc:HGNC:4696]	9348	-0.0256511140614748	0.11599063	No	
+row_20	MMAB	metabolism of cobalamin associated B [Source:HGNC Symbol;Acc:HGNC:19331]	9705	-0.03127320483326912	0.10849602	No	
+row_21	HCCS	holocytochrome c synthase [Source:HGNC Symbol;Acc:HGNC:4837]	9886	-0.03437579423189163	0.11653819	No	
+row_22	CPOX	coproporphyrinogen oxidase [Source:HGNC Symbol;Acc:HGNC:2321]	10071	-0.037732575088739395	0.12641166	No	
+row_23	COX15	cytochrome c oxidase assembly homolog COX15 [Source:HGNC Symbol;Acc:HGNC:2263]	10947	-0.05589943751692772	0.09462816	No	
+row_24	EPRS1	glutamyl-prolyl-tRNA synthetase 1 [Source:HGNC Symbol;Acc:HGNC:3418]	12061	-0.10005296021699905	0.07265033	No	

@@ -1,0 +1,22 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PFKL	"phosphofructokinase, liver type [Source:HGNC Symbol;Acc:HGNC:8876]"	2260	0.03623780980706215	-0.15283506	No	
+row_1	PRPS2	phosphoribosyl pyrophosphate synthetase 2 [Source:HGNC Symbol;Acc:HGNC:9465]	3712	0.017022376880049706	-0.25461757	No	
+row_2	H6PD	hexose-6-phosphate dehydrogenase/glucose 1-dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4795]	3728	0.016887672245502472	-0.24588135	No	
+row_3	PRPS1	phosphoribosyl pyrophosphate synthetase 1 [Source:HGNC Symbol;Acc:HGNC:9462]	3899	0.015130564570426941	-0.25011206	No	
+row_4	FBP1	fructose-bisphosphatase 1 [Source:HGNC Symbol;Acc:HGNC:3606]	4536	0.009349296800792217	-0.29361933	No	
+row_5	RPE	ribulose-5-phosphate-3-epimerase [Source:HGNC Symbol;Acc:HGNC:10293]	5141	0.003991816658526659	-0.33780003	No	
+row_6	PFKM	"phosphofructokinase, muscle [Source:HGNC Symbol;Acc:HGNC:8877]"	5350	0.0013994603650644422	-0.35300004	No	
+row_7	PGM2	phosphoglucomutase 2 [Source:HGNC Symbol;Acc:HGNC:8906]	5401	7.399701862595975E-4	-0.3564175	No	
+row_8	RPIA	ribose 5-phosphate isomerase A [Source:HGNC Symbol;Acc:HGNC:10297]	7004	-0.002834372455254197	-0.47813997	No	
+row_9	RBKS	ribokinase [Source:HGNC Symbol;Acc:HGNC:30325]	7065	-0.0035209739580750465	-0.48069873	No	
+row_10	DERA	deoxyribose-phosphate aldolase [Source:HGNC Symbol;Acc:HGNC:24269]	10901	-0.054509662091732025	-0.74413466	Yes	
+row_11	G6PD	glucose-6-phosphate dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4057]	11323	-0.06677771359682083	-0.73744595	Yes	
+row_12	PGLS	6-phosphogluconolactonase [Source:HGNC Symbol;Acc:HGNC:8903]	11991	-0.09687910228967667	-0.73207253	Yes	
+row_13	GPI	glucose-6-phosphate isomerase [Source:HGNC Symbol;Acc:HGNC:4458]	12053	-0.0997433215379715	-0.67834866	Yes	
+row_14	PGD	phosphogluconate dehydrogenase [Source:HGNC Symbol;Acc:HGNC:8891]	12343	-0.12340940535068512	-0.628323	Yes	
+row_15	TALDO1	transaldolase 1 [Source:HGNC Symbol;Acc:HGNC:11559]	12399	-0.12889041006565094	-0.55706495	Yes	
+row_16	PGM1	phosphoglucomutase 1 [Source:HGNC Symbol;Acc:HGNC:8905]	12445	-0.13488583266735077	-0.48152497	Yes	
+row_17	TKT	transketolase [Source:HGNC Symbol;Acc:HGNC:11834]	12586	-0.16205517947673798	-0.39738798	Yes	
+row_18	ALDOA	"aldolase, fructose-bisphosphate A [Source:HGNC Symbol;Acc:HGNC:414]"	12634	-0.1743129938840866	-0.29890868	Yes	
+row_19	PFKP	"phosphofructokinase, platelet [Source:HGNC Symbol;Acc:HGNC:8878]"	12723	-0.20053395628929138	-0.18822885	Yes	
+row_20	ALDOC	"aldolase, fructose-bisphosphate C [Source:HGNC Symbol;Acc:HGNC:418]"	12941	-0.3581792414188385	0.004852154	Yes	

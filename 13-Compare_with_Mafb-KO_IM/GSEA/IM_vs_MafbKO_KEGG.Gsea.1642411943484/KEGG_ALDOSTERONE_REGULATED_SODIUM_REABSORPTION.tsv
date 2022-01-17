@@ -1,0 +1,37 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IGF1	insulin like growth factor 1 [Source:HGNC Symbol;Acc:HGNC:5464]	14	0.6372554898262024	0.24144845	Yes	
+row_1	FXYD2	FXYD domain containing ion transport regulator 2 [Source:HGNC Symbol;Acc:HGNC:4026]	29	0.45909813046455383	0.41509342	Yes	
+row_2	KRAS	"KRAS proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:6407]"	192	0.1653451770544052	0.4655295	Yes	
+row_3	PRKCB	protein kinase C beta [Source:HGNC Symbol;Acc:HGNC:9395]	309	0.1295367032289505	0.5058844	Yes	
+row_4	NEDD4L	NEDD4 like E3 ubiquitin protein ligase [Source:HGNC Symbol;Acc:HGNC:7728]	1064	0.06539418548345566	0.47263363	No	
+row_5	NR3C2	nuclear receptor subfamily 3 group C member 2 [Source:HGNC Symbol;Acc:HGNC:7979]	2238	0.03655869513750076	0.39610076	No	
+row_6	INSR	insulin receptor [Source:HGNC Symbol;Acc:HGNC:6091]	2274	0.036036938428878784	0.40711704	No	
+row_7	HSD11B1	hydroxysteroid 11-beta dehydrogenase 1 [Source:HGNC Symbol;Acc:HGNC:5208]	3959	0.014538983814418316	0.28280222	No	
+row_8	IRS1	insulin receptor substrate 1 [Source:HGNC Symbol;Acc:HGNC:6125]	4175	0.012095077894628048	0.27082738	No	
+row_9	FXYD4	FXYD domain containing ion transport regulator 4 [Source:HGNC Symbol;Acc:HGNC:4028]	5036	0.005405887495726347	0.2065728	No	
+row_10	PDPK1	3-phosphoinositide dependent protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:8816]	5300	0.00196647341363132	0.18704207	No	
+row_11	SCNN1G	sodium channel epithelial 1 subunit gamma [Source:HGNC Symbol;Acc:HGNC:10602]	5663	0.0	0.15912935	No	
+row_12	ATP1B4	ATPase Na+/K+ transporting family member beta 4 [Source:HGNC Symbol;Acc:HGNC:808]	5871	0.0	0.14316823	No	
+row_13	ATP1B1	ATPase Na+/K+ transporting subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:804]	5872	0.0	0.14316823	No	
+row_14	HSD11B2	hydroxysteroid 11-beta dehydrogenase 2 [Source:HGNC Symbol;Acc:HGNC:5209]	6398	0.0	0.102687076	No	
+row_15	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	0.05647132	No	
+row_16	PIK3R3	phosphoinositide-3-kinase regulatory subunit 3 [Source:HGNC Symbol;Acc:HGNC:8981]	7303	-0.005935098975896835	0.036446206	No	
+row_17	MAPK1	mitogen-activated protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:6871]	7744	-0.008489864878356457	0.0057502408	No	
+row_18	PIK3CD	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit delta [Source:HGNC Symbol;Acc:HGNC:8977]"	7765	-0.008648794144392014	0.0074996767	No	
+row_19	ATP1A2	ATPase Na+/K+ transporting subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:800]	8175	-0.01255512423813343	-0.01925881	No	
+row_20	PIK3CG	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma [Source:HGNC Symbol;Acc:HGNC:8978]"	8401	-0.014708640053868294	-0.03101003	No	
+row_21	SFN	stratifin [Source:HGNC Symbol;Acc:HGNC:10773]	8436	-0.015098059549927711	-0.027885618	No	
+row_22	PIK3R5	phosphoinositide-3-kinase regulatory subunit 5 [Source:HGNC Symbol;Acc:HGNC:30035]	9187	-0.023489786311984062	-0.076776035	No	
+row_23	SCNN1A	sodium channel epithelial 1 subunit alpha [Source:HGNC Symbol;Acc:HGNC:10599]	9529	-0.028415275737643242	-0.09225517	No	
+row_24	PRKCA	protein kinase C alpha [Source:HGNC Symbol;Acc:HGNC:9393]	9872	-0.034052468836307526	-0.10566598	No	
+row_25	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	10065	-0.03760147839784622	-0.106160074	No	
+row_26	PIK3R2	phosphoinositide-3-kinase regulatory subunit 2 [Source:HGNC Symbol;Acc:HGNC:8980]	10304	-0.04147733375430107	-0.108726	No	
+row_27	IRS2	insulin receptor substrate 2 [Source:HGNC Symbol;Acc:HGNC:6126]	10558	-0.04598964750766754	-0.11073123	No	
+row_28	ATP1B3	ATPase Na+/K+ transporting subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:806]	11317	-0.0665503516793251	-0.14385043	No	
+row_29	PRKCG	protein kinase C gamma [Source:HGNC Symbol;Acc:HGNC:9402]	11411	-0.06942109763622284	-0.12460096	No	
+row_30	SLC9A3R2	SLC9A3 regulator 2 [Source:HGNC Symbol;Acc:HGNC:11076]	11418	-0.06963888555765152	-0.098560296	No	
+row_31	PIK3CA	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:8975]"	11555	-0.07466260343790054	-0.08063161	No	
+row_32	ATP1A3	ATPase Na+/K+ transporting subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:801]	11900	-0.09146346151828766	-0.07234705	No	
+row_33	PIK3CB	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:8976]"	11933	-0.09362556040287018	-0.03918227	No	
+row_34	SGK1	serum/glucocorticoid regulated kinase 1 [Source:HGNC Symbol;Acc:HGNC:10810]	12541	-0.15325528383255005	-0.027659992	No	
+row_35	ATP1A1	ATPase Na+/K+ transporting subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:799]	12598	-0.16628052294254303	0.031305388	No	

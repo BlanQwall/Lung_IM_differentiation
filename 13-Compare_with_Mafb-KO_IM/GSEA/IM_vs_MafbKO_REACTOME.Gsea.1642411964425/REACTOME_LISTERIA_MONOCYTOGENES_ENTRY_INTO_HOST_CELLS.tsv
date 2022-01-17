@@ -1,0 +1,19 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	UBC	ubiquitin C [Source:HGNC Symbol;Acc:HGNC:12468]	80	0.29216277599334717	0.22786218	Yes	
+row_1	CTNND1	catenin delta 1 [Source:HGNC Symbol;Acc:HGNC:2515]	205	0.1571885645389557	0.3442221	Yes	
+row_2	UBB	ubiquitin B [Source:HGNC Symbol;Acc:HGNC:12463]	356	0.1191491186618805	0.42811045	Yes	
+row_3	SH3GL1	"SH3 domain containing GRB2 like 1, endophilin A2 [Source:HGNC Symbol;Acc:HGNC:10830]"	706	0.0805092379450798	0.46572527	Yes	
+row_4	HGS	hepatocyte growth factor-regulated tyrosine kinase substrate [Source:HGNC Symbol;Acc:HGNC:4897]	869	0.0725109875202179	0.5113325	Yes	
+row_5	SRC	"SRC proto-oncogene, non-receptor tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:11283]"	887	0.07195037603378296	0.5676557	Yes	
+row_6	STAM	signal transducing adaptor molecule [Source:HGNC Symbol;Acc:HGNC:11357]	898	0.07130178809165955	0.6239984	Yes	
+row_7	CBL	Cbl proto-oncogene [Source:HGNC Symbol;Acc:HGNC:1541]	922	0.07034878432750702	0.6785767	Yes	
+row_8	CBLL1	Cbl proto-oncogene like 1 [Source:HGNC Symbol;Acc:HGNC:21225]	1151	0.062308844178915024	0.71093005	Yes	
+row_9	SH3KBP1	SH3 domain containing kinase binding protein 1 [Source:HGNC Symbol;Acc:HGNC:13867]	1543	0.050906889140605927	0.7215994	Yes	
+row_10	EPS15	epidermal growth factor receptor pathway substrate 15 [Source:HGNC Symbol;Acc:HGNC:3419]	3356	0.021236784756183624	0.5990859	No	
+row_11	CTNNB1	catenin beta 1 [Source:HGNC Symbol;Acc:HGNC:2514]	4399	0.010186053812503815	0.52701086	No	
+row_12	STAM2	signal transducing adaptor molecule 2 [Source:HGNC Symbol;Acc:HGNC:11358]	5437	1.8287179409526289E-4	0.44730824	No	
+row_13	MET	"MET proto-oncogene, receptor tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:7029]"	5907	0.0	0.41119522	No	
+row_14	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	8578	-0.016633182764053345	0.21892817	No	
+row_15	CDH1	cadherin 1 [Source:HGNC Symbol;Acc:HGNC:1748]	10676	-0.0488230399787426	0.09656623	No	
+row_16	GRB2	growth factor receptor bound protein 2 [Source:HGNC Symbol;Acc:HGNC:4566]	10774	-0.05123435705900192	0.13013591	No	
+row_17	RPS27A	ribosomal protein S27a [Source:HGNC Symbol;Acc:HGNC:10417]	10791	-0.051807016134262085	0.17040129	No	

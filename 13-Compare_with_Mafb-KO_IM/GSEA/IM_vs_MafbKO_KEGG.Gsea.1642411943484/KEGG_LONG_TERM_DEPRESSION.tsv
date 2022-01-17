@@ -1,0 +1,50 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IGF1	insulin like growth factor 1 [Source:HGNC Symbol;Acc:HGNC:5464]	14	0.6372554898262024	0.19159672	Yes	
+row_1	GNA12	G protein subunit alpha 12 [Source:HGNC Symbol;Acc:HGNC:4380]	82	0.28630030155181885	0.27298966	Yes	
+row_2	PLA2G2D	phospholipase A2 group IID [Source:HGNC Symbol;Acc:HGNC:9033]	93	0.25844866037368774	0.35036105	Yes	
+row_3	KRAS	"KRAS proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:6407]"	192	0.1653451770544052	0.3927899	Yes	
+row_4	PLCB3	phospholipase C beta 3 [Source:HGNC Symbol;Acc:HGNC:9056]	242	0.14355631172657013	0.4324128	Yes	
+row_5	PRKCB	protein kinase C beta [Source:HGNC Symbol;Acc:HGNC:9395]	309	0.1295367032289505	0.4664847	Yes	
+row_6	GNAQ	G protein subunit alpha q [Source:HGNC Symbol;Acc:HGNC:4390]	678	0.08258277922868729	0.4630502	No	
+row_7	IGF1R	insulin like growth factor 1 receptor [Source:HGNC Symbol;Acc:HGNC:5465]	955	0.06915386021137238	0.46265632	No	
+row_8	PLA2G6	phospholipase A2 group VI [Source:HGNC Symbol;Acc:HGNC:9039]	1389	0.05464128032326698	0.44575655	No	
+row_9	PLA2G4A	phospholipase A2 group IVA [Source:HGNC Symbol;Acc:HGNC:9035]	1677	0.04778328537940979	0.43805218	No	
+row_10	PLCB4	phospholipase C beta 4 [Source:HGNC Symbol;Acc:HGNC:9059]	3905	0.015084282495081425	0.2707235	No	
+row_11	PPP2R1A	protein phosphatase 2 scaffold subunit Aalpha [Source:HGNC Symbol;Acc:HGNC:9302]	4146	0.0123771196231246	0.25594154	No	
+row_12	PRKG2	protein kinase cGMP-dependent 2 [Source:HGNC Symbol;Acc:HGNC:9416]	4646	0.008560534566640854	0.22001489	No	
+row_13	BRAF	"B-Raf proto-oncogene, serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:1097]"	4806	0.007519305218011141	0.21001607	No	
+row_14	CACNA1A	calcium voltage-gated channel subunit alpha1 A [Source:HGNC Symbol;Acc:HGNC:1388]	5070	0.0049532814882695675	0.19121425	No	
+row_15	PLCB2	phospholipase C beta 2 [Source:HGNC Symbol;Acc:HGNC:9055]	5231	0.0029395183082669973	0.17975354	No	
+row_16	PRKG1	protein kinase cGMP-dependent 1 [Source:HGNC Symbol;Acc:HGNC:9414]	6222	0.0	0.10334106	No	
+row_17	GRIA3	glutamate ionotropic receptor AMPA type subunit 3 [Source:HGNC Symbol;Acc:HGNC:4573]	6488	0.0	0.08288722	No	
+row_18	PLCB1	phospholipase C beta 1 [Source:HGNC Symbol;Acc:HGNC:15917]	6581	0.0	0.075786255	No	
+row_19	GNAI1	G protein subunit alpha i1 [Source:HGNC Symbol;Acc:HGNC:4384]	6649	0.0	0.07061491	No	
+row_20	GNAZ	G protein subunit alpha z [Source:HGNC Symbol;Acc:HGNC:4395]	6653	0.0	0.070383355	No	
+row_21	GNAO1	G protein subunit alpha o1 [Source:HGNC Symbol;Acc:HGNC:4389]	6655	0.0	0.070306174	No	
+row_22	GUCY1B1	guanylate cyclase 1 soluble subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:4687]	6683	0.0	0.068222195	No	
+row_23	GUCY1A2	guanylate cyclase 1 soluble subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:4684]	6684	0.0	0.068222195	No	
+row_24	GUCY1A1	guanylate cyclase 1 soluble subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:4685]	6685	0.0	0.068222195	No	
+row_25	HRAS	"HRas proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:5173]"	6794	-2.7504327590577304E-4	0.059969448	No	
+row_26	LYN	"LYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:6735]"	7067	-0.0035260366275906563	0.040041428	No	
+row_27	GNA11	G protein subunit alpha 11 [Source:HGNC Symbol;Acc:HGNC:4379]	7391	-0.0063135321252048016	0.017019821	No	
+row_28	MAPK1	mitogen-activated protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:6871]	7744	-0.008489864878356457	-0.0075821076	No	
+row_29	RAF1	"Raf-1 proto-oncogene, serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:9829]"	8265	-0.013472210615873337	-0.043644566	No	
+row_30	PPP2CA	protein phosphatase 2 catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9299]	8593	-0.016856933012604713	-0.06378706	No	
+row_31	NRAS	"NRAS proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:7989]"	8794	-0.019104797393083572	-0.073447496	No	
+row_32	PPP2R1B	protein phosphatase 2 scaffold subunit Abeta [Source:HGNC Symbol;Acc:HGNC:9303]	8818	-0.019373146817088127	-0.06936517	No	
+row_33	PPP2CB	protein phosphatase 2 catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9300]	9076	-0.022164512425661087	-0.08249999	No	
+row_34	GNAI3	G protein subunit alpha i3 [Source:HGNC Symbol;Acc:HGNC:4387]	9592	-0.02952410653233528	-0.11332316	No	
+row_35	ITPR3	"inositol 1,4,5-trisphosphate receptor type 3 [Source:HGNC Symbol;Acc:HGNC:6182]"	9703	-0.03127123415470123	-0.11235842	No	
+row_36	GNAI2	G protein subunit alpha i2 [Source:HGNC Symbol;Acc:HGNC:4385]	9752	-0.031913872808218	-0.10641395	No	
+row_37	ARAF	"A-Raf proto-oncogene, serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:646]"	9754	-0.031964752823114395	-0.09682644	No	
+row_38	PRKCA	protein kinase C alpha [Source:HGNC Symbol;Acc:HGNC:9393]	9872	-0.034052468836307526	-0.09556107	No	
+row_39	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	10065	-0.03760147839784622	-0.09901147	No	
+row_40	MAP2K1	mitogen-activated protein kinase kinase 1 [Source:HGNC Symbol;Acc:HGNC:6840]	10967	-0.05661008879542351	-0.1514382	No	
+row_41	PLA2G12A	phospholipase A2 group XIIA [Source:HGNC Symbol;Acc:HGNC:18554]	11250	-0.06464602053165436	-0.15365815	No	
+row_42	PRKCG	protein kinase C gamma [Source:HGNC Symbol;Acc:HGNC:9402]	11411	-0.06942109763622284	-0.14501783	No	
+row_43	GNA13	G protein subunit alpha 13 [Source:HGNC Symbol;Acc:HGNC:4381]	11648	-0.07799258828163147	-0.1396519	No	
+row_44	ITPR2	"inositol 1,4,5-trisphosphate receptor type 2 [Source:HGNC Symbol;Acc:HGNC:6181]"	11876	-0.08981281518936157	-0.13001738	No	
+row_45	MAP2K2	mitogen-activated protein kinase kinase 2 [Source:HGNC Symbol;Acc:HGNC:6842]	11909	-0.09205619245767593	-0.10465365	No	
+row_46	RYR1	ryanodine receptor 1 [Source:HGNC Symbol;Acc:HGNC:10483]	12648	-0.1782722920179367	-0.10771418	No	
+row_47	GNAS	GNAS complex locus [Source:HGNC Symbol;Acc:HGNC:4392]	12674	-0.18636642396450043	-0.05329499	No	
+row_48	ITPR1	"inositol 1,4,5-trisphosphate receptor type 1 [Source:HGNC Symbol;Acc:HGNC:6180]"	12858	-0.26025262475013733	0.01126893	No	

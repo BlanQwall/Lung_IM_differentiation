@@ -1,0 +1,26 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PF4	platelet factor 4 [Source:HGNC Symbol;Acc:HGNC:8861]	7	1.029140830039978	0.47201383	Yes	
+row_1	F13A1	coagulation factor XIII A chain [Source:HGNC Symbol;Acc:HGNC:3531]	100	0.24786990880966187	0.5787411	Yes	
+row_2	THBD	thrombomodulin [Source:HGNC Symbol;Acc:HGNC:11784]	293	0.13349561393260956	0.6252466	Yes	
+row_3	KLKB1	kallikrein B1 [Source:HGNC Symbol;Acc:HGNC:6371]	2492	0.032587144523859024	0.47087225	No	
+row_4	SERPINC1	serpin family C member 1 [Source:HGNC Symbol;Acc:HGNC:775]	3355	0.021256528794765472	0.4142228	No	
+row_5	GP5	glycoprotein V platelet [Source:HGNC Symbol;Acc:HGNC:4443]	4586	0.009025376290082932	0.32360584	No	
+row_6	SERPINE2	serpin family E member 2 [Source:HGNC Symbol;Acc:HGNC:8951]	4960	0.006174301728606224	0.2977044	No	
+row_7	F5	coagulation factor V [Source:HGNC Symbol;Acc:HGNC:3542]	5561	0.0	0.25147945	No	
+row_8	F8	coagulation factor VIII [Source:HGNC Symbol;Acc:HGNC:3546]	5562	0.0	0.25147945	No	
+row_9	F2R	coagulation factor II thrombin receptor [Source:HGNC Symbol;Acc:HGNC:3537]	5611	0.0	0.24778144	No	
+row_10	SERPIND1	serpin family D member 1 [Source:HGNC Symbol;Acc:HGNC:4838]	5768	0.0	0.23576295	No	
+row_11	SERPING1	serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228]	6821	-5.82645065151155E-4	0.15498272	No	
+row_12	C1QBP	complement C1q binding protein [Source:HGNC Symbol;Acc:HGNC:1243]	7044	-0.003269410226494074	0.13938071	No	
+row_13	TFPI	tissue factor pathway inhibitor [Source:HGNC Symbol;Acc:HGNC:11760]	7047	-0.003283914877101779	0.14073451	No	
+row_14	PRTN3	proteinase 3 [Source:HGNC Symbol;Acc:HGNC:9495]	7534	-0.007099203299731016	0.10655205	No	
+row_15	F7	coagulation factor VII [Source:HGNC Symbol;Acc:HGNC:3544]	7855	-0.009547294117510319	0.08628259	No	
+row_16	GP9	glycoprotein IX platelet [Source:HGNC Symbol;Acc:HGNC:4444]	7865	-0.009627647697925568	0.090009965	No	
+row_17	F9	coagulation factor IX [Source:HGNC Symbol;Acc:HGNC:3551]	8490	-0.01557548064738512	0.04908784	No	
+row_18	CD177	CD177 molecule [Source:HGNC Symbol;Acc:HGNC:30072]	8608	-0.01706750877201557	0.047910903	No	
+row_19	VWF	von Willebrand factor [Source:HGNC Symbol;Acc:HGNC:12726]	9851	-0.033604469150304794	-0.032344516	No	
+row_20	PROS1	protein S [Source:HGNC Symbol;Acc:HGNC:9456]	10640	-0.047711096704006195	-0.071145676	No	
+row_21	F3	"coagulation factor III, tissue factor [Source:HGNC Symbol;Acc:HGNC:3541]"	11899	-0.09145650267601013	-0.12606971	No	
+row_22	F10	coagulation factor X [Source:HGNC Symbol;Acc:HGNC:3528]	12141	-0.1056831106543541	-0.09610996	No	
+row_23	PROCR	protein C receptor [Source:HGNC Symbol;Acc:HGNC:9452]	12563	-0.15686827898025513	-0.05651487	No	
+row_24	PRCP	prolylcarboxypeptidase [Source:HGNC Symbol;Acc:HGNC:9344]	12711	-0.19690470397472382	0.022573235	No	

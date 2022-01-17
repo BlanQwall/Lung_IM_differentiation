@@ -1,0 +1,58 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.31970832	Yes	
+row_1	ABCA1	ATP binding cassette subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:29]	53	0.3633791506290436	0.39256757	Yes	
+row_2	CLTC	clathrin heavy chain [Source:HGNC Symbol;Acc:HGNC:2092]	89	0.2674228250980377	0.44626907	Yes	
+row_3	CLTA	clathrin light chain A [Source:HGNC Symbol;Acc:HGNC:2090]	286	0.1345980316400528	0.4595209	Yes	
+row_4	MYLIP	myosin regulatory light chain interacting protein [Source:HGNC Symbol;Acc:HGNC:21155]	392	0.1123090535402298	0.47509968	Yes	
+row_5	AP2M1	adaptor related protein complex 2 subunit mu 1 [Source:HGNC Symbol;Acc:HGNC:564]	477	0.1017652153968811	0.49007645	Yes	
+row_6	AP2S1	adaptor related protein complex 2 subunit sigma 1 [Source:HGNC Symbol;Acc:HGNC:565]	575	0.09257934242486954	0.5021117	Yes	
+row_7	APOC1	apolipoprotein C1 [Source:HGNC Symbol;Acc:HGNC:607]	611	0.08827267587184906	0.518027	Yes	
+row_8	CREB3L3	cAMP responsive element binding protein 3 like 3 [Source:HGNC Symbol;Acc:HGNC:18855]	684	0.0821492075920105	0.52979314	Yes	
+row_9	NR1H3	nuclear receptor subfamily 1 group H member 3 [Source:HGNC Symbol;Acc:HGNC:7966]	880	0.07222681492567062	0.5299669	Yes	
+row_10	LDLRAP1	low density lipoprotein receptor adaptor protein 1 [Source:HGNC Symbol;Acc:HGNC:18640]	1099	0.0641816109418869	0.5266675	Yes	
+row_11	AP2A2	adaptor related protein complex 2 subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:562]	1102	0.06413561850786209	0.54004043	Yes	
+row_12	PRKACA	protein kinase cAMP-activated catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9380]	1879	0.04361598938703537	0.48930785	No	
+row_13	LIPC	"lipase C, hepatic type [Source:HGNC Symbol;Acc:HGNC:6619]"	2055	0.040516577661037445	0.48433796	No	
+row_14	ANGPTL3	angiopoietin like 3 [Source:HGNC Symbol;Acc:HGNC:491]	2397	0.034091610461473465	0.46519244	No	
+row_15	APOC4	apolipoprotein C4 [Source:HGNC Symbol;Acc:HGNC:611]	2552	0.03176446259021759	0.45999843	No	
+row_16	LMF1	lipase maturation factor 1 [Source:HGNC Symbol;Acc:HGNC:14154]	2661	0.030177373439073563	0.45802236	No	
+row_17	MTTP	microsomal triglyceride transfer protein [Source:HGNC Symbol;Acc:HGNC:7467]	2771	0.02864738740026951	0.45564637	No	
+row_18	MBTPS2	"membrane bound transcription factor peptidase, site 2 [Source:HGNC Symbol;Acc:HGNC:15455]"	3049	0.02497861720621586	0.43952158	No	
+row_19	LIPG	"lipase G, endothelial type [Source:HGNC Symbol;Acc:HGNC:6623]"	3770	0.01638205721974373	0.3873698	No	
+row_20	NPC2	NPC intracellular cholesterol transporter 2 [Source:HGNC Symbol;Acc:HGNC:14537]	3994	0.014105277135968208	0.37312216	No	
+row_21	ANGPTL4	angiopoietin like 4 [Source:HGNC Symbol;Acc:HGNC:16039]	4467	0.009804054163396358	0.3387365	No	
+row_22	BMP1	bone morphogenetic protein 1 [Source:HGNC Symbol;Acc:HGNC:1067]	4588	0.008977808989584446	0.33136225	No	
+row_23	AMN	amnion associated transmembrane protein [Source:HGNC Symbol;Acc:HGNC:14604]	4717	0.008157956413924694	0.32319725	No	
+row_24	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4778	0.007649634033441544	0.32017678	No	
+row_25	VLDLR	very low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:12698]	4820	0.007425827439874411	0.3185765	No	
+row_26	APOC2	apolipoprotein C2 [Source:HGNC Symbol;Acc:HGNC:609]	5533	0.0	0.26358733	No	
+row_27	PCSK5	proprotein convertase subtilisin/kexin type 5 [Source:HGNC Symbol;Acc:HGNC:8747]	5585	0.0	0.25964847	No	
+row_28	GPIHBP1	glycosylphosphatidylinositol anchored high density lipoprotein binding protein 1 [Source:HGNC Symbol;Acc:HGNC:24945]	5885	0.0	0.23655611	No	
+row_29	CUBN	cubilin [Source:HGNC Symbol;Acc:HGNC:2548]	6116	0.0	0.21879275	No	
+row_30	APOF	apolipoprotein F [Source:HGNC Symbol;Acc:HGNC:615]	6195	0.0	0.21276866	No	
+row_31	SCARB1	scavenger receptor class B member 1 [Source:HGNC Symbol;Acc:HGNC:1664]	6983	-0.0025750475469976664	0.1525302	No	
+row_32	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.12364927	No	
+row_33	LMF2	lipase maturation factor 2 [Source:HGNC Symbol;Acc:HGNC:25096]	7769	-0.00869563315063715	0.09513117	No	
+row_34	LCAT	lecithin-cholesterol acyltransferase [Source:HGNC Symbol;Acc:HGNC:6522]	7941	-0.010452006943523884	0.08412902	No	
+row_35	SOAT2	sterol O-acyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:11178]	8013	-0.01121061947196722	0.08101009	No	
+row_36	CIDEC	cell death inducing DFFA like effector c [Source:HGNC Symbol;Acc:HGNC:24229]	8040	-0.011421484872698784	0.08141106	No	
+row_37	PRKACB	protein kinase cAMP-activated catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9381]	8489	-0.015575317665934563	0.05009626	No	
+row_38	AP2A1	adaptor related protein complex 2 subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:561]	8624	-0.017211414873600006	0.04337739	No	
+row_39	PLTP	phospholipid transfer protein [Source:HGNC Symbol;Acc:HGNC:9093]	8752	-0.018570953980088234	0.037485894	No	
+row_40	NPC1	NPC intracellular cholesterol transporter 1 [Source:HGNC Symbol;Acc:HGNC:7897]	8985	-0.021265558898448944	0.024053384	No	
+row_41	P4HB	prolyl 4-hydroxylase subunit beta [Source:HGNC Symbol;Acc:HGNC:8548]	9060	-0.02203592285513878	0.022986015	No	
+row_42	NR1H2	nuclear receptor subfamily 1 group H member 2 [Source:HGNC Symbol;Acc:HGNC:7965]	9501	-0.028030525892972946	-0.005083891	No	
+row_43	MBTPS1	"membrane bound transcription factor peptidase, site 1 [Source:HGNC Symbol;Acc:HGNC:15456]"	9588	-0.029451007023453712	-0.00551406	No	
+row_44	HDLBP	high density lipoprotein binding protein [Source:HGNC Symbol;Acc:HGNC:4857]	9687	-0.030991951003670692	-0.0065459986	No	
+row_45	LPL	lipoprotein lipase [Source:HGNC Symbol;Acc:HGNC:6677]	9806	-0.03288036212325096	-0.008724275	No	
+row_46	SAR1B	secretion associated Ras related GTPase 1B [Source:HGNC Symbol;Acc:HGNC:10535]	10003	-0.0363641083240509	-0.016191859	No	
+row_47	LIPA	"lipase A, lysosomal acid type [Source:HGNC Symbol;Acc:HGNC:6617]"	10453	-0.043907348066568375	-0.041608125	No	
+row_48	AP2B1	adaptor related protein complex 2 subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:563]	10494	-0.0446755476295948	-0.035274476	No	
+row_49	SOAT1	sterol O-acyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:11177]	10839	-0.052817072719335556	-0.05070215	No	
+row_50	NCEH1	neutral cholesterol ester hydrolase 1 [Source:HGNC Symbol;Acc:HGNC:29260]	11044	-0.05867408961057663	-0.054081988	No	
+row_51	APOBR	apolipoprotein B receptor [Source:HGNC Symbol;Acc:HGNC:24087]	11529	-0.0736280158162117	-0.07593272	No	
+row_52	ZDHHC8	zinc finger DHHC-type palmitoyltransferase 8 [Source:HGNC Symbol;Acc:HGNC:18474]	11638	-0.07756949961185455	-0.06791288	No	
+row_53	ABCG1	ATP binding cassette subfamily G member 1 [Source:HGNC Symbol;Acc:HGNC:73]	11989	-0.09680236130952835	-0.0745266	No	
+row_54	FURIN	"furin, paired basic amino acid cleaving enzyme [Source:HGNC Symbol;Acc:HGNC:8568]"	12785	-0.21986660361289978	-0.089551955	No	
+row_55	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	12802	-0.2263742983341217	-0.043040976	No	
+row_56	LSR	lipolysis stimulated lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:29572]	12881	-0.27766403555870056	0.009499605	No	

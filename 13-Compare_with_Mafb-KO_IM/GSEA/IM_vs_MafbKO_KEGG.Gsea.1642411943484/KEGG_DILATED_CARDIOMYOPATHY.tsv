@@ -1,0 +1,63 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IGF1	insulin like growth factor 1 [Source:HGNC Symbol;Acc:HGNC:5464]	14	0.6372554898262024	0.13139613	Yes	
+row_1	ITGB5	integrin subunit beta 5 [Source:HGNC Symbol;Acc:HGNC:6160]	60	0.3431425392627716	0.19925457	Yes	
+row_2	ITGA9	integrin subunit alpha 9 [Source:HGNC Symbol;Acc:HGNC:6145]	75	0.3090971112251282	0.2624305	Yes	
+row_3	ITGA6	integrin subunit alpha 6 [Source:HGNC Symbol;Acc:HGNC:6142]	125	0.2149466723203659	0.3033295	Yes	
+row_4	LMNA	lamin A/C [Source:HGNC Symbol;Acc:HGNC:6636]	197	0.16138137876987457	0.33139318	Yes	
+row_5	ITGAV	integrin subunit alpha V [Source:HGNC Symbol;Acc:HGNC:6150]	397	0.11163220554590225	0.33922505	Yes	
+row_6	CACNA1D	calcium voltage-gated channel subunit alpha1 D [Source:HGNC Symbol;Acc:HGNC:1391]	459	0.104191854596138	0.35617232	Yes	
+row_7	SLC8A1	solute carrier family 8 member A1 [Source:HGNC Symbol;Acc:HGNC:11068]	1061	0.06551384925842285	0.32335752	No	
+row_8	TPM2	tropomyosin 2 [Source:HGNC Symbol;Acc:HGNC:12011]	1522	0.05132197588682175	0.2984863	No	
+row_9	TNNI3	"troponin I3, cardiac type [Source:HGNC Symbol;Acc:HGNC:11947]"	1559	0.050487078726291656	0.30620053	No	
+row_10	TGFB3	transforming growth factor beta 3 [Source:HGNC Symbol;Acc:HGNC:11769]	1681	0.04768864065408707	0.30676574	No	
+row_11	TPM1	tropomyosin 1 [Source:HGNC Symbol;Acc:HGNC:12010]	1847	0.044167641550302505	0.30319947	No	
+row_12	PRKACA	protein kinase cAMP-activated catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9380]	1879	0.04361598938703537	0.30987158	No	
+row_13	TGFB2	transforming growth factor beta 2 [Source:HGNC Symbol;Acc:HGNC:11768]	1898	0.043260253965854645	0.31747416	No	
+row_14	ADCY6	adenylate cyclase 6 [Source:HGNC Symbol;Acc:HGNC:237]	2520	0.03219348564743996	0.2761872	No	
+row_15	ITGA8	integrin subunit alpha 8 [Source:HGNC Symbol;Acc:HGNC:6144]	2727	0.029338020831346512	0.2663703	No	
+row_16	ITGB1	integrin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6153]	2980	0.025665033608675003	0.25223577	No	
+row_17	DAG1	dystroglycan 1 [Source:HGNC Symbol;Acc:HGNC:2666]	3566	0.01857508346438408	0.21089913	No	
+row_18	TTN	titin [Source:HGNC Symbol;Acc:HGNC:12403]	3645	0.017771322280168533	0.20856714	No	
+row_19	TNNC1	"troponin C1, slow skeletal and cardiac type [Source:HGNC Symbol;Acc:HGNC:11943]"	3777	0.016329411417245865	0.20184053	No	
+row_20	ADCY3	adenylate cyclase 3 [Source:HGNC Symbol;Acc:HGNC:234]	4024	0.013688463717699051	0.1856798	No	
+row_21	MYL2	myosin light chain 2 [Source:HGNC Symbol;Acc:HGNC:7583]	4322	0.01087598130106926	0.16499402	No	
+row_22	SGCB	sarcoglycan beta [Source:HGNC Symbol;Acc:HGNC:10806]	4333	0.010755338706076145	0.1664573	No	
+row_23	CACNA2D4	calcium voltage-gated channel auxiliary subunit alpha2delta 4 [Source:HGNC Symbol;Acc:HGNC:20202]	4485	0.009666272439062595	0.15680027	No	
+row_24	MYBPC3	myosin binding protein C3 [Source:HGNC Symbol;Acc:HGNC:7551]	4560	0.0091512780636549	0.15298533	No	
+row_25	DES	desmin [Source:HGNC Symbol;Acc:HGNC:2770]	4940	0.006340767256915569	0.12502126	No	
+row_26	CACNA1F	calcium voltage-gated channel subunit alpha1 F [Source:HGNC Symbol;Acc:HGNC:1393]	5348	0.0014337502652779222	0.093873754	No	
+row_27	ACTC1	actin alpha cardiac muscle 1 [Source:HGNC Symbol;Acc:HGNC:143]	6020	0.0	0.04203106	No	
+row_28	ITGA2B	integrin subunit alpha 2b [Source:HGNC Symbol;Acc:HGNC:6138]	6131	0.0	0.03353226	No	
+row_29	CACNB4	calcium voltage-gated channel auxiliary subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:1404]	6135	0.0	0.033300474	No	
+row_30	ITGA10	integrin subunit alpha 10 [Source:HGNC Symbol;Acc:HGNC:6135]	6137	0.0	0.03322321	No	
+row_31	TNNT2	"troponin T2, cardiac type [Source:HGNC Symbol;Acc:HGNC:11949]"	6471	0.0	0.0074950214	No	
+row_32	CACNA2D1	calcium voltage-gated channel auxiliary subunit alpha2delta 1 [Source:HGNC Symbol;Acc:HGNC:1399]	6481	0.0	0.006799665	No	
+row_33	ITGB8	integrin subunit beta 8 [Source:HGNC Symbol;Acc:HGNC:6163]	6634	0.0	-0.0049441345	No	
+row_34	ITGA2	integrin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6137]	6637	0.0	-0.005098658	No	
+row_35	ITGA7	integrin subunit alpha 7 [Source:HGNC Symbol;Acc:HGNC:6143]	6638	0.0	-0.005098658	No	
+row_36	CACNB1	calcium voltage-gated channel auxiliary subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:1401]	6797	-2.9799359617754817E-4	-0.017244078	No	
+row_37	ITGB3	integrin subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:6156]	7092	-0.003770229872316122	-0.039175272	No	
+row_38	ATP2A2	ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 2 [Source:HGNC Symbol;Acc:HGNC:812]	7178	-0.004990989807993174	-0.044704963	No	
+row_39	ITGB4	integrin subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:6158]	7353	-0.00614004535600543	-0.05687208	No	
+row_40	ADRB1	adrenoceptor beta 1 [Source:HGNC Symbol;Acc:HGNC:285]	7601	-0.0073883854784071445	-0.0744198	No	
+row_41	ITGA3	integrin subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:6139]	7690	-0.007912709377706051	-0.079573885	No	
+row_42	CACNB2	calcium voltage-gated channel auxiliary subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:1402]	7837	-0.00938176829367876	-0.088903755	No	
+row_43	CACNB3	calcium voltage-gated channel auxiliary subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:1403]	7905	-0.010026379488408566	-0.09199593	No	
+row_44	ITGA1	integrin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:6134]	8032	-0.011365734972059727	-0.099368125	No	
+row_45	PRKACB	protein kinase cAMP-activated catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9381]	8489	-0.015575317665934563	-0.1313616	No	
+row_46	ADCY9	adenylate cyclase 9 [Source:HGNC Symbol;Acc:HGNC:240]	8988	-0.021297890692949295	-0.16541041	No	
+row_47	TPM3	tropomyosin 3 [Source:HGNC Symbol;Acc:HGNC:12012]	10242	-0.040443602949380875	-0.25381175	No	
+row_48	TNF	tumor necrosis factor [Source:HGNC Symbol;Acc:HGNC:11892]	11021	-0.058159176260232925	-0.30183086	No	
+row_49	EMD	emerin [Source:HGNC Symbol;Acc:HGNC:3331]	11469	-0.07147018611431122	-0.32150912	No	
+row_50	ADCY7	adenylate cyclase 7 [Source:HGNC Symbol;Acc:HGNC:238]	11482	-0.07189182937145233	-0.3074908	No	
+row_51	ITGA4	integrin subunit alpha 4 [Source:HGNC Symbol;Acc:HGNC:6140]	11736	-0.08232011646032333	-0.3099247	No	
+row_52	TGFB1	transforming growth factor beta 1 [Source:HGNC Symbol;Acc:HGNC:11766]	11992	-0.09702695906162262	-0.30945572	No	
+row_53	PRKX	protein kinase X-linked [Source:HGNC Symbol;Acc:HGNC:9441]	12229	-0.113486647605896	-0.304097	No	
+row_54	CACNA1S	calcium voltage-gated channel subunit alpha1 S [Source:HGNC Symbol;Acc:HGNC:1397]	12417	-0.1304141730070114	-0.2914334	No	
+row_55	ACTB	actin beta [Source:HGNC Symbol;Acc:HGNC:132]	12443	-0.13476066291332245	-0.26534984	No	
+row_56	TPM4	tropomyosin 4 [Source:HGNC Symbol;Acc:HGNC:12013]	12460	-0.13846641778945923	-0.2378005	No	
+row_57	ITGA5	integrin subunit alpha 5 [Source:HGNC Symbol;Acc:HGNC:6141]	12487	-0.14264968037605286	-0.21015415	No	
+row_58	ADCY4	adenylate cyclase 4 [Source:HGNC Symbol;Acc:HGNC:235]	12517	-0.14783748984336853	-0.1816611	No	
+row_59	GNAS	GNAS complex locus [Source:HGNC Symbol;Acc:HGNC:4392]	12674	-0.18636642396450043	-0.15497059	No	
+row_60	ACTG1	actin gamma 1 [Source:HGNC Symbol;Acc:HGNC:144]	12846	-0.24981428682804108	-0.116248965	No	
+row_61	ITGB7	integrin subunit beta 7 [Source:HGNC Symbol;Acc:HGNC:6162]	12991	-0.6175397038459778	0.0010044354	No	

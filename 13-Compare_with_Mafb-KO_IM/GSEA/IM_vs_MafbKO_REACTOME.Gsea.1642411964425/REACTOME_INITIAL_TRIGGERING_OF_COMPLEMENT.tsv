@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.3364811	Yes	
+row_1	C1QA	complement C1q A chain [Source:HGNC Symbol;Acc:HGNC:1241]	1	2.0969398021698	0.6362781	Yes	
+row_2	C1QB	complement C1q B chain [Source:HGNC Symbol;Acc:HGNC:1242]	2	1.8567914962768555	0.9017414	Yes	
+row_3	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	165	0.1757270097732544	0.91439176	Yes	
+row_4	C2	complement C2 [Source:HGNC Symbol;Acc:HGNC:1248]	1341	0.05607956647872925	0.8319413	No	
+row_5	C1R	complement C1r [Source:HGNC Symbol;Acc:HGNC:1246]	4887	0.006749752908945084	0.55996203	No	
+row_6	C1S	complement C1s [Source:HGNC Symbol;Acc:HGNC:1247]	5478	0.0	0.5145355	No	
+row_7	CFD	complement factor D [Source:HGNC Symbol;Acc:HGNC:2771]	5516	0.0	0.51168674	No	
+row_8	IGLC3	immunoglobulin lambda constant 3 (Kern-Oz+ marker) [Source:HGNC Symbol;Acc:HGNC:5857]	5750	0.0	0.4937471	No	
+row_9	FCN1	ficolin 1 [Source:HGNC Symbol;Acc:HGNC:3623]	6386	0.0	0.44485578	No	
+row_10	MASP2	MBL associated serine protease 2 [Source:HGNC Symbol;Acc:HGNC:6902]	6428	0.0	0.44169903	No	
+row_11	GZMM	granzyme M [Source:HGNC Symbol;Acc:HGNC:4712]	7452	-0.006650211289525032	0.3638848	No	
+row_12	C4B	complement C4B (Chido blood group) [Source:HGNC Symbol;Acc:HGNC:1324]	7586	-0.00731950718909502	0.35469103	No	
+row_13	COLEC11	collectin subfamily member 11 [Source:HGNC Symbol;Acc:HGNC:17213]	7610	-0.007427619770169258	0.3539821	No	
+row_14	MASP1	MBL associated serine protease 1 [Source:HGNC Symbol;Acc:HGNC:6901]	8042	-0.011426664888858795	0.32243127	No	
+row_15	CFB	complement factor B [Source:HGNC Symbol;Acc:HGNC:1037]	8467	-0.015354761853814125	0.291981	No	
+row_16	CFP	complement factor properdin [Source:HGNC Symbol;Acc:HGNC:8864]	12955	-0.4005380868911743	0.003772715	No	

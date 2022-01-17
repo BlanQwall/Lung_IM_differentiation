@@ -1,0 +1,26 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CD28	CD28 molecule [Source:HGNC Symbol;Acc:HGNC:1653]	2233	0.036737505346536636	-0.15884213	No	
+row_1	HLA-DRB5	"major histocompatibility complex, class II, DR beta 5 [Source:HGNC Symbol;Acc:HGNC:4953]"	3359	0.02118586376309395	-0.23790649	No	
+row_2	GZMB	granzyme B [Source:HGNC Symbol;Acc:HGNC:4709]	4504	0.00955138262361288	-0.32261235	No	
+row_3	CD86	CD86 molecule [Source:HGNC Symbol;Acc:HGNC:1705]	5193	0.003349440870806575	-0.37441427	No	
+row_4	HSPD1	heat shock protein family D (Hsp60) member 1 [Source:HGNC Symbol;Acc:HGNC:5261]	5340	0.0015161718474701047	-0.3851179	No	
+row_5	IL2	interleukin 2 [Source:HGNC Symbol;Acc:HGNC:6001]	5342	0.0015103507321327925	-0.38465258	No	
+row_6	CPE	carboxypeptidase E [Source:HGNC Symbol;Acc:HGNC:2303]	5526	0.0	-0.3987512	No	
+row_7	PRF1	perforin 1 [Source:HGNC Symbol;Acc:HGNC:9360]	5733	0.0	-0.41462177	No	
+row_8	FASLG	Fas ligand [Source:HGNC Symbol;Acc:HGNC:11936]	6081	0.0	-0.44135523	No	
+row_9	IL12A	interleukin 12A [Source:HGNC Symbol;Acc:HGNC:5969]	6717	0.0	-0.49027663	No	
+row_10	IL12B	interleukin 12B [Source:HGNC Symbol;Acc:HGNC:5970]	6949	-0.0022332819644361734	-0.5072713	No	
+row_11	FAS	Fas cell surface death receptor [Source:HGNC Symbol;Acc:HGNC:11920]	9922	-0.03492646664381027	-0.7236975	No	
+row_12	ICA1	islet cell autoantigen 1 [Source:HGNC Symbol;Acc:HGNC:5343]	9982	-0.03600900247693062	-0.7153128	No	
+row_13	TNF	tumor necrosis factor [Source:HGNC Symbol;Acc:HGNC:11892]	11021	-0.058159176260232925	-0.7743981	No	
+row_14	HLA-DQA1	"major histocompatibility complex, class II, DQ alpha 1 [Source:HGNC Symbol;Acc:HGNC:4942]"	12197	-0.11103520542383194	-0.82505125	Yes	
+row_15	HLA-DRB1	"major histocompatibility complex, class II, DR beta 1 [Source:HGNC Symbol;Acc:HGNC:4948]"	12464	-0.13899697363376617	-0.7956331	Yes	
+row_16	HLA-B	"major histocompatibility complex, class I, B [Source:HGNC Symbol;Acc:HGNC:4932]"	12479	-0.14124396443367004	-0.7459936	Yes	
+row_17	HLA-E	"major histocompatibility complex, class I, E [Source:HGNC Symbol;Acc:HGNC:4962]"	12546	-0.15424029529094696	-0.6956935	Yes	
+row_18	CD80	CD80 molecule [Source:HGNC Symbol;Acc:HGNC:1700]	12715	-0.1980533003807068	-0.63751924	Yes	
+row_19	IL1A	interleukin 1 alpha [Source:HGNC Symbol;Acc:HGNC:5991]	12756	-0.2119717001914978	-0.5644857	Yes	
+row_20	IL1B	interleukin 1 beta [Source:HGNC Symbol;Acc:HGNC:5992]	12764	-0.21404220163822174	-0.48816645	Yes	
+row_21	HLA-DMA	"major histocompatibility complex, class II, DM alpha [Source:HGNC Symbol;Acc:HGNC:4934]"	12880	-0.27736714482307434	-0.3974288	Yes	
+row_22	HLA-DMB	"major histocompatibility complex, class II, DM beta [Source:HGNC Symbol;Acc:HGNC:4935]"	12893	-0.2856333553791046	-0.29578766	Yes	
+row_23	HLA-DOB	"major histocompatibility complex, class II, DO beta [Source:HGNC Symbol;Acc:HGNC:4937]"	12922	-0.3196949064731598	-0.18314831	Yes	
+row_24	HLA-DOA	"major histocompatibility complex, class II, DO alpha [Source:HGNC Symbol;Acc:HGNC:4936]"	12981	-0.5274254679679871	0.0017720186	Yes	

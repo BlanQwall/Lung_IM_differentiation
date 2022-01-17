@@ -1,0 +1,56 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	LMNA	lamin A/C [Source:HGNC Symbol;Acc:HGNC:6636]	197	0.16138137876987457	0.030438548	No	
+row_1	RASA1	RAS p21 protein activator 1 [Source:HGNC Symbol;Acc:HGNC:9871]	305	0.13110043108463287	0.05926115	No	
+row_2	NUMA1	nuclear mitotic apparatus protein 1 [Source:HGNC Symbol;Acc:HGNC:8059]	410	0.10965628176927567	0.08224938	No	
+row_3	RB1	RB transcriptional corepressor 1 [Source:HGNC Symbol;Acc:HGNC:9884]	438	0.10639232397079468	0.11026026	No	
+row_4	MAP3K1	mitogen-activated protein kinase kinase kinase 1 [Source:HGNC Symbol;Acc:HGNC:6848]	1087	0.06452937424182892	0.07847546	No	
+row_5	TRADD	TNFRSF1A associated via death domain [Source:HGNC Symbol;Acc:HGNC:12030]	1267	0.05859963223338127	0.081229486	No	
+row_6	PARP1	poly(ADP-ribose) polymerase 1 [Source:HGNC Symbol;Acc:HGNC:270]	1345	0.05599832534790039	0.09112412	No	
+row_7	CRADD	CASP2 and RIPK1 domain containing adaptor with death domain [Source:HGNC Symbol;Acc:HGNC:2340]	1691	0.047563403844833374	0.07793773	No	
+row_8	BIRC3	baculoviral IAP repeat containing 3 [Source:HGNC Symbol;Acc:HGNC:591]	2512	0.032235052436590195	0.023735788	No	
+row_9	PRKCD	protein kinase C delta [Source:HGNC Symbol;Acc:HGNC:9399]	2652	0.03030460700392723	0.021574639	No	
+row_10	MAPK8	mitogen-activated protein kinase 8 [Source:HGNC Symbol;Acc:HGNC:6881]	2927	0.026505250483751297	0.007914034	No	
+row_11	CASP8	caspase 8 [Source:HGNC Symbol;Acc:HGNC:1509]	3053	0.02490830048918724	0.005307482	No	
+row_12	FADD	Fas associated via death domain [Source:HGNC Symbol;Acc:HGNC:3573]	3152	0.023445431143045425	0.0043720617	No	
+row_13	BID	BH3 interacting domain death agonist [Source:HGNC Symbol;Acc:HGNC:1050]	3487	0.01937750168144703	-0.015938018	No	
+row_14	MAP2K7	mitogen-activated protein kinase kinase 7 [Source:HGNC Symbol;Acc:HGNC:6847]	3649	0.017711104825139046	-0.023360405	No	
+row_15	CASP3	caspase 3 [Source:HGNC Symbol;Acc:HGNC:1504]	3701	0.017124753445386887	-0.022454448	No	
+row_16	DFFA	DNA fragmentation factor subunit alpha [Source:HGNC Symbol;Acc:HGNC:2772]	3798	0.016139496117830276	-0.025302103	No	
+row_17	TRAF2	TNF receptor associated factor 2 [Source:HGNC Symbol;Acc:HGNC:12032]	3966	0.0144339669495821	-0.034114834	No	
+row_18	CDK11B	cyclin dependent kinase 11B [Source:HGNC Symbol;Acc:HGNC:1729]	4985	0.005911072716116905	-0.111052774	No	
+row_19	MAP3K5	mitogen-activated protein kinase kinase kinase 5 [Source:HGNC Symbol;Acc:HGNC:6857]	5164	0.003706270596012473	-0.12374953	No	
+row_20	DAXX	death domain associated protein [Source:HGNC Symbol;Acc:HGNC:2681]	5291	0.002099235774949193	-0.13288544	No	
+row_21	SPTAN1	"spectrin alpha, non-erythrocytic 1 [Source:HGNC Symbol;Acc:HGNC:11273]"	5407	6.434734095819294E-4	-0.14158373	No	
+row_22	FASLG	Fas ligand [Source:HGNC Symbol;Acc:HGNC:11936]	6081	0.0	-0.19355284	No	
+row_23	CASP9	caspase 9 [Source:HGNC Symbol;Acc:HGNC:1511]	7225	-0.005274298135191202	-0.28032342	No	
+row_24	CHUK	component of inhibitor of nuclear factor kappa B kinase complex [Source:HGNC Symbol;Acc:HGNC:1974]	7754	-0.008568290621042252	-0.31867185	No	
+row_25	RELA	"RELA proto-oncogene, NF-kB subunit [Source:HGNC Symbol;Acc:HGNC:9955]"	8039	-0.011412028223276138	-0.33737418	No	
+row_26	BCL2	BCL2 apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:990]	8099	-0.011922881938517094	-0.33855745	No	
+row_27	PRKDC	"protein kinase, DNA-activated, catalytic subunit [Source:HGNC Symbol;Acc:HGNC:9413]"	8386	-0.014552551321685314	-0.35652584	No	
+row_28	CASP2	caspase 2 [Source:HGNC Symbol;Acc:HGNC:1503]	8664	-0.01766234077513218	-0.37291956	No	
+row_29	PSEN2	presenilin 2 [Source:HGNC Symbol;Acc:HGNC:9509]	8739	-0.018447602167725563	-0.37341547	No	
+row_30	BIRC2	baculoviral IAP repeat containing 2 [Source:HGNC Symbol;Acc:HGNC:590]	9009	-0.02151806838810444	-0.3881007	No	
+row_31	TNFRSF1A	TNF receptor superfamily member 1A [Source:HGNC Symbol;Acc:HGNC:11916]	9445	-0.027142565697431564	-0.41401348	No	
+row_32	PSEN1	presenilin 1 [Source:HGNC Symbol;Acc:HGNC:9508]	9691	-0.031070562079548836	-0.42414328	No	
+row_33	FAS	Fas cell surface death receptor [Source:HGNC Symbol;Acc:HGNC:11920]	9922	-0.03492646664381027	-0.43202403	No	
+row_34	MDM2	MDM2 proto-oncogene [Source:HGNC Symbol;Acc:HGNC:6973]	9995	-0.036249034106731415	-0.4273299	No	
+row_35	APAF1	apoptotic peptidase activating factor 1 [Source:HGNC Symbol;Acc:HGNC:576]	10593	-0.04675249382853508	-0.46020514	Yes	
+row_36	BAG4	BAG cochaperone 4 [Source:HGNC Symbol;Acc:HGNC:940]	10743	-0.05031708627939224	-0.45747745	Yes	
+row_37	LMNB2	lamin B2 [Source:HGNC Symbol;Acc:HGNC:6638]	10806	-0.0520443357527256	-0.447543	Yes	
+row_38	CFLAR	CASP8 and FADD like apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:1876]	10919	-0.05524780601263046	-0.44056338	Yes	
+row_39	RIPK1	receptor interacting serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:10019]	10923	-0.05535200610756874	-0.42513728	Yes	
+row_40	XIAP	X-linked inhibitor of apoptosis [Source:HGNC Symbol;Acc:HGNC:592]	10980	-0.05689317360520363	-0.4133679	Yes	
+row_41	CASP7	caspase 7 [Source:HGNC Symbol;Acc:HGNC:1508]	10986	-0.05707675963640213	-0.39760837	Yes	
+row_42	TNF	tumor necrosis factor [Source:HGNC Symbol;Acc:HGNC:11892]	11021	-0.058159176260232925	-0.38378203	Yes	
+row_43	PAK2	p21 (RAC1) activated kinase 2 [Source:HGNC Symbol;Acc:HGNC:8591]	11222	-0.06384061276912689	-0.38116705	Yes	
+row_44	CASP6	caspase 6 [Source:HGNC Symbol;Acc:HGNC:1507]	11258	-0.0650419369339943	-0.36547098	Yes	
+row_45	TNFRSF1B	TNF receptor superfamily member 1B [Source:HGNC Symbol;Acc:HGNC:11917]	11325	-0.06686174124479294	-0.3516539	Yes	
+row_46	MAP3K14	mitogen-activated protein kinase kinase kinase 14 [Source:HGNC Symbol;Acc:HGNC:6853]	11587	-0.07557892799377441	-0.3504289	Yes	
+row_47	DFFB	DNA fragmentation factor subunit beta [Source:HGNC Symbol;Acc:HGNC:2773]	11628	-0.07711508870124817	-0.3317037	Yes	
+row_48	NFKB1	nuclear factor kappa B subunit 1 [Source:HGNC Symbol;Acc:HGNC:7794]	11806	-0.08577122539281845	-0.32110906	Yes	
+row_49	ARHGDIB	Rho GDP dissociation inhibitor beta [Source:HGNC Symbol;Acc:HGNC:679]	12238	-0.11412975192070007	-0.32210633	Yes	
+row_50	NFKBIA	NFKB inhibitor alpha [Source:HGNC Symbol;Acc:HGNC:7797]	12350	-0.12428919225931168	-0.29551935	Yes	
+row_51	ACTG1	actin gamma 1 [Source:HGNC Symbol;Acc:HGNC:144]	12846	-0.24981428682804108	-0.26307684	Yes	
+row_52	LMNB1	lamin B1 [Source:HGNC Symbol;Acc:HGNC:6637]	12913	-0.30858007073402405	-0.18088351	Yes	
+row_53	TRAF1	TNF receptor associated factor 1 [Source:HGNC Symbol;Acc:HGNC:12031]	12929	-0.3285102844238281	-0.08911417	Yes	
+row_54	GSN	gelsolin [Source:HGNC Symbol;Acc:HGNC:4620]	12933	-0.33522969484329224	0.0054825773	Yes	

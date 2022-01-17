@@ -1,0 +1,24 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TP53	tumor protein p53 [Source:HGNC Symbol;Acc:HGNC:11998]	619	0.08749835938215256	0.02309648	No	
+row_1	WEE1	WEE1 G2 checkpoint kinase [Source:HGNC Symbol;Acc:HGNC:12761]	2470	0.03291119262576103	-0.09278649	No	
+row_2	PLK1	polo like kinase 1 [Source:HGNC Symbol;Acc:HGNC:9077]	3237	0.022617576643824577	-0.1334958	No	
+row_3	ATM	ATM serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:795]	4011	0.013858234509825706	-0.18182978	No	
+row_4	EP300	E1A binding protein p300 [Source:HGNC Symbol;Acc:HGNC:3373]	4642	0.008573985658586025	-0.22342296	No	
+row_5	CDK1	cyclin dependent kinase 1 [Source:HGNC Symbol;Acc:HGNC:1722]	5441	1.4802794612478465E-4	-0.28477296	No	
+row_6	CCNB1	cyclin B1 [Source:HGNC Symbol;Acc:HGNC:1579]	6277	0.0	-0.34909278	No	
+row_7	CDC25A	cell division cycle 25A [Source:HGNC Symbol;Acc:HGNC:1725]	7085	-0.0037076009903103113	-0.40825668	No	
+row_8	RPS6KA1	ribosomal protein S6 kinase A1 [Source:HGNC Symbol;Acc:HGNC:10430]	8324	-0.013977170921862125	-0.4923133	Yes	
+row_9	PRKDC	"protein kinase, DNA-activated, catalytic subunit [Source:HGNC Symbol;Acc:HGNC:9413]"	8386	-0.014552551321685314	-0.48524046	Yes	
+row_10	BRCA1	BRCA1 DNA repair associated [Source:HGNC Symbol;Acc:HGNC:1100]	8456	-0.015233674086630344	-0.47823292	Yes	
+row_11	CDC25C	cell division cycle 25C [Source:HGNC Symbol;Acc:HGNC:1727]	8550	-0.01626714877784252	-0.4722381	Yes	
+row_12	CHEK1	checkpoint kinase 1 [Source:HGNC Symbol;Acc:HGNC:1925]	8749	-0.018518611788749695	-0.4725102	Yes	
+row_13	GADD45A	growth arrest and DNA damage inducible alpha [Source:HGNC Symbol;Acc:HGNC:4095]	9150	-0.023052195087075233	-0.48467502	Yes	
+row_14	ATR	ATR serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:882]	9289	-0.02482599951326847	-0.47522324	Yes	
+row_15	CDC25B	cell division cycle 25B [Source:HGNC Symbol;Acc:HGNC:1726]	9426	-0.026735030114650726	-0.46407318	Yes	
+row_16	MDM2	MDM2 proto-oncogene [Source:HGNC Symbol;Acc:HGNC:6973]	9995	-0.036249034106731415	-0.47850406	Yes	
+row_17	YWHAQ	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein theta [Source:HGNC Symbol;Acc:HGNC:12854]	10151	-0.03887002915143967	-0.45900148	Yes	
+row_18	CHEK2	checkpoint kinase 2 [Source:HGNC Symbol;Acc:HGNC:16627]	10559	-0.04602733999490738	-0.45312083	Yes	
+row_19	CDC34	"cell division cycle 34, ubiqiutin conjugating enzyme [Source:HGNC Symbol;Acc:HGNC:1734]"	11649	-0.07801491767168045	-0.47389954	Yes	
+row_20	CDKN2D	cyclin dependent kinase inhibitor 2D [Source:HGNC Symbol;Acc:HGNC:1790]	12411	-0.12983521819114685	-0.42749476	Yes	
+row_21	YWHAH	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein eta [Source:HGNC Symbol;Acc:HGNC:12853]	12852	-0.2552846670150757	-0.25488675	Yes	
+row_22	CDKN1A	cyclin dependent kinase inhibitor 1A [Source:HGNC Symbol;Acc:HGNC:1784]	12930	-0.32947996258735657	0.0057000583	Yes	

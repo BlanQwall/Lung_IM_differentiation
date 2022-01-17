@@ -1,0 +1,35 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.49658886	Yes	
+row_1	ABCA1	ATP binding cassette subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:29]	53	0.3633791506290436	0.6118276	Yes	
+row_2	APOC1	apolipoprotein C1 [Source:HGNC Symbol;Acc:HGNC:607]	611	0.08827267587184906	0.59779733	Yes	
+row_3	EEPD1	endonuclease/exonuclease/phosphatase family domain containing 1 [Source:HGNC Symbol;Acc:HGNC:22223]	839	0.07413482666015625	0.6045779	Yes	
+row_4	NR1H3	nuclear receptor subfamily 1 group H member 3 [Source:HGNC Symbol;Acc:HGNC:7966]	880	0.07222681492567062	0.6251503	Yes	
+row_5	HDAC3	histone deacetylase 3 [Source:HGNC Symbol;Acc:HGNC:4854]	889	0.07191456854343414	0.6480875	Yes	
+row_6	RXRA	retinoid X receptor alpha [Source:HGNC Symbol;Acc:HGNC:10477]	940	0.06981553882360458	0.6670992	Yes	
+row_7	GPS2	G protein pathway suppressor 2 [Source:HGNC Symbol;Acc:HGNC:4550]	1185	0.06113503873348236	0.66831136	Yes	
+row_8	AGO1	argonaute RISC component 1 [Source:HGNC Symbol;Acc:HGNC:3262]	1567	0.05026652291417122	0.65540177	No	
+row_9	TBL1X	transducin beta like 1 X-linked [Source:HGNC Symbol;Acc:HGNC:11585]	2304	0.03546449542045593	0.6102754	No	
+row_10	RXRB	retinoid X receptor beta [Source:HGNC Symbol;Acc:HGNC:10478]	2549	0.03179867938160896	0.6018791	No	
+row_11	APOC4	apolipoprotein C4 [Source:HGNC Symbol;Acc:HGNC:611]	2552	0.03176446259021759	0.6121286	No	
+row_12	NCOA1	nuclear receptor coactivator 1 [Source:HGNC Symbol;Acc:HGNC:7668]	3161	0.023378528654575348	0.5729119	No	
+row_13	TNRC6B	trinucleotide repeat containing adaptor 6B [Source:HGNC Symbol;Acc:HGNC:29190]	3169	0.023294441401958466	0.58000183	No	
+row_14	APOD	apolipoprotein D [Source:HGNC Symbol;Acc:HGNC:612]	3187	0.023087386041879654	0.5862529	No	
+row_15	AGO3	argonaute RISC catalytic component 3 [Source:HGNC Symbol;Acc:HGNC:18421]	3198	0.022961869835853577	0.5930026	No	
+row_16	TNRC6A	trinucleotide repeat containing adaptor 6A [Source:HGNC Symbol;Acc:HGNC:11969]	4070	0.013218455016613007	0.53018224	No	
+row_17	KDM3A	lysine demethylase 3A [Source:HGNC Symbol;Acc:HGNC:20815]	4410	0.010142877697944641	0.50736904	No	
+row_18	EP300	E1A binding protein p300 [Source:HGNC Symbol;Acc:HGNC:3373]	4642	0.008573985658586025	0.4923683	No	
+row_19	ARL4C	ADP ribosylation factor like GTPase 4C [Source:HGNC Symbol;Acc:HGNC:698]	5395	7.737186388112605E-4	0.43464625	No	
+row_20	TNRC6C	trinucleotide repeat containing adaptor 6C [Source:HGNC Symbol;Acc:HGNC:29318]	5433	2.50198325375095E-4	0.43187568	No	
+row_21	APOC2	apolipoprotein C2 [Source:HGNC Symbol;Acc:HGNC:609]	5533	0.0	0.42424327	No	
+row_22	AGO2	argonaute RISC catalytic component 2 [Source:HGNC Symbol;Acc:HGNC:3263]	6858	-0.0011746656382456422	0.32255414	No	
+row_23	NCOR2	nuclear receptor corepressor 2 [Source:HGNC Symbol;Acc:HGNC:7673]	6914	-0.0018557243747636676	0.31892172	No	
+row_24	AGO4	argonaute RISC component 4 [Source:HGNC Symbol;Acc:HGNC:18424]	7263	-0.005611784756183624	0.29393065	No	
+row_25	NCOR1	nuclear receptor corepressor 1 [Source:HGNC Symbol;Acc:HGNC:7672]	8090	-0.011882802471518517	0.23414207	No	
+row_26	PLTP	phospholipid transfer protein [Source:HGNC Symbol;Acc:HGNC:9093]	8752	-0.018570953980088234	0.18926471	No	
+row_27	KDM1A	lysine demethylase 1A [Source:HGNC Symbol;Acc:HGNC:29079]	8969	-0.021038629114627838	0.17950289	No	
+row_28	NR1H2	nuclear receptor subfamily 1 group H member 2 [Source:HGNC Symbol;Acc:HGNC:7965]	9501	-0.028030525892972946	0.14774618	No	
+row_29	KDM1B	lysine demethylase 1B [Source:HGNC Symbol;Acc:HGNC:21577]	9915	-0.034830521792173386	0.12731384	No	
+row_30	MOV10	Mov10 RISC complex RNA helicase [Source:HGNC Symbol;Acc:HGNC:7200]	10200	-0.03974313661456108	0.118435785	No	
+row_31	KDM4A	lysine demethylase 4A [Source:HGNC Symbol;Acc:HGNC:22978]	11572	-0.075151726603508	0.037352666	No	
+row_32	ABCG1	ATP binding cassette subfamily G member 1 [Source:HGNC Symbol;Acc:HGNC:73]	11989	-0.09680236130952835	0.036986485	No	
+row_33	TBL1XR1	TBL1X receptor 1 [Source:HGNC Symbol;Acc:HGNC:29529]	12367	-0.12575356662273407	0.049109306	No	

@@ -1,0 +1,42 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IL10RB	interleukin 10 receptor subunit beta [Source:HGNC Symbol;Acc:HGNC:5965]	212	0.15507927536964417	0.016731508	No	
+row_1	IL10	interleukin 10 [Source:HGNC Symbol;Acc:HGNC:5962]	748	0.07839366793632507	-0.0078121754	No	
+row_2	CCL3	C-C motif chemokine ligand 3 [Source:HGNC Symbol;Acc:HGNC:10627]	967	0.06887262314558029	-0.009934743	No	
+row_3	JAK1	Janus kinase 1 [Source:HGNC Symbol;Acc:HGNC:6190]	2074	0.04024578630924225	-0.08666191	No	
+row_4	FPR1	formyl peptide receptor 1 [Source:HGNC Symbol;Acc:HGNC:3826]	2319	0.03523446246981621	-0.09796637	No	
+row_5	CSF1	colony stimulating factor 1 [Source:HGNC Symbol;Acc:HGNC:2432]	3016	0.0253103356808424	-0.14625381	No	
+row_6	CXCL2	C-X-C motif chemokine ligand 2 [Source:HGNC Symbol;Acc:HGNC:4603]	4587	0.00899946503341198	-0.26543847	No	
+row_7	CCR5	C-C motif chemokine receptor 5 [Source:HGNC Symbol;Acc:HGNC:1606]	4661	0.008514276705682278	-0.26925302	No	
+row_8	CD86	CD86 molecule [Source:HGNC Symbol;Acc:HGNC:1705]	5193	0.003349440870806575	-0.30949804	No	
+row_9	IL12A	interleukin 12A [Source:HGNC Symbol;Acc:HGNC:5969]	6717	0.0	-0.4269772	No	
+row_10	IL12B	interleukin 12B [Source:HGNC Symbol;Acc:HGNC:5970]	6949	-0.0022332819644361734	-0.44431934	No	
+row_11	FCER2	Fc fragment of IgE receptor II [Source:HGNC Symbol;Acc:HGNC:3612]	7266	-0.005626109428703785	-0.46749425	No	
+row_12	CSF2	colony stimulating factor 2 [Source:HGNC Symbol;Acc:HGNC:2434]	7876	-0.009726960211992264	-0.5123953	No	
+row_13	CXCL1	C-X-C motif chemokine ligand 1 [Source:HGNC Symbol;Acc:HGNC:4602]	7892	-0.009899149648845196	-0.5114405	No	
+row_14	CCL19	C-C motif chemokine ligand 19 [Source:HGNC Symbol;Acc:HGNC:10617]	8200	-0.012804749421775341	-0.5323897	No	
+row_15	LIF	LIF interleukin 6 family cytokine [Source:HGNC Symbol;Acc:HGNC:6596]	9141	-0.022972071543335915	-0.59999734	No	
+row_16	TNFRSF1A	TNF receptor superfamily member 1A [Source:HGNC Symbol;Acc:HGNC:11916]	9445	-0.027142565697431564	-0.6175792	No	
+row_17	CSF3	colony stimulating factor 3 [Source:HGNC Symbol;Acc:HGNC:2438]	10786	-0.05159029737114906	-0.70993614	No	
+row_18	TNF	tumor necrosis factor [Source:HGNC Symbol;Acc:HGNC:11892]	11021	-0.058159176260232925	-0.7155785	Yes	
+row_19	CCL5	C-C motif chemokine ligand 5 [Source:HGNC Symbol;Acc:HGNC:10632]	11071	-0.05923938751220703	-0.7067201	Yes	
+row_20	IL18	interleukin 18 [Source:HGNC Symbol;Acc:HGNC:5986]	11190	-0.06276790052652359	-0.7024314	Yes	
+row_21	STAT3	signal transducer and activator of transcription 3 [Source:HGNC Symbol;Acc:HGNC:11364]	11297	-0.06614701449871063	-0.6964961	Yes	
+row_22	TNFRSF1B	TNF receptor superfamily member 1B [Source:HGNC Symbol;Acc:HGNC:11917]	11325	-0.06686174124479294	-0.68431455	Yes	
+row_23	TYK2	tyrosine kinase 2 [Source:HGNC Symbol;Acc:HGNC:12440]	11659	-0.07878414541482925	-0.6931933	Yes	
+row_24	IL10RA	interleukin 10 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:5964]	11884	-0.09050530940294266	-0.6911636	Yes	
+row_25	IL1R1	interleukin 1 receptor type 1 [Source:HGNC Symbol;Acc:HGNC:5993]	12140	-0.10566437244415283	-0.68829113	Yes	
+row_26	PTAFR	platelet activating factor receptor [Source:HGNC Symbol;Acc:HGNC:9582]	12325	-0.12207187712192535	-0.67644155	Yes	
+row_27	CCL2	C-C motif chemokine ligand 2 [Source:HGNC Symbol;Acc:HGNC:10618]	12406	-0.12948407232761383	-0.65498847	Yes	
+row_28	CXCL10	C-X-C motif chemokine ligand 10 [Source:HGNC Symbol;Acc:HGNC:10637]	12520	-0.14857573807239532	-0.6320079	Yes	
+row_29	TIMP1	TIMP metallopeptidase inhibitor 1 [Source:HGNC Symbol;Acc:HGNC:11820]	12584	-0.16168604791164398	-0.60237354	Yes	
+row_30	CD80	CD80 molecule [Source:HGNC Symbol;Acc:HGNC:1700]	12715	-0.1980533003807068	-0.57014877	Yes	
+row_31	IL6	interleukin 6 [Source:HGNC Symbol;Acc:HGNC:6018]	12724	-0.20062781870365143	-0.52796406	Yes	
+row_32	IL1A	interleukin 1 alpha [Source:HGNC Symbol;Acc:HGNC:5991]	12756	-0.2119717001914978	-0.48513344	Yes	
+row_33	IL1B	interleukin 1 beta [Source:HGNC Symbol;Acc:HGNC:5992]	12764	-0.21404220163822174	-0.4400098	Yes	
+row_34	PTGS2	prostaglandin-endoperoxide synthase 2 [Source:HGNC Symbol;Acc:HGNC:9605]	12853	-0.2554838955402374	-0.3922931	Yes	
+row_35	IL1RN	interleukin 1 receptor antagonist [Source:HGNC Symbol;Acc:HGNC:6000]	12860	-0.26117926836013794	-0.33703616	Yes	
+row_36	CCR2	C-C motif chemokine receptor 2 [Source:HGNC Symbol;Acc:HGNC:1603]	12886	-0.2790291905403137	-0.2794367	Yes	
+row_37	IL1R2	interleukin 1 receptor type 2 [Source:HGNC Symbol;Acc:HGNC:5994]	12895	-0.28895801305770874	-0.21840774	Yes	
+row_38	CCL22	C-C motif chemokine ligand 22 [Source:HGNC Symbol;Acc:HGNC:10621]	12897	-0.2907109260559082	-0.15646483	Yes	
+row_39	ICAM1	intercellular adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:5344]	12903	-0.29843735694885254	-0.09318213	Yes	
+row_40	CCR1	C-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:1602]	12971	-0.47293591499328613	0.0025454797	Yes	

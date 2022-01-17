@@ -1,0 +1,23 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CDK6	cyclin dependent kinase 6 [Source:HGNC Symbol;Acc:HGNC:1777]	418	0.10876916348934174	0.030842772	No	
+row_1	RB1	RB transcriptional corepressor 1 [Source:HGNC Symbol;Acc:HGNC:9884]	438	0.10639232397079468	0.091040514	No	
+row_2	E2F1	E2F transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:3113]	808	0.07524114847183228	0.10622582	No	
+row_3	CCNH	cyclin H [Source:HGNC Symbol;Acc:HGNC:1594]	834	0.07432635873556137	0.14737713	No	
+row_4	CDK2	cyclin dependent kinase 2 [Source:HGNC Symbol;Acc:HGNC:1771]	2698	0.029754294082522392	0.021126308	No	
+row_5	CDK1	cyclin dependent kinase 1 [Source:HGNC Symbol;Acc:HGNC:1722]	5441	1.4802794612478465E-4	-0.18998717	No	
+row_6	CCNB1	cyclin B1 [Source:HGNC Symbol;Acc:HGNC:1579]	6277	0.0	-0.25430205	No	
+row_7	CDKN2A	cyclin dependent kinase inhibitor 2A [Source:HGNC Symbol;Acc:HGNC:1787]	7002	-0.0028024998027831316	-0.30844304	No	
+row_8	CDC25A	cell division cycle 25A [Source:HGNC Symbol;Acc:HGNC:1725]	7085	-0.0037076009903103113	-0.3126102	No	
+row_9	RBL1	RB transcriptional corepressor like 1 [Source:HGNC Symbol;Acc:HGNC:9893]	8005	-0.011091078631579876	-0.3769671	No	
+row_10	CDK4	cyclin dependent kinase 4 [Source:HGNC Symbol;Acc:HGNC:1773]	8086	-0.011840417049825191	-0.37626672	No	
+row_11	CDKN2C	cyclin dependent kinase inhibitor 2C [Source:HGNC Symbol;Acc:HGNC:1789]	8227	-0.013114580884575844	-0.3794493	No	
+row_12	CCNE1	cyclin E1 [Source:HGNC Symbol;Acc:HGNC:1589]	8537	-0.01610361970961094	-0.39391658	No	
+row_13	CDKN1B	cyclin dependent kinase inhibitor 1B [Source:HGNC Symbol;Acc:HGNC:1785]	9718	-0.03145192191004753	-0.46657625	No	
+row_14	CDK7	cyclin dependent kinase 7 [Source:HGNC Symbol;Acc:HGNC:1778]	10698	-0.04916037619113922	-0.513491	No	
+row_15	CDKN2B	cyclin dependent kinase inhibitor 2B [Source:HGNC Symbol;Acc:HGNC:1788]	11375	-0.06815973669290543	-0.5260561	Yes	
+row_16	TFDP1	transcription factor Dp-1 [Source:HGNC Symbol;Acc:HGNC:11749]	11615	-0.0766107514500618	-0.50006396	Yes	
+row_17	CDKN2D	cyclin dependent kinase inhibitor 2D [Source:HGNC Symbol;Acc:HGNC:1790]	12411	-0.12983521819114685	-0.48604998	Yes	
+row_18	CCND3	cyclin D3 [Source:HGNC Symbol;Acc:HGNC:1585]	12438	-0.1333678811788559	-0.41075733	Yes	
+row_19	CCND2	cyclin D2 [Source:HGNC Symbol;Acc:HGNC:1583]	12762	-0.21375566720962524	-0.3117509	Yes	
+row_20	CCND1	cyclin D1 [Source:HGNC Symbol;Acc:HGNC:1582]	12835	-0.24032123386859894	-0.17801498	Yes	
+row_21	CDKN1A	cyclin dependent kinase inhibitor 1A [Source:HGNC Symbol;Acc:HGNC:1784]	12930	-0.32947996258735657	0.005699605	Yes	

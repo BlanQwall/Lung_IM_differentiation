@@ -1,0 +1,24 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SLCO2B1	solute carrier organic anion transporter family member 2B1 [Source:HGNC Symbol;Acc:HGNC:10962]	25	0.4964974820613861	0.29431236	Yes	
+row_1	BLVRB	biliverdin reductase B [Source:HGNC Symbol;Acc:HGNC:1063]	37	0.4189615845680237	0.5434409	Yes	
+row_2	HMOX2	heme oxygenase 2 [Source:HGNC Symbol;Acc:HGNC:5014]	254	0.14114463329315186	0.6110172	Yes	
+row_3	HMOX1	heme oxygenase 1 [Source:HGNC Symbol;Acc:HGNC:5013]	270	0.1366354078054428	0.69138604	Yes	
+row_4	BLVRA	biliverdin reductase A [Source:HGNC Symbol;Acc:HGNC:1062]	508	0.09828142076730728	0.7317702	Yes	
+row_5	ALAD	aminolevulinate dehydratase [Source:HGNC Symbol;Acc:HGNC:395]	1085	0.06458742916584015	0.72593755	Yes	
+row_6	FLVCR1	FLVCR heme transporter 1 [Source:HGNC Symbol;Acc:HGNC:24682]	1253	0.0591607540845871	0.7483722	Yes	
+row_7	ALAS1	5'-aminolevulinate synthase 1 [Source:HGNC Symbol;Acc:HGNC:396]	1358	0.05558527261018753	0.7735264	Yes	
+row_8	FABP1	fatty acid binding protein 1 [Source:HGNC Symbol;Acc:HGNC:3555]	4115	0.012711658142507076	0.5688169	No	
+row_9	UROD	uroporphyrinogen decarboxylase [Source:HGNC Symbol;Acc:HGNC:12591]	4916	0.006530728191137314	0.5110897	No	
+row_10	ALAS2	5'-aminolevulinate synthase 2 [Source:HGNC Symbol;Acc:HGNC:397]	5475	0.0	0.4681071	No	
+row_11	UGT1A4	UDP glucuronosyltransferase family 1 member A4 [Source:HGNC Symbol;Acc:HGNC:12536]	6672	0.0	0.37597954	No	
+row_12	ABCC2	ATP binding cassette subfamily C member 2 [Source:HGNC Symbol;Acc:HGNC:53]	6766	0.0	0.36881578	No	
+row_13	FECH	ferrochelatase [Source:HGNC Symbol;Acc:HGNC:3647]	7105	-0.004030078649520874	0.3451843	No	
+row_14	GSTA1	glutathione S-transferase alpha 1 [Source:HGNC Symbol;Acc:HGNC:4626]	7667	-0.007782931439578533	0.30661437	No	
+row_15	COX10	cytochrome c oxidase assembly factor heme A:farnesyltransferase COX10 [Source:HGNC Symbol;Acc:HGNC:2260]	7712	-0.008122988976538181	0.30807167	No	
+row_16	PPOX	protoporphyrinogen oxidase [Source:HGNC Symbol;Acc:HGNC:9280]	7731	-0.008325493894517422	0.3116526	No	
+row_17	ABCC1	ATP binding cassette subfamily C member 1 [Source:HGNC Symbol;Acc:HGNC:51]	7923	-0.010159299708902836	0.30300152	No	
+row_18	HMBS	hydroxymethylbilane synthase [Source:HGNC Symbol;Acc:HGNC:4982]	8076	-0.011757373809814453	0.2983081	No	
+row_19	ABCG2	ATP binding cassette subfamily G member 2 (Junior blood group) [Source:HGNC Symbol;Acc:HGNC:74]	8607	-0.01702098734676838	0.26763803	No	
+row_20	UROS	uroporphyrinogen III synthase [Source:HGNC Symbol;Acc:HGNC:12592]	9310	-0.025080684572458267	0.22852768	No	
+row_21	CPOX	coproporphyrinogen oxidase [Source:HGNC Symbol;Acc:HGNC:2321]	10071	-0.037732575088739395	0.19249845	No	
+row_22	COX15	cytochrome c oxidase assembly homolog COX15 [Source:HGNC Symbol;Acc:HGNC:2263]	10947	-0.05589943751692772	0.15845014	No	

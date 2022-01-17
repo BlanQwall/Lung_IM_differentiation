@@ -1,0 +1,41 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.447999	Yes	
+row_1	ABCA1	ATP binding cassette subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:29]	53	0.3633791506290436	0.551596	Yes	
+row_2	MYLIP	myosin regulatory light chain interacting protein [Source:HGNC Symbol;Acc:HGNC:21155]	392	0.1123090535402298	0.5587125	Yes	
+row_3	APOC1	apolipoprotein C1 [Source:HGNC Symbol;Acc:HGNC:607]	611	0.08827267587184906	0.567982	Yes	
+row_4	EEPD1	endonuclease/exonuclease/phosphatase family domain containing 1 [Source:HGNC Symbol;Acc:HGNC:22223]	839	0.07413482666015625	0.57237977	Yes	
+row_5	NR1H3	nuclear receptor subfamily 1 group H member 3 [Source:HGNC Symbol;Acc:HGNC:7966]	880	0.07222681492567062	0.59063715	Yes	
+row_6	HDAC3	histone deacetylase 3 [Source:HGNC Symbol;Acc:HGNC:4854]	889	0.07191456854343414	0.6112704	Yes	
+row_7	RXRA	retinoid X receptor alpha [Source:HGNC Symbol;Acc:HGNC:10477]	940	0.06981553882360458	0.62804395	Yes	
+row_8	GPS2	G protein pathway suppressor 2 [Source:HGNC Symbol;Acc:HGNC:4550]	1185	0.06113503873348236	0.6272891	No	
+row_9	AGO1	argonaute RISC component 1 [Source:HGNC Symbol;Acc:HGNC:3262]	1567	0.05026652291417122	0.6127558	No	
+row_10	TBL1X	transducin beta like 1 X-linked [Source:HGNC Symbol;Acc:HGNC:11585]	2304	0.03546449542045593	0.5664671	No	
+row_11	ANGPTL3	angiopoietin like 3 [Source:HGNC Symbol;Acc:HGNC:491]	2397	0.034091610461473465	0.56944495	No	
+row_12	RXRB	retinoid X receptor beta [Source:HGNC Symbol;Acc:HGNC:10478]	2549	0.03179867938160896	0.5671945	No	
+row_13	APOC4	apolipoprotein C4 [Source:HGNC Symbol;Acc:HGNC:611]	2552	0.03176446259021759	0.5764265	No	
+row_14	NCOA1	nuclear receptor coactivator 1 [Source:HGNC Symbol;Acc:HGNC:7668]	3161	0.023378528654575348	0.5364392	No	
+row_15	TNRC6B	trinucleotide repeat containing adaptor 6B [Source:HGNC Symbol;Acc:HGNC:29190]	3169	0.023294441401958466	0.54278266	No	
+row_16	APOD	apolipoprotein D [Source:HGNC Symbol;Acc:HGNC:612]	3187	0.023087386041879654	0.54829365	No	
+row_17	AGO3	argonaute RISC catalytic component 3 [Source:HGNC Symbol;Acc:HGNC:18421]	3198	0.022961869835853577	0.5543074	No	
+row_18	NRIP1	nuclear receptor interacting protein 1 [Source:HGNC Symbol;Acc:HGNC:8001]	3504	0.019157715141773224	0.53644353	No	
+row_19	TNRC6A	trinucleotide repeat containing adaptor 6A [Source:HGNC Symbol;Acc:HGNC:11969]	4070	0.013218455016613007	0.49677065	No	
+row_20	KDM3A	lysine demethylase 3A [Source:HGNC Symbol;Acc:HGNC:20815]	4410	0.010142877697944641	0.47362047	No	
+row_21	EP300	E1A binding protein p300 [Source:HGNC Symbol;Acc:HGNC:3373]	4642	0.008573985658586025	0.45833686	No	
+row_22	ARL4C	ADP ribosylation factor like GTPase 4C [Source:HGNC Symbol;Acc:HGNC:698]	5395	7.737186388112605E-4	0.40056315	No	
+row_23	TNRC6C	trinucleotide repeat containing adaptor 6C [Source:HGNC Symbol;Acc:HGNC:29318]	5433	2.50198325375095E-4	0.39778325	No	
+row_24	APOC2	apolipoprotein C2 [Source:HGNC Symbol;Acc:HGNC:609]	5533	0.0	0.39014733	No	
+row_25	AGO2	argonaute RISC catalytic component 2 [Source:HGNC Symbol;Acc:HGNC:3263]	6858	-0.0011746656382456422	0.28837332	No	
+row_26	NCOR2	nuclear receptor corepressor 2 [Source:HGNC Symbol;Acc:HGNC:7673]	6914	-0.0018557243747636676	0.2846795	No	
+row_27	AGO4	argonaute RISC component 4 [Source:HGNC Symbol;Acc:HGNC:18424]	7263	-0.005611784756183624	0.25949624	No	
+row_28	NCOR1	nuclear receptor corepressor 1 [Source:HGNC Symbol;Acc:HGNC:7672]	8090	-0.011882802471518517	0.19929755	No	
+row_29	SREBF1	sterol regulatory element binding transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:11289]	8219	-0.013050982728600502	0.19328131	No	
+row_30	PLTP	phospholipid transfer protein [Source:HGNC Symbol;Acc:HGNC:9093]	8752	-0.018570953980088234	0.15773536	No	
+row_31	KDM1A	lysine demethylase 1A [Source:HGNC Symbol;Acc:HGNC:29079]	8969	-0.021038629114627838	0.14729191	No	
+row_32	NR1H2	nuclear receptor subfamily 1 group H member 2 [Source:HGNC Symbol;Acc:HGNC:7965]	9501	-0.028030525892972946	0.114618346	No	
+row_33	KDM1B	lysine demethylase 1B [Source:HGNC Symbol;Acc:HGNC:21577]	9915	-0.034830521792173386	0.09305557	No	
+row_34	MOV10	Mov10 RISC complex RNA helicase [Source:HGNC Symbol;Acc:HGNC:7200]	10200	-0.03974313661456108	0.0828943	No	
+row_35	SCD	stearoyl-CoA desaturase [Source:HGNC Symbol;Acc:HGNC:10571]	11519	-0.07322715222835541	0.0028741828	No	
+row_36	KDM4A	lysine demethylase 4A [Source:HGNC Symbol;Acc:HGNC:22978]	11572	-0.075151726603508	0.02107028	No	
+row_37	FASN	fatty acid synthase [Source:HGNC Symbol;Acc:HGNC:3594]	11670	-0.07913991808891296	0.03697398	No	
+row_38	ABCG1	ATP binding cassette subfamily G member 1 [Source:HGNC Symbol;Acc:HGNC:73]	11989	-0.09680236130952835	0.041050937	No	
+row_39	TBL1XR1	TBL1X receptor 1 [Source:HGNC Symbol;Acc:HGNC:29529]	12367	-0.12575356662273407	0.049132094	No	

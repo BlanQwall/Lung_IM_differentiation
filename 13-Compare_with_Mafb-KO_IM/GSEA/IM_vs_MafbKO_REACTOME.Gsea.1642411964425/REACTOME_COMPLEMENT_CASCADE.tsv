@@ -1,0 +1,39 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.26963758	Yes	
+row_1	C1QA	complement C1q A chain [Source:HGNC Symbol;Acc:HGNC:1241]	1	2.0969398021698	0.5098785	Yes	
+row_2	C1QB	complement C1q B chain [Source:HGNC Symbol;Acc:HGNC:1242]	2	1.8567914962768555	0.7226063	Yes	
+row_3	CD81	CD81 molecule [Source:HGNC Symbol;Acc:HGNC:1701]	9	0.7495124936103821	0.8080133	Yes	
+row_4	C3AR1	complement C3a receptor 1 [Source:HGNC Symbol;Acc:HGNC:1319]	31	0.44128063321113586	0.85695016	Yes	
+row_5	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	165	0.1757270097732544	0.86682594	Yes	
+row_6	C5AR2	complement C5a receptor 2 [Source:HGNC Symbol;Acc:HGNC:4527]	274	0.13636645674705505	0.8741203	Yes	
+row_7	C6	complement C6 [Source:HGNC Symbol;Acc:HGNC:1339]	334	0.12277914583683014	0.8836368	Yes	
+row_8	CD55	CD55 molecule (Cromer blood group) [Source:HGNC Symbol;Acc:HGNC:2665]	620	0.08747071772813797	0.8716792	No	
+row_9	C2	complement C2 [Source:HGNC Symbol;Acc:HGNC:1248]	1341	0.05607956647872925	0.8225785	No	
+row_10	CFHR3	complement factor H related 3 [Source:HGNC Symbol;Acc:HGNC:16980]	2806	0.028259648010134697	0.71291417	No	
+row_11	CD46	CD46 molecule [Source:HGNC Symbol;Acc:HGNC:6953]	4000	0.014033026993274689	0.6225191	No	
+row_12	C9	complement C9 [Source:HGNC Symbol;Acc:HGNC:1358]	4600	0.008899486623704433	0.57734454	No	
+row_13	CFH	complement factor H [Source:HGNC Symbol;Acc:HGNC:4883]	4790	0.007603941950947046	0.56364024	No	
+row_14	C1R	complement C1r [Source:HGNC Symbol;Acc:HGNC:1246]	4887	0.006749752908945084	0.5570101	No	
+row_15	C1S	complement C1s [Source:HGNC Symbol;Acc:HGNC:1247]	5478	0.0	0.51151	No	
+row_16	CFD	complement factor D [Source:HGNC Symbol;Acc:HGNC:2771]	5516	0.0	0.50865656	No	
+row_17	CR2	complement C3d receptor 2 [Source:HGNC Symbol;Acc:HGNC:2336]	5527	0.0	0.5078854	No	
+row_18	IGLC3	immunoglobulin lambda constant 3 (Kern-Oz+ marker) [Source:HGNC Symbol;Acc:HGNC:5857]	5750	0.0	0.490765	No	
+row_19	CPN1	carboxypeptidase N subunit 1 [Source:HGNC Symbol;Acc:HGNC:2312]	5924	0.0	0.47742346	No	
+row_20	VTN	vitronectin [Source:HGNC Symbol;Acc:HGNC:12724]	6293	0.0	0.44904372	No	
+row_21	FCN1	ficolin 1 [Source:HGNC Symbol;Acc:HGNC:3623]	6386	0.0	0.4419488	No	
+row_22	MASP2	MBL associated serine protease 2 [Source:HGNC Symbol;Acc:HGNC:6902]	6428	0.0	0.43878692	No	
+row_23	ELANE	"elastase, neutrophil expressed [Source:HGNC Symbol;Acc:HGNC:3309]"	6449	0.0	0.43724453	No	
+row_24	SERPING1	serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228]	6821	-5.82645065151155E-4	0.4087002	No	
+row_25	GZMM	granzyme M [Source:HGNC Symbol;Acc:HGNC:4712]	7452	-0.006650211289525032	0.36087722	No	
+row_26	C4B	complement C4B (Chido blood group) [Source:HGNC Symbol;Acc:HGNC:1324]	7586	-0.00731950718909502	0.351459	No	
+row_27	COLEC11	collectin subfamily member 11 [Source:HGNC Symbol;Acc:HGNC:17213]	7610	-0.007427619770169258	0.35053623	No	
+row_28	CD19	CD19 molecule [Source:HGNC Symbol;Acc:HGNC:1633]	7781	-0.008824245072901249	0.338437	No	
+row_29	C5	complement C5 [Source:HGNC Symbol;Acc:HGNC:1331]	7804	-0.009119182825088501	0.33778515	No	
+row_30	C7	complement C7 [Source:HGNC Symbol;Acc:HGNC:1346]	7826	-0.009294732473790646	0.33723053	No	
+row_31	MASP1	MBL associated serine protease 1 [Source:HGNC Symbol;Acc:HGNC:6901]	8042	-0.011426664888858795	0.3219591	No	
+row_32	C8G	complement C8 gamma chain [Source:HGNC Symbol;Acc:HGNC:1354]	8108	-0.011976873502135277	0.31831852	No	
+row_33	CFB	complement factor B [Source:HGNC Symbol;Acc:HGNC:1037]	8467	-0.015354761853814125	0.29246914	No	
+row_34	CD59	CD59 molecule (CD59 blood group) [Source:HGNC Symbol;Acc:HGNC:1689]	8885	-0.020081916823983192	0.2626113	No	
+row_35	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	9641	-0.03015626221895218	0.20784152	No	
+row_36	PROS1	protein S [Source:HGNC Symbol;Acc:HGNC:9456]	10640	-0.047711096704006195	0.13634305	No	
+row_37	CFP	complement factor properdin [Source:HGNC Symbol;Acc:HGNC:8864]	12955	-0.4005380868911743	0.003778654	No	

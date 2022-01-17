@@ -1,0 +1,16 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DNM1	dynamin 1 [Source:HGNC Symbol;Acc:HGNC:2972]	5714	0.0	-0.43987682	No	
+row_1	PLCB1	phospholipase C beta 1 [Source:HGNC Symbol;Acc:HGNC:15917]	6581	0.0	-0.5065435	No	
+row_2	HRAS	"HRas proto-oncogene, GTPase [Source:HGNC Symbol;Acc:HGNC:5173]"	6794	-2.7504327590577304E-4	-0.5225002	No	
+row_3	KCNA2	potassium voltage-gated channel subfamily A member 2 [Source:HGNC Symbol;Acc:HGNC:6220]	7373	-0.0062344856560230255	-0.55875564	No	
+row_4	MAPK1	mitogen-activated protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:6871]	7744	-0.008489864878356457	-0.5760178	No	
+row_5	RAF1	"Raf-1 proto-oncogene, serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:9829]"	8265	-0.013472210615873337	-0.5982419	No	
+row_6	KCNA3	potassium voltage-gated channel subfamily A member 3 [Source:HGNC Symbol;Acc:HGNC:6221]	8506	-0.015781307592988014	-0.59585905	No	
+row_7	HCK	"HCK proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:4840]"	9390	-0.026218555867671967	-0.6291805	Yes	
+row_8	ARRB1	arrestin beta 1 [Source:HGNC Symbol;Acc:HGNC:711]	9840	-0.03343142196536064	-0.6195582	Yes	
+row_9	MAPK3	mitogen-activated protein kinase 3 [Source:HGNC Symbol;Acc:HGNC:6877]	10065	-0.03760147839784622	-0.5871032	Yes	
+row_10	GRK2	G protein-coupled receptor kinase 2 [Source:HGNC Symbol;Acc:HGNC:289]	10549	-0.045755960047245026	-0.5638085	Yes	
+row_11	MAP2K1	mitogen-activated protein kinase kinase 1 [Source:HGNC Symbol;Acc:HGNC:6840]	10967	-0.05661008879542351	-0.5210868	Yes	
+row_12	MAP2K2	mitogen-activated protein kinase kinase 2 [Source:HGNC Symbol;Acc:HGNC:6842]	11909	-0.09205619245767593	-0.47185355	Yes	
+row_13	GNAS	GNAS complex locus [Source:HGNC Symbol;Acc:HGNC:4392]	12674	-0.18636642396450043	-0.28434163	Yes	
+row_14	FGR	"FGR proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:3697]"	12823	-0.23429033160209656	0.013933913	Yes	

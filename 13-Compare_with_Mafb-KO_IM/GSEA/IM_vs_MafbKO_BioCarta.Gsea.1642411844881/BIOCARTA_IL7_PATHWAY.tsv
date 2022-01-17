@@ -1,0 +1,17 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	JAK1	Janus kinase 1 [Source:HGNC Symbol;Acc:HGNC:6190]	2074	0.04024578630924225	-0.11045785	No	
+row_1	CREBBP	CREB binding protein [Source:HGNC Symbol;Acc:HGNC:2348]	4012	0.013851161114871502	-0.24264574	No	
+row_2	STAT5B	signal transducer and activator of transcription 5B [Source:HGNC Symbol;Acc:HGNC:11367]	4025	0.013680209405720234	-0.22684036	No	
+row_3	EP300	E1A binding protein p300 [Source:HGNC Symbol;Acc:HGNC:3373]	4642	0.008573985658586025	-0.26378015	No	
+row_4	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	-0.44261804	No	
+row_5	LCK	"LCK proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:6524]"	7794	-0.009030701592564583	-0.4916254	No	
+row_6	BCL2	BCL2 apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:990]	8099	-0.011922881938517094	-0.5004496	No	
+row_7	PIK3CG	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma [Source:HGNC Symbol;Acc:HGNC:8978]"	8401	-0.014708640053868294	-0.50563616	No	
+row_8	JAK3	Janus kinase 3 [Source:HGNC Symbol;Acc:HGNC:6193]	8562	-0.01637383922934532	-0.49793103	No	
+row_9	PTK2B	protein tyrosine kinase 2 beta [Source:HGNC Symbol;Acc:HGNC:9612]	10268	-0.04082530736923218	-0.57927155	Yes	
+row_10	STAT5A	signal transducer and activator of transcription 5A [Source:HGNC Symbol;Acc:HGNC:11366]	10316	-0.04171755909919739	-0.5318745	Yes	
+row_11	IL7	interleukin 7 [Source:HGNC Symbol;Acc:HGNC:6023]	11173	-0.06236706301569939	-0.52150905	Yes	
+row_12	PIK3CA	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:8975]"	11555	-0.07466260343790054	-0.45953828	Yes	
+row_13	NMI	N-myc and STAT interactor [Source:HGNC Symbol;Acc:HGNC:7854]	11800	-0.08568309247493744	-0.37354335	Yes	
+row_14	IL7R	interleukin 7 receptor [Source:HGNC Symbol;Acc:HGNC:6024]	12655	-0.1797756552696228	-0.2194475	Yes	
+row_15	FYN	"FYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:4037]"	12726	-0.20136046409606934	0.021402735	Yes	

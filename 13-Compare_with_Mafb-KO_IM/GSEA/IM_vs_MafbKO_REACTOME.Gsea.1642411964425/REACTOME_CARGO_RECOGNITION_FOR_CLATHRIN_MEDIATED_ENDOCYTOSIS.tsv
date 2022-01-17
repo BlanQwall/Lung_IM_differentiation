@@ -1,0 +1,86 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DAB2	DAB adaptor protein 2 [Source:HGNC Symbol;Acc:HGNC:2662]	77	0.29839760065078735	0.04414976	Yes	
+row_1	UBC	ubiquitin C [Source:HGNC Symbol;Acc:HGNC:12468]	80	0.29216277599334717	0.09305747	Yes	
+row_2	CLTC	clathrin heavy chain [Source:HGNC Symbol;Acc:HGNC:2092]	89	0.2674228250980377	0.13734624	Yes	
+row_3	TF	transferrin [Source:HGNC Symbol;Acc:HGNC:11740]	96	0.2543249726295471	0.17959028	Yes	
+row_4	ARRB2	arrestin beta 2 [Source:HGNC Symbol;Acc:HGNC:712]	116	0.23158100247383118	0.2170088	Yes	
+row_5	ITSN1	intersectin 1 [Source:HGNC Symbol;Acc:HGNC:6183]	118	0.22629505395889282	0.25493282	Yes	
+row_6	HBEGF	heparin binding EGF like growth factor [Source:HGNC Symbol;Acc:HGNC:3059]	228	0.14651067554950714	0.27109963	Yes	
+row_7	TFRC	transferrin receptor [Source:HGNC Symbol;Acc:HGNC:11763]	262	0.13906192779541016	0.29189792	Yes	
+row_8	CD4	CD4 molecule [Source:HGNC Symbol;Acc:HGNC:1678]	276	0.13608597218990326	0.3137445	Yes	
+row_9	CLTA	clathrin light chain A [Source:HGNC Symbol;Acc:HGNC:2090]	286	0.1345980316400528	0.33565074	Yes	
+row_10	REPS2	RALBP1 associated Eps domain containing 2 [Source:HGNC Symbol;Acc:HGNC:9963]	292	0.13369157910346985	0.3577144	Yes	
+row_11	STON2	stonin 2 [Source:HGNC Symbol;Acc:HGNC:30652]	333	0.12317164987325668	0.3753025	Yes	
+row_12	UBB	ubiquitin B [Source:HGNC Symbol;Acc:HGNC:12463]	356	0.1191491186618805	0.39360824	Yes	
+row_13	ADRB2	adrenoceptor beta 2 [Source:HGNC Symbol;Acc:HGNC:286]	384	0.11317936331033707	0.41052452	Yes	
+row_14	AP2M1	adaptor related protein complex 2 subunit mu 1 [Source:HGNC Symbol;Acc:HGNC:564]	477	0.1017652153968811	0.42049307	Yes	
+row_15	AP2S1	adaptor related protein complex 2 subunit sigma 1 [Source:HGNC Symbol;Acc:HGNC:565]	575	0.09257934242486954	0.42853206	Yes	
+row_16	COPS8	COP9 signalosome subunit 8 [Source:HGNC Symbol;Acc:HGNC:24335]	615	0.08800739794969559	0.44029245	Yes	
+row_17	SH3GL1	"SH3 domain containing GRB2 like 1, endophilin A2 [Source:HGNC Symbol;Acc:HGNC:10830]"	706	0.0805092379450798	0.4468463	Yes	
+row_18	UBQLN2	ubiquilin 2 [Source:HGNC Symbol;Acc:HGNC:12509]	735	0.07915320992469788	0.45797122	Yes	
+row_19	HGS	hepatocyte growth factor-regulated tyrosine kinase substrate [Source:HGNC Symbol;Acc:HGNC:4897]	869	0.0725109875202179	0.4598538	Yes	
+row_20	STAM	signal transducing adaptor molecule [Source:HGNC Symbol;Acc:HGNC:11357]	898	0.07130178809165955	0.46966022	Yes	
+row_21	CBL	Cbl proto-oncogene [Source:HGNC Symbol;Acc:HGNC:1541]	922	0.07034878432750702	0.47969362	Yes	
+row_22	VAMP8	vesicle associated membrane protein 8 [Source:HGNC Symbol;Acc:HGNC:12647]	997	0.06760358065366745	0.48531863	Yes	
+row_23	SLC2A8	solute carrier family 2 member 8 [Source:HGNC Symbol;Acc:HGNC:13812]	1021	0.06677955389022827	0.49475265	Yes	
+row_24	LDLRAP1	low density lipoprotein receptor adaptor protein 1 [Source:HGNC Symbol;Acc:HGNC:18640]	1099	0.0641816109418869	0.49957082	Yes	
+row_25	AP2A2	adaptor related protein complex 2 subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:562]	1102	0.06413561850786209	0.51018625	Yes	
+row_26	FCHO2	FCH and mu domain containing endocytic adaptor 2 [Source:HGNC Symbol;Acc:HGNC:25180]	1306	0.05731693655252457	0.5040993	No	
+row_27	SH3KBP1	SH3 domain containing kinase binding protein 1 [Source:HGNC Symbol;Acc:HGNC:13867]	1543	0.050906889140605927	0.4943818	No	
+row_28	VAMP3	vesicle associated membrane protein 3 [Source:HGNC Symbol;Acc:HGNC:12644]	1894	0.043361417949199677	0.47457364	No	
+row_29	TOR1B	torsin family 1 member B [Source:HGNC Symbol;Acc:HGNC:11995]	2517	0.0322117954492569	0.4318405	No	
+row_30	GRK3	G protein-coupled receptor kinase 3 [Source:HGNC Symbol;Acc:HGNC:290]	3176	0.02325006201863289	0.38481605	No	
+row_31	EPS15	epidermal growth factor receptor pathway substrate 15 [Source:HGNC Symbol;Acc:HGNC:3419]	3356	0.021236784756183624	0.37452784	No	
+row_32	SYT11	synaptotagmin 11 [Source:HGNC Symbol;Acc:HGNC:19239]	3654	0.017695017158985138	0.35451174	No	
+row_33	COPS7A	COP9 signalosome subunit 7A [Source:HGNC Symbol;Acc:HGNC:16758]	4092	0.01298047136515379	0.322868	No	
+row_34	DVL2	dishevelled segment polarity protein 2 [Source:HGNC Symbol;Acc:HGNC:3086]	4160	0.012234946712851524	0.31973684	No	
+row_35	EPS15L1	epidermal growth factor receptor pathway substrate 15 like 1 [Source:HGNC Symbol;Acc:HGNC:24634]	4393	0.01026859600096941	0.30350456	No	
+row_36	FCHO1	FCH and mu domain containing endocytic adaptor 1 [Source:HGNC Symbol;Acc:HGNC:29002]	4666	0.00848324690014124	0.2838765	No	
+row_37	TGFA	transforming growth factor alpha [Source:HGNC Symbol;Acc:HGNC:11765]	4751	0.007918897084891796	0.27870476	No	
+row_38	EPN2	epsin 2 [Source:HGNC Symbol;Acc:HGNC:18639]	4913	0.0065559688955545425	0.26734442	No	
+row_39	COPS3	COP9 signalosome subunit 3 [Source:HGNC Symbol;Acc:HGNC:2239]	5057	0.005114725790917873	0.2571352	No	
+row_40	STAM2	signal transducing adaptor molecule 2 [Source:HGNC Symbol;Acc:HGNC:11358]	5437	1.8287179409526289E-4	0.22783156	No	
+row_41	AGTR1	angiotensin II receptor type 1 [Source:HGNC Symbol;Acc:HGNC:336]	5457	0.0	0.22636096	No	
+row_42	EGF	epidermal growth factor [Source:HGNC Symbol;Acc:HGNC:3229]	5599	0.0	0.21544765	No	
+row_43	AVPR2	arginine vasopressin receptor 2 [Source:HGNC Symbol;Acc:HGNC:897]	6223	0.0	0.16722783	No	
+row_44	CD3G	CD3g molecule [Source:HGNC Symbol;Acc:HGNC:1675]	6722	0.0	0.12868294	No	
+row_45	CD3D	CD3d molecule [Source:HGNC Symbol;Acc:HGNC:1673]	6723	0.0	0.12868294	No	
+row_46	EGFR	epidermal growth factor receptor [Source:HGNC Symbol;Acc:HGNC:3236]	6817	-5.183421890251338E-4	0.12157185	No	
+row_47	COPS2	COP9 signalosome subunit 2 [Source:HGNC Symbol;Acc:HGNC:30747]	7086	-0.003716940525919199	0.10145299	No	
+row_48	AGFG1	ArfGAP with FG repeats 1 [Source:HGNC Symbol;Acc:HGNC:5175]	7164	-0.004810424521565437	0.09630105	No	
+row_49	COPS4	COP9 signalosome subunit 4 [Source:HGNC Symbol;Acc:HGNC:16702]	7298	-0.005869753193110228	0.08699263	No	
+row_50	NECAP1	NECAP endocytosis associated 1 [Source:HGNC Symbol;Acc:HGNC:24539]	7386	-0.006308440119028091	0.08131825	No	
+row_51	SGIP1	SH3GL interacting endocytic adaptor 1 [Source:HGNC Symbol;Acc:HGNC:25412]	7646	-0.007681887596845627	0.06256182	No	
+row_52	EREG	epiregulin [Source:HGNC Symbol;Acc:HGNC:3443]	7665	-0.007776376325637102	0.062474508	No	
+row_53	COPS6	COP9 signalosome subunit 6 [Source:HGNC Symbol;Acc:HGNC:21749]	7766	-0.00868282187730074	0.056192663	No	
+row_54	IGF2R	insulin like growth factor 2 receptor [Source:HGNC Symbol;Acc:HGNC:5467]	7968	-0.01069930475205183	0.042432107	No	
+row_55	VAMP2	vesicle associated membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:12643]	8247	-0.013298342935740948	0.023148254	No	
+row_56	AAK1	AP2 associated kinase 1 [Source:HGNC Symbol;Acc:HGNC:19679]	8568	-0.01644391193985939	0.0011418555	No	
+row_57	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	8578	-0.016633182764053345	0.0032384493	No	
+row_58	AP2A1	adaptor related protein complex 2 subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:561]	8624	-0.017211414873600006	0.002645767	No	
+row_59	NECAP2	NECAP endocytosis associated 2 [Source:HGNC Symbol;Acc:HGNC:25528]	8922	-0.020489510148763657	-0.016901074	No	
+row_60	M6PR	"mannose-6-phosphate receptor, cation dependent [Source:HGNC Symbol;Acc:HGNC:6752]"	8975	-0.021111365407705307	-0.017380638	No	
+row_61	ITSN2	intersectin 2 [Source:HGNC Symbol;Acc:HGNC:6184]	9377	-0.026080243289470673	-0.04403817	No	
+row_62	COPS5	COP9 signalosome subunit 5 [Source:HGNC Symbol;Acc:HGNC:2240]	9611	-0.029752356931567192	-0.05707595	No	
+row_63	NEDD8	NEDD8 ubiquitin like modifier [Source:HGNC Symbol;Acc:HGNC:7732]	9673	-0.0307378638535738	-0.056635544	No	
+row_64	UBQLN1	ubiquilin 1 [Source:HGNC Symbol;Acc:HGNC:12508]	9725	-0.03160427138209343	-0.05527565	No	
+row_65	ARRB1	arrestin beta 1 [Source:HGNC Symbol;Acc:HGNC:711]	9840	-0.03343142196536064	-0.058485083	No	
+row_66	COPS7B	COP9 signalosome subunit 7B [Source:HGNC Symbol;Acc:HGNC:16760]	10033	-0.036920420825481415	-0.06714577	No	
+row_67	FZD4	frizzled class receptor 4 [Source:HGNC Symbol;Acc:HGNC:4042]	10211	-0.03996257483959198	-0.074134596	No	
+row_68	PICALM	phosphatidylinositol binding clathrin assembly protein [Source:HGNC Symbol;Acc:HGNC:15514]	10214	-0.0399862639605999	-0.06757455	No	
+row_69	AP2B1	adaptor related protein complex 2 subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:563]	10494	-0.0446755476295948	-0.08166668	No	
+row_70	VAMP7	vesicle associated membrane protein 7 [Source:HGNC Symbol;Acc:HGNC:11486]	10515	-0.04511005058884621	-0.0756394	No	
+row_71	GRK2	G protein-coupled receptor kinase 2 [Source:HGNC Symbol;Acc:HGNC:289]	10549	-0.045755960047245026	-0.070509836	No	
+row_72	SCARB2	scavenger receptor class B member 2 [Source:HGNC Symbol;Acc:HGNC:1665]	10581	-0.046456437557935715	-0.06510785	No	
+row_73	GRB2	growth factor receptor bound protein 2 [Source:HGNC Symbol;Acc:HGNC:4566]	10774	-0.05123435705900192	-0.07136481	No	
+row_74	RPS27A	ribosomal protein S27a [Source:HGNC Symbol;Acc:HGNC:10417]	10791	-0.051807016134262085	-0.063903324	No	
+row_75	REPS1	RALBP1 associated Eps domain containing 1 [Source:HGNC Symbol;Acc:HGNC:15578]	10795	-0.0518973134458065	-0.055420473	No	
+row_76	VAMP4	vesicle associated membrane protein 4 [Source:HGNC Symbol;Acc:HGNC:12645]	11506	-0.0727650597691536	-0.098154694	No	
+row_77	GPS1	G protein pathway suppressor 1 [Source:HGNC Symbol;Acc:HGNC:4549]	11538	-0.07411838322877884	-0.088107474	No	
+row_78	EPN1	epsin 1 [Source:HGNC Symbol;Acc:HGNC:21604]	11776	-0.08435140550136566	-0.09228611	No	
+row_79	CLTB	clathrin light chain B [Source:HGNC Symbol;Acc:HGNC:2091]	11997	-0.09722195565700531	-0.09298762	No	
+row_80	TOR1A	torsin family 1 member A [Source:HGNC Symbol;Acc:HGNC:3098]	12377	-0.1265365034341812	-0.10107288	No	
+row_81	TGOLN2	trans-golgi network protein 2 [Source:HGNC Symbol;Acc:HGNC:15450]	12410	-0.129704549908638	-0.08176854	No	
+row_82	IL7R	interleukin 7 receptor [Source:HGNC Symbol;Acc:HGNC:6024]	12655	-0.1797756552696228	-0.07046451	No	
+row_83	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	12802	-0.2263742983341217	-0.04375008	No	
+row_84	AREG	amphiregulin [Source:HGNC Symbol;Acc:HGNC:651]	12940	-0.35316988825798035	0.004953552	No	

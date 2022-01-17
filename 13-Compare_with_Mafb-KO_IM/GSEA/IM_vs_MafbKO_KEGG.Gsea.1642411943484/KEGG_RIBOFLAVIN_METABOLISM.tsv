@@ -1,0 +1,16 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ACP5	"acid phosphatase 5, tartrate resistant [Source:HGNC Symbol;Acc:HGNC:124]"	140	0.20022930204868317	0.29423457	Yes	
+row_1	ACP2	"acid phosphatase 2, lysosomal [Source:HGNC Symbol;Acc:HGNC:123]"	263	0.13901329040527344	0.49660367	Yes	
+row_2	PHPT1	phosphohistidine phosphatase 1 [Source:HGNC Symbol;Acc:HGNC:30033]	687	0.08192171901464462	0.5888327	Yes	
+row_3	MTMR6	myotubularin related protein 6 [Source:HGNC Symbol;Acc:HGNC:7453]	1589	0.049816541373729706	0.59535784	Yes	
+row_4	FLAD1	flavin adenine dinucleotide synthetase 1 [Source:HGNC Symbol;Acc:HGNC:24671]	1708	0.04717260226607323	0.6581326	Yes	
+row_5	ENPP1	ectonucleotide pyrophosphatase/phosphodiesterase 1 [Source:HGNC Symbol;Acc:HGNC:3356]	3513	0.01905406266450882	0.5482819	No	
+row_6	ACP6	"acid phosphatase 6, lysophosphatidic [Source:HGNC Symbol;Acc:HGNC:29609]"	4252	0.011398190632462502	0.508832	No	
+row_7	TYR	tyrosinase [Source:HGNC Symbol;Acc:HGNC:12442]	4377	0.010409264825284481	0.51514274	No	
+row_8	ACP4	acid phosphatase 4 [Source:HGNC Symbol;Acc:HGNC:14376]	5652	0.0	0.4170673	No	
+row_9	MTMR7	myotubularin related protein 7 [Source:HGNC Symbol;Acc:HGNC:7454]	6548	0.0	0.34816813	No	
+row_10	MTMR1	myotubularin related protein 1 [Source:HGNC Symbol;Acc:HGNC:7449]	7017	-0.0030029634945094585	0.31671488	No	
+row_11	ACP3	acid phosphatase 3 [Source:HGNC Symbol;Acc:HGNC:125]	7177	-0.00498437462374568	0.31206748	No	
+row_12	MTMR2	myotubularin related protein 2 [Source:HGNC Symbol;Acc:HGNC:7450]	8851	-0.019752241671085358	0.21336496	No	
+row_13	ACP1	acid phosphatase 1 [Source:HGNC Symbol;Acc:HGNC:122]	9853	-0.033627573400735855	0.18753104	No	
+row_14	RFK	riboflavin kinase [Source:HGNC Symbol;Acc:HGNC:30324]	9986	-0.03608126565814018	0.23233248	No	

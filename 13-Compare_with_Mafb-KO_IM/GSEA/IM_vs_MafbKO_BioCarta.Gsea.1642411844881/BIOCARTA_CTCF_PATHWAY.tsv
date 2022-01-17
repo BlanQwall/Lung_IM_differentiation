@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CD79B	CD79b molecule [Source:HGNC Symbol;Acc:HGNC:1699]	94	0.2580857276916504	0.17957853	Yes	
+row_1	TGFBR2	transforming growth factor beta receptor 2 [Source:HGNC Symbol;Acc:HGNC:11773]	247	0.14245785772800446	0.27098975	Yes	
+row_2	MYC	"MYC proto-oncogene, bHLH transcription factor [Source:HGNC Symbol;Acc:HGNC:7553]"	497	0.0993838980793953	0.32374862	Yes	
+row_3	SMAD1	SMAD family member 1 [Source:HGNC Symbol;Acc:HGNC:6767]	561	0.09323567152023315	0.38638565	Yes	
+row_4	TP53	tumor protein p53 [Source:HGNC Symbol;Acc:HGNC:11998]	619	0.08749835938215256	0.44533184	Yes	
+row_5	CTCF	CCCTC-binding factor [Source:HGNC Symbol;Acc:HGNC:13723]	864	0.07278028130531311	0.47921842	Yes	
+row_6	SMAD5	SMAD family member 5 [Source:HGNC Symbol;Acc:HGNC:6771]	923	0.0703374370932579	0.52566534	Yes	
+row_7	TGFBR1	transforming growth factor beta receptor 1 [Source:HGNC Symbol;Acc:HGNC:11772]	1385	0.054813284426927567	0.52982944	Yes	
+row_8	TGFB3	transforming growth factor beta 3 [Source:HGNC Symbol;Acc:HGNC:11769]	1681	0.04768864065408707	0.5416242	Yes	
+row_9	TGFB2	transforming growth factor beta 2 [Source:HGNC Symbol;Acc:HGNC:11768]	1898	0.043260253965854645	0.5562992	Yes	
+row_10	PTEN	phosphatase and tensin homolog [Source:HGNC Symbol;Acc:HGNC:9588]	4685	0.008334853686392307	0.34771115	No	
+row_11	TGFBR3	transforming growth factor beta receptor 3 [Source:HGNC Symbol;Acc:HGNC:11774]	4975	0.005996509455144405	0.3297885	No	
+row_12	RPS6KB1	ribosomal protein S6 kinase B1 [Source:HGNC Symbol;Acc:HGNC:10436]	6944	-0.0021951578091830015	0.17977132	No	
+row_13	CDKN2A	cyclin dependent kinase inhibitor 2A [Source:HGNC Symbol;Acc:HGNC:1787]	7002	-0.0028024998027831316	0.17740892	No	
+row_14	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	0.17878386	No	
+row_15	PIK3CG	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit gamma [Source:HGNC Symbol;Acc:HGNC:8978]"	8401	-0.014708640053868294	0.082582496	No	
+row_16	PPP2CA	protein phosphatase 2 catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9299]	8593	-0.016856933012604713	0.08007087	No	
+row_17	CD79A	CD79a molecule [Source:HGNC Symbol;Acc:HGNC:1698]	9052	-0.021951666101813316	0.060678635	No	
+row_18	CDKN1B	cyclin dependent kinase inhibitor 1B [Source:HGNC Symbol;Acc:HGNC:1785]	9718	-0.03145192191004753	0.032216936	No	
+row_19	MDM2	MDM2 proto-oncogene [Source:HGNC Symbol;Acc:HGNC:6973]	9995	-0.036249034106731415	0.03719459	No	
+row_20	MTOR	mechanistic target of rapamycin kinase [Source:HGNC Symbol;Acc:HGNC:3942]	10046	-0.037101637572050095	0.06019948	No	
+row_21	SMAD4	SMAD family member 4 [Source:HGNC Symbol;Acc:HGNC:6770]	11085	-0.059624653309583664	0.023396807	No	
+row_22	PIK3CA	"phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:8975]"	11555	-0.07466260343790054	0.041312914	No	
+row_23	TGFB1	transforming growth factor beta 1 [Source:HGNC Symbol;Acc:HGNC:11766]	11992	-0.09702695906162262	0.07796004	No	

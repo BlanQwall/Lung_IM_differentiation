@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.6746295	Yes	
+row_1	CREB3L3	cAMP responsive element binding protein 3 like 3 [Source:HGNC Symbol;Acc:HGNC:18855]	684	0.0821492075920105	0.65879333	No	
+row_2	LIPC	"lipase C, hepatic type [Source:HGNC Symbol;Acc:HGNC:6619]"	2055	0.040516577661037445	0.5712803	No	
+row_3	ANGPTL3	angiopoietin like 3 [Source:HGNC Symbol;Acc:HGNC:491]	2397	0.034091610461473465	0.56017846	No	
+row_4	LMF1	lipase maturation factor 1 [Source:HGNC Symbol;Acc:HGNC:14154]	2661	0.030177373439073563	0.55334395	No	
+row_5	MTTP	microsomal triglyceride transfer protein [Source:HGNC Symbol;Acc:HGNC:7467]	2771	0.02864738740026951	0.5576923	No	
+row_6	MBTPS2	"membrane bound transcription factor peptidase, site 2 [Source:HGNC Symbol;Acc:HGNC:15455]"	3049	0.02497861720621586	0.54746634	No	
+row_7	LIPG	"lipase G, endothelial type [Source:HGNC Symbol;Acc:HGNC:6623]"	3770	0.01638205721974373	0.49928904	No	
+row_8	ANGPTL4	angiopoietin like 4 [Source:HGNC Symbol;Acc:HGNC:16039]	4467	0.009804054163396358	0.45003402	No	
+row_9	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4778	0.007649634033441544	0.42955628	No	
+row_10	APOC2	apolipoprotein C2 [Source:HGNC Symbol;Acc:HGNC:609]	5533	0.0	0.37147138	No	
+row_11	PCSK5	proprotein convertase subtilisin/kexin type 5 [Source:HGNC Symbol;Acc:HGNC:8747]	5585	0.0	0.36754256	No	
+row_12	GPIHBP1	glycosylphosphatidylinositol anchored high density lipoprotein binding protein 1 [Source:HGNC Symbol;Acc:HGNC:24945]	5885	0.0	0.34450892	No	
+row_13	APOF	apolipoprotein F [Source:HGNC Symbol;Acc:HGNC:615]	6195	0.0	0.32070488	No	
+row_14	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.23265736	No	
+row_15	LMF2	lipase maturation factor 2 [Source:HGNC Symbol;Acc:HGNC:25096]	7769	-0.00869563315063715	0.20625103	No	
+row_16	LCAT	lecithin-cholesterol acyltransferase [Source:HGNC Symbol;Acc:HGNC:6522]	7941	-0.010452006943523884	0.19772802	No	
+row_17	CIDEC	cell death inducing DFFA like effector c [Source:HGNC Symbol;Acc:HGNC:24229]	8040	-0.011421484872698784	0.19525993	No	
+row_18	PLTP	phospholipid transfer protein [Source:HGNC Symbol;Acc:HGNC:9093]	8752	-0.018570953980088234	0.14874977	No	
+row_19	P4HB	prolyl 4-hydroxylase subunit beta [Source:HGNC Symbol;Acc:HGNC:8548]	9060	-0.02203592285513878	0.13490358	No	
+row_20	MBTPS1	"membrane bound transcription factor peptidase, site 1 [Source:HGNC Symbol;Acc:HGNC:15456]"	9588	-0.029451007023453712	0.107408516	No	
+row_21	LPL	lipoprotein lipase [Source:HGNC Symbol;Acc:HGNC:6677]	9806	-0.03288036212325096	0.10532022	No	
+row_22	ABCG1	ATP binding cassette subfamily G member 1 [Source:HGNC Symbol;Acc:HGNC:73]	11989	-0.09680236130952835	-0.019704314	No	
+row_23	FURIN	"furin, paired basic amino acid cleaving enzyme [Source:HGNC Symbol;Acc:HGNC:8568]"	12785	-0.21986660361289978	0.016870815	No	

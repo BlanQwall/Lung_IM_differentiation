@@ -1,0 +1,32 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ABCA1	ATP binding cassette subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:29]	53	0.3633791506290436	0.20018308	Yes	
+row_1	ABCC3	ATP binding cassette subfamily C member 3 [Source:HGNC Symbol;Acc:HGNC:54]	87	0.2824684679508209	0.35642496	Yes	
+row_2	ABCC5	ATP binding cassette subfamily C member 5 [Source:HGNC Symbol;Acc:HGNC:56]	176	0.16914498805999756	0.4447245	Yes	
+row_3	ABCD4	ATP binding cassette subfamily D member 4 [Source:HGNC Symbol;Acc:HGNC:68]	775	0.0768161341547966	0.44181335	Yes	
+row_4	ABCB4	ATP binding cassette subfamily B member 4 [Source:HGNC Symbol;Acc:HGNC:45]	1056	0.06562814116477966	0.4571236	Yes	
+row_5	ABCA9	ATP binding cassette subfamily A member 9 [Source:HGNC Symbol;Acc:HGNC:39]	1197	0.060808420181274414	0.48051533	Yes	
+row_6	ABCC10	ATP binding cassette subfamily C member 10 [Source:HGNC Symbol;Acc:HGNC:52]	1289	0.05794680118560791	0.50607526	Yes	
+row_7	ABCA8	ATP binding cassette subfamily A member 8 [Source:HGNC Symbol;Acc:HGNC:38]	1757	0.04588219150900841	0.49587217	No	
+row_8	ABCB6	ATP binding cassette subfamily B member 6 (Langereis blood group) [Source:HGNC Symbol;Acc:HGNC:47]	2186	0.0379766970872879	0.48423114	No	
+row_9	ABCB9	ATP binding cassette subfamily B member 9 [Source:HGNC Symbol;Acc:HGNC:50]	2435	0.03355327621102333	0.48397747	No	
+row_10	ABCB1	ATP binding cassette subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:40]	2974	0.025763902813196182	0.45699272	No	
+row_11	ABCC9	ATP binding cassette subfamily C member 9 [Source:HGNC Symbol;Acc:HGNC:60]	4416	0.010107475332915783	0.3516062	No	
+row_12	ABCA3	ATP binding cassette subfamily A member 3 [Source:HGNC Symbol;Acc:HGNC:33]	4535	0.009351445361971855	0.34776786	No	
+row_13	ABCD3	ATP binding cassette subfamily D member 3 [Source:HGNC Symbol;Acc:HGNC:67]	4948	0.0062557305209338665	0.3195286	No	
+row_14	ABCD2	ATP binding cassette subfamily D member 2 [Source:HGNC Symbol;Acc:HGNC:66]	5007	0.0056816148571670055	0.31825194	No	
+row_15	ABCA13	ATP binding cassette subfamily A member 13 [Source:HGNC Symbol;Acc:HGNC:14638]	5601	0.0	0.27254516	No	
+row_16	ABCC2	ATP binding cassette subfamily C member 2 [Source:HGNC Symbol;Acc:HGNC:53]	6766	0.0	0.18282725	No	
+row_17	ABCA2	ATP binding cassette subfamily A member 2 [Source:HGNC Symbol;Acc:HGNC:32]	7220	-0.005234321113675833	0.15085366	No	
+row_18	ABCB7	ATP binding cassette subfamily B member 7 [Source:HGNC Symbol;Acc:HGNC:48]	7840	-0.009404286742210388	0.108429335	No	
+row_19	ABCB10	ATP binding cassette subfamily B member 10 [Source:HGNC Symbol;Acc:HGNC:41]	7879	-0.009765704162418842	0.11099005	No	
+row_20	ABCC1	ATP binding cassette subfamily C member 1 [Source:HGNC Symbol;Acc:HGNC:51]	7923	-0.010159299708902836	0.11338662	No	
+row_21	TAP2	"transporter 2, ATP binding cassette subfamily B member [Source:HGNC Symbol;Acc:HGNC:44]"	8143	-0.012268928810954094	0.10340351	No	
+row_22	ABCG2	ATP binding cassette subfamily G member 2 (Junior blood group) [Source:HGNC Symbol;Acc:HGNC:74]	8607	-0.01702098734676838	0.07728484	No	
+row_23	ABCA5	ATP binding cassette subfamily A member 5 [Source:HGNC Symbol;Acc:HGNC:35]	8666	-0.017692210152745247	0.082759775	No	
+row_24	ABCD1	ATP binding cassette subfamily D member 1 [Source:HGNC Symbol;Acc:HGNC:61]	9916	-0.034862685948610306	0.006087853	No	
+row_25	ABCB8	ATP binding cassette subfamily B member 8 [Source:HGNC Symbol;Acc:HGNC:49]	10492	-0.044627852737903595	-0.013144674	No	
+row_26	ABCA7	ATP binding cassette subfamily A member 7 [Source:HGNC Symbol;Acc:HGNC:37]	11037	-0.0585797093808651	-0.022144977	No	
+row_27	ABCC4	ATP binding cassette subfamily C member 4 [Source:HGNC Symbol;Acc:HGNC:55]	11295	-0.06610342860221863	-0.004794769	No	
+row_28	ABCA6	ATP binding cassette subfamily A member 6 [Source:HGNC Symbol;Acc:HGNC:36]	11341	-0.06730987876653671	0.029574	No	
+row_29	TAP1	"transporter 1, ATP binding cassette subfamily B member [Source:HGNC Symbol;Acc:HGNC:43]"	11655	-0.07833566516637802	0.04948405	No	
+row_30	ABCG1	ATP binding cassette subfamily G member 1 [Source:HGNC Symbol;Acc:HGNC:73]	11989	-0.09680236130952835	0.07823334	No	

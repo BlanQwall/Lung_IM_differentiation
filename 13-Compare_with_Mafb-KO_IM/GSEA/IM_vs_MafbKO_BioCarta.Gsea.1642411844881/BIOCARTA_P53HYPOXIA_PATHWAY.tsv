@@ -1,0 +1,22 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DNAJB1	DnaJ heat shock protein family (Hsp40) member B1 [Source:HGNC Symbol;Acc:HGNC:5270]	484	0.10100170969963074	0.038579486	No	
+row_1	TP53	tumor protein p53 [Source:HGNC Symbol;Acc:HGNC:11998]	619	0.08749835938215256	0.093973696	No	
+row_2	HSPA1A	heat shock protein family A (Hsp70) member 1A [Source:HGNC Symbol;Acc:HGNC:5232]	2090	0.03991163522005081	0.010732595	No	
+row_3	MAPK8	mitogen-activated protein kinase 8 [Source:HGNC Symbol;Acc:HGNC:6881]	2927	0.026505250483751297	-0.03374789	No	
+row_4	ABCB1	ATP binding cassette subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:40]	2974	0.025763902813196182	-0.017941035	No	
+row_5	TAF1	TATA-box binding protein associated factor 1 [Source:HGNC Symbol;Acc:HGNC:11535]	3344	0.021337909623980522	-0.030335044	No	
+row_6	ATM	ATM serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:795]	4011	0.013858234509825706	-0.07122088	No	
+row_7	HIC1	HIC ZBTB transcriptional repressor 1 [Source:HGNC Symbol;Acc:HGNC:4909]	4233	0.011618517339229584	-0.07951588	No	
+row_8	EP300	E1A binding protein p300 [Source:HGNC Symbol;Acc:HGNC:3373]	4642	0.008573985658586025	-0.10449978	No	
+row_9	NQO1	NAD(P)H quinone dehydrogenase 1 [Source:HGNC Symbol;Acc:HGNC:2874]	4649	0.008552158251404762	-0.09853889	No	
+row_10	IGFBP3	insulin like growth factor binding protein 3 [Source:HGNC Symbol;Acc:HGNC:5472]	5773	0.0	-0.18502995	No	
+row_11	FHL2	four and a half LIM domains 2 [Source:HGNC Symbol;Acc:HGNC:3703]	6554	0.0	-0.2451039	No	
+row_12	GADD45A	growth arrest and DNA damage inducible alpha [Source:HGNC Symbol;Acc:HGNC:4095]	9150	-0.023052195087075233	-0.42765218	No	
+row_13	HSP90AA1	heat shock protein 90 alpha family class A member 1 [Source:HGNC Symbol;Acc:HGNC:5253]	9608	-0.029727747663855553	-0.44052267	No	
+row_14	MDM2	MDM2 proto-oncogene [Source:HGNC Symbol;Acc:HGNC:6973]	9995	-0.036249034106731415	-0.44302717	No	
+row_15	RPA1	replication protein A1 [Source:HGNC Symbol;Acc:HGNC:10289]	11467	-0.07145529240369797	-0.5026548	Yes	
+row_16	NFKBIB	NFKB inhibitor beta [Source:HGNC Symbol;Acc:HGNC:7798]	11683	-0.07957268506288528	-0.4594515	Yes	
+row_17	HIF1A	hypoxia inducible factor 1 subunit alpha [Source:HGNC Symbol;Acc:HGNC:4910]	11845	-0.08755695074796677	-0.40609276	Yes	
+row_18	AKT1	AKT serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:391]	12320	-0.12146204710006714	-0.35137662	Yes	
+row_19	BAX	"BCL2 associated X, apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:959]"	12743	-0.20831263065338135	-0.22742742	Yes	
+row_20	CDKN1A	cyclin dependent kinase inhibitor 1A [Source:HGNC Symbol;Acc:HGNC:1784]	12930	-0.32947996258735657	0.0056992755	Yes	

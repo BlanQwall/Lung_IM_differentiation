@@ -1,0 +1,17 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RB1	RB transcriptional corepressor 1 [Source:HGNC Symbol;Acc:HGNC:9884]	438	0.10639232397079468	0.05020928	No	
+row_1	TP53	tumor protein p53 [Source:HGNC Symbol;Acc:HGNC:11998]	619	0.08749835938215256	0.10537657	No	
+row_2	E2F1	E2F transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:3113]	808	0.07524114847183228	0.15025856	No	
+row_3	CDK2	cyclin dependent kinase 2 [Source:HGNC Symbol;Acc:HGNC:1771]	2698	0.029754294082522392	0.028300198	No	
+row_4	ATM	ATM serine/threonine kinase [Source:HGNC Symbol;Acc:HGNC:795]	4011	0.013858234509825706	-0.061775945	No	
+row_5	PCNA	proliferating cell nuclear antigen [Source:HGNC Symbol;Acc:HGNC:8729]	4188	0.011954523622989655	-0.06589526	No	
+row_6	CDK4	cyclin dependent kinase 4 [Source:HGNC Symbol;Acc:HGNC:1773]	8086	-0.011840417049825191	-0.35657775	No	
+row_7	BCL2	BCL2 apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:990]	8099	-0.011922881938517094	-0.34809595	No	
+row_8	CCNE1	cyclin E1 [Source:HGNC Symbol;Acc:HGNC:1589]	8537	-0.01610361970961094	-0.36903608	No	
+row_9	TIMP3	TIMP metallopeptidase inhibitor 3 [Source:HGNC Symbol;Acc:HGNC:11822]	8777	-0.018896548077464104	-0.37252927	No	
+row_10	GADD45A	growth arrest and DNA damage inducible alpha [Source:HGNC Symbol;Acc:HGNC:4095]	9150	-0.023052195087075233	-0.38298362	No	
+row_11	MDM2	MDM2 proto-oncogene [Source:HGNC Symbol;Acc:HGNC:6973]	9995	-0.036249034106731415	-0.41936576	No	
+row_12	APAF1	apoptotic peptidase activating factor 1 [Source:HGNC Symbol;Acc:HGNC:576]	10593	-0.04675249382853508	-0.4284459	No	
+row_13	BAX	"BCL2 associated X, apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:959]"	12743	-0.20831263065338135	-0.42956123	Yes	
+row_14	CCND1	cyclin D1 [Source:HGNC Symbol;Acc:HGNC:1582]	12835	-0.24032123386859894	-0.24698402	Yes	
+row_15	CDKN1A	cyclin dependent kinase inhibitor 1A [Source:HGNC Symbol;Acc:HGNC:1784]	12930	-0.32947996258735657	0.005697213	Yes	

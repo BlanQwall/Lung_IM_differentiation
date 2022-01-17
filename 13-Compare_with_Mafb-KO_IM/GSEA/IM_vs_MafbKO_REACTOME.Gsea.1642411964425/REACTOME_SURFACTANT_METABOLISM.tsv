@@ -1,0 +1,23 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SFTPA1	surfactant protein A1 [Source:HGNC Symbol;Acc:HGNC:10798]	2271	0.036106787621974945	-0.15854059	No	
+row_1	SLC34A2	solute carrier family 34 member 2 [Source:HGNC Symbol;Acc:HGNC:11020]	4028	0.013609610497951508	-0.28762016	No	
+row_2	SFTPC	surfactant protein C [Source:HGNC Symbol;Acc:HGNC:10802]	4295	0.011088761501014233	-0.30307788	No	
+row_3	ABCA3	ATP binding cassette subfamily A member 3 [Source:HGNC Symbol;Acc:HGNC:33]	4535	0.009351445361971855	-0.31724414	No	
+row_4	GATA6	GATA binding protein 6 [Source:HGNC Symbol;Acc:HGNC:4174]	4629	0.008698469959199429	-0.32046115	No	
+row_5	P2RY2	purinergic receptor P2Y2 [Source:HGNC Symbol;Acc:HGNC:8541]	4753	0.007877031341195107	-0.3263615	No	
+row_6	SLC34A1	solute carrier family 34 member 1 [Source:HGNC Symbol;Acc:HGNC:11019]	5581	0.0	-0.39006022	No	
+row_7	SFTPD	surfactant protein D [Source:HGNC Symbol;Acc:HGNC:10803]	6004	0.0	-0.42256424	No	
+row_8	ADGRF5	adhesion G protein-coupled receptor F5 [Source:HGNC Symbol;Acc:HGNC:19030]	6016	0.0	-0.42341152	No	
+row_9	LMCD1	LIM and cysteine rich domains 1 [Source:HGNC Symbol;Acc:HGNC:6633]	6724	0.0	-0.47786734	No	
+row_10	TTF1	transcription termination factor 1 [Source:HGNC Symbol;Acc:HGNC:12397]	7494	-0.006904547102749348	-0.5339663	No	
+row_11	SFTPB	surfactant protein B [Source:HGNC Symbol;Acc:HGNC:10801]	7576	-0.007268606685101986	-0.5369077	No	
+row_12	CKAP4	cytoskeleton associated protein 4 [Source:HGNC Symbol;Acc:HGNC:16991]	8328	-0.01399222481995821	-0.5884048	No	
+row_13	ZDHHC2	zinc finger DHHC-type palmitoyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:18469]	8968	-0.02103348635137081	-0.6280808	No	
+row_14	CCDC59	coiled-coil domain containing 59 [Source:HGNC Symbol;Acc:HGNC:25005]	9096	-0.02235809527337551	-0.62771964	No	
+row_15	ADRA2A	adrenoceptor alpha 2A [Source:HGNC Symbol;Acc:HGNC:281]	9819	-0.033070750534534454	-0.66832775	No	
+row_16	ADORA2B	adenosine A2b receptor [Source:HGNC Symbol;Acc:HGNC:264]	9870	-0.03401486575603485	-0.6567475	No	
+row_17	ADORA2A	adenosine A2a receptor [Source:HGNC Symbol;Acc:HGNC:263]	11746	-0.0829341784119606	-0.7635426	Yes	
+row_18	CTSH	cathepsin H [Source:HGNC Symbol;Acc:HGNC:2535]	12809	-0.2276482731103897	-0.74206537	Yes	
+row_19	CSF2RB	colony stimulating factor 2 receptor subunit beta [Source:HGNC Symbol;Acc:HGNC:2436]	12830	-0.23847097158432007	-0.6354194	Yes	
+row_20	CSF2RA	colony stimulating factor 2 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:2435]	12850	-0.25371280312538147	-0.52178174	Yes	
+row_21	NAPSA	napsin A aspartic peptidase [Source:HGNC Symbol;Acc:HGNC:13395]	13004	-1.1761188507080078	3.317109E-8	Yes	

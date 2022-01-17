@@ -1,0 +1,31 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.5808928	Yes	
+row_1	AKR1B10	aldo-keto reductase family 1 member B10 [Source:HGNC Symbol;Acc:HGNC:382]	598	0.0895121619105339	0.5694049	No	
+row_2	SDC4	syndecan 4 [Source:HGNC Symbol;Acc:HGNC:10661]	938	0.06990689784288406	0.5700593	No	
+row_3	AGRN	agrin [Source:HGNC Symbol;Acc:HGNC:329]	2628	0.030745413154363632	0.4516646	No	
+row_4	RBP1	retinol binding protein 1 [Source:HGNC Symbol;Acc:HGNC:9919]	3054	0.024900857359170914	0.42844892	No	
+row_5	HSPG2	heparan sulfate proteoglycan 2 [Source:HGNC Symbol;Acc:HGNC:5273]	3590	0.01830567792057991	0.39422873	No	
+row_6	RDH11	retinol dehydrogenase 11 [Source:HGNC Symbol;Acc:HGNC:17964]	4349	0.010614834725856781	0.33987528	No	
+row_7	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4778	0.007649634033441544	0.30981937	No	
+row_8	VKORC1	vitamin K epoxide reductase complex subunit 1 [Source:HGNC Symbol;Acc:HGNC:23663]	4951	0.006246460601687431	0.29895616	No	
+row_9	APOC2	apolipoprotein C2 [Source:HGNC Symbol;Acc:HGNC:609]	5533	0.0	0.25417772	No	
+row_10	GPIHBP1	glycosylphosphatidylinositol anchored high density lipoprotein binding protein 1 [Source:HGNC Symbol;Acc:HGNC:24945]	5885	0.0	0.2271257	No	
+row_11	SDC2	syndecan 2 [Source:HGNC Symbol;Acc:HGNC:10659]	6194	0.0	0.20338774	No	
+row_12	LRAT	lecithin retinol acyltransferase [Source:HGNC Symbol;Acc:HGNC:6685]	6242	0.0	0.19976538	No	
+row_13	GPC4	glypican 4 [Source:HGNC Symbol;Acc:HGNC:4452]	6727	0.0	0.16246289	No	
+row_14	RETSAT	retinol saturase [Source:HGNC Symbol;Acc:HGNC:25991]	7098	-0.0038876666221767664	0.13543588	No	
+row_15	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.11655595	No	
+row_16	RBP4	retinol binding protein 4 [Source:HGNC Symbol;Acc:HGNC:9922]	7652	-0.007724667899310589	0.098243624	No	
+row_17	GPC3	glypican 3 [Source:HGNC Symbol;Acc:HGNC:4451]	8033	-0.011365734972059727	0.07331079	No	
+row_18	GPC1	glypican 1 [Source:HGNC Symbol;Acc:HGNC:4449]	8703	-0.018100528046488762	0.028684476	No	
+row_19	SDC1	syndecan 1 [Source:HGNC Symbol;Acc:HGNC:10658]	8837	-0.019576072692871094	0.025933662	No	
+row_20	UBIAD1	UbiA prenyltransferase domain containing 1 [Source:HGNC Symbol;Acc:HGNC:30791]	8845	-0.019708754494786263	0.03294466	No	
+row_21	LRP8	LDL receptor related protein 8 [Source:HGNC Symbol;Acc:HGNC:6700]	9363	-0.025844262912869453	0.002999836	No	
+row_22	BCO2	beta-carotene oxygenase 2 [Source:HGNC Symbol;Acc:HGNC:18503]	9528	-0.028403429314494133	0.001241605	No	
+row_23	LPL	lipoprotein lipase [Source:HGNC Symbol;Acc:HGNC:6677]	9806	-0.03288036212325096	-0.007510553	No	
+row_24	LRP12	LDL receptor related protein 12 [Source:HGNC Symbol;Acc:HGNC:31708]	10108	-0.03834789618849754	-0.016017789	No	
+row_25	VKORC1L1	vitamin K epoxide reductase complex subunit 1 like 1 [Source:HGNC Symbol;Acc:HGNC:21492]	10291	-0.041178714483976364	-0.014269043	No	
+row_26	LRP10	LDL receptor related protein 10 [Source:HGNC Symbol;Acc:HGNC:14553]	10994	-0.0574069581925869	-0.046380267	No	
+row_27	LRP1	LDL receptor related protein 1 [Source:HGNC Symbol;Acc:HGNC:6692]	12436	-0.13323365151882172	-0.10639769	No	
+row_28	SDC3	syndecan 3 [Source:HGNC Symbol;Acc:HGNC:10660]	12594	-0.16521620750427246	-0.055202927	No	
+row_29	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	12802	-0.2263742983341217	0.015568162	No	

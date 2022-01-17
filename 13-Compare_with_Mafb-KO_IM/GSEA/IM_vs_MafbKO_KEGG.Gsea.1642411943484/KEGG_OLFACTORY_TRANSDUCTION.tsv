@@ -1,0 +1,35 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CALM2	calmodulin 2 [Source:HGNC Symbol;Acc:HGNC:1445]	76	0.2996978759765625	0.2519559	Yes	
+row_1	ARRB2	arrestin beta 2 [Source:HGNC Symbol;Acc:HGNC:712]	116	0.23158100247383118	0.44816676	Yes	
+row_2	PRKACA	protein kinase cAMP-activated catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9380]	1879	0.04361598938703537	0.34984595	No	
+row_3	OR7D4	olfactory receptor family 7 subfamily D member 4 [Source:HGNC Symbol;Acc:HGNC:8380]	2445	0.03336609899997711	0.3349904	No	
+row_4	GRK3	G protein-coupled receptor kinase 3 [Source:HGNC Symbol;Acc:HGNC:290]	3176	0.02325006201863289	0.2987119	No	
+row_5	GNAL	G protein subunit alpha L [Source:HGNC Symbol;Acc:HGNC:4388]	3698	0.017181741073727608	0.27332595	No	
+row_6	CAMK2G	calcium/calmodulin dependent protein kinase II gamma [Source:HGNC Symbol;Acc:HGNC:1463]	3724	0.016924144700169563	0.28595757	No	
+row_7	ADCY3	adenylate cyclase 3 [Source:HGNC Symbol;Acc:HGNC:234]	4024	0.013688463717699051	0.27468166	No	
+row_8	OR5B21	olfactory receptor family 5 subfamily B member 21 [Source:HGNC Symbol;Acc:HGNC:19616]	4405	0.010167456232011318	0.2541321	No	
+row_9	CAMK2D	calcium/calmodulin dependent protein kinase II delta [Source:HGNC Symbol;Acc:HGNC:1462]	4613	0.008830107748508453	0.24576952	No	
+row_10	PRKG2	protein kinase cGMP-dependent 2 [Source:HGNC Symbol;Acc:HGNC:9416]	4646	0.008560534566640854	0.25066668	No	
+row_11	GUCA1B	guanylate cyclase activator 1B [Source:HGNC Symbol;Acc:HGNC:4679]	4847	0.007118925917893648	0.24137172	No	
+row_12	CAMK2A	calcium/calmodulin dependent protein kinase II alpha [Source:HGNC Symbol;Acc:HGNC:1460]	5218	0.0031604552641510963	0.21556532	No	
+row_13	PRKG1	protein kinase cGMP-dependent 1 [Source:HGNC Symbol;Acc:HGNC:9414]	6222	0.0	0.13823898	No	
+row_14	OR2K2	olfactory receptor family 2 subfamily K member 2 [Source:HGNC Symbol;Acc:HGNC:8264]	6245	0.0	0.13654289	No	
+row_15	OR2T5	olfactory receptor family 2 subfamily T member 5 [Source:HGNC Symbol;Acc:HGNC:15017]	6256	0.0	0.13577195	No	
+row_16	OR2Y1	olfactory receptor family 2 subfamily Y member 1 [Source:HGNC Symbol;Acc:HGNC:14837]	6259	0.0	0.13561775	No	
+row_17	PDE1C	phosphodiesterase 1C [Source:HGNC Symbol;Acc:HGNC:8776]	6304	0.0	0.13222557	No	
+row_18	OR5V1	olfactory receptor family 5 subfamily V member 1 [Source:HGNC Symbol;Acc:HGNC:13972]	6458	0.0	0.12043003	No	
+row_19	OR12D3	olfactory receptor family 12 subfamily D member 3 [Source:HGNC Symbol;Acc:HGNC:13963]	6491	0.0	0.117962986	No	
+row_20	OR8D1	olfactory receptor family 8 subfamily D member 1 [Source:HGNC Symbol;Acc:HGNC:8481]	6526	0.0	0.11534175	No	
+row_21	OR4A5	olfactory receptor family 4 subfamily A member 5 [Source:HGNC Symbol;Acc:HGNC:15162]	7069	-0.003543267957866192	0.07660433	No	
+row_22	OR5M3	olfactory receptor family 5 subfamily M member 3 [Source:HGNC Symbol;Acc:HGNC:14806]	7250	-0.00546413566917181	0.06742774	No	
+row_23	OR2Z1	olfactory receptor family 2 subfamily Z member 1 [Source:HGNC Symbol;Acc:HGNC:15391]	7591	-0.007325181271880865	0.04751691	No	
+row_24	OR2AG1	olfactory receptor family 2 subfamily AG member 1 [Source:HGNC Symbol;Acc:HGNC:15142]	7622	-0.0075248898938298225	0.051677346	No	
+row_25	OR4D11	olfactory receptor family 4 subfamily D member 11 [Source:HGNC Symbol;Acc:HGNC:15174]	7732	-0.008366206660866737	0.05047101	No	
+row_26	OR2AG2	olfactory receptor family 2 subfamily AG member 2 [Source:HGNC Symbol;Acc:HGNC:15143]	8065	-0.011671403422951698	0.03491578	No	
+row_27	CAMK2B	calcium/calmodulin dependent protein kinase II beta [Source:HGNC Symbol;Acc:HGNC:1461]	8331	-0.013999378308653831	0.026528556	No	
+row_28	PRKACB	protein kinase cAMP-activated catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9381]	8489	-0.015575317665934563	0.0278233	No	
+row_29	OR5B3	olfactory receptor family 5 subfamily B member 3 [Source:HGNC Symbol;Acc:HGNC:8324]	8731	-0.01838943175971508	0.0250629	No	
+row_30	GUCA1A	guanylate cyclase activator 1A [Source:HGNC Symbol;Acc:HGNC:4678]	9323	-0.025300005450844765	0.001264052	No	
+row_31	CALM1	calmodulin 1 [Source:HGNC Symbol;Acc:HGNC:1442]	11759	-0.08367890864610672	-0.11447763	No	
+row_32	PRKX	protein kinase X-linked [Source:HGNC Symbol;Acc:HGNC:9441]	12229	-0.113486647605896	-0.053008318	No	
+row_33	CALM3	calmodulin 3 [Source:HGNC Symbol;Acc:HGNC:1449]	12424	-0.1309850811958313	0.044715162	No	

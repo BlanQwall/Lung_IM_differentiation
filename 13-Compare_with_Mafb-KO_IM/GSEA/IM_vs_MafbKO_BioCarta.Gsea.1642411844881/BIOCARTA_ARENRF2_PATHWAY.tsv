@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FXYD2	FXYD domain containing ion transport regulator 2 [Source:HGNC Symbol;Acc:HGNC:4026]	29	0.45909813046455383	0.19306019	Yes	
+row_1	FOS	"Fos proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:3796]"	38	0.4171111285686493	0.36987686	Yes	
+row_2	JUN	"Jun proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:6204]"	79	0.29534798860549927	0.4924332	Yes	
+row_3	HMOX2	heme oxygenase 2 [Source:HGNC Symbol;Acc:HGNC:5014]	254	0.14114463329315186	0.5390749	Yes	
+row_4	HMOX1	heme oxygenase 1 [Source:HGNC Symbol;Acc:HGNC:5013]	270	0.1366354078054428	0.59604245	Yes	
+row_5	PRKCB	protein kinase C beta [Source:HGNC Symbol;Acc:HGNC:9395]	309	0.1295367032289505	0.64821917	Yes	
+row_6	MAFG	MAF bZIP transcription factor G [Source:HGNC Symbol;Acc:HGNC:6781]	1236	0.059528280049562454	0.60223407	No	
+row_7	MAFK	MAF bZIP transcription factor K [Source:HGNC Symbol;Acc:HGNC:6782]	2423	0.03367948904633522	0.52523166	No	
+row_8	MAPK8	mitogen-activated protein kinase 8 [Source:HGNC Symbol;Acc:HGNC:6881]	2927	0.026505250483751297	0.49777257	No	
+row_9	MAPK14	mitogen-activated protein kinase 14 [Source:HGNC Symbol;Acc:HGNC:6876]	3333	0.021474266424775124	0.47571996	No	
+row_10	KEAP1	kelch like ECH associated protein 1 [Source:HGNC Symbol;Acc:HGNC:23177]	7026	-0.0030244190711528063	0.19270033	No	
+row_11	MAPK1	mitogen-activated protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:6871]	7744	-0.008489864878356457	0.14109848	No	
+row_12	CRYZ	crystallin zeta [Source:HGNC Symbol;Acc:HGNC:2419]	8717	-0.01827404834330082	0.074022144	No	
+row_13	CREB1	cAMP responsive element binding protein 1 [Source:HGNC Symbol;Acc:HGNC:2345]	8870	-0.019941003993153572	0.07079983	No	
+row_14	POR	cytochrome p450 oxidoreductase [Source:HGNC Symbol;Acc:HGNC:9208]	9451	-0.02720712125301361	0.037709843	No	
+row_15	PRKCA	protein kinase C alpha [Source:HGNC Symbol;Acc:HGNC:9393]	9872	-0.034052468836307526	0.019852722	No	
+row_16	AKR7A2	aldo-keto reductase family 7 member A2 [Source:HGNC Symbol;Acc:HGNC:389]	11957	-0.09512969106435776	-0.10016107	No	
+row_17	MAFF	MAF bZIP transcription factor F [Source:HGNC Symbol;Acc:HGNC:6780]	12672	-0.1847800463438034	-0.07654073	No	
+row_18	NFE2L2	"nuclear factor, erythroid 2 like 2 [Source:HGNC Symbol;Acc:HGNC:7782]"	12834	-0.23985262215137482	0.013090959	No	
