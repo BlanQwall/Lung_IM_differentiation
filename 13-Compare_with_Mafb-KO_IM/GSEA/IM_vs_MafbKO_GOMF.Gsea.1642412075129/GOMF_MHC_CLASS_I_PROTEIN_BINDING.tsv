@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TUBB	tubulin beta class I [Source:HGNC Symbol;Acc:HGNC:20778]	921	0.0703546404838562	-0.032242715	No	
+row_1	ABCB9	ATP binding cassette subfamily B member 9 [Source:HGNC Symbol;Acc:HGNC:50]	2435	0.03355327621102333	-0.13029304	No	
+row_2	DERL1	derlin 1 [Source:HGNC Symbol;Acc:HGNC:28454]	5049	0.005237977020442486	-0.3285998	No	
+row_3	CD8A	CD8a molecule [Source:HGNC Symbol;Acc:HGNC:1706]	6733	0.0	-0.45818096	No	
+row_4	TUBB4B	tubulin beta 4B class IVb [Source:HGNC Symbol;Acc:HGNC:20771]	7787	-0.008946322835981846	-0.53433865	No	
+row_5	TAP2	"transporter 2, ATP binding cassette subfamily B member [Source:HGNC Symbol;Acc:HGNC:44]"	8143	-0.012268928810954094	-0.5549282	No	
+row_6	ATP5F1A	ATP synthase F1 subunit alpha [Source:HGNC Symbol;Acc:HGNC:823]	11191	-0.06281189620494843	-0.7550062	Yes	
+row_7	TAP1	"transporter 1, ATP binding cassette subfamily B member [Source:HGNC Symbol;Acc:HGNC:43]"	11655	-0.07833566516637802	-0.747599	Yes	
+row_8	VCP	valosin containing protein [Source:HGNC Symbol;Acc:HGNC:12666]	11923	-0.09289675205945969	-0.71709776	Yes	
+row_9	TAPBP	TAP binding protein [Source:HGNC Symbol;Acc:HGNC:11566]	12045	-0.09932153671979904	-0.67182416	Yes	
+row_10	BCAP31	B cell receptor associated protein 31 [Source:HGNC Symbol;Acc:HGNC:16695]	12355	-0.12476620078086853	-0.62704027	Yes	
+row_11	HLA-E	"major histocompatibility complex, class I, E [Source:HGNC Symbol;Acc:HGNC:4962]"	12546	-0.15424029529094696	-0.55689436	Yes	
+row_12	ATP5F1B	ATP synthase F1 subunit beta [Source:HGNC Symbol;Acc:HGNC:830]	12609	-0.1687554270029068	-0.46891525	Yes	
+row_13	PILRB	paired immunoglobin like type 2 receptor beta [Source:HGNC Symbol;Acc:HGNC:18297]	12763	-0.21396082639694214	-0.36309648	Yes	
+row_14	KLRC4-KLRK1	KLRC4-KLRK1 readthrough [Source:HGNC Symbol;Acc:HGNC:48357]	12770	-0.21483057737350464	-0.24548149	Yes	
+row_15	CD244	CD244 molecule [Source:HGNC Symbol;Acc:HGNC:18171]	12792	-0.22214582562446594	-0.12500075	Yes	
+row_16	PILRA	paired immunoglobin like type 2 receptor alpha [Source:HGNC Symbol;Acc:HGNC:20396]	12854	-0.25698593258857727	0.011549327	Yes	

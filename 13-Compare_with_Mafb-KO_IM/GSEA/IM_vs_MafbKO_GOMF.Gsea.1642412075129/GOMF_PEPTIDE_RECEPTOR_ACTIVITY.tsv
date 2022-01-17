@@ -1,0 +1,65 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CX3CR1	C-X3-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:2558]	41	0.3976341784000397	0.06531943	No	
+row_1	CMKLR1	chemerin chemokine-like receptor 1 [Source:HGNC Symbol;Acc:HGNC:2121]	67	0.32166439294815063	0.11879036	No	
+row_2	CXCR4	C-X-C motif chemokine receptor 4 [Source:HGNC Symbol;Acc:HGNC:2561]	266	0.13882088661193848	0.12740035	No	
+row_3	EDNRB	endothelin receptor type B [Source:HGNC Symbol;Acc:HGNC:3180]	272	0.13646937906742096	0.15051918	No	
+row_4	FPR2	formyl peptide receptor 2 [Source:HGNC Symbol;Acc:HGNC:3827]	488	0.10080277174711227	0.15126736	No	
+row_5	NPR1	natriuretic peptide receptor 1 [Source:HGNC Symbol;Acc:HGNC:7943]	543	0.09494549036026001	0.16344778	No	
+row_6	CALCRL	calcitonin receptor like receptor [Source:HGNC Symbol;Acc:HGNC:16709]	973	0.06864172965288162	0.14212003	No	
+row_7	APLNR	apelin receptor [Source:HGNC Symbol;Acc:HGNC:339]	1041	0.06604327261447906	0.14831784	No	
+row_8	CXCR3	C-X-C motif chemokine receptor 3 [Source:HGNC Symbol;Acc:HGNC:4540]	2041	0.04086438938975334	0.07815973	No	
+row_9	FPR1	formyl peptide receptor 1 [Source:HGNC Symbol;Acc:HGNC:3826]	2319	0.03523446246981621	0.06282359	No	
+row_10	OGFR	opioid growth factor receptor [Source:HGNC Symbol;Acc:HGNC:15768]	3937	0.014746047556400299	-0.059588287	No	
+row_11	S1PR2	sphingosine-1-phosphate receptor 2 [Source:HGNC Symbol;Acc:HGNC:3169]	4275	0.01122406218200922	-0.08369634	No	
+row_12	RAMP2	receptor activity modifying protein 2 [Source:HGNC Symbol;Acc:HGNC:9844]	4483	0.009669464081525803	-0.098026566	No	
+row_13	LGR4	leucine rich repeat containing G protein-coupled receptor 4 [Source:HGNC Symbol;Acc:HGNC:13299]	4526	0.009412321262061596	-0.09965091	No	
+row_14	CCR9	C-C motif chemokine receptor 9 [Source:HGNC Symbol;Acc:HGNC:1610]	4530	0.009375924244523048	-0.09826784	No	
+row_15	PTH1R	parathyroid hormone 1 receptor [Source:HGNC Symbol;Acc:HGNC:9608]	4584	0.009026161395013332	-0.1008087	No	
+row_16	CCR5	C-C motif chemokine receptor 5 [Source:HGNC Symbol;Acc:HGNC:1606]	4661	0.008514276705682278	-0.105215035	No	
+row_17	INPP5K	inositol polyphosphate-5-phosphatase K [Source:HGNC Symbol;Acc:HGNC:33882]	4743	0.007983500137925148	-0.11009915	No	
+row_18	VIPR1	vasoactive intestinal peptide receptor 1 [Source:HGNC Symbol;Acc:HGNC:12694]	5045	0.005313818342983723	-0.13244332	No	
+row_19	AGTR1	angiotensin II receptor type 1 [Source:HGNC Symbol;Acc:HGNC:336]	5457	0.0	-0.16420284	No	
+row_20	MC1R	melanocortin 1 receptor [Source:HGNC Symbol;Acc:HGNC:6929]	5493	0.0	-0.16690743	No	
+row_21	MC5R	melanocortin 5 receptor [Source:HGNC Symbol;Acc:HGNC:6933]	5500	0.0	-0.16737106	No	
+row_22	GRPR	gastrin releasing peptide receptor [Source:HGNC Symbol;Acc:HGNC:4609]	5514	0.0	-0.16837563	No	
+row_23	XCR1	X-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:1625]	5540	0.0	-0.17030747	No	
+row_24	F2R	coagulation factor II thrombin receptor [Source:HGNC Symbol;Acc:HGNC:3537]	5611	0.0	-0.17571664	No	
+row_25	GAL	galanin and GMAP prepropeptide [Source:HGNC Symbol;Acc:HGNC:4114]	5661	0.0	-0.17950305	No	
+row_26	ACKR4	atypical chemokine receptor 4 [Source:HGNC Symbol;Acc:HGNC:1611]	5672	0.0	-0.18027578	No	
+row_27	ACKR3	atypical chemokine receptor 3 [Source:HGNC Symbol;Acc:HGNC:23692]	5673	0.0	-0.18027578	No	
+row_28	ACKR2	atypical chemokine receptor 2 [Source:HGNC Symbol;Acc:HGNC:1565]	5674	0.0	-0.18027578	No	
+row_29	GPR83	G protein-coupled receptor 83 [Source:HGNC Symbol;Acc:HGNC:4523]	5727	0.0	-0.18429403	No	
+row_30	SSTR2	somatostatin receptor 2 [Source:HGNC Symbol;Acc:HGNC:11331]	5752	0.0	-0.1861486	No	
+row_31	BDKRB1	bradykinin receptor B1 [Source:HGNC Symbol;Acc:HGNC:1029]	5805	0.0	-0.19016683	No	
+row_32	KISS1R	KISS1 receptor [Source:HGNC Symbol;Acc:HGNC:4510]	5868	0.0	-0.19495781	No	
+row_33	NPR3	natriuretic peptide receptor 3 [Source:HGNC Symbol;Acc:HGNC:7945]	5930	0.0	-0.1996715	No	
+row_34	CYSLTR2	cysteinyl leukotriene receptor 2 [Source:HGNC Symbol;Acc:HGNC:18274]	6030	0.0	-0.20732161	No	
+row_35	AVPR2	arginine vasopressin receptor 2 [Source:HGNC Symbol;Acc:HGNC:897]	6223	0.0	-0.22215818	No	
+row_36	GLP1R	glucagon like peptide 1 receptor [Source:HGNC Symbol;Acc:HGNC:4324]	6237	0.0	-0.22316274	No	
+row_37	PROKR1	prokineticin receptor 1 [Source:HGNC Symbol;Acc:HGNC:4524]	6251	0.0	-0.2241673	No	
+row_38	LTB4R2	leukotriene B4 receptor 2 [Source:HGNC Symbol;Acc:HGNC:19260]	6366	0.0	-0.23297651	No	
+row_39	CCR10	C-C motif chemokine receptor 10 [Source:HGNC Symbol;Acc:HGNC:4474]	6380	0.0	-0.23398107	No	
+row_40	OPRD1	opioid receptor delta 1 [Source:HGNC Symbol;Acc:HGNC:8153]	6472	0.0	-0.24101299	No	
+row_41	NPY1R	neuropeptide Y receptor Y1 [Source:HGNC Symbol;Acc:HGNC:7956]	6474	0.0	-0.24109025	No	
+row_42	EDNRA	endothelin receptor type A [Source:HGNC Symbol;Acc:HGNC:3179]	6601	0.0	-0.25082675	No	
+row_43	CCR3	C-C motif chemokine receptor 3 [Source:HGNC Symbol;Acc:HGNC:1604]	6725	0.0	-0.26033142	No	
+row_44	CXCR1	C-X-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:6026]	7507	-0.006959067191928625	-0.31948364	No	
+row_45	GUCY2C	guanylate cyclase 2C [Source:HGNC Symbol;Acc:HGNC:4688]	7517	-0.00700761703774333	-0.31897214	No	
+row_46	AGTRAP	angiotensin II receptor associated protein [Source:HGNC Symbol;Acc:HGNC:13539]	7854	-0.00952120590955019	-0.3432962	No	
+row_47	CXCR2	C-X-C motif chemokine receptor 2 [Source:HGNC Symbol;Acc:HGNC:6027]	7943	-0.010464360937476158	-0.34829393	No	
+row_48	CXCR5	C-X-C motif chemokine receptor 5 [Source:HGNC Symbol;Acc:HGNC:1060]	8262	-0.013443110510706902	-0.3705516	No	
+row_49	CRCP	CGRP receptor component [Source:HGNC Symbol;Acc:HGNC:17888]	11697	-0.08025219291448593	-0.6220873	No	
+row_50	OGFRL1	opioid growth factor receptor like 1 [Source:HGNC Symbol;Acc:HGNC:21378]	12039	-0.09878498315811157	-0.6314232	Yes	
+row_51	CCR7	C-C motif chemokine receptor 7 [Source:HGNC Symbol;Acc:HGNC:1608]	12116	-0.10427752882242203	-0.6193354	Yes	
+row_52	F2RL2	coagulation factor II thrombin receptor like 2 [Source:HGNC Symbol;Acc:HGNC:3539]	12149	-0.10660422593355179	-0.6034469	Yes	
+row_53	SIGMAR1	sigma non-opioid intracellular receptor 1 [Source:HGNC Symbol;Acc:HGNC:8157]	12647	-0.1775595247745514	-0.61126953	Yes	
+row_54	GPR84	G protein-coupled receptor 84 [Source:HGNC Symbol;Acc:HGNC:4535]	12683	-0.18871116638183594	-0.5814709	Yes	
+row_55	RAMP3	receptor activity modifying protein 3 [Source:HGNC Symbol;Acc:HGNC:9845]	12709	-0.19517754018306732	-0.5497858	Yes	
+row_56	RAMP1	receptor activity modifying protein 1 [Source:HGNC Symbol;Acc:HGNC:9843]	12728	-0.20184165239334106	-0.51641196	Yes	
+row_57	CYSLTR1	cysteinyl leukotriene receptor 1 [Source:HGNC Symbol;Acc:HGNC:17451]	12747	-0.20903094112873077	-0.48179984	Yes	
+row_58	GPR35	G protein-coupled receptor 35 [Source:HGNC Symbol;Acc:HGNC:4492]	12806	-0.2271086871623993	-0.447165	Yes	
+row_59	CCR2	C-C motif chemokine receptor 2 [Source:HGNC Symbol;Acc:HGNC:1603]	12886	-0.2790291905403137	-0.40521026	Yes	
+row_60	CCR1	C-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:1602]	12971	-0.47293591499328613	-0.3302438	Yes	
+row_61	CCR6	C-C motif chemokine receptor 6 [Source:HGNC Symbol;Acc:HGNC:1607]	12974	-0.4926130771636963	-0.24555172	Yes	
+row_62	CCRL2	C-C motif chemokine receptor like 2 [Source:HGNC Symbol;Acc:HGNC:1612]	12979	-0.5139885544776917	-0.15733254	Yes	
+row_63	LTB4R	leukotriene B4 receptor [Source:HGNC Symbol;Acc:HGNC:6713]	13002	-0.924228847026825	1.54599E-4	Yes	

@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MT-ATP6	mitochondrially encoded ATP synthase membrane subunit 6 [Source:HGNC Symbol;Acc:HGNC:7414]	1128	0.06316810101270676	-0.057591278	No	
+row_1	MT-ATP8	mitochondrially encoded ATP synthase membrane subunit 8 [Source:HGNC Symbol;Acc:HGNC:7415]	2831	0.02797485515475273	-0.17569222	No	
+row_2	DMAC2L	distal membrane arm assembly component 2 like [Source:HGNC Symbol;Acc:HGNC:18799]	4615	0.0088114645332098	-0.3089108	No	
+row_3	ATP5ME	ATP synthase membrane subunit e [Source:HGNC Symbol;Acc:HGNC:846]	9030	-0.021730594336986542	-0.63874555	No	
+row_4	ATP5F1A	ATP synthase F1 subunit alpha [Source:HGNC Symbol;Acc:HGNC:823]	11191	-0.06281189620494843	-0.77597207	No	
+row_5	ATP5MK	ATP synthase membrane subunit k [Source:HGNC Symbol;Acc:HGNC:30889]	11951	-0.09483212977647781	-0.7904753	Yes	
+row_6	ATP5MC3	ATP synthase membrane subunit c locus 3 [Source:HGNC Symbol;Acc:HGNC:843]	12057	-0.09992345422506332	-0.7522574	Yes	
+row_7	ATP5MF	ATP synthase membrane subunit f [Source:HGNC Symbol;Acc:HGNC:848]	12064	-0.10033129900693893	-0.7062268	Yes	
+row_8	ATP5MC2	ATP synthase membrane subunit c locus 2 [Source:HGNC Symbol;Acc:HGNC:842]	12065	-0.10035673528909683	-0.6597225	Yes	
+row_9	ATP5F1D	ATP synthase F1 subunit delta [Source:HGNC Symbol;Acc:HGNC:837]	12131	-0.10520777106285095	-0.6159756	Yes	
+row_10	ATP5PF	ATP synthase peripheral stalk subunit F6 [Source:HGNC Symbol;Acc:HGNC:847]	12150	-0.10683910548686981	-0.5678535	Yes	
+row_11	ATP5PB	ATP synthase peripheral stalk-membrane subunit b [Source:HGNC Symbol;Acc:HGNC:840]	12155	-0.10767567157745361	-0.5182656	Yes	
+row_12	ATP5F1C	ATP synthase F1 subunit gamma [Source:HGNC Symbol;Acc:HGNC:833]	12220	-0.1127607449889183	-0.47094175	Yes	
+row_13	ATP5MG	ATP synthase membrane subunit g [Source:HGNC Symbol;Acc:HGNC:14247]	12435	-0.1330716609954834	-0.4257569	Yes	
+row_14	ATP5PD	ATP synthase peripheral stalk subunit d [Source:HGNC Symbol;Acc:HGNC:845]	12515	-0.14769409596920013	-0.36340034	Yes	
+row_15	ATP5MJ	ATP synthase membrane subunit j [Source:HGNC Symbol;Acc:HGNC:1188]	12580	-0.16063648462295532	-0.2938913	Yes	
+row_16	ATP5F1B	ATP synthase F1 subunit beta [Source:HGNC Symbol;Acc:HGNC:830]	12609	-0.1687554270029068	-0.21784781	Yes	
+row_17	ATP5MC1	ATP synthase membrane subunit c locus 1 [Source:HGNC Symbol;Acc:HGNC:841]	12746	-0.2089727222919464	-0.13148466	Yes	
+row_18	ATP5F1E	ATP synthase F1 subunit epsilon [Source:HGNC Symbol;Acc:HGNC:838]	12926	-0.3264530599117279	0.00600652	Yes	

@@ -1,0 +1,52 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PF4	platelet factor 4 [Source:HGNC Symbol;Acc:HGNC:8861]	7	1.029140830039978	0.1910012	Yes	
+row_1	IGF1	insulin like growth factor 1 [Source:HGNC Symbol;Acc:HGNC:5464]	14	0.6372554898262024	0.3091427	Yes	
+row_2	GAS6	growth arrest specific 6 [Source:HGNC Symbol;Acc:HGNC:4168]	73	0.3106866478919983	0.3624897	Yes	
+row_3	F13A1	coagulation factor XIII A chain [Source:HGNC Symbol;Acc:HGNC:3531]	100	0.24786990880966187	0.40661564	Yes	
+row_4	PDGFA	platelet derived growth factor subunit A [Source:HGNC Symbol;Acc:HGNC:8799]	170	0.17233213782310486	0.4333632	Yes	
+row_5	SERPINE1	serpin family E member 1 [Source:HGNC Symbol;Acc:HGNC:8583]	233	0.14502990245819092	0.4555697	Yes	
+row_6	VEGFB	vascular endothelial growth factor B [Source:HGNC Symbol;Acc:HGNC:12681]	327	0.12406181544065475	0.47148058	Yes	
+row_7	MAGED2	MAGE family member D2 [Source:HGNC Symbol;Acc:HGNC:16353]	375	0.1140187680721283	0.4890733	Yes	
+row_8	TEX264	"testis expressed 264, ER-phagy receptor [Source:HGNC Symbol;Acc:HGNC:30247]"	474	0.10202071815729141	0.500496	Yes	
+row_9	PPBP	pro-platelet basic protein [Source:HGNC Symbol;Acc:HGNC:9240]	750	0.07834679633378983	0.49384874	No	
+row_10	SERPINA3	serpin family A member 3 [Source:HGNC Symbol;Acc:HGNC:16]	886	0.07196199148893356	0.4968207	No	
+row_11	TOR4A	torsin family 4 member A [Source:HGNC Symbol;Acc:HGNC:25981]	1430	0.05357459932565689	0.46487433	No	
+row_12	TGFB3	transforming growth factor beta 3 [Source:HGNC Symbol;Acc:HGNC:11769]	1681	0.04768864065408707	0.45445096	No	
+row_13	TGFB2	transforming growth factor beta 2 [Source:HGNC Symbol;Acc:HGNC:11768]	1898	0.043260253965854645	0.4458281	No	
+row_14	PCYOX1L	prenylcysteine oxidase 1 like [Source:HGNC Symbol;Acc:HGNC:28477]	2010	0.041439928114414215	0.44497204	No	
+row_15	THBS1	thrombospondin 1 [Source:HGNC Symbol;Acc:HGNC:11785]	2195	0.03777933865785599	0.43779933	No	
+row_16	PDGFB	platelet derived growth factor subunit B [Source:HGNC Symbol;Acc:HGNC:8800]	2498	0.03245340660214424	0.42052624	No	
+row_17	GTPBP2	GTP binding protein 2 [Source:HGNC Symbol;Acc:HGNC:4670]	2841	0.027869727462530136	0.39931217	No	
+row_18	HGF	hepatocyte growth factor [Source:HGNC Symbol;Acc:HGNC:4893]	3477	0.019544396549463272	0.35393015	No	
+row_19	ACTN4	actinin alpha 4 [Source:HGNC Symbol;Acc:HGNC:166]	3618	0.018000947311520576	0.34647298	No	
+row_20	VEGFC	vascular endothelial growth factor C [Source:HGNC Symbol;Acc:HGNC:12682]	3700	0.017124969512224197	0.34340733	No	
+row_21	APOOL	apolipoprotein O like [Source:HGNC Symbol;Acc:HGNC:24009]	4744	0.00797375850379467	0.26437572	No	
+row_22	CFD	complement factor D [Source:HGNC Symbol;Acc:HGNC:2771]	5516	0.0	0.20485744	No	
+row_23	F5	coagulation factor V [Source:HGNC Symbol;Acc:HGNC:3542]	5561	0.0	0.20146081	No	
+row_24	F8	coagulation factor VIII [Source:HGNC Symbol;Acc:HGNC:3546]	5562	0.0	0.20146081	No	
+row_25	EGF	epidermal growth factor [Source:HGNC Symbol;Acc:HGNC:3229]	5599	0.0	0.19868174	No	
+row_26	SERPING1	serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228]	6821	-5.82645065151155E-4	0.10453358	No	
+row_27	VEGFD	vascular endothelial growth factor D [Source:HGNC Symbol;Acc:HGNC:3708]	7522	-0.007016612216830254	0.05180214	No	
+row_28	MMRN1	multimerin 1 [Source:HGNC Symbol;Acc:HGNC:7178]	7558	-0.007191266864538193	0.050438695	No	
+row_29	ACTN1	actinin alpha 1 [Source:HGNC Symbol;Acc:HGNC:163]	7838	-0.009394161403179169	0.03064937	No	
+row_30	ORM1	orosomucoid 1 [Source:HGNC Symbol;Acc:HGNC:8498]	8043	-0.011455570347607136	0.017033426	No	
+row_31	SERPINF2	serpin family F member 2 [Source:HGNC Symbol;Acc:HGNC:9075]	8215	-0.012965051457285881	0.0062459	No	
+row_32	QSOX1	quiescin sulfhydryl oxidase 1 [Source:HGNC Symbol;Acc:HGNC:9756]	8391	-0.014614121988415718	-0.00454349	No	
+row_33	NHLRC2	NHL repeat containing 2 [Source:HGNC Symbol;Acc:HGNC:24731]	8517	-0.01588304340839386	-0.011236899	No	
+row_34	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	8869	-0.019940068945288658	-0.03462157	No	
+row_35	SCCPDH	saccharopine dehydrogenase (putative) [Source:HGNC Symbol;Acc:HGNC:24275]	9091	-0.02231801301240921	-0.047528155	No	
+row_36	VTI1B	vesicle transport through interaction with t-SNAREs 1B [Source:HGNC Symbol;Acc:HGNC:17793]	9574	-0.02928413264453411	-0.079286434	No	
+row_37	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	9641	-0.03015626221895218	-0.07876876	No	
+row_38	SPARC	secreted protein acidic and cysteine rich [Source:HGNC Symbol;Acc:HGNC:11219]	9735	-0.0316920168697834	-0.08004956	No	
+row_39	VWF	von Willebrand factor [Source:HGNC Symbol;Acc:HGNC:12726]	9851	-0.033604469150304794	-0.08267273	No	
+row_40	VEGFA	vascular endothelial growth factor A [Source:HGNC Symbol;Acc:HGNC:12680]	10361	-0.04256545007228851	-0.114043415	No	
+row_41	PROS1	protein S [Source:HGNC Symbol;Acc:HGNC:9456]	10640	-0.047711096704006195	-0.12662408	No	
+row_42	FERMT3	FERM domain containing kindlin 3 [Source:HGNC Symbol;Acc:HGNC:23151]	10666	-0.048473719507455826	-0.11953215	No	
+row_43	TGFB1	transforming growth factor beta 1 [Source:HGNC Symbol;Acc:HGNC:11766]	11992	-0.09702695906162262	-0.2037587	No	
+row_44	OLA1	Obg like ATPase 1 [Source:HGNC Symbol;Acc:HGNC:28833]	12356	-0.12477845698595047	-0.20855741	No	
+row_45	CYRIB	CYFIP related Rac1 interactor B [Source:HGNC Symbol;Acc:HGNC:25216]	12545	-0.15420301258563995	-0.19437036	No	
+row_46	TMSB4X	thymosin beta 4 X-linked [Source:HGNC Symbol;Acc:HGNC:11881]	12557	-0.15612691640853882	-0.16616149	No	
+row_47	FN1	fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778]	12564	-0.1572355479001999	-0.13736032	No	
+row_48	TIMP1	TIMP metallopeptidase inhibitor 1 [Source:HGNC Symbol;Acc:HGNC:11820]	12584	-0.16168604791164398	-0.10873436	No	
+row_49	ALDOA	"aldolase, fructose-bisphosphate A [Source:HGNC Symbol;Acc:HGNC:414]"	12634	-0.1743129938840866	-0.0800742	No	
+row_50	SRGN	serglycin [Source:HGNC Symbol;Acc:HGNC:9361]	12989	-0.5832852721214294	0.0011581957	No	

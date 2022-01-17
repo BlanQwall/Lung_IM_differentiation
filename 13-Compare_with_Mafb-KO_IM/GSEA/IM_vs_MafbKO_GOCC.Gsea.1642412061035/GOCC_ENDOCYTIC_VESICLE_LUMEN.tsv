@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.7295876	Yes	
+row_1	HGS	hepatocyte growth factor-regulated tyrosine kinase substrate [Source:HGNC Symbol;Acc:HGNC:4897]	869	0.0725109875202179	0.6978749	No	
+row_2	SCGB3A2	secretoglobin family 3A member 2 [Source:HGNC Symbol;Acc:HGNC:18391]	3683	0.01729726791381836	0.48961258	No	
+row_3	LTF	lactotransferrin [Source:HGNC Symbol;Acc:HGNC:6720]	4921	0.006491061300039291	0.39749387	No	
+row_4	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.21163096	No	
+row_5	MPO	myeloperoxidase [Source:HGNC Symbol;Acc:HGNC:7218]	8182	-0.012627176940441132	0.15564899	No	
+row_6	HSPH1	heat shock protein family H (Hsp110) member 1 [Source:HGNC Symbol;Acc:HGNC:16969]	9432	-0.026923993602395058	0.07243724	No	
+row_7	HBA2	hemoglobin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:4824]	9450	-0.02720666490495205	0.084218286	No	
+row_8	HSP90AA1	heat shock protein 90 alpha family class A member 1 [Source:HGNC Symbol;Acc:HGNC:5253]	9608	-0.029727747663855553	0.08643312	No	
+row_9	SPARC	secreted protein acidic and cysteine rich [Source:HGNC Symbol;Acc:HGNC:11219]	9735	-0.0316920168697834	0.09197984	No	
+row_10	HP	haptoglobin [Source:HGNC Symbol;Acc:HGNC:5141]	9859	-0.033881235867738724	0.098810844	No	
+row_11	HSP90B1	heat shock protein 90 beta family member 1 [Source:HGNC Symbol;Acc:HGNC:12028]	9920	-0.034896377474069595	0.11098089	No	
+row_12	HPX	hemopexin [Source:HGNC Symbol;Acc:HGNC:5171]	10458	-0.043976716697216034	0.09079356	No	
+row_13	PGLYRP1	peptidoglycan recognition protein 1 [Source:HGNC Symbol;Acc:HGNC:8904]	10633	-0.047538161277770996	0.10026862	No	
+row_14	CSF3	colony stimulating factor 3 [Source:HGNC Symbol;Acc:HGNC:2438]	10786	-0.05159029737114906	0.113387145	No	
+row_15	CALR	calreticulin [Source:HGNC Symbol;Acc:HGNC:1455]	10823	-0.05250383913516998	0.13587654	No	
+row_16	HYOU1	hypoxia up-regulated 1 [Source:HGNC Symbol;Acc:HGNC:16931]	11314	-0.06644926965236664	0.13012014	No	

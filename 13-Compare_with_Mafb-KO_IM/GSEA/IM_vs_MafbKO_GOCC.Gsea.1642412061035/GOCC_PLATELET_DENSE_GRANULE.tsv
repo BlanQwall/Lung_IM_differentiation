@@ -1,0 +1,17 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SELENOP	selenoprotein P [Source:HGNC Symbol;Acc:HGNC:10751]	4	1.2049453258514404	0.42787683	Yes	
+row_1	CD63	CD63 molecule [Source:HGNC Symbol;Acc:HGNC:1692]	8	0.8564110994338989	0.73197687	Yes	
+row_2	LAMP2	lysosomal associated membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:6501]	137	0.20456407964229584	0.7948155	Yes	
+row_3	ECM1	extracellular matrix protein 1 [Source:HGNC Symbol;Acc:HGNC:3153]	586	0.09083908051252365	0.792605	No	
+row_4	CDC37L1	cell division cycle 37 like 1 [Source:HGNC Symbol;Acc:HGNC:17179]	2229	0.036854375153779984	0.6792868	No	
+row_5	FAM3C	FAM3 metabolism regulating signaling molecule C [Source:HGNC Symbol;Acc:HGNC:18664]	3896	0.015191304497420788	0.5564227	No	
+row_6	SELP	selectin P [Source:HGNC Symbol;Acc:HGNC:10721]	4797	0.00756772980093956	0.48982257	No	
+row_7	RAB27B	"RAB27B, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9767]"	5658	0.0	0.4236127	No	
+row_8	CTSW	cathepsin W [Source:HGNC Symbol;Acc:HGNC:2546]	6092	0.0	0.3902768	No	
+row_9	CLEC3B	C-type lectin domain family 3 member B [Source:HGNC Symbol;Acc:HGNC:11891]	6752	0.0	0.33954155	No	
+row_10	HPS4	HPS4 biogenesis of lysosomal organelles complex 3 subunit 2 [Source:HGNC Symbol;Acc:HGNC:15844]	8221	-0.013076824136078358	0.23116979	No	
+row_11	RARRES2	retinoic acid receptor responder 2 [Source:HGNC Symbol;Acc:HGNC:9868]	8441	-0.015118318609893322	0.21968177	No	
+row_12	TIMP3	TIMP metallopeptidase inhibitor 3 [Source:HGNC Symbol;Acc:HGNC:11822]	8777	-0.018896548077464104	0.20060572	No	
+row_13	LGALS3BP	galectin 3 binding protein [Source:HGNC Symbol;Acc:HGNC:6564]	9248	-0.024257168173789978	0.1730412	No	
+row_14	ABCC4	ATP binding cassette subfamily C member 4 [Source:HGNC Symbol;Acc:HGNC:55]	11295	-0.06610342860221863	0.03901356	No	
+row_15	ITPR1	"inositol 1,4,5-trisphosphate receptor type 1 [Source:HGNC Symbol;Acc:HGNC:6180]"	12858	-0.26025262475013733	0.0112403445	No	

@@ -1,0 +1,67 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FOS	"Fos proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:3796]"	38	0.4171111285686493	0.09527589	Yes	
+row_1	PMEPA1	"prostate transmembrane protein, androgen induced 1 [Source:HGNC Symbol;Acc:HGNC:14107]"	49	0.3801250457763672	0.18400705	Yes	
+row_2	DAB2	DAB adaptor protein 2 [Source:HGNC Symbol;Acc:HGNC:2662]	77	0.29839760065078735	0.25218084	Yes	
+row_3	JUN	"Jun proto-oncogene, AP-1 transcription factor subunit [Source:HGNC Symbol;Acc:HGNC:6204]"	79	0.29534798860549927	0.32164603	Yes	
+row_4	DDX5	DEAD-box helicase 5 [Source:HGNC Symbol;Acc:HGNC:2746]	182	0.1672934889793396	0.35315374	Yes	
+row_5	TGFBR2	transforming growth factor beta receptor 2 [Source:HGNC Symbol;Acc:HGNC:11773]	247	0.14245785772800446	0.38175046	Yes	
+row_6	PML	PML nuclear body scaffold [Source:HGNC Symbol;Acc:HGNC:9113]	487	0.10084366798400879	0.38702378	Yes	
+row_7	MEF2A	myocyte enhancer factor 2A [Source:HGNC Symbol;Acc:HGNC:6993]	514	0.09758292883634567	0.40799117	Yes	
+row_8	SMAD1	SMAD family member 1 [Source:HGNC Symbol;Acc:HGNC:6767]	561	0.09323567152023315	0.42638925	Yes	
+row_9	BMP2	bone morphogenetic protein 2 [Source:HGNC Symbol;Acc:HGNC:1069]	766	0.07746438682079315	0.4288627	Yes	
+row_10	STUB1	STIP1 homology and U-box containing protein 1 [Source:HGNC Symbol;Acc:HGNC:11427]	796	0.0756203830242157	0.44442692	Yes	
+row_11	EID2	EP300 interacting inhibitor of differentiation 2 [Source:HGNC Symbol;Acc:HGNC:28292]	850	0.07358220219612122	0.4576564	Yes	
+row_12	ZBTB7A	zinc finger and BTB domain containing 7A [Source:HGNC Symbol;Acc:HGNC:18078]	874	0.07240895926952362	0.4729282	Yes	
+row_13	SMAD3	SMAD family member 3 [Source:HGNC Symbol;Acc:HGNC:6769]	885	0.0720459595322609	0.48911923	Yes	
+row_14	SMAD5	SMAD family member 5 [Source:HGNC Symbol;Acc:HGNC:6771]	923	0.0703374370932579	0.50282127	Yes	
+row_15	CITED2	Cbp/p300 interacting transactivator with Glu/Asp rich carboxy-terminal domain 2 [Source:HGNC Symbol;Acc:HGNC:1987]	1005	0.06716608256101608	0.512376	Yes	
+row_16	TGFBRAP1	transforming growth factor beta receptor associated protein 1 [Source:HGNC Symbol;Acc:HGNC:16836]	1031	0.06644506752490997	0.526089	Yes	
+row_17	SNW1	SNW domain containing 1 [Source:HGNC Symbol;Acc:HGNC:16696]	1162	0.06183609738945961	0.53060174	Yes	
+row_18	PARP1	poly(ADP-ribose) polymerase 1 [Source:HGNC Symbol;Acc:HGNC:270]	1345	0.05599832534790039	0.5297211	Yes	
+row_19	TGFBR1	transforming growth factor beta receptor 1 [Source:HGNC Symbol;Acc:HGNC:11772]	1385	0.054813284426927567	0.53961325	Yes	
+row_20	RANBP3	RAN binding protein 3 [Source:HGNC Symbol;Acc:HGNC:9850]	1478	0.05236198380589485	0.54483205	Yes	
+row_21	MAGI2	"membrane associated guanylate kinase, WW and PDZ domain containing 2 [Source:HGNC Symbol;Acc:HGNC:18957]"	1556	0.05060819163918495	0.5507972	Yes	
+row_22	SMURF2	SMAD specific E3 ubiquitin protein ligase 2 [Source:HGNC Symbol;Acc:HGNC:16809]	1751	0.04615798220038414	0.54667217	No	
+row_23	TRIM33	tripartite motif containing 33 [Source:HGNC Symbol;Acc:HGNC:16290]	1911	0.04303410276770592	0.5445165	No	
+row_24	AXIN1	axin 1 [Source:HGNC Symbol;Acc:HGNC:903]	2464	0.0330640971660614	0.50964004	No	
+row_25	ACVR1	activin A receptor type 1 [Source:HGNC Symbol;Acc:HGNC:171]	2742	0.02910180762410164	0.4950842	No	
+row_26	USP15	ubiquitin specific peptidase 15 [Source:HGNC Symbol;Acc:HGNC:12613]	2958	0.026010364294052124	0.48459214	No	
+row_27	COL3A1	collagen type III alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2201]	3216	0.02281245030462742	0.47010112	No	
+row_28	TGFB1I1	transforming growth factor beta 1 induced transcript 1 [Source:HGNC Symbol;Acc:HGNC:11767]	3567	0.018569402396678925	0.44742346	No	
+row_29	HMGA2	high mobility group AT-hook 2 [Source:HGNC Symbol;Acc:HGNC:5009]	3581	0.018389176577329636	0.45074865	No	
+row_30	SKI	SKI proto-oncogene [Source:HGNC Symbol;Acc:HGNC:10896]	3673	0.017401084303855896	0.44781289	No	
+row_31	TCF12	transcription factor 12 [Source:HGNC Symbol;Acc:HGNC:11623]	3887	0.015336978249251842	0.43496227	No	
+row_32	MEN1	menin 1 [Source:HGNC Symbol;Acc:HGNC:7010]	4035	0.013539949432015419	0.42678937	No	
+row_33	BMPR1A	bone morphogenetic protein receptor type 1A [Source:HGNC Symbol;Acc:HGNC:1076]	4071	0.013207618147134781	0.42719424	No	
+row_34	ACVR1B	activin A receptor type 1B [Source:HGNC Symbol;Acc:HGNC:172]	4210	0.011808006092905998	0.4193091	No	
+row_35	CTNNB1	catenin beta 1 [Source:HGNC Symbol;Acc:HGNC:2514]	4399	0.010186053812503815	0.4071778	No	
+row_36	FERMT2	FERM domain containing kindlin 2 [Source:HGNC Symbol;Acc:HGNC:15767]	4422	0.010067261755466461	0.40784794	No	
+row_37	PPM1A	"protein phosphatase, Mg2+/Mn2+ dependent 1A [Source:HGNC Symbol;Acc:HGNC:9275]"	4544	0.009276491589844227	0.4006806	No	
+row_38	SAV1	salvador family WW domain containing protein 1 [Source:HGNC Symbol;Acc:HGNC:17795]	4844	0.007174569182097912	0.3792615	No	
+row_39	TGFBR3	transforming growth factor beta receptor 3 [Source:HGNC Symbol;Acc:HGNC:11774]	4975	0.005996509455144405	0.37062627	No	
+row_40	SMAD2	SMAD family member 2 [Source:HGNC Symbol;Acc:HGNC:6768]	5259	0.002607156988233328	0.3493683	No	
+row_41	YY1	YY1 transcription factor [Source:HGNC Symbol;Acc:HGNC:12856]	5374	0.0010916428873315454	0.34081477	No	
+row_42	AXIN2	axin 2 [Source:HGNC Symbol;Acc:HGNC:904]	5713	0.0	0.3146922	No	
+row_43	COL5A2	collagen type V alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2210]	6104	0.0	0.28455076	No	
+row_44	COL1A2	collagen type I alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2198]	6249	0.0	0.27342162	No	
+row_45	FKBP1A	FKBP prolyl isomerase 1A [Source:HGNC Symbol;Acc:HGNC:3711]	6870	-0.0012609930709004402	0.22580138	No	
+row_46	PURA	purine rich element binding protein A [Source:HGNC Symbol;Acc:HGNC:9701]	6890	-0.0015047391643747687	0.22468726	No	
+row_47	DROSHA	drosha ribonuclease III [Source:HGNC Symbol;Acc:HGNC:17904]	6951	-0.0022504052612930536	0.22058	No	
+row_48	SMURF1	SMAD specific E3 ubiquitin protein ligase 1 [Source:HGNC Symbol;Acc:HGNC:16807]	7160	-0.004761144053190947	0.20562562	No	
+row_49	SMAD6	SMAD family member 6 [Source:HGNC Symbol;Acc:HGNC:6772]	7660	-0.007749345153570175	0.1688847	No	
+row_50	RNF111	ring finger protein 111 [Source:HGNC Symbol;Acc:HGNC:17384]	7846	-0.009443738497793674	0.15681046	No	
+row_51	LDLRAD4	low density lipoprotein receptor class A domain containing 4 [Source:HGNC Symbol;Acc:HGNC:1224]	8447	-0.015155824832618237	0.11400761	No	
+row_52	IPO7	importin 7 [Source:HGNC Symbol;Acc:HGNC:9852]	8658	-0.017612015828490257	0.101924516	No	
+row_53	ZMIZ1	zinc finger MIZ-type containing 1 [Source:HGNC Symbol;Acc:HGNC:16493]	9105	-0.02252371795475483	0.07275851	No	
+row_54	USP9X	ubiquitin specific peptidase 9 X-linked [Source:HGNC Symbol;Acc:HGNC:12632]	9133	-0.022853223606944084	0.0760528	No	
+row_55	PPARG	peroxisome proliferator activated receptor gamma [Source:HGNC Symbol;Acc:HGNC:9236]	9474	-0.02757387049496174	0.05626818	No	
+row_56	CREB3L1	cAMP responsive element binding protein 3 like 1 [Source:HGNC Symbol;Acc:HGNC:18856]	9750	-0.03190840408205986	0.042527743	No	
+row_57	TOB1	"transducer of ERBB2, 1 [Source:HGNC Symbol;Acc:HGNC:11979]"	9939	-0.035237230360507965	0.036294963	No	
+row_58	ZC3H3	zinc finger CCCH-type containing 3 [Source:HGNC Symbol;Acc:HGNC:28972]	10341	-0.04220938682556152	0.015241985	No	
+row_59	PURB	purine rich element binding protein B [Source:HGNC Symbol;Acc:HGNC:9702]	10680	-0.04888434335589409	6.2968984E-4	No	
+row_60	SMAD4	SMAD family member 4 [Source:HGNC Symbol;Acc:HGNC:6770]	11085	-0.059624653309583664	-0.016554557	No	
+row_61	SMAD7	SMAD family member 7 [Source:HGNC Symbol;Acc:HGNC:6773]	11606	-0.07638461142778397	-0.038757656	No	
+row_62	HIPK2	homeodomain interacting protein kinase 2 [Source:HGNC Symbol;Acc:HGNC:14402]	11846	-0.0875992476940155	-0.036602877	No	
+row_63	SKIL	SKI like proto-oncogene [Source:HGNC Symbol;Acc:HGNC:10897]	12015	-0.09797000139951706	-0.02651892	No	
+row_64	ACVRL1	activin A receptor like type 1 [Source:HGNC Symbol;Acc:HGNC:175]	12381	-0.12697328627109528	-0.024831153	No	
+row_65	RGCC	regulator of cell cycle [Source:HGNC Symbol;Acc:HGNC:20369]	12915	-0.309619665145874	0.0068784207	No	

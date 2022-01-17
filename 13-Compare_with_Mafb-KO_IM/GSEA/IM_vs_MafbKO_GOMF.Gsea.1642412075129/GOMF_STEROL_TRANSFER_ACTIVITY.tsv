@@ -1,0 +1,19 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.532304	Yes	
+row_1	ABCA1	ATP binding cassette subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:29]	53	0.3633791506290436	0.65610313	Yes	
+row_2	STARD5	StAR related lipid transfer domain containing 5 [Source:HGNC Symbol;Acc:HGNC:18065]	1232	0.05963486060500145	0.58633316	No	
+row_3	MTTP	microsomal triglyceride transfer protein [Source:HGNC Symbol;Acc:HGNC:7467]	2771	0.02864738740026951	0.4779643	No	
+row_4	NPC2	NPC intracellular cholesterol transporter 2 [Source:HGNC Symbol;Acc:HGNC:14537]	3994	0.014105277135968208	0.3888222	No	
+row_5	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4778	0.007649634033441544	0.3312167	No	
+row_6	STAR	steroidogenic acute regulatory protein [Source:HGNC Symbol;Acc:HGNC:11359]	6760	0.0	0.17867954	No	
+row_7	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.13359326	No	
+row_8	GRAMD1C	GRAM domain containing 1C [Source:HGNC Symbol;Acc:HGNC:25252]	7379	-0.006251698825508356	0.13555706	No	
+row_9	GRAMD1B	GRAM domain containing 1B [Source:HGNC Symbol;Acc:HGNC:29214]	8552	-0.01631064899265766	0.051039174	No	
+row_10	PLTP	phospholipid transfer protein [Source:HGNC Symbol;Acc:HGNC:9093]	8752	-0.018570953980088234	0.042235896	No	
+row_11	STARD3	StAR related lipid transfer domain containing 3 [Source:HGNC Symbol;Acc:HGNC:17579]	8770	-0.018764404579997063	0.047514543	No	
+row_12	GRAMD1A	GRAM domain containing 1A [Source:HGNC Symbol;Acc:HGNC:29305]	11833	-0.08700016885995865	-0.1577164	No	
+row_13	OSBPL2	oxysterol binding protein like 2 [Source:HGNC Symbol;Acc:HGNC:15761]	11850	-0.08774976432323456	-0.12814194	No	
+row_14	OSBP	oxysterol binding protein [Source:HGNC Symbol;Acc:HGNC:8503]	11898	-0.09138509631156921	-0.099678226	No	
+row_15	ABCG1	ATP binding cassette subfamily G member 1 [Source:HGNC Symbol;Acc:HGNC:73]	11989	-0.09680236130952835	-0.07262367	No	
+row_16	STARD4	StAR related lipid transfer domain containing 4 [Source:HGNC Symbol;Acc:HGNC:18058]	12121	-0.10442668199539185	-0.04604943	No	
+row_17	TSPO	translocator protein [Source:HGNC Symbol;Acc:HGNC:1158]	12925	-0.3246158957481384	0.0060829455	No	

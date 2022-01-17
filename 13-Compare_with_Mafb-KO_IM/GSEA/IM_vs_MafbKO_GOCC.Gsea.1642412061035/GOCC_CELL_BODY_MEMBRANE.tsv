@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CX3CR1	C-X3-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:2558]	41	0.3976341784000397	0.27488592	Yes	
+row_1	ATP2B1	ATPase plasma membrane Ca2+ transporting 1 [Source:HGNC Symbol;Acc:HGNC:814]	74	0.3098572790622711	0.48908746	Yes	
+row_2	P2RY12	purinergic receptor P2Y12 [Source:HGNC Symbol;Acc:HGNC:18124]	222	0.15079869329929352	0.5832126	Yes	
+row_3	CD22	CD22 molecule [Source:HGNC Symbol;Acc:HGNC:1643]	810	0.07521696388721466	0.5906051	Yes	
+row_4	AMIGO1	adhesion molecule with Ig like domain 1 [Source:HGNC Symbol;Acc:HGNC:20824]	1326	0.056730546057224274	0.59061545	Yes	
+row_5	INSR	insulin receptor [Source:HGNC Symbol;Acc:HGNC:6091]	2274	0.036036938428878784	0.54288936	No	
+row_6	SLC6A2	solute carrier family 6 member 2 [Source:HGNC Symbol;Acc:HGNC:11048]	4313	0.010956897400319576	0.39361268	No	
+row_7	KCNB1	potassium voltage-gated channel subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:6231]	4492	0.00964345782995224	0.3866487	No	
+row_8	ATP2B2	ATPase plasma membrane Ca2+ transporting 2 [Source:HGNC Symbol;Acc:HGNC:815]	4668	0.008478250354528427	0.37910104	No	
+row_9	DAB2IP	DAB2 interacting protein [Source:HGNC Symbol;Acc:HGNC:17294]	5982	0.0	0.27799216	No	
+row_10	THY1	Thy-1 cell surface antigen [Source:HGNC Symbol;Acc:HGNC:11801]	6247	0.0	0.25766256	No	
+row_11	KCNA2	potassium voltage-gated channel subfamily A member 2 [Source:HGNC Symbol;Acc:HGNC:6220]	7373	-0.0062344856560230255	0.17539023	No	
+row_12	UNC5A	unc-5 netrin receptor A [Source:HGNC Symbol;Acc:HGNC:12567]	7511	-0.0069699035957455635	0.16971406	No	
+row_13	SLC4A8	solute carrier family 4 member 8 [Source:HGNC Symbol;Acc:HGNC:11034]	7657	-0.00773636857047677	0.1639578	No	
+row_14	KCNC3	potassium voltage-gated channel subfamily C member 3 [Source:HGNC Symbol;Acc:HGNC:6235]	8098	-0.011922406032681465	0.13841183	No	
+row_15	HPCA	hippocalcin [Source:HGNC Symbol;Acc:HGNC:5144]	8181	-0.012616056017577648	0.14091903	No	
+row_16	SLC12A2	solute carrier family 12 member 2 [Source:HGNC Symbol;Acc:HGNC:10911]	8421	-0.014932134188711643	0.1329558	No	
+row_17	ATP1A3	ATPase Na+/K+ transporting subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:801]	11900	-0.09146346151828766	-0.07091585	No	
+row_18	KCNE3	potassium voltage-gated channel subfamily E regulatory subunit 3 [Source:HGNC Symbol;Acc:HGNC:6243]	12794	-0.22288872301578522	0.016171314	No	

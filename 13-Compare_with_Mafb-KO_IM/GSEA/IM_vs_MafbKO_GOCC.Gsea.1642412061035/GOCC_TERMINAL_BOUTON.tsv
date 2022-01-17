@@ -1,0 +1,28 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	OPHN1	oligophrenin 1 [Source:HGNC Symbol;Acc:HGNC:8148]	85	0.2848566472530365	0.23248784	Yes	
+row_1	CYFIP1	cytoplasmic FMR1 interacting protein 1 [Source:HGNC Symbol;Acc:HGNC:13759]	178	0.1687493920326233	0.36700496	Yes	
+row_2	P2RX4	purinergic receptor P2X 4 [Source:HGNC Symbol;Acc:HGNC:8535]	183	0.1671966314315796	0.50699973	Yes	
+row_3	PRNP	prion protein [Source:HGNC Symbol;Acc:HGNC:9449]	809	0.07523280382156372	0.5219729	Yes	
+row_4	UNC13B	unc-13 homolog B [Source:HGNC Symbol;Acc:HGNC:12566]	1118	0.0635109692811966	0.55153567	Yes	
+row_5	TBC1D24	TBC1 domain family member 24 [Source:HGNC Symbol;Acc:HGNC:29203]	3072	0.024665383622050285	0.4217482	No	
+row_6	AP3D1	adaptor related protein complex 3 subunit delta 1 [Source:HGNC Symbol;Acc:HGNC:568]	3150	0.023464463651180267	0.43550527	No	
+row_7	HSPA8	heat shock protein family A (Hsp70) member 8 [Source:HGNC Symbol;Acc:HGNC:5241]	3788	0.016233455389738083	0.4000445	No	
+row_8	GRIK5	glutamate ionotropic receptor kainate type subunit 5 [Source:HGNC Symbol;Acc:HGNC:4583]	3943	0.01466978620737791	0.4004884	No	
+row_9	UNC13A	unc-13 homolog A [Source:HGNC Symbol;Acc:HGNC:23150]	4131	0.012581060640513897	0.3966368	No	
+row_10	RAB3A	"RAB3A, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9777]"	4148	0.012360968627035618	0.40577665	No	
+row_11	PRSS12	serine protease 12 [Source:HGNC Symbol;Acc:HGNC:9477]	4170	0.012159015983343124	0.41436177	No	
+row_12	OXT	oxytocin/neurophysin I prepropeptide [Source:HGNC Symbol;Acc:HGNC:8528]	4376	0.010409264825284481	0.40730074	No	
+row_13	TNN	tenascin N [Source:HGNC Symbol;Acc:HGNC:22942]	4670	0.008454373106360435	0.39181855	No	
+row_14	CPLX2	complexin 2 [Source:HGNC Symbol;Acc:HGNC:2310]	5964	0.0	0.2921884	No	
+row_15	CABP4	calcium binding protein 4 [Source:HGNC Symbol;Acc:HGNC:1386]	6064	0.0	0.2845601	No	
+row_16	SLC18A1	solute carrier family 18 member A1 [Source:HGNC Symbol;Acc:HGNC:10934]	6485	0.0	0.25219765	No	
+row_17	NPY	neuropeptide Y [Source:HGNC Symbol;Acc:HGNC:7955]	7205	-0.005167699884623289	0.20113268	No	
+row_18	SYP	synaptophysin [Source:HGNC Symbol;Acc:HGNC:11506]	7398	-0.006334945093840361	0.19165438	No	
+row_19	SLC18A2	solute carrier family 18 member A2 [Source:HGNC Symbol;Acc:HGNC:10935]	7568	-0.007219331804662943	0.18469045	No	
+row_20	SLC4A8	solute carrier family 4 member 8 [Source:HGNC Symbol;Acc:HGNC:11034]	7657	-0.00773636857047677	0.18440172	No	
+row_21	AAK1	AP2 associated kinase 1 [Source:HGNC Symbol;Acc:HGNC:19679]	8568	-0.01644391193985939	0.12808196	No	
+row_22	SYNJ1	synaptojanin 1 [Source:HGNC Symbol;Acc:HGNC:11503]	8978	-0.02117461897432804	0.11433577	No	
+row_23	CAD	"carbamoyl-phosphate synthetase 2, aspartate transcarbamylase, and dihydroorotase [Source:HGNC Symbol;Acc:HGNC:1424]"	9203	-0.023641962558031082	0.116914935	No	
+row_24	LRRK2	leucine rich repeat kinase 2 [Source:HGNC Symbol;Acc:HGNC:18618]	10104	-0.03832194209098816	0.07972466	No	
+row_25	RAB5A	"RAB5A, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9783]"	10463	-0.04405723512172699	0.089110136	No	
+row_26	MICAL1	"microtubule associated monooxygenase, calponin and LIM domain containing 1 [Source:HGNC Symbol;Acc:HGNC:20619]"	12382	-0.1270403116941452	0.047927417	No	

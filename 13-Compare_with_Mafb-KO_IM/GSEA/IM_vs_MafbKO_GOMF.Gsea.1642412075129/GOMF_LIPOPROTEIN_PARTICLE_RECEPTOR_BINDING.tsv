@@ -1,0 +1,22 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.5027513	Yes	
+row_1	DAB2	DAB adaptor protein 2 [Source:HGNC Symbol;Acc:HGNC:2662]	77	0.29839760065078735	0.59607434	Yes	
+row_2	CLTC	clathrin heavy chain [Source:HGNC Symbol;Acc:HGNC:2092]	89	0.2674228250980377	0.68390167	Yes	
+row_3	AP2M1	adaptor related protein complex 2 subunit mu 1 [Source:HGNC Symbol;Acc:HGNC:564]	477	0.1017652153968811	0.68784	Yes	
+row_4	LDLRAP1	low density lipoprotein receptor adaptor protein 1 [Source:HGNC Symbol;Acc:HGNC:18640]	1099	0.0641816109418869	0.66129386	No	
+row_5	SNX17	sorting nexin 17 [Source:HGNC Symbol;Acc:HGNC:14979]	1515	0.051411718130111694	0.646379	No	
+row_6	HSPG2	heparan sulfate proteoglycan 2 [Source:HGNC Symbol;Acc:HGNC:5273]	3590	0.01830567792057991	0.4927139	No	
+row_7	MESD	mesoderm development LRP chaperone [Source:HGNC Symbol;Acc:HGNC:13520]	4189	0.011952485889196396	0.45062053	No	
+row_8	ANKRA2	ankyrin repeat family A member 2 [Source:HGNC Symbol;Acc:HGNC:13208]	4201	0.011837960220873356	0.45369866	No	
+row_9	LRPAP1	LDL receptor related protein associated protein 1 [Source:HGNC Symbol;Acc:HGNC:6701]	4231	0.011625900864601135	0.45532018	No	
+row_10	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4778	0.007649634033441544	0.41580495	No	
+row_11	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.21793671	No	
+row_12	LANCL1	LanC like 1 [Source:HGNC Symbol;Acc:HGNC:6508]	8295	-0.013728836551308632	0.15170963	No	
+row_13	AP2A1	adaptor related protein complex 2 subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:561]	8624	-0.017211414873600006	0.13215488	No	
+row_14	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	9641	-0.03015626221895218	0.063904226	No	
+row_15	HSP90B1	heat shock protein 90 beta family member 1 [Source:HGNC Symbol;Acc:HGNC:12028]	9920	-0.034896377474069595	0.054064516	No	
+row_16	PICALM	phosphatidylinositol binding clathrin assembly protein [Source:HGNC Symbol;Acc:HGNC:15514]	10214	-0.0399862639605999	0.04475729	No	
+row_17	APBB3	amyloid beta precursor protein binding family B member 3 [Source:HGNC Symbol;Acc:HGNC:20708]	11896	-0.09113489091396332	-0.054490402	No	
+row_18	APBB1	amyloid beta precursor protein binding family B member 1 [Source:HGNC Symbol;Acc:HGNC:581]	12274	-0.11718851327896118	-0.0446677	No	
+row_19	LRP1	LDL receptor related protein 1 [Source:HGNC Symbol;Acc:HGNC:6692]	12436	-0.13323365151882172	-0.012888741	No	
+row_20	DNAJA1	DnaJ heat shock protein family (Hsp40) member A1 [Source:HGNC Symbol;Acc:HGNC:5229]	12618	-0.17056609690189362	0.029728893	No	

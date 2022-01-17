@@ -1,0 +1,50 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.2765368	Yes	
+row_1	C1QA	complement C1q A chain [Source:HGNC Symbol;Acc:HGNC:1241]	1	2.0969398021698	0.5229248	Yes	
+row_2	C1QB	complement C1q B chain [Source:HGNC Symbol;Acc:HGNC:1242]	2	1.8567914962768555	0.7410956	Yes	
+row_3	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	165	0.1757270097732544	0.74923944	Yes	
+row_4	TREM2	triggering receptor expressed on myeloid cells 2 [Source:HGNC Symbol;Acc:HGNC:17761]	188	0.16570958495140076	0.76701206	Yes	
+row_5	IGHM	immunoglobulin heavy constant mu [Source:HGNC Symbol;Acc:HGNC:5541]	206	0.1565571278333664	0.7840952	Yes	
+row_6	C6	complement C6 [Source:HGNC Symbol;Acc:HGNC:1339]	334	0.12277914583683014	0.78871924	Yes	
+row_7	CD55	CD55 molecule (Cromer blood group) [Source:HGNC Symbol;Acc:HGNC:2665]	620	0.08747071772813797	0.7769994	No	
+row_8	C1RL	complement C1r subcomponent like [Source:HGNC Symbol;Acc:HGNC:21265]	917	0.07070188224315643	0.76246023	No	
+row_9	C2	complement C2 [Source:HGNC Symbol;Acc:HGNC:1248]	1341	0.05607956647872925	0.73640054	No	
+row_10	MFAP4	microfibril associated protein 4 [Source:HGNC Symbol;Acc:HGNC:7035]	2563	0.03159850463271141	0.6458713	No	
+row_11	VSIG4	V-set and immunoglobulin domain containing 4 [Source:HGNC Symbol;Acc:HGNC:17032]	3807	0.0160420760512352	0.5518161	No	
+row_12	CD46	CD46 molecule [Source:HGNC Symbol;Acc:HGNC:6953]	4000	0.014033026993274689	0.53864557	No	
+row_13	C9	complement C9 [Source:HGNC Symbol;Acc:HGNC:1358]	4600	0.008899486623704433	0.49345782	No	
+row_14	CFH	complement factor H [Source:HGNC Symbol;Acc:HGNC:4883]	4790	0.007603941950947046	0.47976345	No	
+row_15	C1R	complement C1r [Source:HGNC Symbol;Acc:HGNC:1246]	4887	0.006749752908945084	0.47314686	No	
+row_16	C1S	complement C1s [Source:HGNC Symbol;Acc:HGNC:1247]	5478	0.0	0.4276081	No	
+row_17	CFD	complement factor D [Source:HGNC Symbol;Acc:HGNC:2771]	5516	0.0	0.42475227	No	
+row_18	CR2	complement C3d receptor 2 [Source:HGNC Symbol;Acc:HGNC:2336]	5527	0.0	0.42398044	No	
+row_19	IGHA2	immunoglobulin heavy constant alpha 2 (A2m marker) [Source:HGNC Symbol;Acc:HGNC:5479]	5679	0.0	0.4123256	No	
+row_20	IGLC3	immunoglobulin lambda constant 3 (Kern-Oz+ marker) [Source:HGNC Symbol;Acc:HGNC:5857]	5750	0.0	0.4069227	No	
+row_21	APCS	"amyloid P component, serum [Source:HGNC Symbol;Acc:HGNC:584]"	6178	0.0	0.373965	No	
+row_22	FCN1	ficolin 1 [Source:HGNC Symbol;Acc:HGNC:3623]	6386	0.0	0.35798785	No	
+row_23	MASP2	MBL associated serine protease 2 [Source:HGNC Symbol;Acc:HGNC:6902]	6428	0.0	0.3548233	No	
+row_24	TRDC	T cell receptor delta constant [Source:HGNC Symbol;Acc:HGNC:12253]	6572	0.0	0.34378594	No	
+row_25	TRBC2	T cell receptor beta constant 2 [Source:HGNC Symbol;Acc:HGNC:12157]	6696	0.0	0.33429226	No	
+row_26	TRBC1	T cell receptor beta constant 1 [Source:HGNC Symbol;Acc:HGNC:12156]	6697	0.0	0.33429226	No	
+row_27	SERPING1	serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228]	6821	-5.82645065151155E-4	0.32486704	No	
+row_28	PHB	prohibitin [Source:HGNC Symbol;Acc:HGNC:8912]	6974	-0.0025088670663535595	0.31342983	No	
+row_29	C1QBP	complement C1q binding protein [Source:HGNC Symbol;Acc:HGNC:1243]	7044	-0.003269410226494074	0.30848825	No	
+row_30	SUSD4	sushi domain containing 4 [Source:HGNC Symbol;Acc:HGNC:25470]	7257	-0.005559219047427177	0.29277837	No	
+row_31	C4B	complement C4B (Chido blood group) [Source:HGNC Symbol;Acc:HGNC:1324]	7586	-0.00731950718909502	0.26832196	No	
+row_32	COLEC11	collectin subfamily member 11 [Source:HGNC Symbol;Acc:HGNC:17213]	7610	-0.007427619770169258	0.26741946	No	
+row_33	IGLC1	immunoglobulin lambda constant 1 [Source:HGNC Symbol;Acc:HGNC:5855]	7779	-0.008824245072901249	0.25548932	No	
+row_34	C5	complement C5 [Source:HGNC Symbol;Acc:HGNC:1331]	7804	-0.009119182825088501	0.2547084	No	
+row_35	C7	complement C7 [Source:HGNC Symbol;Acc:HGNC:1346]	7826	-0.009294732473790646	0.25417966	No	
+row_36	MASP1	MBL associated serine protease 1 [Source:HGNC Symbol;Acc:HGNC:6901]	8042	-0.011426664888858795	0.23892763	No	
+row_37	C8G	complement C8 gamma chain [Source:HGNC Symbol;Acc:HGNC:1354]	8108	-0.011976873502135277	0.23531793	No	
+row_38	CD5L	CD5 molecule like [Source:HGNC Symbol;Acc:HGNC:1690]	8434	-0.015055927447974682	0.21200207	No	
+row_39	CFB	complement factor B [Source:HGNC Symbol;Acc:HGNC:1037]	8467	-0.015354761853814125	0.21133634	No	
+row_40	CD59	CD59 molecule (CD59 blood group) [Source:HGNC Symbol;Acc:HGNC:1689]	8885	-0.020081916823983192	0.18151009	No	
+row_41	IGKC	immunoglobulin kappa constant [Source:HGNC Symbol;Acc:HGNC:5716]	9291	-0.0248621366918087	0.1531717	No	
+row_42	IGHD	immunoglobulin heavy constant delta [Source:HGNC Symbol;Acc:HGNC:5480]	9494	-0.027897357940673828	0.14085838	No	
+row_43	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	9641	-0.03015626221895218	0.1331328	No	
+row_44	CR1L	complement C3b/C4b receptor 1 like [Source:HGNC Symbol;Acc:HGNC:2335]	11130	-0.06117263436317444	0.025470242	No	
+row_45	PHB2	prohibitin 2 [Source:HGNC Symbol;Acc:HGNC:30306]	11843	-0.08742323517799377	-0.019212864	No	
+row_46	IL1B	interleukin 1 beta [Source:HGNC Symbol;Acc:HGNC:5992]	12764	-0.21404220163822174	-0.06507273	No	
+row_47	RGCC	regulator of cell cycle [Source:HGNC Symbol;Acc:HGNC:20369]	12915	-0.309619665145874	-0.04027043	No	
+row_48	CFP	complement factor properdin [Source:HGNC Symbol;Acc:HGNC:8864]	12955	-0.4005380868911743	0.003782137	No	

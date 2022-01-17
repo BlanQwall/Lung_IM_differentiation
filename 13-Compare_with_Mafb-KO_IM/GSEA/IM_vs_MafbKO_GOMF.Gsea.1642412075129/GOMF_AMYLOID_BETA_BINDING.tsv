@@ -1,0 +1,65 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QA	complement C1q A chain [Source:HGNC Symbol;Acc:HGNC:1241]	1	2.0969398021698	0.23747136	Yes	
+row_1	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.409232	Yes	
+row_2	ITM2B	integral membrane protein 2B [Source:HGNC Symbol;Acc:HGNC:6174]	11	0.6665824055671692	0.48420385	Yes	
+row_3	MSR1	macrophage scavenger receptor 1 [Source:HGNC Symbol;Acc:HGNC:7376]	91	0.2646862268447876	0.5080838	Yes	
+row_4	TREM2	triggering receptor expressed on myeloid cells 2 [Source:HGNC Symbol;Acc:HGNC:17761]	188	0.16570958495140076	0.5194377	Yes	
+row_5	ITM2C	integral membrane protein 2C [Source:HGNC Symbol;Acc:HGNC:6175]	215	0.15367630124092102	0.53483754	Yes	
+row_6	TLR4	toll like receptor 4 [Source:HGNC Symbol;Acc:HGNC:11850]	313	0.127899169921875	0.54183084	Yes	
+row_7	ADRB2	adrenoceptor beta 2 [Source:HGNC Symbol;Acc:HGNC:286]	384	0.11317936331033707	0.54924303	Yes	
+row_8	FPR2	formyl peptide receptor 2 [Source:HGNC Symbol;Acc:HGNC:3827]	488	0.10080277174711227	0.55270314	Yes	
+row_9	PRNP	prion protein [Source:HGNC Symbol;Acc:HGNC:9449]	809	0.07523280382156372	0.5364981	No	
+row_10	PFDN1	prefoldin subunit 1 [Source:HGNC Symbol;Acc:HGNC:8866]	904	0.0710865780711174	0.53728735	No	
+row_11	LDLRAP1	low density lipoprotein receptor adaptor protein 1 [Source:HGNC Symbol;Acc:HGNC:18640]	1099	0.0641816109418869	0.52956694	No	
+row_12	TGFB2	transforming growth factor beta 2 [Source:HGNC Symbol;Acc:HGNC:11768]	1898	0.043260253965854645	0.47280315	No	
+row_13	CD36	CD36 molecule [Source:HGNC Symbol;Acc:HGNC:1663]	1904	0.043137308210134506	0.4773035	No	
+row_14	INSR	insulin receptor [Source:HGNC Symbol;Acc:HGNC:6091]	2274	0.036036938428878784	0.4528719	No	
+row_15	ITM2A	integral membrane protein 2A [Source:HGNC Symbol;Acc:HGNC:6173]	2607	0.03108026273548603	0.43073785	No	
+row_16	APBA3	amyloid beta precursor protein binding family A member 3 [Source:HGNC Symbol;Acc:HGNC:580]	2842	0.027868516743183136	0.41581285	No	
+row_17	AGER	advanced glycosylation end-product specific receptor [Source:HGNC Symbol;Acc:HGNC:320]	3295	0.0218600295484066	0.3833615	No	
+row_18	HSPG2	heparan sulfate proteoglycan 2 [Source:HGNC Symbol;Acc:HGNC:5273]	3590	0.01830567792057991	0.3627167	No	
+row_19	LRPAP1	LDL receptor related protein associated protein 1 [Source:HGNC Symbol;Acc:HGNC:6701]	4231	0.011625900864601135	0.3145785	No	
+row_20	PFDN2	prefoldin subunit 2 [Source:HGNC Symbol;Acc:HGNC:8867]	4816	0.007439226843416691	0.27029335	No	
+row_21	CACNA1A	calcium voltage-gated channel subunit alpha1 A [Source:HGNC Symbol;Acc:HGNC:1388]	5070	0.0049532814882695675	0.2513042	No	
+row_22	PGRMC1	progesterone receptor membrane component 1 [Source:HGNC Symbol;Acc:HGNC:16090]	5162	0.0037238288205116987	0.24469416	No	
+row_23	DLGAP3	DLG associated protein 3 [Source:HGNC Symbol;Acc:HGNC:30368]	5979	0.0	0.18163875	No	
+row_24	CACNA1B	calcium voltage-gated channel subunit alpha1 B [Source:HGNC Symbol;Acc:HGNC:1389]	6348	0.0	0.153202	No	
+row_25	GRIA3	glutamate ionotropic receptor AMPA type subunit 3 [Source:HGNC Symbol;Acc:HGNC:4573]	6488	0.0	0.14246094	No	
+row_26	ITGA2	integrin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6137]	6637	0.0	0.13102442	No	
+row_27	FZD5	frizzled class receptor 5 [Source:HGNC Symbol;Acc:HGNC:4043]	6847	-0.0010687002213671803	0.11499526	No	
+row_28	SCARB1	scavenger receptor class B member 1 [Source:HGNC Symbol;Acc:HGNC:1664]	6983	-0.0025750475469976664	0.104855016	No	
+row_29	FBXO2	F-box protein 2 [Source:HGNC Symbol;Acc:HGNC:13581]	7091	-0.003770229872316122	0.09701382	No	
+row_30	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.07585258	No	
+row_31	BACE1	beta-secretase 1 [Source:HGNC Symbol;Acc:HGNC:933]	8078	-0.011767173185944557	0.022939412	No	
+row_32	TLR6	toll like receptor 6 [Source:HGNC Symbol;Acc:HGNC:16711]	8569	-0.016477016732096672	-0.013058169	No	
+row_33	EPHA4	EPH receptor A4 [Source:HGNC Symbol;Acc:HGNC:3388]	8577	-0.016576755791902542	-0.011721212	No	
+row_34	TM2D1	TM2 domain containing 1 [Source:HGNC Symbol;Acc:HGNC:24142]	8671	-0.017753489315509796	-0.016896497	No	
+row_35	APBB2	amyloid beta precursor protein binding family B member 2 [Source:HGNC Symbol;Acc:HGNC:582]	8784	-0.01898854412138462	-0.023400074	No	
+row_36	LRP8	LDL receptor related protein 8 [Source:HGNC Symbol;Acc:HGNC:6700]	9363	-0.025844262912869453	-0.06513659	No	
+row_37	VBP1	VHL binding protein 1 [Source:HGNC Symbol;Acc:HGNC:12662]	9515	-0.028177518397569656	-0.07361288	No	
+row_38	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	9641	-0.03015626221895218	-0.079855904	No	
+row_39	MARCO	macrophage receptor with collagenous structure [Source:HGNC Symbol;Acc:HGNC:6895]	9962	-0.03562454134225845	-0.10054784	No	
+row_40	FZD4	frizzled class receptor 4 [Source:HGNC Symbol;Acc:HGNC:4042]	10211	-0.03996257483959198	-0.11518464	No	
+row_41	PICALM	phosphatidylinositol binding clathrin assembly protein [Source:HGNC Symbol;Acc:HGNC:15514]	10214	-0.0399862639605999	-0.11080941	No	
+row_42	PFDN6	prefoldin subunit 6 [Source:HGNC Symbol;Acc:HGNC:4926]	10263	-0.040777917951345444	-0.10989908	No	
+row_43	PFDN5	prefoldin subunit 5 [Source:HGNC Symbol;Acc:HGNC:8869]	10563	-0.04610225185751915	-0.12778132	No	
+row_44	GSAP	gamma-secretase activating protein [Source:HGNC Symbol;Acc:HGNC:28042]	10876	-0.05379986763000488	-0.1457961	No	
+row_45	APBA1	amyloid beta precursor protein binding family A member 1 [Source:HGNC Symbol;Acc:HGNC:578]	10883	-0.053935009986162186	-0.1401498	No	
+row_46	NGFR	nerve growth factor receptor [Source:HGNC Symbol;Acc:HGNC:7809]	11018	-0.05807134509086609	-0.14392596	No	
+row_47	CRYAB	crystallin alpha B [Source:HGNC Symbol;Acc:HGNC:2389]	11041	-0.05863407626748085	-0.13898371	No	
+row_48	CLSTN1	calsyntenin 1 [Source:HGNC Symbol;Acc:HGNC:17447]	11326	-0.06686743348836899	-0.1533545	No	
+row_49	LDLRAD3	low density lipoprotein receptor class A domain containing 3 [Source:HGNC Symbol;Acc:HGNC:27046]	11486	-0.07205052673816681	-0.1574789	No	
+row_50	PFDN4	prefoldin subunit 4 [Source:HGNC Symbol;Acc:HGNC:8868]	11668	-0.07892147451639175	-0.16252495	No	
+row_51	APBB3	amyloid beta precursor protein binding family B member 3 [Source:HGNC Symbol;Acc:HGNC:20708]	11896	-0.09113489091396332	-0.16974202	No	
+row_52	ATP1A3	ATPase Na+/K+ transporting subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:801]	11900	-0.09146346151828766	-0.15961254	No	
+row_53	SORL1	sortilin related receptor 1 [Source:HGNC Symbol;Acc:HGNC:11185]	12258	-0.11614586412906647	-0.17404188	No	
+row_54	APBB1	amyloid beta precursor protein binding family B member 1 [Source:HGNC Symbol;Acc:HGNC:581]	12274	-0.11718851327896118	-0.16192546	No	
+row_55	CD74	CD74 molecule [Source:HGNC Symbol;Acc:HGNC:1697]	12376	-0.12650717794895172	-0.15539894	No	
+row_56	LRP1	LDL receptor related protein 1 [Source:HGNC Symbol;Acc:HGNC:6692]	12436	-0.13323365151882172	-0.14486492	No	
+row_57	ITGAM	integrin subunit alpha M [Source:HGNC Symbol;Acc:HGNC:6149]	12593	-0.1651306450366974	-0.13821305	No	
+row_58	RAMP3	receptor activity modifying protein 3 [Source:HGNC Symbol;Acc:HGNC:9845]	12709	-0.19517754018306732	-0.12498915	No	
+row_59	TLR2	toll like receptor 2 [Source:HGNC Symbol;Acc:HGNC:11848]	12791	-0.22197920083999634	-0.10610175	No	
+row_60	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	12802	-0.2263742983341217	-0.08123002	No	
+row_61	FCGR2B	Fc fragment of IgG receptor IIb [Source:HGNC Symbol;Acc:HGNC:3618]	12873	-0.27246883511543274	-0.05577297	No	
+row_62	CST3	cystatin C [Source:HGNC Symbol;Acc:HGNC:2475]	12874	-0.27289286255836487	-0.024858719	No	
+row_63	ITGB2	integrin subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:6155]	12911	-0.3074333369731903	0.0071865423	No	

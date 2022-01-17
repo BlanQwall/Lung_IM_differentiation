@@ -1,0 +1,26 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IGFBP4	insulin like growth factor binding protein 4 [Source:HGNC Symbol;Acc:HGNC:5473]	10	0.6761800646781921	0.3723177	Yes	
+row_1	IGF1	insulin like growth factor 1 [Source:HGNC Symbol;Acc:HGNC:5464]	14	0.6372554898262024	0.7236977	Yes	
+row_2	BMP2	bone morphogenetic protein 2 [Source:HGNC Symbol;Acc:HGNC:1069]	766	0.07746438682079315	0.70858115	Yes	
+row_3	IGF1R	insulin like growth factor 1 receptor [Source:HGNC Symbol;Acc:HGNC:5465]	955	0.06915386021137238	0.73225355	Yes	
+row_4	GIGYF1	GRB10 interacting GYF protein 1 [Source:HGNC Symbol;Acc:HGNC:9126]	1110	0.06376133114099503	0.75557	Yes	
+row_5	TSC2	TSC complex subunit 2 [Source:HGNC Symbol;Acc:HGNC:12363]	2810	0.02821865864098072	0.6402462	No	
+row_6	CRIM1	cysteine rich transmembrane BMP regulator 1 [Source:HGNC Symbol;Acc:HGNC:2359]	3009	0.025362422689795494	0.63898593	No	
+row_7	PHIP	pleckstrin homology domain interacting protein [Source:HGNC Symbol;Acc:HGNC:15673]	3459	0.01978822611272335	0.6153126	No	
+row_8	GIGYF2	GRB10 interacting GYF protein 2 [Source:HGNC Symbol;Acc:HGNC:11960]	3923	0.014852818101644516	0.58783746	No	
+row_9	IRS1	insulin receptor substrate 1 [Source:HGNC Symbol;Acc:HGNC:6125]	4175	0.012095077894628048	0.57517356	No	
+row_10	MYORG	myogenesis regulating glycosidase (putative) [Source:HGNC Symbol;Acc:HGNC:19918]	4545	0.009272634983062744	0.55186146	No	
+row_11	EIF2AK3	eukaryotic translation initiation factor 2 alpha kinase 3 [Source:HGNC Symbol;Acc:HGNC:3255]	4929	0.006424653343856335	0.5258994	No	
+row_12	GHR	growth hormone receptor [Source:HGNC Symbol;Acc:HGNC:4263]	5669	0.0	0.46896568	No	
+row_13	IGFBP5	insulin like growth factor binding protein 5 [Source:HGNC Symbol;Acc:HGNC:5474]	5772	0.0	0.46110743	No	
+row_14	IGFBP3	insulin like growth factor binding protein 3 [Source:HGNC Symbol;Acc:HGNC:5472]	5773	0.0	0.46110743	No	
+row_15	IGFBP2	insulin like growth factor binding protein 2 [Source:HGNC Symbol;Acc:HGNC:5471]	5774	0.0	0.46110743	No	
+row_16	BMP5	bone morphogenetic protein 5 [Source:HGNC Symbol;Acc:HGNC:1072]	5932	0.0	0.4490119	No	
+row_17	GRB10	growth factor receptor bound protein 10 [Source:HGNC Symbol;Acc:HGNC:4564]	6288	0.0	0.42166212	No	
+row_18	PLCB1	phospholipase C beta 1 [Source:HGNC Symbol;Acc:HGNC:15917]	6581	0.0	0.399166	No	
+row_19	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	0.36759627	No	
+row_20	IGFBP6	insulin like growth factor binding protein 6 [Source:HGNC Symbol;Acc:HGNC:5475]	7382	-0.006266817916184664	0.34270275	No	
+row_21	IGF2R	insulin like growth factor 2 receptor [Source:HGNC Symbol;Acc:HGNC:5467]	7968	-0.01069930475205183	0.30353683	No	
+row_22	AR	androgen receptor [Source:HGNC Symbol;Acc:HGNC:644]	8029	-0.011365734972059727	0.30518547	No	
+row_23	ZFAND2B	zinc finger AN1-type containing 2B [Source:HGNC Symbol;Acc:HGNC:25206]	8858	-0.019799889996647835	0.25231978	No	
+row_24	AKT1	AKT serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:391]	12320	-0.12146204710006714	0.05269653	No	

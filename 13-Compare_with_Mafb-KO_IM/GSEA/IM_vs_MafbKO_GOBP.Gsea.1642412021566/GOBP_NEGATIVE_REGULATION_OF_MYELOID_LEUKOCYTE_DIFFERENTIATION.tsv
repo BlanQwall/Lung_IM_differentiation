@@ -1,0 +1,41 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.47373462	Yes	
+row_1	MAFB	MAF bZIP transcription factor B [Source:HGNC Symbol;Acc:HGNC:6408]	6	1.075302243232727	0.68979335	Yes	
+row_2	TLR4	toll like receptor 4 [Source:HGNC Symbol;Acc:HGNC:11850]	313	0.127899169921875	0.6919358	Yes	
+row_3	CDK6	cyclin dependent kinase 6 [Source:HGNC Symbol;Acc:HGNC:1777]	418	0.10876916348934174	0.705808	Yes	
+row_4	MYC	"MYC proto-oncogene, bHLH transcription factor [Source:HGNC Symbol;Acc:HGNC:7553]"	497	0.0993838980793953	0.7197965	Yes	
+row_5	CCL3	C-C motif chemokine ligand 3 [Source:HGNC Symbol;Acc:HGNC:10627]	967	0.06887262314558029	0.6974853	No	
+row_6	PIAS3	protein inhibitor of activated STAT 3 [Source:HGNC Symbol;Acc:HGNC:16861]	2065	0.040375955402851105	0.62100005	No	
+row_7	GPR55	G protein-coupled receptor 55 [Source:HGNC Symbol;Acc:HGNC:4511]	2533	0.031981781125068665	0.59141755	No	
+row_8	GPR137	G protein-coupled receptor 137 [Source:HGNC Symbol;Acc:HGNC:24300]	2793	0.028443899005651474	0.5771661	No	
+row_9	TNFAIP6	TNF alpha induced protein 6 [Source:HGNC Symbol;Acc:HGNC:11898]	2970	0.02583729289472103	0.56879175	No	
+row_10	CUL4A	cullin 4A [Source:HGNC Symbol;Acc:HGNC:2554]	3321	0.021556837484240532	0.5461351	No	
+row_11	NF1	neurofibromin 1 [Source:HGNC Symbol;Acc:HGNC:7765]	3464	0.01973852701485157	0.53915566	No	
+row_12	INHBA	inhibin subunit beta A [Source:HGNC Symbol;Acc:HGNC:6066]	3729	0.01687982678413391	0.5221908	No	
+row_13	CTNNB1	catenin beta 1 [Source:HGNC Symbol;Acc:HGNC:2514]	4399	0.010186053812503815	0.4726407	No	
+row_14	HOXA7	homeobox A7 [Source:HGNC Symbol;Acc:HGNC:5108]	4675	0.008406383916735649	0.45312184	No	
+row_15	LTF	lactotransferrin [Source:HGNC Symbol;Acc:HGNC:6720]	4921	0.006491061300039291	0.43553138	No	
+row_16	INPP5D	inositol polyphosphate-5-phosphatase D [Source:HGNC Symbol;Acc:HGNC:6079]	5327	0.0017022211104631424	0.40463606	No	
+row_17	TCTA	T cell leukemia translocation altered [Source:HGNC Symbol;Acc:HGNC:11692]	5425	3.8681403384543955E-4	0.39723223	No	
+row_18	IL4	interleukin 4 [Source:HGNC Symbol;Acc:HGNC:6014]	5749	0.0	0.372319	No	
+row_19	CLDN18	claudin 18 [Source:HGNC Symbol;Acc:HGNC:2039]	6051	0.0	0.34910265	No	
+row_20	APCS	"amyloid P component, serum [Source:HGNC Symbol;Acc:HGNC:584]"	6178	0.0	0.33938417	No	
+row_21	GATA2	GATA binding protein 2 [Source:HGNC Symbol;Acc:HGNC:4171]	6322	0.0	0.32835448	No	
+row_22	FBN1	fibrillin 1 [Source:HGNC Symbol;Acc:HGNC:3603]	6352	0.0	0.3261177	No	
+row_23	TMEM178A	transmembrane protein 178A [Source:HGNC Symbol;Acc:HGNC:28517]	6524	0.0	0.31292832	No	
+row_24	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	0.27588508	No	
+row_25	LYN	"LYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:6735]"	7067	-0.0035260366275906563	0.2725069	No	
+row_26	FSTL3	follistatin like 3 [Source:HGNC Symbol;Acc:HGNC:3973]	7906	-0.010026379488408566	0.20988952	No	
+row_27	PTPN2	protein tyrosine phosphatase non-receptor type 2 [Source:HGNC Symbol;Acc:HGNC:9650]	8054	-0.011567833833396435	0.20087975	No	
+row_28	UBASH3B	ubiquitin associated and SH3 domain containing B [Source:HGNC Symbol;Acc:HGNC:29884]	8598	-0.016902824863791466	0.16240008	No	
+row_29	TLR3	toll like receptor 3 [Source:HGNC Symbol;Acc:HGNC:11849]	9071	-0.022108979523181915	0.13044462	No	
+row_30	FBXW7	F-box and WD repeat domain containing 7 [Source:HGNC Symbol;Acc:HGNC:16712]	9287	-0.024801472201943398	0.118853725	No	
+row_31	TRIB1	tribbles pseudokinase 1 [Source:HGNC Symbol;Acc:HGNC:16891]	9717	-0.03144283965229988	0.09209368	No	
+row_32	GPR68	G protein-coupled receptor 68 [Source:HGNC Symbol;Acc:HGNC:4519]	10660	-0.04833344370126724	0.029165415	No	
+row_33	GPR137B	G protein-coupled receptor 137B [Source:HGNC Symbol;Acc:HGNC:11862]	10878	-0.053865496069192886	0.02327047	No	
+row_34	ZFPM1	"zinc finger protein, FOG family member 1 [Source:HGNC Symbol;Acc:HGNC:19762]"	11389	-0.06872308254241943	-0.002233144	No	
+row_35	TOB2	"transducer of ERBB2, 2 [Source:HGNC Symbol;Acc:HGNC:11980]"	11483	-0.07190302014350891	0.0050668414	No	
+row_36	RARA	retinoic acid receptor alpha [Source:HGNC Symbol;Acc:HGNC:9864]	12186	-0.11055871099233627	-0.026824905	No	
+row_37	ZBTB46	zinc finger and BTB domain containing 46 [Source:HGNC Symbol;Acc:HGNC:16094]	12232	-0.11377182602882385	-0.0073949974	No	
+row_38	CEACAM1	CEA cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:1814]	12589	-0.16290485858917236	-0.0020629093	No	
+row_39	LILRB4	leukocyte immunoglobulin like receptor B4 [Source:HGNC Symbol;Acc:HGNC:6608]	12610	-0.1688879132270813	0.030389419	No	

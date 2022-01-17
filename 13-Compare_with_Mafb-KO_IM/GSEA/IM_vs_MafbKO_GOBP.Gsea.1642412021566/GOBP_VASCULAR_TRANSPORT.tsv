@@ -1,0 +1,64 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.27029455	Yes	
+row_1	SLCO2B1	solute carrier organic anion transporter family member 2B1 [Source:HGNC Symbol;Acc:HGNC:10962]	25	0.4964974820613861	0.357219	Yes	
+row_2	SLC7A8	solute carrier family 7 member 8 [Source:HGNC Symbol;Acc:HGNC:11066]	84	0.2856887876987457	0.4036882	Yes	
+row_3	ABCC3	ATP binding cassette subfamily C member 3 [Source:HGNC Symbol;Acc:HGNC:54]	87	0.2824684679508209	0.45391005	Yes	
+row_4	SLC29A1	solute carrier family 29 member 1 (Augustine blood group) [Source:HGNC Symbol;Acc:HGNC:11003]	103	0.24619480967521667	0.4966583	Yes	
+row_5	SLC28A2	solute carrier family 28 member 2 [Source:HGNC Symbol;Acc:HGNC:11002]	148	0.19009332358837128	0.5271604	Yes	
+row_6	ABCC5	ATP binding cassette subfamily C member 5 [Source:HGNC Symbol;Acc:HGNC:56]	176	0.16914498805999756	0.5552401	Yes	
+row_7	SLC15A2	solute carrier family 15 member 2 [Source:HGNC Symbol;Acc:HGNC:10921]	214	0.15380464494228363	0.5798112	Yes	
+row_8	TFRC	transferrin receptor [Source:HGNC Symbol;Acc:HGNC:11763]	262	0.13906192779541016	0.6009804	Yes	
+row_9	SLC27A1	solute carrier family 27 member 1 [Source:HGNC Symbol;Acc:HGNC:10995]	342	0.12144143134355545	0.61653453	Yes	
+row_10	SLC16A7	solute carrier family 16 member 7 [Source:HGNC Symbol;Acc:HGNC:10928]	403	0.11060922592878342	0.6316249	Yes	
+row_11	FABP5	fatty acid binding protein 5 [Source:HGNC Symbol;Acc:HGNC:3560]	1309	0.057284798473119736	0.5719139	No	
+row_12	SLC5A6	solute carrier family 5 member 6 [Source:HGNC Symbol;Acc:HGNC:11041]	1719	0.046940434724092484	0.54868287	No	
+row_13	CD36	CD36 molecule [Source:HGNC Symbol;Acc:HGNC:1663]	1904	0.043137308210134506	0.5421589	No	
+row_14	SLC13A3	solute carrier family 13 member 3 [Source:HGNC Symbol;Acc:HGNC:14430]	2136	0.038922883570194244	0.53125167	No	
+row_15	INSR	insulin receptor [Source:HGNC Symbol;Acc:HGNC:6091]	2274	0.036036938428878784	0.52709293	No	
+row_16	SLC16A1	solute carrier family 16 member 1 [Source:HGNC Symbol;Acc:HGNC:10922]	2734	0.029203934594988823	0.49683532	No	
+row_17	ABCB1	ATP binding cassette subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:40]	2974	0.025763902813196182	0.48296314	No	
+row_18	AGER	advanced glycosylation end-product specific receptor [Source:HGNC Symbol;Acc:HGNC:320]	3295	0.0218600295484066	0.46213603	No	
+row_19	SLC1A3	solute carrier family 1 member 3 [Source:HGNC Symbol;Acc:HGNC:10941]	3535	0.01886744610965252	0.4470339	No	
+row_20	SLC29A2	solute carrier family 29 member 2 [Source:HGNC Symbol;Acc:HGNC:11004]	3608	0.018105454742908478	0.44469962	No	
+row_21	SLC4A3	solute carrier family 4 member 3 [Source:HGNC Symbol;Acc:HGNC:11029]	4316	0.010926594957709312	0.39201996	No	
+row_22	ABCC9	ATP binding cassette subfamily C member 9 [Source:HGNC Symbol;Acc:HGNC:60]	4416	0.010107475332915783	0.38617304	No	
+row_23	ATP8A1	ATPase phospholipid transporting 8A1 [Source:HGNC Symbol;Acc:HGNC:13531]	4506	0.009534565731883049	0.38099664	No	
+row_24	SLC16A2	solute carrier family 16 member 2 [Source:HGNC Symbol;Acc:HGNC:10923]	4531	0.00937345065176487	0.3808139	No	
+row_25	SLC9A3R1	SLC9A3 regulator 1 [Source:HGNC Symbol;Acc:HGNC:11075]	4874	0.006861288100481033	0.35561198	No	
+row_26	SLC7A2	solute carrier family 7 member 2 [Source:HGNC Symbol;Acc:HGNC:11060]	4927	0.006427212618291378	0.35274032	No	
+row_27	KCNJ8	potassium inwardly rectifying channel subfamily J member 8 [Source:HGNC Symbol;Acc:HGNC:6269]	5480	0.0	0.3100885	No	
+row_28	SLC38A5	solute carrier family 38 member 5 [Source:HGNC Symbol;Acc:HGNC:18070]	5728	0.0	0.29100332	No	
+row_29	SLC24A3	solute carrier family 24 member 3 [Source:HGNC Symbol;Acc:HGNC:10977]	5778	0.0	0.2872172	No	
+row_30	SLC6A9	solute carrier family 6 member 9 [Source:HGNC Symbol;Acc:HGNC:11056]	6580	0.0	0.22532569	No	
+row_31	SLC1A2	solute carrier family 1 member 2 [Source:HGNC Symbol;Acc:HGNC:10940]	6735	0.0	0.21342644	No	
+row_32	ABCC2	ATP binding cassette subfamily C member 2 [Source:HGNC Symbol;Acc:HGNC:53]	6766	0.0	0.21110842	No	
+row_33	ABCA2	ATP binding cassette subfamily A member 2 [Source:HGNC Symbol;Acc:HGNC:32]	7220	-0.005234321113675833	0.1770396	No	
+row_34	SLC6A20	solute carrier family 6 member 20 [Source:HGNC Symbol;Acc:HGNC:30927]	7258	-0.0055595263838768005	0.1751722	No	
+row_35	SLC5A5	solute carrier family 5 member 5 [Source:HGNC Symbol;Acc:HGNC:11040]	7366	-0.006210011430084705	0.16801205	No	
+row_36	SLC4A8	solute carrier family 4 member 8 [Source:HGNC Symbol;Acc:HGNC:11034]	7657	-0.00773636857047677	0.14698412	No	
+row_37	SLC7A5	solute carrier family 7 member 5 [Source:HGNC Symbol;Acc:HGNC:11063]	7757	-0.008584012277424335	0.1408655	No	
+row_38	ABCC1	ATP binding cassette subfamily C member 1 [Source:HGNC Symbol;Acc:HGNC:51]	7923	-0.010159299708902836	0.12992817	No	
+row_39	SLC6A13	solute carrier family 6 member 13 [Source:HGNC Symbol;Acc:HGNC:11046]	8087	-0.011853139847517014	0.11944744	No	
+row_40	ATP1A2	ATPase Na+/K+ transporting subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:800]	8175	-0.01255512423813343	0.11496427	No	
+row_41	SLC19A1	solute carrier family 19 member 1 [Source:HGNC Symbol;Acc:HGNC:10937]	8362	-0.014312446117401123	0.10314499	No	
+row_42	SLC27A4	solute carrier family 27 member 4 [Source:HGNC Symbol;Acc:HGNC:10998]	8388	-0.014569558203220367	0.103811674	No	
+row_43	SLC12A2	solute carrier family 12 member 2 [Source:HGNC Symbol;Acc:HGNC:10911]	8421	-0.014932134188711643	0.104002155	No	
+row_44	ABCG2	ATP binding cassette subfamily G member 2 (Junior blood group) [Source:HGNC Symbol;Acc:HGNC:74]	8607	-0.01702098734676838	0.092743196	No	
+row_45	MFSD2A	major facilitator superfamily domain containing 2A [Source:HGNC Symbol;Acc:HGNC:25897]	8612	-0.017087699845433235	0.095481604	No	
+row_46	SLC1A4	solute carrier family 1 member 4 [Source:HGNC Symbol;Acc:HGNC:10942]	8797	-0.019150791689753532	0.084679745	No	
+row_47	SLC22A5	solute carrier family 22 member 5 [Source:HGNC Symbol;Acc:HGNC:10969]	9211	-0.02380937896668911	0.057014383	No	
+row_48	LEPR	leptin receptor [Source:HGNC Symbol;Acc:HGNC:6554]	9275	-0.024635974317789078	0.056540176	No	
+row_49	SLC38A2	solute carrier family 38 member 2 [Source:HGNC Symbol;Acc:HGNC:13448]	9482	-0.027719777077436447	0.04556665	No	
+row_50	SLC7A1	solute carrier family 7 member 1 [Source:HGNC Symbol;Acc:HGNC:11057]	9784	-0.032425280660390854	0.028091874	No	
+row_51	SLC2A3	solute carrier family 2 member 3 [Source:HGNC Symbol;Acc:HGNC:11007]	9884	-0.03435772657394409	0.026569838	No	
+row_52	SLCO3A1	solute carrier organic anion transporter family member 3A1 [Source:HGNC Symbol;Acc:HGNC:10952]	10271	-0.040856290608644485	0.004030914	No	
+row_53	ABCC4	ATP binding cassette subfamily C member 4 [Source:HGNC Symbol;Acc:HGNC:55]	11295	-0.06610342860221863	-0.06322494	No	
+row_54	SLC5A3	solute carrier family 5 member 3 [Source:HGNC Symbol;Acc:HGNC:11038]	11298	-0.06614826619625092	-0.051582366	No	
+row_55	ATP2B4	ATPase plasma membrane Ca2+ transporting 4 [Source:HGNC Symbol;Acc:HGNC:817]	11322	-0.06677351891994476	-0.041450907	No	
+row_56	SLC6A6	solute carrier family 6 member 6 [Source:HGNC Symbol;Acc:HGNC:11052]	11596	-0.0759533941745758	-0.048999228	No	
+row_57	SLC44A1	solute carrier family 44 member 1 [Source:HGNC Symbol;Acc:HGNC:18798]	11772	-0.0841982364654541	-0.047504887	No	
+row_58	SLC1A5	solute carrier family 1 member 5 [Source:HGNC Symbol;Acc:HGNC:10943]	12117	-0.10430895537137985	-0.055482194	No	
+row_59	ATP2A3	ATPase sarcoplasmic/endoplasmic reticulum Ca2+ transporting 3 [Source:HGNC Symbol;Acc:HGNC:813]	12267	-0.11684782058000565	-0.046156053	No	
+row_60	LRP1	LDL receptor related protein 1 [Source:HGNC Symbol;Acc:HGNC:6692]	12436	-0.13323365151882172	-0.035375696	No	
+row_61	SLC38A1	solute carrier family 38 member 1 [Source:HGNC Symbol;Acc:HGNC:13447]	12730	-0.20244064927101135	-0.021911196	No	
+row_62	SLC2A1	solute carrier family 2 member 1 [Source:HGNC Symbol;Acc:HGNC:11005]	12837	-0.24113838374614716	0.012903871	No	

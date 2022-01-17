@@ -1,0 +1,23 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ITGAV	integrin subunit alpha V [Source:HGNC Symbol;Acc:HGNC:6150]	397	0.11163220554590225	0.036954284	No	
+row_1	FAP	fibroblast activation protein alpha [Source:HGNC Symbol;Acc:HGNC:3590]	1514	0.05145169049501419	-0.0178782	No	
+row_2	FERMT2	FERM domain containing kindlin 2 [Source:HGNC Symbol;Acc:HGNC:15767]	4422	0.010067261755466461	-0.23569614	No	
+row_3	APC2	APC regulator of WNT signaling pathway 2 [Source:HGNC Symbol;Acc:HGNC:24036]	5004	0.005695099011063576	-0.27700168	No	
+row_4	ANTXR1	ANTXR cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:21014]	6464	0.0	-0.3893794	No	
+row_5	PDXP	pyridoxal phosphatase [Source:HGNC Symbol;Acc:HGNC:30259]	6545	0.0	-0.3955413	No	
+row_6	PDPN	podoplanin [Source:HGNC Symbol;Acc:HGNC:29602]	7054	-0.003381358925253153	-0.43262383	No	
+row_7	ITGB3	integrin subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:6156]	7092	-0.003770229872316122	-0.43319288	No	
+row_8	KCNA2	potassium voltage-gated channel subfamily A member 2 [Source:HGNC Symbol;Acc:HGNC:6220]	7373	-0.0062344856560230255	-0.45098794	No	
+row_9	PLEK2	pleckstrin 2 [Source:HGNC Symbol;Acc:HGNC:19238]	7451	-0.006639508530497551	-0.45290214	No	
+row_10	NCKAP1	NCK associated protein 1 [Source:HGNC Symbol;Acc:HGNC:7666]	7466	-0.006741303019225597	-0.4499023	No	
+row_11	EPHA2	EPH receptor A2 [Source:HGNC Symbol;Acc:HGNC:3386]	8355	-0.014263419434428215	-0.5096707	No	
+row_12	CSPG4	chondroitin sulfate proteoglycan 4 [Source:HGNC Symbol;Acc:HGNC:2466]	8753	-0.018576044589281082	-0.52901137	No	
+row_13	SYNE2	spectrin repeat containing nuclear envelope protein 2 [Source:HGNC Symbol;Acc:HGNC:17084]	9569	-0.029104432091116905	-0.5741789	No	
+row_14	DOCK8	dedicator of cytokinesis 8 [Source:HGNC Symbol;Acc:HGNC:19191]	11471	-0.0715520903468132	-0.6773151	Yes	
+row_15	SLC39A6	solute carrier family 39 member 6 [Source:HGNC Symbol;Acc:HGNC:18607]	11607	-0.07640867680311203	-0.6414894	Yes	
+row_16	CFL1	cofilin 1 [Source:HGNC Symbol;Acc:HGNC:1874]	11841	-0.08730033040046692	-0.60662293	Yes	
+row_17	PIEZO1	piezo type mechanosensitive ion channel component 1 [Source:HGNC Symbol;Acc:HGNC:28993]	12227	-0.11329809576272964	-0.56773657	Yes	
+row_18	CD44	CD44 molecule (Indian blood group) [Source:HGNC Symbol;Acc:HGNC:1681]	12720	-0.19986750185489655	-0.48472095	Yes	
+row_19	PLXND1	plexin D1 [Source:HGNC Symbol;Acc:HGNC:9107]	12849	-0.25237560272216797	-0.3419035	Yes	
+row_20	VASP	vasodilator stimulated phosphoprotein [Source:HGNC Symbol;Acc:HGNC:12652]	12892	-0.2853575348854065	-0.17250936	Yes	
+row_21	DPP4	dipeptidyl peptidase 4 [Source:HGNC Symbol;Acc:HGNC:3009]	12904	-0.2992921769618988	0.0077023953	Yes	

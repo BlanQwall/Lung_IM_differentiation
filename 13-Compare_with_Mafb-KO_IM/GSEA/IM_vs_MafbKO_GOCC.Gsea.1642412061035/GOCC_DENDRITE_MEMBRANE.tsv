@@ -1,0 +1,22 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ATP2B1	ATPase plasma membrane Ca2+ transporting 1 [Source:HGNC Symbol;Acc:HGNC:814]	74	0.3098572790622711	0.37748605	Yes	
+row_1	PPP1R9B	protein phosphatase 1 regulatory subunit 9B [Source:HGNC Symbol;Acc:HGNC:9298]	527	0.09640960395336151	0.46189904	Yes	
+row_2	SGCE	sarcoglycan epsilon [Source:HGNC Symbol;Acc:HGNC:10808]	536	0.09561483561992645	0.5795251	Yes	
+row_3	INSR	insulin receptor [Source:HGNC Symbol;Acc:HGNC:6091]	2274	0.036036938428878784	0.4903102	No	
+row_4	ITGA8	integrin subunit alpha 8 [Source:HGNC Symbol;Acc:HGNC:6144]	2727	0.029338020831346512	0.49177903	No	
+row_5	KCNB1	potassium voltage-gated channel subfamily B member 1 [Source:HGNC Symbol;Acc:HGNC:6231]	4492	0.00964345782995224	0.3678451	No	
+row_6	ATP2B2	ATPase plasma membrane Ca2+ transporting 2 [Source:HGNC Symbol;Acc:HGNC:815]	4668	0.008478250354528427	0.36485162	No	
+row_7	SLC12A5	solute carrier family 12 member 5 [Source:HGNC Symbol;Acc:HGNC:13818]	5731	0.0	0.28305864	No	
+row_8	GABRA2	gamma-aminobutyric acid type A receptor subunit alpha2 [Source:HGNC Symbol;Acc:HGNC:4076]	6028	0.0	0.26026136	No	
+row_9	MPP2	membrane palmitoylated protein 2 [Source:HGNC Symbol;Acc:HGNC:7220]	6055	0.0	0.25825888	No	
+row_10	THY1	Thy-1 cell surface antigen [Source:HGNC Symbol;Acc:HGNC:11801]	6247	0.0	0.24354847	No	
+row_11	SHISA9	shisa family member 9 [Source:HGNC Symbol;Acc:HGNC:37231]	6388	0.0	0.23276597	No	
+row_12	SHISA7	shisa family member 7 [Source:HGNC Symbol;Acc:HGNC:35409]	6389	0.0	0.23276597	No	
+row_13	OPRD1	opioid receptor delta 1 [Source:HGNC Symbol;Acc:HGNC:8153]	6472	0.0	0.2264505	No	
+row_14	SHISA8	shisa family member 8 [Source:HGNC Symbol;Acc:HGNC:18351]	8061	-0.011629262939095497	0.11852747	No	
+row_15	KCNC3	potassium voltage-gated channel subfamily C member 3 [Source:HGNC Symbol;Acc:HGNC:6235]	8098	-0.011922406032681465	0.13049869	No	
+row_16	HPCA	hippocalcin [Source:HGNC Symbol;Acc:HGNC:5144]	8181	-0.012616056017577648	0.13978489	No	
+row_17	DAGLA	diacylglycerol lipase alpha [Source:HGNC Symbol;Acc:HGNC:1165]	8609	-0.017082082107663155	0.12802283	No	
+row_18	ATF4	activating transcription factor 4 [Source:HGNC Symbol;Acc:HGNC:786]	9623	-0.02994038723409176	0.087029554	No	
+row_19	AKAP5	A-kinase anchoring protein 5 [Source:HGNC Symbol;Acc:HGNC:375]	11199	-0.06305669248104095	0.043705553	No	
+row_20	ATP6AP2	ATPase H+ transporting accessory protein 2 [Source:HGNC Symbol;Acc:HGNC:18305]	11623	-0.0770101472735405	0.10636169	No	

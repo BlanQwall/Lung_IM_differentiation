@@ -1,0 +1,22 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PF4	platelet factor 4 [Source:HGNC Symbol;Acc:HGNC:8861]	7	1.029140830039978	0.5422298	Yes	
+row_1	RAB7B	"RAB7B, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:30513]"	40	0.4045156240463257	0.7531068	Yes	
+row_2	HMGB2	high mobility group box 2 [Source:HGNC Symbol;Acc:HGNC:5000]	413	0.10929585248231888	0.7820987	Yes	
+row_3	MEF2C	myocyte enhancer factor 2C [Source:HGNC Symbol;Acc:HGNC:6996]	423	0.10839357227087021	0.8385723	Yes	
+row_4	CNOT4	CCR4-NOT transcription complex subunit 4 [Source:HGNC Symbol;Acc:HGNC:7880]	1826	0.04461764544248581	0.75412464	No	
+row_5	PITHD1	PITH domain containing 1 [Source:HGNC Symbol;Acc:HGNC:25022]	3520	0.01895853690803051	0.63373214	No	
+row_6	LOX	lysyl oxidase [Source:HGNC Symbol;Acc:HGNC:6664]	5873	0.0	0.4525861	No	
+row_7	TESC	tescalcin [Source:HGNC Symbol;Acc:HGNC:26065]	6121	0.0	0.4335627	No	
+row_8	SCIN	scinderin [Source:HGNC Symbol;Acc:HGNC:21695]	6154	0.0	0.43109813	No	
+row_9	GATA2	GATA binding protein 2 [Source:HGNC Symbol;Acc:HGNC:4171]	6322	0.0	0.41823614	No	
+row_10	RCOR1	REST corepressor 1 [Source:HGNC Symbol;Acc:HGNC:17441]	6828	-7.159634842537344E-4	0.3797197	No	
+row_11	MTURN	"maturin, neural progenitor differentiation regulator homolog [Source:HGNC Symbol;Acc:HGNC:25457]"	7237	-0.005360323004424572	0.35112345	No	
+row_12	H4C14	H4 clustered histone 14 [Source:HGNC Symbol;Acc:HGNC:4794]	7378	-0.006247777491807938	0.34363604	No	
+row_13	L3MBTL1	L3MBTL histone methyl-lysine binding protein 1 [Source:HGNC Symbol;Acc:HGNC:15905]	7597	-0.007383264135569334	0.33074006	No	
+row_14	GABPA	GA binding protein transcription factor subunit alpha [Source:HGNC Symbol;Acc:HGNC:4071]	7930	-0.010299707762897015	0.31060222	No	
+row_15	RBM15	RNA binding motif protein 15 [Source:HGNC Symbol;Acc:HGNC:14959]	7992	-0.011013967916369438	0.3117129	No	
+row_16	CIB1	calcium and integrin binding 1 [Source:HGNC Symbol;Acc:HGNC:16920]	8495	-0.015638479962944984	0.28129765	No	
+row_17	H4C12	H4 clustered histone 12 [Source:HGNC Symbol;Acc:HGNC:4784]	8826	-0.019423803314566612	0.2661259	No	
+row_18	PRMT1	protein arginine methyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:5187]	9657	-0.03051103837788105	0.21829256	No	
+row_19	PRMT6	protein arginine methyltransferase 6 [Source:HGNC Symbol;Acc:HGNC:18241]	9675	-0.03077135793864727	0.23321208	No	
+row_20	EIF6	eukaryotic translation initiation factor 6 [Source:HGNC Symbol;Acc:HGNC:6159]	10445	-0.04380616545677185	0.19708872	No	

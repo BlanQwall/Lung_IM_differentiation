@@ -1,0 +1,34 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	STEAP4	STEAP4 metalloreductase [Source:HGNC Symbol;Acc:HGNC:21923]	3417	0.02039536088705063	-0.24976769	No	
+row_1	ACOX1	acyl-CoA oxidase 1 [Source:HGNC Symbol;Acc:HGNC:119]	3559	0.018650971353054047	-0.24815856	No	
+row_2	PRODH	proline dehydrogenase 1 [Source:HGNC Symbol;Acc:HGNC:9453]	3670	0.01745668239891529	-0.24495871	No	
+row_3	CRY2	cryptochrome circadian regulator 2 [Source:HGNC Symbol;Acc:HGNC:2385]	4597	0.008908637799322605	-0.31038278	No	
+row_4	SQOR	sulfide quinone oxidoreductase [Source:HGNC Symbol;Acc:HGNC:20390]	5297	0.0020290387328714132	-0.3629105	No	
+row_5	DAO	D-amino acid oxidase [Source:HGNC Symbol;Acc:HGNC:2671]	5548	0.0	-0.3821828	No	
+row_6	LDHD	lactate dehydrogenase D [Source:HGNC Symbol;Acc:HGNC:19708]	5678	0.0	-0.3921273	No	
+row_7	ACOXL	acyl-CoA oxidase like [Source:HGNC Symbol;Acc:HGNC:25621]	5842	0.0	-0.40469283	No	
+row_8	AOX1	aldehyde oxidase 1 [Source:HGNC Symbol;Acc:HGNC:553]	6158	0.0	-0.42897588	No	
+row_9	D2HGDH	D-2-hydroxyglutarate dehydrogenase [Source:HGNC Symbol;Acc:HGNC:28358]	6798	-3.03721142699942E-4	-0.47803262	No	
+row_10	CYB5R3	cytochrome b5 reductase 3 [Source:HGNC Symbol;Acc:HGNC:2873]	7917	-0.01012768130749464	-0.5574422	No	
+row_11	QSOX1	quiescin sulfhydryl oxidase 1 [Source:HGNC Symbol;Acc:HGNC:9756]	8391	-0.014614121988415718	-0.58412755	No	
+row_12	ACOX3	"acyl-CoA oxidase 3, pristanoyl [Source:HGNC Symbol;Acc:HGNC:121]"	8615	-0.017130767926573753	-0.5898568	No	
+row_13	KDM1B	lysine demethylase 1B [Source:HGNC Symbol;Acc:HGNC:21577]	9915	-0.034830521792173386	-0.6666917	Yes	
+row_14	MTRR	5-methyltetrahydrofolate-homocysteine methyltransferase reductase [Source:HGNC Symbol;Acc:HGNC:7473]	9946	-0.03531917929649353	-0.6453736	Yes	
+row_15	CYB5R1	cytochrome b5 reductase 1 [Source:HGNC Symbol;Acc:HGNC:13397]	10013	-0.03665431961417198	-0.6259374	Yes	
+row_16	ERO1A	endoplasmic reticulum oxidoreductase 1 alpha [Source:HGNC Symbol;Acc:HGNC:13280]	10085	-0.038013212382793427	-0.6059774	Yes	
+row_17	MICAL3	"microtubule associated monooxygenase, calponin and LIM domain containing 3 [Source:HGNC Symbol;Acc:HGNC:24694]"	10188	-0.039581771939992905	-0.58735776	Yes	
+row_18	MTHFR	methylenetetrahydrofolate reductase [Source:HGNC Symbol;Acc:HGNC:7436]	10312	-0.04159506782889366	-0.56900996	Yes	
+row_19	AGPS	alkylglycerone phosphate synthase [Source:HGNC Symbol;Acc:HGNC:327]	10418	-0.04344431310892105	-0.5480373	Yes	
+row_20	MICAL2	"microtubule associated monooxygenase, calponin and LIM domain containing 2 [Source:HGNC Symbol;Acc:HGNC:24693]"	10452	-0.04388244077563286	-0.52122104	Yes	
+row_21	CRY1	cryptochrome circadian regulator 1 [Source:HGNC Symbol;Acc:HGNC:2384]	10480	-0.04444665089249611	-0.49356478	Yes	
+row_22	XDH	xanthine dehydrogenase [Source:HGNC Symbol;Acc:HGNC:12805]	10490	-0.04459129646420479	-0.46442413	Yes	
+row_23	MMACHC	metabolism of cobalamin associated C [Source:HGNC Symbol;Acc:HGNC:24525]	10944	-0.055820345878601074	-0.4619981	Yes	
+row_24	COQ6	"coenzyme Q6, monooxygenase [Source:HGNC Symbol;Acc:HGNC:20233]"	11101	-0.0602458156645298	-0.4337157	Yes	
+row_25	NDOR1	NADPH dependent diflavin oxidoreductase 1 [Source:HGNC Symbol;Acc:HGNC:29838]	11522	-0.07333926856517792	-0.41702443	Yes	
+row_26	AIFM1	apoptosis inducing factor mitochondria associated 1 [Source:HGNC Symbol;Acc:HGNC:8768]	11948	-0.0947115570306778	-0.38641918	Yes	
+row_27	NQO2	N-ribosyldihydronicotinamide:quinone reductase 2 [Source:HGNC Symbol;Acc:HGNC:7856]	12069	-0.10065055638551712	-0.3283282	Yes	
+row_28	KMO	kynurenine 3-monooxygenase [Source:HGNC Symbol;Acc:HGNC:6381]	12122	-0.10450449585914612	-0.2624166	Yes	
+row_29	SQLE	squalene epoxidase [Source:HGNC Symbol;Acc:HGNC:11279]	12206	-0.11179402470588684	-0.1940176	Yes	
+row_30	ERO1B	endoplasmic reticulum oxidoreductase 1 beta [Source:HGNC Symbol;Acc:HGNC:14355]	12245	-0.11464302986860275	-0.12024344	Yes	
+row_31	MICAL1	"microtubule associated monooxygenase, calponin and LIM domain containing 1 [Source:HGNC Symbol;Acc:HGNC:20619]"	12382	-0.1270403116941452	-0.04572943	Yes	
+row_32	DHCR24	24-dehydrocholesterol reductase [Source:HGNC Symbol;Acc:HGNC:2859]	12470	-0.13989956676959991	0.041165616	Yes	

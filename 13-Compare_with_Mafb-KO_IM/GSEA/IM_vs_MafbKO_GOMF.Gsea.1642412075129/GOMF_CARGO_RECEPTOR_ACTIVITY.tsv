@@ -1,0 +1,64 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	STAB1	stabilin 1 [Source:HGNC Symbol;Acc:HGNC:18628]	28	0.4617379307746887	0.09833629	Yes	
+row_1	FOLR2	folate receptor beta [Source:HGNC Symbol;Acc:HGNC:3793]	47	0.385172575712204	0.18078038	Yes	
+row_2	ABCA1	ATP binding cassette subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:29]	53	0.3633791506290436	0.2594855	Yes	
+row_3	DAB2	DAB adaptor protein 2 [Source:HGNC Symbol;Acc:HGNC:2662]	77	0.29839760065078735	0.3226562	Yes	
+row_4	MSR1	macrophage scavenger receptor 1 [Source:HGNC Symbol;Acc:HGNC:7376]	91	0.2646862268447876	0.37926212	Yes	
+row_5	LRP6	LDL receptor related protein 6 [Source:HGNC Symbol;Acc:HGNC:6698]	173	0.1710641235113144	0.41023648	Yes	
+row_6	MRC1	mannose receptor C-type 1 [Source:HGNC Symbol;Acc:HGNC:7228]	236	0.14477235078811646	0.43695638	Yes	
+row_7	TFRC	transferrin receptor [Source:HGNC Symbol;Acc:HGNC:11763]	262	0.13906192779541016	0.46529227	Yes	
+row_8	FPR2	formyl peptide receptor 2 [Source:HGNC Symbol;Acc:HGNC:3827]	488	0.10080277174711227	0.4698473	Yes	
+row_9	COLEC12	collectin subfamily member 12 [Source:HGNC Symbol;Acc:HGNC:16016]	647	0.08525615930557251	0.47619545	Yes	
+row_10	CXCL16	C-X-C motif chemokine ligand 16 [Source:HGNC Symbol;Acc:HGNC:16642]	1149	0.06234767660498619	0.45105457	No	
+row_11	CD36	CD36 molecule [Source:HGNC Symbol;Acc:HGNC:1663]	1904	0.043137308210134506	0.4021837	No	
+row_12	INSR	insulin receptor [Source:HGNC Symbol;Acc:HGNC:6091]	2274	0.036036938428878784	0.38151553	No	
+row_13	SCARF1	scavenger receptor class F member 1 [Source:HGNC Symbol;Acc:HGNC:16820]	2600	0.03119335137307644	0.36319292	No	
+row_14	LOXL3	lysyl oxidase like 3 [Source:HGNC Symbol;Acc:HGNC:13869]	2954	0.026095373556017876	0.34159717	No	
+row_15	AGER	advanced glycosylation end-product specific receptor [Source:HGNC Symbol;Acc:HGNC:320]	3295	0.0218600295484066	0.32008407	No	
+row_16	ENPP1	ectonucleotide pyrophosphatase/phosphodiesterase 1 [Source:HGNC Symbol;Acc:HGNC:3356]	3513	0.01905406266450882	0.30746418	No	
+row_17	SCARF2	scavenger receptor class F member 2 [Source:HGNC Symbol;Acc:HGNC:19869]	4007	0.013894765637814999	0.2723954	No	
+row_18	SSC5D	scavenger receptor cysteine rich family member with 5 domains [Source:HGNC Symbol;Acc:HGNC:26641]	4129	0.012604289688169956	0.2657894	No	
+row_19	PRSS12	serine protease 12 [Source:HGNC Symbol;Acc:HGNC:9477]	4170	0.012159015983343124	0.26534516	No	
+row_20	ENPP2	ectonucleotide pyrophosphatase/phosphodiesterase 2 [Source:HGNC Symbol;Acc:HGNC:3357]	4487	0.009660337120294571	0.24303116	No	
+row_21	AMN	amnion associated transmembrane protein [Source:HGNC Symbol;Acc:HGNC:14604]	4717	0.008157956413924694	0.22711246	No	
+row_22	TMPRSS4	transmembrane serine protease 4 [Source:HGNC Symbol;Acc:HGNC:11878]	4783	0.007637583650648594	0.22375241	No	
+row_23	VLDLR	very low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:12698]	4820	0.007425827439874411	0.22258703	No	
+row_24	CD6	CD6 molecule [Source:HGNC Symbol;Acc:HGNC:1691]	5511	0.0	0.16927224	No	
+row_25	CD5	CD5 molecule [Source:HGNC Symbol;Acc:HGNC:1685]	5512	0.0	0.16927224	No	
+row_26	ACKR4	atypical chemokine receptor 4 [Source:HGNC Symbol;Acc:HGNC:1611]	5672	0.0	0.15698667	No	
+row_27	ACKR3	atypical chemokine receptor 3 [Source:HGNC Symbol;Acc:HGNC:23692]	5673	0.0	0.15698667	No	
+row_28	ACKR2	atypical chemokine receptor 2 [Source:HGNC Symbol;Acc:HGNC:1565]	5674	0.0	0.15698667	No	
+row_29	PGBD1	piggyBac transposable element derived 1 [Source:HGNC Symbol;Acc:HGNC:19398]	5736	0.0	0.15227333	No	
+row_30	PRG4	proteoglycan 4 [Source:HGNC Symbol;Acc:HGNC:9364]	5738	0.0	0.15219606	No	
+row_31	TMPRSS5	transmembrane serine protease 5 [Source:HGNC Symbol;Acc:HGNC:14908]	5743	0.0	0.151887	No	
+row_32	TMPRSS13	transmembrane serine protease 13 [Source:HGNC Symbol;Acc:HGNC:29808]	5988	0.0	0.13303365	No	
+row_33	LOXL2	lysyl oxidase like 2 [Source:HGNC Symbol;Acc:HGNC:6666]	6009	0.0	0.1314883	No	
+row_34	CUBN	cubilin [Source:HGNC Symbol;Acc:HGNC:2548]	6116	0.0	0.1232979	No	
+row_35	TFR2	transferrin receptor 2 [Source:HGNC Symbol;Acc:HGNC:11762]	6169	0.0	0.11927997	No	
+row_36	VTN	vitronectin [Source:HGNC Symbol;Acc:HGNC:12724]	6293	0.0	0.109776035	No	
+row_37	STAB2	stabilin 2 [Source:HGNC Symbol;Acc:HGNC:18629]	6309	0.0	0.10861702	No	
+row_38	ENDOU	"endonuclease, poly(U) specific [Source:HGNC Symbol;Acc:HGNC:14369]"	6318	0.0	0.10799888	No	
+row_39	SCARB1	scavenger receptor class B member 1 [Source:HGNC Symbol;Acc:HGNC:1664]	6983	-0.0025750475469976664	0.057253525	No	
+row_40	TEX261	testis expressed 261 [Source:HGNC Symbol;Acc:HGNC:30712]	7841	-0.009410477243363857	-0.006916748	No	
+row_41	ILDR1	immunoglobulin like domain containing receptor 1 [Source:HGNC Symbol;Acc:HGNC:28741]	8198	-0.01279904879629612	-0.031638306	No	
+row_42	CD5L	CD5 molecule like [Source:HGNC Symbol;Acc:HGNC:1690]	8434	-0.015055927447974682	-0.046519235	No	
+row_43	SSC4D	scavenger receptor cysteine rich family member with 4 domains [Source:HGNC Symbol;Acc:HGNC:14461]	8505	-0.015780558809638023	-0.04849326	No	
+row_44	LGALS3BP	galectin 3 binding protein [Source:HGNC Symbol;Acc:HGNC:6564]	9248	-0.024257168173789978	-0.10054627	No	
+row_45	LRP8	LDL receptor related protein 8 [Source:HGNC Symbol;Acc:HGNC:6700]	9363	-0.025844262912869453	-0.10372965	No	
+row_46	OLR1	oxidized low density lipoprotein receptor 1 [Source:HGNC Symbol;Acc:HGNC:8133]	9953	-0.035431090742349625	-0.14152862	No	
+row_47	MARCO	macrophage receptor with collagenous structure [Source:HGNC Symbol;Acc:HGNC:6895]	9962	-0.03562454134225845	-0.13439289	No	
+row_48	LRP12	LDL receptor related protein 12 [Source:HGNC Symbol;Acc:HGNC:31708]	10108	-0.03834789618849754	-0.1372501	No	
+row_49	SCARB2	scavenger receptor class B member 2 [Source:HGNC Symbol;Acc:HGNC:1665]	10581	-0.046456437557935715	-0.163609	No	
+row_50	MIA3	MIA SH3 domain ER export factor 3 [Source:HGNC Symbol;Acc:HGNC:24008]	10655	-0.04827750474214554	-0.15874168	No	
+row_51	LRP10	LDL receptor related protein 10 [Source:HGNC Symbol;Acc:HGNC:14553]	10994	-0.0574069581925869	-0.17236327	No	
+row_52	ABCA7	ATP binding cassette subfamily A member 7 [Source:HGNC Symbol;Acc:HGNC:37]	11037	-0.0585797093808651	-0.16285832	No	
+row_53	CD163	CD163 molecule [Source:HGNC Symbol;Acc:HGNC:1631]	11354	-0.06763086467981339	-0.17255473	No	
+row_54	CD320	CD320 molecule [Source:HGNC Symbol;Acc:HGNC:16692]	11470	-0.07148780673742294	-0.16588081	No	
+row_55	SURF4	surfeit 4 [Source:HGNC Symbol;Acc:HGNC:11476]	11473	-0.0716375783085823	-0.15044303	No	
+row_56	APOBR	apolipoprotein B receptor [Source:HGNC Symbol;Acc:HGNC:24087]	11529	-0.0736280158162117	-0.13866723	No	
+row_57	SORL1	sortilin related receptor 1 [Source:HGNC Symbol;Acc:HGNC:11185]	12258	-0.11614586412906647	-0.16963841	No	
+row_58	LRP1	LDL receptor related protein 1 [Source:HGNC Symbol;Acc:HGNC:6692]	12436	-0.13323365151882172	-0.15431578	No	
+row_59	ITGAM	integrin subunit alpha M [Source:HGNC Symbol;Acc:HGNC:6149]	12593	-0.1651306450366974	-0.13042797	No	
+row_60	ASGR2	asialoglycoprotein receptor 2 [Source:HGNC Symbol;Acc:HGNC:743]	12750	-0.2102743536233902	-0.096714385	No	
+row_61	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	12802	-0.2263742983341217	-0.051383443	No	
+row_62	ITGB2	integrin subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:6155]	12911	-0.3074333369731903	0.0071861777	No	

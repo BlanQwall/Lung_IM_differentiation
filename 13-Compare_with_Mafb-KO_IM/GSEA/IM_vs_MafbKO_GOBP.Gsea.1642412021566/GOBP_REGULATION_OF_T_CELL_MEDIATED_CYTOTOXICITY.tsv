@@ -1,0 +1,27 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	P2RX7	purinergic receptor P2X 7 [Source:HGNC Symbol;Acc:HGNC:8537]	338	0.12179826200008392	0.016844565	No	
+row_1	NECTIN2	nectin cell adhesion molecule 2 [Source:HGNC Symbol;Acc:HGNC:9707]	590	0.09032965451478958	0.029311793	No	
+row_2	PPP3CB	protein phosphatase 3 catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9315]	924	0.07033193856477737	0.028419685	No	
+row_3	NCKAP1L	NCK associated protein 1 like [Source:HGNC Symbol;Acc:HGNC:4862]	3135	0.02375740185379982	-0.1334901	No	
+row_4	FADD	Fas associated via death domain [Source:HGNC Symbol;Acc:HGNC:3573]	3152	0.023445431143045425	-0.12646745	No	
+row_5	AGER	advanced glycosylation end-product specific receptor [Source:HGNC Symbol;Acc:HGNC:320]	3295	0.0218600295484066	-0.12971102	No	
+row_6	CD1D	CD1d molecule [Source:HGNC Symbol;Acc:HGNC:1637]	4367	0.010467225685715675	-0.2085433	No	
+row_7	KLRC1	killer cell lectin like receptor C1 [Source:HGNC Symbol;Acc:HGNC:6374]	4957	0.006183533929288387	-0.251747	No	
+row_8	IL12RB1	interleukin 12 receptor subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:5971]	5981	0.0	-0.33056664	No	
+row_9	IL12A	interleukin 12A [Source:HGNC Symbol;Acc:HGNC:5969]	6717	0.0	-0.38719657	No	
+row_10	IL12B	interleukin 12B [Source:HGNC Symbol;Acc:HGNC:5970]	6949	-0.0022332819644361734	-0.40420818	No	
+row_11	MR1	"major histocompatibility complex, class I-related [Source:HGNC Symbol;Acc:HGNC:4975]"	8279	-0.013623128645122051	-0.5018075	No	
+row_12	B2M	beta-2-microglobulin [Source:HGNC Symbol;Acc:HGNC:914]	10409	-0.04328591004014015	-0.6506002	No	
+row_13	RIPK3	receptor interacting serine/threonine kinase 3 [Source:HGNC Symbol;Acc:HGNC:10021]	11339	-0.06724560260772705	-0.6984994	Yes	
+row_14	IL23A	interleukin 23 subunit alpha [Source:HGNC Symbol;Acc:HGNC:15488]	11651	-0.07814692705869675	-0.6949447	Yes	
+row_15	PVR	PVR cell adhesion molecule [Source:HGNC Symbol;Acc:HGNC:9705]	12044	-0.09928176552057266	-0.69018906	Yes	
+row_16	HLA-DRB1	"major histocompatibility complex, class II, DR beta 1 [Source:HGNC Symbol;Acc:HGNC:4948]"	12464	-0.13899697363376617	-0.67352945	Yes	
+row_17	HLA-B	"major histocompatibility complex, class I, B [Source:HGNC Symbol;Acc:HGNC:4932]"	12479	-0.14124396443367004	-0.6248744	Yes	
+row_18	CYRIB	CYFIP related Rac1 interactor B [Source:HGNC Symbol;Acc:HGNC:25216]	12545	-0.15420301258563995	-0.5755858	Yes	
+row_19	HLA-E	"major histocompatibility complex, class I, E [Source:HGNC Symbol;Acc:HGNC:4962]"	12546	-0.15424029529094696	-0.5212759	Yes	
+row_20	CEACAM1	CEA cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:1814]	12589	-0.16290485858917236	-0.46715114	Yes	
+row_21	IL7R	interleukin 7 receptor [Source:HGNC Symbol;Acc:HGNC:6024]	12655	-0.1797756552696228	-0.40885806	Yes	
+row_22	STX7	syntaxin 7 [Source:HGNC Symbol;Acc:HGNC:11442]	12828	-0.23795448243618011	-0.3383236	Yes	
+row_23	PTPRC	protein tyrosine phosphatase receptor type C [Source:HGNC Symbol;Acc:HGNC:9666]	12842	-0.2467222660779953	-0.25245133	Yes	
+row_24	FCGR2B	Fc fragment of IgG receptor IIb [Source:HGNC Symbol;Acc:HGNC:3618]	12873	-0.27246883511543274	-0.1588232	Yes	
+row_25	KLRD1	killer cell lectin like receptor D1 [Source:HGNC Symbol;Acc:HGNC:6378]	12973	-0.4795045852661133	0.0023884163	Yes	

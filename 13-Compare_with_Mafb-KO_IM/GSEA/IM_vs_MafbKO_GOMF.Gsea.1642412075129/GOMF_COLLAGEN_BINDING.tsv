@@ -1,0 +1,54 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CTSB	cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527]	19	0.574101448059082	0.15587586	Yes	
+row_1	COL14A1	collagen type XIV alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2191]	32	0.43796083331108093	0.27498043	Yes	
+row_2	MMP13	matrix metallopeptidase 13 [Source:HGNC Symbol;Acc:HGNC:7159]	95	0.25626474618911743	0.34042746	Yes	
+row_3	PDGFA	platelet derived growth factor subunit A [Source:HGNC Symbol;Acc:HGNC:8799]	170	0.17233213782310486	0.38194478	Yes	
+row_4	MMP9	matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176]	187	0.16579772531986237	0.4261493	Yes	
+row_5	TGFBI	transforming growth factor beta induced [Source:HGNC Symbol;Acc:HGNC:11771]	227	0.14682456851005554	0.4633781	Yes	
+row_6	SMAD3	SMAD family member 3 [Source:HGNC Symbol;Acc:HGNC:6769]	885	0.0720459595322609	0.43239784	No	
+row_7	ADAM9	ADAM metallopeptidase domain 9 [Source:HGNC Symbol;Acc:HGNC:216]	1270	0.05846285820007324	0.4187727	No	
+row_8	THBS1	thrombospondin 1 [Source:HGNC Symbol;Acc:HGNC:11785]	2195	0.03777933865785599	0.35778648	No	
+row_9	PDGFB	platelet derived growth factor subunit B [Source:HGNC Symbol;Acc:HGNC:8800]	2498	0.03245340660214424	0.34336403	No	
+row_10	PCOLCE2	procollagen C-endopeptidase enhancer 2 [Source:HGNC Symbol;Acc:HGNC:8739]	2860	0.027500510215759277	0.32302892	No	
+row_11	ITGB1	integrin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6153]	2980	0.025665033608675003	0.3208751	No	
+row_12	ADGRG6	adhesion G protein-coupled receptor G6 [Source:HGNC Symbol;Acc:HGNC:13841]	3044	0.02501341700553894	0.32286638	No	
+row_13	C1QTNF1	C1q and TNF related 1 [Source:HGNC Symbol;Acc:HGNC:14324]	3168	0.023307589814066887	0.31975764	No	
+row_14	DDR2	discoidin domain receptor tyrosine kinase 2 [Source:HGNC Symbol;Acc:HGNC:2731]	3306	0.021742040291428566	0.3151389	No	
+row_15	SERPINH1	serpin family H member 1 [Source:HGNC Symbol;Acc:HGNC:1546]	4169	0.012159015983343124	0.25191787	No	
+row_16	ADGRG1	adhesion G protein-coupled receptor G1 [Source:HGNC Symbol;Acc:HGNC:4512]	4274	0.011230049654841423	0.24696602	No	
+row_17	P3H4	prolyl 3-hydroxylase family member 4 (inactive) [Source:HGNC Symbol;Acc:HGNC:16946]	4407	0.010146016255021095	0.23955524	No	
+row_18	P3H1	prolyl 3-hydroxylase 1 [Source:HGNC Symbol;Acc:HGNC:19316]	4503	0.00956012960523367	0.2348406	No	
+row_19	NID1	nidogen 1 [Source:HGNC Symbol;Acc:HGNC:7821]	5632	0.0	0.1477498	No	
+row_20	COMP	cartilage oligomeric matrix protein [Source:HGNC Symbol;Acc:HGNC:2227]	5870	0.0	0.12945147	No	
+row_21	LOX	lysyl oxidase [Source:HGNC Symbol;Acc:HGNC:6664]	5873	0.0	0.12929705	No	
+row_22	COL6A1	collagen type VI alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2211]	5876	0.0	0.12914263	No	
+row_23	LUM	lumican [Source:HGNC Symbol;Acc:HGNC:6724]	5881	0.0	0.1288338	No	
+row_24	ITGA10	integrin subunit alpha 10 [Source:HGNC Symbol;Acc:HGNC:6135]	6137	0.0	0.109145716	No	
+row_25	AEBP1	AE binding protein 1 [Source:HGNC Symbol;Acc:HGNC:303]	6367	0.0	0.09146505	No	
+row_26	ANTXR1	ANTXR cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:21014]	6464	0.0	0.08405307	No	
+row_27	TNXB	tenascin XB [Source:HGNC Symbol;Acc:HGNC:11976]	6473	0.0	0.0834354	No	
+row_28	ITGA2	integrin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6137]	6637	0.0	0.07085048	No	
+row_29	COL6A2	collagen type VI alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2212]	7111	-0.00416157953441143	0.035471573	No	
+row_30	SPARCL1	SPARC like 1 [Source:HGNC Symbol;Acc:HGNC:11220]	7351	-0.00614004535600543	0.018701613	No	
+row_31	RELL2	RELT like 2 [Source:HGNC Symbol;Acc:HGNC:26902]	7513	-0.006978796795010567	0.008183766	No	
+row_32	MRC2	mannose receptor C type 2 [Source:HGNC Symbol;Acc:HGNC:16875]	7608	-0.007413521874696016	0.002958008	No	
+row_33	ITGA3	integrin subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:6139]	7690	-0.007912709377706051	-0.0011272322	No	
+row_34	ITGA1	integrin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:6134]	8032	-0.011365734972059727	-0.02434023	No	
+row_35	CHADL	chondroadherin like [Source:HGNC Symbol;Acc:HGNC:25165]	8251	-0.013333742506802082	-0.037517253	No	
+row_36	PCOLCE	procollagen C-endopeptidase enhancer [Source:HGNC Symbol;Acc:HGNC:8738]	8620	-0.017176447436213493	-0.06122234	No	
+row_37	CTSK	cathepsin K [Source:HGNC Symbol;Acc:HGNC:2536]	9083	-0.022260354831814766	-0.09079166	No	
+row_38	CRTAP	cartilage associated protein [Source:HGNC Symbol;Acc:HGNC:2379]	9122	-0.022714506834745407	-0.08750025	No	
+row_39	DCN	decorin [Source:HGNC Symbol;Acc:HGNC:2705]	9488	-0.02777409553527832	-0.10806923	No	
+row_40	DDR1	discoidin domain receptor tyrosine kinase 1 [Source:HGNC Symbol;Acc:HGNC:2730]	9625	-0.029965456575155258	-0.11035697	No	
+row_41	SPARC	secreted protein acidic and cysteine rich [Source:HGNC Symbol;Acc:HGNC:11219]	9735	-0.0316920168697834	-0.110086896	No	
+row_42	VWF	von Willebrand factor [Source:HGNC Symbol;Acc:HGNC:12726]	9851	-0.033604469150304794	-0.109755926	No	
+row_43	SMAD4	SMAD family member 4 [Source:HGNC Symbol;Acc:HGNC:6770]	11085	-0.059624653309583664	-0.18861237	No	
+row_44	CTSS	cathepsin S [Source:HGNC Symbol;Acc:HGNC:2545]	11122	-0.06087407469749451	-0.17470823	No	
+row_45	NID2	nidogen 2 [Source:HGNC Symbol;Acc:HGNC:13389]	11176	-0.06238716468214989	-0.16170193	No	
+row_46	SMAD7	SMAD family member 7 [Source:HGNC Symbol;Acc:HGNC:6773]	11606	-0.07638461142778397	-0.17388967	No	
+row_47	PAK1	p21 (RAC1) activated kinase 1 [Source:HGNC Symbol;Acc:HGNC:8590]	11974	-0.09592229127883911	-0.17593582	No	
+row_48	HSD17B12	hydroxysteroid 17-beta dehydrogenase 12 [Source:HGNC Symbol;Acc:HGNC:18646]	12403	-0.12928280234336853	-0.17354864	No	
+row_49	FN1	fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778]	12564	-0.1572355479001999	-0.14280872	No	
+row_50	PPIB	peptidylprolyl isomerase B [Source:HGNC Symbol;Acc:HGNC:9255]	12592	-0.1649874448776245	-0.09967556	No	
+row_51	CD44	CD44 molecule (Indian blood group) [Source:HGNC Symbol;Acc:HGNC:1681]	12720	-0.19986750185489655	-0.054703712	No	
+row_52	MMP12	matrix metallopeptidase 12 [Source:HGNC Symbol;Acc:HGNC:7158]	12887	-0.2793235182762146	0.00903337	No	

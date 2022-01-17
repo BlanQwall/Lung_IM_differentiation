@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.29987195	Yes	
+row_1	C1QA	complement C1q A chain [Source:HGNC Symbol;Acc:HGNC:1241]	1	2.0969398021698	0.56705105	Yes	
+row_2	C1QB	complement C1q B chain [Source:HGNC Symbol;Acc:HGNC:1242]	2	1.8567914962768555	0.8036319	Yes	
+row_3	CX3CR1	C-X3-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:2558]	41	0.3976341784000397	0.85136974	Yes	
+row_4	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	165	0.1757270097732544	0.86428803	Yes	
+row_5	TREM2	triggering receptor expressed on myeloid cells 2 [Source:HGNC Symbol;Acc:HGNC:17761]	188	0.16570958495140076	0.8837076	Yes	
+row_6	MAPRE2	microtubule associated protein RP/EB family member 2 [Source:HGNC Symbol;Acc:HGNC:6891]	1175	0.06133459135890007	0.81559455	No	
+row_7	TGFBR1	transforming growth factor beta receptor 1 [Source:HGNC Symbol;Acc:HGNC:11772]	1385	0.054813284426927567	0.8064843	No	
+row_8	TGFB3	transforming growth factor beta 3 [Source:HGNC Symbol;Acc:HGNC:11769]	1681	0.04768864065408707	0.7898437	No	
+row_9	IQSEC1	IQ motif and Sec7 domain ArfGEF 1 [Source:HGNC Symbol;Acc:HGNC:29112]	2247	0.03642493113875389	0.7509763	No	
+row_10	SNAI2	snail family transcriptional repressor 2 [Source:HGNC Symbol;Acc:HGNC:11094]	5681	0.0	0.4866147	No	
+row_11	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	0.3844973	No	
+row_12	EPHA4	EPH receptor A4 [Source:HGNC Symbol;Acc:HGNC:3388]	8577	-0.016576755791902542	0.26624903	No	
+row_13	CDK5	cyclin dependent kinase 5 [Source:HGNC Symbol;Acc:HGNC:1774]	8655	-0.017588533461093903	0.2625606	No	
+row_14	DUSP3	dual specificity phosphatase 3 [Source:HGNC Symbol;Acc:HGNC:3069]	10730	-0.049999821931123734	0.10922081	No	
+row_15	ARF6	ADP ribosylation factor 6 [Source:HGNC Symbol;Acc:HGNC:659]	12084	-0.10212862491607666	0.018044282	No	
+row_16	CX3CL1	C-X3-C motif chemokine ligand 1 [Source:HGNC Symbol;Acc:HGNC:10647]	12314	-0.1209011822938919	0.015814384	No	
+row_17	MAP4K4	mitogen-activated protein kinase kinase kinase kinase 4 [Source:HGNC Symbol;Acc:HGNC:6866]	12379	-0.1265626698732376	0.027011828	No	
+row_18	ITGAM	integrin subunit alpha M [Source:HGNC Symbol;Acc:HGNC:6149]	12593	-0.1651306450366974	0.031649474	No	

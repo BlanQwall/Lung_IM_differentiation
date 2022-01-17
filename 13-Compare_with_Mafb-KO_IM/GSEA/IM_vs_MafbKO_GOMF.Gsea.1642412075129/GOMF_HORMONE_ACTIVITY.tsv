@@ -1,0 +1,34 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IGF1	insulin like growth factor 1 [Source:HGNC Symbol;Acc:HGNC:5464]	14	0.6372554898262024	0.54205894	Yes	
+row_1	METRNL	"meteorin like, glial cell differentiation regulator [Source:HGNC Symbol;Acc:HGNC:27584]"	204	0.1578882336616516	0.6620586	Yes	
+row_2	RETNLB	resistin like beta [Source:HGNC Symbol;Acc:HGNC:20388]	281	0.13564810156822205	0.77181387	Yes	
+row_3	NMB	neuromedin B [Source:HGNC Symbol;Acc:HGNC:7842]	2712	0.02958940528333187	0.6097066	No	
+row_4	ENHO	energy homeostasis associated [Source:HGNC Symbol;Acc:HGNC:24838]	3162	0.023368099704384804	0.5950104	No	
+row_5	ADM	adrenomedullin [Source:HGNC Symbol;Acc:HGNC:259]	3468	0.01966494508087635	0.58825886	No	
+row_6	INHBA	inhibin subunit beta A [Source:HGNC Symbol;Acc:HGNC:6066]	3729	0.01687982678413391	0.5826025	No	
+row_7	INSL6	insulin like 6 [Source:HGNC Symbol;Acc:HGNC:6089]	4049	0.013420667499303818	0.5694496	No	
+row_8	C1QTNF12	C1q and TNF related 12 [Source:HGNC Symbol;Acc:HGNC:32308]	4137	0.012512420304119587	0.5734073	No	
+row_9	OXT	oxytocin/neurophysin I prepropeptide [Source:HGNC Symbol;Acc:HGNC:8528]	4376	0.010409264825284481	0.563932	No	
+row_10	AGRP	agouti related neuropeptide [Source:HGNC Symbol;Acc:HGNC:330]	4719	0.008139112964272499	0.5445045	No	
+row_11	GAL	galanin and GMAP prepropeptide [Source:HGNC Symbol;Acc:HGNC:4114]	5661	0.0	0.4719637	No	
+row_12	NPPB	natriuretic peptide B [Source:HGNC Symbol;Acc:HGNC:7940]	5928	0.0	0.45145798	No	
+row_13	GNRH1	gonadotropin releasing hormone 1 [Source:HGNC Symbol;Acc:HGNC:4419]	6002	0.0	0.4458305	No	
+row_14	SPX	spexin hormone [Source:HGNC Symbol;Acc:HGNC:28139]	6187	0.0	0.43164608	No	
+row_15	APLN	apelin [Source:HGNC Symbol;Acc:HGNC:16665]	6191	0.0	0.4314148	No	
+row_16	ASIP	agouti signaling protein [Source:HGNC Symbol;Acc:HGNC:745]	6284	0.0	0.42432263	No	
+row_17	FBN1	fibrillin 1 [Source:HGNC Symbol;Acc:HGNC:3603]	6352	0.0	0.41915765	No	
+row_18	RETN	resistin [Source:HGNC Symbol;Acc:HGNC:20389]	6355	0.0	0.4190035	No	
+row_19	EDN3	endothelin 3 [Source:HGNC Symbol;Acc:HGNC:3178]	6535	0.0	0.40520453	No	
+row_20	FNDC5	fibronectin type III domain containing 5 [Source:HGNC Symbol;Acc:HGNC:20240]	6557	0.0	0.40358564	No	
+row_21	PENK	proenkephalin [Source:HGNC Symbol;Acc:HGNC:8831]	6561	0.0	0.40335438	No	
+row_22	INSL5	insulin like 5 [Source:HGNC Symbol;Acc:HGNC:6088]	6594	0.0	0.40088752	No	
+row_23	STC1	stanniocalcin 1 [Source:HGNC Symbol;Acc:HGNC:11373]	6756	0.0	0.3884762	No	
+row_24	POMC	proopiomelanocortin [Source:HGNC Symbol;Acc:HGNC:9201]	7058	-0.0034574917517602444	0.3682192	No	
+row_25	METRN	"meteorin, glial cell differentiation regulator [Source:HGNC Symbol;Acc:HGNC:14151]"	7059	-0.003467114642262459	0.37117428	No	
+row_26	TG	thyroglobulin [Source:HGNC Symbol;Acc:HGNC:11764]	7130	-0.004416869953274727	0.36954257	No	
+row_27	NPY	neuropeptide Y [Source:HGNC Symbol;Acc:HGNC:7955]	7205	-0.005167699884623289	0.36824244	No	
+row_28	HAMP	hepcidin antimicrobial peptide [Source:HGNC Symbol;Acc:HGNC:15598]	7272	-0.005672812927514315	0.36798954	No	
+row_29	COPA	COPI coat complex subunit alpha [Source:HGNC Symbol;Acc:HGNC:2230]	8424	-0.01495217066258192	0.29200384	No	
+row_30	AMH	anti-Mullerian hormone [Source:HGNC Symbol;Acc:HGNC:464]	8755	-0.018606413155794144	0.28242284	No	
+row_31	EDN1	endothelin 1 [Source:HGNC Symbol;Acc:HGNC:3176]	9029	-0.02170586585998535	0.2798776	No	
+row_32	CCL25	C-C motif chemokine ligand 25 [Source:HGNC Symbol;Acc:HGNC:10624]	9690	-0.031062142923474312	0.25547332	No	

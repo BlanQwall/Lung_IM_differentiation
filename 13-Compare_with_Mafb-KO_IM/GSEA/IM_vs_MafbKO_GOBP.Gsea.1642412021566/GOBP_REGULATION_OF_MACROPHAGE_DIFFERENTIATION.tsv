@@ -1,0 +1,19 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.575411	Yes	
+row_1	PF4	platelet factor 4 [Source:HGNC Symbol;Acc:HGNC:8861]	7	1.029140830039978	0.82656235	Yes	
+row_2	RB1	RB transcriptional corepressor 1 [Source:HGNC Symbol;Acc:HGNC:9884]	438	0.10639232397079468	0.819464	No	
+row_3	HSF1	heat shock transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:5224]	1205	0.06050246208906174	0.77527416	No	
+row_4	CSF1	colony stimulating factor 1 [Source:HGNC Symbol;Acc:HGNC:2432]	3016	0.0253103356808424	0.6420921	No	
+row_5	CASP8	caspase 8 [Source:HGNC Symbol;Acc:HGNC:1509]	3053	0.02490830048918724	0.6454099	No	
+row_6	FADD	Fas associated via death domain [Source:HGNC Symbol;Acc:HGNC:3573]	3152	0.023445431143045425	0.643596	No	
+row_7	INHBA	inhibin subunit beta A [Source:HGNC Symbol;Acc:HGNC:6066]	3729	0.01687982678413391	0.6033709	No	
+row_8	GATA2	GATA binding protein 2 [Source:HGNC Symbol;Acc:HGNC:4171]	6322	0.0	0.40378672	No	
+row_9	PTPN2	protein tyrosine phosphatase non-receptor type 2 [Source:HGNC Symbol;Acc:HGNC:9650]	8054	-0.011567833833396435	0.27332777	No	
+row_10	LIF	LIF interleukin 6 family cytokine [Source:HGNC Symbol;Acc:HGNC:6596]	9141	-0.022972071543335915	0.19532211	No	
+row_11	TRIB1	tribbles pseudokinase 1 [Source:HGNC Symbol;Acc:HGNC:16891]	9717	-0.03144283965229988	0.15873449	No	
+row_12	PRKCA	protein kinase C alpha [Source:HGNC Symbol;Acc:HGNC:9393]	9872	-0.034052468836307526	0.15520191	No	
+row_13	HCLS1	hematopoietic cell-specific Lyn substrate 1 [Source:HGNC Symbol;Acc:HGNC:4844]	10120	-0.038486264646053314	0.14559235	No	
+row_14	ID2	inhibitor of DNA binding 2 [Source:HGNC Symbol;Acc:HGNC:5361]	10527	-0.04538866877555847	0.12542734	No	
+row_15	RIPK1	receptor interacting serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:10019]	10923	-0.05535200610756874	0.108545244	No	
+row_16	TGFB1	transforming growth factor beta 1 [Source:HGNC Symbol;Acc:HGNC:11766]	11992	-0.09702695906162262	0.05003116	No	
+row_17	ZBTB46	zinc finger and BTB domain containing 46 [Source:HGNC Symbol;Acc:HGNC:16094]	12232	-0.11377182602882385	0.059444066	No	

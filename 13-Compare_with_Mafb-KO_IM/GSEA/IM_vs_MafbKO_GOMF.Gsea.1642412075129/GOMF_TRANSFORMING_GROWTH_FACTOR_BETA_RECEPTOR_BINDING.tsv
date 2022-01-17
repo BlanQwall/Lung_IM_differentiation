@@ -1,0 +1,23 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SNX6	sorting nexin 6 [Source:HGNC Symbol;Acc:HGNC:14970]	152	0.18398793041706085	0.15464956	Yes	
+row_1	TGFBR2	transforming growth factor beta receptor 2 [Source:HGNC Symbol;Acc:HGNC:11773]	247	0.14245785772800446	0.27621606	Yes	
+row_2	ENG	endoglin [Source:HGNC Symbol;Acc:HGNC:3349]	788	0.07587280124425888	0.30322546	Yes	
+row_3	SMAD3	SMAD family member 3 [Source:HGNC Symbol;Acc:HGNC:6769]	885	0.0720459595322609	0.36097327	Yes	
+row_4	TGFBRAP1	transforming growth factor beta receptor associated protein 1 [Source:HGNC Symbol;Acc:HGNC:16836]	1031	0.06644506752490997	0.40988275	Yes	
+row_5	LEFTY1	left-right determination factor 1 [Source:HGNC Symbol;Acc:HGNC:6552]	1135	0.06293470412492752	0.45885324	Yes	
+row_6	TGFBR1	transforming growth factor beta receptor 1 [Source:HGNC Symbol;Acc:HGNC:11772]	1385	0.054813284426927567	0.48923507	Yes	
+row_7	TGFB3	transforming growth factor beta 3 [Source:HGNC Symbol;Acc:HGNC:11769]	1681	0.04768864065408707	0.50963193	Yes	
+row_8	TGFB2	transforming growth factor beta 2 [Source:HGNC Symbol;Acc:HGNC:11768]	1898	0.043260253965854645	0.53210956	Yes	
+row_9	LRG1	leucine rich alpha-2-glycoprotein 1 [Source:HGNC Symbol;Acc:HGNC:29480]	2027	0.04108055680990219	0.55939454	Yes	
+row_10	BAMBI	BMP and activin membrane bound inhibitor [Source:HGNC Symbol;Acc:HGNC:30251]	2216	0.03709860518574715	0.57845765	Yes	
+row_11	USP15	ubiquitin specific peptidase 15 [Source:HGNC Symbol;Acc:HGNC:12613]	2958	0.026010364294052124	0.5449009	No	
+row_12	RASL11B	RAS like family 11 member B [Source:HGNC Symbol;Acc:HGNC:23804]	3183	0.02313137613236904	0.5485624	No	
+row_13	FERMT2	FERM domain containing kindlin 2 [Source:HGNC Symbol;Acc:HGNC:15767]	4422	0.010067261755466461	0.46230948	No	
+row_14	TGFBR3L	transforming growth factor beta receptor 3 like [Source:HGNC Symbol;Acc:HGNC:44152]	4517	0.009454676881432533	0.46361792	No	
+row_15	TGFBR3	transforming growth factor beta receptor 3 [Source:HGNC Symbol;Acc:HGNC:11774]	4975	0.005996509455144405	0.43383992	No	
+row_16	SMAD2	SMAD family member 2 [Source:HGNC Symbol;Acc:HGNC:6768]	5259	0.002607156988233328	0.4143995	No	
+row_17	FKBP1A	FKBP prolyl isomerase 1A [Source:HGNC Symbol;Acc:HGNC:3711]	6870	-0.0012609930709004402	0.29153135	No	
+row_18	SMAD6	SMAD family member 6 [Source:HGNC Symbol;Acc:HGNC:6772]	7660	-0.007749345153570175	0.23776633	No	
+row_19	AMH	anti-Mullerian hormone [Source:HGNC Symbol;Acc:HGNC:464]	8755	-0.018606413155794144	0.17032573	No	
+row_20	SMAD7	SMAD family member 7 [Source:HGNC Symbol;Acc:HGNC:6773]	11606	-0.07638461142778397	0.019872898	No	
+row_21	TGFB1	transforming growth factor beta 1 [Source:HGNC Symbol;Acc:HGNC:11766]	11992	-0.09702695906162262	0.07794803	No	

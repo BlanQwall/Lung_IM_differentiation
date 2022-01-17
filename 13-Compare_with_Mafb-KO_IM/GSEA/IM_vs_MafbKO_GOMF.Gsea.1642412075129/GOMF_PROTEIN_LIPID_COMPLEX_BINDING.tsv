@@ -1,0 +1,26 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.47191936	Yes	
+row_1	STAB1	stabilin 1 [Source:HGNC Symbol;Acc:HGNC:18628]	28	0.4617379307746887	0.6137925	Yes	
+row_2	MSR1	macrophage scavenger receptor 1 [Source:HGNC Symbol;Acc:HGNC:7376]	91	0.2646862268447876	0.69140303	Yes	
+row_3	TREM2	triggering receptor expressed on myeloid cells 2 [Source:HGNC Symbol;Acc:HGNC:17761]	188	0.16570958495140076	0.73558635	Yes	
+row_4	COLEC12	collectin subfamily member 12 [Source:HGNC Symbol;Acc:HGNC:16016]	647	0.08525615930557251	0.7268384	No	
+row_5	MAPT	microtubule associated protein tau [Source:HGNC Symbol;Acc:HGNC:6893]	1025	0.06668751686811447	0.7185511	No	
+row_6	APOL2	apolipoprotein L2 [Source:HGNC Symbol;Acc:HGNC:619]	1870	0.04375825449824333	0.66714835	No	
+row_7	CD36	CD36 molecule [Source:HGNC Symbol;Acc:HGNC:1663]	1904	0.043137308210134506	0.67803305	No	
+row_8	LIPC	"lipase C, hepatic type [Source:HGNC Symbol;Acc:HGNC:6619]"	2055	0.040516577661037445	0.6790881	No	
+row_9	THBS1	thrombospondin 1 [Source:HGNC Symbol;Acc:HGNC:11785]	2195	0.03777933865785599	0.68013865	No	
+row_10	SCARF1	scavenger receptor class F member 1 [Source:HGNC Symbol;Acc:HGNC:16820]	2600	0.03119335137307644	0.65872324	No	
+row_11	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4778	0.007649634033441544	0.4933847	No	
+row_12	VLDLR	very low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:12698]	4820	0.007425827439874411	0.49253738	No	
+row_13	HSPD1	heat shock protein family D (Hsp60) member 1 [Source:HGNC Symbol;Acc:HGNC:5261]	5340	0.0015161718474701047	0.45302472	No	
+row_14	GPIHBP1	glycosylphosphatidylinositol anchored high density lipoprotein binding protein 1 [Source:HGNC Symbol;Acc:HGNC:24945]	5885	0.0	0.4111141	No	
+row_15	APCS	"amyloid P component, serum [Source:HGNC Symbol;Acc:HGNC:584]"	6178	0.0	0.38861793	No	
+row_16	STAB2	stabilin 2 [Source:HGNC Symbol;Acc:HGNC:18629]	6309	0.0	0.37860253	No	
+row_17	SCARB1	scavenger receptor class B member 1 [Source:HGNC Symbol;Acc:HGNC:1664]	6983	-0.0025750475469976664	0.32755506	No	
+row_18	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.29937503	No	
+row_19	SAMD1	sterile alpha motif domain containing 1 [Source:HGNC Symbol;Acc:HGNC:17958]	7921	-0.010141312144696712	0.26054397	No	
+row_20	PLTP	phospholipid transfer protein [Source:HGNC Symbol;Acc:HGNC:9093]	8752	-0.018570953980088234	0.20237991	No	
+row_21	LRP8	LDL receptor related protein 8 [Source:HGNC Symbol;Acc:HGNC:6700]	9363	-0.025844262912869453	0.1634289	No	
+row_22	LPL	lipoprotein lipase [Source:HGNC Symbol;Acc:HGNC:6677]	9806	-0.03288036212325096	0.13961098	No	
+row_23	SORL1	sortilin related receptor 1 [Source:HGNC Symbol;Acc:HGNC:11185]	12258	-0.11614586412906647	-0.013066041	No	
+row_24	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	12802	-0.2263742983341217	0.015562403	No	

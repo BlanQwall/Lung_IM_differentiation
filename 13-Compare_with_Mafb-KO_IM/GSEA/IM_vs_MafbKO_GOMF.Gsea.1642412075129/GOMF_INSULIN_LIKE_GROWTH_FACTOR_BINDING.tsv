@@ -1,0 +1,23 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IGFBP4	insulin like growth factor binding protein 4 [Source:HGNC Symbol;Acc:HGNC:5473]	10	0.6761800646781921	0.46056038	Yes	
+row_1	ITGA6	integrin subunit alpha 6 [Source:HGNC Symbol;Acc:HGNC:6142]	125	0.2149466723203659	0.5984292	Yes	
+row_2	CCN1	cellular communication network factor 1 [Source:HGNC Symbol;Acc:HGNC:2654]	245	0.14276422560214996	0.6866657	Yes	
+row_3	ITGAV	integrin subunit alpha V [Source:HGNC Symbol;Acc:HGNC:6150]	397	0.11163220554590225	0.7511973	Yes	
+row_4	IGF1R	insulin like growth factor 1 receptor [Source:HGNC Symbol;Acc:HGNC:5465]	955	0.06915386021137238	0.75547594	Yes	
+row_5	INSR	insulin receptor [Source:HGNC Symbol;Acc:HGNC:6091]	2274	0.036036938428878784	0.6785451	No	
+row_6	CRIM1	cysteine rich transmembrane BMP regulator 1 [Source:HGNC Symbol;Acc:HGNC:2359]	3009	0.025362422689795494	0.6393134	No	
+row_7	HTRA1	HtrA serine peptidase 1 [Source:HGNC Symbol;Acc:HGNC:9476]	4004	0.013955565169453621	0.5722731	No	
+row_8	IGFBP5	insulin like growth factor binding protein 5 [Source:HGNC Symbol;Acc:HGNC:5474]	5772	0.0	0.43617204	No	
+row_9	IGFBP3	insulin like growth factor binding protein 3 [Source:HGNC Symbol;Acc:HGNC:5472]	5773	0.0	0.43617204	No	
+row_10	IGFBP2	insulin like growth factor binding protein 2 [Source:HGNC Symbol;Acc:HGNC:5471]	5774	0.0	0.43617204	No	
+row_11	CCN5	cellular communication network factor 5 [Source:HGNC Symbol;Acc:HGNC:12770]	6714	0.0	0.36384666	No	
+row_12	CCN4	cellular communication network factor 4 [Source:HGNC Symbol;Acc:HGNC:12769]	6716	0.0	0.36376965	No	
+row_13	CCN2	cellular communication network factor 2 [Source:HGNC Symbol;Acc:HGNC:2500]	6718	0.0	0.3636926	No	
+row_14	ITGB3	integrin subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:6156]	7092	-0.003770229872316122	0.33753502	No	
+row_15	ITGB4	integrin subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:6158]	7353	-0.00614004535600543	0.32169795	No	
+row_16	IGFBP6	insulin like growth factor binding protein 6 [Source:HGNC Symbol;Acc:HGNC:5475]	7382	-0.006266817916184664	0.32381687	No	
+row_17	IGF2R	insulin like growth factor 2 receptor [Source:HGNC Symbol;Acc:HGNC:5467]	7968	-0.01069930475205183	0.28605765	No	
+row_18	IGFBP7	insulin like growth factor binding protein 7 [Source:HGNC Symbol;Acc:HGNC:5476]	7970	-0.01070739608258009	0.29328585	No	
+row_19	KAZALD1	Kazal type serine peptidase inhibitor domain 1 [Source:HGNC Symbol;Acc:HGNC:25460]	8364	-0.014340957626700401	0.27279976	No	
+row_20	HTRA4	HtrA serine peptidase 4 [Source:HGNC Symbol;Acc:HGNC:26909]	9516	-0.02819046564400196	0.2033786	No	
+row_21	HTRA3	HtrA serine peptidase 3 [Source:HGNC Symbol;Acc:HGNC:30406]	11969	-0.0955696776509285	0.079719596	No	

@@ -1,0 +1,26 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	LGMN	legumain [Source:HGNC Symbol;Acc:HGNC:9472]	13	0.6632168889045715	0.22610731	Yes	
+row_1	CTSB	cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527]	19	0.574101448059082	0.42231467	Yes	
+row_2	CLTC	clathrin heavy chain [Source:HGNC Symbol;Acc:HGNC:2092]	89	0.2674228250980377	0.50857383	Yes	
+row_3	TLR7	toll like receptor 7 [Source:HGNC Symbol;Acc:HGNC:15631]	217	0.1529034972190857	0.5511491	Yes	
+row_4	CLTA	clathrin light chain A [Source:HGNC Symbol;Acc:HGNC:2090]	286	0.1345980316400528	0.5920014	Yes	
+row_5	AP2M1	adaptor related protein complex 2 subunit mu 1 [Source:HGNC Symbol;Acc:HGNC:564]	477	0.1017652153968811	0.61221147	Yes	
+row_6	AP2S1	adaptor related protein complex 2 subunit sigma 1 [Source:HGNC Symbol;Acc:HGNC:565]	575	0.09257934242486954	0.6364409	Yes	
+row_7	TLR9	toll like receptor 9 [Source:HGNC Symbol;Acc:HGNC:15633]	929	0.07020911574363708	0.63328725	Yes	
+row_8	AP2A2	adaptor related protein complex 2 subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:562]	1102	0.06413561850786209	0.6419984	Yes	
+row_9	ATG16L1	autophagy related 16 like 1 [Source:HGNC Symbol;Acc:HGNC:21498]	1123	0.06340335309505463	0.6621691	Yes	
+row_10	TLR8	toll like receptor 8 [Source:HGNC Symbol;Acc:HGNC:15632]	1250	0.059179019182920456	0.67272687	Yes	
+row_11	ABCB6	ATP binding cassette subfamily B member 6 (Langereis blood group) [Source:HGNC Symbol;Acc:HGNC:47]	2186	0.0379766970872879	0.6136975	No	
+row_12	SMPD1	sphingomyelin phosphodiesterase 1 [Source:HGNC Symbol;Acc:HGNC:11120]	2342	0.03485879302024841	0.61369294	No	
+row_13	PRKCD	protein kinase C delta [Source:HGNC Symbol;Acc:HGNC:9399]	2652	0.03030460700392723	0.60026443	No	
+row_14	TPCN1	two pore segment channel 1 [Source:HGNC Symbol;Acc:HGNC:18182]	3476	0.019560618326067924	0.54355747	No	
+row_15	TPCN2	two pore segment channel 2 [Source:HGNC Symbol;Acc:HGNC:20820]	3840	0.01572568528354168	0.5209764	No	
+row_16	SLC15A4	solute carrier family 15 member 4 [Source:HGNC Symbol;Acc:HGNC:23090]	8011	-0.011179196648299694	0.20354107	No	
+row_17	CLEC16A	C-type lectin domain containing 16A [Source:HGNC Symbol;Acc:HGNC:29013]	8390	-0.014598946087062359	0.17941853	No	
+row_18	AP2A1	adaptor related protein complex 2 subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:561]	8624	-0.017211414873600006	0.16736165	No	
+row_19	TLR3	toll like receptor 3 [Source:HGNC Symbol;Acc:HGNC:11849]	9071	-0.022108979523181915	0.14057198	No	
+row_20	CTSK	cathepsin K [Source:HGNC Symbol;Acc:HGNC:2536]	9083	-0.022260354831814766	0.14734726	No	
+row_21	AP2B1	adaptor related protein complex 2 subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:563]	10494	-0.0446755476295948	0.05401708	No	
+row_22	CTSS	cathepsin S [Source:HGNC Symbol;Acc:HGNC:2545]	11122	-0.06087407469749451	0.026557427	No	
+row_23	TASL	TLR adaptor interacting with endolysosomal SLC15A4 [Source:HGNC Symbol;Acc:HGNC:25667]	12292	-0.11903639882802963	-0.022741945	No	
+row_24	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	12802	-0.2263742983341217	0.015562425	No	

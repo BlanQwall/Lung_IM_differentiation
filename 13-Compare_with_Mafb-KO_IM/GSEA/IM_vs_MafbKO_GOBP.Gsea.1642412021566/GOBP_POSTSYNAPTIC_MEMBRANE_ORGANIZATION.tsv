@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.68417007	Yes	
+row_1	RAPSN	receptor associated protein of the synapse [Source:HGNC Symbol;Acc:HGNC:9863]	241	0.1438623070716858	0.73082167	Yes	
+row_2	DLG4	discs large MAGUK scaffold protein 4 [Source:HGNC Symbol;Acc:HGNC:2903]	1892	0.04337651655077934	0.6232838	No	
+row_3	DVL1	dishevelled segment polarity protein 1 [Source:HGNC Symbol;Acc:HGNC:3084]	3465	0.019701240584254265	0.5110727	No	
+row_4	FNTA	"farnesyltransferase, CAAX box, alpha [Source:HGNC Symbol;Acc:HGNC:3782]"	4141	0.012428528629243374	0.46468124	No	
+row_5	MESD	mesoderm development LRP chaperone [Source:HGNC Symbol;Acc:HGNC:13520]	4189	0.011952485889196396	0.4664534	No	
+row_6	CDH2	cadherin 2 [Source:HGNC Symbol;Acc:HGNC:1759]	4213	0.011776418425142765	0.46999496	No	
+row_7	COLQ	collagen like tail subunit of asymmetric acetylcholinesterase [Source:HGNC Symbol;Acc:HGNC:2226]	4473	0.009758103638887405	0.45444545	No	
+row_8	SHISA7	shisa family member 7 [Source:HGNC Symbol;Acc:HGNC:35409]	6389	0.0	0.30692217	No	
+row_9	LRRC4	leucine rich repeat containing 4 [Source:HGNC Symbol;Acc:HGNC:15586]	6706	0.0	0.2825789	No	
+row_10	CEL	carboxyl ester lipase [Source:HGNC Symbol;Acc:HGNC:1848]	7338	-0.0060846540145576	0.2367147	No	
+row_11	NRXN2	neurexin 2 [Source:HGNC Symbol;Acc:HGNC:8009]	7443	-0.006579534616321325	0.2316716	No	
+row_12	CHRNB1	cholinergic receptor nicotinic beta 1 subunit [Source:HGNC Symbol;Acc:HGNC:1961]	7489	-0.006864077411592007	0.231302	No	
+row_13	NLGN2	neuroligin 2 [Source:HGNC Symbol;Acc:HGNC:14290]	7519	-0.007013611029833555	0.23223242	No	
+row_14	SHANK3	SH3 and multiple ankyrin repeat domains 3 [Source:HGNC Symbol;Acc:HGNC:14294]	7870	-0.009710585698485374	0.20965125	No	
+row_15	CRKL	"CRK like proto-oncogene, adaptor protein [Source:HGNC Symbol;Acc:HGNC:2363]"	7915	-0.010075110010802746	0.21080746	No	
+row_16	LHFPL4	LHFPL tetraspan subfamily member 4 [Source:HGNC Symbol;Acc:HGNC:29568]	8661	-0.017617877572774887	0.16136487	No	
+row_17	ZDHHC2	zinc finger DHHC-type palmitoyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:18469]	8968	-0.02103348635137081	0.14728203	No	
+row_18	RER1	retention in endoplasmic reticulum sorting receptor 1 [Source:HGNC Symbol;Acc:HGNC:30309]	9370	-0.026014916598796844	0.12812836	No	
+row_19	CRIPT	CXXC repeat containing interactor of PDZ3 domain [Source:HGNC Symbol;Acc:HGNC:14312]	10213	-0.0399804413318634	0.08130305	No	
+row_20	DNAJA3	DnaJ heat shock protein family (Hsp40) member A3 [Source:HGNC Symbol;Acc:HGNC:11808]	10495	-0.04470377042889595	0.07982587	No	
+row_21	LRP4	LDL receptor related protein 4 [Source:HGNC Symbol;Acc:HGNC:6696]	10740	-0.05027369409799576	0.08371209	No	
+row_22	GPHN	gephyrin [Source:HGNC Symbol;Acc:HGNC:15465]	11955	-0.09502585232257843	0.033065394	No	
+row_23	SLC7A11	solute carrier family 7 member 11 [Source:HGNC Symbol;Acc:HGNC:11059]	12139	-0.10564999282360077	0.06663596	No	

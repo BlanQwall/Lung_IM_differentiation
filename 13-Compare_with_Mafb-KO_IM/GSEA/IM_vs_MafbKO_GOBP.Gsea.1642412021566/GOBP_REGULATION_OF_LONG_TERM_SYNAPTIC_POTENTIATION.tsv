@@ -1,0 +1,29 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.43112448	Yes	
+row_1	LGMN	legumain [Source:HGNC Symbol;Acc:HGNC:9472]	13	0.6632168889045715	0.61902964	Yes	
+row_2	CX3CR1	C-X3-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:2558]	41	0.3976341784000397	0.7300241	Yes	
+row_3	PRNP	prion protein [Source:HGNC Symbol;Acc:HGNC:9449]	809	0.07523280382156372	0.69231343	No	
+row_4	PAIP2	poly(A) binding protein interacting protein 2 [Source:HGNC Symbol;Acc:HGNC:17970]	1071	0.0651218369603157	0.6907196	No	
+row_5	YTHDF1	YTH N6-methyladenosine RNA binding protein 1 [Source:HGNC Symbol;Acc:HGNC:15867]	2418	0.03372141718864441	0.59658694	No	
+row_6	NRGN	neurogranin [Source:HGNC Symbol;Acc:HGNC:8000]	2754	0.028949091210961342	0.5790043	No	
+row_7	ABL1	"ABL proto-oncogene 1, non-receptor tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:76]"	3063	0.02475518174469471	0.5623096	No	
+row_8	ARC	activity regulated cytoskeleton associated protein [Source:HGNC Symbol;Acc:HGNC:648]	3262	0.022404877468943596	0.5534231	No	
+row_9	AGER	advanced glycosylation end-product specific receptor [Source:HGNC Symbol;Acc:HGNC:320]	3295	0.0218600295484066	0.55717355	No	
+row_10	NCSTN	nicastrin [Source:HGNC Symbol;Acc:HGNC:17091]	3381	0.020905068144202232	0.55656826	No	
+row_11	GSK3B	glycogen synthase kinase 3 beta [Source:HGNC Symbol;Acc:HGNC:4617]	3440	0.020104793831706047	0.557816	No	
+row_12	NF1	neurofibromin 1 [Source:HGNC Symbol;Acc:HGNC:7765]	3464	0.01973852701485157	0.5616567	No	
+row_13	MME	membrane metalloendopeptidase [Source:HGNC Symbol;Acc:HGNC:7154]	5922	0.0	0.37232172	No	
+row_14	NSG1	neuronal vesicle trafficking associated 1 [Source:HGNC Symbol;Acc:HGNC:18790]	6034	0.0	0.36376813	No	
+row_15	SHISA7	shisa family member 7 [Source:HGNC Symbol;Acc:HGNC:35409]	6389	0.0	0.33648908	No	
+row_16	SHANK3	SH3 and multiple ankyrin repeat domains 3 [Source:HGNC Symbol;Acc:HGNC:14294]	7870	-0.009710585698485374	0.22520255	No	
+row_17	EPHA4	EPH receptor A4 [Source:HGNC Symbol;Acc:HGNC:3388]	8577	-0.016576755791902542	0.17551252	No	
+row_18	STAU1	staufen double-stranded RNA binding protein 1 [Source:HGNC Symbol;Acc:HGNC:11370]	8704	-0.01810683123767376	0.17095208	No	
+row_19	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	8869	-0.019940068945288658	0.16398469	No	
+row_20	ZDHHC2	zinc finger DHHC-type palmitoyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:18469]	8968	-0.02103348635137081	0.16241413	No	
+row_21	CRTC1	CREB regulated transcription coactivator 1 [Source:HGNC Symbol;Acc:HGNC:16062]	9166	-0.02325497940182686	0.15384644	No	
+row_22	EIF2AK4	eukaryotic translation initiation factor 2 alpha kinase 4 [Source:HGNC Symbol;Acc:HGNC:19687]	10318	-0.04172457754611969	0.077016264	No	
+row_23	AKAP5	A-kinase anchoring protein 5 [Source:HGNC Symbol;Acc:HGNC:375]	11199	-0.06305669248104095	0.027135381	No	
+row_24	SQSTM1	sequestosome 1 [Source:HGNC Symbol;Acc:HGNC:11280]	11457	-0.07112117856740952	0.02755581	No	
+row_25	ADORA2A	adenosine A2a receptor [Source:HGNC Symbol;Acc:HGNC:263]	11746	-0.0829341784119606	0.028946655	No	
+row_26	TYROBP	transmembrane immune signaling adaptor TYROBP [Source:HGNC Symbol;Acc:HGNC:12449]	11816	-0.08637508004903793	0.048192	No	
+row_27	NPTN	neuroplastin [Source:HGNC Symbol;Acc:HGNC:17867]	12538	-0.1521875411272049	0.035909668	No	

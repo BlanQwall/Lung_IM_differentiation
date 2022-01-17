@@ -1,0 +1,187 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CD93	CD93 molecule [Source:HGNC Symbol;Acc:HGNC:15855]	81	0.28663966059684753	0.016530389	No	
+row_1	CLEC4A	C-type lectin domain family 4 member A [Source:HGNC Symbol;Acc:HGNC:13257]	122	0.2171274721622467	0.030718075	No	
+row_2	MRC1	mannose receptor C-type 1 [Source:HGNC Symbol;Acc:HGNC:7228]	236	0.14477235078811646	0.033443388	No	
+row_3	P3H2	prolyl 3-hydroxylase 2 [Source:HGNC Symbol;Acc:HGNC:19317]	295	0.13272929191589355	0.03949921	No	
+row_4	SIGLEC1	sialic acid binding Ig like lectin 1 [Source:HGNC Symbol;Acc:HGNC:11127]	306	0.13073308765888214	0.04914035	No	
+row_5	LGALS1	galectin 1 [Source:HGNC Symbol;Acc:HGNC:6561]	350	0.11970668286085129	0.055328228	No	
+row_6	CD33	CD33 molecule [Source:HGNC Symbol;Acc:HGNC:1659]	368	0.11594057083129883	0.063244134	No	
+row_7	HK3	hexokinase 3 [Source:HGNC Symbol;Acc:HGNC:4925]	472	0.1022055521607399	0.06335638	No	
+row_8	CLEC4M	C-type lectin domain family 4 member M [Source:HGNC Symbol;Acc:HGNC:13523]	638	0.08608148247003555	0.05734674	No	
+row_9	COLEC12	collectin subfamily member 12 [Source:HGNC Symbol;Acc:HGNC:16016]	647	0.08525615930557251	0.063518755	No	
+row_10	ENG	endoglin [Source:HGNC Symbol;Acc:HGNC:3349]	788	0.07587280124425888	0.058645576	No	
+row_11	CD22	CD22 molecule [Source:HGNC Symbol;Acc:HGNC:1643]	810	0.07521696388721466	0.06300321	No	
+row_12	LGALS8	galectin 8 [Source:HGNC Symbol;Acc:HGNC:6569]	907	0.07098857313394547	0.061173096	No	
+row_13	LGALS9	galectin 9 [Source:HGNC Symbol;Acc:HGNC:6570]	943	0.06965839117765427	0.06399551	No	
+row_14	PLOD1	"procollagen-lysine,2-oxoglutarate 5-dioxygenase 1 [Source:HGNC Symbol;Acc:HGNC:9081]"	1014	0.0669318363070488	0.06387026	No	
+row_15	SLC2A8	solute carrier family 2 member 8 [Source:HGNC Symbol;Acc:HGNC:13812]	1021	0.06677955389022827	0.06872545	No	
+row_16	MAN2A1	mannosidase alpha class 2A member 1 [Source:HGNC Symbol;Acc:HGNC:6824]	1037	0.0661848932504654	0.07283116	No	
+row_17	LAYN	layilin [Source:HGNC Symbol;Acc:HGNC:29471]	1245	0.059261761605739594	0.06140724	No	
+row_18	ADGRL2	adhesion G protein-coupled receptor L2 [Source:HGNC Symbol;Acc:HGNC:18582]	1463	0.05278601497411728	0.048687015	No	
+row_19	CLEC2D	C-type lectin domain family 2 member D [Source:HGNC Symbol;Acc:HGNC:14351]	1476	0.05247436463832855	0.051933832	No	
+row_20	PPP1R3B	protein phosphatase 1 regulatory subunit 3B [Source:HGNC Symbol;Acc:HGNC:14942]	1546	0.050852421671152115	0.05060484	No	
+row_21	P3H3	prolyl 3-hydroxylase 3 [Source:HGNC Symbol;Acc:HGNC:19318]	1561	0.05043633654713631	0.05353318	No	
+row_22	MAG	myelin associated glycoprotein [Source:HGNC Symbol;Acc:HGNC:6783]	1711	0.047109074890613556	0.04566505	No	
+row_23	OS9	OS9 endoplasmic reticulum lectin [Source:HGNC Symbol;Acc:HGNC:16994]	1723	0.04681982472538948	0.048539136	No	
+row_24	CLEC4D	C-type lectin domain family 4 member D [Source:HGNC Symbol;Acc:HGNC:14554]	1787	0.04529322311282158	0.047235053	No	
+row_25	MAN2B2	mannosidase alpha class 2B member 2 [Source:HGNC Symbol;Acc:HGNC:29623]	1825	0.044629424810409546	0.04790629	No	
+row_26	STBD1	starch binding domain 1 [Source:HGNC Symbol;Acc:HGNC:24854]	1827	0.044616684317588806	0.051384848	No	
+row_27	PPP1R3F	protein phosphatase 1 regulatory subunit 3F [Source:HGNC Symbol;Acc:HGNC:14944]	1906	0.04307063668966293	0.048733454	No	
+row_28	ATRN	attractin [Source:HGNC Symbol;Acc:HGNC:885]	2112	0.039345525205135345	0.035877947	No	
+row_29	BSG	basigin (Ok blood group) [Source:HGNC Symbol;Acc:HGNC:1116]	2140	0.03882775828242302	0.036866806	No	
+row_30	PFKL	"phosphofructokinase, liver type [Source:HGNC Symbol;Acc:HGNC:8876]"	2260	0.03623780980706215	0.030472364	No	
+row_31	CD207	CD207 molecule [Source:HGNC Symbol;Acc:HGNC:17935]	2264	0.0361829437315464	0.033122618	No	
+row_32	SFTPA1	surfactant protein A1 [Source:HGNC Symbol;Acc:HGNC:10798]	2271	0.036106787621974945	0.03553277	No	
+row_33	GAA	alpha glucosidase [Source:HGNC Symbol;Acc:HGNC:4065]	2419	0.0336918905377388	0.026751125	No	
+row_34	EGLN2	egl-9 family hypoxia inducible factor 2 [Source:HGNC Symbol;Acc:HGNC:14660]	2588	0.03133470565080643	0.016143385	No	
+row_35	PPP1R3E	protein phosphatase 1 regulatory subunit 3E [Source:HGNC Symbol;Acc:HGNC:14943]	3145	0.023531924933195114	-0.025353914	No	
+row_36	CLN5	CLN5 intracellular trafficking protein [Source:HGNC Symbol;Acc:HGNC:2076]	3149	0.02346852794289589	-0.023717176	No	
+row_37	CHID1	chitinase domain containing 1 [Source:HGNC Symbol;Acc:HGNC:28474]	3204	0.02289058454334736	-0.02610498	No	
+row_38	LGALS2	galectin 2 [Source:HGNC Symbol;Acc:HGNC:6562]	3453	0.01985175348818302	-0.043868802	No	
+row_39	ENPP1	ectonucleotide pyrophosphatase/phosphodiesterase 1 [Source:HGNC Symbol;Acc:HGNC:3356]	3513	0.01905406266450882	-0.046952475	No	
+row_40	CLEC5A	C-type lectin domain containing 5A [Source:HGNC Symbol;Acc:HGNC:2054]	3560	0.018638990819454193	-0.049055114	No	
+row_41	GYS1	glycogen synthase 1 [Source:HGNC Symbol;Acc:HGNC:4706]	3569	0.018528657034039497	-0.048202198	No	
+row_42	PRPS2	phosphoribosyl pyrophosphate synthetase 2 [Source:HGNC Symbol;Acc:HGNC:9465]	3712	0.017022376880049706	-0.057922587	No	
+row_43	H6PD	hexose-6-phosphate dehydrogenase/glucose 1-dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4795]	3728	0.016887672245502472	-0.057746544	No	
+row_44	SORD	sorbitol dehydrogenase [Source:HGNC Symbol;Acc:HGNC:11184]	3917	0.014913934282958508	-0.07122343	No	
+row_45	LMAN2L	"lectin, mannose binding 2 like [Source:HGNC Symbol;Acc:HGNC:19263]"	4099	0.012918844819068909	-0.08431329	No	
+row_46	AGL	"amylo-alpha-1, 6-glucosidase, 4-alpha-glucanotransferase [Source:HGNC Symbol;Acc:HGNC:321]"	4441	0.009981890209019184	-0.11011873	No	
+row_47	EGLN3	egl-9 family hypoxia inducible factor 3 [Source:HGNC Symbol;Acc:HGNC:14661]	4457	0.009878207929432392	-0.11050144	No	
+row_48	ENPP2	ectonucleotide pyrophosphatase/phosphodiesterase 2 [Source:HGNC Symbol;Acc:HGNC:3357]	4487	0.009660337120294571	-0.11199365	No	
+row_49	P3H1	prolyl 3-hydroxylase 1 [Source:HGNC Symbol;Acc:HGNC:19316]	4503	0.00956012960523367	-0.11240171	No	
+row_50	VCAN	versican [Source:HGNC Symbol;Acc:HGNC:2464]	4516	0.009454676881432533	-0.11258415	No	
+row_51	FBP1	fructose-bisphosphatase 1 [Source:HGNC Symbol;Acc:HGNC:3606]	4536	0.009349296800792217	-0.11332106	No	
+row_52	GALNT12	polypeptide N-acetylgalactosaminyltransferase 12 [Source:HGNC Symbol;Acc:HGNC:19877]	4643	0.008565067313611507	-0.120907284	No	
+row_53	CLEC2L	C-type lectin domain family 2 member L [Source:HGNC Symbol;Acc:HGNC:21969]	4703	0.008231705985963345	-0.12485365	No	
+row_54	CRYBG3	crystallin beta-gamma domain containing 3 [Source:HGNC Symbol;Acc:HGNC:34427]	4788	0.007607310079038143	-0.13080001	No	
+row_55	SELP	selectin P [Source:HGNC Symbol;Acc:HGNC:10721]	4797	0.00756772980093956	-0.13082083	No	
+row_56	P4HA2	prolyl 4-hydroxylase subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:8547]	4861	0.006947632413357496	-0.13518159	No	
+row_57	GCK	glucokinase [Source:HGNC Symbol;Acc:HGNC:4195]	4876	0.0068376087583601475	-0.13572867	No	
+row_58	P4HA1	prolyl 4-hydroxylase subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:8546]	4919	0.006494893692433834	-0.13848732	No	
+row_59	KLRC1	killer cell lectin like receptor C1 [Source:HGNC Symbol;Acc:HGNC:6374]	4957	0.006183533929288387	-0.14088075	No	
+row_60	GPCPD1	glycerophosphocholine phosphodiesterase 1 [Source:HGNC Symbol;Acc:HGNC:26957]	5066	0.004999147262424231	-0.14890724	No	
+row_61	NOMO1	NODAL modulator 1 [Source:HGNC Symbol;Acc:HGNC:30060]	5280	0.0022974007297307253	-0.16534007	No	
+row_62	IL2	interleukin 2 [Source:HGNC Symbol;Acc:HGNC:6001]	5342	0.0015103507321327925	-0.16997823	No	
+row_63	PFKM	"phosphofructokinase, muscle [Source:HGNC Symbol;Acc:HGNC:8877]"	5350	0.0013994603650644422	-0.17041275	No	
+row_64	CLEC11A	C-type lectin domain containing 11A [Source:HGNC Symbol;Acc:HGNC:10576]	5515	0.0	-0.18320626	No	
+row_65	CLEC14A	C-type lectin domain containing 14A [Source:HGNC Symbol;Acc:HGNC:19832]	5550	0.0	-0.18585856	No	
+row_66	CLEC12B	C-type lectin domain family 12 member B [Source:HGNC Symbol;Acc:HGNC:31966]	5553	0.0	-0.1860146	No	
+row_67	PLOD2	"procollagen-lysine,2-oxoglutarate 5-dioxygenase 2 [Source:HGNC Symbol;Acc:HGNC:9082]"	5648	0.0	-0.19334745	No	
+row_68	MGAM	maltase-glucoamylase [Source:HGNC Symbol;Acc:HGNC:7043]	5664	0.0	-0.19451758	No	
+row_69	PRG4	proteoglycan 4 [Source:HGNC Symbol;Acc:HGNC:9364]	5738	0.0	-0.20021226	No	
+row_70	LMAN1L	"lectin, mannose binding 1 like [Source:HGNC Symbol;Acc:HGNC:6632]"	5783	0.0	-0.20364466	No	
+row_71	KLRC2	killer cell lectin like receptor C2 [Source:HGNC Symbol;Acc:HGNC:6375]	5966	0.0	-0.21784234	No	
+row_72	KLRG1	killer cell lectin like receptor G1 [Source:HGNC Symbol;Acc:HGNC:6380]	5969	0.0	-0.21799836	No	
+row_73	ADGRL1	adhesion G protein-coupled receptor L1 [Source:HGNC Symbol;Acc:HGNC:20973]	5984	0.0	-0.21909049	No	
+row_74	SFTPD	surfactant protein D [Source:HGNC Symbol;Acc:HGNC:10803]	6004	0.0	-0.22057267	No	
+row_75	LOXL2	lysyl oxidase like 2 [Source:HGNC Symbol;Acc:HGNC:6666]	6009	0.0	-0.2208847	No	
+row_76	GALNT2	polypeptide N-acetylgalactosaminyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:4124]	6109	0.0	-0.22860761	No	
+row_77	GALNT16	polypeptide N-acetylgalactosaminyltransferase 16 [Source:HGNC Symbol;Acc:HGNC:23233]	6147	0.0	-0.23149395	No	
+row_78	GALNT15	polypeptide N-acetylgalactosaminyltransferase 15 [Source:HGNC Symbol;Acc:HGNC:21531]	6148	0.0	-0.23149395	No	
+row_79	GALNT18	polypeptide N-acetylgalactosaminyltransferase 18 [Source:HGNC Symbol;Acc:HGNC:30488]	6149	0.0	-0.23149395	No	
+row_80	APCS	"amyloid P component, serum [Source:HGNC Symbol;Acc:HGNC:584]"	6178	0.0	-0.2336782	No	
+row_81	SELE	selectin E [Source:HGNC Symbol;Acc:HGNC:10718]	6234	0.0	-0.23796871	No	
+row_82	VTN	vitronectin [Source:HGNC Symbol;Acc:HGNC:12724]	6293	0.0	-0.24249326	No	
+row_83	ENDOU	"endonuclease, poly(U) specific [Source:HGNC Symbol;Acc:HGNC:14369]"	6318	0.0	-0.24436547	No	
+row_84	CD248	CD248 molecule [Source:HGNC Symbol;Acc:HGNC:18219]	6336	0.0	-0.24569163	No	
+row_85	FCN1	ficolin 1 [Source:HGNC Symbol;Acc:HGNC:3623]	6386	0.0	-0.24951409	No	
+row_86	EVA1C	eva-1 homolog C [Source:HGNC Symbol;Acc:HGNC:13239]	6511	0.0	-0.25918722	No	
+row_87	PLA2R1	phospholipase A2 receptor 1 [Source:HGNC Symbol;Acc:HGNC:9042]	6629	0.0	-0.2683143	No	
+row_88	CLEC3B	C-type lectin domain family 3 member B [Source:HGNC Symbol;Acc:HGNC:11891]	6752	0.0	-0.27783144	No	
+row_89	PLOD3	"procollagen-lysine,2-oxoglutarate 5-dioxygenase 3 [Source:HGNC Symbol;Acc:HGNC:9083]"	6857	-0.0011647933861240745	-0.28585154	No	
+row_90	GALNT11	polypeptide N-acetylgalactosaminyltransferase 11 [Source:HGNC Symbol;Acc:HGNC:19875]	6972	-0.002487363526597619	-0.2945463	No	
+row_91	RPIA	ribose 5-phosphate isomerase A [Source:HGNC Symbol;Acc:HGNC:10297]	7004	-0.002834372455254197	-0.29673865	No	
+row_92	FBXO2	F-box protein 2 [Source:HGNC Symbol;Acc:HGNC:13581]	7091	-0.003770229872316122	-0.3031469	No	
+row_93	FCER2	Fc fragment of IgE receptor II [Source:HGNC Symbol;Acc:HGNC:3612]	7266	-0.005626109428703785	-0.31627202	No	
+row_94	C4B	complement C4B (Chido blood group) [Source:HGNC Symbol;Acc:HGNC:1324]	7586	-0.00731950718909502	-0.3405735	No	
+row_95	MRC2	mannose receptor C type 2 [Source:HGNC Symbol;Acc:HGNC:16875]	7608	-0.007413521874696016	-0.34162074	No	
+row_96	COLEC11	collectin subfamily member 11 [Source:HGNC Symbol;Acc:HGNC:17213]	7610	-0.007427619770169258	-0.34110665	No	
+row_97	KLRG2	killer cell lectin like receptor G2 [Source:HGNC Symbol;Acc:HGNC:24778]	7627	-0.007561249192804098	-0.34175208	No	
+row_98	CRYBG2	crystallin beta-gamma domain containing 2 [Source:HGNC Symbol;Acc:HGNC:17295]	7677	-0.007832004688680172	-0.3449502	No	
+row_99	OGFOD1	2-oxoglutarate and iron dependent oxygenase domain containing 1 [Source:HGNC Symbol;Acc:HGNC:25585]	7710	-0.008117448538541794	-0.34679943	No	
+row_100	GALK1	galactokinase 1 [Source:HGNC Symbol;Acc:HGNC:4118]	7738	-0.008393485099077225	-0.3482366	No	
+row_101	GALNT7	polypeptide N-acetylgalactosaminyltransferase 7 [Source:HGNC Symbol;Acc:HGNC:4129]	7800	-0.009104665368795395	-0.35226938	No	
+row_102	CALR3	calreticulin 3 [Source:HGNC Symbol;Acc:HGNC:20407]	7910	-0.01003301702439785	-0.35997263	No	
+row_103	MANBA	mannosidase beta [Source:HGNC Symbol;Acc:HGNC:6831]	7947	-0.010507619008421898	-0.36194336	No	
+row_104	IGF2R	insulin like growth factor 2 receptor [Source:HGNC Symbol;Acc:HGNC:5467]	7968	-0.01069930475205183	-0.36265066	No	
+row_105	LGALSL	galectin like [Source:HGNC Symbol;Acc:HGNC:25012]	7991	-0.011012284085154533	-0.36348903	No	
+row_106	GANC	"glucosidase alpha, neutral C [Source:HGNC Symbol;Acc:HGNC:4139]"	7998	-0.01103659812361002	-0.3630773	No	
+row_107	CHI3L1	chitinase 3 like 1 [Source:HGNC Symbol;Acc:HGNC:1932]	8009	-0.011171793565154076	-0.36296687	No	
+row_108	ITLN1	intelectin 1 [Source:HGNC Symbol;Acc:HGNC:18259]	8104	-0.011959364637732506	-0.3693464	No	
+row_109	PTX3	pentraxin 3 [Source:HGNC Symbol;Acc:HGNC:9692]	8161	-0.012437751516699791	-0.37272346	No	
+row_110	LGALS4	galectin 4 [Source:HGNC Symbol;Acc:HGNC:6565]	8319	-0.01395019143819809	-0.3838589	No	
+row_111	GNPNAT1	glucosamine-phosphate N-acetyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:19980]	8414	-0.014884551987051964	-0.39000523	No	
+row_112	CLEC1B	C-type lectin domain family 1 member B [Source:HGNC Symbol;Acc:HGNC:24356]	8428	-0.015010020695626736	-0.38982284	No	
+row_113	PAM	peptidylglycine alpha-amidating monooxygenase [Source:HGNC Symbol;Acc:HGNC:8596]	8450	-0.01518075168132782	-0.39025092	No	
+row_114	ADGRL3	adhesion G protein-coupled receptor L3 [Source:HGNC Symbol;Acc:HGNC:20974]	8462	-0.01532950159162283	-0.38988706	No	
+row_115	P4HTM	"prolyl 4-hydroxylase, transmembrane [Source:HGNC Symbol;Acc:HGNC:28858]"	8782	-0.01893462799489498	-0.41326264	No	
+row_116	OGFOD2	2-oxoglutarate and iron dependent oxygenase domain containing 2 [Source:HGNC Symbol;Acc:HGNC:25823]	8812	-0.019319048151373863	-0.41398492	No	
+row_117	CLEC4F	C-type lectin domain family 4 member F [Source:HGNC Symbol;Acc:HGNC:25357]	8842	-0.019679127261042595	-0.41467848	No	
+row_118	MAN2B1	mannosidase alpha class 2B member 1 [Source:HGNC Symbol;Acc:HGNC:6826]	9039	-0.021814577281475067	-0.42822936	No	
+row_119	SELL	selectin L [Source:HGNC Symbol;Acc:HGNC:10720]	9108	-0.022558262571692467	-0.43173578	No	
+row_120	PKD1	"polycystin 1, transient receptor potential channel interacting [Source:HGNC Symbol;Acc:HGNC:9008]"	9189	-0.023532135412096977	-0.4361007	No	
+row_121	ALKBH3	"alkB homolog 3, alpha-ketoglutarate dependent dioxygenase [Source:HGNC Symbol;Acc:HGNC:30141]"	9192	-0.0235602930188179	-0.43437862	No	
+row_122	CANX	calnexin [Source:HGNC Symbol;Acc:HGNC:1473]	9210	-0.02379947528243065	-0.43380764	No	
+row_123	OGFOD3	2-oxoglutarate and iron dependent oxygenase domain containing 3 [Source:HGNC Symbol;Acc:HGNC:26174]	9237	-0.024140026420354843	-0.4339116	No	
+row_124	GUSB	glucuronidase beta [Source:HGNC Symbol;Acc:HGNC:4696]	9348	-0.0256511140614748	-0.44044784	No	
+row_125	PKD1L2	polycystin 1 like 2 (gene/pseudogene) [Source:HGNC Symbol;Acc:HGNC:21715]	9415	-0.026640374213457108	-0.44347286	No	
+row_126	CD34	CD34 molecule [Source:HGNC Symbol;Acc:HGNC:1662]	9453	-0.02721930295228958	-0.44418943	No	
+row_127	GALNT3	polypeptide N-acetylgalactosaminyltransferase 3 [Source:HGNC Symbol;Acc:HGNC:4125]	9595	-0.029587239027023315	-0.45283023	No	
+row_128	GBE1	"1,4-alpha-glucan branching enzyme 1 [Source:HGNC Symbol;Acc:HGNC:4180]"	9596	-0.029595021158456802	-0.4504711	No	
+row_129	UGP2	UDP-glucose pyrophosphorylase 2 [Source:HGNC Symbol;Acc:HGNC:12527]	9615	-0.029852114617824554	-0.44949564	No	
+row_130	DGCR2	DiGeorge syndrome critical region gene 2 [Source:HGNC Symbol;Acc:HGNC:2845]	9876	-0.03417956829071045	-0.46705344	No	
+row_131	SLC2A3	solute carrier family 2 member 3 [Source:HGNC Symbol;Acc:HGNC:11007]	9884	-0.03435772657394409	-0.46486074	No	
+row_132	MAN2C1	mannosidase alpha class 2C member 1 [Source:HGNC Symbol;Acc:HGNC:6827]	9913	-0.03481632471084595	-0.46426964	No	
+row_133	PYGL	glycogen phosphorylase L [Source:HGNC Symbol;Acc:HGNC:9725]	9941	-0.035268355160951614	-0.46356452	No	
+row_134	OLR1	oxidized low density lipoprotein receptor 1 [Source:HGNC Symbol;Acc:HGNC:8133]	9953	-0.035431090742349625	-0.46159828	No	
+row_135	HK1	hexokinase 1 [Source:HGNC Symbol;Acc:HGNC:4922]	10138	-0.03867342323064804	-0.47286916	No	
+row_136	ALPK1	alpha kinase 1 [Source:HGNC Symbol;Acc:HGNC:20917]	10443	-0.04379798844456673	-0.49309266	No	
+row_137	DPM1	"dolichyl-phosphate mannosyltransferase subunit 1, catalytic [Source:HGNC Symbol;Acc:HGNC:3005]"	10486	-0.04449179768562317	-0.49282244	No	
+row_138	ATRNL1	attractin like 1 [Source:HGNC Symbol;Acc:HGNC:29063]	10561	-0.04609538987278938	-0.49492067	No	
+row_139	EMC7	ER membrane protein complex subunit 7 [Source:HGNC Symbol;Acc:HGNC:24301]	10613	-0.047217272222042084	-0.49513528	No	
+row_140	EGLN1	egl-9 family hypoxia inducible factor 1 [Source:HGNC Symbol;Acc:HGNC:1232]	10630	-0.047520674765110016	-0.49259537	No	
+row_141	LMAN1	"lectin, mannose binding 1 [Source:HGNC Symbol;Acc:HGNC:6631]"	10643	-0.04785022512078285	-0.48971716	No	
+row_142	GANAB	glucosidase II alpha subunit [Source:HGNC Symbol;Acc:HGNC:4138]	10801	-0.051973212510347366	-0.49782163	No	
+row_143	CALR	calreticulin [Source:HGNC Symbol;Acc:HGNC:1455]	10823	-0.05250383913516998	-0.49527454	No	
+row_144	PHYH	phytanoyl-CoA 2-hydroxylase [Source:HGNC Symbol;Acc:HGNC:8940]	10921	-0.055276621133089066	-0.4984351	No	
+row_145	MAN2A2	mannosidase alpha class 2A member 2 [Source:HGNC Symbol;Acc:HGNC:6825]	10989	-0.05720596760511398	-0.49910164	No	
+row_146	CLEC1A	C-type lectin domain family 1 member A [Source:HGNC Symbol;Acc:HGNC:24355]	11003	-0.05755655840039253	-0.4955277	No	
+row_147	CD69	CD69 molecule [Source:HGNC Symbol;Acc:HGNC:1694]	11149	-0.061758097261190414	-0.50191605	No	
+row_148	CD72	CD72 molecule [Source:HGNC Symbol;Acc:HGNC:1696]	11157	-0.06185431405901909	-0.49753147	No	
+row_149	GALM	galactose mutarotase [Source:HGNC Symbol;Acc:HGNC:24063]	11289	-0.06601383537054062	-0.5024885	Yes	
+row_150	CDIPT	CDP-diacylglycerol--inositol 3-phosphatidyltransferase [Source:HGNC Symbol;Acc:HGNC:1769]	11321	-0.06676717847585678	-0.4995845	Yes	
+row_151	G6PD	glucose-6-phosphate dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4057]	11323	-0.06677771359682083	-0.4943394	Yes	
+row_152	GALNT9	polypeptide N-acetylgalactosaminyltransferase 9 [Source:HGNC Symbol;Acc:HGNC:4131]	11384	-0.06837031990289688	-0.4935699	Yes	
+row_153	FBXO6	F-box protein 6 [Source:HGNC Symbol;Acc:HGNC:13585]	11430	-0.07005756348371506	-0.49149576	Yes	
+row_154	GALNT1	polypeptide N-acetylgalactosaminyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:4123]	11524	-0.07345429062843323	-0.4928953	Yes	
+row_155	MLEC	malectin [Source:HGNC Symbol;Acc:HGNC:28973]	11585	-0.07556875795125961	-0.49155197	Yes	
+row_156	FUOM	fucose mutarotase [Source:HGNC Symbol;Acc:HGNC:24733]	11602	-0.07629534602165222	-0.48671833	Yes	
+row_157	CLEC9A	C-type lectin domain containing 9A [Source:HGNC Symbol;Acc:HGNC:26705]	11634	-0.07741332799196243	-0.4829657	Yes	
+row_158	CD302	CD302 molecule [Source:HGNC Symbol;Acc:HGNC:30843]	11666	-0.07890058308839798	-0.47909454	Yes	
+row_159	SIGLEC8	sialic acid binding Ig like lectin 8 [Source:HGNC Symbol;Acc:HGNC:10877]	11760	-0.08374099433422089	-0.47967407	Yes	
+row_160	GALNT6	polypeptide N-acetylgalactosaminyltransferase 6 [Source:HGNC Symbol;Acc:HGNC:4128]	11861	-0.08864138275384903	-0.48040906	Yes	
+row_161	GPI	glucose-6-phosphate isomerase [Source:HGNC Symbol;Acc:HGNC:4458]	12053	-0.0997433215379715	-0.48735788	Yes	
+row_162	LMAN2	"lectin, mannose binding 2 [Source:HGNC Symbol;Acc:HGNC:16986]"	12181	-0.11011193692684174	-0.48848763	Yes	
+row_163	GALNT10	polypeptide N-acetylgalactosaminyltransferase 10 [Source:HGNC Symbol;Acc:HGNC:19873]	12271	-0.1170734167098999	-0.48609808	Yes	
+row_164	SIGLEC6	sialic acid binding Ig like lectin 6 [Source:HGNC Symbol;Acc:HGNC:10875]	12315	-0.12092612683773041	-0.47981298	Yes	
+row_165	PPP1R3D	protein phosphatase 1 regulatory subunit 3D [Source:HGNC Symbol;Acc:HGNC:9294]	12331	-0.12265220284461975	-0.47120604	Yes	
+row_166	TALDO1	transaldolase 1 [Source:HGNC Symbol;Acc:HGNC:11559]	12399	-0.12889041006565094	-0.46615833	Yes	
+row_167	HLA-DRB1	"major histocompatibility complex, class II, DR beta 1 [Source:HGNC Symbol;Acc:HGNC:4948]"	12464	-0.13899697363376617	-0.46007094	Yes	
+row_168	CLEC4E	C-type lectin domain family 4 member E [Source:HGNC Symbol;Acc:HGNC:14555]	12628	-0.17300644516944885	-0.45899543	Yes	
+row_169	ALDOA	"aldolase, fructose-bisphosphate A [Source:HGNC Symbol;Acc:HGNC:414]"	12634	-0.1743129938840866	-0.44549033	Yes	
+row_170	CRYBG1	crystallin beta-gamma domain containing 1 [Source:HGNC Symbol;Acc:HGNC:356]	12653	-0.17921021580696106	-0.43260896	Yes	
+row_171	HK2	hexokinase 2 [Source:HGNC Symbol;Acc:HGNC:4923]	12654	-0.1794336885213852	-0.41830564	Yes	
+row_172	CLEC4G	C-type lectin domain family 4 member G [Source:HGNC Symbol;Acc:HGNC:24591]	12685	-0.18922553956508636	-0.405562	Yes	
+row_173	CLEC12A	C-type lectin domain family 12 member A [Source:HGNC Symbol;Acc:HGNC:31713]	12710	-0.19565826654434204	-0.39183757	Yes	
+row_174	PFKP	"phosphofructokinase, platelet [Source:HGNC Symbol;Acc:HGNC:8878]"	12723	-0.20053395628929138	-0.37678838	Yes	
+row_175	ASGR2	asialoglycoprotein receptor 2 [Source:HGNC Symbol;Acc:HGNC:743]	12750	-0.2102743536233902	-0.36205485	Yes	
+row_176	KLRC4-KLRK1	KLRC4-KLRK1 readthrough [Source:HGNC Symbol;Acc:HGNC:48357]	12770	-0.21483057737350464	-0.34641206	Yes	
+row_177	NECTIN1	nectin cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:9706]	12869	-0.26994237303733826	-0.3325388	Yes	
+row_178	KLRB1	killer cell lectin like receptor B1 [Source:HGNC Symbol;Acc:HGNC:6373]	12908	-0.30208003520965576	-0.31142324	Yes	
+row_179	CLEC6A	C-type lectin domain containing 6A [Source:HGNC Symbol;Acc:HGNC:14556]	12928	-0.32805201411247253	-0.28675514	Yes	
+row_180	SIGLEC10	sialic acid binding Ig like lectin 10 [Source:HGNC Symbol;Acc:HGNC:15620]	12952	-0.3888748288154602	-0.25755066	Yes	
+row_181	KLRD1	killer cell lectin like receptor D1 [Source:HGNC Symbol;Acc:HGNC:6378]	12973	-0.4795045852661133	-0.2208877	Yes	
+row_182	CLEC10A	C-type lectin domain containing 10A [Source:HGNC Symbol;Acc:HGNC:16916]	12978	-0.5043402314186096	-0.18099687	Yes	
+row_183	LGALS3	galectin 3 [Source:HGNC Symbol;Acc:HGNC:6563]	12985	-0.554004967212677	-0.13730308	Yes	
+row_184	CLEC4C	C-type lectin domain family 4 member C [Source:HGNC Symbol;Acc:HGNC:13258]	12999	-0.7905325889587402	-0.07530085	Yes	
+row_185	CD209	CD209 molecule [Source:HGNC Symbol;Acc:HGNC:1641]	13003	-0.9485527873039246	7.7866316E-5	Yes	

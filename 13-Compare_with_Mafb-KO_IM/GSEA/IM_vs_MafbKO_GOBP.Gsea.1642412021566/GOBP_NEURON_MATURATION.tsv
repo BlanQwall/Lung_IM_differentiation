@@ -1,0 +1,33 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QA	complement C1q A chain [Source:HGNC Symbol;Acc:HGNC:1241]	1	2.0969398021698	0.53715247	Yes	
+row_1	CDKN1C	cyclin dependent kinase inhibitor 1C [Source:HGNC Symbol;Acc:HGNC:1786]	146	0.19214554131031036	0.5752796	Yes	
+row_2	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	165	0.1757270097732544	0.6189128	Yes	
+row_3	RAC3	Rac family small GTPase 3 [Source:HGNC Symbol;Acc:HGNC:9803]	175	0.17022444307804108	0.66183	Yes	
+row_4	EDNRB	endothelin receptor type B [Source:HGNC Symbol;Acc:HGNC:3180]	272	0.13646937906742096	0.6893931	Yes	
+row_5	RB1	RB transcriptional corepressor 1 [Source:HGNC Symbol;Acc:HGNC:9884]	438	0.10639232397079468	0.70393175	Yes	
+row_6	ANKS1A	ankyrin repeat and sterile alpha motif domain containing 1A [Source:HGNC Symbol;Acc:HGNC:20961]	1493	0.051904208958148956	0.63598377	No	
+row_7	B4GALT6	"beta-1,4-galactosyltransferase 6 [Source:HGNC Symbol;Acc:HGNC:929]"	1714	0.0470689982175827	0.63108444	No	
+row_8	SCLT1	sodium channel and clathrin linker 1 [Source:HGNC Symbol;Acc:HGNC:26406]	2015	0.041386980563402176	0.6185627	No	
+row_9	SCARF1	scavenger receptor class F member 1 [Source:HGNC Symbol;Acc:HGNC:16820]	2600	0.03119335137307644	0.5815377	No	
+row_10	AGRN	agrin [Source:HGNC Symbol;Acc:HGNC:329]	2628	0.030745413154363632	0.5873334	No	
+row_11	CLN5	CLN5 intracellular trafficking protein [Source:HGNC Symbol;Acc:HGNC:2076]	3149	0.02346852794289589	0.5532627	No	
+row_12	MAP3K13	mitogen-activated protein kinase kinase kinase 13 [Source:HGNC Symbol;Acc:HGNC:6852]	4409	0.010142959654331207	0.45881358	No	
+row_13	C1QL1	complement C1q like 1 [Source:HGNC Symbol;Acc:HGNC:24182]	4566	0.009113374166190624	0.4491234	No	
+row_14	MECP2	methyl-CpG binding protein 2 [Source:HGNC Symbol;Acc:HGNC:6990]	4982	0.005938710179179907	0.41865537	No	
+row_15	TBX6	T-box transcription factor 6 [Source:HGNC Symbol;Acc:HGNC:11605]	5449	4.2990042857127264E-5	0.38274562	No	
+row_16	EDNRA	endothelin receptor type A [Source:HGNC Symbol;Acc:HGNC:3179]	6601	0.0	0.2940229	No	
+row_17	NTN4	netrin 4 [Source:HGNC Symbol;Acc:HGNC:13658]	7538	-0.007129611447453499	0.22369963	No	
+row_18	BCL2	BCL2 apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:990]	8099	-0.011922881938517094	0.18358766	No	
+row_19	PICK1	protein interacting with PRKCA 1 [Source:HGNC Symbol;Acc:HGNC:9394]	8645	-0.017472267150878906	0.14605366	No	
+row_20	SPTBN4	"spectrin beta, non-erythrocytic 4 [Source:HGNC Symbol;Acc:HGNC:14896]"	8662	-0.017634950578212738	0.14933835	No	
+row_21	MTCH1	mitochondrial carrier 1 [Source:HGNC Symbol;Acc:HGNC:17586]	8830	-0.019479811191558838	0.14145613	No	
+row_22	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	8869	-0.019940068945288658	0.14363556	No	
+row_23	KDM1A	lysine demethylase 1A [Source:HGNC Symbol;Acc:HGNC:29079]	8969	-0.021038629114627838	0.14139435	No	
+row_24	B4GALT5	"beta-1,4-galactosyltransferase 5 [Source:HGNC Symbol;Acc:HGNC:928]"	9007	-0.02150295488536358	0.14405127	No	
+row_25	RND1	Rho family GTPase 1 [Source:HGNC Symbol;Acc:HGNC:18314]	9674	-0.030769620090723038	0.10059696	No	
+row_26	LRRK2	leucine rich repeat kinase 2 [Source:HGNC Symbol;Acc:HGNC:18618]	10104	-0.03832194209098816	0.077346236	No	
+row_27	FARP2	"FERM, ARH/RhoGEF and pleckstrin domain protein 2 [Source:HGNC Symbol;Acc:HGNC:16460]"	10404	-0.04318983852863312	0.06536347	No	
+row_28	LGI4	leucine rich repeat LGI family member 4 [Source:HGNC Symbol;Acc:HGNC:18712]	11058	-0.05904107913374901	0.0301543	No	
+row_29	BCL11A	BAF chromatin remodeling complex subunit BCL11A [Source:HGNC Symbol;Acc:HGNC:13221]	11342	-0.06731055676937103	0.025584519	No	
+row_30	CX3CL1	C-X3-C motif chemokine ligand 1 [Source:HGNC Symbol;Acc:HGNC:10647]	12314	-0.1209011822938919	-0.018288732	No	
+row_31	NR4A2	nuclear receptor subfamily 4 group A member 2 [Source:HGNC Symbol;Acc:HGNC:7981]	12884	-0.27868789434432983	0.009249923	No	

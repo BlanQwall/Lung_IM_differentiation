@@ -1,0 +1,45 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.26440588	Yes	
+row_1	C1QA	complement C1q A chain [Source:HGNC Symbol;Acc:HGNC:1241]	1	2.0969398021698	0.49998552	Yes	
+row_2	C1QB	complement C1q B chain [Source:HGNC Symbol;Acc:HGNC:1242]	2	1.8567914962768555	0.7085858	Yes	
+row_3	CD81	CD81 molecule [Source:HGNC Symbol;Acc:HGNC:1701]	9	0.7495124936103821	0.79232645	Yes	
+row_4	C3	complement C3 [Source:HGNC Symbol;Acc:HGNC:1318]	165	0.1757270097732544	0.80010945	Yes	
+row_5	TREM2	triggering receptor expressed on myeloid cells 2 [Source:HGNC Symbol;Acc:HGNC:17761]	188	0.16570958495140076	0.81702864	Yes	
+row_6	IGHM	immunoglobulin heavy constant mu [Source:HGNC Symbol;Acc:HGNC:5541]	206	0.1565571278333664	0.8333053	Yes	
+row_7	C6	complement C6 [Source:HGNC Symbol;Acc:HGNC:1339]	334	0.12277914583683014	0.83730024	Yes	
+row_8	CD55	CD55 molecule (Cromer blood group) [Source:HGNC Symbol;Acc:HGNC:2665]	620	0.08747071772813797	0.82513803	No	
+row_9	C1RL	complement C1r subcomponent like [Source:HGNC Symbol;Acc:HGNC:21265]	917	0.07070188224315643	0.8102433	No	
+row_10	C2	complement C2 [Source:HGNC Symbol;Acc:HGNC:1248]	1341	0.05607956647872925	0.7839071	No	
+row_11	CD46	CD46 molecule [Source:HGNC Symbol;Acc:HGNC:6953]	4000	0.014033026993274689	0.5804069	No	
+row_12	EXO1	exonuclease 1 [Source:HGNC Symbol;Acc:HGNC:3511]	4594	0.008932321332395077	0.53565776	No	
+row_13	C9	complement C9 [Source:HGNC Symbol;Acc:HGNC:1358]	4600	0.008899486623704433	0.5362718	No	
+row_14	C1R	complement C1r [Source:HGNC Symbol;Acc:HGNC:1246]	4887	0.006749752908945084	0.5149639	No	
+row_15	C1S	complement C1s [Source:HGNC Symbol;Acc:HGNC:1247]	5478	0.0	0.46944273	No	
+row_16	CR2	complement C3d receptor 2 [Source:HGNC Symbol;Acc:HGNC:2336]	5527	0.0	0.4657393	No	
+row_17	IGHA2	immunoglobulin heavy constant alpha 2 (A2m marker) [Source:HGNC Symbol;Acc:HGNC:5479]	5679	0.0	0.454089	No	
+row_18	IGLC3	immunoglobulin lambda constant 3 (Kern-Oz+ marker) [Source:HGNC Symbol;Acc:HGNC:5857]	5750	0.0	0.44868815	No	
+row_19	APCS	"amyloid P component, serum [Source:HGNC Symbol;Acc:HGNC:584]"	6178	0.0	0.41574317	No	
+row_20	MASP2	MBL associated serine protease 2 [Source:HGNC Symbol;Acc:HGNC:6902]	6428	0.0	0.3965317	No	
+row_21	TRDC	T cell receptor delta constant [Source:HGNC Symbol;Acc:HGNC:12253]	6572	0.0	0.38549858	No	
+row_22	TRBC2	T cell receptor beta constant 2 [Source:HGNC Symbol;Acc:HGNC:12157]	6696	0.0	0.37600857	No	
+row_23	TRBC1	T cell receptor beta constant 1 [Source:HGNC Symbol;Acc:HGNC:12156]	6697	0.0	0.37600857	No	
+row_24	SERPING1	serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228]	6821	-5.82645065151155E-4	0.36658403	No	
+row_25	C1QBP	complement C1q binding protein [Source:HGNC Symbol;Acc:HGNC:1243]	7044	-0.003269410226494074	0.34982303	No	
+row_26	SUSD4	sushi domain containing 4 [Source:HGNC Symbol;Acc:HGNC:25470]	7257	-0.005559219047427177	0.3340908	No	
+row_27	FCER2	Fc fragment of IgE receptor II [Source:HGNC Symbol;Acc:HGNC:3612]	7266	-0.005626109428703785	0.33410564	No	
+row_28	C4B	complement C4B (Chido blood group) [Source:HGNC Symbol;Acc:HGNC:1324]	7586	-0.00731950718909502	0.31031564	No	
+row_29	IGLC1	immunoglobulin lambda constant 1 [Source:HGNC Symbol;Acc:HGNC:5855]	7779	-0.008824245072901249	0.29649332	No	
+row_30	C5	complement C5 [Source:HGNC Symbol;Acc:HGNC:1331]	7804	-0.009119182825088501	0.2956661	No	
+row_31	C7	complement C7 [Source:HGNC Symbol;Acc:HGNC:1346]	7826	-0.009294732473790646	0.29509008	No	
+row_32	C8G	complement C8 gamma chain [Source:HGNC Symbol;Acc:HGNC:1354]	8108	-0.011976873502135277	0.27475518	No	
+row_33	PTPN6	protein tyrosine phosphatase non-receptor type 6 [Source:HGNC Symbol;Acc:HGNC:9658]	8904	-0.02028009481728077	0.21569568	No	
+row_34	IGKC	immunoglobulin kappa constant [Source:HGNC Symbol;Acc:HGNC:5716]	9291	-0.0248621366918087	0.18870716	No	
+row_35	IGHD	immunoglobulin heavy constant delta [Source:HGNC Symbol;Acc:HGNC:5480]	9494	-0.027897357940673828	0.17625605	No	
+row_36	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	9641	-0.03015626221895218	0.16837938	No	
+row_37	BCL3	BCL3 transcription coactivator [Source:HGNC Symbol;Acc:HGNC:998]	10384	-0.042896609753370285	0.11594991	No	
+row_38	HPX	hemopexin [Source:HGNC Symbol;Acc:HGNC:5171]	10458	-0.043976716697216034	0.11525817	No	
+row_39	TNF	tumor necrosis factor [Source:HGNC Symbol;Acc:HGNC:11892]	11021	-0.058159176260232925	0.07843118	No	
+row_40	CR1L	complement C3b/C4b receptor 1 like [Source:HGNC Symbol;Acc:HGNC:2335]	11130	-0.06117263436317444	0.0769709	No	
+row_41	NOD2	nucleotide binding oligomerization domain containing 2 [Source:HGNC Symbol;Acc:HGNC:5331]	11701	-0.08061856031417847	0.042049862	No	
+row_42	PTPRC	protein tyrosine phosphatase receptor type C [Source:HGNC Symbol;Acc:HGNC:9666]	12842	-0.2467222660779953	-0.018188424	No	
+row_43	FCGR2B	Fc fragment of IgG receptor IIb [Source:HGNC Symbol;Acc:HGNC:3618]	12873	-0.27246883511543274	0.0101073105	No	

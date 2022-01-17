@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ARVCF	ARVCF delta catenin family member [Source:HGNC Symbol;Acc:HGNC:728]	3047	0.024991892278194427	-0.20069382	No	
+row_1	CDH6	cadherin 6 [Source:HGNC Symbol;Acc:HGNC:1765]	3580	0.01842261292040348	-0.2166601	No	
+row_2	PCDHGB4	"protocadherin gamma subfamily B, 4 [Source:HGNC Symbol;Acc:HGNC:8711]"	3852	0.015646783635020256	-0.21629699	No	
+row_3	DCHS1	dachsous cadherin-related 1 [Source:HGNC Symbol;Acc:HGNC:13681]	4040	0.013490581884980202	-0.21239176	No	
+row_4	CDH2	cadherin 2 [Source:HGNC Symbol;Acc:HGNC:1759]	4213	0.011776418425142765	-0.20965728	No	
+row_5	CDH23	cadherin related 23 [Source:HGNC Symbol;Acc:HGNC:13733]	4323	0.010855847038328648	-0.20332114	No	
+row_6	SELP	selectin P [Source:HGNC Symbol;Acc:HGNC:10721]	4797	0.00756772980093956	-0.22947198	No	
+row_7	AJUBA	ajuba LIM protein [Source:HGNC Symbol;Acc:HGNC:20250]	4991	0.005839967634528875	-0.23640856	No	
+row_8	ATP2C1	ATPase secretory pathway Ca2+ transporting 1 [Source:HGNC Symbol;Acc:HGNC:13211]	5428	3.296876384411007E-4	-0.2695307	No	
+row_9	CDH24	cadherin 24 [Source:HGNC Symbol;Acc:HGNC:14265]	5874	0.0	-0.3037931	No	
+row_10	PCDHGC3	"protocadherin gamma subfamily C, 3 [Source:HGNC Symbol;Acc:HGNC:8716]"	6163	0.0	-0.32596743	No	
+row_11	PCDH12	protocadherin 12 [Source:HGNC Symbol;Acc:HGNC:8657]	6418	0.0	-0.34552392	No	
+row_12	KIFAP3	kinesin associated protein 3 [Source:HGNC Symbol;Acc:HGNC:17060]	8167	-0.012465390376746655	-0.46319747	No	
+row_13	CDH5	cadherin 5 [Source:HGNC Symbol;Acc:HGNC:1764]	8237	-0.01317359134554863	-0.450637	No	
+row_14	CDH11	cadherin 11 [Source:HGNC Symbol;Acc:HGNC:1750]	8591	-0.016837500035762787	-0.45497194	No	
+row_15	SELL	selectin L [Source:HGNC Symbol;Acc:HGNC:10720]	9108	-0.022558262571692467	-0.46409535	Yes	
+row_16	FXYD5	FXYD domain containing ion transport regulator 5 [Source:HGNC Symbol;Acc:HGNC:4029]	12986	-0.5631078481674194	0.0013860613	Yes	

@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.6271554	Yes	
+row_1	PLA2G7	phospholipase A2 group VII [Source:HGNC Symbol;Acc:HGNC:9040]	34	0.43109872937202454	0.80314857	Yes	
+row_2	APOC1	apolipoprotein C1 [Source:HGNC Symbol;Acc:HGNC:607]	611	0.08827267587184906	0.79530287	No	
+row_3	LIPC	"lipase C, hepatic type [Source:HGNC Symbol;Acc:HGNC:6619]"	2055	0.040516577661037445	0.70094097	No	
+row_4	MTTP	microsomal triglyceride transfer protein [Source:HGNC Symbol;Acc:HGNC:7467]	2771	0.02864738740026951	0.6577303	No	
+row_5	LIPG	"lipase G, endothelial type [Source:HGNC Symbol;Acc:HGNC:6623]"	3770	0.01638205721974373	0.58765393	No	
+row_6	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4778	0.007649634033441544	0.5132728	No	
+row_7	AGTR1	angiotensin II receptor type 1 [Source:HGNC Symbol;Acc:HGNC:336]	5457	0.0	0.46106273	No	
+row_8	APOC2	apolipoprotein C2 [Source:HGNC Symbol;Acc:HGNC:609]	5533	0.0	0.45528728	No	
+row_9	SCARB1	scavenger receptor class B member 1 [Source:HGNC Symbol;Acc:HGNC:1664]	6983	-0.0025750475469976664	0.3447706	No	
+row_10	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.31724343	No	
+row_11	LCAT	lecithin-cholesterol acyltransferase [Source:HGNC Symbol;Acc:HGNC:6522]	7941	-0.010452006943523884	0.278058	No	
+row_12	TAF8	TATA-box binding protein associated factor 8 [Source:HGNC Symbol;Acc:HGNC:17300]	8057	-0.011589476838707924	0.27399573	No	
+row_13	MPO	myeloperoxidase [Source:HGNC Symbol;Acc:HGNC:7218]	8182	-0.012627176940441132	0.26966962	No	
+row_14	ABCA5	ATP binding cassette subfamily A member 5 [Source:HGNC Symbol;Acc:HGNC:35]	8666	-0.017692210152745247	0.23979326	No	
+row_15	PLTP	phospholipid transfer protein [Source:HGNC Symbol;Acc:HGNC:9093]	8752	-0.018570953980088234	0.24092872	No	
+row_16	LPL	lipoprotein lipase [Source:HGNC Symbol;Acc:HGNC:6677]	9806	-0.03288036212325096	0.17344078	No	
+row_17	GTF2E1	general transcription factor IIE subunit 1 [Source:HGNC Symbol;Acc:HGNC:4650]	11665	-0.07889879494905472	0.062996335	No	
+row_18	ABCG1	ATP binding cassette subfamily G member 1 [Source:HGNC Symbol;Acc:HGNC:73]	11989	-0.09680236130952835	0.07816105	No	

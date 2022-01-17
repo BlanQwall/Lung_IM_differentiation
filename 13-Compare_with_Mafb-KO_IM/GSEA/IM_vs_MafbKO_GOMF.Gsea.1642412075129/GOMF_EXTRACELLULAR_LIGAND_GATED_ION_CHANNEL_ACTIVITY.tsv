@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	P2RX4	purinergic receptor P2X 4 [Source:HGNC Symbol;Acc:HGNC:8535]	183	0.1671966314315796	0.33073905	Yes	
+row_1	P2RX7	purinergic receptor P2X 7 [Source:HGNC Symbol;Acc:HGNC:8537]	338	0.12179826200008392	0.57008034	Yes	
+row_2	GRIN3B	glutamate ionotropic receptor NMDA type subunit 3B [Source:HGNC Symbol;Acc:HGNC:16768]	3824	0.015884824097156525	0.33447573	No	
+row_3	GRIK5	glutamate ionotropic receptor kainate type subunit 5 [Source:HGNC Symbol;Acc:HGNC:4583]	3943	0.01466978620737791	0.3556444	No	
+row_4	P2RX6	purinergic receptor P2X 6 [Source:HGNC Symbol;Acc:HGNC:8538]	4113	0.012739134021103382	0.36890393	No	
+row_5	GABRD	gamma-aminobutyric acid type A receptor subunit delta [Source:HGNC Symbol;Acc:HGNC:4084]	5703	0.0	0.2465414	No	
+row_6	CHRNE	cholinergic receptor nicotinic epsilon subunit [Source:HGNC Symbol;Acc:HGNC:1966]	5767	0.0	0.24169002	No	
+row_7	GABRA2	gamma-aminobutyric acid type A receptor subunit alpha2 [Source:HGNC Symbol;Acc:HGNC:4076]	6028	0.0	0.22166847	No	
+row_8	P2RX1	purinergic receptor P2X 1 [Source:HGNC Symbol;Acc:HGNC:8533]	6375	0.0	0.19502439	No	
+row_9	GRIA3	glutamate ionotropic receptor AMPA type subunit 3 [Source:HGNC Symbol;Acc:HGNC:4573]	6488	0.0	0.18639971	No	
+row_10	CHRNA5	cholinergic receptor nicotinic alpha 5 subunit [Source:HGNC Symbol;Acc:HGNC:1959]	7325	-0.006014691200107336	0.13442756	No	
+row_11	GABRR2	gamma-aminobutyric acid type A receptor subunit rho2 [Source:HGNC Symbol;Acc:HGNC:4091]	7423	-0.006494231056421995	0.14035186	No	
+row_12	CHRNB1	cholinergic receptor nicotinic beta 1 subunit [Source:HGNC Symbol;Acc:HGNC:1961]	7489	-0.006864077411592007	0.14950314	No	
+row_13	CHRNB2	cholinergic receptor nicotinic beta 2 subunit [Source:HGNC Symbol;Acc:HGNC:1962]	7620	-0.007523291278630495	0.15500861	No	
+row_14	GRIN2D	glutamate ionotropic receptor NMDA type subunit 2D [Source:HGNC Symbol;Acc:HGNC:4588]	8122	-0.012071936391294003	0.14132611	No	
+row_15	CHRNB4	cholinergic receptor nicotinic beta 4 subunit [Source:HGNC Symbol;Acc:HGNC:1964]	8466	-0.015346923843026161	0.14656499	No	
+row_16	P2RX5	purinergic receptor P2X 5 [Source:HGNC Symbol;Acc:HGNC:8536]	9234	-0.024102255702018738	0.13721056	No	
+row_17	GLRA1	glycine receptor alpha 1 [Source:HGNC Symbol;Acc:HGNC:4326]	9833	-0.03333389386534691	0.15990975	No	
+row_18	PTK2B	protein tyrosine kinase 2 beta [Source:HGNC Symbol;Acc:HGNC:9612]	10268	-0.04082530736923218	0.21068844	No	

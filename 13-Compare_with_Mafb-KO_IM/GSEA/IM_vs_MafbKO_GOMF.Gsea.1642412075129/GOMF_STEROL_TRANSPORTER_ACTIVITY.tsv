@@ -1,0 +1,30 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.48748228	Yes	
+row_1	ABCA1	ATP binding cassette subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:29]	53	0.3633791506290436	0.60054094	Yes	
+row_2	OSBPL11	oxysterol binding protein like 11 [Source:HGNC Symbol;Acc:HGNC:16397]	899	0.07128484547138214	0.55834043	No	
+row_3	STARD5	StAR related lipid transfer domain containing 5 [Source:HGNC Symbol;Acc:HGNC:18065]	1232	0.05963486060500145	0.55192876	No	
+row_4	OSBPL1A	oxysterol binding protein like 1A [Source:HGNC Symbol;Acc:HGNC:16398]	1564	0.050328053534030914	0.54260176	No	
+row_5	MTTP	microsomal triglyceride transfer protein [Source:HGNC Symbol;Acc:HGNC:7467]	2771	0.02864738740026951	0.45887172	No	
+row_6	ARV1	"ARV1 homolog, fatty acid homeostasis modulator [Source:HGNC Symbol;Acc:HGNC:29561]"	3203	0.022917641326785088	0.43302512	No	
+row_7	OSBPL5	oxysterol binding protein like 5 [Source:HGNC Symbol;Acc:HGNC:16392]	3317	0.021590204909443855	0.4312585	No	
+row_8	NPC2	NPC intracellular cholesterol transporter 2 [Source:HGNC Symbol;Acc:HGNC:14537]	3994	0.014105277135968208	0.38369748	No	
+row_9	OSBPL6	oxysterol binding protein like 6 [Source:HGNC Symbol;Acc:HGNC:16388]	4125	0.012645398266613483	0.3777448	No	
+row_10	OSBPL7	oxysterol binding protein like 7 [Source:HGNC Symbol;Acc:HGNC:16387]	4206	0.011825439520180225	0.3753817	No	
+row_11	OSBPL3	oxysterol binding protein like 3 [Source:HGNC Symbol;Acc:HGNC:16370]	4431	0.010020984336733818	0.36134106	No	
+row_12	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4778	0.007649634033441544	0.33713597	No	
+row_13	OSBPL10	oxysterol binding protein like 10 [Source:HGNC Symbol;Acc:HGNC:16395]	4855	0.0070159886963665485	0.3335348	No	
+row_14	STAR	steroidogenic acute regulatory protein [Source:HGNC Symbol;Acc:HGNC:11359]	6760	0.0	0.18680239	No	
+row_15	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.14149156	No	
+row_16	GRAMD1C	GRAM domain containing 1C [Source:HGNC Symbol;Acc:HGNC:25252]	7379	-0.006251698825508356	0.14327043	No	
+row_17	OSBPL8	oxysterol binding protein like 8 [Source:HGNC Symbol;Acc:HGNC:16396]	7503	-0.006942561827600002	0.13602358	No	
+row_18	GRAMD1B	GRAM domain containing 1B [Source:HGNC Symbol;Acc:HGNC:29214]	8552	-0.01631064899265766	0.06050335	No	
+row_19	PLTP	phospholipid transfer protein [Source:HGNC Symbol;Acc:HGNC:9093]	8752	-0.018570953980088234	0.051138338	No	
+row_20	STARD3	StAR related lipid transfer domain containing 3 [Source:HGNC Symbol;Acc:HGNC:17579]	8770	-0.018764404579997063	0.05586142	No	
+row_21	NPC1	NPC intracellular cholesterol transporter 1 [Source:HGNC Symbol;Acc:HGNC:7897]	8985	-0.021265558898448944	0.046206806	No	
+row_22	OSBPL9	oxysterol binding protein like 9 [Source:HGNC Symbol;Acc:HGNC:16386]	9366	-0.025936875492334366	0.025261281	No	
+row_23	GRAMD1A	GRAM domain containing 1A [Source:HGNC Symbol;Acc:HGNC:29305]	11833	-0.08700016885995865	-0.13680929	No	
+row_24	OSBPL2	oxysterol binding protein like 2 [Source:HGNC Symbol;Acc:HGNC:15761]	11850	-0.08774976432323456	-0.109828755	No	
+row_25	OSBP	oxysterol binding protein [Source:HGNC Symbol;Acc:HGNC:8503]	11898	-0.09138509631156921	-0.084068395	No	
+row_26	ABCG1	ATP binding cassette subfamily G member 1 [Source:HGNC Symbol;Acc:HGNC:73]	11989	-0.09680236130952835	-0.059880067	No	
+row_27	STARD4	StAR related lipid transfer domain containing 4 [Source:HGNC Symbol;Acc:HGNC:18058]	12121	-0.10442668199539185	-0.03640002	No	
+row_28	TSPO	translocator protein [Source:HGNC Symbol;Acc:HGNC:1158]	12925	-0.3246158957481384	0.0060880585	No	

@@ -1,0 +1,46 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TMED10	transmembrane p24 trafficking protein 10 [Source:HGNC Symbol;Acc:HGNC:16998]	842	0.07398194819688797	-0.038564224	No	
+row_1	SEC24D	"SEC24 homolog D, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10706]"	1617	0.04899923875927925	-0.08079812	No	
+row_2	MCFD2	"multiple coagulation factor deficiency 2, ER cargo receptor complex subunit [Source:HGNC Symbol;Acc:HGNC:18451]"	1652	0.04825208708643913	-0.066199906	No	
+row_3	SEC23IP	SEC23 interacting protein [Source:HGNC Symbol;Acc:HGNC:17018]	2073	0.04025142267346382	-0.084241174	No	
+row_4	HLA-DRB5	"major histocompatibility complex, class II, DR beta 5 [Source:HGNC Symbol;Acc:HGNC:4953]"	3359	0.02118586376309395	-0.17583096	No	
+row_5	SEC31B	"SEC31 homolog B, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:23197]"	4669	0.008478250354528427	-0.2738081	No	
+row_6	TGFA	transforming growth factor alpha [Source:HGNC Symbol;Acc:HGNC:11765]	4751	0.007918897084891796	-0.27723175	No	
+row_7	SEC22B	"SEC22 homolog B, vesicle trafficking protein [Source:HGNC Symbol;Acc:HGNC:10700]"	5029	0.005488668568432331	-0.29664624	No	
+row_8	USO1	USO1 vesicle transport factor [Source:HGNC Symbol;Acc:HGNC:30904]	5257	0.0026429505087435246	-0.31321838	No	
+row_9	VTI1A	vesicle transport through interaction with t-SNAREs 1A [Source:HGNC Symbol;Acc:HGNC:17792]	5411	5.750035052187741E-4	-0.3248187	No	
+row_10	CNIH2	cornichon family AMPA receptor auxiliary protein 2 [Source:HGNC Symbol;Acc:HGNC:28744]	6035	0.0	-0.3728897	No	
+row_11	SEC23A	"SEC23 homolog A, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10701]"	6917	-0.0018959600711241364	-0.44019142	No	
+row_12	STX5	syntaxin 5 [Source:HGNC Symbol;Acc:HGNC:11440]	6961	-0.0023857231717556715	-0.44265783	No	
+row_13	SEC24A	"SEC24 homolog A, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10703]"	7340	-0.006105019710958004	-0.46964553	No	
+row_14	SREBF1	sterol regulatory element binding transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:11289]	8219	-0.013050982728600502	-0.53273445	No	
+row_15	STX17	syntaxin 17 [Source:HGNC Symbol;Acc:HGNC:11432]	8395	-0.014674284495413303	-0.5410001	No	
+row_16	KLHL12	kelch like family member 12 [Source:HGNC Symbol;Acc:HGNC:19360]	8539	-0.016112014651298523	-0.54628354	No	
+row_17	SEC24C	"SEC24 homolog C, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10705]"	8825	-0.01941879652440548	-0.5613435	No	
+row_18	CD59	CD59 molecule (CD59 blood group) [Source:HGNC Symbol;Acc:HGNC:1689]	8885	-0.020081916823983192	-0.5587285	No	
+row_19	SEC16A	"SEC16 homolog A, endoplasmic reticulum export factor [Source:HGNC Symbol;Acc:HGNC:29006]"	9277	-0.02467220462858677	-0.5800925	No	
+row_20	PEF1	penta-EF-hand domain containing 1 [Source:HGNC Symbol;Acc:HGNC:30009]	9339	-0.02555406652390957	-0.5756788	No	
+row_21	VTI1B	vesicle transport through interaction with t-SNAREs 1B [Source:HGNC Symbol;Acc:HGNC:17793]	9574	-0.02928413264453411	-0.58328253	No	
+row_22	SAR1B	secretion associated Ras related GTPase 1B [Source:HGNC Symbol;Acc:HGNC:10535]	10003	-0.0363641083240509	-0.6033285	Yes	
+row_23	SAR1A	secretion associated Ras related GTPase 1A [Source:HGNC Symbol;Acc:HGNC:10534]	10024	-0.036819279193878174	-0.59173054	Yes	
+row_24	SEC13	"SEC13 homolog, nuclear pore and COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10697]"	10262	-0.040735431015491486	-0.5954787	Yes	
+row_25	VMA21	vacuolar ATPase assembly factor VMA21 [Source:HGNC Symbol;Acc:HGNC:22082]	10370	-0.04275015369057655	-0.5884769	Yes	
+row_26	B2M	beta-2-microglobulin [Source:HGNC Symbol;Acc:HGNC:914]	10409	-0.04328591004014015	-0.5759598	Yes	
+row_27	SEC23B	"SEC23 homolog B, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10702]"	10470	-0.044130925089120865	-0.56483865	Yes	
+row_28	LMAN1	"lectin, mannose binding 1 [Source:HGNC Symbol;Acc:HGNC:6631]"	10643	-0.04785022512078285	-0.56103206	Yes	
+row_29	SEC31A	"SEC31 homolog A, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:17052]"	10731	-0.0500137060880661	-0.5498946	Yes	
+row_30	SEC24B	"SEC24 homolog B, COPII coat complex component [Source:HGNC Symbol;Acc:HGNC:10704]"	11699	-0.08033334463834763	-0.595837	Yes	
+row_31	CRYZL2P-SEC16B	CRYZL2P-SEC16B readthrough [Source:HGNC Symbol;Acc:HGNC:53757]	11740	-0.08251121640205383	-0.56947434	Yes	
+row_32	TMED2	transmembrane p24 trafficking protein 2 [Source:HGNC Symbol;Acc:HGNC:16996]	11972	-0.09586091339588165	-0.5530847	Yes	
+row_33	SCAP	SREBF chaperone [Source:HGNC Symbol;Acc:HGNC:30634]	11988	-0.0967664122581482	-0.5197051	Yes	
+row_34	GOSR2	golgi SNAP receptor complex member 2 [Source:HGNC Symbol;Acc:HGNC:4431]	12076	-0.10136180371046066	-0.49024102	Yes	
+row_35	CNIH1	cornichon family AMPA receptor auxiliary protein 1 [Source:HGNC Symbol;Acc:HGNC:19431]	12080	-0.10182475298643112	-0.4541302	Yes	
+row_36	PDCD6	programmed cell death 6 [Source:HGNC Symbol;Acc:HGNC:8765]	12183	-0.1102263331413269	-0.42265967	Yes	
+row_37	HLA-DQA1	"major histocompatibility complex, class II, DQ alpha 1 [Source:HGNC Symbol;Acc:HGNC:4942]"	12197	-0.11103520542383194	-0.38403314	Yes	
+row_38	SREBF2	sterol regulatory element binding transcription factor 2 [Source:HGNC Symbol;Acc:HGNC:11290]	12339	-0.1233246773481369	-0.35089695	Yes	
+row_39	CD74	CD74 molecule [Source:HGNC Symbol;Acc:HGNC:1697]	12376	-0.12650717794895172	-0.308523	Yes	
+row_40	HLA-DRB1	"major histocompatibility complex, class II, DR beta 1 [Source:HGNC Symbol;Acc:HGNC:4948]"	12464	-0.13899697363376617	-0.26562652	Yes	
+row_41	HLA-B	"major histocompatibility complex, class I, B [Source:HGNC Symbol;Acc:HGNC:4932]"	12479	-0.14124396443367004	-0.21629536	Yes	
+row_42	HLA-E	"major histocompatibility complex, class I, E [Source:HGNC Symbol;Acc:HGNC:4962]"	12546	-0.15424029529094696	-0.16633801	Yes	
+row_43	HLA-DQB2	"major histocompatibility complex, class II, DQ beta 2 [Source:HGNC Symbol;Acc:HGNC:4945]"	12753	-0.2114628404378891	-0.10675982	Yes	
+row_44	AREG	amphiregulin [Source:HGNC Symbol;Acc:HGNC:651]	12940	-0.35316988825798035	0.004938282	Yes	

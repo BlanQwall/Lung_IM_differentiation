@@ -1,0 +1,17 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GGT5	gamma-glutamyltransferase 5 [Source:HGNC Symbol;Acc:HGNC:4260]	2506	0.032304298132658005	-0.16626069	No	
+row_1	ASRGL1	asparaginase and isoaspartyl peptidase 1 [Source:HGNC Symbol;Acc:HGNC:16448]	4281	0.011185378767549992	-0.29360268	No	
+row_2	PSMB10	proteasome 20S subunit beta 10 [Source:HGNC Symbol;Acc:HGNC:9538]	7049	-0.0033249687403440475	-0.50388384	No	
+row_3	GGT1	gamma-glutamyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:4250]	7629	-0.007567125838249922	-0.5422123	No	
+row_4	BACE1	beta-secretase 1 [Source:HGNC Symbol;Acc:HGNC:933]	8078	-0.011767173185944557	-0.5669875	No	
+row_5	PSMB2	proteasome 20S subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:9539]	9080	-0.02220439538359642	-0.62571985	No	
+row_6	TASP1	taspase 1 [Source:HGNC Symbol;Acc:HGNC:15859]	9707	-0.031293392181396484	-0.64807737	No	
+row_7	PSMB7	proteasome 20S subunit beta 7 [Source:HGNC Symbol;Acc:HGNC:9544]	11168	-0.062229301780462265	-0.709101	Yes	
+row_8	PSMB9	proteasome 20S subunit beta 9 [Source:HGNC Symbol;Acc:HGNC:9546]	11866	-0.08935666084289551	-0.6889852	Yes	
+row_9	PSMB4	proteasome 20S subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:9541]	11916	-0.09244464337825775	-0.6164315	Yes	
+row_10	PSMB6	proteasome 20S subunit beta 6 [Source:HGNC Symbol;Acc:HGNC:9543]	12082	-0.10195903480052948	-0.5449529	Yes	
+row_11	PSMB5	proteasome 20S subunit beta 5 [Source:HGNC Symbol;Acc:HGNC:9542]	12182	-0.1101798489689827	-0.46160567	Yes	
+row_12	PSMA4	proteasome 20S subunit alpha 4 [Source:HGNC Symbol;Acc:HGNC:9533]	12462	-0.13892988860607147	-0.36837906	Yes	
+row_13	PSMB1	proteasome 20S subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:9537]	12467	-0.13913856446743011	-0.25380838	Yes	
+row_14	PSMB8	proteasome 20S subunit beta 8 [Source:HGNC Symbol;Acc:HGNC:9545]	12641	-0.1759919673204422	-0.12182104	Yes	
+row_15	PSMB3	proteasome 20S subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:9540]	12658	-0.1813022792339325	0.026637884	Yes	

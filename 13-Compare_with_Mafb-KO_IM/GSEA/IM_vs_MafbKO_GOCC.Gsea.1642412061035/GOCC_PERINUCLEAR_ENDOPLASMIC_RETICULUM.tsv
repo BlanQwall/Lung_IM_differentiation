@@ -1,0 +1,18 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TRIM13	tripartite motif containing 13 [Source:HGNC Symbol;Acc:HGNC:9976]	3240	0.022532394155859947	-0.23114936	No	
+row_1	OSBPL6	oxysterol binding protein like 6 [Source:HGNC Symbol;Acc:HGNC:16388]	4125	0.012645398266613483	-0.28893548	No	
+row_2	OSBPL7	oxysterol binding protein like 7 [Source:HGNC Symbol;Acc:HGNC:16387]	4206	0.011825439520180225	-0.2854847	No	
+row_3	OSBPL3	oxysterol binding protein like 3 [Source:HGNC Symbol;Acc:HGNC:16370]	4431	0.010020984336733818	-0.2945875	No	
+row_4	NOX4	NADPH oxidase 4 [Source:HGNC Symbol;Acc:HGNC:7891]	5888	0.0	-0.40669098	No	
+row_5	PIK3R1	phosphoinositide-3-kinase regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:8979]	7013	-0.002963661914691329	-0.4908239	No	
+row_6	CREB3L2	cAMP responsive element binding protein 3 like 2 [Source:HGNC Symbol;Acc:HGNC:23720]	8726	-0.018369240686297417	-0.6077095	No	
+row_7	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	9641	-0.03015626221895218	-0.6535747	No	
+row_8	CAPN2	calpain 2 [Source:HGNC Symbol;Acc:HGNC:1479]	11276	-0.06551378965377808	-0.7261412	Yes	
+row_9	OSBP	oxysterol binding protein [Source:HGNC Symbol;Acc:HGNC:8503]	11898	-0.09138509631156921	-0.69968754	Yes	
+row_10	CISD2	CDGSH iron sulfur domain 2 [Source:HGNC Symbol;Acc:HGNC:24212]	12077	-0.10151951760053635	-0.63088936	Yes	
+row_11	ADAM10	ADAM metallopeptidase domain 10 [Source:HGNC Symbol;Acc:HGNC:188]	12099	-0.10293260961771011	-0.5488547	Yes	
+row_12	CYBA	cytochrome b-245 alpha chain [Source:HGNC Symbol;Acc:HGNC:2577]	12336	-0.12300349771976471	-0.46706256	Yes	
+row_13	BCAP31	B cell receptor associated protein 31 [Source:HGNC Symbol;Acc:HGNC:16695]	12355	-0.12476620078086853	-0.36705315	Yes	
+row_14	DGAT2	diacylglycerol O-acyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:16940]	12468	-0.13942132890224457	-0.26237124	Yes	
+row_15	CYBB	cytochrome b-245 beta chain [Source:HGNC Symbol;Acc:HGNC:2578]	12623	-0.17207714915275574	-0.13438426	Yes	
+row_16	FYN	"FYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:4037]"	12726	-0.20136046409606934	0.021404445	Yes	

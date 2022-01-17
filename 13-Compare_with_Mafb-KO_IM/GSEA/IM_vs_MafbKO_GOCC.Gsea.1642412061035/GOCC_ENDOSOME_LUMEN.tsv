@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CD63	CD63 molecule [Source:HGNC Symbol;Acc:HGNC:1692]	8	0.8564110994338989	0.18738528	Yes	
+row_1	LGMN	legumain [Source:HGNC Symbol;Acc:HGNC:9472]	13	0.6632168889045715	0.33266822	Yes	
+row_2	CTSB	cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527]	19	0.574101448059082	0.45831126	Yes	
+row_3	PDLIM4	PDZ and LIM domain 4 [Source:HGNC Symbol;Acc:HGNC:16501]	50	0.3769242763519287	0.53874356	Yes	
+row_4	AP4E1	adaptor related protein complex 4 subunit epsilon 1 [Source:HGNC Symbol;Acc:HGNC:573]	1348	0.05583518370985985	0.4510854	No	
+row_5	AP4M1	adaptor related protein complex 4 subunit mu 1 [Source:HGNC Symbol;Acc:HGNC:574]	3177	0.023210763931274414	0.31535947	No	
+row_6	RAB38	"RAB38, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9776]"	3720	0.01694924384355545	0.27732688	No	
+row_7	AP4B1	adaptor related protein complex 4 subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:572]	3859	0.015558898448944092	0.27011147	No	
+row_8	LRPAP1	LDL receptor related protein associated protein 1 [Source:HGNC Symbol;Acc:HGNC:6701]	4231	0.011625900864601135	0.24408339	No	
+row_9	SFTPC	surfactant protein C [Source:HGNC Symbol;Acc:HGNC:10802]	4295	0.011088761501014233	0.24166438	No	
+row_10	PRF1	perforin 1 [Source:HGNC Symbol;Acc:HGNC:9360]	5733	0.0	0.13096413	No	
+row_11	IL12A	interleukin 12A [Source:HGNC Symbol;Acc:HGNC:5969]	6717	0.0	0.05523806	No	
+row_12	IL12B	interleukin 12B [Source:HGNC Symbol;Acc:HGNC:5970]	6949	-0.0022332819644361734	0.037933074	No	
+row_13	SFTPB	surfactant protein B [Source:HGNC Symbol;Acc:HGNC:10801]	7576	-0.007268606685101986	-0.008695632	No	
+row_14	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	8869	-0.019940068945288658	-0.10384842	No	
+row_15	CTSK	cathepsin K [Source:HGNC Symbol;Acc:HGNC:2536]	9083	-0.022260354831814766	-0.11537037	No	
+row_16	RAB32	"RAB32, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9772]"	9307	-0.025031551718711853	-0.12705433	No	
+row_17	AP4S1	adaptor related protein complex 4 subunit sigma 1 [Source:HGNC Symbol;Acc:HGNC:575]	10130	-0.03856591507792473	-0.18191157	No	
+row_18	B2M	beta-2-microglobulin [Source:HGNC Symbol;Acc:HGNC:914]	10409	-0.04328591004014015	-0.19382524	No	
+row_19	CTSS	cathepsin S [Source:HGNC Symbol;Acc:HGNC:2545]	11122	-0.06087407469749451	-0.23531142	No	
+row_20	LNPEP	leucyl and cystinyl aminopeptidase [Source:HGNC Symbol;Acc:HGNC:6656]	12415	-0.13024844229221344	-0.30624902	No	
+row_21	JAK2	Janus kinase 2 [Source:HGNC Symbol;Acc:HGNC:6192]	12712	-0.19694235920906067	-0.2858183	No	
+row_22	CTSH	cathepsin H [Source:HGNC Symbol;Acc:HGNC:2535]	12809	-0.2276482731103897	-0.24323979	No	
+row_23	NAPSA	napsin A aspartic peptidase [Source:HGNC Symbol;Acc:HGNC:13395]	13004	-1.1761188507080078	-6.1801984E-8	No	

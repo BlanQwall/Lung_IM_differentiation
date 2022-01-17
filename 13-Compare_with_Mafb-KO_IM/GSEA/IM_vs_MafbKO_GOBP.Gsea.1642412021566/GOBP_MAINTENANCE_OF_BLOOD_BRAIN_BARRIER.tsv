@@ -1,0 +1,29 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PECAM1	platelet and endothelial cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:8823]	920	0.07040893286466599	-0.03819063	No	
+row_1	TJP3	tight junction protein 3 [Source:HGNC Symbol;Acc:HGNC:11829]	1501	0.05169191583991051	-0.05887487	No	
+row_2	ITGB1	integrin subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:6153]	2980	0.025665033608675003	-0.1608476	No	
+row_3	TJP1	tight junction protein 1 [Source:HGNC Symbol;Acc:HGNC:11827]	3579	0.018424196168780327	-0.19837134	No	
+row_4	CLDN12	claudin 12 [Source:HGNC Symbol;Acc:HGNC:2034]	3664	0.0175600815564394	-0.1966879	No	
+row_5	LAMC1	laminin subunit gamma 1 [Source:HGNC Symbol;Acc:HGNC:6492]	3672	0.01740184985101223	-0.18914439	No	
+row_6	CLDN5	claudin 5 [Source:HGNC Symbol;Acc:HGNC:2047]	3684	0.017292877659201622	-0.18195972	No	
+row_7	CLDN3	claudin 3 [Source:HGNC Symbol;Acc:HGNC:2045]	3941	0.01466978620737791	-0.194873	No	
+row_8	JAM2	junctional adhesion molecule 2 [Source:HGNC Symbol;Acc:HGNC:14686]	5817	0.0	-0.3393594	No	
+row_9	JAM3	junctional adhesion molecule 3 [Source:HGNC Symbol;Acc:HGNC:15532]	5818	0.0	-0.3393594	No	
+row_10	ANGPT1	angiopoietin 1 [Source:HGNC Symbol;Acc:HGNC:484]	6374	0.0	-0.38212737	No	
+row_11	ESAM	endothelial cell adhesion molecule [Source:HGNC Symbol;Acc:HGNC:17474]	7716	-0.008160511963069439	-0.4816736	No	
+row_12	GJA1	gap junction protein alpha 1 [Source:HGNC Symbol;Acc:HGNC:4274]	8026	-0.011353802867233753	-0.5002113	No	
+row_13	CDH5	cadherin 5 [Source:HGNC Symbol;Acc:HGNC:1764]	8237	-0.01317359134554863	-0.51027477	No	
+row_14	SLC12A2	solute carrier family 12 member 2 [Source:HGNC Symbol;Acc:HGNC:10911]	8421	-0.014932134188711643	-0.51744086	No	
+row_15	MFSD2A	major facilitator superfamily domain containing 2A [Source:HGNC Symbol;Acc:HGNC:25897]	8612	-0.017087699845433235	-0.5241451	No	
+row_16	CLDN1	claudin 1 [Source:HGNC Symbol;Acc:HGNC:2032]	9875	-0.03415357321500778	-0.60553026	No	
+row_17	VEGFA	vascular endothelial growth factor A [Source:HGNC Symbol;Acc:HGNC:12680]	10361	-0.04256545007228851	-0.62313294	No	
+row_18	VCL	vinculin [Source:HGNC Symbol;Acc:HGNC:12665]	11579	-0.07530852407217026	-0.6819344	Yes	
+row_19	OCLN	occludin [Source:HGNC Symbol;Acc:HGNC:8104]	11689	-0.07997240126132965	-0.6531878	Yes	
+row_20	TJP2	tight junction protein 2 [Source:HGNC Symbol;Acc:HGNC:11828]	12081	-0.10191914439201355	-0.6359779	Yes	
+row_21	ACTB	actin beta [Source:HGNC Symbol;Acc:HGNC:132]	12443	-0.13476066291332245	-0.6012018	Yes	
+row_22	MBP	myelin basic protein [Source:HGNC Symbol;Acc:HGNC:6925]	12458	-0.13840804994106293	-0.5379919	Yes	
+row_23	IL6	interleukin 6 [Source:HGNC Symbol;Acc:HGNC:6018]	12724	-0.20062781870365143	-0.46522364	Yes	
+row_24	ACTG1	actin gamma 1 [Source:HGNC Symbol;Acc:HGNC:144]	12846	-0.24981428682804108	-0.35851234	Yes	
+row_25	PTGS2	prostaglandin-endoperoxide synthase 2 [Source:HGNC Symbol;Acc:HGNC:9605]	12853	-0.2554838955402374	-0.24030578	Yes	
+row_26	F11R	F11 receptor [Source:HGNC Symbol;Acc:HGNC:14685]	12862	-0.26441290974617004	-0.11810591	Yes	
+row_27	LSR	lipolysis stimulated lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:29572]	12881	-0.27766403555870056	0.009478344	Yes	

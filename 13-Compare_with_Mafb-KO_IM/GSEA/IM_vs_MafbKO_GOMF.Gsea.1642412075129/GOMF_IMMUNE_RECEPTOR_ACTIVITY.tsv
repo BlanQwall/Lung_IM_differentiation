@@ -1,0 +1,100 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C3AR1	complement C3a receptor 1 [Source:HGNC Symbol;Acc:HGNC:1319]	31	0.44128063321113586	0.03475052	No	
+row_1	CX3CR1	C-X3-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:2558]	41	0.3976341784000397	0.067530975	No	
+row_2	CMKLR1	chemerin chemokine-like receptor 1 [Source:HGNC Symbol;Acc:HGNC:2121]	67	0.32166439294815063	0.09267562	No	
+row_3	FCGR3A	Fc fragment of IgG receptor IIIa [Source:HGNC Symbol;Acc:HGNC:3619]	108	0.24116823077201843	0.109880835	No	
+row_4	FCGR1A	Fc fragment of IgG receptor Ia [Source:HGNC Symbol;Acc:HGNC:3613]	128	0.21077312529087067	0.12615415	No	
+row_5	IL10RB	interleukin 10 receptor subunit beta [Source:HGNC Symbol;Acc:HGNC:5965]	212	0.15507927536964417	0.13277955	No	
+row_6	LILRA5	leukocyte immunoglobulin like receptor A5 [Source:HGNC Symbol;Acc:HGNC:16309]	252	0.14150923490524292	0.14167172	No	
+row_7	CXCR4	C-X-C motif chemokine receptor 4 [Source:HGNC Symbol;Acc:HGNC:2561]	266	0.13882088661193848	0.1523521	No	
+row_8	C5AR2	complement C5a receptor 2 [Source:HGNC Symbol;Acc:HGNC:4527]	274	0.13636645674705505	0.16329075	No	
+row_9	CD4	CD4 molecule [Source:HGNC Symbol;Acc:HGNC:1678]	276	0.13608597218990326	0.17467068	No	
+row_10	FPR2	formyl peptide receptor 2 [Source:HGNC Symbol;Acc:HGNC:3827]	488	0.10080277174711227	0.16680853	No	
+row_11	IL18R1	interleukin 18 receptor 1 [Source:HGNC Symbol;Acc:HGNC:5988]	567	0.09294597059488297	0.16859017	No	
+row_12	IFNAR1	interferon alpha and beta receptor subunit 1 [Source:HGNC Symbol;Acc:HGNC:5432]	610	0.08829691261053085	0.17276981	No	
+row_13	IFNGR2	interferon gamma receptor 2 [Source:HGNC Symbol;Acc:HGNC:5440]	661	0.08391088247299194	0.17596032	No	
+row_14	IL4R	interleukin 4 receptor [Source:HGNC Symbol;Acc:HGNC:6015]	877	0.07232391089200974	0.16539052	No	
+row_15	CSF3R	colony stimulating factor 3 receptor [Source:HGNC Symbol;Acc:HGNC:2439]	1022	0.06670680642127991	0.15984914	No	
+row_16	EPOR	erythropoietin receptor [Source:HGNC Symbol;Acc:HGNC:3416]	1023	0.06670484691858292	0.16546518	No	
+row_17	IL11RA	interleukin 11 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:5967]	1060	0.06552545726299286	0.16819254	No	
+row_18	FCER1G	Fc fragment of IgE receptor Ig [Source:HGNC Symbol;Acc:HGNC:3611]	1107	0.06391505151987076	0.17000946	No	
+row_19	LIFR	LIF receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:6597]	1340	0.05612591654062271	0.15675871	No	
+row_20	CXCR3	C-X-C motif chemokine receptor 3 [Source:HGNC Symbol;Acc:HGNC:4540]	2041	0.04086438938975334	0.105960846	No	
+row_21	FPR1	formyl peptide receptor 1 [Source:HGNC Symbol;Acc:HGNC:3826]	2319	0.03523446246981621	0.08746444	No	
+row_22	IL20RB	interleukin 20 receptor subunit beta [Source:HGNC Symbol;Acc:HGNC:6004]	2381	0.03426288813352585	0.08562263	No	
+row_23	IL3RA	interleukin 3 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:6012]	2621	0.030805543065071106	0.06969771	No	
+row_24	IFNAR2	interferon alpha and beta receptor subunit 2 [Source:HGNC Symbol;Acc:HGNC:5433]	2722	0.029395267367362976	0.06442423	No	
+row_25	IL6R	interleukin 6 receptor [Source:HGNC Symbol;Acc:HGNC:6019]	3080	0.024533716961741447	0.038828235	No	
+row_26	IL6ST	interleukin 6 cytokine family signal transducer [Source:HGNC Symbol;Acc:HGNC:6021]	3256	0.022428516298532486	0.027156964	No	
+row_27	IL12RB2	interleukin 12 receptor subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:5972]	3474	0.01960308663547039	0.011993512	No	
+row_28	IL22RA2	interleukin 22 receptor subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:14901]	3831	0.01580146700143814	-0.014260192	No	
+row_29	CCR9	C-C motif chemokine receptor 9 [Source:HGNC Symbol;Acc:HGNC:1610]	4530	0.009375924244523048	-0.06755418	No	
+row_30	PIGR	polymeric immunoglobulin receptor [Source:HGNC Symbol;Acc:HGNC:8968]	4541	0.009321201592683792	-0.06754424	No	
+row_31	CCR5	C-C motif chemokine receptor 5 [Source:HGNC Symbol;Acc:HGNC:1606]	4661	0.008514276705682278	-0.07604792	No	
+row_32	IL17RD	interleukin 17 receptor D [Source:HGNC Symbol;Acc:HGNC:17616]	4734	0.008056692779064178	-0.080948405	No	
+row_33	KLRC1	killer cell lectin like receptor C1 [Source:HGNC Symbol;Acc:HGNC:6374]	4957	0.006183533929288387	-0.0976291	No	
+row_34	IL2RB	interleukin 2 receptor subunit beta [Source:HGNC Symbol;Acc:HGNC:6009]	5481	0.0	-0.13815288	No	
+row_35	CR2	complement C3d receptor 2 [Source:HGNC Symbol;Acc:HGNC:2336]	5527	0.0	-0.14163963	No	
+row_36	XCR1	X-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:1625]	5540	0.0	-0.14256944	No	
+row_37	GHR	growth hormone receptor [Source:HGNC Symbol;Acc:HGNC:4263]	5669	0.0	-0.15248731	No	
+row_38	ACKR4	atypical chemokine receptor 4 [Source:HGNC Symbol;Acc:HGNC:1611]	5672	0.0	-0.15264226	No	
+row_39	ACKR3	atypical chemokine receptor 3 [Source:HGNC Symbol;Acc:HGNC:23692]	5673	0.0	-0.15264226	No	
+row_40	ACKR2	atypical chemokine receptor 2 [Source:HGNC Symbol;Acc:HGNC:1565]	5674	0.0	-0.15264226	No	
+row_41	OSMR	oncostatin M receptor [Source:HGNC Symbol;Acc:HGNC:8507]	5923	0.0	-0.17185813	No	
+row_42	KLRC2	killer cell lectin like receptor C2 [Source:HGNC Symbol;Acc:HGNC:6375]	5966	0.0	-0.17511244	No	
+row_43	IL31RA	interleukin 31 receptor A [Source:HGNC Symbol;Acc:HGNC:18969]	5974	0.0	-0.17565483	No	
+row_44	IL12RB1	interleukin 12 receptor subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:5971]	5981	0.0	-0.17611973	No	
+row_45	IL9R	interleukin 9 receptor [Source:HGNC Symbol;Acc:HGNC:6030]	6354	0.0	-0.20494352	No	
+row_46	CCR10	C-C motif chemokine receptor 10 [Source:HGNC Symbol;Acc:HGNC:4474]	6380	0.0	-0.20688061	No	
+row_47	IL17RC	interleukin 17 receptor C [Source:HGNC Symbol;Acc:HGNC:18358]	6470	0.0	-0.21377662	No	
+row_48	CCR3	C-C motif chemokine receptor 3 [Source:HGNC Symbol;Acc:HGNC:1604]	6725	0.0	-0.23345739	No	
+row_49	IL12B	interleukin 12B [Source:HGNC Symbol;Acc:HGNC:5970]	6949	-0.0022332819644361734	-0.25054815	No	
+row_50	CXCR1	C-X-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:6026]	7507	-0.006959067191928625	-0.29312047	No	
+row_51	CXCR2	C-X-C motif chemokine receptor 2 [Source:HGNC Symbol;Acc:HGNC:6027]	7943	-0.010464360937476158	-0.3259447	No	
+row_52	CXCR5	C-X-C motif chemokine receptor 5 [Source:HGNC Symbol;Acc:HGNC:1060]	8262	-0.013443110510706902	-0.34945258	No	
+row_53	MR1	"major histocompatibility complex, class I-related [Source:HGNC Symbol;Acc:HGNC:4975]"	8279	-0.013623128645122051	-0.34954536	No	
+row_54	IFNLR1	interferon lambda receptor 1 [Source:HGNC Symbol;Acc:HGNC:18584]	8860	-0.01983703300356865	-0.39281556	No	
+row_55	LEPR	leptin receptor [Source:HGNC Symbol;Acc:HGNC:6554]	9275	-0.024635974317789078	-0.42281953	No	
+row_56	IFNGR1	interferon gamma receptor 1 [Source:HGNC Symbol;Acc:HGNC:5439]	9543	-0.02861858904361725	-0.4410981	No	
+row_57	IL21R	interleukin 21 receptor [Source:HGNC Symbol;Acc:HGNC:6006]	9629	-0.030042029917240143	-0.44515488	No	
+row_58	IL2RA	interleukin 2 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:6008]	10101	-0.03830434009432793	-0.47842458	No	
+row_59	IL27RA	interleukin 27 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:17290]	10178	-0.03932202234864235	-0.4810027	No	
+row_60	FZD4	frizzled class receptor 4 [Source:HGNC Symbol;Acc:HGNC:4042]	10211	-0.03996257483959198	-0.48011762	No	
+row_61	IL2RG	interleukin 2 receptor subunit gamma [Source:HGNC Symbol;Acc:HGNC:6010]	10330	-0.041999004781246185	-0.48572466	No	
+row_62	IL15RA	interleukin 15 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:5978]	10828	-0.05257725715637207	-0.5198073	No	
+row_63	IL1RAP	interleukin 1 receptor accessory protein [Source:HGNC Symbol;Acc:HGNC:5995]	11726	-0.0819704532623291	-0.5824085	Yes	
+row_64	EBI3	Epstein-Barr virus induced 3 [Source:HGNC Symbol;Acc:HGNC:3129]	11764	-0.08389442414045334	-0.57821214	Yes	
+row_65	IL10RA	interleukin 10 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:5964]	11884	-0.09050530940294266	-0.57981277	Yes	
+row_66	F3	"coagulation factor III, tissue factor [Source:HGNC Symbol;Acc:HGNC:3541]"	11899	-0.09145650267601013	-0.5731976	Yes	
+row_67	FLT3	fms related receptor tyrosine kinase 3 [Source:HGNC Symbol;Acc:HGNC:3765]	11901	-0.09161970764398575	-0.56556135	Yes	
+row_68	GFRA2	GDNF family receptor alpha 2 [Source:HGNC Symbol;Acc:HGNC:4244]	12058	-0.09997019916772842	-0.56923205	Yes	
+row_69	CCR7	C-C motif chemokine receptor 7 [Source:HGNC Symbol;Acc:HGNC:1608]	12116	-0.10427752882242203	-0.5648692	Yes	
+row_70	IL1R1	interleukin 1 receptor type 1 [Source:HGNC Symbol;Acc:HGNC:5993]	12140	-0.10566437244415283	-0.5577552	Yes	
+row_71	HLA-DQA1	"major histocompatibility complex, class II, DQ alpha 1 [Source:HGNC Symbol;Acc:HGNC:4942]"	12197	-0.11103520542383194	-0.55274594	Yes	
+row_72	IL1RL2	interleukin 1 receptor like 2 [Source:HGNC Symbol;Acc:HGNC:5999]	12311	-0.12058884650468826	-0.55134887	Yes	
+row_73	CD74	CD74 molecule [Source:HGNC Symbol;Acc:HGNC:1697]	12376	-0.12650717794895172	-0.54565686	Yes	
+row_74	HLA-DRB1	"major histocompatibility complex, class II, DR beta 1 [Source:HGNC Symbol;Acc:HGNC:4948]"	12464	-0.13899697363376617	-0.5406954	Yes	
+row_75	IL18RAP	interleukin 18 receptor accessory protein [Source:HGNC Symbol;Acc:HGNC:5989]	12574	-0.15887750685214996	-0.5357648	Yes	
+row_76	IL7R	interleukin 7 receptor [Source:HGNC Symbol;Acc:HGNC:6024]	12655	-0.1797756552696228	-0.5268277	Yes	
+row_77	LILRB5	leukocyte immunoglobulin like receptor B5 [Source:HGNC Symbol;Acc:HGNC:6609]	12656	-0.1804436594247818	-0.5116357	Yes	
+row_78	CD44	CD44 molecule (Indian blood group) [Source:HGNC Symbol;Acc:HGNC:1681]	12720	-0.19986750185489655	-0.49968982	Yes	
+row_79	HLA-DQB2	"major histocompatibility complex, class II, DQ beta 2 [Source:HGNC Symbol;Acc:HGNC:4945]"	12753	-0.2114628404378891	-0.4843657	Yes	
+row_80	KLRC4-KLRK1	KLRC4-KLRK1 readthrough [Source:HGNC Symbol;Acc:HGNC:48357]	12770	-0.21483057737350464	-0.46751833	Yes	
+row_81	IL13RA1	interleukin 13 receptor subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:5974]	12793	-0.22217059135437012	-0.45051786	Yes	
+row_82	IL17RA	interleukin 17 receptor A [Source:HGNC Symbol;Acc:HGNC:5985]	12803	-0.22681117057800293	-0.43211943	Yes	
+row_83	CD200R1	CD200 receptor 1 [Source:HGNC Symbol;Acc:HGNC:24235]	12805	-0.2269955426454544	-0.41308558	Yes	
+row_84	GPR35	G protein-coupled receptor 35 [Source:HGNC Symbol;Acc:HGNC:4492]	12806	-0.2271086871623993	-0.39396474	Yes	
+row_85	CTSH	cathepsin H [Source:HGNC Symbol;Acc:HGNC:2535]	12809	-0.2276482731103897	-0.37495345	Yes	
+row_86	IL1RL1	interleukin 1 receptor like 1 [Source:HGNC Symbol;Acc:HGNC:5998]	12822	-0.23427365720272064	-0.35615915	Yes	
+row_87	CSF2RB	colony stimulating factor 2 receptor subunit beta [Source:HGNC Symbol;Acc:HGNC:2436]	12830	-0.23847097158432007	-0.3366241	Yes	
+row_88	CRLF2	cytokine receptor like factor 2 [Source:HGNC Symbol;Acc:HGNC:14281]	12843	-0.24795037508010864	-0.31667832	Yes	
+row_89	CSF2RA	colony stimulating factor 2 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:2435]	12850	-0.25371280312538147	-0.2957825	Yes	
+row_90	FCGR2B	Fc fragment of IgG receptor IIb [Source:HGNC Symbol;Acc:HGNC:3618]	12873	-0.27246883511543274	-0.27454734	Yes	
+row_91	CCR2	C-C motif chemokine receptor 2 [Source:HGNC Symbol;Acc:HGNC:1603]	12886	-0.2790291905403137	-0.25198498	Yes	
+row_92	IL1R2	interleukin 1 receptor type 2 [Source:HGNC Symbol;Acc:HGNC:5994]	12895	-0.28895801305770874	-0.22827674	Yes	
+row_93	HLA-DOB	"major histocompatibility complex, class II, DO beta [Source:HGNC Symbol;Acc:HGNC:4937]"	12922	-0.3196949064731598	-0.20337541	Yes	
+row_94	CCR1	C-C motif chemokine receptor 1 [Source:HGNC Symbol;Acc:HGNC:1602]	12971	-0.47293591499328613	-0.16727696	Yes	
+row_95	KLRD1	killer cell lectin like receptor D1 [Source:HGNC Symbol;Acc:HGNC:6378]	12973	-0.4795045852661133	-0.12698378	Yes	
+row_96	CCR6	C-C motif chemokine receptor 6 [Source:HGNC Symbol;Acc:HGNC:1607]	12974	-0.4926130771636963	-0.08550946	Yes	
+row_97	CCRL2	C-C motif chemokine receptor like 2 [Source:HGNC Symbol;Acc:HGNC:1612]	12979	-0.5139885544776917	-0.042545427	Yes	
+row_98	HLA-DOA	"major histocompatibility complex, class II, DO alpha [Source:HGNC Symbol;Acc:HGNC:4936]"	12981	-0.5274254679679871	0.0017823471	Yes	

@@ -1,0 +1,32 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CTNND1	catenin delta 1 [Source:HGNC Symbol;Acc:HGNC:2515]	205	0.1571885645389557	0.1584693	Yes	
+row_1	CLTA	clathrin light chain A [Source:HGNC Symbol;Acc:HGNC:2090]	286	0.1345980316400528	0.30152783	Yes	
+row_2	NUMA1	nuclear mitotic apparatus protein 1 [Source:HGNC Symbol;Acc:HGNC:8059]	410	0.10965628176927567	0.41361988	Yes	
+row_3	CLASP1	cytoplasmic linker associated protein 1 [Source:HGNC Symbol;Acc:HGNC:17088]	694	0.08121069520711899	0.48184282	Yes	
+row_4	UNC13B	unc-13 homolog B [Source:HGNC Symbol;Acc:HGNC:12566]	1118	0.0635109692811966	0.51965183	Yes	
+row_5	PKD2	"polycystin 2, transient receptor potential cation channel [Source:HGNC Symbol;Acc:HGNC:9009]"	1482	0.05223440006375313	0.54958344	Yes	
+row_6	DCTN1	dynactin subunit 1 [Source:HGNC Symbol;Acc:HGNC:2711]	2701	0.02973245456814766	0.48866683	No	
+row_7	FABP1	fatty acid binding protein 1 [Source:HGNC Symbol;Acc:HGNC:3555]	4115	0.012711658142507076	0.39384973	No	
+row_8	UNC13A	unc-13 homolog A [Source:HGNC Symbol;Acc:HGNC:23150]	4131	0.012581060640513897	0.4066418	No	
+row_9	CTNNB1	catenin beta 1 [Source:HGNC Symbol;Acc:HGNC:2514]	4399	0.010186053812503815	0.39735517	No	
+row_10	PRKCZ	protein kinase C zeta [Source:HGNC Symbol;Acc:HGNC:9412]	4593	0.008932321332395077	0.39238223	No	
+row_11	GPSM2	G protein signaling modulator 2 [Source:HGNC Symbol;Acc:HGNC:29501]	4663	0.008502435870468616	0.3964903	No	
+row_12	PPFIA3	PTPRF interacting protein alpha 3 [Source:HGNC Symbol;Acc:HGNC:9247]	4671	0.008437407203018665	0.40530506	No	
+row_13	SAPCD2	suppressor APC domain containing 2 [Source:HGNC Symbol;Acc:HGNC:28055]	5528	0.0	0.33932695	No	
+row_14	MYO5B	myosin VB [Source:HGNC Symbol;Acc:HGNC:7603]	6000	0.0	0.30302358	No	
+row_15	RIMS2	regulating synaptic membrane exocytosis 2 [Source:HGNC Symbol;Acc:HGNC:17283]	6522	0.0	0.26286632	No	
+row_16	PHLDB2	pleckstrin homology like domain family B member 2 [Source:HGNC Symbol;Acc:HGNC:29573]	6588	0.0	0.2578563	No	
+row_17	GNAI1	G protein subunit alpha i1 [Source:HGNC Symbol;Acc:HGNC:4384]	6649	0.0	0.25323167	No	
+row_18	GUCY1B1	guanylate cyclase 1 soluble subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:4687]	6683	0.0	0.25068814	No	
+row_19	KHDC3L	"KH domain containing 3 like, subcortical maternal complex member [Source:HGNC Symbol;Acc:HGNC:33699]"	6713	0.0	0.24845289	No	
+row_20	CLASP2	cytoplasmic linker associated protein 2 [Source:HGNC Symbol;Acc:HGNC:17078]	6997	-0.002755196299403906	0.22969463	No	
+row_21	CTBP1	C-terminal binding protein 1 [Source:HGNC Symbol;Acc:HGNC:2494]	7135	-0.0044345310889184475	0.22405149	No	
+row_22	ERC1	ELKS/RAB6-interacting/CAST family member 1 [Source:HGNC Symbol;Acc:HGNC:17072]	7182	-0.005021920893341303	0.22607358	No	
+row_23	HAMP	hepcidin antimicrobial peptide [Source:HGNC Symbol;Acc:HGNC:15598]	7272	-0.005672812927514315	0.22550298	No	
+row_24	TCHP	trichoplein keratin filament binding [Source:HGNC Symbol;Acc:HGNC:28135]	7421	-0.006485713180154562	0.22128606	No	
+row_25	SPTBN5	"spectrin beta, non-erythrocytic 5 [Source:HGNC Symbol;Acc:HGNC:15680]"	7459	-0.006707916967570782	0.22587107	No	
+row_26	RIMS3	regulating synaptic membrane exocytosis 3 [Source:HGNC Symbol;Acc:HGNC:21292]	8226	-0.013095084577798843	0.18134803	No	
+row_27	PHLDB1	pleckstrin homology like domain family B member 1 [Source:HGNC Symbol;Acc:HGNC:23697]	8732	-0.018390029668807983	0.16281249	No	
+row_28	CTBP2	C-terminal binding protein 2 [Source:HGNC Symbol;Acc:HGNC:2495]	9380	-0.026090431958436966	0.14186917	No	
+row_29	ACTR1A	actin related protein 1A [Source:HGNC Symbol;Acc:HGNC:167]	9414	-0.026624349877238274	0.16884322	No	
+row_30	CLTB	clathrin light chain B [Source:HGNC Symbol;Acc:HGNC:2091]	11997	-0.09722195565700531	0.07761681	No	

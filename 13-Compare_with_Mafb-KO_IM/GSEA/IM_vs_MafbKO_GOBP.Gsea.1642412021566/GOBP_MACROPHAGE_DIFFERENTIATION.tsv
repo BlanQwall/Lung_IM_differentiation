@@ -1,0 +1,42 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C1QC	complement C1q C chain [Source:HGNC Symbol;Acc:HGNC:1245]	0	2.3535280227661133	0.38266903	Yes	
+row_1	PF4	platelet factor 4 [Source:HGNC Symbol;Acc:HGNC:8861]	7	1.029140830039978	0.54953814	Yes	
+row_2	CSF1R	colony stimulating factor 1 receptor [Source:HGNC Symbol;Acc:HGNC:2433]	21	0.5598552227020264	0.63956434	Yes	
+row_3	MMP9	matrix metallopeptidase 9 [Source:HGNC Symbol;Acc:HGNC:7176]	187	0.16579772531986237	0.65379447	Yes	
+row_4	CD4	CD4 molecule [Source:HGNC Symbol;Acc:HGNC:1678]	276	0.13608597218990326	0.6691331	Yes	
+row_5	CEBPA	CCAAT enhancer binding protein alpha [Source:HGNC Symbol;Acc:HGNC:1833]	288	0.13427574932575226	0.69011706	Yes	
+row_6	RB1	RB transcriptional corepressor 1 [Source:HGNC Symbol;Acc:HGNC:9884]	438	0.10639232397079468	0.69592243	Yes	
+row_7	SPI1	Spi-1 proto-oncogene [Source:HGNC Symbol;Acc:HGNC:11241]	1001	0.06739403307437897	0.66352946	No	
+row_8	HSF1	heat shock transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:5224]	1205	0.06050246208906174	0.65770805	No	
+row_9	PARP1	poly(ADP-ribose) polymerase 1 [Source:HGNC Symbol;Acc:HGNC:270]	1345	0.05599832534790039	0.65609103	No	
+row_10	CSF1	colony stimulating factor 1 [Source:HGNC Symbol;Acc:HGNC:2432]	3016	0.0253103356808424	0.53138804	No	
+row_11	CASP8	caspase 8 [Source:HGNC Symbol;Acc:HGNC:1509]	3053	0.02490830048918724	0.5326611	No	
+row_12	FADD	Fas associated via death domain [Source:HGNC Symbol;Acc:HGNC:3573]	3152	0.023445431143045425	0.52891374	No	
+row_13	INHBA	inhibin subunit beta A [Source:HGNC Symbol;Acc:HGNC:6066]	3729	0.01687982678413391	0.4872276	No	
+row_14	SIRT1	sirtuin 1 [Source:HGNC Symbol;Acc:HGNC:14929]	4277	0.011210376396775246	0.44685656	No	
+row_15	EIF2AK1	eukaryotic translation initiation factor 2 alpha kinase 1 [Source:HGNC Symbol;Acc:HGNC:24921]	5160	0.0037435160484164953	0.37943065	No	
+row_16	BMP4	bone morphogenetic protein 4 [Source:HGNC Symbol;Acc:HGNC:1071]	5933	0.0	0.31988114	No	
+row_17	IL31RA	interleukin 31 receptor A [Source:HGNC Symbol;Acc:HGNC:18969]	5974	0.0	0.31679568	No	
+row_18	GATA2	GATA binding protein 2 [Source:HGNC Symbol;Acc:HGNC:4171]	6322	0.0	0.29002926	No	
+row_19	L3MBTL3	L3MBTL histone methyl-lysine binding protein 3 [Source:HGNC Symbol;Acc:HGNC:23035]	7516	-0.007006526459008455	0.19914441	No	
+row_20	CEBPE	CCAAT enhancer binding protein epsilon [Source:HGNC Symbol;Acc:HGNC:1836]	7722	-0.008217040449380875	0.18466742	No	
+row_21	CSF2	colony stimulating factor 2 [Source:HGNC Symbol;Acc:HGNC:2434]	7876	-0.009726960211992264	0.17444706	No	
+row_22	PTPN2	protein tyrosine phosphatase non-receptor type 2 [Source:HGNC Symbol;Acc:HGNC:9650]	8054	-0.011567833833396435	0.16267473	No	
+row_23	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	8869	-0.019940068945288658	0.10312759	No	
+row_24	LIF	LIF interleukin 6 family cytokine [Source:HGNC Symbol;Acc:HGNC:6596]	9141	-0.022972071543335915	0.08595867	No	
+row_25	TRIB1	tribbles pseudokinase 1 [Source:HGNC Symbol;Acc:HGNC:16891]	9717	-0.03144283965229988	0.046717484	No	
+row_26	PRKCA	protein kinase C alpha [Source:HGNC Symbol;Acc:HGNC:9393]	9872	-0.034052468836307526	0.040375154	No	
+row_27	IL15	interleukin 15 [Source:HGNC Symbol;Acc:HGNC:5977]	9991	-0.03613830357789993	0.03714889	No	
+row_28	HCLS1	hematopoietic cell-specific Lyn substrate 1 [Source:HGNC Symbol;Acc:HGNC:4844]	10120	-0.038486264646053314	0.03353302	No	
+row_29	VEGFA	vascular endothelial growth factor A [Source:HGNC Symbol;Acc:HGNC:12680]	10361	-0.04256545007228851	0.021941094	No	
+row_30	ID2	inhibitor of DNA binding 2 [Source:HGNC Symbol;Acc:HGNC:5361]	10527	-0.04538866877555847	0.016593456	No	
+row_31	RIPK1	receptor interacting serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:10019]	10923	-0.05535200610756874	-0.0048756422	No	
+row_32	TSPAN2	tetraspanin 2 [Source:HGNC Symbol;Acc:HGNC:20659]	11156	-0.0618518702685833	-0.0127146235	No	
+row_33	GAB3	GRB2 associated binding protein 3 [Source:HGNC Symbol;Acc:HGNC:17515]	11193	-0.06289704144001007	-0.005264876	No	
+row_34	GBA	glucosylceramidase beta [Source:HGNC Symbol;Acc:HGNC:4177]	11549	-0.07440371811389923	-0.020550817	No	
+row_35	CDC42	cell division cycle 42 [Source:HGNC Symbol;Acc:HGNC:1736]	11681	-0.07948458194732666	-0.017732022	No	
+row_36	TGFB1	transforming growth factor beta 1 [Source:HGNC Symbol;Acc:HGNC:11766]	11992	-0.09702695906162262	-0.025868414	No	
+row_37	ZBTB46	zinc finger and BTB domain containing 46 [Source:HGNC Symbol;Acc:HGNC:16094]	12232	-0.11377182602882385	-0.02580549	No	
+row_38	HLA-DRB1	"major histocompatibility complex, class II, DR beta 1 [Source:HGNC Symbol;Acc:HGNC:4948]"	12464	-0.13899697363376617	-0.02102402	No	
+row_39	NRROS	negative regulator of reactive oxygen species [Source:HGNC Symbol;Acc:HGNC:24613]	12587	-0.16255933046340942	-0.0040035592	No	
+row_40	TLR2	toll like receptor 2 [Source:HGNC Symbol;Acc:HGNC:11848]	12791	-0.22197920083999634	0.016430132	No	

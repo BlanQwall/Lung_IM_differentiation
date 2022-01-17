@@ -1,0 +1,22 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PPP3CB	protein phosphatase 3 catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9315]	924	0.07033193856477737	-0.03972708	No	
+row_1	HFE	homeostatic iron regulator [Source:HGNC Symbol;Acc:HGNC:4886]	1138	0.06284269690513611	-0.028042052	No	
+row_2	IL20RB	interleukin 20 receptor subunit beta [Source:HGNC Symbol;Acc:HGNC:6004]	2381	0.03426288813352585	-0.10838319	No	
+row_3	NCKAP1L	NCK associated protein 1 like [Source:HGNC Symbol;Acc:HGNC:4862]	3135	0.02375740185379982	-0.15575841	No	
+row_4	KLRC1	killer cell lectin like receptor C1 [Source:HGNC Symbol;Acc:HGNC:6374]	4957	0.006183533929288387	-0.29324397	No	
+row_5	SLAMF1	signaling lymphocytic activation molecule family member 1 [Source:HGNC Symbol;Acc:HGNC:10903]	5054	0.005165921524167061	-0.2983286	No	
+row_6	ARG1	arginase 1 [Source:HGNC Symbol;Acc:HGNC:663]	7206	-0.005167699884623289	-0.46168414	No	
+row_7	IFNB1	interferon beta 1 [Source:HGNC Symbol;Acc:HGNC:5434]	7792	-0.008993898518383503	-0.50271946	No	
+row_8	TBX21	T-box transcription factor 21 [Source:HGNC Symbol;Acc:HGNC:11599]	8478	-0.015450925566256046	-0.54857033	No	
+row_9	IL4I1	interleukin 4 induced 1 [Source:HGNC Symbol;Acc:HGNC:19094]	8702	-0.018086237832903862	-0.557661	No	
+row_10	AHR	aryl hydrocarbon receptor [Source:HGNC Symbol;Acc:HGNC:348]	11092	-0.059815287590026855	-0.71492004	Yes	
+row_11	DUSP22	dual specificity phosphatase 22 [Source:HGNC Symbol;Acc:HGNC:16077]	11449	-0.0706525444984436	-0.7107577	Yes	
+row_12	SMAD7	SMAD family member 7 [Source:HGNC Symbol;Acc:HGNC:6773]	11606	-0.07638461142778397	-0.68862957	Yes	
+row_13	NOD2	nucleotide binding oligomerization domain containing 2 [Source:HGNC Symbol;Acc:HGNC:5331]	11701	-0.08061856031417847	-0.65983385	Yes	
+row_14	CEACAM1	CEA cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:1814]	12589	-0.16290485858917236	-0.65533245	Yes	
+row_15	LILRB4	leukocyte immunoglobulin like receptor B4 [Source:HGNC Symbol;Acc:HGNC:6608]	12610	-0.1688879132270813	-0.5813822	Yes	
+row_16	IL7R	interleukin 7 receptor [Source:HGNC Symbol;Acc:HGNC:6024]	12655	-0.1797756552696228	-0.50441366	Yes	
+row_17	CLEC4G	C-type lectin domain family 4 member G [Source:HGNC Symbol;Acc:HGNC:24591]	12685	-0.18922553956508636	-0.42206594	Yes	
+row_18	PTPRC	protein tyrosine phosphatase receptor type C [Source:HGNC Symbol;Acc:HGNC:9666]	12842	-0.2467222660779953	-0.3237992	Yes	
+row_19	FCGR2B	Fc fragment of IgG receptor IIb [Source:HGNC Symbol;Acc:HGNC:3618]	12873	-0.27246883511543274	-0.20431985	Yes	
+row_20	KLRD1	killer cell lectin like receptor D1 [Source:HGNC Symbol;Acc:HGNC:6378]	12973	-0.4795045852661133	0.0023874503	Yes	

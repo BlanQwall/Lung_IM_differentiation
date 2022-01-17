@@ -1,0 +1,33 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.46850634	Yes	
+row_1	PLA2G7	phospholipase A2 group VII [Source:HGNC Symbol;Acc:HGNC:9040]	34	0.43109872937202454	0.59940916	Yes	
+row_2	ABCA1	ATP binding cassette subfamily A member 1 [Source:HGNC Symbol;Acc:HGNC:29]	53	0.3633791506290436	0.7103107	Yes	
+row_3	APOC1	apolipoprotein C1 [Source:HGNC Symbol;Acc:HGNC:607]	611	0.08827267587184906	0.6946528	No	
+row_4	PLAGL2	PLAG1 like zinc finger 2 [Source:HGNC Symbol;Acc:HGNC:9047]	761	0.07764863222837448	0.70716184	No	
+row_5	PRKACA	protein kinase cAMP-activated catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9380]	1879	0.04361598938703537	0.6345379	No	
+row_6	SNX9	sorting nexin 9 [Source:HGNC Symbol;Acc:HGNC:14973]	2039	0.04090164601802826	0.63492084	No	
+row_7	LIPC	"lipase C, hepatic type [Source:HGNC Symbol;Acc:HGNC:6619]"	2055	0.040516577661037445	0.64628476	No	
+row_8	MTTP	microsomal triglyceride transfer protein [Source:HGNC Symbol;Acc:HGNC:7467]	2771	0.02864738740026951	0.6000227	No	
+row_9	LIPG	"lipase G, endothelial type [Source:HGNC Symbol;Acc:HGNC:6623]"	3770	0.01638205721974373	0.528156	No	
+row_10	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4778	0.007649634033441544	0.45289704	No	
+row_11	LPCAT3	lysophosphatidylcholine acyltransferase 3 [Source:HGNC Symbol;Acc:HGNC:30244]	4917	0.006506828591227531	0.44427028	No	
+row_12	AGTR1	angiotensin II receptor type 1 [Source:HGNC Symbol;Acc:HGNC:336]	5457	0.0	0.40272245	No	
+row_13	APOC2	apolipoprotein C2 [Source:HGNC Symbol;Acc:HGNC:609]	5533	0.0	0.39694118	No	
+row_14	SCARB1	scavenger receptor class B member 1 [Source:HGNC Symbol;Acc:HGNC:1664]	6983	-0.0025750475469976664	0.2860434	No	
+row_15	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.25783306	No	
+row_16	ACSL3	acyl-CoA synthetase long chain family member 3 [Source:HGNC Symbol;Acc:HGNC:3570]	7801	-0.009108291007578373	0.22788732	No	
+row_17	LCAT	lecithin-cholesterol acyltransferase [Source:HGNC Symbol;Acc:HGNC:6522]	7941	-0.010452006943523884	0.22040255	No	
+row_18	SOAT2	sterol O-acyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:11178]	8013	-0.01121061947196722	0.21839389	No	
+row_19	MPO	myeloperoxidase [Source:HGNC Symbol;Acc:HGNC:7218]	8182	-0.012627176940441132	0.20934588	No	
+row_20	PRKACB	protein kinase cAMP-activated catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9381]	8489	-0.015575317665934563	0.19057141	No	
+row_21	MFSD2A	major facilitator superfamily domain containing 2A [Source:HGNC Symbol;Acc:HGNC:25897]	8612	-0.017087699845433235	0.18644759	No	
+row_22	ABCA5	ATP binding cassette subfamily A member 5 [Source:HGNC Symbol;Acc:HGNC:35]	8666	-0.017692210152745247	0.18782932	No	
+row_23	PLTP	phospholipid transfer protein [Source:HGNC Symbol;Acc:HGNC:9093]	8752	-0.018570953980088234	0.18701592	No	
+row_24	NR1H2	nuclear receptor subfamily 1 group H member 2 [Source:HGNC Symbol;Acc:HGNC:7965]	9501	-0.028030525892972946	0.13801952	No	
+row_25	LPL	lipoprotein lipase [Source:HGNC Symbol;Acc:HGNC:6677]	9806	-0.03288036212325096	0.1247467	No	
+row_26	DGAT1	diacylglycerol O-acyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:2843]	9846	-0.033517587929964066	0.13209784	No	
+row_27	SOAT1	sterol O-acyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:11177]	10839	-0.052817072719335556	0.07195252	No	
+row_28	ABCA7	ATP binding cassette subfamily A member 7 [Source:HGNC Symbol;Acc:HGNC:37]	11037	-0.0585797093808651	0.07486905	No	
+row_29	BIN1	bridging integrator 1 [Source:HGNC Symbol;Acc:HGNC:1052]	11520	-0.0732618123292923	0.060353845	No	
+row_30	ZDHHC8	zinc finger DHHC-type palmitoyltransferase 8 [Source:HGNC Symbol;Acc:HGNC:18474]	11638	-0.07756949961185455	0.075305134	No	
+row_31	ABCG1	ATP binding cassette subfamily G member 1 [Source:HGNC Symbol;Acc:HGNC:73]	11989	-0.09680236130952835	0.07823925	No	

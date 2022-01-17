@@ -1,0 +1,54 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CD63	CD63 molecule [Source:HGNC Symbol;Acc:HGNC:1692]	8	0.8564110994338989	0.17588046	Yes	
+row_1	C3AR1	complement C3a receptor 1 [Source:HGNC Symbol;Acc:HGNC:1319]	31	0.44128063321113586	0.2651256	Yes	
+row_2	LAMP1	lysosomal associated membrane protein 1 [Source:HGNC Symbol;Acc:HGNC:6499]	46	0.3892342746257782	0.34426215	Yes	
+row_3	ATP6V0C	ATPase H+ transporting V0 subunit c [Source:HGNC Symbol;Acc:HGNC:855]	90	0.2663623094558716	0.39583692	Yes	
+row_4	LAMP2	lysosomal associated membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:6501]	137	0.20456407964229584	0.43444404	Yes	
+row_5	TOM1	target of myb1 membrane trafficking protein [Source:HGNC Symbol;Acc:HGNC:11982]	290	0.13382363319396973	0.45028815	Yes	
+row_6	BRI3	brain protein I3 [Source:HGNC Symbol;Acc:HGNC:1109]	330	0.12366634607315063	0.47276348	Yes	
+row_7	DNAJC13	DnaJ heat shock protein family (Hsp40) member C13 [Source:HGNC Symbol;Acc:HGNC:30343]	370	0.11523716151714325	0.49350163	Yes	
+row_8	BST2	bone marrow stromal cell antigen 2 [Source:HGNC Symbol;Acc:HGNC:1119]	499	0.09922748804092407	0.50406885	Yes	
+row_9	SYNGR1	synaptogyrin 1 [Source:HGNC Symbol;Acc:HGNC:11498]	711	0.08010786771774292	0.50428736	Yes	
+row_10	VAMP8	vesicle associated membrane protein 8 [Source:HGNC Symbol;Acc:HGNC:12647]	997	0.06760358065366745	0.4962155	No	
+row_11	VAPA	VAMP associated protein A [Source:HGNC Symbol;Acc:HGNC:12648]	1447	0.05318092927336693	0.47250912	No	
+row_12	ARL8A	ADP ribosylation factor like GTPase 8A [Source:HGNC Symbol;Acc:HGNC:25192]	1454	0.052984338253736496	0.48296544	No	
+row_13	TMEM179B	transmembrane protein 179B [Source:HGNC Symbol;Acc:HGNC:33744]	1616	0.04906891658902168	0.48064756	No	
+row_14	LAMTOR1	"late endosomal/lysosomal adaptor, MAPK and MTOR activator 1 [Source:HGNC Symbol;Acc:HGNC:26068]"	1970	0.042068734765052795	0.46206304	No	
+row_15	FPR1	formyl peptide receptor 1 [Source:HGNC Symbol;Acc:HGNC:3826]	2319	0.03523446246981621	0.4424561	No	
+row_16	GAA	alpha glucosidase [Source:HGNC Symbol;Acc:HGNC:4065]	2419	0.0336918905377388	0.44175607	No	
+row_17	MGST1	microsomal glutathione S-transferase 1 [Source:HGNC Symbol;Acc:HGNC:7061]	3147	0.02347259409725666	0.3904632	No	
+row_18	NCSTN	nicastrin [Source:HGNC Symbol;Acc:HGNC:17091]	3381	0.020905068144202232	0.37678203	No	
+row_19	NDUFC2	NADH:ubiquinone oxidoreductase subunit C2 [Source:HGNC Symbol;Acc:HGNC:7706]	3652	0.017701465636491776	0.35958394	No	
+row_20	DNAJC5	DnaJ heat shock protein family (Hsp40) member C5 [Source:HGNC Symbol;Acc:HGNC:16235]	4346	0.010625980794429779	0.3082686	No	
+row_21	RAP1B	"RAP1B, member of RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9857]"	4386	0.010331466794013977	0.3073867	No	
+row_22	ATP8A1	ATPase phospholipid transporting 8A1 [Source:HGNC Symbol;Acc:HGNC:13531]	4506	0.009534565731883049	0.30016392	No	
+row_23	PIGR	polymeric immunoglobulin receptor [Source:HGNC Symbol;Acc:HGNC:8968]	4541	0.009321201592683792	0.29945984	No	
+row_24	VAMP1	vesicle associated membrane protein 1 [Source:HGNC Symbol;Acc:HGNC:12642]	4793	0.007588125765323639	0.28164443	No	
+row_25	ABCA13	ATP binding cassette subfamily A member 13 [Source:HGNC Symbol;Acc:HGNC:14638]	5601	0.0	0.21933746	No	
+row_26	RAB44	"RAB44, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:21068]"	5688	0.0	0.21269757	No	
+row_27	RAB37	"RAB37, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:30268]"	5692	0.0	0.21246594	No	
+row_28	SLCO4C1	solute carrier organic anion transporter family member 4C1 [Source:HGNC Symbol;Acc:HGNC:23612]	6286	0.0	0.1666815	No	
+row_29	RAB5C	"RAB5C, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9785]"	6959	-0.0023844547104090452	0.11528903	No	
+row_30	ACP3	acid phosphatase 3 [Source:HGNC Symbol;Acc:HGNC:125]	7177	-0.00498437462374568	0.09956209	No	
+row_31	TMEM30A	transmembrane protein 30A [Source:HGNC Symbol;Acc:HGNC:16667]	7934	-0.01036397647112608	0.043328647	No	
+row_32	MANBA	mannosidase beta [Source:HGNC Symbol;Acc:HGNC:6831]	7947	-0.010507619008421898	0.044567667	No	
+row_33	CKAP4	cytoskeleton associated protein 4 [Source:HGNC Symbol;Acc:HGNC:16991]	8328	-0.01399222481995821	0.018112233	No	
+row_34	SNAP29	synaptosome associated protein 29 [Source:HGNC Symbol;Acc:HGNC:11133]	8330	-0.013997354544699192	0.020919746	No	
+row_35	ATP11B	ATPase phospholipid transporting 11B (putative) [Source:HGNC Symbol;Acc:HGNC:13553]	8423	-0.014949934557080269	0.016897634	No	
+row_36	CPNE3	copine 3 [Source:HGNC Symbol;Acc:HGNC:2316]	8484	-0.015526111237704754	0.015464927	No	
+row_37	CD68	CD68 molecule [Source:HGNC Symbol;Acc:HGNC:1693]	9566	-0.029074152931571007	-0.062005185	No	
+row_38	PSEN1	presenilin 1 [Source:HGNC Symbol;Acc:HGNC:9508]	9691	-0.031070562079548836	-0.06517565	No	
+row_39	VAMP7	vesicle associated membrane protein 7 [Source:HGNC Symbol;Acc:HGNC:11486]	10515	-0.04511005058884621	-0.119421214	No	
+row_40	IRAG2	"inositol 1,4,5-triphosphate receptor associated 2 [Source:HGNC Symbol;Acc:HGNC:6690]"	10769	-0.05113125964999199	-0.12841721	No	
+row_41	RAB3D	"RAB3D, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9779]"	11078	-0.05948830023407936	-0.13993736	No	
+row_42	MAGT1	magnesium transporter 1 [Source:HGNC Symbol;Acc:HGNC:28880]	11124	-0.06096048280596733	-0.13084835	No	
+row_43	SURF4	surfeit 4 [Source:HGNC Symbol;Acc:HGNC:11476]	11473	-0.0716375783085823	-0.14295296	No	
+row_44	B4GALT1	"beta-1,4-galactosyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:924]"	11693	-0.08016226440668106	-0.14334089	No	
+row_45	STOM	stomatin [Source:HGNC Symbol;Acc:HGNC:3383]	11934	-0.09363710880279541	-0.14257313	No	
+row_46	CMTM6	CKLF like MARVEL transmembrane domain containing 6 [Source:HGNC Symbol;Acc:HGNC:19177]	11946	-0.09456872195005417	-0.12393271	No	
+row_47	DDOST	dolichyl-diphosphooligosaccharide--protein glycosyltransferase non-catalytic subunit [Source:HGNC Symbol;Acc:HGNC:2728]	12209	-0.11189358681440353	-0.121101044	No	
+row_48	LPCAT1	lysophosphatidylcholine acyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:25718]	12275	-0.1172148659825325	-0.101962715	No	
+row_49	GLIPR1	GLI pathogenesis related 1 [Source:HGNC Symbol;Acc:HGNC:17001]	12344	-0.12344323843717575	-0.0817724	No	
+row_50	NFAM1	NFAT activating protein with ITAM motif 1 [Source:HGNC Symbol;Acc:HGNC:29872]	12544	-0.1539924144744873	-0.06540046	No	
+row_51	PRCP	prolylcarboxypeptidase [Source:HGNC Symbol;Acc:HGNC:9344]	12711	-0.19690470397472382	-0.037636843	No	
+row_52	PSAP	prosaposin [Source:HGNC Symbol;Acc:HGNC:9498]	12898	-0.2920154929161072	0.008184035	No	

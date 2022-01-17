@@ -1,0 +1,28 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.43855613	Yes	
+row_1	CSF1R	colony stimulating factor 1 receptor [Source:HGNC Symbol;Acc:HGNC:2433]	21	0.5598552227020264	0.5991949	Yes	
+row_2	CCL8	C-C motif chemokine ligand 8 [Source:HGNC Symbol;Acc:HGNC:10635]	27	0.4773557782173157	0.7368938	Yes	
+row_3	IFI27	interferon alpha inducible protein 27 [Source:HGNC Symbol;Acc:HGNC:5397]	367	0.116117462515831	0.74436176	Yes	
+row_4	VAPA	VAMP associated protein A [Source:HGNC Symbol;Acc:HGNC:12648]	1447	0.05318092927336693	0.6766047	No	
+row_5	FMR1	FMRP translational regulator 1 [Source:HGNC Symbol;Acc:HGNC:3775]	1990	0.04179248586297035	0.64693093	No	
+row_6	CCNK	cyclin K [Source:HGNC Symbol;Acc:HGNC:1596]	2562	0.03161260858178139	0.61207795	No	
+row_7	TMEM41B	transmembrane protein 41B [Source:HGNC Symbol;Acc:HGNC:28948]	3004	0.025447802618145943	0.58545864	No	
+row_8	PRKN	parkin RBR E3 ubiquitin protein ligase [Source:HGNC Symbol;Acc:HGNC:8607]	3030	0.0251925066113472	0.5908197	No	
+row_9	FBXL2	F-box and leucine rich repeat protein 2 [Source:HGNC Symbol;Acc:HGNC:13598]	3404	0.02063433825969696	0.56804764	No	
+row_10	HSPA8	heat shock protein family A (Hsp70) member 8 [Source:HGNC Symbol;Acc:HGNC:5241]	3788	0.016233455389738083	0.54323196	No	
+row_11	LTF	lactotransferrin [Source:HGNC Symbol;Acc:HGNC:6720]	4921	0.006491061300039291	0.45788512	No	
+row_12	CAV2	caveolin 2 [Source:HGNC Symbol;Acc:HGNC:1528]	5248	0.0027234021108597517	0.43355346	No	
+row_13	APCS	"amyloid P component, serum [Source:HGNC Symbol;Acc:HGNC:584]"	6178	0.0	0.36197078	No	
+row_14	PC	pyruvate carboxylase [Source:HGNC Symbol;Acc:HGNC:8636]	6838	-8.733494323678315E-4	0.31144518	No	
+row_15	PHB	prohibitin [Source:HGNC Symbol;Acc:HGNC:8912]	6974	-0.0025088670663535595	0.3017687	No	
+row_16	IGF2R	insulin like growth factor 2 receptor [Source:HGNC Symbol;Acc:HGNC:5467]	7968	-0.01069930475205183	0.22834958	No	
+row_17	PTX3	pentraxin 3 [Source:HGNC Symbol;Acc:HGNC:9692]	8161	-0.012437751516699791	0.21715316	No	
+row_18	YTHDC2	YTH domain containing 2 [Source:HGNC Symbol;Acc:HGNC:24721]	8188	-0.012668791227042675	0.21881446	No	
+row_19	PSMC3	"proteasome 26S subunit, ATPase 3 [Source:HGNC Symbol;Acc:HGNC:9549]"	9282	-0.02475813589990139	0.14175677	No	
+row_20	NUCKS1	nuclear casein kinase and cyclin dependent kinase substrate 1 [Source:HGNC Symbol;Acc:HGNC:29923]	9533	-0.028515329584479332	0.130742	No	
+row_21	ZC3H12A	zinc finger CCCH-type containing 12A [Source:HGNC Symbol;Acc:HGNC:26259]	9620	-0.029931779950857162	0.13277373	No	
+row_22	EIF2AK4	eukaryotic translation initiation factor 2 alpha kinase 4 [Source:HGNC Symbol;Acc:HGNC:19687]	10318	-0.04172457754611969	0.091137074	No	
+row_23	TBC1D20	TBC1 domain family member 20 [Source:HGNC Symbol;Acc:HGNC:16133]	10864	-0.053427644073963165	0.06459788	No	
+row_24	CFL1	cofilin 1 [Source:HGNC Symbol;Acc:HGNC:1874]	11841	-0.08730033040046692	0.014646954	No	
+row_25	STOM	stomatin [Source:HGNC Symbol;Acc:HGNC:3383]	11934	-0.09363710880279541	0.03464433	No	
+row_26	PPIB	peptidylprolyl isomerase B [Source:HGNC Symbol;Acc:HGNC:9255]	12592	-0.1649874448776245	0.031745926	No	

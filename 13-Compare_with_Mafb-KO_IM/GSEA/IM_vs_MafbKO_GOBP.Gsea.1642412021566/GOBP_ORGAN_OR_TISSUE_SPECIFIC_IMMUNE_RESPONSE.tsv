@@ -1,0 +1,17 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IL6R	interleukin 6 receptor [Source:HGNC Symbol;Acc:HGNC:6019]	3080	0.024533716961741447	-0.21373723	No	
+row_1	PIGR	polymeric immunoglobulin receptor [Source:HGNC Symbol;Acc:HGNC:8968]	4541	0.009321201592683792	-0.3172547	No	
+row_2	LTF	lactotransferrin [Source:HGNC Symbol;Acc:HGNC:6720]	4921	0.006491061300039291	-0.3402457	No	
+row_3	CAMP	cathelicidin antimicrobial peptide [Source:HGNC Symbol;Acc:HGNC:1472]	5078	0.004858030937612057	-0.34762502	No	
+row_4	IL4	interleukin 4 [Source:HGNC Symbol;Acc:HGNC:6014]	5749	0.0	-0.39920712	No	
+row_5	NOS2	nitric oxide synthase 2 [Source:HGNC Symbol;Acc:HGNC:7873]	5880	0.0	-0.40921557	No	
+row_6	DEFA3	defensin alpha 3 [Source:HGNC Symbol;Acc:HGNC:2762]	5903	0.0	-0.41090932	No	
+row_7	RNASE3	ribonuclease A family member 3 [Source:HGNC Symbol;Acc:HGNC:10046]	6244	0.0	-0.4370853	No	
+row_8	C17orf99	chromosome 17 open reading frame 99 [Source:HGNC Symbol;Acc:HGNC:34490]	7226	-0.0052803815342485905	-0.5075773	No	
+row_9	FFAR2	free fatty acid receptor 2 [Source:HGNC Symbol;Acc:HGNC:4501]	8225	-0.013091140426695347	-0.57193255	No	
+row_10	IFNLR1	interferon lambda receptor 1 [Source:HGNC Symbol;Acc:HGNC:18584]	8860	-0.01983703300356865	-0.60183364	No	
+row_11	OTUD7B	OTU deubiquitinase 7B [Source:HGNC Symbol;Acc:HGNC:16683]	9874	-0.03409656509757042	-0.64732057	No	
+row_12	NOD2	nucleotide binding oligomerization domain containing 2 [Source:HGNC Symbol;Acc:HGNC:5331]	11701	-0.08061856031417847	-0.71105236	Yes	
+row_13	RPL39	ribosomal protein L39 [Source:HGNC Symbol;Acc:HGNC:10350]	12012	-0.0977640450000763	-0.64172626	Yes	
+row_14	IL6	interleukin 6 [Source:HGNC Symbol;Acc:HGNC:6018]	12724	-0.20062781870365143	-0.50521874	Yes	
+row_15	RNASE2	ribonuclease A family member 2 [Source:HGNC Symbol;Acc:HGNC:10045]	12983	-0.5525359511375427	0.0016167525	Yes	

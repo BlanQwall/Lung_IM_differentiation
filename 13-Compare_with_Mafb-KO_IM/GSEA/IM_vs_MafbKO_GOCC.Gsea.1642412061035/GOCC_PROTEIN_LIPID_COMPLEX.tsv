@@ -1,0 +1,26 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.41808465	Yes	
+row_1	PLA2G7	phospholipase A2 group VII [Source:HGNC Symbol;Acc:HGNC:9040]	34	0.43109872937202454	0.5346588	Yes	
+row_2	MSR1	macrophage scavenger receptor 1 [Source:HGNC Symbol;Acc:HGNC:7376]	91	0.2646862268447876	0.6033378	Yes	
+row_3	APOC1	apolipoprotein C1 [Source:HGNC Symbol;Acc:HGNC:607]	611	0.08827267587184906	0.58769643	No	
+row_4	PCYOX1	prenylcysteine oxidase 1 [Source:HGNC Symbol;Acc:HGNC:20588]	1189	0.061019327491521835	0.56007093	No	
+row_5	LIPC	"lipase C, hepatic type [Source:HGNC Symbol;Acc:HGNC:6619]"	2055	0.040516577661037445	0.5046033	No	
+row_6	APOC4	apolipoprotein C4 [Source:HGNC Symbol;Acc:HGNC:611]	2552	0.03176446259021759	0.47515047	No	
+row_7	APOA2	apolipoprotein A2 [Source:HGNC Symbol;Acc:HGNC:601]	4778	0.007649634033441544	0.3058425	No	
+row_8	VLDLR	very low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:12698]	4820	0.007425827439874411	0.3047316	No	
+row_9	APOC2	apolipoprotein C2 [Source:HGNC Symbol;Acc:HGNC:609]	5533	0.0	0.249878	No	
+row_10	APOF	apolipoprotein F [Source:HGNC Symbol;Acc:HGNC:615]	6195	0.0	0.1989535	No	
+row_11	PEX3	peroxisomal biogenesis factor 3 [Source:HGNC Symbol;Acc:HGNC:8858]	7102	-0.003980802372097969	0.1302516	No	
+row_12	APOA1	apolipoprotein A1 [Source:HGNC Symbol;Acc:HGNC:600]	7375	-0.006243079900741577	0.111017965	No	
+row_13	LCAT	lecithin-cholesterol acyltransferase [Source:HGNC Symbol;Acc:HGNC:6522]	7941	-0.010452006943523884	0.070371844	No	
+row_14	PLTP	phospholipid transfer protein [Source:HGNC Symbol;Acc:HGNC:9093]	8752	-0.018570953980088234	0.013089516	No	
+row_15	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	9641	-0.03015626221895218	-0.04700714	No	
+row_16	HDLBP	high density lipoprotein binding protein [Source:HGNC Symbol;Acc:HGNC:4857]	9687	-0.030991951003670692	-0.041927267	No	
+row_17	LPL	lipoprotein lipase [Source:HGNC Symbol;Acc:HGNC:6677]	9806	-0.03288036212325096	-0.041950658	No	
+row_18	APOO	apolipoprotein O [Source:HGNC Symbol;Acc:HGNC:28727]	10702	-0.0493047870695591	-0.09730596	No	
+row_19	BIN1	bridging integrator 1 [Source:HGNC Symbol;Acc:HGNC:1052]	11520	-0.0732618123292923	-0.14004532	No	
+row_20	APOBR	apolipoprotein B receptor [Source:HGNC Symbol;Acc:HGNC:24087]	11529	-0.0736280158162117	-0.12035702	No	
+row_21	SELENOS	selenoprotein S [Source:HGNC Symbol;Acc:HGNC:30396]	12130	-0.10517428815364838	-0.13757774	No	
+row_22	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	12802	-0.2263742983341217	-0.12684472	No	
+row_23	DBI	"diazepam binding inhibitor, acyl-CoA binding protein [Source:HGNC Symbol;Acc:HGNC:2690]"	12829	-0.23816993832588196	-0.06316695	No	
+row_24	LSR	lipolysis stimulated lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:29572]	12881	-0.27766403555870056	0.009476189	No	

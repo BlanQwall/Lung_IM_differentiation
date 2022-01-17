@@ -1,0 +1,19 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CTSD	cathepsin D [Source:HGNC Symbol;Acc:HGNC:2529]	135	0.20596210658550262	0.08973017	No	
+row_1	SPPL3	signal peptide peptidase like 3 [Source:HGNC Symbol;Acc:HGNC:30424]	2254	0.036312881857156754	-0.05570306	No	
+row_2	NCSTN	nicastrin [Source:HGNC Symbol;Acc:HGNC:17091]	3381	0.020905068144202232	-0.13224249	No	
+row_3	SPPL2B	signal peptide peptidase like 2B [Source:HGNC Symbol;Acc:HGNC:30627]	3676	0.017382465302944183	-0.1464303	No	
+row_4	CASP3	caspase 3 [Source:HGNC Symbol;Acc:HGNC:1504]	3701	0.017124753445386887	-0.13995337	No	
+row_5	DDI2	DNA damage inducible 1 homolog 2 [Source:HGNC Symbol;Acc:HGNC:24578]	3883	0.015350857749581337	-0.14642781	No	
+row_6	NRIP3	nuclear receptor interacting protein 3 [Source:HGNC Symbol;Acc:HGNC:1167]	5640	0.0	-0.28163996	No	
+row_7	BACE2	beta-secretase 2 [Source:HGNC Symbol;Acc:HGNC:934]	5764	0.0	-0.29111096	No	
+row_8	ASPRV1	aspartic peptidase retroviral like 1 [Source:HGNC Symbol;Acc:HGNC:26321]	6253	0.0	-0.32868698	No	
+row_9	ASTL	astacin like metalloendopeptidase [Source:HGNC Symbol;Acc:HGNC:31704]	6302	0.0	-0.332383	No	
+row_10	BACE1	beta-secretase 1 [Source:HGNC Symbol;Acc:HGNC:933]	8078	-0.011767173185944557	-0.46333772	No	
+row_11	PSEN2	presenilin 2 [Source:HGNC Symbol;Acc:HGNC:9509]	8739	-0.018447602167725563	-0.5051898	No	
+row_12	SPPL2A	signal peptide peptidase like 2A [Source:HGNC Symbol;Acc:HGNC:30227]	9425	-0.026726262643933296	-0.54494226	No	
+row_13	PSEN1	presenilin 1 [Source:HGNC Symbol;Acc:HGNC:9508]	9691	-0.031070562079548836	-0.55024284	No	
+row_14	CASP7	caspase 7 [Source:HGNC Symbol;Acc:HGNC:1508]	10986	-0.05707675963640213	-0.622134	No	
+row_15	HM13	histocompatibility minor 13 [Source:HGNC Symbol;Acc:HGNC:16435]	12742	-0.20819009840488434	-0.6560608	Yes	
+row_16	CTSE	cathepsin E [Source:HGNC Symbol;Acc:HGNC:2530]	12769	-0.21461038291454315	-0.5537334	Yes	
+row_17	NAPSA	napsin A aspartic peptidase [Source:HGNC Symbol;Acc:HGNC:13395]	13004	-1.1761188507080078	-7.402559E-8	Yes	

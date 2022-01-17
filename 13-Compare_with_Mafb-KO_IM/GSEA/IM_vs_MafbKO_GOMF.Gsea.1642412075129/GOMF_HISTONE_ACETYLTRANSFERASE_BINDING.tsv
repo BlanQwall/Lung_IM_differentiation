@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EGR1	early growth response 1 [Source:HGNC Symbol;Acc:HGNC:3238]	129	0.21051642298698425	0.15417093	Yes	
+row_1	CEBPB	CCAAT enhancer binding protein beta [Source:HGNC Symbol;Acc:HGNC:1834]	196	0.1614495813846588	0.27494395	Yes	
+row_2	EID1	EP300 interacting inhibitor of differentiation 1 [Source:HGNC Symbol;Acc:HGNC:1191]	344	0.1206636056303978	0.35768545	Yes	
+row_3	KANSL1L	KAT8 regulatory NSL complex subunit 1 like [Source:HGNC Symbol;Acc:HGNC:26310]	366	0.11614829301834106	0.44660988	Yes	
+row_4	SIRT2	sirtuin 2 [Source:HGNC Symbol;Acc:HGNC:10886]	437	0.10650111734867096	0.5242407	Yes	
+row_5	MEF2A	myocyte enhancer factor 2A [Source:HGNC Symbol;Acc:HGNC:6993]	514	0.09758292883634567	0.59445745	Yes	
+row_6	TP53	tumor protein p53 [Source:HGNC Symbol;Acc:HGNC:11998]	619	0.08749835938215256	0.65465677	Yes	
+row_7	ZBTB7A	zinc finger and BTB domain containing 7A [Source:HGNC Symbol;Acc:HGNC:18078]	874	0.07240895926952362	0.6915425	Yes	
+row_8	CITED2	Cbp/p300 interacting transactivator with Glu/Asp rich carboxy-terminal domain 2 [Source:HGNC Symbol;Acc:HGNC:1987]	1005	0.06716608256101608	0.73388994	Yes	
+row_9	SP1	Sp1 transcription factor [Source:HGNC Symbol;Acc:HGNC:11205]	1337	0.05628491938114166	0.75227696	Yes	
+row_10	ECD	ecdysoneless cell cycle regulator [Source:HGNC Symbol;Acc:HGNC:17029]	1877	0.043659552931785583	0.7448048	No	
+row_11	STAT1	signal transducer and activator of transcription 1 [Source:HGNC Symbol;Acc:HGNC:11362]	2707	0.029625054448843002	0.70406055	No	
+row_12	KANSL1	KAT8 regulatory NSL complex subunit 1 [Source:HGNC Symbol;Acc:HGNC:24565]	2715	0.029508987441658974	0.7265248	No	
+row_13	TAF7	TATA-box binding protein associated factor 7 [Source:HGNC Symbol;Acc:HGNC:11541]	2875	0.027312200516462326	0.7355716	No	
+row_14	BCAS3	BCAS3 microtubule associated cell migration factor [Source:HGNC Symbol;Acc:HGNC:14347]	3828	0.015809811651706696	0.6745862	No	
+row_15	TRIM68	tripartite motif containing 68 [Source:HGNC Symbol;Acc:HGNC:21161]	3891	0.015315902419388294	0.6817511	No	
+row_16	TRIP4	thyroid hormone receptor interactor 4 [Source:HGNC Symbol;Acc:HGNC:12310]	4091	0.013002612628042698	0.67656285	No	
+row_17	PCNA	proliferating cell nuclear antigen [Source:HGNC Symbol;Acc:HGNC:8729]	4188	0.011954523622989655	0.67848927	No	
+row_18	MTF1	metal regulatory transcription factor 1 [Source:HGNC Symbol;Acc:HGNC:7428]	5423	4.0903041372075677E-4	0.5837827	No	

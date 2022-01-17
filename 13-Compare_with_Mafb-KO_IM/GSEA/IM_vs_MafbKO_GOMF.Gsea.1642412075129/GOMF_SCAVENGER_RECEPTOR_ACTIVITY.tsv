@@ -1,0 +1,36 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	STAB1	stabilin 1 [Source:HGNC Symbol;Acc:HGNC:18628]	28	0.4617379307746887	0.32486534	Yes	
+row_1	MSR1	macrophage scavenger receptor 1 [Source:HGNC Symbol;Acc:HGNC:7376]	91	0.2646862268447876	0.5075481	Yes	
+row_2	COLEC12	collectin subfamily member 12 [Source:HGNC Symbol;Acc:HGNC:16016]	647	0.08525615930557251	0.5251394	Yes	
+row_3	CXCL16	C-X-C motif chemokine ligand 16 [Source:HGNC Symbol;Acc:HGNC:16642]	1149	0.06234767660498619	0.53066933	Yes	
+row_4	CD36	CD36 molecule [Source:HGNC Symbol;Acc:HGNC:1663]	1904	0.043137308210134506	0.503087	No	
+row_5	SCARF1	scavenger receptor class F member 1 [Source:HGNC Symbol;Acc:HGNC:16820]	2600	0.03119335137307644	0.47159436	No	
+row_6	LOXL3	lysyl oxidase like 3 [Source:HGNC Symbol;Acc:HGNC:13869]	2954	0.026095373556017876	0.46285966	No	
+row_7	AGER	advanced glycosylation end-product specific receptor [Source:HGNC Symbol;Acc:HGNC:320]	3295	0.0218600295484066	0.4521276	No	
+row_8	ENPP1	ectonucleotide pyrophosphatase/phosphodiesterase 1 [Source:HGNC Symbol;Acc:HGNC:3356]	3513	0.01905406266450882	0.44889167	No	
+row_9	SCARF2	scavenger receptor class F member 2 [Source:HGNC Symbol;Acc:HGNC:19869]	4007	0.013894765637814999	0.42072177	No	
+row_10	SSC5D	scavenger receptor cysteine rich family member with 5 domains [Source:HGNC Symbol;Acc:HGNC:26641]	4129	0.012604289688169956	0.4203195	No	
+row_11	PRSS12	serine protease 12 [Source:HGNC Symbol;Acc:HGNC:9477]	4170	0.012159015983343124	0.42584702	No	
+row_12	ENPP2	ectonucleotide pyrophosphatase/phosphodiesterase 2 [Source:HGNC Symbol;Acc:HGNC:3357]	4487	0.009660337120294571	0.40832502	No	
+row_13	TMPRSS4	transmembrane serine protease 4 [Source:HGNC Symbol;Acc:HGNC:11878]	4783	0.007637583650648594	0.3909895	No	
+row_14	CD6	CD6 molecule [Source:HGNC Symbol;Acc:HGNC:1691]	5511	0.0	0.3349371	No	
+row_15	CD5	CD5 molecule [Source:HGNC Symbol;Acc:HGNC:1685]	5512	0.0	0.3349371	No	
+row_16	ACKR4	atypical chemokine receptor 4 [Source:HGNC Symbol;Acc:HGNC:1611]	5672	0.0	0.32267803	No	
+row_17	ACKR3	atypical chemokine receptor 3 [Source:HGNC Symbol;Acc:HGNC:23692]	5673	0.0	0.32267803	No	
+row_18	ACKR2	atypical chemokine receptor 2 [Source:HGNC Symbol;Acc:HGNC:1565]	5674	0.0	0.32267803	No	
+row_19	PGBD1	piggyBac transposable element derived 1 [Source:HGNC Symbol;Acc:HGNC:19398]	5736	0.0	0.31797487	No	
+row_20	PRG4	proteoglycan 4 [Source:HGNC Symbol;Acc:HGNC:9364]	5738	0.0	0.31789777	No	
+row_21	TMPRSS5	transmembrane serine protease 5 [Source:HGNC Symbol;Acc:HGNC:14908]	5743	0.0	0.31758934	No	
+row_22	TMPRSS13	transmembrane serine protease 13 [Source:HGNC Symbol;Acc:HGNC:29808]	5988	0.0	0.29877672	No	
+row_23	LOXL2	lysyl oxidase like 2 [Source:HGNC Symbol;Acc:HGNC:6666]	6009	0.0	0.29723468	No	
+row_24	VTN	vitronectin [Source:HGNC Symbol;Acc:HGNC:12724]	6293	0.0	0.27541512	No	
+row_25	STAB2	stabilin 2 [Source:HGNC Symbol;Acc:HGNC:18629]	6309	0.0	0.27425858	No	
+row_26	ENDOU	"endonuclease, poly(U) specific [Source:HGNC Symbol;Acc:HGNC:14369]"	6318	0.0	0.2736418	No	
+row_27	SCARB1	scavenger receptor class B member 1 [Source:HGNC Symbol;Acc:HGNC:1664]	6983	-0.0025750475469976664	0.2242705	No	
+row_28	CD5L	CD5 molecule like [Source:HGNC Symbol;Acc:HGNC:1690]	8434	-0.015055927447974682	0.12313734	No	
+row_29	SSC4D	scavenger receptor cysteine rich family member with 4 domains [Source:HGNC Symbol;Acc:HGNC:14461]	8505	-0.015780558809638023	0.12891679	No	
+row_30	LGALS3BP	galectin 3 binding protein [Source:HGNC Symbol;Acc:HGNC:6564]	9248	-0.024257168173789978	0.0888879	No	
+row_31	MARCO	macrophage receptor with collagenous structure [Source:HGNC Symbol;Acc:HGNC:6895]	9962	-0.03562454134225845	0.05914583	No	
+row_32	SCARB2	scavenger receptor class B member 2 [Source:HGNC Symbol;Acc:HGNC:1665]	10581	-0.046456437557935715	0.04440001	No	
+row_33	CD163	CD163 molecule [Source:HGNC Symbol;Acc:HGNC:1631]	11354	-0.06763086467981339	0.032777343	No	
+row_34	LRP1	LDL receptor related protein 1 [Source:HGNC Symbol;Acc:HGNC:6692]	12436	-0.13323365151882172	0.043793388	No	

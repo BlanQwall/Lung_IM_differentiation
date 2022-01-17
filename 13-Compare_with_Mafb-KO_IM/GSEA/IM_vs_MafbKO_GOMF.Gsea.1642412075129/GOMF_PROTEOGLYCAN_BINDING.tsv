@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.45287403	Yes	
+row_1	CTSB	cathepsin B [Source:HGNC Symbol;Acc:HGNC:2527]	19	0.574101448059082	0.6232071	Yes	
+row_2	PLA2G2D	phospholipase A2 group IID [Source:HGNC Symbol;Acc:HGNC:9033]	93	0.25844866037368774	0.69478416	Yes	
+row_3	SDCBP	syndecan binding protein [Source:HGNC Symbol;Acc:HGNC:10662]	218	0.1520151048898697	0.7306398	Yes	
+row_4	THBS1	thrombospondin 1 [Source:HGNC Symbol;Acc:HGNC:11785]	2195	0.03777933865785599	0.5897023	No	
+row_5	AGRN	agrin [Source:HGNC Symbol;Acc:HGNC:329]	2628	0.030745413154363632	0.56560683	No	
+row_6	CFH	complement factor H [Source:HGNC Symbol;Acc:HGNC:4883]	4790	0.007603941950947046	0.40140408	No	
+row_7	NID1	nidogen 1 [Source:HGNC Symbol;Acc:HGNC:7821]	5632	0.0	0.33661708	No	
+row_8	FST	follistatin [Source:HGNC Symbol;Acc:HGNC:3971]	5649	0.0	0.33538452	No	
+row_9	COMP	cartilage oligomeric matrix protein [Source:HGNC Symbol;Acc:HGNC:2227]	5870	0.0	0.31843665	No	
+row_10	PTPRF	protein tyrosine phosphatase receptor type F [Source:HGNC Symbol;Acc:HGNC:9670]	6094	0.0	0.3012577	No	
+row_11	COL5A1	collagen type V alpha 1 chain [Source:HGNC Symbol;Acc:HGNC:2209]	6103	0.0	0.30064142	No	
+row_12	SLIT1	slit guidance ligand 1 [Source:HGNC Symbol;Acc:HGNC:11085]	6206	0.0	0.2927838	No	
+row_13	TNC	tenascin C [Source:HGNC Symbol;Acc:HGNC:5318]	6217	0.0	0.29201344	No	
+row_14	ITGA2	integrin subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:6137]	6637	0.0	0.2597355	No	
+row_15	CTSK	cathepsin K [Source:HGNC Symbol;Acc:HGNC:2536]	9083	-0.022260354831814766	0.07803261	No	
+row_16	HPSE	heparanase [Source:HGNC Symbol;Acc:HGNC:5164]	9341	-0.025590376928448677	0.06587849	No	
+row_17	LPL	lipoprotein lipase [Source:HGNC Symbol;Acc:HGNC:6677]	9806	-0.03288036212325096	0.03995556	No	
+row_18	PTPRS	protein tyrosine phosphatase receptor type S [Source:HGNC Symbol;Acc:HGNC:9681]	9975	-0.035925500094890594	0.037744798	No	
+row_19	GPNMB	glycoprotein nmb [Source:HGNC Symbol;Acc:HGNC:4462]	10931	-0.0554528571665287	-0.019260066	No	
+row_20	CTSS	cathepsin S [Source:HGNC Symbol;Acc:HGNC:2545]	11122	-0.06087407469749451	-0.01571328	No	
+row_21	LRP1	LDL receptor related protein 1 [Source:HGNC Symbol;Acc:HGNC:6692]	12436	-0.13323365151882172	-0.07706318	No	
+row_22	FN1	fibronectin 1 [Source:HGNC Symbol;Acc:HGNC:3778]	12564	-0.1572355479001999	-0.039879218	No	
+row_23	PTPRC	protein tyrosine phosphatase receptor type C [Source:HGNC Symbol;Acc:HGNC:9666]	12842	-0.2467222660779953	0.012479773	No	

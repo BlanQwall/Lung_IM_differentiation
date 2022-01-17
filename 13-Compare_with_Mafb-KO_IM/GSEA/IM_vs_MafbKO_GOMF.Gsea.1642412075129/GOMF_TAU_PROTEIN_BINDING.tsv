@@ -1,0 +1,40 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.44962603	Yes	
+row_1	LGMN	legumain [Source:HGNC Symbol;Acc:HGNC:9472]	13	0.6632168889045715	0.64562	Yes	
+row_2	STUB1	STIP1 homology and U-box containing protein 1 [Source:HGNC Symbol;Acc:HGNC:11427]	796	0.0756203830242157	0.6077349	No	
+row_3	TAOK1	TAO kinase 1 [Source:HGNC Symbol;Acc:HGNC:29259]	1360	0.05553445965051651	0.5807833	No	
+row_4	PPP5C	protein phosphatase 5 catalytic subunit [Source:HGNC Symbol;Acc:HGNC:9322]	2046	0.040717460215091705	0.5400283	No	
+row_5	TTBK2	tau tubulin kinase 2 [Source:HGNC Symbol;Acc:HGNC:19141]	2330	0.03507388010621071	0.52860373	No	
+row_6	FKBP4	FKBP prolyl isomerase 4 [Source:HGNC Symbol;Acc:HGNC:3720]	2460	0.03318016603589058	0.5284948	No	
+row_7	DCTN1	dynactin subunit 1 [Source:HGNC Symbol;Acc:HGNC:2711]	2701	0.02973245456814766	0.51880246	No	
+row_8	MARK4	microtubule affinity regulating kinase 4 [Source:HGNC Symbol;Acc:HGNC:13538]	3090	0.0243774875998497	0.4961076	No	
+row_9	HSPA2	heat shock protein family A (Hsp70) member 2 [Source:HGNC Symbol;Acc:HGNC:5235]	3129	0.023844625800848007	0.5002484	No	
+row_10	ROCK2	Rho associated coiled-coil containing protein kinase 2 [Source:HGNC Symbol;Acc:HGNC:10252]	3329	0.021483389660716057	0.49127182	No	
+row_11	GSK3B	glycogen synthase kinase 3 beta [Source:HGNC Symbol;Acc:HGNC:4617]	3440	0.020104793831706047	0.48875052	No	
+row_12	HSP90AB1	heat shock protein 90 alpha family class B member 1 [Source:HGNC Symbol;Acc:HGNC:5258]	3650	0.01770312339067459	0.47788158	No	
+row_13	PIN1	"peptidylprolyl cis/trans isomerase, NIMA-interacting 1 [Source:HGNC Symbol;Acc:HGNC:8988]"	4218	0.01175182405859232	0.43763703	No	
+row_14	EP300	E1A binding protein p300 [Source:HGNC Symbol;Acc:HGNC:3373]	4642	0.008573985658586025	0.407556	No	
+row_15	BAG2	BAG cochaperone 2 [Source:HGNC Symbol;Acc:HGNC:938]	4879	0.006821759510785341	0.39137766	No	
+row_16	GSK3A	glycogen synthase kinase 3 alpha [Source:HGNC Symbol;Acc:HGNC:4616]	5165	0.0036951571237295866	0.37049296	No	
+row_17	SMAD2	SMAD family member 2 [Source:HGNC Symbol;Acc:HGNC:6768]	5259	0.002607156988233328	0.36409354	No	
+row_18	AATF	apoptosis antagonizing transcription factor [Source:HGNC Symbol;Acc:HGNC:19235]	5325	0.0017186823533847928	0.35959014	No	
+row_19	S100B	S100 calcium binding protein B [Source:HGNC Symbol;Acc:HGNC:10500]	5755	0.0	0.3265036	No	
+row_20	MAP1A	microtubule associated protein 1A [Source:HGNC Symbol;Acc:HGNC:6835]	6360	0.0	0.27992025	No	
+row_21	MAP2	microtubule associated protein 2 [Source:HGNC Symbol;Acc:HGNC:6839]	6757	0.0	0.24937882	No	
+row_22	PRKAA1	protein kinase AMP-activated catalytic subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:9376]	7528	-0.007065985351800919	0.19208828	No	
+row_23	BRSK1	BR serine/threonine kinase 1 [Source:HGNC Symbol;Acc:HGNC:18994]	7571	-0.0072385272942483425	0.19099574	No	
+row_24	HDAC6	histone deacetylase 6 [Source:HGNC Symbol;Acc:HGNC:14064]	8592	-0.016848433762788773	0.11732514	No	
+row_25	PPP2CA	protein phosphatase 2 catalytic subunit alpha [Source:HGNC Symbol;Acc:HGNC:9299]	8593	-0.016856933012604713	0.12232435	No	
+row_26	CDK5	cyclin dependent kinase 5 [Source:HGNC Symbol;Acc:HGNC:1774]	8655	-0.017588533461093903	0.122835904	No	
+row_27	PPP2CB	protein phosphatase 2 catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9300]	9076	-0.022164512425661087	0.09701675	No	
+row_28	TAOK2	TAO kinase 2 [Source:HGNC Symbol;Acc:HGNC:16835]	9170	-0.02330714277923107	0.09675627	No	
+row_29	MARK3	microtubule affinity regulating kinase 3 [Source:HGNC Symbol;Acc:HGNC:6897]	9589	-0.029481085017323494	0.073261224	No	
+row_30	HSP90AA1	heat shock protein 90 alpha family class A member 1 [Source:HGNC Symbol;Acc:HGNC:5253]	9608	-0.029727747663855553	0.08068924	No	
+row_31	CLU	clusterin [Source:HGNC Symbol;Acc:HGNC:2095]	9641	-0.03015626221895218	0.08716459	No	
+row_32	MARK2	microtubule affinity regulating kinase 2 [Source:HGNC Symbol;Acc:HGNC:3332]	9883	-0.03434116020798683	0.078761965	No	
+row_33	PICALM	phosphatidylinositol binding clathrin assembly protein [Source:HGNC Symbol;Acc:HGNC:15514]	10214	-0.0399862639605999	0.06516938	No	
+row_34	DYRK1A	dual specificity tyrosine phosphorylation regulated kinase 1A [Source:HGNC Symbol;Acc:HGNC:3091]	10477	-0.04440169781446457	0.058130752	No	
+row_35	ROCK1	Rho associated coiled-coil containing protein kinase 1 [Source:HGNC Symbol;Acc:HGNC:10251]	10751	-0.050732750445604324	0.052121334	No	
+row_36	BIN1	bridging integrator 1 [Source:HGNC Symbol;Acc:HGNC:1052]	11520	-0.0732618123292923	0.0146165155	No	
+row_37	ACTB	actin beta [Source:HGNC Symbol;Acc:HGNC:132]	12443	-0.13476066291332245	-0.016527005	No	
+row_38	FYN	"FYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:4037]"	12726	-0.20136046409606934	0.021440625	No	

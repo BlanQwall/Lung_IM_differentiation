@@ -1,0 +1,34 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SLCO2B1	solute carrier organic anion transporter family member 2B1 [Source:HGNC Symbol;Acc:HGNC:10962]	25	0.4964974820613861	0.2250705	Yes	
+row_1	ABCC3	ATP binding cassette subfamily C member 3 [Source:HGNC Symbol;Acc:HGNC:54]	87	0.2824684679508209	0.34951213	Yes	
+row_2	SLC16A6	solute carrier family 16 member 6 [Source:HGNC Symbol;Acc:HGNC:10927]	284	0.13505540788173676	0.39614975	Yes	
+row_3	SLC27A1	solute carrier family 27 member 1 [Source:HGNC Symbol;Acc:HGNC:10995]	342	0.12144143134355545	0.44727847	Yes	
+row_4	SLC16A7	solute carrier family 16 member 7 [Source:HGNC Symbol;Acc:HGNC:10928]	403	0.11060922592878342	0.49322346	Yes	
+row_5	SLC5A6	solute carrier family 5 member 6 [Source:HGNC Symbol;Acc:HGNC:11041]	1719	0.046940434724092484	0.41331238	No	
+row_6	CD36	CD36 molecule [Source:HGNC Symbol;Acc:HGNC:1663]	1904	0.043137308210134506	0.41885027	No	
+row_7	SLC26A6	solute carrier family 26 member 6 [Source:HGNC Symbol;Acc:HGNC:14472]	2227	0.03692140057682991	0.41090798	No	
+row_8	SLC16A1	solute carrier family 16 member 1 [Source:HGNC Symbol;Acc:HGNC:10922]	2734	0.029203934594988823	0.38525286	No	
+row_9	SLC10A6	solute carrier family 10 member 6 [Source:HGNC Symbol;Acc:HGNC:30603]	3003	0.0254500824958086	0.37622872	No	
+row_10	SLC32A1	solute carrier family 32 member 1 [Source:HGNC Symbol;Acc:HGNC:11018]	3568	0.01854858547449112	0.34123084	No	
+row_11	SLC16A2	solute carrier family 16 member 2 [Source:HGNC Symbol;Acc:HGNC:10923]	4531	0.00937345065176487	0.27135664	No	
+row_12	SLC9A3R1	SLC9A3 regulator 1 [Source:HGNC Symbol;Acc:HGNC:11075]	4874	0.006861288100481033	0.24812913	No	
+row_13	SLC10A3	solute carrier family 10 member 3 [Source:HGNC Symbol;Acc:HGNC:22979]	5051	0.0052340985275805	0.23695447	No	
+row_14	SLC10A1	solute carrier family 10 member 1 [Source:HGNC Symbol;Acc:HGNC:10905]	5491	0.0	0.20311233	No	
+row_15	SLC51A	solute carrier family 51 subunit alpha [Source:HGNC Symbol;Acc:HGNC:29955]	6530	0.0	0.123093836	No	
+row_16	SLC16A4	solute carrier family 16 member 4 [Source:HGNC Symbol;Acc:HGNC:10925]	6552	0.0	0.12147497	No	
+row_17	SLC16A14	solute carrier family 16 member 14 [Source:HGNC Symbol;Acc:HGNC:26417]	7027	-0.003028135746717453	0.086319186	No	
+row_18	SLC16A9	solute carrier family 16 member 9 [Source:HGNC Symbol;Acc:HGNC:23520]	7836	-0.009376909583806992	0.02831829	No	
+row_19	SLC6A12	solute carrier family 6 member 12 [Source:HGNC Symbol;Acc:HGNC:11045]	7893	-0.009911364875733852	0.028532756	No	
+row_20	SLC6A13	solute carrier family 6 member 13 [Source:HGNC Symbol;Acc:HGNC:11046]	8087	-0.011853139847517014	0.019073792	No	
+row_21	SLC10A7	solute carrier family 10 member 7 [Source:HGNC Symbol;Acc:HGNC:23088]	8380	-0.014500929974019527	0.0031935698	No	
+row_22	SLC27A4	solute carrier family 27 member 4 [Source:HGNC Symbol;Acc:HGNC:10998]	8388	-0.014569558203220367	0.009315121	No	
+row_23	ABCG2	ATP binding cassette subfamily G member 2 (Junior blood group) [Source:HGNC Symbol;Acc:HGNC:74]	8607	-0.01702098734676838	2.9165897E-4	No	
+row_24	MFSD2A	major facilitator superfamily domain containing 2A [Source:HGNC Symbol;Acc:HGNC:25897]	8612	-0.017087699845433235	0.0077957674	No	
+row_25	SLC43A3	solute carrier family 43 member 3 [Source:HGNC Symbol;Acc:HGNC:17466]	8910	-0.020347295328974724	-0.0057969526	No	
+row_26	SLC16A13	solute carrier family 16 member 13 [Source:HGNC Symbol;Acc:HGNC:31037]	8938	-0.020665057003498077	0.0015696678	No	
+row_27	MPC2	mitochondrial pyruvate carrier 2 [Source:HGNC Symbol;Acc:HGNC:24515]	10958	-0.05647376924753189	-0.12825355	No	
+row_28	ABCC4	ATP binding cassette subfamily C member 4 [Source:HGNC Symbol;Acc:HGNC:55]	11295	-0.06610342860221863	-0.12393312	No	
+row_29	SLC6A6	solute carrier family 6 member 6 [Source:HGNC Symbol;Acc:HGNC:11052]	11596	-0.0759533941745758	-0.1123341	No	
+row_30	MPC1	mitochondrial pyruvate carrier 1 [Source:HGNC Symbol;Acc:HGNC:21606]	12432	-0.13274820148944855	-0.11601128	No	
+row_31	CEACAM1	CEA cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:1814]	12589	-0.16290485858917236	-0.053557377	No	
+row_32	SLC16A3	solute carrier family 16 member 3 [Source:HGNC Symbol;Acc:HGNC:10924]	12676	-0.1869479864835739	0.025285237	No	

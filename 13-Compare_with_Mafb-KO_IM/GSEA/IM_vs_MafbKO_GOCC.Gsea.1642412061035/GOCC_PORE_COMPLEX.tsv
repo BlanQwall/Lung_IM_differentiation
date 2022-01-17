@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	C6	complement C6 [Source:HGNC Symbol;Acc:HGNC:1339]	334	0.12277914583683014	0.063898824	No	
+row_1	C9	complement C9 [Source:HGNC Symbol;Acc:HGNC:1358]	4600	0.008899486623704433	-0.2581617	No	
+row_2	PDZD11	PDZ domain containing 11 [Source:HGNC Symbol;Acc:HGNC:28034]	4974	0.00601477874442935	-0.2825052	No	
+row_3	PLEKHA7	pleckstrin homology domain containing A7 [Source:HGNC Symbol;Acc:HGNC:27049]	5021	0.0055730449967086315	-0.2819805	No	
+row_4	VDAC3	voltage dependent anion channel 3 [Source:HGNC Symbol;Acc:HGNC:12674]	5157	0.0037533603608608246	-0.2896404	No	
+row_5	SLC25A31	solute carrier family 25 member 31 [Source:HGNC Symbol;Acc:HGNC:25319]	5909	0.0	-0.34749418	No	
+row_6	SPG7	"SPG7 matrix AAA peptidase subunit, paraplegin [Source:HGNC Symbol;Acc:HGNC:11237]"	6993	-0.002657512668520212	-0.42898384	No	
+row_7	VDAC1	voltage dependent anion channel 1 [Source:HGNC Symbol;Acc:HGNC:12669]	7107	-0.004056750796735287	-0.43472743	No	
+row_8	C5	complement C5 [Source:HGNC Symbol;Acc:HGNC:1331]	7804	-0.009119182825088501	-0.48168725	No	
+row_9	C7	complement C7 [Source:HGNC Symbol;Acc:HGNC:1346]	7826	-0.009294732473790646	-0.47651985	No	
+row_10	BCL2	BCL2 apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:990]	8099	-0.011922881938517094	-0.48876986	No	
+row_11	C8G	complement C8 gamma chain [Source:HGNC Symbol;Acc:HGNC:1354]	8108	-0.011976873502135277	-0.48064303	No	
+row_12	TOMM40	translocase of outer mitochondrial membrane 40 [Source:HGNC Symbol;Acc:HGNC:18001]	8282	-0.01365093793720007	-0.484005	No	
+row_13	TOMM40L	translocase of outer mitochondrial membrane 40 like [Source:HGNC Symbol;Acc:HGNC:25756]	8809	-0.01927346922457218	-0.51045614	No	
+row_14	SLC25A4	solute carrier family 25 member 4 [Source:HGNC Symbol;Acc:HGNC:10990]	9024	-0.021676165983080864	-0.5111182	No	
+row_15	CD34	CD34 molecule [Source:HGNC Symbol;Acc:HGNC:1662]	9453	-0.02721930295228958	-0.5242194	No	
+row_16	PPIF	peptidylprolyl isomerase F [Source:HGNC Symbol;Acc:HGNC:9259]	9633	-0.03007476031780243	-0.5160542	No	
+row_17	VDAC2	voltage dependent anion channel 2 [Source:HGNC Symbol;Acc:HGNC:12672]	9796	-0.03268264979124069	-0.5046756	No	
+row_18	ADAM10	ADAM metallopeptidase domain 10 [Source:HGNC Symbol;Acc:HGNC:188]	12099	-0.10293260961771011	-0.606871	Yes	
+row_19	BAK1	BCL2 antagonist/killer 1 [Source:HGNC Symbol;Acc:HGNC:949]	12132	-0.10523074865341187	-0.53251773	Yes	
+row_20	SLC25A5	solute carrier family 25 member 5 [Source:HGNC Symbol;Acc:HGNC:10991]	12705	-0.19428381323814392	-0.43475497	Yes	
+row_21	AFDN	"afadin, adherens junction formation factor [Source:HGNC Symbol;Acc:HGNC:7137]"	12718	-0.19902104139328003	-0.2903941	Yes	
+row_22	BAX	"BCL2 associated X, apoptosis regulator [Source:HGNC Symbol;Acc:HGNC:959]"	12743	-0.20831263065338135	-0.14017478	Yes	
+row_23	TSPAN33	tetraspanin 33 [Source:HGNC Symbol;Acc:HGNC:28743]	12784	-0.21945787966251373	0.016947981	Yes	

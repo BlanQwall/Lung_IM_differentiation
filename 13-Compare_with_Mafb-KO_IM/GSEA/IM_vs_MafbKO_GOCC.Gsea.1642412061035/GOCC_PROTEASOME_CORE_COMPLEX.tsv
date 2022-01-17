@@ -1,0 +1,20 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PSMB10	proteasome 20S subunit beta 10 [Source:HGNC Symbol;Acc:HGNC:9538]	7049	-0.0033249687403440475	-0.5409932	No	
+row_1	PSMB2	proteasome 20S subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:9539]	9080	-0.02220439538359642	-0.6851472	No	
+row_2	PSMA2	proteasome 20S subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:9531]	9219	-0.023904047906398773	-0.6826744	No	
+row_3	PSMA1	proteasome 20S subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:9530]	10830	-0.05258135125041008	-0.77783906	Yes	
+row_4	PSMF1	proteasome inhibitor subunit 1 [Source:HGNC Symbol;Acc:HGNC:9571]	10904	-0.054623283445835114	-0.75352645	Yes	
+row_5	PSMB7	proteasome 20S subunit beta 7 [Source:HGNC Symbol;Acc:HGNC:9544]	11168	-0.062229301780462265	-0.73967683	Yes	
+row_6	PSMA6	proteasome 20S subunit alpha 6 [Source:HGNC Symbol;Acc:HGNC:9535]	11680	-0.07941271364688873	-0.735508	Yes	
+row_7	PSMA8	proteasome 20S subunit alpha 8 [Source:HGNC Symbol;Acc:HGNC:22985]	11765	-0.08391253650188446	-0.6959917	Yes	
+row_8	PSMB9	proteasome 20S subunit beta 9 [Source:HGNC Symbol;Acc:HGNC:9546]	11866	-0.08935666084289551	-0.65472406	Yes	
+row_9	PSMB4	proteasome 20S subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:9541]	11916	-0.09244464337825775	-0.6078369	Yes	
+row_10	PSMA5	proteasome 20S subunit alpha 5 [Source:HGNC Symbol;Acc:HGNC:9534]	11960	-0.09530410170555115	-0.5589206	Yes	
+row_11	PSMB6	proteasome 20S subunit beta 6 [Source:HGNC Symbol;Acc:HGNC:9543]	12082	-0.10195903480052948	-0.5123639	Yes	
+row_12	PSMA3	proteasome 20S subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:9532]	12138	-0.10560782253742218	-0.45872524	Yes	
+row_13	PSMB5	proteasome 20S subunit beta 5 [Source:HGNC Symbol;Acc:HGNC:9542]	12182	-0.1101798489689827	-0.40165696	Yes	
+row_14	PSMA4	proteasome 20S subunit alpha 4 [Source:HGNC Symbol;Acc:HGNC:9533]	12462	-0.13892988860607147	-0.34700683	Yes	
+row_15	PSMB1	proteasome 20S subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:9537]	12467	-0.13913856446743011	-0.27106568	Yes	
+row_16	PSMB8	proteasome 20S subunit beta 8 [Source:HGNC Symbol;Acc:HGNC:9545]	12641	-0.1759919673204422	-0.18794258	Yes	
+row_17	PSMB3	proteasome 20S subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:9540]	12658	-0.1813022792339325	-0.08981943	Yes	
+row_18	PSMA7	proteasome 20S subunit alpha 7 [Source:HGNC Symbol;Acc:HGNC:9536]	12758	-0.21238067746162415	0.018943466	Yes	

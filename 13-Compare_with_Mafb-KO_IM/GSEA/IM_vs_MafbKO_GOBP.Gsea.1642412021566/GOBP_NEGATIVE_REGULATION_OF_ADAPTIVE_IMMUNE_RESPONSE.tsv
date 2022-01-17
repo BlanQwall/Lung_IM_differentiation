@@ -1,0 +1,49 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CD55	CD55 molecule (Cromer blood group) [Source:HGNC Symbol;Acc:HGNC:2665]	620	0.08747071772813797	-0.023031382	No	
+row_1	IL4R	interleukin 4 receptor [Source:HGNC Symbol;Acc:HGNC:6015]	877	0.07232391089200974	-0.022267641	No	
+row_2	PPP3CB	protein phosphatase 3 catalytic subunit beta [Source:HGNC Symbol;Acc:HGNC:9315]	924	0.07033193856477737	-0.0058616544	No	
+row_3	HFE	homeostatic iron regulator [Source:HGNC Symbol;Acc:HGNC:4886]	1138	0.06284269690513611	-0.004469472	No	
+row_4	IL20RB	interleukin 20 receptor subunit beta [Source:HGNC Symbol;Acc:HGNC:6004]	2381	0.03426288813352585	-0.09060314	No	
+row_5	LOXL3	lysyl oxidase like 3 [Source:HGNC Symbol;Acc:HGNC:13869]	2954	0.026095373556017876	-0.12734479	No	
+row_6	TRIM27	tripartite motif containing 27 [Source:HGNC Symbol;Acc:HGNC:9975]	2977	0.025684542953968048	-0.1217549	No	
+row_7	NCKAP1L	NCK associated protein 1 like [Source:HGNC Symbol;Acc:HGNC:4862]	3135	0.02375740185379982	-0.12713091	No	
+row_8	TNFRSF14	TNF receptor superfamily member 14 [Source:HGNC Symbol;Acc:HGNC:11912]	3245	0.022492224350571632	-0.12916134	No	
+row_9	CD46	CD46 molecule [Source:HGNC Symbol;Acc:HGNC:6953]	4000	0.014033026993274689	-0.18337205	No	
+row_10	KLRC1	killer cell lectin like receptor C1 [Source:HGNC Symbol;Acc:HGNC:6374]	4957	0.006183533929288387	-0.25540003	No	
+row_11	THOC1	THO complex 1 [Source:HGNC Symbol;Acc:HGNC:19070]	5022	0.005555061623454094	-0.25876322	No	
+row_12	SLAMF1	signaling lymphocytic activation molecule family member 1 [Source:HGNC Symbol;Acc:HGNC:10903]	5054	0.005165921524167061	-0.25968996	No	
+row_13	IL2	interleukin 2 [Source:HGNC Symbol;Acc:HGNC:6001]	5342	0.0015103507321327925	-0.28141162	No	
+row_14	CR2	complement C3d receptor 2 [Source:HGNC Symbol;Acc:HGNC:2336]	5527	0.0	-0.29561242	No	
+row_15	IL4	interleukin 4 [Source:HGNC Symbol;Acc:HGNC:6014]	5749	0.0	-0.31266883	No	
+row_16	ALOX15	arachidonate 15-lipoxygenase [Source:HGNC Symbol;Acc:HGNC:433]	6230	0.0	-0.34971446	No	
+row_17	TNFSF4	TNF superfamily member 4 [Source:HGNC Symbol;Acc:HGNC:11934]	6452	0.0	-0.36677086	No	
+row_18	ARG1	arginase 1 [Source:HGNC Symbol;Acc:HGNC:663]	7206	-0.005167699884623289	-0.4234199	No	
+row_19	SUSD4	sushi domain containing 4 [Source:HGNC Symbol;Acc:HGNC:25470]	7257	-0.005559219047427177	-0.4257014	No	
+row_20	IFNB1	interferon beta 1 [Source:HGNC Symbol;Acc:HGNC:5434]	7792	-0.008993898518383503	-0.46436268	No	
+row_21	TBX21	T-box transcription factor 21 [Source:HGNC Symbol;Acc:HGNC:11599]	8478	-0.015450925566256046	-0.51284575	No	
+row_22	JAK3	Janus kinase 3 [Source:HGNC Symbol;Acc:HGNC:6193]	8562	-0.01637383922934532	-0.51460564	No	
+row_23	IL4I1	interleukin 4 induced 1 [Source:HGNC Symbol;Acc:HGNC:19094]	8702	-0.018086237832903862	-0.52020156	No	
+row_24	PTPN6	protein tyrosine phosphatase non-receptor type 6 [Source:HGNC Symbol;Acc:HGNC:9658]	8904	-0.02028009481728077	-0.5299601	No	
+row_25	PARP3	poly(ADP-ribose) polymerase family member 3 [Source:HGNC Symbol;Acc:HGNC:273]	9011	-0.021540846675634384	-0.5320289	No	
+row_26	BCL6	BCL6 transcription repressor [Source:HGNC Symbol;Acc:HGNC:1001]	9382	-0.026150954887270927	-0.5531648	No	
+row_27	ZC3H12A	zinc finger CCCH-type containing 12A [Source:HGNC Symbol;Acc:HGNC:26259]	9620	-0.029931779950857162	-0.5629631	No	
+row_28	RC3H1	ring finger and CCCH-type domains 1 [Source:HGNC Symbol;Acc:HGNC:29434]	9663	-0.030568694695830345	-0.55753094	No	
+row_29	RC3H2	ring finger and CCCH-type domains 2 [Source:HGNC Symbol;Acc:HGNC:21461]	9988	-0.03608500584959984	-0.5722979	No	
+row_30	IL27RA	interleukin 27 receptor subunit alpha [Source:HGNC Symbol;Acc:HGNC:17290]	10178	-0.03932202234864235	-0.5757272	No	
+row_31	ZBTB7B	zinc finger and BTB domain containing 7B [Source:HGNC Symbol;Acc:HGNC:18668]	10964	-0.05654934048652649	-0.6202668	Yes	
+row_32	AHR	aryl hydrocarbon receptor [Source:HGNC Symbol;Acc:HGNC:348]	11092	-0.059815287590026855	-0.61309624	Yes	
+row_33	CR1L	complement C3b/C4b receptor 1 like [Source:HGNC Symbol;Acc:HGNC:2335]	11130	-0.06117263436317444	-0.59859455	Yes	
+row_34	DUSP22	dual specificity phosphatase 22 [Source:HGNC Symbol;Acc:HGNC:16077]	11449	-0.0706525444984436	-0.6030901	Yes	
+row_35	SMAD7	SMAD family member 7 [Source:HGNC Symbol;Acc:HGNC:6773]	11606	-0.07638461142778397	-0.5934563	Yes	
+row_36	HAVCR2	hepatitis A virus cellular receptor 2 [Source:HGNC Symbol;Acc:HGNC:18437]	11695	-0.08021179586648941	-0.5774885	Yes	
+row_37	NOD2	nucleotide binding oligomerization domain containing 2 [Source:HGNC Symbol;Acc:HGNC:5331]	11701	-0.08061856031417847	-0.5549995	Yes	
+row_38	NDFIP1	Nedd4 family interacting protein 1 [Source:HGNC Symbol;Acc:HGNC:17592]	12063	-0.10022640228271484	-0.5544223	Yes	
+row_39	CEACAM1	CEA cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:1814]	12589	-0.16290485858917236	-0.54871786	Yes	
+row_40	LILRB4	leukocyte immunoglobulin like receptor B4 [Source:HGNC Symbol;Acc:HGNC:6608]	12610	-0.1688879132270813	-0.5023406	Yes	
+row_41	IL7R	interleukin 7 receptor [Source:HGNC Symbol;Acc:HGNC:6024]	12655	-0.1797756552696228	-0.4547264	Yes	
+row_42	CLEC4G	C-type lectin domain family 4 member G [Source:HGNC Symbol;Acc:HGNC:24591]	12685	-0.18922553956508636	-0.40327317	Yes	
+row_43	IL1RL1	interleukin 1 receptor like 1 [Source:HGNC Symbol;Acc:HGNC:5998]	12822	-0.23427365720272064	-0.34729594	Yes	
+row_44	PTPRC	protein tyrosine phosphatase receptor type C [Source:HGNC Symbol;Acc:HGNC:9666]	12842	-0.2467222660779953	-0.27875662	Yes	
+row_45	FCGR2B	Fc fragment of IgG receptor IIb [Source:HGNC Symbol;Acc:HGNC:3618]	12873	-0.27246883511543274	-0.20376085	Yes	
+row_46	SAMSN1	"SAM domain, SH3 domain and nuclear localization signals 1 [Source:HGNC Symbol;Acc:HGNC:10528]"	12877	-0.2737007737159729	-0.12633172	Yes	
+row_47	KLRD1	killer cell lectin like receptor D1 [Source:HGNC Symbol;Acc:HGNC:6378]	12973	-0.4795045852661133	0.0023923907	Yes	

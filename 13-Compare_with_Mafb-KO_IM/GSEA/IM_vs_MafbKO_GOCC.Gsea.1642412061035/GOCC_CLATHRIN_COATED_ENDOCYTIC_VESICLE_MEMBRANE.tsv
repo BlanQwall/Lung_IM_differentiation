@@ -1,0 +1,48 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOE	apolipoprotein E [Source:HGNC Symbol;Acc:HGNC:613]	3	1.5168840885162354	0.2659723	Yes	
+row_1	CLTC	clathrin heavy chain [Source:HGNC Symbol;Acc:HGNC:2092]	89	0.2674228250980377	0.30634367	Yes	
+row_2	TF	transferrin [Source:HGNC Symbol;Acc:HGNC:11740]	96	0.2543249726295471	0.3505131	Yes	
+row_3	FCGR1A	Fc fragment of IgG receptor Ia [Source:HGNC Symbol;Acc:HGNC:3613]	128	0.21077312529087067	0.38511014	Yes	
+row_4	HBEGF	heparin binding EGF like growth factor [Source:HGNC Symbol;Acc:HGNC:3059]	228	0.14651067554950714	0.4031818	Yes	
+row_5	TFRC	transferrin receptor [Source:HGNC Symbol;Acc:HGNC:11763]	262	0.13906192779541016	0.42503962	Yes	
+row_6	CD4	CD4 molecule [Source:HGNC Symbol;Acc:HGNC:1678]	276	0.13608597218990326	0.44791862	Yes	
+row_7	ADRB2	adrenoceptor beta 2 [Source:HGNC Symbol;Acc:HGNC:286]	384	0.11317936331033707	0.45952347	Yes	
+row_8	AP2M1	adaptor related protein complex 2 subunit mu 1 [Source:HGNC Symbol;Acc:HGNC:564]	477	0.1017652153968811	0.47028276	Yes	
+row_9	AP2S1	adaptor related protein complex 2 subunit sigma 1 [Source:HGNC Symbol;Acc:HGNC:565]	575	0.09257934242486954	0.47904414	Yes	
+row_10	VAMP8	vesicle associated membrane protein 8 [Source:HGNC Symbol;Acc:HGNC:12647]	997	0.06760358065366745	0.45841858	Yes	
+row_11	SLC2A8	solute carrier family 2 member 8 [Source:HGNC Symbol;Acc:HGNC:13812]	1021	0.06677955389022827	0.46836302	Yes	
+row_12	LDLRAP1	low density lipoprotein receptor adaptor protein 1 [Source:HGNC Symbol;Acc:HGNC:18640]	1099	0.0641816109418869	0.47368422	Yes	
+row_13	AP2A2	adaptor related protein complex 2 subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:562]	1102	0.06413561850786209	0.4847853	Yes	
+row_14	RAB35	"RAB35, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9774]"	1812	0.044895775616168976	0.43794897	No	
+row_15	VAMP3	vesicle associated membrane protein 3 [Source:HGNC Symbol;Acc:HGNC:12644]	1894	0.043361417949199677	0.4393077	No	
+row_16	CD207	CD207 molecule [Source:HGNC Symbol;Acc:HGNC:17935]	2264	0.0361829437315464	0.41718096	No	
+row_17	HLA-DRB5	"major histocompatibility complex, class II, DR beta 5 [Source:HGNC Symbol;Acc:HGNC:4953]"	3359	0.02118586376309395	0.33647233	No	
+row_18	TGFA	transforming growth factor alpha [Source:HGNC Symbol;Acc:HGNC:11765]	4751	0.007918897084891796	0.23051523	No	
+row_19	EPN2	epsin 2 [Source:HGNC Symbol;Acc:HGNC:18639]	4913	0.0065559688955545425	0.21924101	No	
+row_20	EGF	epidermal growth factor [Source:HGNC Symbol;Acc:HGNC:3229]	5599	0.0	0.16637792	No	
+row_21	AVPR2	arginine vasopressin receptor 2 [Source:HGNC Symbol;Acc:HGNC:897]	6223	0.0	0.11829951	No	
+row_22	CD3G	CD3g molecule [Source:HGNC Symbol;Acc:HGNC:1675]	6722	0.0	0.07986765	No	
+row_23	CD3D	CD3d molecule [Source:HGNC Symbol;Acc:HGNC:1673]	6723	0.0	0.07986765	No	
+row_24	EGFR	epidermal growth factor receptor [Source:HGNC Symbol;Acc:HGNC:3236]	6817	-5.183421890251338E-4	0.072781585	No	
+row_25	FZD5	frizzled class receptor 5 [Source:HGNC Symbol;Acc:HGNC:4043]	6847	-0.0010687002213671803	0.07073113	No	
+row_26	SGIP1	SH3GL interacting endocytic adaptor 1 [Source:HGNC Symbol;Acc:HGNC:25412]	7646	-0.007681887596845627	0.010495684	No	
+row_27	EREG	epiregulin [Source:HGNC Symbol;Acc:HGNC:3443]	7665	-0.007776376325637102	0.010471286	No	
+row_28	IGF2R	insulin like growth factor 2 receptor [Source:HGNC Symbol;Acc:HGNC:5467]	7968	-0.01069930475205183	-0.010957116	No	
+row_29	VAMP2	vesicle associated membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:12643]	8247	-0.013298342935740948	-0.030077267	No	
+row_30	AP2A1	adaptor related protein complex 2 subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:561]	8624	-0.017211414873600006	-0.05607359	No	
+row_31	M6PR	"mannose-6-phosphate receptor, cation dependent [Source:HGNC Symbol;Acc:HGNC:6752]"	8975	-0.021111365407705307	-0.079379015	No	
+row_32	FZD4	frizzled class receptor 4 [Source:HGNC Symbol;Acc:HGNC:4042]	10211	-0.03996257483959198	-0.16767375	No	
+row_33	RAB5A	"RAB5A, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9783]"	10463	-0.04405723512172699	-0.17931224	No	
+row_34	AP2B1	adaptor related protein complex 2 subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:563]	10494	-0.0446755476295948	-0.17378713	No	
+row_35	VAMP7	vesicle associated membrane protein 7 [Source:HGNC Symbol;Acc:HGNC:11486]	10515	-0.04511005058884621	-0.16741405	No	
+row_36	SCARB2	scavenger receptor class B member 2 [Source:HGNC Symbol;Acc:HGNC:1665]	10581	-0.046456437557935715	-0.16427743	No	
+row_37	VAMP4	vesicle associated membrane protein 4 [Source:HGNC Symbol;Acc:HGNC:12645]	11506	-0.0727650597691536	-0.22281492	No	
+row_38	HLA-DQA1	"major histocompatibility complex, class II, DQ alpha 1 [Source:HGNC Symbol;Acc:HGNC:4942]"	12197	-0.11103520542383194	-0.25657788	No	
+row_39	CD74	CD74 molecule [Source:HGNC Symbol;Acc:HGNC:1697]	12376	-0.12650717794895172	-0.24811333	No	
+row_40	TGOLN2	trans-golgi network protein 2 [Source:HGNC Symbol;Acc:HGNC:15450]	12410	-0.129704549908638	-0.22789767	No	
+row_41	HLA-DRB1	"major histocompatibility complex, class II, DR beta 1 [Source:HGNC Symbol;Acc:HGNC:4948]"	12464	-0.13899697363376617	-0.20759471	No	
+row_42	IL7R	interleukin 7 receptor [Source:HGNC Symbol;Acc:HGNC:6024]	12655	-0.1797756552696228	-0.19070794	No	
+row_43	HLA-DQB2	"major histocompatibility complex, class II, DQ beta 2 [Source:HGNC Symbol;Acc:HGNC:4945]"	12753	-0.2114628404378891	-0.16108324	No	
+row_44	LDLR	low density lipoprotein receptor [Source:HGNC Symbol;Acc:HGNC:6547]	12802	-0.2263742983341217	-0.12506022	No	
+row_45	AREG	amphiregulin [Source:HGNC Symbol;Acc:HGNC:651]	12940	-0.35316988825798035	-0.073653705	No	
+row_46	CD9	CD9 molecule [Source:HGNC Symbol;Acc:HGNC:1709]	12967	-0.4473981261253357	0.0028554257	No	
