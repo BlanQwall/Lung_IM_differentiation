@@ -1,0 +1,53 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	H3-3B	H3.3 histone B [Source:HGNC Symbol;Acc:HGNC:4765]	105	0.24464203417301178	0.057759188	No	
+row_1	RGS1	regulator of G protein signaling 1 [Source:HGNC Symbol;Acc:HGNC:9991]	200	0.16084454953670502	0.093806654	No	
+row_2	FNDC3A	fibronectin type III domain containing 3A [Source:HGNC Symbol;Acc:HGNC:20296]	875	0.07238892465829849	0.061261777	No	
+row_3	PAXBP1	PAX3 and PAX7 binding protein 1 [Source:HGNC Symbol;Acc:HGNC:13579]	1234	0.05962109565734863	0.04967529	No	
+row_4	SCNM1	sodium channel modifier 1 [Source:HGNC Symbol;Acc:HGNC:23136]	1526	0.051229238510131836	0.04100199	No	
+row_5	FAHD1	fumarylacetoacetate hydrolase domain containing 1 [Source:HGNC Symbol;Acc:HGNC:14169]	1717	0.046977411955595016	0.03898139	No	
+row_6	DNAJB4	DnaJ heat shock protein family (Hsp40) member B4 [Source:HGNC Symbol;Acc:HGNC:14886]	1820	0.04473857581615448	0.043151814	No	
+row_7	CEP128	centrosomal protein 128 [Source:HGNC Symbol;Acc:HGNC:20359]	2284	0.03580329194664955	0.017046584	No	
+row_8	PER1	period circadian regulator 1 [Source:HGNC Symbol;Acc:HGNC:8845]	2375	0.03437477722764015	0.01935317	No	
+row_9	ILF2	interleukin enhancer binding factor 2 [Source:HGNC Symbol;Acc:HGNC:6037]	2454	0.0332292802631855	0.022277778	No	
+row_10	BIRC3	baculoviral IAP repeat containing 3 [Source:HGNC Symbol;Acc:HGNC:591]	2512	0.032235052436590195	0.026555955	No	
+row_11	MCM3	minichromosome maintenance complex component 3 [Source:HGNC Symbol;Acc:HGNC:6945]	2584	0.03136799484491348	0.029519863	No	
+row_12	TRAFD1	TRAF-type zinc finger domain containing 1 [Source:HGNC Symbol;Acc:HGNC:24808]	3325	0.021519793197512627	-0.02181595	No	
+row_13	SYTL3	synaptotagmin like 3 [Source:HGNC Symbol;Acc:HGNC:15587]	3842	0.015705665573477745	-0.05742382	No	
+row_14	LCP1	lymphocyte cytosolic protein 1 [Source:HGNC Symbol;Acc:HGNC:6528]	3906	0.015069210901856422	-0.058230445	No	
+row_15	CCR9	C-C motif chemokine receptor 9 [Source:HGNC Symbol;Acc:HGNC:1610]	4530	0.009375924244523048	-0.10380311	No	
+row_16	HAGH	hydroxyacylglutathione hydrolase [Source:HGNC Symbol;Acc:HGNC:4805]	4576	0.00904903095215559	-0.10484093	No	
+row_17	GOLM2	golgi membrane protein 2 [Source:HGNC Symbol;Acc:HGNC:24892]	4850	0.007101068738847971	-0.124005295	No	
+row_18	POLR3A	RNA polymerase III subunit A [Source:HGNC Symbol;Acc:HGNC:30074]	5414	5.27838827110827E-4	-0.16732801	No	
+row_19	ATP2C1	ATPase secretory pathway Ca2+ transporting 1 [Source:HGNC Symbol;Acc:HGNC:13211]	5428	3.296876384411007E-4	-0.16824289	No	
+row_20	CDK1	cyclin dependent kinase 1 [Source:HGNC Symbol;Acc:HGNC:1722]	5441	1.4802794612478465E-4	-0.16912946	No	
+row_21	H2BC3	H2B clustered histone 3 [Source:HGNC Symbol;Acc:HGNC:4751]	6347	0.0	-0.23899744	No	
+row_22	TLL2	tolloid like 2 [Source:HGNC Symbol;Acc:HGNC:11844]	6376	0.0	-0.24115911	No	
+row_23	H2BC13	H2B clustered histone 13 [Source:HGNC Symbol;Acc:HGNC:4748]	6736	0.0	-0.2688747	No	
+row_24	BABAM1	BRISC and BRCA1 A complex member 1 [Source:HGNC Symbol;Acc:HGNC:25008]	7079	-0.0036587021313607693	-0.2942928	No	
+row_25	ARMC1	armadillo repeat containing 1 [Source:HGNC Symbol;Acc:HGNC:17684]	7287	-0.005800369195640087	-0.308712	No	
+row_26	KLHDC9	kelch domain containing 9 [Source:HGNC Symbol;Acc:HGNC:28489]	7310	-0.0059570069424808025	-0.30880666	No	
+row_27	H2BC5	H2B clustered histone 5 [Source:HGNC Symbol;Acc:HGNC:4747]	7431	-0.006533145904541016	-0.316312	No	
+row_28	GRAMD1B	GRAM domain containing 1B [Source:HGNC Symbol;Acc:HGNC:29214]	8552	-0.01631064899265766	-0.3983871	No	
+row_29	MPND	MPN domain containing [Source:HGNC Symbol;Acc:HGNC:25934]	8589	-0.016778627410531044	-0.39664903	No	
+row_30	HYLS1	HYLS1 centriolar and ciliogenesis associated [Source:HGNC Symbol;Acc:HGNC:26558]	8675	-0.01780768856406212	-0.39841682	No	
+row_31	KATNB1	katanin regulatory subunit B1 [Source:HGNC Symbol;Acc:HGNC:6217]	8741	-0.01846439018845558	-0.39846376	No	
+row_32	WDCP	WD repeat and coiled coil containing [Source:HGNC Symbol;Acc:HGNC:26157]	8964	-0.020938556641340256	-0.40996534	No	
+row_33	DUSP19	dual specificity phosphatase 19 [Source:HGNC Symbol;Acc:HGNC:18894]	9144	-0.023000521585345268	-0.41759205	No	
+row_34	LYSMD1	LysM domain containing 1 [Source:HGNC Symbol;Acc:HGNC:32070]	9216	-0.02386453188955784	-0.4166483	No	
+row_35	UBALD2	UBA like domain containing 2 [Source:HGNC Symbol;Acc:HGNC:28438]	9236	-0.024137631058692932	-0.41161653	No	
+row_36	IL21R	interleukin 21 receptor [Source:HGNC Symbol;Acc:HGNC:6006]	9629	-0.030042029917240143	-0.43379152	No	
+row_37	ARID4A	AT-rich interaction domain 4A [Source:HGNC Symbol;Acc:HGNC:9885]	9664	-0.03062056377530098	-0.42817238	No	
+row_38	MRPL22	mitochondrial ribosomal protein L22 [Source:HGNC Symbol;Acc:HGNC:14480]	9716	-0.03143550455570221	-0.42364624	No	
+row_39	RAB4B	"RAB4B, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9782]"	9728	-0.031623516231775284	-0.4159814	No	
+row_40	BTRC	beta-transducin repeat containing E3 ubiquitin protein ligase [Source:HGNC Symbol;Acc:HGNC:1144]	9860	-0.03390375152230263	-0.41696692	No	
+row_41	STIP1	stress induced phosphoprotein 1 [Source:HGNC Symbol;Acc:HGNC:11387]	9908	-0.03470347076654434	-0.41125214	No	
+row_42	TRMT1	tRNA methyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:25980]	10695	-0.049116648733615875	-0.4587093	No	
+row_43	TBC1D1	TBC1 domain family member 1 [Source:HGNC Symbol;Acc:HGNC:11578]	11398	-0.06888049840927124	-0.49436042	Yes	
+row_44	STAP2	signal transducing adaptor family member 2 [Source:HGNC Symbol;Acc:HGNC:30430]	11423	-0.06984749436378479	-0.4774081	Yes	
+row_45	DAD1	defender against cell death 1 [Source:HGNC Symbol;Acc:HGNC:2664]	11691	-0.08007719367742538	-0.47646177	Yes	
+row_46	ATP6V1G1	ATPase H+ transporting V1 subunit G1 [Source:HGNC Symbol;Acc:HGNC:864]	12042	-0.099026158452034	-0.47682154	Yes	
+row_47	ATP5F1B	ATP synthase F1 subunit beta [Source:HGNC Symbol;Acc:HGNC:830]	12609	-0.1687554270029068	-0.47508365	Yes	
+row_48	GNAS	GNAS complex locus [Source:HGNC Symbol;Acc:HGNC:4392]	12674	-0.18636642396450043	-0.42984882	Yes	
+row_49	HLA-DMB	"major histocompatibility complex, class II, DM beta [Source:HGNC Symbol;Acc:HGNC:4935]"	12893	-0.2856333553791046	-0.36977732	Yes	
+row_50	CYTIP	cytohesin 1 interacting protein [Source:HGNC Symbol;Acc:HGNC:9506]	12968	-0.4561557173728943	-0.25267863	Yes	
+row_51	CD209	CD209 molecule [Source:HGNC Symbol;Acc:HGNC:1641]	13003	-0.9485527873039246	7.70936E-5	Yes	

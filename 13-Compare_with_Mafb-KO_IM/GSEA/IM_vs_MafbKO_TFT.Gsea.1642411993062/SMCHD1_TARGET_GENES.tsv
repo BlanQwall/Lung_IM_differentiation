@@ -1,0 +1,25 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	LAMP1	lysosomal associated membrane protein 1 [Source:HGNC Symbol;Acc:HGNC:6499]	46	0.3892342746257782	0.2961994	Yes	
+row_1	CXCL12	C-X-C motif chemokine ligand 12 [Source:HGNC Symbol;Acc:HGNC:10672]	391	0.11231471598148346	0.3561909	Yes	
+row_2	CTSA	cathepsin A [Source:HGNC Symbol;Acc:HGNC:9251]	463	0.10334977507591248	0.43030936	Yes	
+row_3	MT-CYB	mitochondrially encoded cytochrome b [Source:HGNC Symbol;Acc:HGNC:7427]	531	0.09617126733064651	0.4992079	Yes	
+row_4	RPL7L1	ribosomal protein L7 like 1 [Source:HGNC Symbol;Acc:HGNC:21370]	533	0.09605339169502258	0.57310003	Yes	
+row_5	METTL15	methyltransferase like 15 [Source:HGNC Symbol;Acc:HGNC:26606]	1108	0.06377092003822327	0.57799053	Yes	
+row_6	WASHC2C	WASH complex subunit 2C [Source:HGNC Symbol;Acc:HGNC:23414]	1112	0.06370163708925247	0.626815	Yes	
+row_7	NEURL2	neuralized E3 ubiquitin protein ligase 2 [Source:HGNC Symbol;Acc:HGNC:16156]	1459	0.05283988639712334	0.64085186	Yes	
+row_8	MT-ND6	mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 6 [Source:HGNC Symbol;Acc:HGNC:7462]	2443	0.03338759019970894	0.590837	No	
+row_9	CEP170	centrosomal protein 170 [Source:HGNC Symbol;Acc:HGNC:28920]	2836	0.027904849499464035	0.5821281	No	
+row_10	GLCCI1	glucocorticoid induced 1 [Source:HGNC Symbol;Acc:HGNC:18713]	3766	0.016426140442490578	0.5232115	No	
+row_11	RABGGTB	Rab geranylgeranyltransferase subunit beta [Source:HGNC Symbol;Acc:HGNC:9796]	5026	0.005528020206838846	0.43048063	No	
+row_12	AUNIP	aurora kinase A and ninein interacting protein [Source:HGNC Symbol;Acc:HGNC:28363]	6272	0.0	0.3345712	No	
+row_13	ITGA7	integrin subunit alpha 7 [Source:HGNC Symbol;Acc:HGNC:6143]	6638	0.0	0.3064532	No	
+row_14	GNPTG	N-acetylglucosamine-1-phosphate transferase subunit gamma [Source:HGNC Symbol;Acc:HGNC:23026]	6955	-0.0023333008866757154	0.28390676	No	
+row_15	ALG1	ALG1 chitobiosyldiphosphodolichol beta-mannosyltransferase [Source:HGNC Symbol;Acc:HGNC:18294]	7103	-0.004027390852570534	0.27568394	No	
+row_16	TSR3	TSR3 ribosome maturation factor [Source:HGNC Symbol;Acc:HGNC:14175]	7284	-0.005766073241829872	0.26625788	No	
+row_17	ALG10B	"ALG10 alpha-1,2-glucosyltransferase B [Source:HGNC Symbol;Acc:HGNC:31088]"	8156	-0.01239600870758295	0.20870577	No	
+row_18	LRIF1	ligand dependent nuclear receptor interacting factor 1 [Source:HGNC Symbol;Acc:HGNC:30299]	8231	-0.013123000971972942	0.21311094	No	
+row_19	INTS2	integrator complex subunit 2 [Source:HGNC Symbol;Acc:HGNC:29241]	9810	-0.032949693500995636	0.116922684	No	
+row_20	TMEM68	transmembrane protein 68 [Source:HGNC Symbol;Acc:HGNC:26510]	9902	-0.03453904762864113	0.1365104	No	
+row_21	NAGPA	N-acetylglucosamine-1-phosphodiester alpha-N-acetylglucosaminidase [Source:HGNC Symbol;Acc:HGNC:17378]	10246	-0.04050852358341217	0.14128213	No	
+row_22	SLCO3A1	solute carrier organic anion transporter family member 3A1 [Source:HGNC Symbol;Acc:HGNC:10952]	10271	-0.040856290608644485	0.17089605	No	
+row_23	BLOC1S1	biogenesis of lysosomal organelles complex 1 subunit 1 [Source:HGNC Symbol;Acc:HGNC:4200]	10781	-0.051378004252910614	0.17125027	No	

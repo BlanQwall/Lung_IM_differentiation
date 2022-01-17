@@ -1,0 +1,57 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TMEM37	transmembrane protein 37 [Source:HGNC Symbol;Acc:HGNC:18216]	12	0.6644507050514221	0.22493671	Yes	
+row_1	FXYD2	FXYD domain containing ion transport regulator 2 [Source:HGNC Symbol;Acc:HGNC:4026]	29	0.45909813046455383	0.37976006	Yes	
+row_2	CCN1	cellular communication network factor 1 [Source:HGNC Symbol;Acc:HGNC:2654]	245	0.14276422560214996	0.4116856	Yes	
+row_3	MEF2D	myocyte enhancer factor 2D [Source:HGNC Symbol;Acc:HGNC:6997]	415	0.10919038951396942	0.43575093	Yes	
+row_4	DDX17	DEAD-box helicase 17 [Source:HGNC Symbol;Acc:HGNC:2740]	595	0.08980665355920792	0.452455	Yes	
+row_5	XPO1	exportin 1 [Source:HGNC Symbol;Acc:HGNC:12825]	871	0.0725000873208046	0.45586243	Yes	
+row_6	MITF	melanocyte inducing transcription factor [Source:HGNC Symbol;Acc:HGNC:7105]	984	0.06824170053005219	0.47041017	Yes	
+row_7	UBR5	ubiquitin protein ligase E3 component n-recognin 5 [Source:HGNC Symbol;Acc:HGNC:16806]	1036	0.06620567291975021	0.48897663	Yes	
+row_8	ABRAXAS2	"abraxas 2, BRISC complex subunit [Source:HGNC Symbol;Acc:HGNC:28975]"	1169	0.06152624264359474	0.4996971	Yes	
+row_9	SCAMP1	secretory carrier membrane protein 1 [Source:HGNC Symbol;Acc:HGNC:10563]	1579	0.049997471272945404	0.48510703	No	
+row_10	MAP3K8	mitogen-activated protein kinase kinase kinase 8 [Source:HGNC Symbol;Acc:HGNC:6860]	1810	0.04492093622684479	0.4826148	No	
+row_11	PIK3IP1	phosphoinositide-3-kinase interacting protein 1 [Source:HGNC Symbol;Acc:HGNC:24942]	2198	0.037592995911836624	0.46550712	No	
+row_12	OGT	O-linked N-acetylglucosamine (GlcNAc) transferase [Source:HGNC Symbol;Acc:HGNC:8127]	2659	0.03019529953598976	0.44024727	No	
+row_13	NPDC1	"neural proliferation, differentiation and control 1 [Source:HGNC Symbol;Acc:HGNC:7899]"	2760	0.02882918156683445	0.44232443	No	
+row_14	HOXB4	homeobox B4 [Source:HGNC Symbol;Acc:HGNC:5115]	2780	0.028574639931321144	0.45057037	No	
+row_15	HSPG2	heparan sulfate proteoglycan 2 [Source:HGNC Symbol;Acc:HGNC:5273]	3590	0.01830567792057991	0.39431706	No	
+row_16	SKI	SKI proto-oncogene [Source:HGNC Symbol;Acc:HGNC:10896]	3673	0.017401084303855896	0.3938996	No	
+row_17	CEND1	cell cycle exit and neuronal differentiation 1 [Source:HGNC Symbol;Acc:HGNC:24153]	3689	0.017229830846190453	0.39859805	No	
+row_18	DLGAP4	DLG associated protein 4 [Source:HGNC Symbol;Acc:HGNC:24476]	4330	0.010804628022015095	0.35284615	No	
+row_19	ZNF503	zinc finger protein 503 [Source:HGNC Symbol;Acc:HGNC:23589]	4341	0.010680624283850193	0.35570452	No	
+row_20	RAMP2	receptor activity modifying protein 2 [Source:HGNC Symbol;Acc:HGNC:9844]	4483	0.009669464081525803	0.34810254	No	
+row_21	RASGEF1A	RasGEF domain family member 1A [Source:HGNC Symbol;Acc:HGNC:24246]	4589	0.008960016071796417	0.3430395	No	
+row_22	PPFIA3	PTPRF interacting protein alpha 3 [Source:HGNC Symbol;Acc:HGNC:9247]	4671	0.008437407203018665	0.3396523	No	
+row_23	ST8SIA1	"ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:10869]"	5042	0.005348962731659412	0.3128969	No	
+row_24	PPM1D	"protein phosphatase, Mg2+/Mn2+ dependent 1D [Source:HGNC Symbol;Acc:HGNC:9277]"	5104	0.004453988745808601	0.30970016	No	
+row_25	CD86	CD86 molecule [Source:HGNC Symbol;Acc:HGNC:1705]	5193	0.003349440870806575	0.30404282	No	
+row_26	NFIB	nuclear factor I B [Source:HGNC Symbol;Acc:HGNC:7785]	5203	0.003260701661929488	0.30445617	No	
+row_27	CHPF	chondroitin polymerizing factor [Source:HGNC Symbol;Acc:HGNC:24291]	5420	4.268310440238565E-4	0.28792045	No	
+row_28	EGF	epidermal growth factor [Source:HGNC Symbol;Acc:HGNC:3229]	5599	0.0	0.2741742	No	
+row_29	RAB37	"RAB37, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:30268]"	5692	0.0	0.2670694	No	
+row_30	PTGES	prostaglandin E synthase [Source:HGNC Symbol;Acc:HGNC:9599]	5784	0.0	0.26004183	No	
+row_31	CPLX2	complexin 2 [Source:HGNC Symbol;Acc:HGNC:2310]	5964	0.0	0.24621838	No	
+row_32	TNFSF18	TNF superfamily member 18 [Source:HGNC Symbol;Acc:HGNC:11932]	6196	0.0	0.22837916	No	
+row_33	COL1A2	collagen type I alpha 2 chain [Source:HGNC Symbol;Acc:HGNC:2198]	6249	0.0	0.22436342	No	
+row_34	PELO	pelota mRNA surveillance and ribosome rescue factor [Source:HGNC Symbol;Acc:HGNC:8829]	6556	0.0	0.20073225	No	
+row_35	CAPN9	calpain 9 [Source:HGNC Symbol;Acc:HGNC:1486]	6567	0.0	0.19995998	No	
+row_36	SLC6A9	solute carrier family 6 member 9 [Source:HGNC Symbol;Acc:HGNC:11056]	6580	0.0	0.19903328	No	
+row_37	SRPX	sushi repeat containing protein X-linked [Source:HGNC Symbol;Acc:HGNC:11309]	6704	0.0	0.18953447	No	
+row_38	MRPL45	mitochondrial ribosomal protein L45 [Source:HGNC Symbol;Acc:HGNC:16651]	6891	-0.0015291125746443868	0.1756902	No	
+row_39	MANEAL	mannosidase endo-alpha like [Source:HGNC Symbol;Acc:HGNC:26452]	7734	-0.008366206660866737	0.11350977	No	
+row_40	IFNB1	interferon beta 1 [Source:HGNC Symbol;Acc:HGNC:5434]	7792	-0.008993898518383503	0.11216513	No	
+row_41	ITGA1	integrin subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:6134]	8032	-0.011365734972059727	0.09757161	No	
+row_42	SOCS2	suppressor of cytokine signaling 2 [Source:HGNC Symbol;Acc:HGNC:19382]	9023	-0.02166551910340786	0.028482482	No	
+row_43	MAP4K2	mitogen-activated protein kinase kinase kinase kinase 2 [Source:HGNC Symbol;Acc:HGNC:6864]	9207	-0.023691194131970406	0.022403346	No	
+row_44	MED1	mediator complex subunit 1 [Source:HGNC Symbol;Acc:HGNC:9234]	9464	-0.027425317093729973	0.011956032	No	
+row_45	AP5B1	adaptor related protein complex 5 subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:25104]	9526	-0.02838100679218769	0.016892659	No	
+row_46	STIP1	stress induced phosphoprotein 1 [Source:HGNC Symbol;Acc:HGNC:11387]	9908	-0.03470347076654434	-7.3388347E-4	No	
+row_47	VEGFA	vascular endothelial growth factor A [Source:HGNC Symbol;Acc:HGNC:12680]	10361	-0.04256545007228851	-0.02117099	No	
+row_48	NIM1K	NIM1 serine/threonine protein kinase [Source:HGNC Symbol;Acc:HGNC:28646]	10819	-0.052279721945524216	-0.038692106	No	
+row_49	MRPS6	mitochondrial ribosomal protein S6 [Source:HGNC Symbol;Acc:HGNC:14051]	11042	-0.05864495784044266	-0.035901397	No	
+row_50	PHF6	PHD finger protein 6 [Source:HGNC Symbol;Acc:HGNC:18145]	11171	-0.06232871860265732	-0.024599237	No	
+row_51	SPAG9	sperm associated antigen 9 [Source:HGNC Symbol;Acc:HGNC:14524]	11286	-0.06587546318769455	-0.011010288	No	
+row_52	ATP1B3	ATPase Na+/K+ transporting subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:806]	11317	-0.0665503516793251	0.009295061	No	
+row_53	DNAJB5	DnaJ heat shock protein family (Hsp40) member B5 [Source:HGNC Symbol;Acc:HGNC:14887]	11822	-0.08669991791248322	-1.553908E-4	No	
+row_54	SKIL	SKI like proto-oncogene [Source:HGNC Symbol;Acc:HGNC:10897]	12015	-0.09797000139951706	0.018319666	No	
+row_55	DNAJA1	DnaJ heat shock protein family (Hsp40) member A1 [Source:HGNC Symbol;Acc:HGNC:5229]	12618	-0.17056609690189362	0.029809274	No	

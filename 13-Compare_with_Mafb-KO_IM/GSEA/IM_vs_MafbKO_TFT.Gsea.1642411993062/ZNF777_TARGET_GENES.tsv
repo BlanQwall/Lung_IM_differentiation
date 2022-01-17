@@ -1,0 +1,36 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	LRWD1	leucine rich repeats and WD repeat domain containing 1 [Source:HGNC Symbol;Acc:HGNC:21769]	1480	0.05229896306991577	-0.082500406	No	
+row_1	LSG1	large 60S subunit nuclear export GTPase 1 [Source:HGNC Symbol;Acc:HGNC:25652]	1519	0.05137120187282562	-0.054381892	No	
+row_2	KDM5A	lysine demethylase 5A [Source:HGNC Symbol;Acc:HGNC:9886]	2480	0.03272322192788124	-0.108621195	No	
+row_3	POC1B	POC1 centriolar protein B [Source:HGNC Symbol;Acc:HGNC:30836]	2557	0.03170489892363548	-0.09531868	No	
+row_4	UBE2I	ubiquitin conjugating enzyme E2 I [Source:HGNC Symbol;Acc:HGNC:12485]	2843	0.02784545160830021	-0.1004629	No	
+row_5	MBTPS2	"membrane bound transcription factor peptidase, site 2 [Source:HGNC Symbol;Acc:HGNC:15455]"	3049	0.02497861720621586	-0.101171724	No	
+row_6	RPS29	ribosomal protein S29 [Source:HGNC Symbol;Acc:HGNC:10419]	3379	0.020924154669046402	-0.113891564	No	
+row_7	GNAL	G protein subunit alpha L [Source:HGNC Symbol;Acc:HGNC:4388]	3698	0.017181741073727608	-0.12802517	No	
+row_8	LCP1	lymphocyte cytosolic protein 1 [Source:HGNC Symbol;Acc:HGNC:6528]	3906	0.015069210901856422	-0.13487737	No	
+row_9	MRPL13	mitochondrial ribosomal protein L13 [Source:HGNC Symbol;Acc:HGNC:14278]	4117	0.012696539983153343	-0.14339489	No	
+row_10	GSTCD	glutathione S-transferase C-terminal domain containing [Source:HGNC Symbol;Acc:HGNC:25806]	4204	0.011835794895887375	-0.14287211	No	
+row_11	MRPL39	mitochondrial ribosomal protein L39 [Source:HGNC Symbol;Acc:HGNC:14027]	4260	0.011349410749971867	-0.14025317	No	
+row_12	TSEN54	tRNA splicing endonuclease subunit 54 [Source:HGNC Symbol;Acc:HGNC:27561]	4378	0.010406420566141605	-0.14298443	No	
+row_13	INTS12	integrator complex subunit 12 [Source:HGNC Symbol;Acc:HGNC:25067]	4745	0.00795824360102415	-0.1663935	No	
+row_14	THOC1	THO complex 1 [Source:HGNC Symbol;Acc:HGNC:19070]	5022	0.005555061623454094	-0.18431595	No	
+row_15	POLG	"DNA polymerase gamma, catalytic subunit [Source:HGNC Symbol;Acc:HGNC:9179]"	5110	0.004376256838440895	-0.18837875	No	
+row_16	RAB37	"RAB37, member RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:30268]"	5692	0.0	-0.23317444	No	
+row_17	LRR1	leucine rich repeat protein 1 [Source:HGNC Symbol;Acc:HGNC:19742]	6264	0.0	-0.27719912	No	
+row_18	GNAO1	G protein subunit alpha o1 [Source:HGNC Symbol;Acc:HGNC:4389]	6655	0.0	-0.3072685	No	
+row_19	CUX1	cut like homeobox 1 [Source:HGNC Symbol;Acc:HGNC:2557]	6779	-1.4673608529847115E-4	-0.31666324	No	
+row_20	MTBP	MDM2 binding protein [Source:HGNC Symbol;Acc:HGNC:7417]	6790	-2.0954171486664563E-4	-0.3173076	No	
+row_21	APPBP2	amyloid beta precursor protein binding protein 2 [Source:HGNC Symbol;Acc:HGNC:622]	6811	-4.606959118973464E-4	-0.31857118	No	
+row_22	CCDC77	coiled-coil domain containing 77 [Source:HGNC Symbol;Acc:HGNC:28203]	6916	-0.001879944116808474	-0.32545346	No	
+row_23	KIRREL1	kirre like nephrin family adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:15734]	7932	-0.010340306907892227	-0.39746138	No	
+row_24	FAM133B	family with sequence similarity 133 member B [Source:HGNC Symbol;Acc:HGNC:28629]	7972	-0.010714135132730007	-0.39399278	No	
+row_25	FRA10AC1	FRA10A associated CGG repeat 1 [Source:HGNC Symbol;Acc:HGNC:1162]	7976	-0.010780008509755135	-0.38770872	No	
+row_26	RNF130	ring finger protein 130 [Source:HGNC Symbol;Acc:HGNC:18280]	8725	-0.018365805968642235	-0.43428013	No	
+row_27	LRRC63	leucine rich repeat containing 63 [Source:HGNC Symbol;Acc:HGNC:34296]	9148	-0.023047378286719322	-0.45288712	No	
+row_28	RTTN	rotatin [Source:HGNC Symbol;Acc:HGNC:18654]	9530	-0.028447650372982025	-0.46506906	No	
+row_29	CCNB2	cyclin B2 [Source:HGNC Symbol;Acc:HGNC:1580]	9536	-0.028529450297355652	-0.44821158	No	
+row_30	MCCC1	methylcrotonyl-CoA carboxylase subunit 1 [Source:HGNC Symbol;Acc:HGNC:6936]	9954	-0.03544633835554123	-0.45893922	No	
+row_31	SLC44A1	solute carrier family 44 member 1 [Source:HGNC Symbol;Acc:HGNC:18798]	11772	-0.0841982364654541	-0.54814297	Yes	
+row_32	LDHA	lactate dehydrogenase A [Source:HGNC Symbol;Acc:HGNC:6535]	12790	-0.221733957529068	-0.49254045	Yes	
+row_33	GAPDH	glyceraldehyde-3-phosphate dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4141]	12885	-0.2788718342781067	-0.33124003	Yes	
+row_34	FXYD5	FXYD domain containing ion transport regulator 5 [Source:HGNC Symbol;Acc:HGNC:4029]	12986	-0.5631078481674194	0.0013878113	Yes	

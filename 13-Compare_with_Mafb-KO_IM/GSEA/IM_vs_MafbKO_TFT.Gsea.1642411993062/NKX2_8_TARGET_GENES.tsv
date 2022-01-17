@@ -1,0 +1,28 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MDGA1	MAM domain containing glycosylphosphatidylinositol anchor 1 [Source:HGNC Symbol;Acc:HGNC:19267]	963	0.06897952407598495	-0.036018133	No	
+row_1	KDM5A	lysine demethylase 5A [Source:HGNC Symbol;Acc:HGNC:9886]	2480	0.03272322192788124	-0.13471691	No	
+row_2	USP15	ubiquitin specific peptidase 15 [Source:HGNC Symbol;Acc:HGNC:12613]	2958	0.026010364294052124	-0.1570731	No	
+row_3	WASF2	WASP family member 2 [Source:HGNC Symbol;Acc:HGNC:12733]	3756	0.016646485775709152	-0.20926987	No	
+row_4	SYNC	"syncoilin, intermediate filament protein [Source:HGNC Symbol;Acc:HGNC:28897]"	4061	0.013305788859724998	-0.22532856	No	
+row_5	COL4A4	collagen type IV alpha 4 chain [Source:HGNC Symbol;Acc:HGNC:2206]	4875	0.006840542424470186	-0.2841864	No	
+row_6	RHBDD3	rhomboid domain containing 3 [Source:HGNC Symbol;Acc:HGNC:1308]	5412	5.664615891873837E-4	-0.32517347	No	
+row_7	RBPJL	recombination signal binding protein for immunoglobulin kappa J region like [Source:HGNC Symbol;Acc:HGNC:13761]	6082	0.0	-0.37672225	No	
+row_8	CCDC77	coiled-coil domain containing 77 [Source:HGNC Symbol;Acc:HGNC:28203]	6916	-0.001879944116808474	-0.43986714	No	
+row_9	RNF38	ring finger protein 38 [Source:HGNC Symbol;Acc:HGNC:18052]	7996	-0.011034633032977581	-0.51689947	No	
+row_10	DNAJA4	DnaJ heat shock protein family (Hsp40) member A4 [Source:HGNC Symbol;Acc:HGNC:14885]	8705	-0.01811056211590767	-0.56142807	No	
+row_11	CPSF2	cleavage and polyadenylation specific factor 2 [Source:HGNC Symbol;Acc:HGNC:2325]	8880	-0.020033542066812515	-0.56374556	No	
+row_12	FAM53C	family with sequence similarity 53 member C [Source:HGNC Symbol;Acc:HGNC:1336]	9585	-0.029403304681181908	-0.60171473	No	
+row_13	FBXL12	F-box and leucine rich repeat protein 12 [Source:HGNC Symbol;Acc:HGNC:13611]	9684	-0.03094116784632206	-0.5921381	No	
+row_14	AHNAK	AHNAK nucleoprotein [Source:HGNC Symbol;Acc:HGNC:347]	10748	-0.050688210874795914	-0.645987	Yes	
+row_15	FBXO33	F-box protein 33 [Source:HGNC Symbol;Acc:HGNC:19833]	10820	-0.052300989627838135	-0.62250596	Yes	
+row_16	TC2N	"tandem C2 domains, nuclear [Source:HGNC Symbol;Acc:HGNC:19859]"	10907	-0.05482444539666176	-0.5987839	Yes	
+row_17	ITGB1BP1	integrin subunit beta 1 binding protein 1 [Source:HGNC Symbol;Acc:HGNC:23927]	10908	-0.05485439673066139	-0.5684187	Yes	
+row_18	ATG101	autophagy related 101 [Source:HGNC Symbol;Acc:HGNC:25679]	10920	-0.05525238811969757	-0.5386807	Yes	
+row_19	YWHAZ	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein zeta [Source:HGNC Symbol;Acc:HGNC:12855]	10954	-0.05622677877545357	-0.5100985	Yes	
+row_20	EWSR1	EWS RNA binding protein 1 [Source:HGNC Symbol;Acc:HGNC:3508]	11201	-0.06316734105348587	-0.49408668	Yes	
+row_21	CPSF3	cleavage and polyadenylation specific factor 3 [Source:HGNC Symbol;Acc:HGNC:2326]	12142	-0.10597427934408188	-0.50785375	Yes	
+row_22	SRI	sorcin [Source:HGNC Symbol;Acc:HGNC:11292]	12299	-0.11961162835359573	-0.45366177	Yes	
+row_23	CDCA7L	cell division cycle associated 7 like [Source:HGNC Symbol;Acc:HGNC:30777]	12387	-0.12768220901489258	-0.38968557	Yes	
+row_24	CALM3	calmodulin 3 [Source:HGNC Symbol;Acc:HGNC:1449]	12424	-0.1309850811958313	-0.31995127	Yes	
+row_25	DGAT2	diacylglycerol O-acyltransferase 2 [Source:HGNC Symbol;Acc:HGNC:16940]	12468	-0.13942132890224457	-0.24608637	Yes	
+row_26	ANXA2	annexin A2 [Source:HGNC Symbol;Acc:HGNC:537]	12980	-0.5190215110778809	0.0018492971	Yes	

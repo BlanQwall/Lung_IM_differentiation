@@ -1,0 +1,22 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CREBRF	CREB3 regulatory factor [Source:HGNC Symbol;Acc:HGNC:24050]	691	0.08162856847047806	0.007794509	No	
+row_1	HNRNPR	heterogeneous nuclear ribonucleoprotein R [Source:HGNC Symbol;Acc:HGNC:5047]	2334	0.03499452397227287	-0.09251192	No	
+row_2	CLDN5	claudin 5 [Source:HGNC Symbol;Acc:HGNC:2047]	3684	0.017292877659201622	-0.18348333	No	
+row_3	IFT43	intraflagellar transport 43 [Source:HGNC Symbol;Acc:HGNC:29669]	4370	0.010463100858032703	-0.22841986	No	
+row_4	SLC38A5	solute carrier family 38 member 5 [Source:HGNC Symbol;Acc:HGNC:18070]	5728	0.0	-0.3329331	No	
+row_5	ZNF112	zinc finger protein 112 [Source:HGNC Symbol;Acc:HGNC:12892]	6743	0.0	-0.41102922	No	
+row_6	SERPING1	serpin family G member 1 [Source:HGNC Symbol;Acc:HGNC:1228]	6821	-5.82645065151155E-4	-0.41652408	No	
+row_7	GEN1	GEN1 Holliday junction 5' flap endonuclease [Source:HGNC Symbol;Acc:HGNC:26881]	7254	-0.005489160772413015	-0.4456929	No	
+row_8	SDHAF2	succinate dehydrogenase complex assembly factor 2 [Source:HGNC Symbol;Acc:HGNC:26034]	8276	-0.013589379377663136	-0.51417065	No	
+row_9	UBR1	ubiquitin protein ligase E3 component n-recognin 1 [Source:HGNC Symbol;Acc:HGNC:16808]	8701	-0.018078386783599854	-0.5333134	No	
+row_10	IRF1	interferon regulatory factor 1 [Source:HGNC Symbol;Acc:HGNC:6116]	8909	-0.02034519426524639	-0.534049	No	
+row_11	TRAF4	TNF receptor associated factor 4 [Source:HGNC Symbol;Acc:HGNC:12034]	10277	-0.040980562567710876	-0.60870117	Yes	
+row_12	PROS1	protein S [Source:HGNC Symbol;Acc:HGNC:9456]	10640	-0.047711096704006195	-0.60091966	Yes	
+row_13	ELMO1	engulfment and cell motility 1 [Source:HGNC Symbol;Acc:HGNC:16286]	10674	-0.048689551651477814	-0.56706786	Yes	
+row_14	APBA1	amyloid beta precursor protein binding family A member 1 [Source:HGNC Symbol;Acc:HGNC:578]	10883	-0.053935009986162186	-0.5427735	Yes	
+row_15	BTBD1	BTB domain containing 1 [Source:HGNC Symbol;Acc:HGNC:1120]	10959	-0.056488316506147385	-0.5063272	Yes	
+row_16	ASXL1	ASXL transcriptional regulator 1 [Source:HGNC Symbol;Acc:HGNC:18318]	11138	-0.061474572867155075	-0.4740868	Yes	
+row_17	CCL2	C-C motif chemokine ligand 2 [Source:HGNC Symbol;Acc:HGNC:10618]	12406	-0.12948407232761383	-0.47488466	Yes	
+row_18	MAFF	MAF bZIP transcription factor F [Source:HGNC Symbol;Acc:HGNC:6780]	12672	-0.1847800463438034	-0.35717922	Yes	
+row_19	CISH	cytokine inducible SH2 containing protein [Source:HGNC Symbol;Acc:HGNC:1984]	12761	-0.2134249061346054	-0.20443085	Yes	
+row_20	ICAM1	intercellular adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:5344]	12903	-0.29843735694885254	0.007778764	Yes	

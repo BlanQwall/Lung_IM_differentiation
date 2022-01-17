@@ -1,0 +1,35 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IL10	interleukin 10 [Source:HGNC Symbol;Acc:HGNC:5962]	748	0.07839366793632507	-0.03638913	No	
+row_1	AIP	aryl hydrocarbon receptor interacting protein [Source:HGNC Symbol;Acc:HGNC:358]	1388	0.054673194885253906	-0.07081322	No	
+row_2	LCP1	lymphocyte cytosolic protein 1 [Source:HGNC Symbol;Acc:HGNC:6528]	3906	0.015069210901856422	-0.26077133	No	
+row_3	RAP1B	"RAP1B, member of RAS oncogene family [Source:HGNC Symbol;Acc:HGNC:9857]"	4386	0.010331466794013977	-0.29489565	No	
+row_4	SERPINB2	serpin family B member 2 [Source:HGNC Symbol;Acc:HGNC:8584]	4770	0.007705925963819027	-0.3223315	No	
+row_5	HNRNPA2B1	heterogeneous nuclear ribonucleoprotein A2/B1 [Source:HGNC Symbol;Acc:HGNC:5033]	5249	0.002720097079873085	-0.3584446	No	
+row_6	MTAP	methylthioadenosine phosphorylase [Source:HGNC Symbol;Acc:HGNC:7413]	6860	-0.0011990296188741922	-0.4822422	No	
+row_7	STAT4	signal transducer and activator of transcription 4 [Source:HGNC Symbol;Acc:HGNC:11365]	8204	-0.012870652601122856	-0.58228743	No	
+row_8	PPIA	peptidylprolyl isomerase A [Source:HGNC Symbol;Acc:HGNC:9253]	8435	-0.015065521001815796	-0.59593016	No	
+row_9	HNRNPF	heterogeneous nuclear ribonucleoprotein F [Source:HGNC Symbol;Acc:HGNC:5039]	9746	-0.03181126341223717	-0.68829036	No	
+row_10	HNRNPDL	heterogeneous nuclear ribonucleoprotein D like [Source:HGNC Symbol;Acc:HGNC:5037]	9997	-0.036264896392822266	-0.6977209	No	
+row_11	HSPA9	heat shock protein family A (Hsp70) member 9 [Source:HGNC Symbol;Acc:HGNC:5244]	10068	-0.03770555555820465	-0.6928834	No	
+row_12	TCP1	t-complex 1 [Source:HGNC Symbol;Acc:HGNC:11655]	10716	-0.04956777021288872	-0.7293099	Yes	
+row_13	ARF1	ADP ribosylation factor 1 [Source:HGNC Symbol;Acc:HGNC:652]	10794	-0.051847606897354126	-0.7211735	Yes	
+row_14	PDCD4	programmed cell death 4 [Source:HGNC Symbol;Acc:HGNC:8763]	10863	-0.05337736755609512	-0.71192807	Yes	
+row_15	CAPZA1	capping actin protein of muscle Z-line subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:1488]	11158	-0.0618923157453537	-0.7177949	Yes	
+row_16	PAK2	p21 (RAC1) activated kinase 2 [Source:HGNC Symbol;Acc:HGNC:8591]	11222	-0.06384061276912689	-0.705324	Yes	
+row_17	PSME2	proteasome activator subunit 2 [Source:HGNC Symbol;Acc:HGNC:9569]	11371	-0.06808008253574371	-0.6982555	Yes	
+row_18	SNRPA1	small nuclear ribonucleoprotein polypeptide A' [Source:HGNC Symbol;Acc:HGNC:11152]	11485	-0.07199987024068832	-0.68742466	Yes	
+row_19	CDC42	cell division cycle 42 [Source:HGNC Symbol;Acc:HGNC:1736]	11681	-0.07948458194732666	-0.6808841	Yes	
+row_20	CFL1	cofilin 1 [Source:HGNC Symbol;Acc:HGNC:1874]	11841	-0.08730033040046692	-0.66944677	Yes	
+row_21	BOLA2B	bolA family member 2B [Source:HGNC Symbol;Acc:HGNC:32479]	11953	-0.0949646383523941	-0.6522286	Yes	
+row_22	GSTO1	glutathione S-transferase omega 1 [Source:HGNC Symbol;Acc:HGNC:13312]	12323	-0.12194234132766724	-0.64757854	Yes	
+row_23	MIF	macrophage migration inhibitory factor [Source:HGNC Symbol;Acc:HGNC:7097]	12364	-0.12567979097366333	-0.61654973	Yes	
+row_24	RALA	RAS like proto-oncogene A [Source:HGNC Symbol;Acc:HGNC:9839]	12366	-0.12571388483047485	-0.582505	Yes	
+row_25	SOD1	superoxide dismutase 1 [Source:HGNC Symbol;Acc:HGNC:11179]	12391	-0.12822577357292175	-0.5495516	Yes	
+row_26	TALDO1	transaldolase 1 [Source:HGNC Symbol;Acc:HGNC:11559]	12399	-0.12889041006565094	-0.5151073	Yes	
+row_27	SOD2	superoxide dismutase 2 [Source:HGNC Symbol;Acc:HGNC:11180]	12570	-0.15833529829978943	-0.48523733	Yes	
+row_28	CNN2	calponin 2 [Source:HGNC Symbol;Acc:HGNC:2156]	12767	-0.21429722011089325	-0.44218242	Yes	
+row_29	MSN	moesin [Source:HGNC Symbol;Acc:HGNC:7373]	12812	-0.2300887107849121	-0.38312286	Yes	
+row_30	RPLP0	ribosomal protein lateral stalk subunit P0 [Source:HGNC Symbol;Acc:HGNC:10371]	12894	-0.28782448172569275	-0.3112449	Yes	
+row_31	LMNB1	lamin B1 [Source:HGNC Symbol;Acc:HGNC:6637]	12913	-0.30858007073402405	-0.22887638	Yes	
+row_32	PITPNA	phosphatidylinositol transfer protein alpha [Source:HGNC Symbol;Acc:HGNC:9001]	12939	-0.34949901700019836	-0.13594112	Yes	
+row_33	ANXA2	annexin A2 [Source:HGNC Symbol;Acc:HGNC:537]	12980	-0.5190215110778809	0.0018503001	Yes	

@@ -1,0 +1,100 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	UBC	ubiquitin C [Source:HGNC Symbol;Acc:HGNC:12468]	80	0.29216277599334717	0.0390875	No	
+row_1	UBB	ubiquitin B [Source:HGNC Symbol;Acc:HGNC:12463]	356	0.1191491186618805	0.036248077	No	
+row_2	PELI1	pellino E3 ubiquitin protein ligase 1 [Source:HGNC Symbol;Acc:HGNC:8827]	501	0.09907034039497375	0.0404467	No	
+row_3	NOD1	nucleotide binding oligomerization domain containing 1 [Source:HGNC Symbol;Acc:HGNC:16390]	760	0.07770654559135437	0.03250076	No	
+row_4	MAP3K8	mitogen-activated protein kinase kinase kinase 8 [Source:HGNC Symbol;Acc:HGNC:6860]	1810	0.04492093622684479	-0.041816372	No	
+row_5	TNIP2	TNFAIP3 interacting protein 2 [Source:HGNC Symbol;Acc:HGNC:19118]	1978	0.04199201613664627	-0.048247192	No	
+row_6	TAB2	TGF-beta activated kinase 1 (MAP3K7) binding protein 2 [Source:HGNC Symbol;Acc:HGNC:17075]	2837	0.027902372181415558	-0.11040294	No	
+row_7	NKIRAS1	NFKB inhibitor interacting Ras like 1 [Source:HGNC Symbol;Acc:HGNC:17899]	2894	0.027076154947280884	-0.11054512	No	
+row_8	AGER	advanced glycosylation end-product specific receptor [Source:HGNC Symbol;Acc:HGNC:320]	3295	0.0218600295484066	-0.13815008	No	
+row_9	TOLLIP	toll interacting protein [Source:HGNC Symbol;Acc:HGNC:16476]	3324	0.02152731455862522	-0.13698281	No	
+row_10	HMGB1	high mobility group box 1 [Source:HGNC Symbol;Acc:HGNC:4983]	3648	0.017751270905137062	-0.15925843	No	
+row_11	SKP1	S-phase kinase associated protein 1 [Source:HGNC Symbol;Acc:HGNC:10899]	3707	0.017078207805752754	-0.16110528	No	
+row_12	PSMD3	"proteasome 26S subunit, non-ATPase 3 [Source:HGNC Symbol;Acc:HGNC:9560]"	3933	0.014754935167729855	-0.17625196	No	
+row_13	CUL1	cullin 1 [Source:HGNC Symbol;Acc:HGNC:2551]	4045	0.013451182283461094	-0.18276764	No	
+row_14	IRAK4	interleukin 1 receptor associated kinase 4 [Source:HGNC Symbol;Acc:HGNC:17967]	4445	0.009950345382094383	-0.21214116	No	
+row_15	PSMC6	"proteasome 26S subunit, ATPase 6 [Source:HGNC Symbol;Acc:HGNC:9553]"	5192	0.0033789135050028563	-0.26942	No	
+row_16	MAP2K6	mitogen-activated protein kinase kinase 6 [Source:HGNC Symbol;Acc:HGNC:6846]	5241	0.0028241819236427546	-0.27270144	No	
+row_17	S100B	S100 calcium binding protein B [Source:HGNC Symbol;Acc:HGNC:10500]	5755	0.0	-0.31245038	No	
+row_18	PELI2	pellino E3 ubiquitin protein ligase family member 2 [Source:HGNC Symbol;Acc:HGNC:8828]	7042	-0.0032272941898554564	-0.4115937	No	
+row_19	PSMB10	proteasome 20S subunit beta 10 [Source:HGNC Symbol;Acc:HGNC:9538]	7049	-0.0033249687403440475	-0.41154325	No	
+row_20	PSMD12	"proteasome 26S subunit, non-ATPase 12 [Source:HGNC Symbol;Acc:HGNC:9557]"	7185	-0.005057284142822027	-0.4212196	No	
+row_21	NFKB2	nuclear factor kappa B subunit 2 [Source:HGNC Symbol;Acc:HGNC:7795]	7319	-0.006005580071359873	-0.430594	No	
+row_22	IRAK1	interleukin 1 receptor associated kinase 1 [Source:HGNC Symbol;Acc:HGNC:6112]	7617	-0.007473033387213945	-0.4524482	No	
+row_23	IKBKG	inhibitor of nuclear factor kappa B kinase regulatory subunit gamma [Source:HGNC Symbol;Acc:HGNC:5961]	7684	-0.007907773368060589	-0.45633638	No	
+row_24	CHUK	component of inhibitor of nuclear factor kappa B kinase complex [Source:HGNC Symbol;Acc:HGNC:1974]	7754	-0.008568290621042252	-0.4603546	No	
+row_25	PELI3	pellino E3 ubiquitin protein ligase family member 3 [Source:HGNC Symbol;Acc:HGNC:30010]	7785	-0.008923651650547981	-0.4612959	No	
+row_26	MAP3K3	mitogen-activated protein kinase kinase kinase 3 [Source:HGNC Symbol;Acc:HGNC:6855]	7977	-0.010787727311253548	-0.4744231	No	
+row_27	PSMD6	"proteasome 26S subunit, non-ATPase 6 [Source:HGNC Symbol;Acc:HGNC:9564]"	7983	-0.01092090830206871	-0.47311774	No	
+row_28	PSMD11	"proteasome 26S subunit, non-ATPase 11 [Source:HGNC Symbol;Acc:HGNC:9556]"	7985	-0.010946863330900669	-0.47149843	No	
+row_29	RELA	"RELA proto-oncogene, NF-kB subunit [Source:HGNC Symbol;Acc:HGNC:9955]"	8039	-0.011412028223276138	-0.47383615	No	
+row_30	PSMD2	"proteasome 26S subunit ubiquitin receptor, non-ATPase 2 [Source:HGNC Symbol;Acc:HGNC:9559]"	8270	-0.0135189862921834	-0.48956183	No	
+row_31	TAB1	TGF-beta activated kinase 1 (MAP3K7) binding protein 1 [Source:HGNC Symbol;Acc:HGNC:18157]	8356	-0.014270554296672344	-0.4939359	No	
+row_32	MAP2K4	mitogen-activated protein kinase kinase 4 [Source:HGNC Symbol;Acc:HGNC:6844]	8394	-0.014664247632026672	-0.4945298	No	
+row_33	NKIRAS2	NFKB inhibitor interacting Ras like 2 [Source:HGNC Symbol;Acc:HGNC:17898]	8413	-0.014861082658171654	-0.493621	No	
+row_34	IRAK3	interleukin 1 receptor associated kinase 3 [Source:HGNC Symbol;Acc:HGNC:17020]	8529	-0.015986565500497818	-0.5000536	No	
+row_35	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1 [Source:HGNC Symbol;Acc:HGNC:12458]	8578	-0.016633182764053345	-0.5011946	No	
+row_36	PSMD4	"proteasome 26S subunit ubiquitin receptor, non-ATPase 4 [Source:HGNC Symbol;Acc:HGNC:9561]"	8853	-0.019780272617936134	-0.51935905	No	
+row_37	UBE2V1	ubiquitin conjugating enzyme E2 V1 [Source:HGNC Symbol;Acc:HGNC:12494]	8865	-0.019895946606993675	-0.5171274	No	
+row_38	APP	amyloid beta precursor protein [Source:HGNC Symbol;Acc:HGNC:620]	8869	-0.019940068945288658	-0.5142691	No	
+row_39	UBE2N	ubiquitin conjugating enzyme E2 N [Source:HGNC Symbol;Acc:HGNC:12492]	8927	-0.02052631787955761	-0.515504	No	
+row_40	PSMC5	"proteasome 26S subunit, ATPase 5 [Source:HGNC Symbol;Acc:HGNC:9552]"	9019	-0.02164461277425289	-0.51919997	No	
+row_41	PSMD5	"proteasome 26S subunit, non-ATPase 5 [Source:HGNC Symbol;Acc:HGNC:9563]"	9031	-0.02173577807843685	-0.5166832	No	
+row_42	PSMB2	proteasome 20S subunit beta 2 [Source:HGNC Symbol;Acc:HGNC:9539]	9080	-0.02220439538359642	-0.5169606	No	
+row_43	RBX1	ring-box 1 [Source:HGNC Symbol;Acc:HGNC:9928]	9139	-0.022963114082813263	-0.51789534	No	
+row_44	PSMA2	proteasome 20S subunit alpha 2 [Source:HGNC Symbol;Acc:HGNC:9531]	9219	-0.023904047906398773	-0.5203113	No	
+row_45	PSMC3	"proteasome 26S subunit, ATPase 3 [Source:HGNC Symbol;Acc:HGNC:9549]"	9282	-0.02475813589990139	-0.52127767	No	
+row_46	PSMD7	"proteasome 26S subunit, non-ATPase 7 [Source:HGNC Symbol;Acc:HGNC:9565]"	9372	-0.026045264676213264	-0.5241366	No	
+row_47	FBXW11	F-box and WD repeat domain containing 11 [Source:HGNC Symbol;Acc:HGNC:13607]	9374	-0.026059264317154884	-0.5201748	No	
+row_48	BTRC	beta-transducin repeat containing E3 ubiquitin protein ligase [Source:HGNC Symbol;Acc:HGNC:1144]	9860	-0.03390375152230263	-0.55249906	No	
+row_49	TRAF6	TNF receptor associated factor 6 [Source:HGNC Symbol;Acc:HGNC:12036]	9877	-0.034215860068798065	-0.5484352	No	
+row_50	MAP3K7	mitogen-activated protein kinase kinase kinase 7 [Source:HGNC Symbol;Acc:HGNC:6859]	10032	-0.03689496964216232	-0.5546488	No	
+row_51	RIPK2	receptor interacting serine/threonine kinase 2 [Source:HGNC Symbol;Acc:HGNC:10020]	10147	-0.03878869116306305	-0.55746955	No	
+row_52	TAB3	TGF-beta activated kinase 1 (MAP3K7) binding protein 3 [Source:HGNC Symbol;Acc:HGNC:30681]	10179	-0.03938266262412071	-0.5537671	No	
+row_53	PSMC2	"proteasome 26S subunit, ATPase 2 [Source:HGNC Symbol;Acc:HGNC:9548]"	10322	-0.041796691715717316	-0.5582911	No	
+row_54	PSMC1	"proteasome 26S subunit, ATPase 1 [Source:HGNC Symbol;Acc:HGNC:9547]"	10506	-0.0449044406414032	-0.5655102	No	
+row_55	PSMD10	"proteasome 26S subunit, non-ATPase 10 [Source:HGNC Symbol;Acc:HGNC:9555]"	10619	-0.04734797775745392	-0.56684923	Yes	
+row_56	MYD88	MYD88 innate immune signal transduction adaptor [Source:HGNC Symbol;Acc:HGNC:7562]	10662	-0.04834362864494324	-0.56261015	Yes	
+row_57	PSME4	proteasome activator subunit 4 [Source:HGNC Symbol;Acc:HGNC:20635]	10749	-0.0506950244307518	-0.5614158	Yes	
+row_58	RPS27A	ribosomal protein S27a [Source:HGNC Symbol;Acc:HGNC:10417]	10791	-0.051807016134262085	-0.55656236	Yes	
+row_59	PSMA1	proteasome 20S subunit alpha 1 [Source:HGNC Symbol;Acc:HGNC:9530]	10830	-0.05258135125041008	-0.55135643	Yes	
+row_60	PSMF1	proteasome inhibitor subunit 1 [Source:HGNC Symbol;Acc:HGNC:9571]	10904	-0.054623283445835114	-0.54854596	Yes	
+row_61	MAP2K1	mitogen-activated protein kinase kinase 1 [Source:HGNC Symbol;Acc:HGNC:6840]	10967	-0.05661008879542351	-0.54457515	Yes	
+row_62	PSMB7	proteasome 20S subunit beta 7 [Source:HGNC Symbol;Acc:HGNC:9544]	11168	-0.062229301780462265	-0.5504261	Yes	
+row_63	PSMD9	"proteasome 26S subunit, non-ATPase 9 [Source:HGNC Symbol;Acc:HGNC:9567]"	11313	-0.06642056256532669	-0.5512883	Yes	
+row_64	PSME2	proteasome activator subunit 2 [Source:HGNC Symbol;Acc:HGNC:9569]	11371	-0.06808008253574371	-0.54515225	Yes	
+row_65	PSMD1	"proteasome 26S subunit, non-ATPase 1 [Source:HGNC Symbol;Acc:HGNC:9554]"	11419	-0.06963936239480972	-0.53799963	Yes	
+row_66	SQSTM1	sequestosome 1 [Source:HGNC Symbol;Acc:HGNC:11280]	11457	-0.07112117856740952	-0.5298425	Yes	
+row_67	PSMA6	proteasome 20S subunit alpha 6 [Source:HGNC Symbol;Acc:HGNC:9535]	11680	-0.07941271364688873	-0.53473455	Yes	
+row_68	NFKBIB	NFKB inhibitor beta [Source:HGNC Symbol;Acc:HGNC:7798]	11683	-0.07957268506288528	-0.52255553	Yes	
+row_69	NOD2	nucleotide binding oligomerization domain containing 2 [Source:HGNC Symbol;Acc:HGNC:5331]	11701	-0.08061856031417847	-0.5113766	Yes	
+row_70	IL1RAP	interleukin 1 receptor accessory protein [Source:HGNC Symbol;Acc:HGNC:5995]	11726	-0.0819704532623291	-0.50053054	Yes	
+row_71	PSMA8	proteasome 20S subunit alpha 8 [Source:HGNC Symbol;Acc:HGNC:22985]	11765	-0.08391253650188446	-0.49046817	Yes	
+row_72	NFKB1	nuclear factor kappa B subunit 1 [Source:HGNC Symbol;Acc:HGNC:7794]	11806	-0.08577122539281845	-0.48027268	Yes	
+row_73	PSMB9	proteasome 20S subunit beta 9 [Source:HGNC Symbol;Acc:HGNC:9546]	11866	-0.08935666084289551	-0.47099364	Yes	
+row_74	PSMD13	"proteasome 26S subunit, non-ATPase 13 [Source:HGNC Symbol;Acc:HGNC:9558]"	11878	-0.09020742774009705	-0.4578635	Yes	
+row_75	IRAK2	interleukin 1 receptor associated kinase 2 [Source:HGNC Symbol;Acc:HGNC:6113]	11893	-0.09108655154705048	-0.44482958	Yes	
+row_76	PSMB4	proteasome 20S subunit beta 4 [Source:HGNC Symbol;Acc:HGNC:9541]	11916	-0.09244464337825775	-0.432205	Yes	
+row_77	PSME3	proteasome activator subunit 3 [Source:HGNC Symbol;Acc:HGNC:9570]	11928	-0.09321098029613495	-0.4186093	Yes	
+row_78	PSMA5	proteasome 20S subunit alpha 5 [Source:HGNC Symbol;Acc:HGNC:9534]	11960	-0.09530410170555115	-0.40623885	Yes	
+row_79	PSMD14	"proteasome 26S subunit, non-ATPase 14 [Source:HGNC Symbol;Acc:HGNC:16889]"	12013	-0.09778564423322678	-0.3951109	Yes	
+row_80	PSMC4	"proteasome 26S subunit, ATPase 4 [Source:HGNC Symbol;Acc:HGNC:9551]"	12048	-0.09940054267644882	-0.38233793	Yes	
+row_81	PSMB6	proteasome 20S subunit beta 6 [Source:HGNC Symbol;Acc:HGNC:9543]	12082	-0.10195903480052948	-0.36909088	Yes	
+row_82	PSMA3	proteasome 20S subunit alpha 3 [Source:HGNC Symbol;Acc:HGNC:9532]	12138	-0.10560782253742218	-0.35698292	Yes	
+row_83	IL1R1	interleukin 1 receptor type 1 [Source:HGNC Symbol;Acc:HGNC:5993]	12140	-0.10566437244415283	-0.3406821	Yes	
+row_84	PSMB5	proteasome 20S subunit beta 5 [Source:HGNC Symbol;Acc:HGNC:9542]	12182	-0.1101798489689827	-0.32678068	Yes	
+row_85	SEM1	SEM1 26S proteasome subunit [Source:HGNC Symbol;Acc:HGNC:10845]	12317	-0.12102500349283218	-0.3184042	Yes	
+row_86	IKBKB	inhibitor of nuclear factor kappa B kinase subunit beta [Source:HGNC Symbol;Acc:HGNC:5960]	12338	-0.12332244962453842	-0.30083847	Yes	
+row_87	NFKBIA	NFKB inhibitor alpha [Source:HGNC Symbol;Acc:HGNC:7797]	12350	-0.12428919225931168	-0.28242558	Yes	
+row_88	PSMA4	proteasome 20S subunit alpha 4 [Source:HGNC Symbol;Acc:HGNC:9533]	12462	-0.13892988860607147	-0.26949164	Yes	
+row_89	PSMB1	proteasome 20S subunit beta 1 [Source:HGNC Symbol;Acc:HGNC:9537]	12467	-0.13913856446743011	-0.24823464	Yes	
+row_90	PSME1	proteasome activator subunit 1 [Source:HGNC Symbol;Acc:HGNC:9568]	12524	-0.14904141426086426	-0.22947182	Yes	
+row_91	PSMD8	"proteasome 26S subunit, non-ATPase 8 [Source:HGNC Symbol;Acc:HGNC:9566]"	12617	-0.17055092751979828	-0.21016434	Yes	
+row_92	PSMB8	proteasome 20S subunit beta 8 [Source:HGNC Symbol;Acc:HGNC:9545]	12641	-0.1759919673204422	-0.18466714	Yes	
+row_93	PSMB3	proteasome 20S subunit beta 3 [Source:HGNC Symbol;Acc:HGNC:9540]	12658	-0.1813022792339325	-0.15780444	Yes	
+row_94	IL1A	interleukin 1 alpha [Source:HGNC Symbol;Acc:HGNC:5991]	12756	-0.2119717001914978	-0.13246404	Yes	
+row_95	PSMA7	proteasome 20S subunit alpha 7 [Source:HGNC Symbol;Acc:HGNC:9536]	12758	-0.21238067746162415	-0.099621825	Yes	
+row_96	IL1B	interleukin 1 beta [Source:HGNC Symbol;Acc:HGNC:5992]	12764	-0.21404220163822174	-0.06683202	Yes	
+row_97	IL1RN	interleukin 1 receptor antagonist [Source:HGNC Symbol;Acc:HGNC:6000]	12860	-0.26117926836013794	-0.03370931	Yes	
+row_98	IL1R2	interleukin 1 receptor type 2 [Source:HGNC Symbol;Acc:HGNC:5994]	12895	-0.28895801305770874	0.008445674	Yes	

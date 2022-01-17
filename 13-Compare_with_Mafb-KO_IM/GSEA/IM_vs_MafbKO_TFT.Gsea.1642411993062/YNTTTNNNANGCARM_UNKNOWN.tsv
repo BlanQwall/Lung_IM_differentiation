@@ -1,0 +1,37 @@
+NAME	SYMBOL	TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MAFB	MAF bZIP transcription factor B [Source:HGNC Symbol;Acc:HGNC:6408]	6	1.075302243232727	0.38321796	Yes	
+row_1	CD93	CD93 molecule [Source:HGNC Symbol;Acc:HGNC:15855]	81	0.28663966059684753	0.47978848	Yes	
+row_2	ZEB2	zinc finger E-box binding homeobox 2 [Source:HGNC Symbol;Acc:HGNC:14881]	364	0.11702235043048859	0.4997993	Yes	
+row_3	MARCHF1	membrane associated ring-CH-type finger 1 [Source:HGNC Symbol;Acc:HGNC:26077]	380	0.11352446675300598	0.5391496	Yes	
+row_4	DDX17	DEAD-box helicase 17 [Source:HGNC Symbol;Acc:HGNC:2740]	595	0.08980665355920792	0.55469275	Yes	
+row_5	FGD4	"FYVE, RhoGEF and PH domain containing 4 [Source:HGNC Symbol;Acc:HGNC:19125]"	716	0.07993820309638977	0.5739628	Yes	
+row_6	IL10	interleukin 10 [Source:HGNC Symbol;Acc:HGNC:5962]	748	0.07839366793632507	0.5995443	Yes	
+row_7	KIF13A	kinesin family member 13A [Source:HGNC Symbol;Acc:HGNC:14566]	1366	0.055316220968961716	0.57170683	No	
+row_8	NRF1	nuclear respiratory factor 1 [Source:HGNC Symbol;Acc:HGNC:7996]	1470	0.05263107642531395	0.5825442	No	
+row_9	ETV5	ETS variant transcription factor 5 [Source:HGNC Symbol;Acc:HGNC:3494]	1991	0.041777048259973526	0.5573551	No	
+row_10	GCDH	glutaryl-CoA dehydrogenase [Source:HGNC Symbol;Acc:HGNC:4189]	2897	0.027051329612731934	0.49722558	No	
+row_11	KCTD12	potassium channel tetramerization domain containing 12 [Source:HGNC Symbol;Acc:HGNC:14678]	3339	0.0213791374117136	0.47084972	No	
+row_12	CDK19	cyclin dependent kinase 19 [Source:HGNC Symbol;Acc:HGNC:19338]	3384	0.020871281623840332	0.47490415	No	
+row_13	PDE4D	phosphodiesterase 4D [Source:HGNC Symbol;Acc:HGNC:8783]	3864	0.015498305670917034	0.4434999	No	
+row_14	CNN3	calponin 3 [Source:HGNC Symbol;Acc:HGNC:2157]	4191	0.011916909366846085	0.42261514	No	
+row_15	C1S	complement C1s [Source:HGNC Symbol;Acc:HGNC:1247]	5478	0.0	0.3234556	No	
+row_16	LDB2	LIM domain binding 2 [Source:HGNC Symbol;Acc:HGNC:6533]	5668	0.0	0.3088824	No	
+row_17	NRK	Nik related kinase [Source:HGNC Symbol;Acc:HGNC:25391]	5962	0.0	0.28629005	No	
+row_18	OMG	oligodendrocyte myelin glycoprotein [Source:HGNC Symbol;Acc:HGNC:8135]	5997	0.0	0.28366843	No	
+row_19	TLL2	tolloid like 2 [Source:HGNC Symbol;Acc:HGNC:11844]	6376	0.0	0.254522	No	
+row_20	PLEKHA6	pleckstrin homology domain containing A6 [Source:HGNC Symbol;Acc:HGNC:17053]	6425	0.0	0.25082085	No	
+row_21	VWA1	von Willebrand factor A domain containing 1 [Source:HGNC Symbol;Acc:HGNC:30910]	6537	0.0	0.24226199	No	
+row_22	KRT222	keratin 222 [Source:HGNC Symbol;Acc:HGNC:28695]	6574	0.0	0.23948614	No	
+row_23	GNAI1	G protein subunit alpha i1 [Source:HGNC Symbol;Acc:HGNC:4384]	6649	0.0	0.23378022	No	
+row_24	KCNA2	potassium voltage-gated channel subfamily A member 2 [Source:HGNC Symbol;Acc:HGNC:6220]	7373	-0.0062344856560230255	0.18025644	No	
+row_25	VDR	vitamin D receptor [Source:HGNC Symbol;Acc:HGNC:12679]	8341	-0.014081676490604877	0.11071853	No	
+row_26	CLUH	clustered mitochondria homolog [Source:HGNC Symbol;Acc:HGNC:29094]	8669	-0.017725279554724693	0.09182915	No	
+row_27	CCDC14	coiled-coil domain containing 14 [Source:HGNC Symbol;Acc:HGNC:25766]	8810	-0.019294843077659607	0.0879188	No	
+row_28	KLHL5	kelch like family member 5 [Source:HGNC Symbol;Acc:HGNC:6356]	8965	-0.020945288240909576	0.083517864	No	
+row_29	CLIP1	CAP-Gly domain containing linker protein 1 [Source:HGNC Symbol;Acc:HGNC:10461]	9490	-0.027829458937048912	0.053043704	No	
+row_30	B3GNT7	"UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 7 [Source:HGNC Symbol;Acc:HGNC:18811]"	10259	-0.04068074747920036	0.008340945	No	
+row_31	LEMD2	LEM domain nuclear envelope protein 2 [Source:HGNC Symbol;Acc:HGNC:21244]	11068	-0.05917682498693466	-0.032846473	No	
+row_32	ETV6	ETS variant transcription factor 6 [Source:HGNC Symbol;Acc:HGNC:3495]	11104	-0.06035183370113373	-0.014010966	No	
+row_33	CADM1	cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:5951]	11112	-0.06054310128092766	0.0070517836	No	
+row_34	GRK5	G protein-coupled receptor kinase 5 [Source:HGNC Symbol;Acc:HGNC:4544]	12288	-0.11872274428606033	-0.041187193	No	
+row_35	NECTIN1	nectin cell adhesion molecule 1 [Source:HGNC Symbol;Acc:HGNC:9706]	12869	-0.26994237303733826	0.010409424	No	
