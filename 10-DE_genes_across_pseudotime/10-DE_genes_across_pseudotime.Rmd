@@ -359,13 +359,20 @@ dev.off()
 
 ## Make with changed/specific genes
 
-```{r fig.height=10, fig.width=8}
+```{r fig.height=8, fig.width=8}
 heatSmooth_cd206.changed <- Heatmap(yhatSmoothScaled[genes.changed, 100:1], cluster_columns = FALSE,  show_row_names = FALSE, cluster_rows = hclust(dist(yhatSmoothScaled[genes.changed, ])), show_column_names = FALSE, column_title = "CD206+ IM")
 
-heatSmooth_mhcii.changed <- Heatmap(yhatSmoothScaled[genes.changed, 101:200], cluster_columns = FALSE,  show_row_names = TRUE,row_names_gp = gpar(fontsize = 8), show_column_names = FALSE, column_title = "MHCII+ IM")
+heatSmooth_mhcii.changed <- Heatmap(yhatSmoothScaled[genes.changed, 101:200], cluster_columns = FALSE,  show_row_names = TRUE,row_names_gp = gpar(fontsize = 5), show_column_names = FALSE, column_title = "MHCII+ IM")
 
 heatSmooth_combined.changed <- draw ( heatSmooth_cd206.changed + heatSmooth_mhcii.changed, column_title = "Specific genes", split = 2)
 ```
+
+```{r}
+pdf(file = "../Figures/Heatmap_specific_CD206_IM_genes_IMs_diff_across_pseudotime.pdf", width = 8, height = 8)
+heatSmooth_combined.unchanged.ordered
+dev.off()
+```
+
 
 ```{r}
 geneSymbol.changed.mhcii <- read.csv("./geneSymbol_changed_mhcii_IM.csv", col.names = FALSE)[[1]]

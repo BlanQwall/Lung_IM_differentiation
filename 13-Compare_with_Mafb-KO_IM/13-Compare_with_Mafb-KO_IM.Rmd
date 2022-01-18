@@ -1,5 +1,5 @@
 ---
-subtitle: "13-Compare_with_Mafb-KO_IM"
+subtitle: "13 - Compare with Mafb-KO IM"
 # bibliography: bib.bib
 link-citations: yes
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
@@ -33,6 +33,7 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 suppressMessages({
   library(Seurat)
   library(ggplot2)
+  library(multcomp)
 })
 
 results <- readRDS(file = "../12-cMAF_and_Mafb_deficient_IM/All_samples_Maf.seuratObject.Rds")
@@ -452,20 +453,85 @@ sig.im <- createGeneSignature(name = "IM", sigData = sig.im)
 
 sig.cmo <- rep(1, length(rownames(signature.cmo)))
 names(sig.cmo) <- rownames(signature.cmo)
-sig.cmo <- createGeneSignature(name = "IM", sigData = sig.cmo)
+sig.cmo <- createGeneSignature(name = "cMo", sigData = sig.cmo)
 
 sig.pmo <- rep(1, length(rownames(signature.pmo)))
 names(sig.pmo) <- rownames(signature.pmo)
-sig.pmo <- createGeneSignature(name = "IM", sigData = sig.pmo)
+sig.pmo <- createGeneSignature(name = "pMo", sigData = sig.pmo)
 
 sig.im_mono <- c(sig.im, sig.cmo, sig.pmo)
 ```
 
 ## Signature scoring
 
-```{r}
+```{r message=FALSE}
 vis <- Vision(so, signatures = sig.im_mono)
+
+vis <- calcSignatureScores(vis)
+head(vis@SigScores)
 ```
+
+## Show signature scores in Seurat object
+
+Check if cells are identical
+
+```{r}
+identical(colnames(so), rownames(vis@SigScores))
+```
+
+```{r}
+so$sig.IM <- vis@SigScores[, "IM"]
+so$sig.pMo <- vis@SigScores[, "pMo"]
+so$sig.cMo <- vis@SigScores[, "cMo"]
+```
+
+```{r}
+FeaturePlot(so, features = "sig.IM", split.by = "group")
+```
+
+```{r fig.height=4, fig.width=5}
+VlnPlot(so, features = "sig.IM", cols = pal4, pt.size = 0)
+```
+```{r}
+dt <- data.frame(sig=so$sig.IM, celltype=so$cell.type2)
+res.aov <- aov(sig ~ celltype, data = dt)
+summary(glht(res.aov, linfct = mcp(celltype = "Tukey")))
+```
+
+```{r}
+ggsave(filename = "../Figures/Vlnplot_sig_IM_in_ctrl_MafbKO.pdf", 
+       width = 5, height = 4)
+```
+
+```{r fig.height=4, fig.width=5}
+VlnPlot(so, features = "sig.pMo", cols = pal4, pt.size = 0)
+```
+```{r}
+dt <- data.frame(sig=so$sig.pMo, celltype=so$cell.type2)
+res.aov <- aov(sig ~ celltype, data = dt)
+summary(glht(res.aov, linfct = mcp(celltype = "Tukey")))
+```
+
+```{r}
+ggsave(filename = "../Figures/Vlnplot_sig_pMo_in_ctrl_MafbKO.pdf", 
+       width = 5, height = 4)
+```
+
+```{r}
+dt <- data.frame(sig=so$sig.cMo, celltype=so$cell.type2)
+res.aov <- aov(sig ~ celltype, data = dt)
+summary(glht(res.aov, linfct = mcp(celltype = "Tukey")))
+```
+
+```{r fig.height=4, fig.width=5}
+VlnPlot(so, features = "sig.cMo", cols = pal4, pt.size = 0)
+```
+```{r}
+ggsave(filename = "../Figures/Vlnplot_sig_cMo_in_ctrl_MafbKO.pdf", 
+       width = 5, height = 4)
+```
+
+
 
 
 # Session information
