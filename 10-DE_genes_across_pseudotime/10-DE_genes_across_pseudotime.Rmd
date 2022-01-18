@@ -369,7 +369,7 @@ heatSmooth_combined.changed <- draw ( heatSmooth_cd206.changed + heatSmooth_mhci
 
 ```{r}
 pdf(file = "../Figures/Heatmap_specific_CD206_IM_genes_IMs_diff_across_pseudotime.pdf", width = 8, height = 8)
-heatSmooth_combined.unchanged.ordered
+heatSmooth_combined.changed
 dev.off()
 ```
 
