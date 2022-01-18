@@ -41,6 +41,30 @@ results <- readRDS(file = "../12-cMAF_and_Mafb_deficient_IM/All_samples_Maf.seur
 so <- subset(results, subset = group == c("HT5-Control", "HT7-MAFb-KO"))
 ```
 
+
+# Re process data with only Control and Mafb-KO samples
+
+## Re-process data
+
+```{r}
+so <- NormalizeData(so, verbose=FALSE)
+so <- FindVariableFeatures(so, selection.method = "vst", nfeatures = 1000, verbose=FALSE) # we focus less variable genes. 
+so <- ScaleData(so, features = rownames(so), verbose=FALSE)
+so <- RunPCA(so, features = VariableFeatures(so), verbose=FALSE)
+so <- RunTSNE(so, dims = 1:8, verbose=FALSE)
+so <- RunUMAP(so, dims = 1:8, verbose=FALSE)
+```
+
+```{r message=FALSE, warning=FALSE}
+so <- FindNeighbors(so, dims = 1:8, verbose = FALSE)
+so <- FindClusters(so, resolution = 0.15, verbose = FALSE) 
+```
+
+```{r}
+DimPlot(so, split.by = "group")
+```
+
+
 # Compare populations
 
 ```{r, fig.height=4, fig.width=6}
@@ -53,33 +77,112 @@ pal3 <- c(
   "#CAB2D6", # Mafb- neo
   "#ededed"# Unknown
 )
-DimPlot(so, cols = pal3)
+DimPlot(so, cols = pal3[1:4])
+```
+
+```{r fig.height=16, fig.width=16}
+VlnPlot(
+  so, 
+  features = c("Ccr2", "Plac8" ,"Ly6c2", "Spn", 
+                              "Fcgr4", "Ace", "Cxcr4", 
+                              "Fcgr1", "Mrc1", "Cd63", "Apoe", 
+                              "H2-DMb2", "Cd74", "Cd209a", 
+                              "Ccnd1","Mki67", "Top2a", "Ccl2", 
+                              "Irf7", "Cxcl10", "Ifit1", "percent.mt", "Ifi47", "Itgax") , 
+        ncol = 4, cols = pal3[1:4] )
+```
+
+cluster 0: Mafb-independent
+Cluster 1: IM
+Cluster 2: Classical Monocytes
+Cluster 3: Patrolling Monocytes
+
+```{r}
+so$cell.type2 <- factor(Idents(so), labels = c("Mafb-independent", "IM", "Classical Mono", "Patrolling Mono"))
+so$cell.type2 <- factor(so$cell.type2, levels = c("Classical Mono", "Patrolling Mono", "IM", "Mafb-independent"))
+Idents(so) <- "cell.type2"
 ```
 
 ```{r}
-ggsave(filename = "../Figures/UMAPplot_Ctl_MafbKO_with_legend.pdf", 
-       width = 6, height = 4)
+pal4 <- c(
+  "#A6CEE3", # cMo
+  "#1F78B4", # pMo
+  "#33A02C", # CD206 IM
+   "#FF7F00" # Mafb- neo
+)
+DimPlot(so, cols = pal4, split.by = "group"
+)
+```
+```{r fig.height=5, fig.width=7}
+DimPlot(so, label = T, cols = pal4)
+```
+```{r}
+ggsave(filename = "../Figures/UMAPplot_Ctl_AND_MafbKO_with_legend.pdf", 
+       width = 7, height =5)
 ```
 
-```{r include=FALSE, fig.height=4, fig.width=5}
-DimPlot(so, cols = pal3) + NoLegend()
-ggsave(filename = "../Figures/UMAPplot_Ctl_MafbKO_no_legend.pdf", 
-       width = 5, height = 4)
+Plot cell in colors but only for one of two samples
 
-DimPlot(subset(so, subset = group == "HT5-Control"), 
-        cols = pal3) + NoLegend()
-ggsave(filename = "../Figures/UMAPplot_Ctl_no_legend.pdf", 
-       width = 5, height = 4)
+```{r}
+so$cell.type.control <- as.character(so$cell.type2)
+so$cell.type.control[WhichCells(so, expression = group == "HT7-MAFb-KO")] <- "Mafb-KO"
+so$cell.type.control <- factor(so$cell.type.control, levels = c("Classical Mono", "Patrolling Mono", "IM", "Mafb-independent", "Mafb-KO"))
+```
 
-DimPlot(subset(so, subset = group == "HT7-MAFb-KO"), 
-        cols = pal3) + NoLegend()
-ggsave(filename = "../Figures/UMAPplot_MafbKO_no_legend.pdf", 
-       width = 5, height = 4)
+```{r fig.height=5, fig.width=7}
+pal4.control <- c(
+  "#F1F1F1", # grey for another sample
+  "#FF7F00", # Mafb- neo
+  "#A6CEE3", # cMo
+  "#1F78B4", # pMo
+  "#33A02C" # CD206 IM
+)
+DimPlot(so, cols = pal4.control, group.by = "cell.type.control", pt.size = 2,
+order = c("IM", "Patrolling Mono", "Classical Mono", "Mafb-independent",  "Mafb-KO")
+)
+```
 
-DimPlot(so, group.by = "orig.ident",
-        cols = "#f5f5f5") + NoLegend()
-ggsave(filename = "../Figures/UMAPplot_Ctl_MafbKO_grey.pdf", 
-       width = 5, height = 4)
+
+```{r}
+ggsave(filename = "../Figures/UMAPplot_Ctl_IM_with_legend.pdf", 
+       width = 7, height =5)
+```
+
+```{r fig.height=5, fig.width=5}
+DimPlot(so, cols = pal4.control, group.by = "cell.type.control", pt.size = 2,
+order = c("IM", "Patrolling Mono", "Classical Mono", "Mafb-independent",  "Mafb-KO")
+) + NoLegend()
+```
+
+```{r}
+ggsave(filename = "../Figures/UMAPplot_Ctl_(vsMafbKO)_no_legend.pdf", 
+       width = 5, height = 5)
+```
+
+Plot Mafb-KO: 
+
+```{r}
+so$cell.type.mafbko <- as.character(so$cell.type2)
+so$cell.type.mafbko[WhichCells(so, expression = group == "HT5-Control")] <- "Control"
+so$cell.type.mafbko <- factor(so$cell.type.mafbko, levels = c("Classical Mono", "Patrolling Mono", "IM", "Mafb-independent", "Control"))
+```
+
+```{r fig.height=5, fig.width=5}
+pal4.control <- c(
+  "#F1F1F1", # grey for another sample
+  "#FF7F00", # Mafb- neo
+  "#A6CEE3", # cMo
+  "#1F78B4", # pMo
+  "#33A02C" # CD206 IM
+)
+DimPlot(so, cols = pal4.control, group.by = "cell.type.mafbko", pt.size = 2,
+order = c("IM", "Patrolling Mono", "Classical Mono", "Mafb-independent",  "Mafb-KO")
+) + NoLegend()
+```
+
+```{r}
+ggsave(filename = "../Figures/UMAPplot_MafbKO_(vsControl)_no_legend.pdf", 
+       width = 5, height = 5)
 ```
 
 See population frequencies:
@@ -87,12 +190,12 @@ See population frequencies:
 ```{r fig.width=3, fig.height=4}
 source("../R/SeuratFreqTable.R")
 freq.celltype.list <- list(
-  `Control` = Seurat2CellFreqTable(subset(so, subset = group == "HT5-Control"), slotName = "cell.type3"),  
-  `MAFb-KO` = Seurat2CellFreqTable(subset(so, subset = group == "HT7-MAFb-KO"), slotName = "cell.type3") 
+  `Control` = Seurat2CellFreqTable(subset(so, subset = group == "HT5-Control"), slotName = "cell.type2"),  
+  `MAFb-KO` = Seurat2CellFreqTable(subset(so, subset = group == "HT7-MAFb-KO"), slotName = "cell.type2") 
 )
 
 source("../R/barChart.R")
-barChart(freq.celltype.list) + labs(fill = "Cluster") + scale_fill_manual(values = pal3) + theme(axis.text.x = element_text(angle = 90))
+barChart(freq.celltype.list) + labs(fill = "Cluster") + scale_fill_manual(values = pal4) + theme(axis.text.x = element_text(angle = 90))
 ```
 
 ```{r}
@@ -124,7 +227,7 @@ VlnPlot(so, features = "G2M.Score", split.by = "group", cols = pal3, split.plot 
 Let's focus on the Mafb-deficient population in Mafb-deficient sample.
 
 ```{r}
-neo_IM <- subset(so, subset = cell.type3 %in% c("Mafb-deficient", "CD206- IMs", "CD206+ IMs"))
+neo_IM <- subset(so, subset = cell.type2 %in% c("Mafb-independent", "IM"))
 ```
 
 ## DE genes between Mafb- neo and IM population
@@ -132,8 +235,8 @@ neo_IM <- subset(so, subset = cell.type3 %in% c("Mafb-deficient", "CD206- IMs", 
 ```{r fig.width=8, fig.height=10}
 library(dplyr)
 Neo_vs_IM <- FindMarkers(so, 
-                          ident.1 = "Mafb-deficient", 
-                          ident.2 = c("CD206- IMs", "CD206+ IMs"), 
+                          ident.1 = "Mafb-independent", 
+                          ident.2 = c("IM"), 
                           logfc.threshold = 0,
                           verbose = FALSE)
 
@@ -180,7 +283,19 @@ dev.off()
 Show in vlnplot
 
 ```{r fig.height=8, fig.width=8}
-VlnPlot(neo_IM, features = c("Mafb", "Mrc1", "Mertk", "Cd38", "Adgre1", "C1qa", "Folr2", "Cd163"), group.by = "cell.type2", cols = c("#33A02C",  "#CAB2D6"))
+p <- VlnPlot(neo_IM, features = c("Mrc1", "Adgre1", "Pf4", "Tmem176a",  "Tmem176b","Tmem119", "Apoe", "C1qa", "C1qb", "C1qc", "Mafb", "Cd63"), group.by = "cell.type2", cols = c("#33A02C", "#FF7F00"), ncol = 4, pt.size = 0)
+p
+```
+Show vlnplot without label: 
+
+```{r fig.height=8, fig.width=8}
+p & theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank())
+```
+```{r}
+ggsave(filename = "../Figures/Vlnplot_IMID_genes_in_Ctrl_MafbKO.pdf", 
+       width = 8, height = 8)
 ```
 
 
@@ -223,71 +338,134 @@ suppressMessages({
   library(dplyr)
   library(ggrepel)
   })
-
-Neo_vs_IM.volcano = mutate(Neo_vs_IM, 
- Sig=ifelse((abs(Neo_vs_IM$avg_log2FC)>0.5)&(Neo_vs_IM$p_val_adj < 0.05), "Sig", "n.s."))
-# res2 = mutate(res2, 
-#              Sig=ifelse((abs(res2$avg_logFC)>1)&(res2$p_val_adj < 0.01), "Sig", "n.s."))
-
-
-Neo_vs_IM.volcano$Gene <- rownames(Neo_vs_IM.volcano)
-Gene.to.show.ValcanoPlot <- c("C1qa", "C1qb", "C1qc", "Maf", "Cd209", "Mafb")
 ```
 
 
-```{r fig.height=5, fig.width=6}
-p <- ggplot(Neo_vs_IM.volcano, aes(avg_log2FC, -log10(p_val_adj))) + geom_point(aes(col=Sig)) + scale_color_manual(values=c( "gray", "red")) 
-
-p + geom_text_repel(data=filter(Neo_vs_IM.volcano, Gene %in% Gene.to.show.ValcanoPlot), aes(label=Gene), box.padding = 1) + xlim(c(-5, 5)) + theme_classic() + theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + geom_hline(yintercept = -log10(0.01), linetype='dashed', col = 'grey') + geom_vline(xintercept = c(-0.5, 0.5),  linetype='dashed', col = 'grey')
-
-```
-
-
-```{r}
-ggsave(filename = "../Figures/VolcanoPlot_Mafb-KO_vs_IM_DE_genes.pdf", height = 5, width = 6)
-```
-
-Or let's set a threshold of log2FC and p_val_adj and plot them all: 
-
-```{r fig.height=5, fig.width=6}
-threshold.log2fc <- 2
-threshold.adjp <- 0.05
-Neo_vs_IM.volcano = mutate(Neo_vs_IM, 
- Sig=ifelse((abs(Neo_vs_IM$avg_log2FC) > threshold.log2fc)&(Neo_vs_IM$p_val_adj < threshold.adjp), "Sig", "n.s."))
-Neo_vs_IM.volcano$Gene <- rownames(Neo_vs_IM.volcano)
-
-Gene.to.show.ValcanoPlot <- rownames(Neo_vs_IM.volcano[Neo_vs_IM.volcano$Sig == "Sig", ])
-
-p <- ggplot(Neo_vs_IM.volcano, aes(avg_log2FC, -log10(p_val_adj))) + geom_point(aes(col=Sig)) + scale_color_manual(values=c( "gray", "red")) 
-
-p + geom_text_repel(data=filter(Neo_vs_IM.volcano, Gene %in% Gene.to.show.ValcanoPlot), aes(label=Gene), box.padding = 1) + xlim(c(-5, 5)) + theme_classic() + theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + geom_hline(yintercept = -log10(threshold.adjp), linetype='dashed', col = 'grey') + geom_vline(xintercept = c(-threshold.log2fc, threshold.log2fc),  linetype='dashed', col = 'grey') + ggtitle(paste("Log2FC > ", threshold.log2fc, "; p_val_adj <", threshold.adjp))
-
-write.csv(Neo_vs_IM.volcano[Gene.to.show.ValcanoPlot, ] %>% arrange(., desc(avg_log2FC)) , 
-          file = paste("./Mafb-deficient_vs_IM.DEgenes.Log2FC", threshold.log2fc, ".adjPval", threshold.adjp, ".results.csv", sep = "") ) 
-
-```
-
+Let's set a threshold of log2FC and p_val_adj and plot them all: 
 
 ```{r fig.height=5, fig.width=6}
 threshold.log2fc <- 1
 threshold.adjp <- 0.05
 Neo_vs_IM.volcano = mutate(Neo_vs_IM, 
  Sig=ifelse((abs(Neo_vs_IM$avg_log2FC) > threshold.log2fc)&(Neo_vs_IM$p_val_adj < threshold.adjp), "Sig", "n.s."))
+# add two colors to 2 sig lists
+Neo_vs_IM.volcano$Sig [ Neo_vs_IM.volcano$avg_log2FC < -threshold.log2fc & Neo_vs_IM.volcano$p_val_adj < threshold.adjp ] <- "1"
+
+Neo_vs_IM.volcano$Sig [ Neo_vs_IM.volcano$avg_log2FC > threshold.log2fc & Neo_vs_IM.volcano$p_val_adj < threshold.adjp ] <- "2"
+
 Neo_vs_IM.volcano$Gene <- rownames(Neo_vs_IM.volcano)
+Gene.to.show.ValcanoPlot <- rownames(Neo_vs_IM.volcano[Neo_vs_IM.volcano$Sig != "n.s.", ])
 
-Gene.to.show.ValcanoPlot <- rownames(Neo_vs_IM.volcano[Neo_vs_IM.volcano$Sig == "Sig", ])
+p <- ggplot(Neo_vs_IM.volcano, aes(avg_log2FC, -log10(p_val_adj))) + geom_point(aes(col=Sig)) + scale_color_manual(values=c( `1`="#33A02C", `n.s.`="grey", `2`="#FF7F00")) 
 
-p <- ggplot(Neo_vs_IM.volcano, aes(avg_log2FC, -log10(p_val_adj))) + geom_point(aes(col=Sig)) + scale_color_manual(values=c( "gray", "red")) 
+# set axis lim: 
+axis.lim <- max(abs(Neo_vs_IM.volcano$avg_log2FC)) + 1
 
-p + geom_text_repel(data=filter(Neo_vs_IM.volcano, Gene %in% Gene.to.show.ValcanoPlot), aes(label=Gene), box.padding = 1) + xlim(c(-5, 5)) + theme_classic() + theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + geom_hline(yintercept = -log10(threshold.adjp), linetype='dashed', col = 'grey') + geom_vline(xintercept = c(-threshold.log2fc, threshold.log2fc),  linetype='dashed', col = 'grey') + ggtitle(paste("Log2FC > ", threshold.log2fc, "; p_val_adj <", threshold.adjp))
+p + geom_text_repel(data=filter(Neo_vs_IM.volcano, Gene %in% Gene.to.show.ValcanoPlot), aes(label=Gene, fontface = "italic"), box.padding = 1) + xlim(c(-axis.lim, axis.lim)) + theme_classic() + theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + geom_hline(yintercept = -log10(threshold.adjp), linetype='dashed', col = 'grey') + geom_vline(xintercept = c(-threshold.log2fc, threshold.log2fc),  linetype='dashed', col = 'grey') + ggtitle(paste("Log2FC > ", threshold.log2fc, "; p_val_adj <", threshold.adjp))
 
 write.csv(Neo_vs_IM.volcano[Gene.to.show.ValcanoPlot, ] %>% arrange(., desc(avg_log2FC)) , 
           file = paste("./Mafb-deficient_vs_IM.DEgenes.Log2FC", threshold.log2fc, ".adjPval", threshold.adjp, ".results.csv", sep = "") ) 
+
+```
+```{r}
+ggsave(filename = "../Figures/VolcanoPlot_DE_IM_ctrol_vs_MafbKO.pdf", 
+       width = 6, height = 5)
 ```
 
 
+# GSEA analysis: Mafb-KO population vs IM
 
 
+```{r eval=FALSE}
+expr.table <- GetAssayData(neo_IM, slot = "data", assay = "RNA")
+expr.table <- as.data.frame(expr.table)
+row.info <- data.frame(NAME=rownames(expr.table), DESCRIPTION=rownames(expr.table))
+expr.table <- cbind(row.info, expr.table)
+
+write.table(expr.table, file = "./AssayData_RNA_data_MafbKO_control_IM.txt", sep = "\t", quote = FALSE, row.names = FALSE)
+
+# metadata: 
+cls.table <- matrix(as.character(neo_IM@meta.data$cell.type2), nrow = 1)
+write.table(cls.table, file = "./Class_celltype2_MafbKO_control_IM.cls", sep = " ", quote = FALSE, col.names = FALSE, row.names = FALSE) # pay attention to the row.names=FALSE, or it will add row 1 to the head. 
+```
+
+```{r eval=FALSE}
+# To add to cls file: 
+cat(paste(length(cls.table), length(unique(as.character(cls.table))), 1), 
+    "\n", 
+    "# ", paste(unique(as.character(cls.table)), collapse = " "), 
+    sep = "")
+```
+
+```{r eval=FALSE}
+# For chip file
+all.features <- read.csv(file = "../../../IM-DTR_MAF/counts/scRNAseq/Experiment-7-12-21-ScRNA_NGS21-U976/outs/raw_feature_bc_matrix/features.tsv.gz", sep = "\t")[, 2]
+chip.file <- data.frame(`Probe Set ID`=all.features, 
+                        `Gene Symbol`=all.features, 
+                        `Gene Title`=all.features)
+write.table(chip.file, file = "./genename.chip",sep = "\t", quote = FALSE, row.names = FALSE )
+```
+
+The results can be found in sub directory: GSEA
+
+# Scoring of IM and monocyte signatures in control and Mafb-KO samples
+
+
+## Load data
+
+We start from published data in Schyns et al, Nat Comm, 2019:
+  Schyns, J., Bai, Q., Ruscitti, C. et al. Non-classical tissue monocytes and two functionally distinct populations of interstitial macrophages populate the mouse lung. Nat Commun 10, 3964 (2019). https://doi.org/10.1038/s41467-019-11843-0
+
+The object "IMss_monocytes_filtered.v3" is the Seurat object used in this report. 
+
+```{r include=FALSE}
+load("/media/qiang/Data2/Archive/0_Archived_Projects/2019_Joey/20190509_Seurat_objects_for_SCENIC/IMss_monocytes_filtered.v3")
+```
+
+```{r}
+suppressMessages(library(VISION))
+Idents(IMss_monocytes_filtered.v3) <- "population"
+DimPlot(IMss_monocytes_filtered.v3) + ggtitle("scRNAseq data in Schyns et al. 2019 Nat Comm")
+```
+
+## Create signautres for IM, classical monocytes and patrolling monocytes
+
+```{r}
+signature.im <- FindMarkers(IMss_monocytes_filtered.v3, 
+                            ident.1 = c("CD206 IM", "MHC-II IM"), 
+                            only.pos = TRUE, 
+                            logfc.threshold = 1, verbose = FALSE)
+signature.pmo <- FindMarkers(IMss_monocytes_filtered.v3, 
+                            ident.1 = "Patrolling Mono", 
+                            only.pos = TRUE, 
+                            logfc.threshold = 1, verbose = FALSE)
+signature.cmo <- FindMarkers(IMss_monocytes_filtered.v3, 
+                            ident.1 = "Classical Mono", 
+                            only.pos = TRUE, 
+                            logfc.threshold = 1, verbose = FALSE)
+```
+
+```{r}
+sig.im <- rep(1, length(rownames(signature.im)))
+names(sig.im) <- rownames(signature.im)
+sig.im <- createGeneSignature(name = "IM", sigData = sig.im)
+
+sig.cmo <- rep(1, length(rownames(signature.cmo)))
+names(sig.cmo) <- rownames(signature.cmo)
+sig.cmo <- createGeneSignature(name = "IM", sigData = sig.cmo)
+
+sig.pmo <- rep(1, length(rownames(signature.pmo)))
+names(sig.pmo) <- rownames(signature.pmo)
+sig.pmo <- createGeneSignature(name = "IM", sigData = sig.pmo)
+
+sig.im_mono <- c(sig.im, sig.cmo, sig.pmo)
+```
+
+## Signature scoring
+
+```{r}
+vis <- Vision(so, signatures = sig.im_mono)
+```
 
 
 # Session information
