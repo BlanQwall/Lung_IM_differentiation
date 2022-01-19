@@ -204,6 +204,28 @@ ggsave(filename = "../Figures/Barplot_Ctl_MafbKO_population_frequency.pdf",
        width = 3, height = 4)
 ```
 
+Show CD206+ IM markers
+
+
+```{r fig.height=4, fig.width=5}
+FeaturePlot(so, features = "Mrc1", cols = c("lightgray", "red"), min.cutoff = 0.5)
+```
+```{r}
+ggsave(filename = "../Figures/VlnPlot_Mrc1_in_all_samples.pdf", width = 5, height = 4)
+```
+
+```{r fig.height=4, fig.width=5}
+FeaturePlot(so, features = "Lyve1", cols = c("lightgray", "red"))
+```
+```{r}
+ggsave(filename = "../Figures/VlnPlot_Lyve1_in_all_samples.pdf", width = 5, height = 4)
+```
+
+```{r fig.height=8, fig.width=8}
+FeaturePlot(so, features = c("Mrc1", "Lyve1"), cols = c("lightgray", "red"), split.by = "group")
+```
+
+
 # Proliferation comparison
 
 ```{r fig.width=3, fig.height=4}
@@ -530,7 +552,6 @@ VlnPlot(so, features = "sig.cMo", cols = pal4, pt.size = 0)
 ggsave(filename = "../Figures/Vlnplot_sig_cMo_in_ctrl_MafbKO.pdf", 
        width = 5, height = 4)
 ```
-
 
 
 
