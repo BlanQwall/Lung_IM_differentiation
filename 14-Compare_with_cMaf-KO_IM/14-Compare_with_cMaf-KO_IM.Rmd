@@ -198,14 +198,13 @@ ggsave(filename = "../Figures/UMAPplot_Ctl_(vscMafKO)_no_legend.pdf",
 Plot Mafb-KO: 
 
 ```{r}
-so$cell.type.cmafko <- as.character(so$cell.type3)
-so$cell.type.cmafko[WhichCells(so, expression = group == "HT5-Control")] <- "ZZ"
-so$cell.type.cmafko <- factor(so$cell.type.cmafko, levels = c("Classical Mono", "Patrolling Mono", "CD206+ IM", "CD206- IM", "Mafb-independent", "Unknown", "ZZ"))
-Idents(so) <- "cell.type.cmafko"
+so$cell.type.mafbko <- as.character(so$cell.type2)
+so$cell.type.mafbko[WhichCells(so, expression = group == "HT5-Control")] <- "ZZ"
+so$cell.type.mafbko <- factor(so$cell.type.mafbko, levels = c("Classical Mono", "Patrolling Mono", "CD206+ IM", "CD206- IM", "Mafb-independent", "Unknown", "ZZ"))
 ```
 
 ```{r fig.height=5, fig.width=5}
-DimPlot(so, cols = pal4.control, group.by = "cell.type.cmafko", pt.size = 2,
+DimPlot(so, cols = pal4.control, group.by = "cell.type.control", pt.size = 2,
 order = c("IM", "Patrolling Mono", "Classical Mono", "Mafb-independent", "CD206+ IM", "CD206- IM", "ZZ")
 ) + NoLegend()
 ```
@@ -235,35 +234,28 @@ ggsave(filename = "../Figures/Barplot_Ctl_cMafKO_population_frequency.pdf",
 
 Show CD206+ IM markers
 
-```{r fig.height=4, fig.width=8}
-FeaturePlot(so, features = "Mrc1", cols = c("lightgray", "red"), min.cutoff = 0.5, split.by = "group")
+
+```{r fig.height=4, fig.width=5}
+FeaturePlot(so, features = "Mrc1", cols = c("lightgray", "red"), min.cutoff = 0.5)
 ```
 
 ```{r}
-ggsave(filename = "../Figures/VlnPlot_Mrc1_in_cMafKO_Control.pdf", width = 8, height = 4)
+ggsave(filename = "../Figures/VlnPlot_Mrc1_in_cMafKO_Control.pdf", width = 5, height = 4)
 ```
 
-```{r fig.height=4, fig.width=8}
-FeaturePlot(so, features = "Lyve1", cols = c("lightgray", "red"), split.by = "group")
-```
-
-```{r}
-ggsave(filename = "../Figures/VlnPlot_Lyve1_in_cMafKO_control.pdf", width = 8, height = 4)
-```
-
-```{r fig.height=4, fig.width=8}
-FeaturePlot(so, features = "Folr2", cols = c("lightgray", "red"), split.by = "group")
+```{r fig.height=4, fig.width=5}
+FeaturePlot(so, features = "Lyve1", cols = c("lightgray", "red"))
 ```
 
 ```{r}
-ggsave(filename = "../Figures/VlnPlot_Folr2_in_cMafKO_control.pdf", width = 8, height = 4)
+ggsave(filename = "../Figures/VlnPlot_Lyve1_in_cMafKO_control.pdf", width = 5, height = 4)
 ```
 
 ```{r fig.height=8, fig.width=8}
-FeaturePlot(so, features = c("Mrc1", "Folr2"), cols = c("lightgray", "red"), split.by = "group")
+FeaturePlot(so, features = c("Mrc1", "Lyve1"), cols = c("lightgray", "red"), split.by = "group")
 ```
 ```{r}
-ggsave(filename = "../Figures/Featureplot_Mrc1_Folr2_in_cMafKO_control.pdf", height = 8, width = 8)
+ggsave(filename = "../Figures/Featureplot_Mrc1_Lyve1_in_cMafKO_control.pdf", height = 8, width = 8)
 ```
 
 # Proliferation comparison
