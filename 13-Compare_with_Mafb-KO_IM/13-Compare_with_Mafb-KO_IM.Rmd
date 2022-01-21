@@ -311,7 +311,7 @@ p
 ```
 Show vlnplot without label: 
 
-```{r fig.height=8, fig.width=8}
+```{r fig.height=7, fig.width=8}
 p & theme(axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank())
@@ -367,7 +367,7 @@ suppressMessages({
 Let's set a threshold of log2FC and p_val_adj and plot them all: 
 
 ```{r fig.height=5, fig.width=6}
-threshold.log2fc <- 1
+threshold.log2fc <- 0.5
 threshold.adjp <- 0.05
 Neo_vs_IM.volcano = mutate(Neo_vs_IM, 
  Sig=ifelse((abs(Neo_vs_IM$avg_log2FC) > threshold.log2fc)&(Neo_vs_IM$p_val_adj < threshold.adjp), "Sig", "n.s."))
@@ -384,7 +384,7 @@ p <- ggplot(Neo_vs_IM.volcano, aes(avg_log2FC, -log10(p_val_adj))) + geom_point(
 # set axis lim: 
 axis.lim <- max(abs(Neo_vs_IM.volcano$avg_log2FC)) + 1
 
-p + geom_text_repel(data=filter(Neo_vs_IM.volcano, Gene %in% Gene.to.show.ValcanoPlot), aes(label=Gene, fontface = "italic"), box.padding = 1) + xlim(c(-axis.lim, axis.lim)) + theme_classic() + theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + geom_hline(yintercept = -log10(threshold.adjp), linetype='dashed', col = 'grey') + geom_vline(xintercept = c(-threshold.log2fc, threshold.log2fc),  linetype='dashed', col = 'grey') + ggtitle(paste("Log2FC > ", threshold.log2fc, "; p_val_adj <", threshold.adjp))
+p + geom_text_repel(data=filter(Neo_vs_IM.volcano, Gene %in% Gene.to.show.ValcanoPlot), size = 8, aes(label=Gene, fontface = "italic"), box.padding = 1) + xlim(c(-axis.lim, axis.lim)) + theme_classic() + theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + geom_hline(yintercept = -log10(threshold.adjp), linetype='dashed', col = 'grey') + geom_vline(xintercept = c(-threshold.log2fc, threshold.log2fc),  linetype='dashed', col = 'grey') + ggtitle(paste("Log2FC > ", threshold.log2fc, "; p_val_adj <", threshold.adjp))
 
 write.csv(Neo_vs_IM.volcano[Gene.to.show.ValcanoPlot, ] %>% arrange(., desc(avg_log2FC)) , 
           file = paste("./Mafb-deficient_vs_IM.DEgenes.Log2FC", threshold.log2fc, ".adjPval", threshold.adjp, ".results.csv", sep = "") ) 
@@ -510,12 +510,12 @@ so$sig.cMo <- vis@SigScores[, "cMo"]
 ```{r}
 FeaturePlot(so, features = "sig.IM", split.by = "group")
 ```
-
 ```{r fig.height=4, fig.width=5}
-VlnPlot(so, features = "sig.IM", cols = pal4, pt.size = 0)
+VlnPlot(so, features = "sig.IM", cols = pal4[c(1,3,4)], pt.size = 0, idents = c("Classical Mono", "IM", "Mafb-independent"))
 ```
 ```{r}
-dt <- data.frame(sig=so$sig.IM, celltype=so$cell.type2)
+so.sub <- subset(so, idents = c("Classical Mono", "IM", "Mafb-independent"))
+dt <- data.frame(sig=so.sub$sig.IM, celltype=so.sub$cell.type2)
 res.aov <- aov(sig ~ celltype, data = dt)
 summary(glht(res.aov, linfct = mcp(celltype = "Tukey")))
 ```
@@ -526,7 +526,8 @@ ggsave(filename = "../Figures/Vlnplot_sig_IM_in_ctrl_MafbKO.pdf",
 ```
 
 ```{r fig.height=4, fig.width=5}
-VlnPlot(so, features = "sig.pMo", cols = pal4, pt.size = 0)
+VlnPlot(so, features = "sig.pMo", cols = pal4[c(1,3,4)], pt.size = 0, idents = c("Classical Mono", "IM", "Mafb-independent"))
+
 ```
 ```{r}
 dt <- data.frame(sig=so$sig.pMo, celltype=so$cell.type2)
@@ -540,13 +541,13 @@ ggsave(filename = "../Figures/Vlnplot_sig_pMo_in_ctrl_MafbKO.pdf",
 ```
 
 ```{r}
-dt <- data.frame(sig=so$sig.cMo, celltype=so$cell.type2)
+dt <- data.frame(sig=so.sub$sig.cMo, celltype=so.sub$cell.type2)
 res.aov <- aov(sig ~ celltype, data = dt)
 summary(glht(res.aov, linfct = mcp(celltype = "Tukey")))
 ```
 
 ```{r fig.height=4, fig.width=5}
-VlnPlot(so, features = "sig.cMo", cols = pal4, pt.size = 0)
+VlnPlot(so, features = "sig.cMo", cols = pal4[c(1,3,4)], pt.size = 0, idents = c("Classical Mono", "IM", "Mafb-independent"))
 ```
 ```{r}
 ggsave(filename = "../Figures/Vlnplot_sig_cMo_in_ctrl_MafbKO.pdf", 
