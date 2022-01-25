@@ -1,6 +1,6 @@
 ---
-title: "PAPER TITLE TO BE DEFINED (in common.yaml)"
-titlerunning: Lung IM differentiation
+title: "Monocytes can Proliferate in Vacant Tissue Niches prior to Differentiation into Macrophages"
+titlerunning: Monocyte proliferation to macrophage differentiation
 authorrunning: Bai Q, Hasan S, Vanneste D, et al.
 authors: 
 - name: Qiang Bai
@@ -27,11 +27,11 @@ keywords:
 - word
 
 abstract: |
-  Lung interstitium macrophages (IMs) are non-alveolar resident tissue macrophages which contribute to the lung homeostasis. These cells were reported to be heterogeneous by our group and other teams, which contains two main distinct subpopulations: CD206+ IMs and CD206- IMs. However, the exact origin of IMs and the transcriptional programs that control IM differentiation remains unclear. In recent report, we analyzed the refilled IMs in the course of time after induced IM depletion with single-cell RNA sequencing (10X Genomics Chromium) and bulk RNA sequencing.  
+    Resident tissue macrophages (RTM) are differentiated immune cells populating distinct niches and exhibiting important tissue-supportive functions. RTM maintenance is thought to depend either on monocyte engraftment and differentiation, or on the self-renewal of mature RTM. Here, we discovered that monocytes can re-enter cell cycle and proliferate locally before their differentiation into RTM. We developed a mouse model of inducible lung interstitial macrophage (IM) depletion in which the vacant niche is repopulated by BM-derived monocytes giving rise to fully differentiated IM subsets. By performing time-course single-cell RNA-sequencing analyses of myeloid cells during niche refilling, we found that few Ly6C+ classical monocytes could self-renew locally in a CSF1R-dependent manner. We further showed that the transcription factor MafB restricted such proliferation and was essential to mediate RTM specification and identity in our model. Our data provide evidence that, in the mononuclear phagocyte system, self-renewal is not merely restricted to myeloid progenitor cells and mature macrophages, but is also a tightly regulated capability of mature monocytes developing into RTM in vivo.
 
 bibliography: bib.bib
 
-csl: ../nature-reviews-immunology.csl
+csl: ../cell.csl
 link-citations: yes
 
 ---

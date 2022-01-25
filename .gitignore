@@ -40,3 +40,6 @@ vignettes/*.pdf
 *.knit.md
 .DS_Store
 Figures/.DS_Store
+
+# Fig folder
+Figures/
