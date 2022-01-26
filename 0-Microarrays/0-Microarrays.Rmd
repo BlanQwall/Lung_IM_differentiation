@@ -1,6 +1,7 @@
 ---
 subtitle: "0-Microarray data analysis"
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
+bibliography: bib.bib
 output: 
   #bookdown::pdf_book:
   pdf_document:
@@ -31,8 +32,37 @@ knitr::opts_chunk$set(tidy.opts=list(width.cutoff=80),
 
 # Description
 
+In order to build a lung interstitial macrophage (IM) specific mouse model, we need to find genes specific to this cell type comparing to other myeloid cell types in the lung. That's why we collected published microarray data and compared the expression profile of them. 
+
+The following published microarray data were used. 
+
+| Sample name                                               | Source         | IDENTIFIER (Raw data)                                                            |
+|-----------------------------------------------------------|----------------|----------------------------------------------------------------------------------|
+| Classical Monocytes MHCII+ in blood                       | ImmGen         | GEO: GSM605868, GSM605870, GSM605871                                             |
+| Classical Monocytes MHCII- in bone marrow                 | ImmGen         | GEO: GSM854329, GSM854330, GSM854331                                             |
+| Classical Monocytes MHCII- in blood                       | ImmGen         | GEO: GSM605872, GSM605873, GSM605874                                             |
+| Nonclassical Monocytes, MHCII+                            | ImmGen         | GEO: GSM605878, GSM605879                                                        |
+| Nonclassical Monocytes in bone marrow                     | ImmGen         | GEO: GSM854332, GSM854333, GSM854334                                             |
+| Nonclassical Monocytes in blood                           | ImmGen         | GEO: GSM605884, GSM605885                                                        |
+| Nonclassical Monocytes, MHCII int                         | ImmGen         | GEO: GSM605886, GSM605887, GSM605888, GSM605889, GSM605890                       |
+| Lung CD11b+ CD24- macrophage                              | ImmGen         | GEO: GSM854271, GSM854272                                                        |
+| Small Intestinal Lamina Propria CD11c-hi CD103- CD11b+ MF | ImmGen         | GEO: GSM854262, GSM854263, GSM854264, GSM854265, GSM854266, GSM854267, GSM854268 |
+| Bone marrow macrophages                                   | ImmGen         | GEO: GSM854317, GSM854318, GSM854319                                             |
+| Spleen Red Pulp macrophages                               | ImmGen         | GEO: GSM605853, GSM605854, GSM605855                                             |
+| Peritoneal macrophage steady state                        | ImmGen         | GEO: GSM854294, GSM854295, GSM854296                                             |
+| Peritoneal cavity macrophages steady state                | ImmGen         | GEO: GSM605850, GSM605851, GSM605852                                             |
+| Medullary macrophages from skin draining lymph nodes      | ImmGen         | GEO: GSM854322, GSM854323                                                        |
+| Central nervous system microglia                          | ImmGen         | GEO: GSM854326, GSM854327, GSM854328                                             |
+| CD103+ migratory DC, Mediastinal LN CD103+ DC             | ImmGen         | GEO: GSM854243, GSM854244, GSM854245                                             |
+| CD11b+ migratory DC, Mediastinal LN CD11b+ DC             | ImmGen         | GEO: GSM854255, GSM854256, GSM854257                                             |
+| Lung CD103+ dendritic cells                               | ImmGen         | GEO: GSM538231, GSM538232, GSM538233, GSM854241, GSM854242                       |
+| Lung MHCII+ CD11c+ CD103- CD11b+ CD24+ dendritic cells    | ImmGen         | GEO: GSM854269, GSM854270                                                        |
+| Lung IM, Ly6C+ cMo and AM                                 | [@Sabatel2017] | EMBL-EBI: E-MTAB-5012                                                            |
+
 
 # Load packages and data
+
+The gene expression activity matrix for each samples were generated in Gene Expression Commons (https://gexc.riken.jp) [@Seita2012]. 
 
 ```{r}
 # packages
