@@ -49,4 +49,3 @@ Here, `$id`, `$FastqDir` and `$REF` are the sample ID, the directory containing 
 sessionInfo()
 ```
 
-# References

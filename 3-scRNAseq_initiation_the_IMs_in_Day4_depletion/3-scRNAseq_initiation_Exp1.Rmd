@@ -26,10 +26,9 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
-Lung interstitium macrophages (IMs) are non-alveolar resident tissue macrophages which contribute to the lung homeostasis. These cells were reported to be heterogeneous by our group and other teams, which contains two main distinct subpopulations: CD206+ IMs and CD206- IMs. However, the exact origin of IMs and the transcriptional programs that regulate IM differentiation remains unclear. In recent report, we analyzed the refilled IMs in the course of time after induced IM depletion with single-cell RNA sequencing (10X Genomics Chromium) and bulk RNA sequencing. 
+To compare lung monocytes and IM from untreated IM-DTR mice (group “No treatment”) with those from IM-DTR mice treated with 50 ng DT i.p. 96 h before (group “DT96h”), 5 mice from each group was sacrificed and lung single-cell-suspensions were obtained after enzymatic digestion. CD11b+ cells were enriched by MACS using CD11b MicroBeads (Miltenyi Biotec, 130-049-601). Lung monocytes and IM were then FACS-sorted and the 10x Genomics platform (Single Cell 3’ Solution) was used for scRNA-seq. Lung monocytes and IM were FACS-sorted separately and IM were then enriched in the final single cell suspension to reach a monocyte/IM ratio of 5:5. 
 
-The IMs in Day 4 post-depletion were compared to the those without depletion. Results showed that refilled IMs had a lower ratio of CD206+ IM vs CD206- subpopulation comparing to IMs without depletion, but they shared high similarity to each other, indicating that the de novo IM population had been established before Day 4 post-depletion. 
-
+The raw scRNAseq data were mapped and counted in the analysis 2. Here we build up Seurat object from the counts matrix. 
 
 # Load packages and data
 
