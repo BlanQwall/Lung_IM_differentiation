@@ -1,6 +1,6 @@
 ---
 subtitle: "5-scRNAseq initiation for Exp2: the IMs refilling during post deletion"
-# bibliography: bib.bib
+bibliography: bib.bib
 link-citations: yes
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
 output: 
@@ -33,11 +33,14 @@ The lung IMs and monocytes from the mice at 12 hours (DT12h), 24 hours (DT24h) a
 Over design of experiment: 
 
 The lung IMs and monocytes were sorted from three groups of mice: 
-Group “DT12h” contains 5 IM-DTR mice which were treated with 50 ng diphtheria toxin (DT) 12 hours before sacrifice. 
-Group “DT24h” contains 5 IM-DTR mice which were treated with 50 ng DT 24 hours before sacrifice. 
-Group “DT48h” contains 5 IM-DTR mice which were treated with 50 ng DT 48 hours before sacrifice. 
+
+  - Group “DT12h” contains 5 IM-DTR mice which were treated with 50 ng diphtheria toxin (DT) 12 hours before sacrifice. 
+  - Group “DT24h” contains 5 IM-DTR mice which were treated with 50 ng DT 24 hours before sacrifice. 
+  - Group “DT48h” contains 5 IM-DTR mice which were treated with 50 ng DT 48 hours before sacrifice. 
 
 Cells from each group were barcoded with different Biolegend anti-mouse Hastags before being pooled for library construction. Processed data then were analyzed with Bioconductor and Seurat package. The cells from different time points were demultiplexed with the barcode detected in each cell. 
+
+The pepline build Seurat object from matrix, celltyping and contaminated cell removal were identical to the previous anlayses (Analysis 2, 3 and 4) using Seurat pakcage [@SeuratV4] and SingleR package [@SingleR]. Finally, the filtered cells were saved into a Seurat object for further analysis. 
 
 # Demultiplexing (de-hashtag)
 
@@ -139,6 +142,7 @@ FeatureScatter(immune.hashtag, feature1 = 'HT7-24hDT-GAGTCTGCCAGTATC', feature2 
 ```
 
 Compare number of UMIs for singlets, doublets and negative cells
+
 ```{r hashtag_vln, fig.width=10}
 Idents(immune.hashtag) <- 'HTO_classification.global'
 VlnPlot(immune.hashtag, features = 'nCount_RNA', pt.size = 0.1, log = TRUE)
@@ -199,6 +203,7 @@ saveRDS(immune.singlet, file = "./immune.demultiplexed.seuratObject.rds")
 # QC of pooled sample
 
 Load data: 
+
 ```{r message=FALSE}
 # load package and data
 library(ggpubr)
@@ -206,9 +211,8 @@ source("~/Desktop/velocyto/Script/seurat.setup.R")
 dir.10x <- "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR/IM_DTR_exp2/counts/scRNAseq/chromium"
 ```
 
-# QC
-
 ## Sample: CD45Plus_NGS21-S229
+
 ```{r message=FALSE, warning=FALSE}
 
 CD45Plus_NGS21_S229 <- seurat.setup(path.10x = file.path(dir.10x, "CD45Plus_NGS21-S229/outs/filtered_feature_bc_matrix/") , project = "IM-DTR", dimensionality = 1:20, mt.percentage = 20, human = FALSE)
@@ -227,7 +231,7 @@ ggarrange(CD45Plus_NGS21_S229$plots$variable_features, CD45Plus_NGS21_S229$plots
 saveRDS(CD45Plus_NGS21_S229$seuratObject, file = "./CD45Plus_NGS21_S229.seuratObject.rds")
 ```
 
-# Identify the cells for each samples
+# Identify the cells from each samples (de-hashtagging)
 
 ```{r include=FALSE}
 CD45Plus_NGS21_S229.seuratObject <- CD45Plus_NGS21_S229$seuratObject
@@ -235,6 +239,7 @@ immune.demultiplexed.seuratObject <- immune.singlet
 ```
 
 Assign HTO calling to the Seurat object
+
 ```{r}
 common.immune <- intersect(colnames(CD45Plus_NGS21_S229.seuratObject), colnames(immune.demultiplexed.seuratObject))
 CD45Plus_NGS21_S229.seuratObject <- subset(CD45Plus_NGS21_S229.seuratObject, cells = common.immune)
@@ -281,6 +286,7 @@ CD45Plus_NGS21_S229.seuratObject <- ScaleData(CD45Plus_NGS21_S229.seuratObject,
 ```
 
 ## Linear dimension reduction
+
 ```{r}
 CD45Plus_NGS21_S229.seuratObject <- RunPCA(CD45Plus_NGS21_S229.seuratObject, 
                                            features = VariableFeatures(object = CD45Plus_NGS21_S229.seuratObject))
@@ -328,9 +334,6 @@ DimPlot(results, reduction = "umap", label = TRUE)
 DefaultAssay(results) <- "RNA"
 FeaturePlot(results, features = c("Fcgr1", "H2-Eb1", "Cd74", "Mrc1", "Folr2", "Cd163", "Ace", "Fcgr4"), reduction = "umap") 
 ```
-
-
-
 
 ## Combine marker expression with SingleR results 
 
@@ -380,7 +383,7 @@ results <- ScaleData(results, features = rownames(results))
 results <- RunPCA(results, features = VariableFeatures(results))
 ```
 
-Non-linear reduction: 
+Non-linear dimension reduction: 
 *Let's choose dim = 1:10, showing very decent bridge between monocytes and macrophages.*
 
 ```{r message=FALSE, warning=FALSE}
