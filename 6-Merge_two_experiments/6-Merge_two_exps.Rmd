@@ -26,9 +26,11 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
+To obtain a dynamic expression profile from refilled monocytes to IM differentiation, we anlayzed lung monocytes and IM of IM-DTR mice at different time points of diphtheria toxin (DT) treatment. 
 
+Here, we combined the monocytes/IM data from two experiements (raw data and processed data could be found under accession number GSE193894 and GSE193896 in NCBI GEO). We illustrated the different cell types in a 3-dimension plot and found a transit population bridging classical monocytes and IM. 
 
-# Load data 
+# Load data and packages
 
 ```{r message=FALSE, warning=FALSE}
 # packages
@@ -50,7 +52,7 @@ imdtr2 <- readRDS("../../../IM_DTR_exp2/analyses/20210409_immune_cell_id/immune.
 
 # Merge Exp1 and Exp2
 
-Prepare metadata: 
+## Prepare metadata: 
 ```{r}
 imdtr1$orig.ident <- "IM-DTR1"
 imdtr2$orig.ident <- "IM-DTR2"
@@ -71,7 +73,7 @@ Now merge:
 imdtr3 <- merge(imdtr1, imdtr2, project = "IM-DTR")
 ```
 
-Normalize and process: 
+## Normalize and process: 
 ```{r message=FALSE, warning=FALSE}
 imdtr3 <- NormalizeData(imdtr3)
 imdtr3 <- FindVariableFeatures(imdtr3, selection.method = "vst", nfeatures = 2000)
@@ -111,7 +113,7 @@ PCAPlot(imdtr3, group.by = "orig.ident")
 ```
 *Samples from Exp1 and Exp2 are so similar. * 
 
-Non-linear reduction:
+## Non-linear reduction:
 
 ```{r}
 results <- RunTSNE(imdtr3, dims = 1:6)
@@ -182,9 +184,10 @@ Cluster 4: Chemoattractant
 Cluster 5: Transit
 Cluster 6: ? 
 
-## Identify the Cluster 6
+## Characterization of Cluster 6
 
-GO for cluster 6:
+GO enrichment for cluster 6:
+
 ```{r}
 library(topGO)
 library(org.Mm.eg.db)
@@ -244,14 +247,14 @@ freq.celltype.list <- list(
 barChart(freq.celltype.list) + labs(fill = "Cluster") + scale_fill_manual(values = pal)
 ```
 
-```{r include=FALSE}
+```{r eval=FALSE}
 ggsave(filename = "BarPlot_distribution_celltypes_in_samples.pdf",
        path = "../Figures", 
        height = 4, width = 5, 
        device = "pdf")
 ```
 
-# Cell-cycle analysis
+## Cell-cycle analysis
 
 ```{r}
 library(cowplot)
@@ -273,7 +276,7 @@ DimPlot(imdtr3.for3d, cols = pal)
 ```
 
 
-```{r}
+```{r eval=FALSE}
 saveRDS(imdtr3.for3d, file = "./immune_imdtr3.seuratObject.Rds")
 ```
 
@@ -285,7 +288,7 @@ saveRDS(imdtr3.for3d, file = "./immune_imdtr3.seuratObject.Rds")
 DimPlot(imdtr3.for3d, cols = pal, dims = c(1,2))
 ```
 
-```{r include=FALSE}
+```{r eval=FALSE}
 ggsave(filename = "UMAPplot_All_cells_PC1_2.pdf",
        path = "../Figures", 
        height = 3.5, width = 5, 
@@ -298,7 +301,7 @@ ggsave(filename = "UMAPplot_All_cells_PC1_2.pdf",
 DimPlot(imdtr3.for3d, cols = pal, dims = c(1,3))
 ```
 
-```{r include=FALSE}
+```{r eval=FALSE}
 ggsave(filename = "UMAPplot_All_cells_PC1_3.pdf",
        path = "../Figures", 
        height = 3.5, width = 5, 
@@ -426,7 +429,6 @@ if (savePNG) {
 
 ```{r fig.height=5, fig.width=5}
 treat.list <- c("0.5d","1d","2d","4d","0d")
-# savePNG doesn't work. 
 # everytime, save PNG manually with width = 700, height = 630. 
   plot3d.byGroup(imdtr3.for3d, treat.list[1])
 ```
@@ -454,7 +456,7 @@ DoHeatmap(imdtr3.for3d, features = top20$gene, group.colors = pal, size = 0) + s
    theme(axis.text.y = element_text(size = 4))
 ```
 
-```{r include=FALSE}
+```{r eval=FALSE}
 ggsave(filename = "HeatMap_top20_in_cell_types_blue_red.pdf",
        path = "../Figures", 
        height = 6, width = 5, 
@@ -477,7 +479,7 @@ DotPlot(imdtr3.for3d,
    theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-```{r include=FALSE}
+```{r eval=FALSE}
 ggsave(filename = "DotPlot_Markers_in_cell_types.pdf",
        path = "../Figures", 
        height = 4, width = 9, 
@@ -544,7 +546,7 @@ Score:
 ```{r fig.width=6, fig.height=4}
 VlnPlot(imdtr3.for3d, features = "G2M.Score", cols = pal, pt.size = 0)
 ```
-```{r include=FALSE}
+```{r eval=FALSE}
 ggsave(filename = "VlnPlot_G2MScore_in_all_samples.pdf",
        path = "../Figures", 
        height = 4, width = 6, 
@@ -557,7 +559,7 @@ Csf1 expression:
 VlnPlot(imdtr3.for3d, features = "Csf1", cols = pal, pt.size = 0)
 ```
 
-```{r include=FALSE}
+```{r eval=FALSE}
 ggsave(filename = "VlnPlot_Csf1_in_all_samples.pdf",
        path = "../Figures", 
        height = 4, width = 6, 
@@ -569,7 +571,7 @@ Csf1r
 VlnPlot(imdtr3.for3d, features = "Csf1r", cols = pal, pt.size = 0)
 ```
 
-```{r include=FALSE}
+```{r eval=FALSE}
 ggsave(filename = "VlnPlot_Csf1r_in_all_samples.pdf",
        path = "../Figures", 
        height = 4, width = 6, 
@@ -581,5 +583,3 @@ ggsave(filename = "VlnPlot_Csf1r_in_all_samples.pdf",
 ```{r}
 sessionInfo()
 ```
-
-# References
