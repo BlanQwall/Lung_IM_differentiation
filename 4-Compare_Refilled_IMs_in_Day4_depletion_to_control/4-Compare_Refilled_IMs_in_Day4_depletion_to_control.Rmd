@@ -167,9 +167,9 @@ DimPlot(results)
 saveRDS(results, file = "./results.integrated.Rds")
 ```
 
-# Identify cells with SingleR 
+## Identify cells with SingleR 
 ```{r message=FALSE, warning=FALSE}
-source("~/Desktop/velocyto/Script/seurat2singleR.R")
+source("../R/seurat2singleR.R")
 Idents(results) <- "integrated_snn_res.0.5"
 results.singleR <- seurat2singleR(results, ref = "ImmGenData")
 ```
@@ -292,7 +292,7 @@ freq.celltype.list <- list(
   `++` = Seurat2CellFreqTable(subset(results, subset = treatment == "++"), slotName = "RNA_snn_res.0.3") 
 )
 
-source("~/Desktop/velocyto/Script/barChart.R")
+source("../R/barChart.R")
 barChart(freq.celltype.list) + labs(fill = "Cluster")
 ```
 
