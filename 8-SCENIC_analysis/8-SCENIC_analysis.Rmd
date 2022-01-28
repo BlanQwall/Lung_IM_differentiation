@@ -1,6 +1,6 @@
 ---
 subtitle: "8-SCENIC analysis"
-# bibliography: bib.bib
+bibliography: bib.bib
 link-citations: yes
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
 output: 
@@ -26,6 +26,7 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
+To predict the potential active transcription factors (TF), Ly6C+ cMo, transit cells, CD206- and CD206+ IM were subjected to SCENIC analysis using SCENIC package [@Aibar2017]. The normalized counts, nFeature_RNA, nCount_RNA in merged Seurat object were used for the initial SCENIC analysis. The genes expressed with a value of 3 in 0.5% of the cells and detected in 1% of the cells were kept for following SCENIC analysis. Co-expression network analysis was made with GENIE3 in the SCENIC package. To represent the SCENIC results, the results of 3.4_regulonsAUC were added to the metadata of Seurat object so that regulon AUC scores could be plot using FeaturePlot function. The top 50 regulons with highest variance were showed in the heatmap with their Z-scores. 
 
 # Prepare data
 
@@ -284,7 +285,7 @@ hp <- draw(hp)
 hp
 ```
 
-```{r}
+```{r eval=FALSE}
 pdf(file = "../Figures/HeatMap_top50_TF_SCENIC_in_15kcells.pdf", 
     width = 8, height = 6)
 hp
@@ -354,7 +355,7 @@ pal2 <- c(`Classical_Mono`="#A6CEE3",
 ```{r fig.height=5, fig.width=6}
   VlnPlot(obj, features = "Mafb (15g)", group.by  = "cell.type2", pt.size = 0, cols = pal2)
 ```
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/VlnPlot_Mafb_TF_activity_in_IM_differentiation.pdf", 
        height = 5, width = 6)
 ```
@@ -378,7 +379,7 @@ DefaultAssay(obj) <- "RNA"
   VlnPlot(obj, features = "Mafb", group.by  = "cell.type2", pt.size = 0, cols = pal2)
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/VlnPlot_Mafb_expression_in_IM_differentiation.pdf", 
        height = 5, width = 6)
 ```
