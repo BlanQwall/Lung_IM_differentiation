@@ -1,6 +1,6 @@
 ---
 subtitle: "7-RNAvelocity and scVelo analysis"
-# bibliography: bib.bib
+bibliography: bib.bib
 link-citations: yes
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
 output: 
@@ -26,7 +26,8 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
-
+To confirm the differentiation from classical monocytes to IM passing by the transit cells, the cell fate or differentiation direction of each single cells were predicted by RNA velocity. 
+Briefly, the counts for spliced-, unspliced- and ambiguous transcripts were calculated from CellRanger output using velocyto command-line tool (http://velocyto.org) [@LaManno2018] and saved in loom files. The single-cell RNA velocities were estimated using scVelo toolkit (https://scvelo.readthedocs.io) [@Bergen2020]. The loom files were used as input for scVelo analysis. Genes with minimum 20 of both unspliced and spliced counts and on the top list of 2000 genes were filtered, normalized and log transformed (scv.pp.filter_and_normalize with default parameters). Thirty principal components (PCs) and 30 neighbors obtained from euclidean distances in PCA space were used for computing first-/second-order moments for each cell. We used generalized dynamical modeling to recover the full splicing kinetics of spliced genes and the single-cell RNA velocities were plotted with the same cluster labels and embedding as in Figure 4B.
 
 # Load data 
 
@@ -90,7 +91,7 @@ velocyto run 	-b "${sampleID}/outs/filtered_feature_bc_matrix/barcodes.tsv.gz" \
 suppressMessages(library("velocyto.R"))
 ```
 
-## load IM-DTR1 loom data
+## Load IM-DTR1 loom data (Exp1)
 ```{r include=FALSE}
 list.path.loom <- list.dirs("../../../IM_DTR_exp1/counts/loom")
 list.path.loom <- list.path.loom[-1] # remove the first parent directory: Counts/loom/
@@ -111,7 +112,7 @@ for (i in 1:length(list.name.loom)) {
 }
 ```
 
-## load IM-DTR2 loom data
+## Load IM-DTR2 loom data (Exp2)
 
 ```{r eval=FALSE}
 list.path.loom <- list.dirs("../IM-DTR2/counts/loom")
@@ -138,7 +139,7 @@ for (i in 1:length(list.name.loom)) {
 
 # Make consistancy of cell names in Loom and Seurat object
 
-## for 4-day and 0-day data. 
+## For 4-day and 0-day data
 
 *for the 4d and 0d data, we added "Cplus_" and "Plusplus_":*
 
@@ -198,29 +199,6 @@ for (name.sample in list.name.sample2) {
 
 }
 ```
-
-
-<!-- so remove the redundant genes: -->
-<!-- ```{r} -->
-<!-- # remove inconsistent genes:  -->
-<!-- for (name.sample in list.name.sample2) { -->
-<!--   obj.name <- paste(name.sample, "seuratObject", sep = ".") -->
-<!--   loom.name <- paste(name.sample, "loom", sep = ".") -->
-<!--   ldat.name <- paste(name.sample, "ldat", "filtered", sep = ".") -->
-<!--   genes.toRemove <- get(paste(name.sample, "ldat.filtered", sep = ".")) -->
-
-<!--   genes <- rownames(obj.list[[obj.name]]) -->
-<!--   genes.new <- genes[-which(genes %in% genes.toRemove)] -->
-
-<!--   assign(ldat.name,  -->
-<!--          value = filterLoom(loomObj = get(loom.name), -->
-<!--                                 geneList = genes.new, -->
-<!--                                 cellList = colnames(obj.list[[obj.name]]) )) -->
-
-<!-- } -->
-
-<!-- ``` -->
-<!-- IF no error happens, this will generate the "*name.sample*.ldat.filtered" file.  -->
 
 
 ## For IM-DTR2 data 
@@ -430,15 +408,28 @@ scv.set_figure_params('scvelo')  # for beautified visualization
 
 # load data
 ldata_basal = scv.read("./No_Fumer.loom")
+```
 
-# Preprocess the Data
+## Preprocess the Data
+
+```{python eval=FALSE}
+
 scv.pp.filter_and_normalize(ldata_basal, min_shared_counts=20, n_top_genes=2000)
 scv.pp.moments(ldata_basal, n_pcs=30, n_neighbors=30)
+```
 
-# Estimate RNA velocity with dynamical model
+
+## Estimate RNA velocity with dynamical model
+
+```{python eval=FALSE}
 scv.tl.recover_dynamics(ldata_basal)
 scv.tl.velocity(ldata_basal, mode='dynamical')
 scv.tl.velocity_graph(ldata_basal)
+```
+
+## Plot single-cell RNA velocity with calculated embeddings
+
+```{python eval=FALSE}
 scv.pl.velocity_embedding_stream(ldata_basal, 
     basis='umap_cell_embeddings', color='cell.type2', figsize=(10,10),
     palette=["#FDBF6F","#33A02C","#A6CEE3","#B2DF8A","#1F78B4","#E31A1C","#FB9A99"], 
