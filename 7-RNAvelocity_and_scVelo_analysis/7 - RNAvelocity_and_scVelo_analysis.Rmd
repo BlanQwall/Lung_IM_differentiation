@@ -36,14 +36,11 @@ Briefly, the counts for spliced-, unspliced- and ambiguous transcripts were calc
 suppressMessages(library(Seurat))
 suppressMessages(library(tidyverse))
 suppressMessages(library(RColorBrewer))
-```
 
-# Prepare data from Seurat object for RNAvelocyto
-
-```{r include=FALSE}
 obj3d.combined <- readRDS("../6-Merge_two_experiments/immune_imdtr3.seuratObject.Rds")
 ```
 
+# Prepare data from Seurat object for RNAvelocyto
 
 ```{r}
 list.name.so <- unique(obj3d.combined$treatment)
@@ -331,9 +328,6 @@ As the names were not changed in the original obj.combined, we change that manua
 
 Now merge the ldat:
 ```{r}
-# 2. merged loom data; 
-# source("~/Desktop/velocyto/Script/aggregateLoom.R")
-
 for (sample.name in list.name.sample) {
   
   obj <- ldat.all[[sample.name]] 
