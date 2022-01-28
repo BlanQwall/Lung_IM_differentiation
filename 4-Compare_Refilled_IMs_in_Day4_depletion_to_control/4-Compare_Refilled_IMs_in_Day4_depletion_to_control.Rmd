@@ -26,11 +26,11 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
-We established an in vivo inducible IM-depletion model by generating the IM-DTR mouse line. The IM in these cells expressed specifically the ditheria toxin receptor (DTR) and 50 ng DT treatment was showed to effectively deplete the lung IM population after 24 hours. Then IM population was regenerated from D3 and up to D7 post-treatment the IM population could atteint a similar size of intact lung IM population. 
+We established an in vivo inducible IM-depletion model by generating the IM-DTR mouse line. The IM in these mice expressed specifically the diphtheria toxin receptor (DTR) and 50 ng diphtheria toxin (DT) treatment was showed to be effective to deplete the lung IM population after 24 hours. Then IM population was regenerated from D3. On D7 post-treatment the IM population could recover to a similar size of intact lung IM population. 
 
 In this analysis, the lung IM from D4 post-treatment were compared to the intact IM of littermate control mice without DT treatment using 10X single-cell RNAsequencing. 
 
-Cell data processing, clustering, linear- or non-linear dimension reduction were made in Seurat package [@SeuratV4] and the celltyping was made by SingleR pakcage [@SingleR]. Cells were firstly clustered with high resolution in order that the contaminated cells would be clustered together and identified with SingleR package. Once the contaminated cells removed, data of the filtered cells were then re-filtered and clustered for further analyses. 
+Data processing, cell clustering, linear- or non-linear dimension reduction were made in Seurat package [@SeuratV4] and the celltyping was made by SingleR pakcage [@SingleR]. Cells were firstly clustered with high resolution in order that the contaminated cells would be clustered together and identified with SingleR package. Once the contaminated cells removed, data of the filtered cells were then re-filtered and clustered for further analyses. 
 
 # Load data and packages 
 
