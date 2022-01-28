@@ -207,7 +207,7 @@ Load data:
 ```{r message=FALSE}
 # load package and data
 library(ggpubr)
-source("~/Desktop/velocyto/Script/seurat.setup.R")
+source("../R/seurat.setup.R")
 dir.10x <- "/mnt/Data/Single-cell_Analysis/Projects/IPL/IM_DTR/IM_DTR_exp2/counts/scRNAseq/chromium"
 ```
 
