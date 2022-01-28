@@ -26,7 +26,7 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
-To obtain a dynamic expression profile from refilled monocytes to IM differentiation, we anlayzed lung monocytes and IM of IM-DTR mice at different time points of diphtheria toxin (DT) treatment. 
+To obtain a dynamic expression profile from refilled monocytes to IM differentiation, we analyzed lung monocytes and IM of IM-DTR mice at different time points of diphtheria toxin (DT) treatment. 
 
 Here, we combined the monocytes/IM data from two experiements (raw data and processed data could be found under accession number GSE193894 and GSE193896 in NCBI GEO). We illustrated the different cell types in a 3-dimension plot and found a transit population bridging classical monocytes and IM. 
 
