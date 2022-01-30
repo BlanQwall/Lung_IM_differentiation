@@ -1,6 +1,6 @@
 ---
 subtitle: "11-Cell cycling in transit cells"
-# bibliography: bib.bib
+bibliography: bib.bib
 link-citations: yes
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
 output: 
@@ -27,9 +27,9 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
+In the DT treatment time-course analysis, we found transit population had up-DE genes of cell cycle. Here we focus on the cell cycle of this transit populaiton. The cell cycle score 
 
-
-
+The GO enrichment analysis was made using clusterProfiler package [@Yu2012]. 
 
 # Prepare data
 
