@@ -27,6 +27,8 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
+In this analysis, we compared cMAF-KO sample to Control sample. All four samples were included, but dKO sample was found to be highly similar to the Mafb-KO sample. So we focus on the difference between cMaf-KO and Control samples. 
+
 # Load packages and data
 
 ```{r}
@@ -104,7 +106,7 @@ DimPlot(so, cols = pal4, split.by = "group", ncol = 2
 ) + NoLegend()
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/UMAPplot_All_samplesMaf_separate_2colunns.pdf", width = 5, height = 5)
 ```
 
@@ -152,7 +154,7 @@ DimPlot(so, cols = pal4, split.by = "group", ncol = 2
 ) + NoLegend()
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/UMAPplot_All_samplesMaf_with_IMsubsets_separate_2colunns.pdf", width = 5, height = 5)
 ```
 
@@ -190,7 +192,7 @@ order = c("IM", "Patrolling Mono", "Classical Mono", "Mafb-independent", "CD206+
 ) + NoLegend()
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/UMAPplot_Ctl_(vscMafKO)_no_legend.pdf", 
        width = 5, height = 5)
 ```
@@ -210,7 +212,7 @@ order = c("IM", "Patrolling Mono", "Classical Mono", "Mafb-independent", "CD206+
 ) + NoLegend()
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/UMAPplot_cMafKO_(vsControl)_no_legend.pdf", 
        width = 5, height = 5)
 ```
@@ -228,7 +230,7 @@ source("../R/barChart.R")
 barChart(freq.celltype.list) + labs(fill = "Cluster") + scale_fill_manual(values = pal4) + theme(axis.text.x = element_text(angle = 90))
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/Barplot_Ctl_cMafKO_population_frequency.pdf", 
        width = 3, height = 4)
 ```
@@ -239,7 +241,7 @@ Show CD206+ IM markers
 FeaturePlot(so, features = "Mrc1", cols = c("lightgray", "red"), min.cutoff = 0.5, split.by = "group")
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/VlnPlot_Mrc1_in_cMafKO_Control.pdf", width = 8, height = 4)
 ```
 
@@ -247,7 +249,7 @@ ggsave(filename = "../Figures/VlnPlot_Mrc1_in_cMafKO_Control.pdf", width = 8, he
 FeaturePlot(so, features = "Lyve1", cols = c("lightgray", "red"), split.by = "group")
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/VlnPlot_Lyve1_in_cMafKO_control.pdf", width = 8, height = 4)
 ```
 
@@ -255,14 +257,14 @@ ggsave(filename = "../Figures/VlnPlot_Lyve1_in_cMafKO_control.pdf", width = 8, h
 FeaturePlot(so, features = "Folr2", cols = c("lightgray", "red"), split.by = "group")
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/VlnPlot_Folr2_in_cMafKO_control.pdf", width = 8, height = 4)
 ```
 
 ```{r fig.height=8, fig.width=8}
 FeaturePlot(so, features = c("Mrc1", "Folr2"), cols = c("lightgray", "red"), split.by = "group")
 ```
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/Featureplot_Mrc1_Folr2_in_cMafKO_control.pdf", height = 8, width = 8)
 ```
 
@@ -307,7 +309,7 @@ cMafKO_vs_IM.markers <- cMafKO_vs_IM.markers[order(cMafKO_vs_IM.markers$avg_log2
 nrow(cMafKO_vs_IM.markers)
 ```
 
-```{r}
+```{r eval=FALSE}
 write.csv(cMafKO_vs_IM.markers ,file = "./cMAFKO_vs_IM.DEgenes.results.csv", quote = FALSE)
 ```
 
@@ -325,7 +327,7 @@ p & theme(axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank())
 ```
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/Vlnplot_DE_genes_in_Ctrl_cMafKO.pdf", 
        width = 8, height = 8)
 ```
@@ -372,7 +374,7 @@ write.csv(cMafKO_vs_IM.volcano[Gene.to.show.ValcanoPlot, ] %>% arrange(., desc(a
           file = paste("./Mafb-deficient_vs_IM.DEgenes.Log2FC", threshold.log2fc, ".adjPval", threshold.adjp, ".results.csv", sep = "") ) 
 
 ```
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/VolcanoPlot_DE_IM_ctrol_vs_cMafKO.pdf", 
        width = 6, height = 5)
 ```
@@ -387,4 +389,3 @@ R sesssion:
 sessionInfo()
 ```
 
-# References
