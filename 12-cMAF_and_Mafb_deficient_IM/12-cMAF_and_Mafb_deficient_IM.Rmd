@@ -27,20 +27,18 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
-We would like to know the functions of cMAF and MAFb transcription factors in IM differentiation or IM refilling in empty niche. We analyze the IM with cMAF-KO, MAFb-KO, cMAF/MAF-dKO and control phenotype using scRNAseq (10X Genomics). These mice are Ms4a3-Cre induced recombination KO mice, thus gene KO is dependent on the Ms4a3 expression. We know in 6-week old Ms4a3-dTomato mice, dTomato+ cells don’t present in all the whole IM population (~80%). 
+We would like to know the functions of cMAF and MAFb transcription factors in IM differentiation or IM refilling in empty niche. We analyze the IM with cMAF-KO, MAFb-KO, cMAF/MAF-dKO and control phenotype using scRNAseq (10X Genomics). These mice are Lyz2-Cre induced recombination KO mice, thus gene KO is dependent on the Lyz2 expression. 
 
-The solution is to use the BM chimera with BM of Ms4a3-cMAF, Ms4a3-MAFb, Ms4a3-cMAF/MAFb and littermate control transferred into CD45.1-IM-DTR mice after thorax-protection irradiation. The monocytes with Ms4a3-induced KO will take over the lung after the IM niche is emptied by DT treatment. After 1 week, the CD45.2+CD45.1- (originated from transferred BM) IM and monocytes should be IM and monocytes with right gene KO. 
+In this experiment, we had 4 groups of mice: 
 
-In this experiment, we have 4 groups of chimera mice (host = CD45.1-IM-DTR): 
+  - Five littermate control mice (Control group); 
+  - Five Lyz2-Cre Maf-flox mice (cMAF-KO group);
+  - Five Lyz2-Cre Mafb-flox mice (MAFb-KO group);
+  - Five Lyz2-Cre Maf-flox Mafb-flox mice (dKO group).
 
-    1. Three chimera with littermate control BM (control group); 
-    2. Three chimera with Ms4a3-cMAF BM  (cMAF-KO group);
-    3. Three chimera with Ms4a3-MAFb BM  (MAFb-KO group);
-    4. Three chimera with Ms4a3-cMAF/MAFb BM  (cMAF/MAFb-dKO group). 
+Lung monocytes and macrophages were sorted separately and pooled with ratio of 3:7. Poold cells from each sample were stained with unique anti-MHCI-hashtag (Biolegend Hashtag) before pooled sequencing. 
 
-Lung monocytes/macrophages will be sorted. For each sample, input 5K cells will be needed for scRNA-seq library construction to target recovered cell number of 3K cells. Sample from each time point should be stained with anti-MHCI-hashtag (Biolegend Hashtag) before pooled sequencing. 
-
-
+The analysis pepline was the same as DT treatment time-course analysis. 
 
 # Demultiplexing by hashtag sequences
 
@@ -668,8 +666,6 @@ R sesssion:
 sessionInfo()
 ```
 
-
-# References
 
 
 
