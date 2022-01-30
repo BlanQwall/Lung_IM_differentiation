@@ -78,7 +78,7 @@ source("../R/replaceEntrezID.R")
 
 de.transit <- all_cluster.markers[which(all_cluster.markers$cluster=="Transit" &
                                           all_cluster.markers$p_val_adj < 0.01), ]
-write.csv(de.transit, file = "./DE-Genes_in_Transit_cells.csv", quote = FALSE)
+# write.csv(de.transit, file = "./DE-Genes_in_Transit_cells.csv", quote = FALSE)
 ```
 
 ```{r}
@@ -93,7 +93,7 @@ suppressMessages({
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
 })
-write.csv(result.enrichGO@result, file = "./enrichGO_DE_genes_transit_cells.csv")
+# write.csv(result.enrichGO@result, file = "./enrichGO_DE_genes_transit_cells.csv")
 result.enrichGO@result
 ```
 
@@ -103,7 +103,7 @@ result.enrichGO@result
 VlnPlot(so, features = "G2M.Score", cols = pal, pt.size = 0) + ggtitle("")
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/VlnPlot_G2MScore_in_IM_differentiation.pdf", 
        width = 5, height = 4)
 ```
@@ -132,7 +132,8 @@ FeaturePlot(so, features = "G2M.Score", reduction = "UMAP2",
             cols = c("lightgrey", "red"), 
             min.cutoff = 0.)
 ```
-```{r}
+
+```{r eval=FALSE}
 ggsave(filename = "../Figures/FeaturePlot_G2M_in_IM_diff_PC1_2.pdf", 
        width = 5, height = 4)
 ```
