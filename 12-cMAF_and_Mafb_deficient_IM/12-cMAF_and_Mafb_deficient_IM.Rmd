@@ -406,7 +406,7 @@ DimPlot(results, group.by = "singleR.celltype", reduction = "umap", label = T) +
 ```
 
 
-## Reanalysis data after contamination removal
+# Reanalysis data after contamination removal
 
 Remove old snn: 
 ```{r}
