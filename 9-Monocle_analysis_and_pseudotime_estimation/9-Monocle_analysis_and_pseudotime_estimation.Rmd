@@ -1,6 +1,6 @@
 ---
 subtitle: "8-Monocle analysis and pseudotime estimation"
-# bibliography: bib.bib
+bibliography: bib.bib
 link-citations: yes
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
 output: 
@@ -26,6 +26,9 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
+To evaluate trajectory-based DE analysis during IM development in IM-DTR mice, Ly6C+ cMo, transit cells, CD206- and CD206+ IM were subjected to Monocle [@Trapnell2014] analysis. The Monocle CDS object was built with counts and metadata from Seurat object and converted using SeuratWrappers package. Cells were clustered with cluster_cells function using calculated UMAP coordination and resolution of 0.51E-3. The trajectories along pseudotime were built using learn_graph and order_cells functions. The DE genes across trajectory were calculated using Moran’s I test (graph_test function) and only the genes with q_value of 0 and Morans_I over 0.25 were kept as significant DE genes and subjected to further analyses. 
+
+Here we build up Monocle object with data and metadata in Seurat project. 
 
 # Load packages and data
 
@@ -40,14 +43,17 @@ Load data
 IM_DTR3 <- readRDS(file = "../8-SCENIC_analysis/only_IM_differentiation.with_SCENIC.seuratObject.Rds")
 ```
 
-Re-calculate UMAP
+## Re-calculate UMAP
+
+As a subset of population was used in the following analysis, we re calculated UMAP. 
 
 ```{r}
 IM_DTR3 <- RunUMAP(IM_DTR3, dims = 1:8, n.components = 3L)
 DimPlot(IM_DTR3, group.by = "cell.type2")
 ```
 
-# Create monocle object 
+
+# Create Monocle object 
 
 ```{r include=FALSE}
 IM_DTR3.cds <- readRDS("./only_IM_differentiation.with_Pseudotime.cds.Rds")
