@@ -27,6 +27,12 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
+In this analysis, we compared Mafb-KO sample to Control sample. The analysis peppine was the same as previous ones. We found new Mafb-KO specific population (population "Enriched in Mafb-KO"). Using signature scoring, we showed the "Enriched in Mafb-KO" population had low IM signature score than Control IM population but had higher cMo signature, indicating they were in a immature differeniation state. 
+
+The IM and cMo signature scoring was made with VISION package [@DeTomaso2019]. Briefly, The IM- and cMo-specific gene signatures were calculated with previously published scRNAseq data [@Schyns2019] by comparing either IM or cMo population to all other cell types in the dataset using FindMarker function (Seurat). The genes with logFC > 1 and only positively regulated ones were considered as IM or cMo signature. The signatures were then used to calculate the scores for each cells in the IM and Mafb KO-enriched clusters with VISION package. The scores were stored in Seurat object and plotted with Seurat package.
+
+GSEA results were obtained using GSEA desktop [@Subramanian2005] with the input data described in the following codes. The results could be found in the same analysis folder. 
+
 # Load packages and data
 
 ```{r}
@@ -66,7 +72,7 @@ DimPlot(so, split.by = "group")
 ```
 
 
-# Compare populations
+# Compare population composition
 
 ```{r, fig.height=4, fig.width=6}
 pal3 <- c(
@@ -117,7 +123,7 @@ DimPlot(so, cols = pal4, split.by = "group"
 ```{r fig.height=5, fig.width=7}
 DimPlot(so, label = T, cols = pal4)
 ```
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/UMAPplot_Ctl_AND_MafbKO_with_legend.pdf", 
        width = 7, height =5)
 ```
@@ -144,7 +150,7 @@ order = c("IM", "Patrolling Mono", "Classical Mono", "Mafb-independent",  "Mafb-
 ```
 
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/UMAPplot_Ctl_IM_with_legend.pdf", 
        width = 7, height =5)
 ```
@@ -155,7 +161,7 @@ order = c("IM", "Patrolling Mono", "Classical Mono", "Mafb-independent",  "Mafb-
 ) + NoLegend()
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/UMAPplot_Ctl_(vsMafbKO)_no_legend.pdf", 
        width = 5, height = 5)
 ```
@@ -181,7 +187,7 @@ order = c("IM", "Patrolling Mono", "Classical Mono", "Mafb-independent",  "Mafb-
 ) + NoLegend()
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/UMAPplot_MafbKO_(vsControl)_no_legend.pdf", 
        width = 5, height = 5)
 ```
@@ -199,7 +205,7 @@ source("../R/barChart.R")
 barChart(freq.celltype.list) + labs(fill = "Cluster") + scale_fill_manual(values = pal4) + theme(axis.text.x = element_text(angle = 90))
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/Barplot_Ctl_MafbKO_population_frequency.pdf", 
        width = 3, height = 4)
 ```
@@ -210,14 +216,14 @@ Show CD206+ IM markers
 ```{r fig.height=4, fig.width=5}
 FeaturePlot(so, features = "Mrc1", cols = c("lightgray", "red"), min.cutoff = 0.5)
 ```
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/VlnPlot_Mrc1_in_all_samples.pdf", width = 5, height = 4)
 ```
 
 ```{r fig.height=4, fig.width=5}
 FeaturePlot(so, features = "Lyve1", cols = c("lightgray", "red"))
 ```
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/VlnPlot_Lyve1_in_all_samples.pdf", width = 5, height = 4)
 ```
 
@@ -245,7 +251,7 @@ DimPlot(so, group.by = "Phase", split.by = "group")
 VlnPlot(so, features = "G2M.Score", split.by = "group", cols = pal3, split.plot = TRUE)
 ```
 
-# Comparison between Mafb-deficient population and IMs
+# Different population between Mafb-KO and Control sample
 
 Let's focus on the Mafb-deficient population in Mafb-deficient sample.
 
@@ -270,7 +276,7 @@ Neo_vs_IM.markers <- Neo_vs_IM.markers[order(Neo_vs_IM.markers$avg_log2FC, decre
 nrow(Neo_vs_IM.markers)
 ```
 
-```{r}
+```{r eval=FALSE}
 write.csv(Neo_vs_IM.markers ,file = "./Mafb-deficient_vs_IM.DEgenes.results.csv", quote = FALSE)
 ```
 
@@ -297,7 +303,7 @@ hp <- draw(hp)
 ```
 
 
-```{r}
+```{r eval=FALSE}
 pdf(file = "../Figures/Heatmap_IM_vs_Mafb-neo.pdf", width = 6, height = 5)
 hp
 dev.off()
@@ -309,6 +315,7 @@ Show in vlnplot
 p <- VlnPlot(neo_IM, features = c("Mrc1", "Adgre1", "Pf4", "Tmem176a",  "Tmem176b","Tmem119", "Apoe", "C1qa", "C1qb", "C1qc", "Mafb", "Cd63"), group.by = "cell.type2", cols = c("#33A02C", "#FF7F00"), ncol = 4, pt.size = 0)
 p
 ```
+
 Show vlnplot without label: 
 
 ```{r fig.height=7, fig.width=8}
@@ -316,7 +323,7 @@ p & theme(axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank())
 ```
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/Vlnplot_IMID_genes_in_Ctrl_MafbKO.pdf", 
        width = 8, height = 8)
 ```
@@ -338,7 +345,7 @@ symb <- rownames(DE.MafbKO)
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
-write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_DE_Mafb_KO_vsIM.csv")
+# write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_DE_Mafb_KO_vsIM.csv")
 result.enrichGO@result
 ```
 
@@ -350,7 +357,7 @@ symb <- rownames(DE.IM)
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
-write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_DE_IM_vsMafbKO.csv")
+# write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_DE_IM_vsMafbKO.csv")
 result.enrichGO@result
 ```
 
@@ -386,11 +393,11 @@ axis.lim <- max(abs(Neo_vs_IM.volcano$avg_log2FC)) + 1
 
 p + geom_text_repel(data=filter(Neo_vs_IM.volcano, Gene %in% Gene.to.show.ValcanoPlot), size = 8, aes(label=Gene, fontface = "italic"), box.padding = 1) + xlim(c(-axis.lim, axis.lim)) + theme_classic() + theme(panel.border = element_rect(colour = "black", fill = NA, size = 1)) + geom_hline(yintercept = -log10(threshold.adjp), linetype='dashed', col = 'grey') + geom_vline(xintercept = c(-threshold.log2fc, threshold.log2fc),  linetype='dashed', col = 'grey') + ggtitle(paste("Log2FC > ", threshold.log2fc, "; p_val_adj <", threshold.adjp))
 
-write.csv(Neo_vs_IM.volcano[Gene.to.show.ValcanoPlot, ] %>% arrange(., desc(avg_log2FC)) , 
-          file = paste("./Mafb-deficient_vs_IM.DEgenes.Log2FC", threshold.log2fc, ".adjPval", threshold.adjp, ".results.csv", sep = "") ) 
+# write.csv(Neo_vs_IM.volcano[Gene.to.show.ValcanoPlot, ] %>% arrange(., desc(avg_log2FC)) , 
+#          file = paste("./Mafb-deficient_vs_IM.DEgenes.Log2FC", threshold.log2fc, ".adjPval", threshold.adjp, ".results.csv", sep = "") ) 
 
 ```
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/VolcanoPlot_DE_IM_ctrol_vs_MafbKO.pdf", 
        width = 6, height = 5)
 ```
@@ -405,11 +412,11 @@ expr.table <- as.data.frame(expr.table)
 row.info <- data.frame(NAME=rownames(expr.table), DESCRIPTION=rownames(expr.table))
 expr.table <- cbind(row.info, expr.table)
 
-write.table(expr.table, file = "./AssayData_RNA_data_MafbKO_control_IM.txt", sep = "\t", quote = FALSE, row.names = FALSE)
+# write.table(expr.table, file = "./AssayData_RNA_data_MafbKO_control_IM.txt", sep = "\t", quote = FALSE, row.names = FALSE)
 
 # metadata: 
 cls.table <- matrix(as.character(neo_IM@meta.data$cell.type2), nrow = 1)
-write.table(cls.table, file = "./Class_celltype2_MafbKO_control_IM.cls", sep = " ", quote = FALSE, col.names = FALSE, row.names = FALSE) # pay attention to the row.names=FALSE, or it will add row 1 to the head. 
+# write.table(cls.table, file = "./Class_celltype2_MafbKO_control_IM.cls", sep = " ", quote = FALSE, col.names = FALSE, row.names = FALSE) # pay attention to the row.names=FALSE, or it will add row 1 to the head. 
 ```
 
 ```{r eval=FALSE}
@@ -426,7 +433,7 @@ all.features <- read.csv(file = "../../../IM-DTR_MAF/counts/scRNAseq/Experiment-
 chip.file <- data.frame(`Probe Set ID`=all.features, 
                         `Gene Symbol`=all.features, 
                         `Gene Title`=all.features)
-write.table(chip.file, file = "./genename.chip",sep = "\t", quote = FALSE, row.names = FALSE )
+# write.table(chip.file, file = "./genename.chip",sep = "\t", quote = FALSE, row.names = FALSE )
 ```
 
 The results can be found in sub directory: GSEA
@@ -436,8 +443,7 @@ The results can be found in sub directory: GSEA
 
 ## Load data
 
-We start from published data in Schyns et al, Nat Comm, 2019:
-  Schyns, J., Bai, Q., Ruscitti, C. et al. Non-classical tissue monocytes and two functionally distinct populations of interstitial macrophages populate the mouse lung. Nat Commun 10, 3964 (2019). https://doi.org/10.1038/s41467-019-11843-0
+We start from our published data [@Schyns2019].
 
 The object "IMss_monocytes_filtered.v3" is the Seurat object used in this report. 
 
