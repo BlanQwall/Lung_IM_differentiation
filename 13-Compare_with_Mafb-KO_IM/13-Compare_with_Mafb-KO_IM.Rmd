@@ -1,6 +1,6 @@
 ---
 subtitle: "13 - Compare with Mafb-KO IM"
-# bibliography: bib.bib
+bibliography: bib.bib
 link-citations: yes
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
 output: 
@@ -526,7 +526,7 @@ res.aov <- aov(sig ~ celltype, data = dt)
 summary(glht(res.aov, linfct = mcp(celltype = "Tukey")))
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/Vlnplot_sig_IM_in_ctrl_MafbKO.pdf", 
        width = 5, height = 4)
 ```
@@ -541,7 +541,7 @@ res.aov <- aov(sig ~ celltype, data = dt)
 summary(glht(res.aov, linfct = mcp(celltype = "Tukey")))
 ```
 
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/Vlnplot_sig_pMo_in_ctrl_MafbKO.pdf", 
        width = 5, height = 4)
 ```
@@ -555,7 +555,7 @@ summary(glht(res.aov, linfct = mcp(celltype = "Tukey")))
 ```{r fig.height=4, fig.width=5}
 VlnPlot(so, features = "sig.cMo", cols = pal4[c(1,3,4)], pt.size = 0, idents = c("Classical Mono", "IM", "Mafb-independent"))
 ```
-```{r}
+```{r eval=FALSE}
 ggsave(filename = "../Figures/Vlnplot_sig_cMo_in_ctrl_MafbKO.pdf", 
        width = 5, height = 4)
 ```
