@@ -27,8 +27,7 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Description
 
-
-
+To compare the expression patterns of DE genes across pseudotime, the counts matrix, pseudotime and cell weights calculated above were then used as input in fitGAM function (TradeSeq package) [@TradeSeq]. The association of average expression of each gene with pseudotime was tested using associationTest and the DE genes between CD206+ and CD206- IM trajectories were calculated with diffEndTest function. The value of the estimated smoother on a grid of pseudotimes was estimated for each of DE gene using predictSmooth. The DE genes with waldStat > 70 and |logFC| > 2 were annotated as “changed genes”, meaning that their expression patterns were different in CD206+ and CD206- IM trajectories, while the rest of DE genes were considered as “unchanged genes”, meaning that the expression patterns were similar in both trajectories. Finally, the scaled estimated smoothers calculated by predictSmooth were used to build heatmap with ComplexHeatmap package [@Gu2016].
 
 
 # Prepare data
@@ -350,7 +349,7 @@ heatSmooth_cd206.unchanged.ordered <- Heatmap(yhatSmoothScaled[genes.noChange, 1
 heatSmooth_combined.unchanged.ordered <- draw ( heatSmooth_cd206.unchanged.ordered + heatSmooth_mhcii.unchanged, column_title = "Common genes", auto_adjust = FALSE)
 ```
 
-```{r}
+```{r eval=FALSE}
 pdf(file = "../Figures/Heatmap_common_genes_IMs_diff_across_pseudotime.pdf", width = 8, height = 10)
 heatSmooth_combined.unchanged.ordered
 dev.off()
@@ -367,7 +366,7 @@ heatSmooth_mhcii.changed <- Heatmap(yhatSmoothScaled[genes.changed, 101:200], cl
 heatSmooth_combined.changed <- draw ( heatSmooth_cd206.changed + heatSmooth_mhcii.changed, column_title = "Specific genes", split = 2)
 ```
 
-```{r}
+```{r eval=FALSE}
 pdf(file = "../Figures/Heatmap_specific_CD206_IM_genes_IMs_diff_across_pseudotime.pdf", width = 8, height = 8)
 heatSmooth_combined.changed
 dev.off()
@@ -389,7 +388,7 @@ geneSymbol.changed.mhcii
 geneSymbol.changed.cd206
 ```
 
-```{r}
+```{r eval=FALSE}
 write.csv(geneSymbol.changed.cd206, file = "./geneSymbol_changed_cd206_IM.csv", quote = FALSE, row.names = FALSE)
 write.csv(geneSymbol.changed.mhcii, file = "./geneSymbol_changed_mhcii_IM.csv", quote = FALSE, row.names = FALSE)
 
@@ -411,7 +410,7 @@ symb <- geneSymbol.changed.mhcii
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
-write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_MHCII_IM_specific_genes.csv")
+# write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_MHCII_IM_specific_genes.csv")
 result.enrichGO@result
 ```
 
@@ -424,7 +423,7 @@ symb <- geneSymbol.changed.cd206
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
-write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_CD206_IM_specific_genes.csv")
+# write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_CD206_IM_specific_genes.csv")
 result.enrichGO@result
 ```
 
@@ -460,7 +459,7 @@ length(genes.class3)
 
 Save gene lists: 
 
-```{r}
+```{r eval=FALSE}
 write.csv(genes.class1, file = "./common_genes_class1.csv", quote = FALSE)
 write.csv(genes.class2, file = "./common_genes_class2.csv", quote = FALSE)
 write.csv(genes.class3, file = "./common_genes_class3.csv", quote = FALSE)
@@ -477,7 +476,7 @@ symb <- genes.class1
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
 result.enrichKEGG <- enrichKEGG(de_entrez, organism = "mmu", keyType = "ncbi-geneid")
 result.enrichKEGG <- replaceEntrezID(result.enrichKEGG, organism = "mmu")
-write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_common_genes_class1.csv")
+# write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_common_genes_class1.csv")
 result.enrichKEGG@result
 ```
 
@@ -486,7 +485,7 @@ result.enrichKEGG@result
 ```{r message=FALSE}
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
-write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class1.csv")
+# write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class1.csv")
 result.enrichGO@result
 ```
 
@@ -497,7 +496,7 @@ symb <- genes.class2
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
 result.enrichKEGG <- enrichKEGG(de_entrez, organism = "mmu", keyType = "ncbi-geneid")
 result.enrichKEGG <- replaceEntrezID(result.enrichKEGG, organism = "mmu")
-write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_common_genes_class2.csv")
+# write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_common_genes_class2.csv")
 result.enrichKEGG@result
 ```
 
@@ -506,7 +505,7 @@ result.enrichKEGG@result
 ```{r message=FALSE}
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
-write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class2.csv")
+# write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class2.csv")
 result.enrichGO@result
 ```
 
@@ -518,7 +517,7 @@ symb <- genes.class3
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
 result.enrichKEGG <- enrichKEGG(de_entrez, organism = "mmu", keyType = "ncbi-geneid")
 result.enrichKEGG <- replaceEntrezID(result.enrichKEGG, organism = "mmu")
-write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_common_genes_class3.csv")
+# write.csv(result.enrichKEGG@result, file = "./Results_enrichment/enrichKEGG_common_genes_class3.csv")
 result.enrichKEGG@result
 ```
 
@@ -527,7 +526,7 @@ result.enrichKEGG@result
 ```{r message=FALSE}
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
-write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class3.csv")
+# write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_common_genes_class3.csv")
 result.enrichGO@result
 ```
 
@@ -540,7 +539,7 @@ symb <- c(geneSymbol.changed.mhcii, genes.class3)
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
-write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_MHCIISpecific_plus_Class3_common.csv")
+# write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_MHCIISpecific_plus_Class3_common.csv")
 result.enrichGO@result
 ```
 
@@ -551,7 +550,7 @@ symb <- c(geneSymbol.changed.cd206, genes.class3)
 de_entrez <- bitr( geneID = symb, fromType = "SYMBOL", toType = "ENTREZID", OrgDb = "org.Mm.eg.db", drop = TRUE ) $ ENTREZID
 result.enrichGO <- enrichGO(de_entrez, OrgDb = "org.Mm.eg.db", ont = "BP")
 result.enrichGO <- replaceEntrezID(result.enrichGO, organism = "mmu")
-write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_CD206Specific_plus_Class3_common.csv")
+# write.csv(result.enrichGO@result, file = "./Results_enrichment/enrichGO_CD206Specific_plus_Class3_common.csv")
 result.enrichGO@result
 ```
 
@@ -563,7 +562,7 @@ result.enrichGO@result
 require(ggplot2)
 sigGene <- "Ly6c2"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
@@ -576,7 +575,7 @@ plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + sc
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Plac8"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
@@ -585,21 +584,21 @@ ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Top2a"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Ccnb2"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Mki67"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
@@ -608,170 +607,170 @@ ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Tgfbr1"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Cd163"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Creb5"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Ube2c"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Aurkb"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Racgap1"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Ube2c"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Sell"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Ccr2"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Itga1"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Trem1"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Cebpb"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Lgals3"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Cd81"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), 
        width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Tnfaip3"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Nfkbiz"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Fgfr1"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Aif1"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Jun"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Cd83"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "H2-Eb1"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "C1qc"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Folr2"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Lyve1"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Cd38"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Mmp9"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Cd63"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 
@@ -779,31 +778,31 @@ ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "H2-DMb2"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+#ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "H2-Oa"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Wnt11"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Il1b"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 ```{r fig.width=4, fig.height=3, message=FALSE}
 sigGene <- "Dpp4"
 plotSmoothers(sce, counts = counts(sce), gene = sigGene) + ggtitle(sigGene) + scale_color_manual(values =c("#33A02C", "#B2DF8A"))
-ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
+# ggsave(filename = paste("../Figures/TradeSeq_plot_IM_lineages_", sigGene, ".pdf"), width = 4, height = 3)
 ```
 
 # Session information 
