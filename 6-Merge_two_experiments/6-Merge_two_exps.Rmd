@@ -135,8 +135,8 @@ umap_1 <- imdtr3.for3d@reductions$umap@cell.embeddings[,1]
 umap_2 <- imdtr3.for3d@reductions$umap@cell.embeddings[,2]
 umap_3 <- imdtr3.for3d@reductions$umap@cell.embeddings[,3]
 
-plot3d(x = umap_1, y = umap_2, z = umap_3, col = factor(imdtr3.for3d$cell.type2, labels = brewer.pal(length(unique(imdtr3.for3d$cell.type2)), name = "Paired")), size = 3)
-rglwidget()
+#plot3d(x = umap_1, y = umap_2, z = umap_3, col = factor(imdtr3.for3d$cell.type2, labels = brewer.pal(length(unique(imdtr3.for3d$cell.type2)), name = "Paired")), size = 3)
+#rglwidget()
 ```
 *3d plot shows only one bridge exists. *
 
@@ -317,7 +317,7 @@ umap_3 <- imdtr3.for3d@reductions$umap@cell.embeddings[,3]
 ```
 
 ```{r}
-open3d()
+# open3d()
 points3d(x = umap_1, y = umap_2, z = umap_3, 
        col = factor(Idents(imdtr3.for3d), labels = brewer.pal(length(unique(imdtr3.for3d$cell.type2)), name = "Paired")), 
        size = 7.5, alpha = 0.8, point_antialias = TRUE,
@@ -329,12 +329,12 @@ points3d(x = umap_1, y = umap_2, z = umap_3,
 rgl.bringtotop()
 rgl.viewpoint(30, -20, zoom = 0.7)
 # rgl.postscript( filename = "../Docs/Figures/test.eps", fmt = "eps", drawText = TRUE )
-rglwidget()
+# rglwidget()
 #close3d()
 ```
 
 ```{r}
-open3d()
+# open3d()
 points3d(x = umap_1, y = umap_2, z = umap_3, 
        col = factor(Idents(imdtr3.for3d), labels = brewer.pal(length(unique(imdtr3.for3d$cell.type2)), name = "Paired")), 
        size = 7.5, alpha = 0.8, point_antialias = TRUE,
@@ -346,13 +346,13 @@ axes3d(edges = c("x--", "y--", "z--"), alpha = 1)
 rgl.bringtotop()
 rgl.viewpoint(30, -20, zoom = 0.7)
 # rgl.postscript( filename = "../Docs/Figures/test.eps", fmt = "eps", drawText = TRUE )
-rglwidget()
+# rglwidget()
 #close3d()
 ```
 
 
 ```{r}
-open3d()
+# open3d()
 spheres3d(x = umap_1, y = umap_2, z = umap_3, 
        col = factor(Idents(imdtr3.for3d), labels = brewer.pal(length(unique(imdtr3.for3d$cell.type2)), name = "Paired")), 
        radius = 0.1, alpha = 0.5, 
@@ -367,7 +367,7 @@ spheres3d(x = umap_1, y = umap_2, z = umap_3,
 rgl.bringtotop()
 rgl.viewpoint(30, -20, zoom = 0.7)
 # rgl.postscript( filename = "../Docs/Figures/test.eps", fmt = "eps", drawText = TRUE )
-rglwidget()
+# rglwidget()
 #close3d()
 ```
 
@@ -398,7 +398,7 @@ umap3.max <- max(seuratObj@reductions$umap@cell.embeddings[,3])
 #               grid=FALSE, box=TRUE, col.axis="black", 
 #               main = treat, 
 #               ...)
-open3d()
+# open3d()
 points3d(x = umap_1, y = umap_2, z = umap_3, 
        col = col.pal, 
        size = 7.5, alpha = 0.8, 
@@ -430,24 +430,24 @@ if (savePNG) {
 ```{r fig.height=5, fig.width=5}
 treat.list <- c("0.5d","1d","2d","4d","0d")
 # everytime, save PNG manually with width = 700, height = 630. 
-  plot3d.byGroup(imdtr3.for3d, treat.list[1])
+#  plot3d.byGroup(imdtr3.for3d, treat.list[1])
 ```
 
 ```{r}
-plot3d.byGroup(imdtr3.for3d, treat.list[2])
+#plot3d.byGroup(imdtr3.for3d, treat.list[2])
 ```
 
 
 ```{r}
-plot3d.byGroup(imdtr3.for3d, treat.list[3])
+#plot3d.byGroup(imdtr3.for3d, treat.list[3])
 ```
 
 ```{r}
-plot3d.byGroup(imdtr3.for3d, treat.list[4])
+#plot3d.byGroup(imdtr3.for3d, treat.list[4])
 ```
 
 ```{r}
-plot3d.byGroup(imdtr3.for3d, treat.list[5])
+#plot3d.byGroup(imdtr3.for3d, treat.list[5])
 ```
 
 Heatmap: 
@@ -506,7 +506,7 @@ col_pal <- col_pal[order(imdtr3.for3d$G2M.Score, decreasing = TRUE)]
 
 
 ```{r}
-open3d()
+#open3d()
 points3d(x = umap_1.order_g2m, y = umap_2.order_g2m, z = umap_3.order_g2m, 
        col = col_pal, 
        size = 7.5, alpha = 1, 
@@ -519,12 +519,12 @@ points3d(x = umap_1.order_g2m, y = umap_2.order_g2m, z = umap_3.order_g2m,
 rgl.bringtotop()
 rgl.viewpoint(30, -20, zoom = 0.7)
 # rgl.postscript( filename = "../Docs/Figures/test.eps", fmt = "eps", drawText = TRUE )
-rglwidget()
+#rglwidget()
 #close3d()
 ```
 
 ```{r}
-open3d()
+#open3d()
 points3d(x = umap_1, y = umap_2, z = umap_3, 
        col = factor(Idents(imdtr3.for3d), labels = brewer.pal(length(unique(imdtr3.for3d$cell.type2)), name = "Paired")), 
        size = 7.5, alpha = 1, 
@@ -537,7 +537,7 @@ points3d(x = umap_1, y = umap_2, z = umap_3,
 rgl.bringtotop()
 rgl.viewpoint(30, -20, zoom = 0.7)
 # rgl.postscript( filename = "../Docs/Figures/test.eps", fmt = "eps", drawText = TRUE )
-rglwidget()
+#rglwidget()
 #close3d()
 ```
 
